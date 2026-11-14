@@ -1,0 +1,33 @@
+{
+  "label": "r3_10_16",
+  "purpose": "DiagnosticSessionControl 0x16",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4421016",
+    "uds": "1016"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F1012",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F1012",
+      "parsed": "NEGATIVE service=0x10 NRC=0x12 (subFunctionNotSupported)"
+    }
+  ],
+  "elapsed_ms": 382.57,
+  "parsed": "0x1220: NEGATIVE service=0x10 NRC=0x12 (subFunctionNotSupported)",
+  "seq": 3942,
+  "ts": "2026-11-14T10:54:43.302+08:00"
+}

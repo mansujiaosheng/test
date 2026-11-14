@@ -1,0 +1,18 @@
+{
+  "label": "r4held_ident",
+  "purpose": "13401 held-open across unlock",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "02FD000100000000"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B",
+  "seq": 4185,
+  "ts": "2026-11-14T11:20:13.492+08:00"
+}

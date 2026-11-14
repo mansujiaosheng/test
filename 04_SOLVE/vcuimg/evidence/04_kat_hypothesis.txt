@@ -1,0 +1,32 @@
+# selftest: e21faa054c4f8037 (expect e21faa054c4f8037)
+
+# A) record-layout KAT
+  rec32 A,B,C,out    start=0x0 records= 32 hits=0
+  rec32 A,C,B,out    start=0x0 records= 32 hits=0
+  rec32 out-first    start=0x0 records= 32 hits=0
+  rec24 A,C,out      start=0x0 records= 42 hits=0
+  rec16 A,out        start=0x0 records= 64 hits=0
+  rec32 A,B,C,out    start=0x8 records= 31 hits=0
+  rec32 A,C,B,out    start=0x8 records= 31 hits=0
+  rec32 out-first    start=0x8 records= 31 hits=0
+  rec24 A,C,out      start=0x8 records= 42 hits=0
+  rec16 A,out        start=0x8 records= 63 hits=0
+  rec32 A,B,C,out    start=0x10 records= 31 hits=0
+  rec32 A,C,B,out    start=0x10 records= 31 hits=0
+  rec32 out-first    start=0x10 records= 31 hits=0
+  rec24 A,C,out      start=0x10 records= 42 hits=0
+  rec16 A,out        start=0x10 records= 63 hits=0
+  rec32 A,B,C,out    start=0x18 records= 31 hits=0
+  rec32 A,C,B,out    start=0x18 records= 31 hits=0
+  rec32 out-first    start=0x18 records= 31 hits=0
+  rec24 A,C,out      start=0x18 records= 41 hits=0
+  rec16 A,out        start=0x18 records= 62 hits=0
+  rec32 A,B,C,out    start=0x20 records= 31 hits=0
+  rec32 A,C,B,out    start=0x20 records= 31 hits=0
+  rec32 out-first    start=0x20 records= 31 hits=0
+  rec24 A,C,out      start=0x20 records= 41 hits=0
+  rec16 A,out        start=0x20 records= 62 hits=0
+  ANY HIT: False
+
+# B) pairwise 8B window sweep
+  windows=128 evaluations=81920 hits=0

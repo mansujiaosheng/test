@@ -1,0 +1,164 @@
+{
+  "tool": "bms_dump.py",
+  "ts": "2026-11-14T11:25:35+0800",
+  "passed": 31,
+  "total": 31,
+  "ok": true,
+  "checks": [
+    {
+      "name": "0x24 request layout",
+      "ok": true,
+      "detail": "2324080000000200"
+    },
+    {
+      "name": "0x14 request layout (1-byte size)",
+      "ok": true,
+      "detail": "23140000100010"
+    },
+    {
+      "name": "0x44 request layout (4-byte size)",
+      "ok": true,
+      "detail": "23440000100000000200"
+    },
+    {
+      "name": "0x14 cannot encode 512 (expected)",
+      "ok": true,
+      "detail": "ValueError"
+    },
+    {
+      "name": "0x63 parse",
+      "ok": true,
+      "detail": "deadbeef"
+    },
+    {
+      "name": "0x63 ok flag",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "NRC path parsed",
+      "ok": true,
+      "detail": "0x31 requestOutOfRange"
+    },
+    {
+      "name": "mutating SID refused by guard",
+      "ok": true,
+      "detail": "0x2E blocked"
+    },
+    {
+      "name": "0x31 RoutineControl refused by guard",
+      "ok": true,
+      "detail": "0x31 blocked"
+    },
+    {
+      "name": "ALFID negotiation fell back to 0x24",
+      "ok": true,
+      "detail": "[{\"alfid\": \"0x14\", \"size_len\": 1, \"result\": \"NRC 0x13\", \"nrc_name\": \"incorrectMessageLengthOrInvalidFormat\"}, {\"alfid\": \"0x24\", \"size_len\": 2, \"result\": \"accepted\", \"bytes\": 16}]"
+    },
+    {
+      "name": "0x14 rejected with NRC 0x13 first",
+      "ok": true,
+      "detail": "{'alfid': '0x14', 'size_len': 1, 'result': 'NRC 0x13', 'nrc_name': 'incorrectMessageLengthOrInvalidFormat'}"
+    },
+    {
+      "name": "32 blocks read",
+      "ok": true,
+      "detail": "32"
+    },
+    {
+      "name": "16384 bytes total",
+      "ok": true,
+      "detail": "16384"
+    },
+    {
+      "name": "sha256 matches synthetic image",
+      "ok": true,
+      "detail": "09ef8a708ce06273 vs 09ef8a708ce06273"
+    },
+    {
+      "name": "transient corruption was detected",
+      "ok": true,
+      "detail": "1 block(s) needed a re-read"
+    },
+    {
+      "name": "no unconfirmed blocks",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "stub saw 32+ reads",
+      "ok": true,
+      "detail": "68 requests"
+    },
+    {
+      "name": "all addresses covered once",
+      "ok": true,
+      "detail": "0x0000..0x7C00 step 0x200"
+    },
+    {
+      "name": "file on disk is byte-identical",
+      "ok": true,
+      "detail": "16384 B"
+    },
+    {
+      "name": "rv32 sanity sees the reset vector",
+      "ok": true,
+      "detail": "0x000000EF"
+    },
+    {
+      "name": "rv32 sanity found the magic string",
+      "ok": true,
+      "detail": "['CV6-BMS-RV32IM', 'root key derivation', 'HKDF-SHA256 salt=VIN inf']"
+    },
+    {
+      "name": "rv32 sanity flagged the embedded key blob",
+      "ok": true,
+      "detail": "1 isolated constant(s): ['0x0200']"
+    },
+    {
+      "name": "dense body is not mistaken for a key",
+      "ok": true,
+      "detail": "0x0400 excluded"
+    },
+    {
+      "name": "seams checked",
+      "ok": true,
+      "detail": "7"
+    },
+    {
+      "name": "no seam mismatch",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "partial dump still byte-exact",
+      "ok": true,
+      "detail": "d5fb0b634c84d4d0"
+    },
+    {
+      "name": "base echoed correctly",
+      "ok": true,
+      "detail": "0x08000000"
+    },
+    {
+      "name": "image matches",
+      "ok": true,
+      "detail": "d5fb0b634c84d4d0"
+    },
+    {
+      "name": "read without session fails",
+      "ok": true,
+      "detail": "block 0 at 0x00000000 unreadable: UdsError: 0x23 -> NRC 0x31 (requestOutOfRange)"
+    },
+    {
+      "name": "0x10 01 accepted",
+      "ok": true,
+      "detail": "5001"
+    },
+    {
+      "name": "read after session succeeds",
+      "ok": true,
+      "detail": "512 B"
+    }
+  ]
+}

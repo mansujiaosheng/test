@@ -1,0 +1,26 @@
+{
+  "label": "r3_ra_abb7",
+  "purpose": "DoIP routing activation (0x0005) -> parse 0x0006",
+  "host": "10.226.193.2:13400",
+  "request": {
+    "ptype": "0x0005",
+    "hex": "0E000000000000"
+  },
+  "responses": [
+    {
+      "ptype": "0x0006",
+      "hex": "0E0010001000000000",
+      "len": 9
+    }
+  ],
+  "elapsed_ms": 25.83,
+  "parsed": {
+    "tester_sa": "0x0E00",
+    "entity_la": "0x1000",
+    "code": "0x10",
+    "text": "routing successfully activated",
+    "trailing": "00000000"
+  },
+  "seq": 3646,
+  "ts": "2026-11-14T10:48:39.339+08:00"
+}

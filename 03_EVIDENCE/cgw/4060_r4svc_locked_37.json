@@ -1,0 +1,18 @@
+{
+  "label": "r4svc_locked_37",
+  "purpose": "service-support probe: TransferExit without download",
+  "host": "10.226.193.2:13400",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E44237"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "7F3711"
+    }
+  ],
+  "parsed": "7F3711",
+  "seq": 4060,
+  "ts": "2026-11-14T11:15:47.194+08:00"
+}

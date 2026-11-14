@@ -1,0 +1,18 @@
+{
+  "label": "r4can_locked_CANFD_magic",
+  "purpose": "13401 CAN-bridge protocol probe: locked CANFD magic",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "43414E464400000000"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B",
+  "seq": 4113,
+  "ts": "2026-11-14T11:16:36.211+08:00"
+}

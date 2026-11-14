@@ -1,0 +1,25 @@
+{
+  "label": "lascan_1003_0000_ffff_summary",
+  "purpose": "full LA scan with probe 1003",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "1003"
+  },
+  "parsed": "65536 LAs, non-baseline=2, baseline=('0x1000', '7F1031'), elapsed=144.6s",
+  "baseline": "('0x1000', '7F1031')",
+  "hits": [
+    {
+      "la": "0x1000",
+      "src": "0x1000",
+      "resp": "7F1011"
+    },
+    {
+      "la": "0xE442",
+      "src": "0x1220",
+      "resp": "5003"
+    }
+  ],
+  "evidence_file": "3810_lascan_1003_0000_ffff.jsonl",
+  "seq": 3811,
+  "ts": "2026-11-14T10:52:14.451+08:00"
+}

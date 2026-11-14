@@ -1,0 +1,18 @@
+{
+  "label": "r4can_unlocked_4B_LE_len_+_CAN_frame",
+  "purpose": "13401 CAN-bridge protocol probe: unlocked 4B LE len + CAN frame",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "0D000000027E0E00000000000000000000"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B",
+  "seq": 4126,
+  "ts": "2026-11-14T11:16:39.151+08:00"
+}

@@ -1,0 +1,7 @@
+{
+ "assignFirmwareUpdate": "{\"errors\":[{\"message\":\"update campaign validation failed\"}]}",
+ "cosignFirmwareUpdate": "{\"errors\":[{\"message\":\"update campaign validation failed\"}]}",
+ "countersignFirmwareUpdate": "{\"errors\":[{\"message\":\"update campaign validation failed\"}]}",
+ "signFirmwareUpdate": "{\"errors\":[{\"message\":\"update campaign validation failed\"}]}",
+ "vehicleDiagnostics": "{\"data\":{\"vehicleDiagnostics\":{\"campaignId\":\"CAMP-243892C376D4CB2D5F826953\",\"diagnosticEndpoint\":\"https://tbox:8443\",\"firmwareCredential\":\"5e7f07b4a81153ecd5868cc02557f823\",\"firmwareDownload\":\"/api/v1/ota/engineering-bundle\",\"manifest\":\"ZIP; AES-256-GCM T-BOX image; mTLS diagnostic bundle; VCU refer"
+}

@@ -1,0 +1,18 @@
+{
+  "label": "r4tok_F1A3_bytes_+_ident",
+  "purpose": "13401 token handshake: F1A3 bytes + ident",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "0000002DAAC9F4E302FD000100000000"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": "436F6E6E656374696F6E52657365744572726F723A205B57696E4572726F722031303035345D20E8BF9CE7A88BE4B8BBE69CBAE5BCBAE8BFABE585B3E997ADE4BA86E4B880E4B8AAE78EB0E69C89E79A84E8BF9EE68EA5E38082"
+    }
+  ],
+  "parsed": "90B b'ConnectionResetError: [WinError 10054] \\xe8\\xbf\\x9c\\xe7\\xa8\\x8b\\xe4\\xb8\\xbb\\xe6\\x9c\\xba\\xe5\\xbc\\xba\\xe8\\xbf\\xab\\xe5\\x85\\xb3'",
+  "seq": 4090,
+  "ts": "2026-11-14T11:16:12.105+08:00"
+}

@@ -1,0 +1,16 @@
+{
+  "label": "r4_scan_2e_unlocked_summary",
+  "purpose": "0x2E zero-data writable-DID scan in unlocked state",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "2e <did>"
+  },
+  "parsed": "65536 DIDs, baseline=7F2E31, hits=0, elapsed=75.2s",
+  "distribution": {
+    "7F2E31": 65536
+  },
+  "hits": [],
+  "evidence_file": "4009_r4_scan_2e_unlocked.jsonl",
+  "seq": 4010,
+  "ts": "2026-11-14T11:14:41.915+08:00"
+}

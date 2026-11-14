@@ -1,0 +1,18 @@
+{
+  "label": "r4svc_locked_287F",
+  "purpose": "service-support probe: CommControl invalid sub",
+  "host": "10.226.193.2:13400",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E442287F"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "7F2811"
+    }
+  ],
+  "parsed": "7F2811",
+  "seq": 4057,
+  "ts": "2026-11-14T11:15:45.736+08:00"
+}

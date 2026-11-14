@@ -1,0 +1,22 @@
+{
+  "label": "r4_scan_did_unlocked_summary",
+  "purpose": "0x22 DID scan in unlocked state",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "did <did>"
+  },
+  "parsed": "65536 DIDs, baseline=7F2231, hits=1, elapsed=83.8s",
+  "distribution": {
+    "7F2231": 65535,
+    "62F1A30000002DAAC9F4E3": 1
+  },
+  "hits": [
+    {
+      "v": "0xF1A3",
+      "resp": "62F1A30000002DAAC9F4E3"
+    }
+  ],
+  "evidence_file": "4149_r4_scan_did_unlocked.jsonl",
+  "seq": 4150,
+  "ts": "2026-11-14T11:19:00.081+08:00"
+}

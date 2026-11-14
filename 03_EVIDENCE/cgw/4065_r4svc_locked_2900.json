@@ -1,0 +1,18 @@
+{
+  "label": "r4svc_locked_2900",
+  "purpose": "service-support probe: Authentication malformed",
+  "host": "10.226.193.2:13400",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4422900"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "7F2911"
+    }
+  ],
+  "parsed": "7F2911",
+  "seq": 4065,
+  "ts": "2026-11-14T11:15:49.642+08:00"
+}

@@ -1,0 +1,129 @@
+{
+  "tool": "tap13401.py",
+  "ts": "2026-11-14T11:25:46+0800",
+  "passed": 24,
+  "total": 24,
+  "ok": true,
+  "checks": [
+    {
+      "name": "raw8 encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccc"
+    },
+    {
+      "name": "raw16 encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "raw64 encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "name": "id2+16 encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "id4+16 encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "len1+16 encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "len2big+16 encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "len2little+16 encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "len4big+16 encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "slcan encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "socketcand encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "candump encode->wire->decode",
+      "ok": true,
+      "detail": "echo=0322f190cccccccccccccccccccccccc"
+    },
+    {
+      "name": "classic t-frame",
+      "ok": true,
+      "detail": "b't7E180210030000000000\\r'"
+    },
+    {
+      "name": "CAN FD b-frame uses DLC code 0xA for 16 B",
+      "ok": true,
+      "detail": "b'b7E1A0000000'"
+    },
+    {
+      "name": "FD round trip",
+      "ok": true,
+      "detail": "16 B brs=True"
+    },
+    {
+      "name": "64 B FD round trip",
+      "ok": true,
+      "detail": "64 B"
+    },
+    {
+      "name": "sLCAN detected",
+      "ok": true,
+      "detail": "slcan/high -- V answered 'V1013\\r'"
+    },
+    {
+      "name": "socketcand detected",
+      "ok": true,
+      "detail": "socketcand/high -- server greeted with socketcand banner"
+    },
+    {
+      "name": "silent server falls back to raw16 guess",
+      "ok": true,
+      "detail": "raw16/guess"
+    },
+    {
+      "name": "closed port reported clearly",
+      "ok": true,
+      "detail": "connect failed: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"
+    },
+    {
+      "name": "transport sends and receives",
+      "ok": true,
+      "detail": "Frame(id=0x7E9, dl=8, CC, 02 21 00 00 00 00 00 00)"
+    },
+    {
+      "name": "info documents the codec",
+      "ok": true,
+      "detail": "{\"codec\": \"slcan\", \"frame_dl\": 64, \"ascii\": true, \"fixed_size\": false}"
+    },
+    {
+      "name": "0x63 response reassembled over sLCAN",
+      "ok": true,
+      "detail": "520 B"
+    },
+    {
+      "name": "payload byte-exact",
+      "ok": true,
+      "detail": "512 B"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "label": "ridscan_unlocked_31_01_summary",
+  "purpose": "unlocked-state 31 01 sweep on 0x1220 (batch pipelined, same connection)",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "31 01 <rid>"
+  },
+  "parsed": "65536 RIDs, hits=0, ambiguous_batches=4, unlock_lost=False, elapsed=172.8s",
+  "distribution": {
+    "7F3131": 65536
+  },
+  "hits": [],
+  "evidence_file": "3990_ridscan_unlocked_31_01_0000_ffff.jsonl",
+  "seq": 3991,
+  "ts": "2026-11-14T11:12:47.380+08:00"
+}

@@ -1,0 +1,10 @@
+# bigram model trained on fw code[0x40:0x750]
+  score(fw code[0x40:0x750])      = -6.3967 bits/byte
+  score(fw data[0x780:0x9a0])     = -8.0141 bits/byte
+  score(vcu-reference whole)      = -8.0014 bits/byte
+  score(vcu-reference[0x28:])     = -7.9991 bits/byte
+  score(vcu-reference[0x340:])    = -7.9773 bits/byte
+
+  random controls n=300: min=-8.0294 p05=-8.0251 median=-8.0165 p95=-8.0062 max=-7.9973
+  vcu lands at percentile 98.3% of the random distribution
+  gap to real code: 1.60 bits/byte

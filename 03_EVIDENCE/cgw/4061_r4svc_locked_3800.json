@@ -1,0 +1,18 @@
+{
+  "label": "r4svc_locked_3800",
+  "purpose": "service-support probe: RequestFileTransfer malformed",
+  "host": "10.226.193.2:13400",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4423800"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "7F3811"
+    }
+  ],
+  "parsed": "7F3811",
+  "seq": 4061,
+  "ts": "2026-11-14T11:15:47.687+08:00"
+}

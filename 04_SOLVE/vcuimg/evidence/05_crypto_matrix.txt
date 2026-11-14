@@ -1,0 +1,19 @@
+# total candidates = 1437
+# candidates scoring S1/S2/S3 = 0
+
+# sample of 12 candidates (all non-hits unless listed above):
+  AES-CTR k=packageKey iv=hdr8_12 body@0x28                  zlib=1.011 H=7.797 pr=0 S1=False
+  AES-CBC k=packageKey iv=hdr8_12 body@0x28                  zlib=1.011 H=7.798 pr=0 S1=False
+  AES-CFB k=packageKey iv=hdr8_12 body@0x28                  zlib=1.011 H=7.804 pr=0 S1=False
+  AES-OFB k=packageKey iv=hdr8_12 body@0x28                  zlib=1.011 H=7.780 pr=0 S1=False
+  AES-CTR k=packageKey iv=hdr8_16 body@0x28                  zlib=1.011 H=7.802 pr=0 S1=False
+  AES-CBC k=packageKey iv=hdr8_16 body@0x28                  zlib=1.011 H=7.798 pr=0 S1=False
+  AES-CFB k=packageKey iv=hdr8_16 body@0x28                  zlib=1.011 H=7.802 pr=0 S1=False
+  AES-OFB k=packageKey iv=hdr8_16 body@0x28                  zlib=1.011 H=7.808 pr=0 S1=False
+  AES-CTR k=packageKey iv=hdr16_16 body@0x28                 zlib=1.011 H=7.784 pr=0 S1=False
+  AES-CBC k=packageKey iv=hdr16_16 body@0x28                 zlib=1.011 H=7.797 pr=0 S1=False
+  AES-CFB k=packageKey iv=hdr16_16 body@0x28                 zlib=1.011 H=7.804 pr=0 S1=False
+  AES-OFB k=packageKey iv=hdr16_16 body@0x28                 zlib=1.011 H=7.796 pr=0 S1=False
+
+# reference scores
+  (marker+zeros -> (0.244, 1.6241825709099444, 1, True) )

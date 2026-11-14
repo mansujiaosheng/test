@@ -1,0 +1,18 @@
+{
+  "label": "r4tok_RA_with_F1A3[0:4]_as_OEM",
+  "purpose": "13401 token handshake: RA with F1A3[0:4] as OEM",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "02FD00050000000B0E0000000000000000002D"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B b''",
+  "seq": 4093,
+  "ts": "2026-11-14T11:16:12.270+08:00"
+}

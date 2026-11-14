@@ -1,0 +1,13 @@
+{
+  "label": "r4pfx_ident_only_baseline",
+  "purpose": "13401 prefix probe: ident only baseline",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "02FD000100000000"
+  },
+  "responses": [],
+  "parsed": "0B,0B,RST",
+  "seq": 4095,
+  "ts": "2026-11-14T11:16:20.777+08:00"
+}

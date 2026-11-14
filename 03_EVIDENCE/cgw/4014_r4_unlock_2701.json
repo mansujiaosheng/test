@@ -1,0 +1,33 @@
+{
+  "label": "r4_unlock_2701",
+  "purpose": "request seed",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4422701",
+    "uds": "2701"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E0067016DE144370D9B6721",
+      "len": 14
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "67016DE144370D9B6721",
+      "parsed": "POSITIVE for 0x27 (SecurityAccess) data=016DE144370D9B6721"
+    }
+  ],
+  "elapsed_ms": 384.17,
+  "parsed": "0x1220: POSITIVE for 0x27 (SecurityAccess) data=016DE144370D9B6721",
+  "seq": 4014,
+  "ts": "2026-11-14T11:14:54.426+08:00"
+}

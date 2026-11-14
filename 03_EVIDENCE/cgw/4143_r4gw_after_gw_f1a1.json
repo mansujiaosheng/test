@@ -1,0 +1,18 @@
+{
+  "label": "r4gw_after_gw_f1a1",
+  "purpose": "13401 after gateway F1A1 write attempt",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "0x0001",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B",
+  "seq": 4143,
+  "ts": "2026-11-14T11:17:25.344+08:00"
+}

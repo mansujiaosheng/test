@@ -1,0 +1,13 @@
+{
+  "label": "r4pfx_checksum4_p_ident",
+  "purpose": "13401 prefix probe: checksum4 + ident",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "AAC9F4E302FD000100000000"
+  },
+  "responses": [],
+  "parsed": "0B,0B",
+  "seq": 4102,
+  "ts": "2026-11-14T11:16:23.088+08:00"
+}

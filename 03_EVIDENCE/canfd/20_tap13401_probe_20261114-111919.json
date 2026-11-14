@@ -1,0 +1,38 @@
+{
+  "framing": "raw16",
+  "confidence": "guess",
+  "evidence": [
+    {
+      "label": "passive",
+      "sent": "",
+      "received": "",
+      "elapsed_ms": 56.8,
+      "note": "peer closed"
+    },
+    {
+      "label": "slcan:V",
+      "sent": "",
+      "received": "",
+      "elapsed_ms": 51.7,
+      "note": "peer closed"
+    },
+    {
+      "label": "socketcand:hi",
+      "sent": "",
+      "received": "",
+      "elapsed_ms": 51.3,
+      "note": "peer closed"
+    },
+    {
+      "label": "bare-cr",
+      "sent": "",
+      "received": "",
+      "elapsed_ms": 51.8,
+      "note": "peer closed"
+    }
+  ],
+  "banner": "",
+  "peer_closes": true,
+  "note": "no handshake answered; if the bridge is open this points at bare fixed-size frames, otherwise the bridge is still closed",
+  "elapsed_s": 0.21
+}

@@ -1,0 +1,13 @@
+{
+  "label": "r4_13401_tls_unlocked",
+  "purpose": "13401 TLS probe",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "TLS",
+    "hex": ""
+  },
+  "responses": [],
+  "parsed": "SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)",
+  "seq": 4040,
+  "ts": "2026-11-14T11:15:18.587+08:00"
+}

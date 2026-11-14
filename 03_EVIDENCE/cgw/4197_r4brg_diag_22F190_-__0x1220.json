@@ -1,0 +1,18 @@
+{
+  "label": "r4brg_diag_22F190_->_0x1220",
+  "purpose": "13401 diag-message probe: diag 22F190 -> 0x1220",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "02FD8001000000070E00122022F190"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B",
+  "seq": 4197,
+  "ts": "2026-11-14T11:20:26.209+08:00"
+}

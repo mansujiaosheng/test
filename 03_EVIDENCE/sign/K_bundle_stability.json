@@ -1,0 +1,65 @@
+[
+ {
+  "i": 0,
+  "zip_sha": "2f9b715dd4a6c77f",
+  "vcu_sha": "2f3692767f605ef72fb47e1a779f2dfaeca802b4df1e35d38f8bb66d53ce6ea7",
+  "vcu_first32": "43563656435531006e08e196088e346ab039d342775f4a50bb421930333af73b",
+  "nonce": "Y9+URMx4Yl35DQUp",
+  "ca_sha": "c89cabd1a48d74eb",
+  "client_sha": "f3986cda2c2bb7fd",
+  "manifest": {
+   "cipher": "AES-256-GCM",
+   "format": "CV6-OTA-1",
+   "nonce": "Y9+URMx4Yl35DQUp",
+   "tboxAddress": "0x08000000",
+   "tboxArchitecture": "ARMv7-M Thumb-2 raw",
+   "tboxSha256": "88b09d09edbf2951f7a111a51608e99a1bb28a27e653c169f4bf6ddd8c537229",
+   "tboxSize": 16384,
+   "vcuReferenceSize": 1024,
+   "vcuRollback": 2,
+   "vcuUpdateAddress": "0x08040000"
+  }
+ },
+ {
+  "i": 1,
+  "zip_sha": "b5048f509fe4c4cc",
+  "vcu_sha": "2f3692767f605ef72fb47e1a779f2dfaeca802b4df1e35d38f8bb66d53ce6ea7",
+  "vcu_first32": "43563656435531006e08e196088e346ab039d342775f4a50bb421930333af73b",
+  "nonce": "AnohpCOZhIAxYcaR",
+  "ca_sha": "6459f21084fc215b",
+  "client_sha": "4ba032cf2b0dc361",
+  "manifest": {
+   "cipher": "AES-256-GCM",
+   "format": "CV6-OTA-1",
+   "nonce": "AnohpCOZhIAxYcaR",
+   "tboxAddress": "0x08000000",
+   "tboxArchitecture": "ARMv7-M Thumb-2 raw",
+   "tboxSha256": "88b09d09edbf2951f7a111a51608e99a1bb28a27e653c169f4bf6ddd8c537229",
+   "tboxSize": 16384,
+   "vcuReferenceSize": 1024,
+   "vcuRollback": 2,
+   "vcuUpdateAddress": "0x08040000"
+  }
+ },
+ {
+  "i": 2,
+  "zip_sha": "c54ba4748c538b38",
+  "vcu_sha": "2f3692767f605ef72fb47e1a779f2dfaeca802b4df1e35d38f8bb66d53ce6ea7",
+  "vcu_first32": "43563656435531006e08e196088e346ab039d342775f4a50bb421930333af73b",
+  "nonce": "+3+yq0RlnzVbyRzv",
+  "ca_sha": "0ac4c7dfda8cedb7",
+  "client_sha": "d15ee328157c15f7",
+  "manifest": {
+   "cipher": "AES-256-GCM",
+   "format": "CV6-OTA-1",
+   "nonce": "+3+yq0RlnzVbyRzv",
+   "tboxAddress": "0x08000000",
+   "tboxArchitecture": "ARMv7-M Thumb-2 raw",
+   "tboxSha256": "88b09d09edbf2951f7a111a51608e99a1bb28a27e653c169f4bf6ddd8c537229",
+   "tboxSize": 16384,
+   "vcuReferenceSize": 1024,
+   "vcuRollback": 2,
+   "vcuUpdateAddress": "0x08040000"
+  }
+ }
+]

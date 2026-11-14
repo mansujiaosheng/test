@@ -1,0 +1,18 @@
+{
+  "label": "r4svc_locked_2FF1FF00",
+  "purpose": "service-support probe: IOControl invalid DID/sub",
+  "host": "10.226.193.2:13400",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4422FF1FF00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "7F2F11"
+    }
+  ],
+  "parsed": "7F2F11",
+  "seq": 4056,
+  "ts": "2026-11-14T11:15:45.258+08:00"
+}

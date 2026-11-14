@@ -1,0 +1,16 @@
+{
+  "label": "ridscan_3101p4_0000_0fff_summary",
+  "purpose": "full RID scan 3101p4 on 0x1220 via 0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "3101p4 <rid>"
+  },
+  "parsed": "4096 RIDs, hits(non-7F31)=0, elapsed=4.9s",
+  "distribution": {
+    "7F3133": 4096
+  },
+  "hits": [],
+  "evidence_file": "3667_ridscan_3101p4_0000_0fff.jsonl",
+  "seq": 3668,
+  "ts": "2026-11-14T10:49:14.189+08:00"
+}

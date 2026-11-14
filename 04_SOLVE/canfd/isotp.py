@@ -807,7 +807,12 @@ class IsoTpLink:
             raise IsoTpError("refusing to send an empty payload")
         st = SendStats(nbytes=n, dl=self.dl, started=time.perf_counter())
         t0 = st.started
-        max_sf = MAX_SF_FD if self.dl > 8 else MAX_SF_CLASSIC
+        # A Single Frame must fit *this link's* N_DL, not merely the CAN FD
+        # maximum: on a 16-byte link a 24-byte answer is FF + CFs, even though
+        # the CAN FD standard would also allow it as one 32-byte SF.
+        max_sf_cap = MAX_SF_FD if self.dl > 8 else MAX_SF_CLASSIC
+        max_sf_wire = (self.dl - 2) if self.dl > 8 else (self.dl - 1)
+        max_sf = min(max_sf_cap, max_sf_wire)
         self._last_cf_ts = None
 
         if n <= max_sf:

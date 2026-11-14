@@ -1,0 +1,5 @@
+  HIT assignFirmwareUpdate         200 {"errors":[{"message":"update campaign validation failed"}]}
+  HIT cosignFirmwareUpdate         200 {"errors":[{"message":"update campaign validation failed"}]}
+  HIT signFirmwareUpdate           200 {"errors":[{"message":"update campaign validation failed"}]}
+  HIT vehicleDiagnostics           200 {"data":{"vehicleDiagnostics":{"campaignId":"CAMP-243892C376D4CB2D5F826953","diagnosticEndpoint":"https://tbox
+[*] 166 names, 4 requests, 4 ops

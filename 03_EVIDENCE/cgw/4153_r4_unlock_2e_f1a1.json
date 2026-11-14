@@ -1,0 +1,32 @@
+{
+  "label": "r4_unlock_2e_f1a1",
+  "purpose": "bind ASCII ticket to DID F1A1 (Lead-authorised write)",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4422EF1A16547384C46424A496A7166426B63786A72414C79674141414141427139395746752D3437686765694970784A546A637A396E6A547251",
+    "uds": "2EF1A16547384C46424A496A7166426B63786A72414C79674141414141427139395746752D3437686765694970784A546A637A396E6A547251"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E006EF1A1"
+    }
+  ],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "6EF1A1",
+      "parsed": "POSITIVE for 0x2E (WriteDataByIdentifier) data=F1A1"
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "elapsed_ms": 628.58,
+  "parsed": "POSITIVE for 0x2E (WriteDataByIdentifier) data=F1A1",
+  "seq": 4153,
+  "ts": "2026-11-14T11:19:10.303+08:00"
+}

@@ -1,0 +1,18 @@
+{
+  "label": "r4can_locked_SLCAN_S8+O",
+  "purpose": "13401 CAN-bridge protocol probe: locked SLCAN S8+O",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "53380D4F0D"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B",
+  "seq": 4105,
+  "ts": "2026-11-14T11:16:35.777+08:00"
+}

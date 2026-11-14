@@ -1,0 +1,10 @@
+# firmware reset handler: sp[0:16] zeroed, then hash8(A=sp, B=sp+8, out=sp+0x10)
+  sp+0x00..0x0f = 00000000000000000000000000000000 (strd r3,r3,[sp]; strd r3,r3,[sp,#8])
+  hash8(0,0,C_DEV) = 77be1f61090854c7
+
+# A/B symmetry check (x = A^B^C^..., so hash8(A,B,C) must equal hash8(B,A,C))
+  hash8(A,B,C)= e21faa054c4f8037  hash8(B,A,C)= e21faa054c4f8037
+  equal: True
+
+# BL targets == 0x08000668: []
+# literals pointing to 0x08000668+: []

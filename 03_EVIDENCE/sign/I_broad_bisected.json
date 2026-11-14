@@ -1,0 +1,17 @@
+[
+ {
+  "name": "assignFirmwareUpdate",
+  "status": 200,
+  "resp": "{\"errors\":[{\"message\":\"update campaign validation failed\"}]}"
+ },
+ {
+  "name": "countersignFirmwareUpdate",
+  "status": 200,
+  "resp": "{\"errors\":[{\"message\":\"update campaign validation failed\"}]}"
+ },
+ {
+  "name": "signFirmwareUpdate",
+  "status": 200,
+  "resp": "{\"errors\":[{\"message\":\"update campaign validation failed\"}]}"
+ }
+]

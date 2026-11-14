@@ -1,0 +1,18 @@
+{
+  "label": "r4held_slcan",
+  "purpose": "13401 held-open across unlock",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "53380D4F0D7437453030323130303330303030303030303030300D"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B",
+  "seq": 4187,
+  "ts": "2026-11-14T11:20:13.494+08:00"
+}

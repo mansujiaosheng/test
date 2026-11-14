@@ -1,0 +1,39 @@
+=== T-BOX firmware verification ===
+sha256(image) = 88b09d09edbf2951f7a111a51608e99a1bb28a27e653c169f4bf6ddd8c537229
+sha256 matches manifest.tboxSha256 88b09d09...: True
+
+--- [C1] tables ---
+AES sbox      @0x080008a0: 637c777b
+AES inv sbox  @0x08000798: 52096ad5
+SHA256 IV     @0x08000778: 67e6096a
+SHA256 K[0]   @0x080009a0: 982f8a42
+RFC3394 AIV   @0x08000898: a6a6a6a6a6a6a6a6
+KDF label     @0x08000aa0: b'CV6-TBOX-KEK'
+UID16         @0x08002000: d31ad1cae3ffe1aedbf00f0d7fec3396
+C8            @0x08002020: e224dd2bb23a15b8
+wrapped40     @0x08002040: 38c0627019a7a0e6d76af7acc3a273c5b0584a31c280eb2b8e7f70acfb1ac91948a15cbd48856509
+
+--- [C2] KDF / KEK derivation (pure python) ---
+sha256(fw[0:0x2000]) = 138142b18d663291fc3febb15e004f57f76f10dee82f158a30b42ad7468ba085
+derived KEK          = 0fd6e171919fdc1a6afcee7f81a6599c67a136fc0f57e8f210fb2acf9c92b318
+KEK == emulator frame: True
+
+--- [C3] RFC3394 unwrap via cryptography ---
+unwrap(KEK, wrapped40) = 693d2ab06a2fe1a6e1ada23ac8bbb08ec3a8ffbbc90015ddeff28e721c9f693d (32 B)
+re-wrap round-trips    : True
+
+--- [C4] Unicorn emulation of measure() ---
+measure() return value : 1 (1 = unwrap integrity check PASSED)
+out[0:32] from emulator: 693d2ab06a2fe1a6e1ada23ac8bbb08ec3a8ffbbc90015ddeff28e721c9f693d
+out[0:32] == unwrap PT : True
+frame sp+0x20 (derived): 0fd6e171919fdc1a6afcee7f81a6599c67a136fc0f57e8f210fb2acf9c92b318
+
+--- [C5] Reset path: unwrap output never read ---
+halt: {'halt': ('wfi', 134219636)}  instructions: 1485998
+unique PCs reading 0x2000ffd8..0x2000ffff: ['0x80001ec']
+  (0x080001ec = memcpy inner loop only -> no semantic consumer)
+Reset out buffer contents: 693d2ab06a2fe1a6e1ada23ac8bbb08ec3a8ffbbc90015ddeff28e721c9f693d0000000000000000
+
+--- [C6] hash8 (0x08000668) primitive ---
+hash8(1122334455667788, deadbeefcafebabe) = e21faa054c4f8037
+matches emulator e21faa054c4f8037      : True

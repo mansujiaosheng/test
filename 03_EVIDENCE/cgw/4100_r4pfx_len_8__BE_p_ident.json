@@ -1,0 +1,13 @@
+{
+  "label": "r4pfx_len(8)_BE_p_ident",
+  "purpose": "13401 prefix probe: len(8) BE + ident",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "0000000802FD000100000000"
+  },
+  "responses": [],
+  "parsed": "0B,0B",
+  "seq": 4100,
+  "ts": "2026-11-14T11:16:22.475+08:00"
+}

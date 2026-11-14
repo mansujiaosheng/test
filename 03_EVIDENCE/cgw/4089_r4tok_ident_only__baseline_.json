@@ -1,0 +1,18 @@
+{
+  "label": "r4tok_ident_only_(baseline)",
+  "purpose": "13401 token handshake: ident only (baseline)",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "02FD000100000000"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B b''",
+  "seq": 4089,
+  "ts": "2026-11-14T11:16:12.052+08:00"
+}

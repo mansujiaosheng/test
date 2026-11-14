@@ -1,0 +1,28 @@
+[*] firmware        D:\qwb\work\bundle2\x\vcu-reference.bin (1024 B)
+[*] sha256          2f3692767f605ef72fb47e1a779f2dfaeca802b4df1e35d38f8bb66d53ce6ea7
+[*] target VIN      CV622697F82A936A1
+[*] campaign        CAMP-243892C376D4CB2D5F826953
+[*] rollback        2   (manifest vcuRollback=2)
+
+[signFirmwareUpdate] http=200
+  {"errors":[{"message":"update campaign validation failed"}]}
+  -> dispatched; blocked by the server-side update-campaign gate
+
+[assignFirmwareUpdate] http=200
+  {"errors":[{"message":"update campaign validation failed"}]}
+  -> dispatched; blocked by the server-side update-campaign gate
+
+[countersignFirmwareUpdate] http=200
+  {"errors":[{"message":"update campaign validation failed"}]}
+  -> dispatched; blocked by the server-side update-campaign gate
+
+[cosignFirmwareUpdate] http=200
+  {"errors":[{"message":"update campaign validation failed"}]}
+  -> dispatched; blocked by the server-side update-campaign gate
+
+[control] vehicleDiagnostics + real VIN
+  {"data":{"vehicleDiagnostics":{"campaignId":"CAMP-243892C376D4CB2D5F826953","diagnosticEndpoint":"https://tbox:8443","firmwareCredential":"5e7f07b4a81153ecd5868
+[control] signFirmwareUpdate + no variables
+  {"errors":[{"message":"vehicle campaign not found"}]}
+[control] signFirmwareUpdate + foreign VIN
+  {"errors":[{"message":"vehicle campaign not found"}]}

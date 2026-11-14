@@ -1,0 +1,9 @@
+# header bytes 0x08..0x27: 6e08e196088e346ab039d342775f4a50bb421930333af73bdd4b39df916ca101
+  bytes[0] as UUID: 6e08e196-088e-346a-b039-d342775f4a50 version=3 variant=specified in RFC 4122
+  bytes[1] as UUID: b039d342-775f-4a50-bb42-1930333af73b version=4 variant=specified in RFC 4122
+  bytes[2] as UUID: bb421930-333a-f73b-dd4b-39df916ca101 version=None variant=reserved for Microsoft compatibility
+  uuid3/uuid5 matches: False
+  field 0x08: u64LE=0x6a348e0896e1086e u64BE=0x6e08e196088e346a
+  field 0x10: u64LE=0x504a5f7742d339b0 u64BE=0xb039d342775f4a50
+  field 0x18: u64LE=0x3bf73a33301942bb u64BE=0xbb421930333af73b
+  field 0x20: u64LE=0x01a16c91df394bdd u64BE=0xdd4b39df916ca101 LE-ns->1973-09-21T21:20:39.059475

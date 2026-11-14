@@ -1,0 +1,33 @@
+{
+  "label": "r4lvl_27_03",
+  "purpose": "requestSeed level sub 0x03 after level-1 unlock",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4422703",
+    "uds": "2703"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F2712",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F2712",
+      "parsed": "NEGATIVE service=0x27 NRC=0x12 (subFunctionNotSupported)"
+    }
+  ],
+  "elapsed_ms": 532.03,
+  "parsed": "0x1220: NEGATIVE service=0x27 NRC=0x12 (subFunctionNotSupported)",
+  "seq": 4161,
+  "ts": "2026-11-14T11:19:25.331+08:00"
+}

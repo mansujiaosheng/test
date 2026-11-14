@@ -231,6 +231,34 @@ class SecocProfile:
                             self.mac_take)
 
     # -- frame ----------------------------------------------------------- #
+    def payload_offset(self) -> tuple:
+        """(byte offset, byte length) of the payload field inside the frame."""
+        off = 0
+        for token in self.frame_order:
+            if token == "payload":
+                plen = self.pad_to - self.mac_len - self.trunc_freshness_bytes
+                return off, plen
+            if token == "mac":
+                off += self.mac_len
+            elif token == "trunc_freshness":
+                off += self.trunc_freshness_bytes
+            else:
+                raise ValueError(f"unknown frame_order token {token!r}")
+        raise ValueError("frame_order has no 'payload' section")
+
+    def payload_from_frame(self, secured: bytes) -> bytes:
+        """Slice the authentic payload out of an observed secured frame.
+
+        This is what makes the cracker usable on a bare capture: the payload
+        field is fully determined by the profile (pad_to, MAC length, truncated
+        freshness length, section order), so no extra knowledge is needed.
+        """
+        off, plen = self.payload_offset()
+        if len(secured) < off + plen:
+            raise ValueError(f"frame too short ({len(secured)} B) for profile "
+                             f"layout {self.frame_order}")
+        return bytes(secured[off:off + plen])
+
     def build(self, payload: bytes, freshness: int) -> bytes:
         """Return the secured PDU padded to `pad_to` bytes."""
         auth = self.authenticator(payload, freshness)
@@ -334,25 +362,37 @@ class FreshnessCounter:
 
 @dataclass
 class Capture:
-    """One observed secured frame plus the facts we know about it."""
-    payload: bytes
+    """One observed secured frame plus the facts we know about it.
+
+    `payload` may be None: the cracker then slices the payload field out of the
+    frame using each candidate profile's own layout, which is what you have
+    when all you recorded was the bus.
+    """
     freshness: int
     secured: bytes
+    payload: Optional[bytes] = None
     can_id: Optional[int] = None
     note: str = ""
 
     @staticmethod
     def from_dict(d: dict) -> "Capture":
-        return Capture(payload=bytes.fromhex(d["payload"]),
-                       freshness=int(str(d["freshness"]), 0),
+        pay = d.get("payload")
+        return Capture(freshness=int(str(d["freshness"]), 0),
                        secured=bytes.fromhex(d["secured"]),
+                       payload=bytes.fromhex(pay) if pay else None,
                        can_id=(int(str(d["can_id"]), 0) if d.get("can_id") else None),
                        note=d.get("note", ""))
 
+    @staticmethod
+    def from_frame(secured: bytes, freshness: int,
+                   can_id: Optional[int] = None) -> "Capture":
+        return Capture(freshness=freshness, secured=bytes(secured),
+                       payload=None, can_id=can_id)
+
     def as_dict(self) -> dict:
-        return {"payload": self.payload.hex(), "freshness": self.freshness,
-                "secured": self.secured.hex(), "can_id": self.can_id,
-                "note": self.note}
+        return {"payload": self.payload.hex() if self.payload is not None else None,
+                "freshness": self.freshness, "secured": self.secured.hex(),
+                "can_id": self.can_id, "note": self.note}
 
 
 @dataclass
@@ -426,13 +466,31 @@ class CrackResult:
     profile: SecocProfile
     frames_checked: int
     elapsed: float
+    payload_len: Optional[int] = None
 
     def as_dict(self) -> dict:
         d = self.profile.as_dict()
+        d["payload_len"] = self.payload_len
         d["frames_checked"] = self.frames_checked
         d["elapsed_s"] = round(self.elapsed, 3)
         d["describe"] = self.profile.describe()
         return d
+
+
+def resolve_payload(cap: Capture, prof: SecocProfile,
+                    length: Optional[int]) -> bytes:
+    """The authentic payload for `cap` under `prof`.
+
+    With `length` given the payload field is sliced to that many bytes -- this
+    is required because SecOC authenticates the *unpadded* I-PDU and only then
+    fills the CAN FD frame, so the filler bytes are not part of the MAC input.
+    """
+    if cap.payload is not None:
+        return cap.payload
+    off, plen = prof.payload_offset()
+    if length is None or length < 1 or length > plen:
+        raise ValueError(f"payload length {length} outside 1..{plen}")
+    return bytes(cap.secured[off:off + length])
 
 
 def crack(captures: Sequence[Capture], key: bytes,
@@ -449,23 +507,39 @@ def crack(captures: Sequence[Capture], key: bytes,
     hits: list = []
     t0 = time.perf_counter()
     n = 0
+    # When no capture carries a payload we also have to recover its *length*,
+    # because the MAC covers the unpadded I-PDU while the frame carries filler.
+    free_len = all(c.payload is None for c in captures)
     for prof in space.profiles(key, label="candidate"):
         n += 1
         if progress_every and n % progress_every == 0:
             print(f"    ... {n} profiles, {len(hits)} hit(s), "
                   f"{time.perf_counter() - t0:.1f}s", flush=True)
-        ok = True
-        for cap in captures:
-            if not prof.matches(cap.secured, cap.payload, cap.freshness):
-                ok = False
+        try:
+            plen = prof.payload_offset()[1]
+        except ValueError:
+            continue
+        lengths = range(plen, 0, -1) if free_len else [None]
+        for length in lengths:
+            ok = True
+            for cap in captures:
+                try:
+                    payload = resolve_payload(cap, prof, length)
+                except ValueError:
+                    ok = False
+                    break
+                if not prof.matches(cap.secured, payload, cap.freshness):
+                    ok = False
+                    break
+            if ok:
+                hits.append(CrackResult(prof, len(captures),
+                                        time.perf_counter() - t0,
+                                        payload_len=length))
+                if verbose:
+                    print(f"    HIT {prof.describe()} payload_len={length}")
                 break
-        if ok:
-            hits.append(CrackResult(prof, len(captures),
-                                    time.perf_counter() - t0))
-            if verbose:
-                print(f"    HIT {prof.describe()}")
-            if len(hits) >= max_hits:
-                break
+        if len(hits) >= max_hits:
+            break
     return hits
 
 
@@ -724,8 +798,65 @@ def _t_wide_grid(res: _Res) -> None:
                   str(got.mac_bits))
 
 
+def strip_trailing_pad(payload: bytes, pad_byte: int = 0xCC) -> bytes:
+    """Trim trailing filler bytes.  Informational only: a real PDU may end in 0xCC."""
+    end = len(payload)
+    while end and payload[end - 1] == pad_byte:
+        end -= 1
+    return payload[:end]
+
+
+def _t_crack_from_frames(res: _Res) -> None:
+    print("\n[7] crack() from bare frames (payload unknown -- the real-target path)")
+    hidden = SecocProfile(
+        key=bytes.fromhex("8899aabbccddeeff0011223344556677"),
+        data_id=0x0A1B, data_id_bytes=2, data_id_endian="big",
+        freshness_bytes=8, freshness_endian="big",
+        mac_bits=24, mac_take="msb",
+        mac_order=("dataid", "payload", "freshness"),
+        frame_order=("payload", "mac"),
+        pad_byte=0xCC, pad_to=16)
+    pdu = bytes.fromhex("0322f1900a0b0c0d0e0f")  # 10 B of real content
+    caps = [Capture.from_frame(hidden.build(pdu, 0x300 + i), 0x300 + i,
+                               can_id=0x7E0) for i in range(3)]
+    res.check("captures carry no payload", all(c.payload is None for c in caps),
+              "payload=None")
+    space = SearchSpace(
+        data_ids=[0x0A1B, 0x0A1C], data_id_bytes=(2,),
+        data_id_endians=("big",), freshness_bytes=(8,),
+        freshness_endians=("big",), mac_bits=(24, 32), mac_takes=("msb",),
+        mac_orders=(("dataid", "payload", "freshness"),
+                    ("payload", "dataid", "freshness")),
+        frame_orders=(("payload", "mac"), ("mac", "payload")),
+        trunc_freshness_bytes=(0,), pad_bytes=(0xCC, 0x00), pad_to=(16,))
+    print(f"  grid size: {space.size()} profiles")
+    hits = crack(caps, hidden.key, space)
+    res.check("profile recovered from frames alone", len(hits) == 1,
+              f"{len(hits)} hit(s)")
+    if hits:
+        got = hits[0].profile
+        res.check("recovered DataID", got.data_id == hidden.data_id,
+                  f"0x{got.data_id:04X}")
+        res.check("recovered MAC bits", got.mac_bits == hidden.mac_bits,
+                  str(got.mac_bits))
+        res.check("recovered frame order", got.frame_order == hidden.frame_order,
+                  "|".join(got.frame_order))
+        field = got.payload_from_frame(caps[0].secured)
+        res.check("payload field sliced back out of the frame",
+                  field[:len(pdu)] == pdu and len(field) == 13,
+                  f"{len(field)} B: {field.hex()}")
+        res.check("recovered authentic payload length is the unpadded PDU",
+                  hits[0].payload_len == len(pdu),
+                  f"{hits[0].payload_len} B (field is 13 B)")
+        rec = resolve_payload(caps[0], got, hits[0].payload_len)
+        res.check("recovered payload equals the original PDU", rec == pdu,
+                  rec.hex())
+        res.check("rebuilt frame is byte-identical",
+                  got.build(rec, 0x300) == caps[0].secured, "16 B")
+        res.check("strip_trailing_pad is a no-op on the true PDU",
+                  strip_trailing_pad(rec) == pdu, rec.hex())
 def _t_freshness_counter(res: _Res) -> None:
-    print("\n[7] freshness counter")
+    print("\n[8] freshness counter")
     c = FreshnessCounter(0xFFFFFFFFFFFFFFFE)
     res.check("peek does not advance", c.peek() == 0xFFFFFFFFFFFFFFFE)
     c.next()
@@ -747,6 +878,7 @@ def self_test(evidence_dir: Optional[str] = None) -> int:
     _t_orders(res)
     _t_crack(res)
     _t_wide_grid(res)
+    _t_crack_from_frames(res)
     _t_freshness_counter(res)
     passed = sum(1 for r in res.rows if r["ok"])
     total = len(res.rows)

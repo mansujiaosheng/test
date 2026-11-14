@@ -1,0 +1,5 @@
+# header (32B): 6e08e196088e346ab039d342775f4a50bb421930333af73bdd4b39df916ca101
+
+MATCH FOUND: False (False = header is not a standard checksum/hash/len of these ranges)
+
+(above lists every occurrence in the whole file, not just header)

@@ -1,0 +1,18 @@
+{
+  "label": "r4svc_locked_2C01F190",
+  "purpose": "service-support probe: DynamicallyDefineDataIdentifier malformed",
+  "host": "10.226.193.2:13400",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4422C01F190"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "7F2C11"
+    }
+  ],
+  "parsed": "7F2C11",
+  "seq": 4066,
+  "ts": "2026-11-14T11:15:50.121+08:00"
+}

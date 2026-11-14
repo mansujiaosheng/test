@@ -1,0 +1,18 @@
+{
+  "label": "r4svc_unlocked_117F",
+  "purpose": "service-support probe: ECUReset invalid sub",
+  "host": "10.226.193.2:13400",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E442117F"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "7F1111"
+    }
+  ],
+  "parsed": "7F1111",
+  "seq": 4080,
+  "ts": "2026-11-14T11:15:57.039+08:00"
+}

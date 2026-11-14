@@ -1,0 +1,92 @@
+# disasm 0x08000660-0x08000700 (hash8 + get_u32)
+08000660  lsrs     r0, r3, #2
+08000662  lsrs     r0, r0, #0x20
+08000664  ldr      r0, [r0]
+08000666  bx       lr
+08000668  push.w   {r3, r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0800066c  ldr.w    fp, [pc, #0x7c]
+08000670  ldr.w    r8, [pc, #0x7c]
+08000674  ldr.w    sl, [pc, #0x7c]
+08000678  mov      r6, r0
+0800067a  movs     r4, #0
+0800067c  mov.w    r7, #-0x5a5a5a5b
+08000680  add.w    r0, r6, r4, lsl #2
+08000684  bl       #0x8000664
+08000688  lsl.w    sb, r4, #2
+0800068c  mov      r3, r0
+0800068e  add.w    r0, r1, sb
+08000692  bl       #0x8000664
+08000696  mov      r5, r0
+08000698  add.w    r0, fp, sb
+0800069c  bl       #0x8000664
+080006a0  eors     r3, r5
+080006a2  eors     r3, r0
+080006a4  mla      r0, r4, r8, r8
+080006a8  eors     r3, r0
+080006aa  eor.w    r3, r3, r3, lsr #16
+080006ae  ldr      r0, [pc, #0x48]
+080006b0  mul      r3, sl, r3
+080006b4  eor.w    r3, r3, r3, lsr #15
+080006b8  muls     r3, r0, r3
+080006ba  add.w    ip, r4, #1
+080006be  eor.w    r3, r3, r3, lsr #16
+080006c2  mla      r4, r4, r7, r7
+080006c6  add      r4, r3
+080006c8  lsrs     r3, r4, #8
+080006ca  strb     r4, [r2]
+080006cc  strb     r3, [r2, #1]
+080006ce  cmp.w    ip, #2
+080006d2  lsr.w    r3, r4, #0x10
+080006d6  lsr.w    r4, r4, #0x18
+080006da  strb     r4, [r2, #3]
+080006dc  strb     r3, [r2, #2]
+080006de  mov.w    r4, #1
+080006e2  add.w    r2, r2, #4
+080006e6  bne      #0x8000680
+080006e8  pop.w    {r3, r4, r5, r6, r7, r8, sb, sl, fp, pc}
+080006ec  movs     r0, #0x20
+080006ee  lsrs     r0, r0, #0x20
+080006f0  ldrb     r1, [r7, #6]
+080006f2  ldr      r6, [sp, #0xdc]
+080006f4  adds     r5, #0x2d
+080006f6  ldrb     r3, [r5, #0x1f]
+080006f8  adr      r6, #0x22c
+080006fa  strh     r4, [r5, #0x22]
+080006fc  push     {r4, lr}
+080006fe  sub      sp, #0x80
+
+# all 4-byte words that look like flash pointers (0x08000000-0x08004000)
+  literal@0x0004 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0008 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x000c -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0010 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0014 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0018 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x001c -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0020 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0024 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0028 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x002c -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0030 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0034 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0038 -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x003c -> 0x08000755 (data[0x0755]=b58fb0002306a8cd)
+  literal@0x0160 -> 0x080009a0 (data[0x09a0]=982f8a4291443771)
+  literal@0x0188 -> 0x080008a0 (data[0x08a0]=637c777bf26b6fc5)
+  literal@0x02d8 -> 0x08000778 (data[0x0778]=67e6096a85ae67bb)
+  literal@0x065c -> 0x08000798 (data[0x0798]=52096ad53036a538)
+  literal@0x0660 -> 0x08000898 (data[0x0898]=a6a6a6a6a6a6a6a6)
+  literal@0x06ec -> 0x08002020 (data[0x2020]=e224dd2bb23a15b8)
+  literal@0x0748 -> 0x08000aa0 (data[0x0aa0]=4356362d54424f58)
+  literal@0x074c -> 0x08002000 (data[0x2000]=d31ad1cae3ffe1ae)
+  literal@0x0750 -> 0x08002040 (data[0x2040]=38c0627019a7a0e6)
+
+# 8-byte constants in the image: bytes that are not 00/ff, in data region
+  0x2000: d31ad1cae3ffe1ae  (known)
+  0x2008: dbf00f0d7fec3396  (known)
+  0x2020: e224dd2bb23a15b8  (known)
+  0x2040: 38c0627019a7a0e6  (known)
+  0x2048: d76af7acc3a273c5  (known)
+  0x2050: b0584a31c280eb2b  (known)
+  0x2058: 8e7f70acfb1ac919  (known)
+  0x2060: 48a15cbd48856509  (known)

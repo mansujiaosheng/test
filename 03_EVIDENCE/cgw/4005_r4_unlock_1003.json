@@ -1,0 +1,33 @@
+{
+  "label": "r4_unlock_1003",
+  "purpose": "extended session",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4421003",
+    "uds": "1003"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E005003",
+      "len": 6
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "5003",
+      "parsed": "POSITIVE for 0x10 (DiagnosticSessionControl) data=03"
+    }
+  ],
+  "elapsed_ms": 389.48,
+  "parsed": "0x1220: POSITIVE for 0x10 (DiagnosticSessionControl) data=03",
+  "seq": 4005,
+  "ts": "2026-11-14T11:13:24.951+08:00"
+}

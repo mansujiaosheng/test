@@ -1,0 +1,9 @@
+# header(0x08..0x27) = 6e08e196088e346ab039d342775f4a50bb421930333af73bdd4b39df916ca101
+# header(0x08..0x1f) = 6e08e196088e346ab039d342775f4a50bb421930333af73b
+
+(no MATCH lines above = header != hash of these inputs)
+
+hdr as 4 u64 BE: ['0x6e08e196088e346a', '0xb039d342775f4a50', '0xbb421930333af73b', '0xdd4b39df916ca101']
+hdr as 4 u64 LE: ['0x6a348e0896e1086e', '0x504a5f7742d339b0', '0x3bf73a33301942bb', '0x1a16c91df394bdd']
+
+(no MT19937 MATCH = body is not python-random(header-seed))

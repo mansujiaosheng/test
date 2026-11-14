@@ -1,0 +1,20 @@
+{
+  "label": "lascan_22f190_0000_ffff_summary",
+  "purpose": "full LA scan with probe 22F190",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "22F190"
+  },
+  "parsed": "65536 LAs, non-baseline=1, baseline=('0x1000', '7F2231'), elapsed=104.9s",
+  "baseline": "('0x1000', '7F2231')",
+  "hits": [
+    {
+      "la": "0x1000",
+      "src": "0x1000",
+      "resp": "62F1904356363232363937463832413933364131"
+    }
+  ],
+  "evidence_file": "3909_lascan_22f190_0000_ffff.jsonl",
+  "seq": 3910,
+  "ts": "2026-11-14T10:54:03.342+08:00"
+}

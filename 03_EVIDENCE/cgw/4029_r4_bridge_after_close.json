@@ -1,0 +1,18 @@
+{
+  "label": "r4_bridge_after_close",
+  "purpose": "13401 probe while unlock held",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "0x0001",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B",
+  "seq": 4029,
+  "ts": "2026-11-14T11:15:00.361+08:00"
+}

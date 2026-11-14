@@ -1,0 +1,18 @@
+{
+  "label": "r4can_locked_socketcand_hello",
+  "purpose": "13401 CAN-bridge protocol probe: locked socketcand hello",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "3C2068656C6C6F203E0A"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": "436F6E6E656374696F6E52657365744572726F72"
+    }
+  ],
+  "parsed": "20B",
+  "seq": 4107,
+  "ts": "2026-11-14T11:16:35.883+08:00"
+}

@@ -1,0 +1,2 @@
+# 8-byte windows: 128
+# hits: 0 (0 = no seed->key relation under hash8)

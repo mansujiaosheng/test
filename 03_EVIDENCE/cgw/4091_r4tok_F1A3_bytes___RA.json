@@ -1,0 +1,18 @@
+{
+  "label": "r4tok_F1A3_bytes_+_RA",
+  "purpose": "13401 token handshake: F1A3 bytes + RA",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "0000002DAAC9F4E302FD0005000000070E000000000000"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B b''",
+  "seq": 4091,
+  "ts": "2026-11-14T11:16:12.160+08:00"
+}

@@ -1,0 +1,59 @@
+# disasm 0x08000750-0x08000778 (reset handler)
+08000750  movs     r0, #0x40
+08000752  lsrs     r0, r0, #0x20
+08000754  push     {lr}
+08000756  sub      sp, #0x3c
+08000758  movs     r3, #0
+0800075a  add      r0, sp, #0x18
+0800075c  strd     r3, r3, [sp]
+08000760  strd     r3, r3, [sp, #8]
+08000764  bl       #0x80006fc
+08000768  cbz      r0, #0x8000774
+0800076a  add      r2, sp, #0x10
+0800076c  add      r1, sp, #8
+0800076e  mov      r0, sp
+08000770  bl       #0x8000668
+08000774  wfi      
+08000776  b        #0x8000774
+
+# disasm measure() 0x080006fc-0x0800074a
+080006fc  push     {r4, lr}
+080006fe  sub      sp, #0x80
+08000700  mov      r4, r0
+08000702  add      r2, sp, #4
+08000704  mov.w    r1, #0x2000
+08000708  mov.w    r0, #0x8000000
+0800070c  bl       #0x8000204
+08000710  add      r0, sp, #0x44
+08000712  ldr      r1, [pc, #0x34]
+08000714  movs     r2, #0xc
+08000716  bl       #0x80001e2
+0800071a  add      r0, sp, #0x50
+0800071c  ldr      r1, [pc, #0x2c]
+0800071e  movs     r2, #0x10
+08000720  bl       #0x80001e2
+08000724  add      r1, sp, #4
+08000726  add      r0, sp, #0x60
+08000728  movs     r2, #0x20
+0800072a  bl       #0x80001e2
+0800072e  add      r2, sp, #0x24
+08000730  add      r0, sp, #0x44
+08000732  movs     r1, #0x3c
+08000734  bl       #0x8000204
+08000738  ldr      r1, [pc, #0x14]
+0800073a  mov      r3, r4
+0800073c  movs     r2, #0x28
+0800073e  add      r0, sp, #0x24
+08000740  bl       #0x80002dc
+08000744  add      sp, #0x80
+08000746  pop      {r4, pc}
+08000748  lsrs     r0, r4, #0xa
+
+# literal pool at 0x6ec-0x6fc and 0x748-0x754
+  0x06ec: 20200008 = 0x08002020
+  0x06f0: b979379e = 0x9e3779b9
+  0x06f4: 2d35eb7f = 0x7feb352d
+  0x06f8: 8ba66c84 = 0x846ca68b
+  0x0748: a00a0008 = 0x08000aa0
+  0x074c: 00200008 = 0x08002000
+  0x0750: 40200008 = 0x08002040

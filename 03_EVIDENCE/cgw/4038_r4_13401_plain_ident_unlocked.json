@@ -1,0 +1,18 @@
+{
+  "label": "r4_13401_plain_ident_unlocked",
+  "purpose": "13401 plain probe",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "02FD000100000000"
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": ""
+    }
+  ],
+  "parsed": "0B",
+  "seq": 4038,
+  "ts": "2026-11-14T11:15:18.477+08:00"
+}

@@ -1,0 +1,80 @@
+# file work/bundle2/x/vcu-reference.bin len=1024
+
+## 1. printable / padding runs (>=4)
+  0x0000 len=  7 b'CV6VCU1'
+  0x0013 len=  5 b'Bw_JP'
+  0x00e4 len=  6 b"M@!_}'"
+  0x0159 len=  4 b'$9]q'
+  0x01a9 len=  4 b'(^Mv'
+  0x01e6 len=  4 b'(g<%'
+  0x01fd len=  4 b'WvQS'
+  0x02ba len=  4 b'>b1i'
+  0x02cb len=  4 b'idq '
+  0x02f5 len=  4 b':tQ\\'
+  0x0300 len= 50 b'CALIBRATION: production steering and torque limits'
+  0x036a len=  4 b';!?='
+  0x0399 len=  4 b'/$>*'
+  zero/ff runs:
+   none
+
+## 2. entropy profile
+  window 16: 3.62 3.88 3.88 3.75 4.00 4.00 4.00 3.88 3.88 4.00 4.00 3.75 3.88 4.00 3.88 3.88 4.00 4.00 4.00 3.88 4.00 3.88 4.00 4.00 3.75 4.00 4.00 4.00 3.88 4.00 3.75 3.88 4.00 4.00 3.88 4.00 3.88 4.00 4.00 3.88 3.88 3.75 3.88 3.88 4.00 3.88 3.88 4.00 3.75 3.50 3.58 4.00 3.88 3.88 3.88 4.00 4.00 3.88 3.88 3.88 4.00 4.00 4.00 3.88
+  window 32: 4.75 4.75 5.00 4.79 4.79 4.75 4.88 4.81 4.94 4.88 4.88 5.00 4.75 5.00 4.75 4.81 5.00 4.88 4.88 4.81 4.66 4.88 4.88 4.88 4.44 4.73 4.79 4.88 4.88 4.81 5.00 4.88
+  window 64: 5.69 5.74 5.66 5.66 5.83 5.77 5.66 5.72 5.84 5.81 5.60 5.78 5.08 5.74 5.80 5.74
+  whole-file entropy = 7.7897 (n=1024)
+  chi-square vs uniform256 = 287.0 (df=255; uniform expectation ~255±22.6)
+
+## 3. autocorrelation: count(C[i]==C[i+s]) vs random expectation (n-s)/256
+  s=   1: eq=   3 exp=   4.00 ratio=0.75
+  s=   2: eq=   6 exp=   3.99 ratio=1.50
+  s=   4: eq=   7 exp=   3.98 ratio=1.76
+  s=   8: eq=   7 exp=   3.97 ratio=1.76
+  s=  16: eq=   7 exp=   3.94 ratio=1.78
+  s=  32: eq=   6 exp=   3.88 ratio=1.55
+  s=  64: eq=   5 exp=   3.75 ratio=1.33
+  s= 128: eq=   0 exp=   3.50 ratio=0.00
+  s= 256: eq=   2 exp=   3.00 ratio=0.67
+  s= 512: eq=   2 exp=   2.00 ratio=1.00
+  s=1023: eq=   0 exp=   0.00 ratio=0.00
+
+## 4. lane split (2 x 512)
+  entropy a=7.522 b=7.565
+  a^b entropy=7.555 printable_runs=[(35, 4, b"KL'i"), (169, 5, b'=bH&d'), (364, 4, b'C]tP'), (482, 4, b'5"kP')]
+  byte-equal across halves: 2/512 (random exp ~2.0)
+
+## 5. header field interpretations
+  hdr hex (0x08..0x27, 32B): 6e08e196088e346ab039d342775f4a50bb421930333af73bdd4b39df916ca101
+  lead-quoted 24B (0x08..0x1f): 6e08e196088e346ab039d342775f4a50bb421930333af73b
+  as 4 x u64 LE: ['0x6a348e0896e1086e', '0x504a5f7742d339b0', '0x3bf73a33301942bb', '0x1a16c91df394bdd']
+  as 4 x u64 BE: ['0x6e08e196088e346a', '0xb039d342775f4a50', '0xbb421930333af73b', '0xdd4b39df916ca101']
+  as 8 x u32 LE: ['0x96e1086e', '0x6a348e08', '0x42d339b0', '0x504a5f77', '0x301942bb', '0x3bf73a33', '0xdf394bdd', '0x1a16c91']
+  as 8 x u32 BE: ['0x6e08e196', '0x88e346a', '0xb039d342', '0x775f4a50', '0xbb421930', '0x333af73b', '0xdd4b39df', '0x916ca101']
+
+## 6. header vs hashes of body ranges
+  (no MATCH lines above = header is not a plain hash of those ranges)
+
+## 7. known-plaintext keystream at 0x300
+  CALIBRATION at 0x300
+  keystream = C ^ P = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (must be all-zero if region is plaintext)
+  bytes after string: a7541b233d9dcfa8c3fa5b594a150308
+
+## 8. 8-byte / 16-byte record hypotheses
+  start=0x0 rec=8B -> 128 records
+  start=0x8 rec=8B -> 127 records
+  start=0x20 rec=8B -> 124 records
+  start=0x28 rec=8B -> 123 records
+  start=0x0 rec=16B -> 64 records
+  start=0x20 rec=16B -> 62 records
+  start=0x28 rec=24B -> 41 records
+  start=0x0 rec=32B -> 32 records
+  start=0x20 rec=32B -> 31 records
+
+## 9. 16-byte block XOR relationships
+Traceback (most recent call last):
+  File "D:\qwb\04_SOLVE\vcuimg\analyze_layout.py", line 150, in <module>
+    main()
+    ~~~~^^
+  File "D:\qwb\04_SOLVE\vcuimg\analyze_layout.py", line 145, in main
+    print(f"  block[{i}]^block[{i}+{s}] entropy mean={sum(ent(x) for x in diffs)/len(diffs):.3f} "
+                     ^
+NameError: name 'i' is not defined

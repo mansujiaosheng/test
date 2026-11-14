@@ -1,0 +1,45 @@
+# 1) transforms
+identity                               zlib=1.011 entropy=7.790 printable>=8=1  <-- STRUCTURE?
+      printable @0x300 len=50 b'CALIBRATION: production steering and torque limits'
+xor 0xFF                               zlib=1.011 entropy=7.790 printable>=8=0
+bit reverse                            zlib=1.011 entropy=7.790 printable>=8=0
+nibble swap                            zlib=1.011 entropy=7.790 printable>=8=0
+add i mod 256                          zlib=1.011 entropy=7.803 printable>=8=4  <-- STRUCTURE?
+      printable @0x300 len=12 b'C@JF>M;MAFD/'
+      printable @0x30d len=10 b'cd`TdQaUZX'
+      printable @0x318 len=8 b'[[KJVLPH'
+sub i mod 256                          zlib=1.011 entropy=7.812 printable>=8=1  <-- STRUCTURE?
+      printable @0x300 len=14 b'CBNLFWG[QXXE,}'
+xor i                                  zlib=1.011 entropy=7.802 printable>=8=2  <-- STRUCTURE?
+      printable @0x2ff len=27 b'aC@NJFWGSAFD1,}|`tdqg}zx7km'
+      printable @0x33c len=8 b'gdt*CIv<'
+xor i>>1                               zlib=1.011 entropy=7.788 printable>=8=0
+xor 4-byte LE counter                  zlib=1.011 entropy=7.835 printable>=8=0
+adjacent xor                           zlib=1.011 entropy=7.801 printable>=8=0
+adjacent sub                           zlib=1.011 entropy=7.810 printable>=8=0
+reverse whole                          zlib=1.011 entropy=7.790 printable>=8=1  <-- STRUCTURE?
+      printable @0xce len=50 b'stimil euqrot dna gnireets noitcudorp :NOITARBILAC'
+xor header32 repeated                  zlib=1.011 entropy=7.802 printable>=8=0
+xor header24 repeated                  zlib=1.011 entropy=7.811 printable>=8=0
+xor block0 each 16B                    zlib=1.011 entropy=7.819 printable>=8=2  <-- STRUCTURE?
+      printable @0x310 len=8 b'\'#U"*:_ '
+      printable @0x320 len=8 b'c7X2c!^r'
+xor next 16B block                     zlib=1.011 entropy=7.794 printable>=8=1  <-- STRUCTURE?
+      printable @0x300 len=13 b"'4/=+=/t:;+_R"
+xor magic repeated                     zlib=1.011 entropy=7.769 printable>=8=1  <-- STRUCTURE?
+      printable @0x30a len=40 b'xlc%Co\'#U"*:_ 0"S31<_gc7X2c!^r2#Sv/<\\i7%'
+
+# 2) LSB planes
+bit0 plane (0/255)                     zlib=0.207 entropy=0.999 printable>=8=0  <-- STRUCTURE?
+bit0 packed                            zlib=1.086 entropy=6.545 printable>=8=0  <-- STRUCTURE?
+bit1 plane (0/255)                     zlib=0.215 entropy=0.998 printable>=8=0  <-- STRUCTURE?
+bit1 packed                            zlib=1.086 entropy=6.607 printable>=8=0  <-- STRUCTURE?
+bit2 plane (0/255)                     zlib=0.208 entropy=0.999 printable>=8=0  <-- STRUCTURE?
+bit2 packed                            zlib=1.086 entropy=6.560 printable>=8=0  <-- STRUCTURE?
+
+# 3) known-plaintext / periodic XOR
+# known plaintext at 0x300, len=50
+  keystream C^P = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  periodic keystream periods <=50: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+
+# 4) header-as-key decrypt attempts are in crypto_matrix.py (separate)

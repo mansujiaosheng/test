@@ -1,8 +1,8 @@
 {
   "tool": "secoc.py",
-  "ts": "2026-11-14T10:28:35+0800",
-  "passed": 42,
-  "total": 42,
+  "ts": "2026-11-14T11:25:34+0800",
+  "passed": 52,
+  "total": 52,
   "ok": true,
   "checks": [
     {
@@ -199,6 +199,56 @@
       "name": "wide grid recovered 32-bit MAC",
       "ok": true,
       "detail": "32"
+    },
+    {
+      "name": "captures carry no payload",
+      "ok": true,
+      "detail": "payload=None"
+    },
+    {
+      "name": "profile recovered from frames alone",
+      "ok": true,
+      "detail": "1 hit(s)"
+    },
+    {
+      "name": "recovered DataID",
+      "ok": true,
+      "detail": "0x0A1B"
+    },
+    {
+      "name": "recovered MAC bits",
+      "ok": true,
+      "detail": "24"
+    },
+    {
+      "name": "recovered frame order",
+      "ok": true,
+      "detail": "payload|mac"
+    },
+    {
+      "name": "payload field sliced back out of the frame",
+      "ok": true,
+      "detail": "13 B: 0322f1900a0b0c0d0e0fcccccc"
+    },
+    {
+      "name": "recovered authentic payload length is the unpadded PDU",
+      "ok": true,
+      "detail": "10 B (field is 13 B)"
+    },
+    {
+      "name": "recovered payload equals the original PDU",
+      "ok": true,
+      "detail": "0322f1900a0b0c0d0e0f"
+    },
+    {
+      "name": "rebuilt frame is byte-identical",
+      "ok": true,
+      "detail": "16 B"
+    },
+    {
+      "name": "strip_trailing_pad is a no-op on the true PDU",
+      "ok": true,
+      "detail": "0322f1900a0b0c0d0e0f"
     },
     {
       "name": "peek does not advance",

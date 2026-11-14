@@ -1,0 +1,32 @@
+{
+  "label": "r4_unlock_2702",
+  "purpose": "send key (Lead-authorised SecurityAccess)",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E442270236469899455147E7",
+    "uds": "270236469899455147E7"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E006702"
+    }
+  ],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "6702",
+      "parsed": "POSITIVE for 0x27 (SecurityAccess) data=02"
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "elapsed_ms": 630.67,
+  "parsed": "POSITIVE for 0x27 (SecurityAccess) data=02",
+  "seq": 4160,
+  "ts": "2026-11-14T11:19:24.797+08:00"
+}

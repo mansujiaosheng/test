@@ -1,0 +1,12 @@
+# 1) real file
+  vcu-reference: ARM_insns=41 push_lr=0 bl=0 ldr_pc=1 wide=0(0.00) cov=0.08 | RV_insns=0 sp_adj=0 sw_ra=0 ret=0 cov=0.00 | vec=[]
+
+# 2) 200 random 1024B controls (same metrics)
+  push_lr      mine=0.000 random[min=0.000 p05=0.000 median=0.000 p95=1.000 max=2.000] pctile=94.5%
+  bl           mine=0.000 random[min=0.000 p05=0.000 median=0.000 p95=2.000 max=3.000] pctile=65.5%
+  ldr_pc       mine=1.000 random[min=0.000 p05=0.000 median=0.000 p95=3.000 max=6.000] pctile=84.0%
+  wide_ratio   mine=0.000 random[min=0.000 p05=0.000 median=0.038 p95=0.200 max=1.000] pctile=44.0%
+  coverage     mine=0.080 random[min=0.000 p05=0.002 median=0.029 p95=0.148 max=0.207] pctile=84.5%
+
+# 3) random control vector-table false positives
+  random controls with any vector-table hit: 0/200; real file: []

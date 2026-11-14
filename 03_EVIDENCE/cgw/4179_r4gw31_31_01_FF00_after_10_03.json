@@ -1,0 +1,18 @@
+{
+  "label": "r4gw31_31_01_FF00_after_10_03",
+  "purpose": "gateway 0x1000 0x31 behaviour",
+  "host": "10.226.193.2:13400",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0010003101FF00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "7F3111"
+    }
+  ],
+  "parsed": "7F3111",
+  "seq": 4179,
+  "ts": "2026-11-14T11:20:02.470+08:00"
+}

@@ -1,0 +1,21 @@
+# firmware work/bundle2/tbox-firmware.dec.bin len=16384
+# 0x2000-0x3fff 里非 00/FF 且不在已知区间的字节: 0 []
+# C 候选数: 2051 (含 C_DEV/zero/ff + 全镜像 8B 对齐窗口 2048)
+
+# L1 24B A|B|out (C=C_DEV), all byte offsets
+  checked=16361 hits=0
+
+# L1b 24B A|B|out (aligned records) × all C candidates
+  checked=4196346 total_hits=0
+
+# L2 16B A|out, B∈{0,C_DEV,A,UID0} × C∈{C_DEV,0,UID0}
+  checked=196428 total_hits=0
+
+# L3 32B A|B|C|out, all byte offsets
+  checked=16353 total_hits=0
+
+# L4 24B out|A|B (C=C_DEV), all byte offsets
+  checked=16361 total_hits=0
+
+# L5 24B A|B|out, out 字节序反转 (C=C_DEV)
+  checked=16361 TOTAL_HITS=0

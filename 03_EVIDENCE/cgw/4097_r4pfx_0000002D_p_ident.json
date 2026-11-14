@@ -1,0 +1,13 @@
+{
+  "label": "r4pfx_0000002D_p_ident",
+  "purpose": "13401 prefix probe: 0000002D + ident",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "0000002D02FD000100000000"
+  },
+  "responses": [],
+  "parsed": "0B,0B",
+  "seq": 4097,
+  "ts": "2026-11-14T11:16:21.551+08:00"
+}

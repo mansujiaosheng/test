@@ -1,7 +1,7 @@
 {
   "tool": "isotp.py",
   "iso": "ISO 15765-2:2016 (DoCAN) for CAN FD",
-  "ts": "2026-11-14T10:22:49+0800",
+  "ts": "2026-11-14T11:25:34+0800",
   "host": "win32",
   "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
   "passed": 71,
@@ -291,12 +291,12 @@
     {
       "name": "STmin 20 ms honoured on every CF gap",
       "ok": true,
-      "detail": "min=20.05 ms max=20.09 median=20.06 ms (12 gaps)"
+      "detail": "min=20.05 ms max=20.16 median=20.07 ms (12 gaps)"
     },
     {
       "name": "STmin 0xF3 (300 us) not misread as ms",
       "ok": true,
-      "detail": "total=0.001s min_gap=314 us (3 gaps)"
+      "detail": "total=0.001s min_gap=315 us (3 gaps)"
     },
     {
       "name": "SN mismatch raises",
@@ -356,7 +356,7 @@
     {
       "name": "stats count frames",
       "ok": true,
-      "detail": "{'nbytes': 2, 'dl': 16, 'frames': 1, 'sf': 1, 'ff': 0, 'cf': 0, 'fc_rx': 0, 'wait_fc': 0, 'bytes_cf': 0, 'elapsed_s': 5.3e-05, 'cf_gap_min_ms': None, 'cf_gap_max_ms': None, 'cf_gap_median_ms': None, 'fc': []}"
+      "detail": "{'nbytes': 2, 'dl': 16, 'frames': 1, 'sf': 1, 'ff': 0, 'cf': 0, 'fc_rx': 0, 'wait_fc': 0, 'bytes_cf': 0, 'elapsed_s': 7.7e-05, 'cf_gap_min_ms': None, 'cf_gap_max_ms': None, 'cf_gap_median_ms': None, 'fc': []}"
     },
     {
       "name": "trace has tx and rx entries",

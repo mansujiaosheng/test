@@ -1,0 +1,2 @@
+# full-file BL -> hash8(0x08000668): ['0x8000770']
+# (expect exactly one: 0x08000770, reset handler)

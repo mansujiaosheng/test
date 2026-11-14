@@ -1,0 +1,86 @@
+{
+ "nonce": "S/yZ8g5siOv+ioM0",
+ "vcu_sha": "2f3692767f605ef72fb47e1a779f2dfaeca802b4df1e35d38f8bb66d53ce6ea7",
+ "client_sha": "a31eb312b198d41b4021894082d1ed8c1ef8fe479ac328424fdfd76abb59d7a2",
+ "zip_sha": "89ab1e042cad3af0625857ca000d37e64e9095ff7149399f9a3961d9000733e8",
+ "deviations": [
+  {
+   "k": "vin",
+   "v": "S/yZ8g5siOv+ioM0",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "Uy95WjhnNXNpT3YraW9NMA==",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "4bfc99f20e6c88ebfe8a8334",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "5e7f07b4a81153ecd5868cc02557f823",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "3ac02bb40567fa14062cc768e22fefac3dd972aee87a3bf2d01419f026d5",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "2f3692767f605ef72fb47e1a779f2dfaeca802b4df1e35d38f8bb66d53ce",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "89ab1e042cad3af0625857ca000d37e64e9095ff7149399f9a3961d90007",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "a31eb312b198d41b4021894082d1ed8c1ef8fe479ac328424fdfd76abb59",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "CAMP-243892C376D4CB2D5F826953",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "2",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "1024",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "0x08040000",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  },
+  {
+   "k": "vin",
+   "v": "True",
+   "status": 200,
+   "resp": "{\"errors\":[{\"message\":\"vehicle campaign not found\"}]}"
+  }
+ ]
+}
