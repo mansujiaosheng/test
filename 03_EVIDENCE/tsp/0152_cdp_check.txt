@@ -1,0 +1,14 @@
+=== 0152: is Chrome/Edge exposing a DevTools endpoint? (would let us read the session cookie) ===
+127.0.0.1:9222   http=000 
+127.0.0.1:9223   http=000 
+127.0.0.1:9229   http=000 
+127.0.0.1:9333   http=000 
+127.0.0.1:9000   http=000 
+
+=== chrome processes ===
+35
+msedgewebview2.exe           26168 Console                    1    122,660 K
+msedgewebview2.exe           26280 Console                    1     14,932 K
+msedgewebview2.exe           24652 Console                    1     55,540 K
+msedgewebview2.exe           21892 Console                    1     44,308 K
+msedgewebview2.exe           25756 Console                    1     22,668 K

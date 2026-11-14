@@ -1,0 +1,23 @@
+{
+  "seq": 2104,
+  "ts": "2026-11-14T09:34:32.574+08:00",
+  "label": "p1_ta_can_07E9_22F190",
+  "purpose": "shape probe: TA/SA discriminator",
+  "host": "10.229.221.2",
+  "port": 13400,
+  "request": {
+    "ta": "0x07E9",
+    "sa": "0x0E00",
+    "uds": "22F190"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231"
+    }
+  ],
+  "verdict": "NRC 0x31 (srv 0x22)",
+  "elapsed_ms": 263.0,
+  "ta": "0x07E9",
+  "question": "response shape for unknown TA / functional addressing"
+}

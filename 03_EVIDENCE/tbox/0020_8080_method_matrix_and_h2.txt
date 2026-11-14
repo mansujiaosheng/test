@@ -1,0 +1,35 @@
+###### 0020  8080 method matrix / absolute-URI / CONNECT / h2c preface ######
+### date: 2026-11-14T01:43:41Z
+--- GET /healthz  (t=0.15s, 143B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:41 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+--- HEAD /healthz  (t=0.06s, 127B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:41 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n'
+--- POST /healthz  (t=0.16s, 143B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:41 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+--- PUT /healthz  (t=0.30s, 143B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:41 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+--- PATCH /healthz  (t=0.23s, 143B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:42 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+--- DELETE /healthz  (t=0.38s, 143B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:42 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+--- OPTIONS /healthz  (t=0.52s, 143B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:42 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+--- TRACE /healthz  (t=0.39s, 143B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:43 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+--- CONNECT /healthz  (t=0.13s, 143B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:43 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+
+--- OPTIONS * (asterisk-form)  (t=0.07s, 94B)
+   b'HTTP/1.1 200 OK\r\nContent-Length: 0\r\nDate: Sat, 14 Nov 2026 01:43:43 GMT\r\nConnection: close\r\n\r\n'
+--- absolute-URI targeting :8443  (t=0.06s, 195B)
+   b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:43:43 GMT\r\nContent-Length: 19\r\nConnection: close\r\n\r\n404 page not found\n'
+--- CONNECT host:port (proxy test)  (t=1.69s, 176B)
+   b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:43:44 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n'
+--- h2c prior-knowledge preface  (t=0.34s, 103B)
+   b'HTTP/1.1 400 Bad Request\r\nConnection: close\r\nDate: Sat, 14 Nov 2026 01:43:45 GMT\r\nContent-Length: 0\r\n\r\n'
+--- HTTP/2.0 in request line  (t=0.11s, 193B)
+   b'HTTP/1.1 505 HTTP Version Not Supported: unsupported protocol version\r\nContent-Type: text/plain; charset=utf-8\r\nConnection: close\r\n\r\n505 HTTP Version Not Supported: unsupported protocol version'
+--- TLS ClientHello prefix to 8080 (does it speak TLS?)  (t=1.63s, 0B)
+   b''
+--- WebSocket upgrade on /healthz  (t=1.28s, 124B)
+   b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:43:47 GMT\r\nContent-Length: 16\r\n\r\n{"status":"ok"}\n'

@@ -1,0 +1,25 @@
+{
+  "label": "ident",
+  "purpose": "vehicle identification request (0x0001)",
+  "request": {
+    "ptype": "0x0001",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "0x0004",
+      "hex": "435636323236393746383241393336413110000600000010000000000000000000",
+      "len": 33
+    }
+  ],
+  "parsed": {
+    "ptype_name": "vehicle announcement / identification response",
+    "vin": "CV622697F82A936A1",
+    "logical_address": "0x1000",
+    "eid": "060000001000",
+    "gid": "000000000000",
+    "further_action": "0x00"
+  },
+  "seq": 3207,
+  "ts": "2026-11-14T09:55:17.908+08:00"
+}

@@ -1,0 +1,10 @@
+targets 20320
+OPEN 10.229.221.2:8080
+OPEN 10.229.221.2:13400
+OPEN 10.229.221.2:13401
+---
+open_total=3 elapsed=23.5s
+--- banners ---
+10.229.221.2:8080  b'HTTP/1.0 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options: nosniff | Date: Sat, 14 Nov 2026 01:32:09 GMT | Content-Length: 19 | '
+10.229.221.2:13400  b'<ConnectionResetError>'
+10.229.221.2:13401  b''

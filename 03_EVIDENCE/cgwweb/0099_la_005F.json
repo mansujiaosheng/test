@@ -1,0 +1,18 @@
+{
+  "label": "la_005F",
+  "purpose": "LA existence probe 0x005F",
+  "tester_sa": "0x0E00",
+  "target_la": "0x005F",
+  "elapsed_ms": 190.46,
+  "responses": [
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 99,
+  "ts": "2026-11-14T09:24:36.737+08:00"
+}

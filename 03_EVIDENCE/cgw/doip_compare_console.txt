@@ -1,0 +1,48 @@
+[10.229.221.2] {"ident_hex": "435636464635324645453945444444383610000600000010000000000000000000", "vin": "CV6FF52FEE9EDDD86", "ra": {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}, "uds": [{"from": "0x1000", "to": "0x0E00", "hex": "62F1904356364646353246454539454444443836", "text": "POSITIVE 0x22 ReadDataByIdentifier DID=0xF190 dat
+[10.230.164.4] {"ident_hex": "435636464635324645453945444444383610000600000010000000000000000000", "vin": "CV6FF52FEE9EDDD86", "ra": {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}, "uds": [{"from": "0x1000", "to": "0x0E00", "hex": "62F1904356364646353246454539454444443836", "text": "POSITIVE 0x22 ReadDataByIdentifier DID=0xF190 dat
+
+[+] identical state across hosts: True
+{
+  "label": "compare",
+  "hosts": {
+    "10.229.221.2": {
+      "ident_hex": "435636464635324645453945444444383610000600000010000000000000000000",
+      "vin": "CV6FF52FEE9EDDD86",
+      "ra": {
+        "tester_sa": "0x0E00",
+        "entity_la": "0x1000",
+        "code": "0x10",
+        "text": "routing successfully activated",
+        "trailing": "00000000"
+      },
+      "uds": [
+        {
+          "from": "0x1000",
+          "to": "0x0E00",
+          "hex": "62F1904356364646353246454539454444443836",
+          "text": "POSITIVE 0x22 ReadDataByIdentifier DID=0xF190 data=4356364646353246454539454444443836"
+        }
+      ]
+    },
+    "10.230.164.4": {
+      "ident_hex": "435636464635324645453945444444383610000600000010000000000000000000",
+      "vin": "CV6FF52FEE9EDDD86",
+      "ra": {
+        "tester_sa": "0x0E00",
+        "entity_la": "0x1000",
+        "code": "0x10",
+        "text": "routing successfully activated",
+        "trailing": "00000000"
+      },
+      "uds": [
+        {
+          "from": "0x1000",
+          "to": "0x0E00",
+          "hex": "62F1904356364646353246454539454444443836",
+          "text": "POSITIVE 0x22 ReadDataByIdentifier DID=0xF190 data=4356364646353246454539454444443836"
+        }
+      ]
+    }
+  },
+  "identical": true
+}

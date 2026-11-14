@@ -1,0 +1,3 @@
+{"probe": "doip_ident_udp", "payload_hex": "02fd000100000000", "reply": "TIMEOUT", "t_ms": 4005.08}
+{"probe": "empty_udp", "payload_hex": "", "reply": "TIMEOUT", "t_ms": 4006.11}
+{"probe": "zeros_udp", "payload_hex": "0000000000000000", "reply": "TIMEOUT", "t_ms": 4007.04}

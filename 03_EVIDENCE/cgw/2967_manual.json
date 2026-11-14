@@ -1,0 +1,32 @@
+{
+  "label": "manual",
+  "purpose": "manual read-only request",
+  "tester_sa": "0x0100",
+  "target_la": "0x1220",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0100122022F1A3",
+    "uds": "22F1A3"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "100001007F2231",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0100",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 380.91,
+  "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)",
+  "seq": 2967,
+  "ts": "2026-11-14T09:41:47.782+08:00"
+}

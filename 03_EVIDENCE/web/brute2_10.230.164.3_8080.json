@@ -1,0 +1,21 @@
+{
+ "target": "http://10.230.164.3:8080",
+ "elapsed_s": 2.8,
+ "probed": 1169,
+ "errors": 0,
+ "baseline_404": {
+  "status": 404,
+  "len": 19,
+  "body": "404 page not found\n"
+ },
+ "status_histogram": {
+  "404": 1169
+ },
+ "interesting": [],
+ "server_headers_sample": {
+  "Content-Type": "text/plain; charset=utf-8",
+  "X-Content-Type-Options": "nosniff",
+  "Date": "Sat, 14 Nov 2026 01:14:53 GMT",
+  "Content-Length": "19"
+ }
+}

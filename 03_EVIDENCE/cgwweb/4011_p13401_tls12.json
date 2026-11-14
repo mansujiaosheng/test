@@ -1,0 +1,10 @@
+{
+  "label": "p13401_tls12",
+  "host": "10.229.221.2",
+  "port": 13401,
+  "sent_hex": "TLS ClientHello",
+  "recv_hex": "",
+  "note": "SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)",
+  "seq": 4011,
+  "ts": "2026-11-14T09:28:26.676+08:00"
+}

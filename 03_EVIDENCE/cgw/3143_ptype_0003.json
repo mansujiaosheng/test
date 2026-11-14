@@ -1,0 +1,17 @@
+{
+  "label": "ptype_0003",
+  "purpose": "DoIP payload type probe 0x0003 VIN",
+  "request": {
+    "ptype": "0x0003",
+    "hex": "4356364646353246454539454444443836"
+  },
+  "responses": [
+    {
+      "ptype": "0x0000",
+      "hex": "01"
+    }
+  ],
+  "parsed": "0x0000 01",
+  "seq": 3143,
+  "ts": "2026-11-14T09:48:06.096+08:00"
+}

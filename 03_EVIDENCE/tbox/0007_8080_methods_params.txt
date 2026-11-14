@@ -1,0 +1,91 @@
+### CONNECT / weird methods on TBOX 8080
+--- CONNECT /
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:24:31 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+--- TRACE /
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:24:31 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+--- OPTIONS /
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:24:32 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+--- POST /
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:24:32 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+### healthz params
+--- /healthz?debug=1
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:24:33 GMT
+Content-Length: 16
+
+{"status":"ok"}
+
+--- /healthz?verbose=1
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:24:33 GMT
+Content-Length: 16
+
+{"status":"ok"}
+
+--- /healthz?full=1
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:24:33 GMT
+Content-Length: 16
+
+{"status":"ok"}
+
+--- /healthz?format=json
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:24:33 GMT
+Content-Length: 16
+
+{"status":"ok"}
+
+--- /healthz?token=1
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:24:33 GMT
+Content-Length: 16
+
+{"status":"ok"}
+
+--- /healthz?version=1
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:24:33 GMT
+Content-Length: 16
+
+{"status":"ok"}
+

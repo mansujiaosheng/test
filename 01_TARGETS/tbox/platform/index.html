@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="CyberCar 车联网数字孪生安全竞赛平台" />
+    <title>车联网数字孪生攻防平台</title>
+    <link rel="icon" href="/brand-mark.png" type="image/png" />
+    <link rel="stylesheet" href="/app.css?v=20260825-snapshot-buttons-v1" />
+  </head>
+  <body class="auth-pending">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="app-shell">
+      <aside class="rail">
+        <a class="brand" href="#overview" aria-label="CyberCar 首页">
+          <img class="brand-mark" src="/brand-mark.png" alt="" aria-hidden="true" />
+          <span class="brand-copy"><small>车联网数字孪生攻防平台</small></span>
+        </a>
+
+        <nav class="rail-nav" aria-label="主导航">
+          <button class="nav-item is-active" data-view="overview"><span>01</span>赛事总览</button>
+          <button class="nav-item" data-view="twin"><span>02</span>车辆孪生</button>
+          <button class="nav-item" id="challenge-nav" data-view="challenges"><span>03</span>车辆题目</button>
+          <button class="nav-item" data-view="arena"><span>04</span>竞技场</button>
+          <button class="nav-item" data-view="teams"><span>05</span>战队排行</button>
+          <button class="nav-item" data-view="evidence"><span>06</span>证据流</button>
+          <button class="nav-item" id="vehicle-range-nav" data-view="vehicle-range" hidden><span>03</span>整车靶场</button>
+        </nav>
+
+        <div class="rail-bottom">
+          <div class="provider-indicator" id="provider-indicator">
+            <span class="status-lamp"></span>
+            <div><strong id="provider-status">载入中</strong></div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <div class="event-heading">
+            <h1 id="competition-title">载入赛事控制平面…</h1>
+          </div>
+          <div class="topbar-meta">
+            <div><span>比赛阶段</span><strong id="competition-phase">—</strong></div>
+            <div><span>比赛倒计时</span><strong id="system-clock" aria-live="polite">—</strong></div>
+            <div class="account-control">
+              <span>当前账号</span>
+              <strong id="current-user">身份校验中…</strong>
+              <nav aria-label="账号操作"><a id="admin-link" href="/admin.html" hidden>管理端</a><button id="change-password-button" type="button">修改密码</button><button id="logout-button" type="button">退出</button></nav>
+            </div>
+            <div class="live-chip"><i></i><span id="competition-status">SYNC</span></div>
+          </div>
+        </header>
+
+        <main>
+          <section class="participation-lock panel-cut" id="participation-lock" aria-labelledby="participation-lock-title" hidden>
+            <div class="participation-lock-code" aria-hidden="true">
+              <span>ACCESS CONTROL</span>
+              <strong>DQ</strong>
+              <small>COMPETITION SCOPE</small>
+            </div>
+            <div class="participation-lock-copy">
+              <span class="eyebrow">PARTICIPATION REVOKED / HIGH RISK</span>
+              <h2 id="participation-lock-title">本赛事参赛权限已被撤销</h2>
+              <p>该账号所属参赛范围已被赛事裁判系统禁赛。题目、容器、附件、Flag 提交与实时连接均已停止。</p>
+              <dl class="participation-lock-facts">
+                <div><dt>触发规则</dt><dd id="participation-lock-rule">高危作弊事件</dd></div>
+                <div><dt>参赛范围</dt><dd id="participation-lock-team">—</dd></div>
+                <div><dt>处置时间</dt><dd id="participation-lock-time">—</dd></div>
+                <div><dt>当前状态</dt><dd class="is-danger">禁止继续参赛</dd></div>
+              </dl>
+              <div class="participation-lock-reason">
+                <span>SERVER DECISION</span>
+                <strong id="participation-lock-reason">本赛事参赛权限已撤销</strong>
+              </div>
+              <footer>
+                <a href="/competitions.html">返回赛事选择</a>
+                <span>如需申诉，请联系现场裁判或赛事管理员。</span>
+              </footer>
+            </div>
+            <div class="participation-lock-signal" aria-hidden="true"><i></i><i></i><i></i></div>
+          </section>
+          <section class="view is-active" id="view-overview" aria-labelledby="overview-title">
+            <h2 class="sr-only" id="overview-title">赛事总览</h2>
+            <div class="metric-band">
+              <article><span>活跃战队</span><strong id="metric-active-teams">—</strong><small id="metric-team-total">/ — TEAMS</small></article>
+              <article><span>展示车辆</span><strong id="metric-running">—</strong><small id="metric-instance-total">/ — INSTANCES</small></article>
+              <article><span>证据事件</span><strong id="metric-events">—</strong><small>APPEND-ONLY</small></article>
+              <article class="metric-alert"><span>已发布题目</span><strong id="metric-paths">00</strong><small>CHALLENGE CONTENT</small></article>
+            </div>
+
+            <section class="attack-desktop-panel panel-cut" id="attack-desktop-panel" hidden aria-labelledby="attack-desktop-title">
+              <header class="panel-heading"><div><span>攻击机工作区</span><h3 id="attack-desktop-title">个人攻击机</h3></div><span class="attack-desktop-status" id="attack-desktop-status">未启动</span></header>
+              <p class="attack-desktop-intro">每名选手拥有独立云桌面；靶机按本队伍共享。桌面链接和访问授权均由服务端签发。</p>
+              <div class="attack-desktop-actions"><button class="primary-button" id="attack-desktop-start" type="button">启动攻击机</button><button class="secondary-button" id="attack-desktop-stop" type="button" disabled>停止攻击机</button><a id="attack-desktop-open" href="#" target="_blank" rel="noopener" hidden>进入云桌面</a></div>
+              <div class="attack-targets" id="attack-targets" hidden><strong>本队已授权靶机</strong><div id="attack-target-list"></div><small id="attack-target-help">靶机显示本队私有内网地址；仅可在本队成员的攻击机内访问。</small></div>
+            </section>
+
+            <div class="overview-grid">
+              <section class="twin-console panel-cut">
+                <div class="panel-heading">
+                  <div><span class="panel-index">TWIN / PRIMARY</span><h3>车辆运行态映射</h3></div>
+                  <div class="instance-select-label" aria-live="polite">
+                    <span>当前题目车辆（管理员分配）</span>
+                    <select id="instance-select" class="instance-select" aria-label="切换当前题目车辆">
+                      <option value="">未分配</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="twin-stage" id="twin-stage">
+                  <div class="stage-grid" aria-hidden="true"></div>
+                  <div class="scan-beam" aria-hidden="true"></div>
+                  <div class="stage-3d-toolbar" role="group" aria-label="三维车辆观察模式">
+                    <button class="is-active" data-vehicle-mode="whole">整车</button>
+                    <button data-vehicle-mode="xray">透视</button>
+                    <button data-vehicle-mode="ee">E/E</button>
+                    <button class="camera-reset" data-vehicle-action="reset-camera">归位</button>
+                  </div>
+                  <div class="vehicle-3d-host" id="vehicle-3d-host" role="img" aria-label="可旋转缩放的三维纯电车辆数字孪生"></div>
+                  <div class="vehicle-3d-labels" id="vehicle-3d-labels" aria-label="三维车辆语义节点"></div>
+                  <div class="vehicle-3d-loading" id="vehicle-3d-loading">
+                    <span class="loading-orbit" aria-hidden="true"></span>
+                    <strong id="vehicle-3d-loading-title">构建 3D 车辆孪生</strong>
+                    <small id="vehicle-3d-loading-detail">正在校验 WebGL 与车辆资产…</small>
+                  </div>
+                  <svg class="vehicle-schematic vehicle-2d-fallback" viewBox="0 0 880 460" role="img" aria-label="车辆电子电气架构二维降级视图">
+                    <defs>
+                      <filter id="soft-glow" x="-100%" y="-100%" width="300%" height="300%">
+                        <feGaussianBlur stdDeviation="4" result="blur" />
+                        <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+                      </filter>
+                      <linearGradient id="body-fill" x1="0" x2="1">
+                        <stop offset="0" stop-color="#101c20" />
+                        <stop offset="0.5" stop-color="#17292d" />
+                        <stop offset="1" stop-color="#101c20" />
+                      </linearGradient>
+                    </defs>
+                    <g class="road-rulers" aria-hidden="true">
+                      <path d="M70 54H810M70 406H810" />
+                      <path d="M91 42v24M141 42v14M191 42v24M241 42v14M291 42v24M341 42v14M391 42v24M441 42v14M491 42v24M541 42v14M591 42v24M641 42v14M691 42v24M741 42v14M791 42v24" />
+                    </g>
+                    <g class="data-links">
+                      <path d="M188 230 C300 110 375 136 440 204" />
+                      <path d="M440 204 C510 130 615 145 695 230" />
+                      <path d="M440 204 L440 286" />
+                      <path d="M440 286 C350 320 300 326 250 322" />
+                      <path d="M440 286 C530 320 580 326 630 322" />
+                    </g>
+                    <g class="car-body">
+                      <path class="body-shadow" d="M182 230c0-72 35-131 101-158 47-19 267-19 314 0 66 27 101 86 101 158s-35 131-101 158c-47 19-267 19-314 0-66-27-101-86-101-158Z" />
+                      <path class="body-shell" d="M196 230c0-62 30-114 90-140 46-19 262-19 308 0 60 26 90 78 90 140s-30 114-90 140c-46 19-262 19-308 0-60-26-90-78-90-140Z" />
+                      <path class="glass" d="M328 103c52-13 172-13 224 0l50 84-324 0Z" />
+                      <path class="cabin-line" d="M278 273h324l-50 84c-52 13-172 13-224 0Z" />
+                      <path class="centerline" d="M440 84v292" />
+                      <g class="wheels"><rect x="171" y="115" width="24" height="82" rx="7" /><rect x="685" y="115" width="24" height="82" rx="7" /><rect x="171" y="263" width="24" height="82" rx="7" /><rect x="685" y="263" width="24" height="82" rx="7" /></g>
+                    </g>
+                    <g class="ecu-node" data-node="tbox" transform="translate(188 230)"><circle r="28" /><circle class="node-core" r="6" /><text y="48">T-BOX</text></g>
+                    <g class="ecu-node" data-node="gateway" transform="translate(440 204)"><circle r="34" /><circle class="node-core" r="7" /><text y="55">GATEWAY</text></g>
+                    <g class="ecu-node" data-node="cvc" transform="translate(440 286)"><circle r="30" /><circle class="node-core" r="6" /><text y="52">CVC</text></g>
+                    <g class="ecu-node" data-node="front-zone" transform="translate(695 230)"><circle r="26" /><circle class="node-core" r="6" /><text y="46">FRONT ZONE</text></g>
+                    <g class="ecu-node" data-node="rear-zone" transform="translate(250 322)"><circle r="24" /><circle class="node-core" r="5" /><text y="44">REAR ZONE</text></g>
+                    <g class="ecu-node" data-node="bms" transform="translate(630 322)"><circle r="24" /><circle class="node-core" r="5" /><text y="44">BMS</text></g>
+                    <text class="vehicle-id" x="440" y="432" text-anchor="middle" id="svg-vehicle-id">NO INSTANCE</text>
+                  </svg>
+
+                  <div class="stage-source"><span id="twin-source">NO DATA</span><small id="twin-captured">—</small></div>
+                  <div class="stage-generation">GEN <strong id="twin-generation">—</strong></div>
+                </div>
+
+                <div class="telemetry-strip">
+                  <div><span>SPEED</span><strong id="signal-speed">—</strong><small>km/h</small></div>
+                  <div><span>GEAR</span><strong id="signal-gear">—</strong><small>STATE</small></div>
+                  <div><span>STEER</span><strong id="signal-steering">—</strong><small>deg</small></div>
+                  <div><span>BATTERY</span><strong id="signal-soc">—</strong><small>% SOC</small></div>
+                  <div><span>CAN FD</span><strong id="signal-bus">—</strong><small>% LOAD</small></div>
+                </div>
+
+                <div class="lifecycle-bar">
+                  <div class="instance-state"><span>DISPLAY STATE</span><strong id="instance-state">UNKNOWN</strong></div>
+                  <div class="lifecycle-actions lifecycle-readonly">
+                    <span>车辆仅展示；题目容器单独运行</span>
+                  </div>
+                </div>
+              </section>
+
+              <aside class="side-stack">
+                <section class="rank-panel panel-cut">
+                  <div class="panel-heading compact"><div><span class="panel-index">SCORE / LIVE</span><h3>战队排名</h3></div><button class="text-button" data-jump="teams">全部</button></div>
+                  <ol class="leaderboard" id="leaderboard"></ol>
+                </section>
+
+                <section class="event-panel panel-cut">
+                  <div class="panel-heading compact"><div><span class="panel-index">EVIDENCE / ORDERED</span><h3>最近事件</h3></div><button class="text-button" data-jump="evidence">追踪</button></div>
+                  <div class="event-list" id="recent-events"></div>
+                </section>
+              </aside>
+            </div>
+          </section>
+
+          <section class="view vehicle-range-view" id="view-vehicle-range" aria-labelledby="vehicle-range-title">
+            <div class="page-heading"><div><h2 id="vehicle-range-title">整车攻击靶场</h2></div><p id="vehicle-range-access-description">靶场节点位于赛事私有网络，平台只向当前参赛作用域提供授权访问。</p></div>
+            <section class="vehicle-range-hero panel-cut">
+              <header class="panel-heading"><div><span>靶场运行态</span><h3 id="vehicle-range-template-title">未分配靶场模板</h3></div><span class="attack-desktop-status" id="vehicle-range-status">未启动</span></header>
+              <p id="vehicle-range-description">赛事管理员尚未为本赛事配置车联网靶场。</p>
+              <dl class="vehicle-range-facts"><div><dt>作用域</dt><dd id="vehicle-range-scope">—</dd></div><div><dt>实例代次</dt><dd id="vehicle-range-generation">—</dd></div><div><dt>阶段进度</dt><dd id="vehicle-range-progress">—</dd></div><div><dt>靶场积分</dt><dd id="vehicle-range-score">0</dd></div></dl>
+              <div class="attack-desktop-actions vehicle-range-actions"><button class="primary-button" id="vehicle-range-start" type="button">启动整车靶场</button><button class="secondary-button" id="vehicle-range-pause" type="button" disabled>暂停靶场</button><button class="secondary-button" id="vehicle-range-resume" type="button" disabled>恢复靶场</button><button class="secondary-button" id="vehicle-range-reset" type="button" disabled>重置靶场</button><button class="secondary-button" id="vehicle-range-stop" type="button" disabled>停止靶场</button><button class="secondary-button" id="vehicle-range-open-desktop" type="button" data-jump="overview">前往启动攻击机</button></div>
+              <small id="vehicle-range-help">先启动攻击机，攻击机运行后才能建立本队私有靶场网络。</small>
+            </section>
+            <section class="vehicle-range-vpn panel-cut" id="vehicle-range-vpn" hidden aria-labelledby="vehicle-range-vpn-title">
+              <header class="panel-heading"><div><h3 id="vehicle-range-vpn-title">专属私网接入</h3></div><span class="attack-desktop-status" id="vehicle-range-vpn-status">未签发</span></header>
+              <div class="vehicle-range-vpn-body">
+                <div class="vehicle-range-vpn-copy"><strong id="vehicle-range-vpn-summary">启动靶场后下载配置</strong><p>每名选手获得独立证书和隧道地址。证书只允许访问当前队伍或个人作用域内的靶场网段，无法访问其他参赛范围。</p></div>
+                <dl><div><dt>隧道地址</dt><dd id="vehicle-range-vpn-address">—</dd></div><div><dt>连接状态</dt><dd id="vehicle-range-vpn-connection">未连接</dd></div><div><dt>证书有效期</dt><dd id="vehicle-range-vpn-expiry">—</dd></div></dl>
+                <div class="vehicle-range-vpn-routes"><span>已授权路由</span><div id="vehicle-range-vpn-route-list"><code>靶场启动后同步</code></div></div>
+              </div>
+              <div class="attack-desktop-actions vehicle-range-vpn-actions"><button class="primary-button" id="vehicle-range-vpn-download" type="button" disabled>下载 .ovpn 配置</button><button class="secondary-button" id="vehicle-range-vpn-refresh" type="button">刷新连接状态</button><button class="secondary-button" id="vehicle-range-vpn-revoke" type="button" disabled>吊销当前配置</button></div>
+              <small class="vehicle-range-vpn-note">在 OpenVPN Connect、Tunnelblick 或系统 OpenVPN 客户端中导入配置。重新签发会立即吊销旧证书。</small>
+            </section>
+            <section class="vehicle-range-snapshot panel-cut" aria-labelledby="vehicle-range-snapshot-title"><header class="panel-heading compact"><div><h3 id="vehicle-range-snapshot-title">阶段快照</h3></div><span id="vehicle-range-snapshot-summary">暂停后可保存</span></header><p>快照仅保存服务端已验证的攻击阶段。恢复会创建同一模板的新代次并恢复阶段进度；进程内存、Flag、密钥与浏览器数据不会被保留。</p><div class="vehicle-range-snapshot-controls"><select id="vehicle-range-snapshot-select" aria-label="选择阶段快照" disabled><option value="">暂无可恢复快照</option></select><button class="secondary-button" id="vehicle-range-snapshot" type="button" disabled>保存阶段快照</button><button class="secondary-button" id="vehicle-range-restore" type="button" disabled>恢复所选快照</button></div></section>
+            <section class="vehicle-range-visual panel-cut" aria-labelledby="vehicle-range-visual-title">
+              <header class="panel-heading"><div><h3 id="vehicle-range-visual-title">已验证攻击链拓扑</h3></div><div class="vehicle-range-visual-heading-actions"><span class="attack-desktop-status" id="vehicle-range-visual-status">等待靶场</span><button class="text-button" type="button" data-jump="overview">查看整车动作</button></div></header>
+              <div class="vehicle-range-visual-bridge" aria-live="polite">
+                <div class="vehicle-range-visual-purpose"><span>当前画面</span><strong>车辆域拓扑与攻击路径</strong><small>节点按车外云端、车内控制器和车身域总线布局</small></div>
+                <i aria-hidden="true">→</i>
+                <div class="vehicle-range-visual-actions"><span>车辆运行态映射</span><strong id="vehicle-range-action-summary">尚无已触发车辆动作</strong><div id="vehicle-range-action-list"><em>等待服务端验证阶段</em></div></div>
+              </div>
+              <div class="vehicle-range-3d-stage" id="vehicle-range-3d-stage">
+                <div class="vehicle-range-3d-grid" aria-hidden="true"></div>
+                <div class="vehicle-range-3d-host" id="vehicle-range-3d-host" role="img" aria-label="可旋转的整车攻击链三维拓扑"></div>
+                <div class="vehicle-range-3d-labels" id="vehicle-range-3d-labels" aria-label="靶场拓扑节点"></div>
+                <div class="vehicle-range-3d-empty" id="vehicle-range-3d-empty"><strong>等待拓扑数据</strong><small>启动靶场后，已验证阶段会点亮对应节点和通信链路。</small></div>
+                <div class="vehicle-range-3d-legend" aria-label="拓扑状态图例"><span><i></i>待突破</span><span class="is-compromised"><i></i>已突破</span><span class="is-active"><i></i>当前链路</span></div>
+              </div>
+            </section>
+            <div class="vehicle-range-grid">
+              <section class="detail-panel panel-cut"><h3>私有节点地址</h3><div class="vehicle-range-node-list" id="vehicle-range-nodes"><p>靶场启动后显示每个节点的内网地址。</p></div></section>
+              <section class="detail-panel panel-cut"><h3>攻击阶段</h3><ol class="vehicle-range-stage-list" id="vehicle-range-stages"></ol></section>
+              <section class="detail-panel wide panel-cut"><h3>靶场事件</h3><div class="vehicle-range-event-list" id="vehicle-range-events"><p>尚无靶场事件。</p></div></section>
+            </div>
+          </section>
+
+          <section class="view" id="view-twin" aria-labelledby="twin-title">
+            <div class="page-heading"><div><span class="eyebrow">DIGITAL TWIN / READ ONLY</span><h2 id="twin-title">车辆孪生监视器</h2></div><p>观察车辆信号、参与者和网络关系。数字孪生不进入车辆控制与总线仲裁路径。</p></div>
+            <div class="detail-grid">
+              <section class="detail-panel wide panel-cut"><h3>运行拓扑</h3><div id="topology-list" class="topology-list"></div></section>
+              <section class="detail-panel panel-cut"><h3>信号合同</h3><div id="signal-contracts" class="signal-contracts"></div></section>
+            </div>
+          </section>
+
+          <section class="view" id="view-challenges" aria-labelledby="challenges-title">
+            <div class="page-heading">
+              <div><span class="eyebrow">CHALLENGE RUNTIME / ISOLATED VEHICLE</span><h2 id="challenges-title">车辆安全题目</h2></div>
+              <p>赛事管理员将题目绑定到公共车辆。选手可启动运行题目或下载附件题资源，完成分析后提交 Flag。</p>
+            </div>
+            <div class="challenge-layout">
+              <aside class="challenge-catalog panel-cut" aria-label="车辆题目列表">
+                <header><span>CHALLENGE CATALOG</span><strong id="challenge-count">0 道已发布题目</strong></header>
+                <div class="challenge-list" id="challenge-list"></div>
+              </aside>
+              <section class="challenge-workbench panel-cut" id="challenge-workbench" aria-live="polite">
+                <div class="challenge-empty" id="challenge-empty">
+                  <span>NO CHALLENGE DATA</span>
+                  <strong id="challenge-empty-title">暂无可用车辆题目</strong>
+                  <p id="challenge-empty-detail">平台不会生成假题目或模拟进度。题目发布并绑定车辆后将在这里出现。</p>
+                </div>
+                <div class="challenge-detail" id="challenge-detail" hidden>
+                  <header class="challenge-titlebar">
+                    <div><span id="challenge-slug">—</span><h3 id="challenge-title">—</h3></div>
+                    <div class="challenge-score"><strong id="challenge-score">—</strong><small>POINTS</small></div>
+                  </header>
+                  <div class="challenge-solved-banner" id="challenge-solved-banner" role="status" hidden>
+                    <span aria-hidden="true">✓</span>
+                    <div><strong>题目已解出</strong><small>Flag 验证通过 · 本题运行环境已回收</small></div>
+                  </div>
+                  <p class="challenge-description" id="challenge-description"></p>
+                  <div class="challenge-attachments" id="challenge-attachments" hidden></div>
+                  <div class="run-strip">
+                    <div><span>题目运行</span><strong id="challenge-run-state">尚未启动</strong></div>
+                    <div><span>车辆代次</span><strong id="challenge-generation">—</strong></div>
+                    <div><span>管理员分配车辆</span><strong id="challenge-bound-vehicle">未分配</strong></div>
+                    <div><span>实时通道</span><strong id="challenge-stream-state">未连接</strong></div>
+                    <button id="challenge-start" type="button">启动已分配题目</button>
+                  </div>
+                  <div class="challenge-access" id="challenge-access" hidden>
+                    <div>
+                      <span>靶场端口映射 / TCP · DoIP/UDS</span>
+                      <strong id="challenge-access-endpoint">—</strong>
+                      <small id="challenge-access-route">容器端口 — / TCP</small>
+                    </div>
+                    <a id="challenge-access-link" href="#" role="button">复制 TCP 地址</a>
+                  </div>
+                  <div class="challenge-lower-grid">
+                    <form class="flag-console" id="flag-form" autocomplete="off">
+                      <label for="flag-input"><span>FINAL OBJECTIVE</span><strong>提交 Flag</strong></label>
+                      <div><input id="flag-input" name="flag" type="password" maxlength="512" spellcheck="false" placeholder="Flag 只会发送给判题服务" aria-describedby="flag-safety" /><button type="submit">提交验证</button></div>
+                      <small id="flag-safety">不会在页面、事件流或浏览器存储中保留 Flag 明文。</small>
+                      <p id="flag-result" role="status"></p>
+                    </form>
+                    <section class="challenge-events" aria-labelledby="challenge-events-title">
+                      <header><div><span>ORDERED EVENT STREAM</span><h4 id="challenge-events-title">判定事件</h4></div><strong id="challenge-cursor">SEQ —</strong></header>
+                      <div id="challenge-events"></div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section class="view" id="view-arena" aria-labelledby="arena-title">
+            <div class="page-heading"><div><span class="eyebrow">VEHICLE INSTANCES / READ ONLY</span><h2 id="arena-title">竞技场实例</h2></div><p>车辆与题目的绑定由赛事管理员预先配置。选手只能进入已分配题目，不能修改车辆绑定关系。</p></div>
+            <div class="table-shell panel-cut"><table><thead><tr><th>实例</th><th>归属</th><th>车辆定义</th><th>来源</th><th>状态</th><th>代次 / 版本</th><th>管理员分配题目</th></tr></thead><tbody id="arena-table"></tbody></table></div>
+          </section>
+
+          <section class="view" id="view-teams" aria-labelledby="teams-title">
+            <div class="page-heading"><div><span class="eyebrow">TEAMS / SCORE LEDGER</span><h2 id="teams-title">战队态势</h2></div><p>排行榜只汇总服务端追加式积分账本；无解题记录时保持真实零分。</p></div>
+            <div class="team-grid" id="team-grid"></div>
+          </section>
+
+          <section class="view" id="view-evidence" aria-labelledby="evidence-title">
+            <div class="page-heading"><div><span class="eyebrow">EVIDENCE / IMMUTABLE ORDER</span><h2 id="evidence-title">证据时间线</h2></div><p>事件按服务端序号排序，并固化竞技实例和车辆代次；重置不会删除历史。</p></div>
+            <div class="evidence-ledger panel-cut" id="evidence-ledger"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <div class="stage-detail-dialog" id="vehicle-range-stage-dialog" role="dialog" aria-modal="true" aria-labelledby="vehicle-range-stage-detail-title" hidden>
+      <div class="stage-detail-backdrop" data-stage-detail-close></div>
+      <article class="stage-detail-card panel-cut">
+        <button class="stage-detail-close" type="button" data-stage-detail-close aria-label="关闭赛题详情">×</button>
+        <span class="stage-detail-kicker">赛题详情</span>
+        <h3 id="vehicle-range-stage-detail-title">—</h3>
+        <p id="vehicle-range-stage-detail-description">—</p>
+      </article>
+    </div>
+
+    <div class="password-dialog" id="password-dialog" role="dialog" aria-modal="true" aria-labelledby="password-dialog-title" hidden>
+      <div class="password-dialog-backdrop" data-password-close></div>
+      <form class="password-card panel-cut" id="password-form" autocomplete="off">
+        <button class="password-close" type="button" data-password-close aria-label="关闭修改密码">×</button>
+        <span class="password-kicker">账号安全</span>
+        <h3 id="password-dialog-title">修改当前账号密码</h3>
+        <p class="password-hint">只能修改当前登录账号。修改成功后，当前账号所有会话会失效，需要重新登录。</p>
+        <div class="password-fields">
+          <label><span>当前密码</span><input id="password-current" name="currentPassword" type="password" autocomplete="current-password" required /></label>
+          <label><span>新密码</span><input id="password-new" name="newPassword" type="password" autocomplete="new-password" minlength="12" required /></label>
+          <label><span>确认新密码</span><input id="password-confirm" name="confirmPassword" type="password" autocomplete="new-password" minlength="12" required /></label>
+        </div>
+        <p class="password-feedback" id="password-feedback" role="alert" aria-live="polite"></p>
+        <footer class="password-actions">
+          <button class="password-secondary" type="button" data-password-close>取消</button>
+          <button class="password-primary" id="password-submit" type="submit">确认修改</button>
+        </footer>
+      </form>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js?v=20260825-mode-status-v1" defer></script>
+  </body>
+</html>

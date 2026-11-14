@@ -1,0 +1,143 @@
+=================== 10.230.164.2:8080 ===================
+--- GET / (curl -i) ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:09:10 GMT
+Content-Length: 19
+
+404 page not found
+
+--- GET /healthz (curl -i) ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:09:10 GMT
+Content-Length: 16
+
+{"status":"ok"}
+
+--- GET /graphql (curl -i) ---
+HTTP/1.1 405 Method Not Allowed
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:09:10 GMT
+Content-Length: 31
+
+{"error":"method not allowed"}
+
+--- OPTIONS / ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:09:11 GMT
+Content-Length: 19
+
+404 page not found
+--- HEAD /healthz ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:09:11 GMT
+Content-Length: 16
+
+--- HTTP/2 prior-knowledge GET /healthz ---
+curl: option --http2-prior-knowledge: the installed libcurl version does not support this
+curl: try 'curl --help' for more information
+--- gRPC-style POST / (application/grpc) ---
+curl: option --http2-prior-knowledge: the installed libcurl version does not support this
+curl: try 'curl --help' for more information
+
+=================== 10.230.164.3:8080 ===================
+--- GET / (curl -i) ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:09:11 GMT
+Content-Length: 19
+
+404 page not found
+
+--- GET /healthz (curl -i) ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:09:11 GMT
+Content-Length: 16
+
+{"status":"ok"}
+
+--- GET /graphql (curl -i) ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:09:11 GMT
+Content-Length: 19
+
+404 page not found
+
+--- OPTIONS / ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:09:12 GMT
+Content-Length: 19
+
+404 page not found
+--- HEAD /healthz ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:09:12 GMT
+Content-Length: 16
+
+--- HTTP/2 prior-knowledge GET /healthz ---
+curl: option --http2-prior-knowledge: the installed libcurl version does not support this
+curl: try 'curl --help' for more information
+--- gRPC-style POST / (application/grpc) ---
+curl: option --http2-prior-knowledge: the installed libcurl version does not support this
+curl: try 'curl --help' for more information
+
+=================== 10.230.164.4:8080 ===================
+--- GET / (curl -i) ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:09:12 GMT
+Content-Length: 19
+
+404 page not found
+
+--- GET /healthz (curl -i) ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:09:12 GMT
+Content-Length: 16
+
+{"status":"ok"}
+
+--- GET /graphql (curl -i) ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:09:12 GMT
+Content-Length: 19
+
+404 page not found
+
+--- OPTIONS / ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:09:13 GMT
+Content-Length: 19
+
+404 page not found
+--- HEAD /healthz ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:09:13 GMT
+Content-Length: 16
+
+--- HTTP/2 prior-knowledge GET /healthz ---
+curl: option --http2-prior-knowledge: the installed libcurl version does not support this
+curl: try 'curl --help' for more information
+--- gRPC-style POST / (application/grpc) ---
+curl: option --http2-prior-knowledge: the installed libcurl version does not support this
+curl: try 'curl --help' for more information
+

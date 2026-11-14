@@ -1,0 +1,273 @@
+{
+ "base": "http://10.229.221.2:8080",
+ "elapsed_s": 16.6,
+ "probed": 8977,
+ "status_histogram": {
+  "404": 8949,
+  "200": 14,
+  "-1": 14
+ },
+ "words": 1252,
+ "hits": [
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 58.6,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:42 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "ms": 43.5,
+   "body": "{\"error\":\"not found\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:42 GMT",
+    "Content-Length": "22"
+   }
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 72.6,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:42 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "POST",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 27.2,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:45 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "POST",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 26.3,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:45 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "POST",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "ms": 30.9,
+   "body": "{\"error\":\"not found\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:45 GMT",
+    "Content-Length": "22"
+   }
+  },
+  {
+   "method": "PUT",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 32.2,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:49 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "PUT",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 34.3,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:49 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "PUT",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "ms": 33.0,
+   "body": "{\"error\":\"not found\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:49 GMT",
+    "Content-Length": "22"
+   }
+  },
+  {
+   "method": "DELETE",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 42.2,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:51 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "DELETE",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 41.6,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:51 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "DELETE",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "ms": 68.5,
+   "body": "{\"error\":\"not found\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:51 GMT",
+    "Content-Length": "22"
+   }
+  },
+  {
+   "method": "PATCH",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 39.3,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:52 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "PATCH",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 51.4,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:52 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "PATCH",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "ms": 47.6,
+   "body": "{\"error\":\"not found\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:52 GMT",
+    "Content-Length": "22"
+   }
+  },
+  {
+   "method": "OPTIONS",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 32.3,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:53 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "OPTIONS",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 16,
+   "ms": 51.5,
+   "body": "{\"status\":\"ok\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:53 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "OPTIONS",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "ms": 51.3,
+   "body": "{\"error\":\"not found\"}\n",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:53 GMT",
+    "Content-Length": "22"
+   }
+  },
+  {
+   "method": "HEAD",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 0,
+   "ms": 37.7,
+   "body": "",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:55 GMT",
+    "Content-Length": "16"
+   }
+  },
+  {
+   "method": "HEAD",
+   "url": "http://10.229.221.2:8080/healthz",
+   "status": 200,
+   "len": 0,
+   "ms": 41.5,
+   "body": "",
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:30:55 GMT",
+    "Content-Length": "16"
+   }
+  }
+ ]
+}

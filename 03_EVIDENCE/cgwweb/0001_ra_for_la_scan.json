@@ -1,0 +1,11 @@
+{
+  "label": "ra_for_la_scan",
+  "request_hex": "0E000000000000",
+  "elapsed_ms": 28.12,
+  "tester_sa": "0x0E00",
+  "entity_la": "0x1000",
+  "code": "0x10",
+  "response_hex": "0E0010001000000000",
+  "seq": 1,
+  "ts": "2026-11-14T09:24:13.352+08:00"
+}

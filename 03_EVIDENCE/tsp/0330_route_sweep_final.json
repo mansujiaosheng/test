@@ -1,0 +1,24 @@
+{
+ "probed": 4193,
+ "errors": 2,
+ "hits": [
+  {
+   "path": "/healthz",
+   "status": 200,
+   "ct": "application/json",
+   "body": "{\"status\":\"ok\"}\n"
+  },
+  {
+   "path": "/graphql",
+   "status": 405,
+   "ct": "application/json",
+   "body": "{\"error\":\"method not allowed\"}\n"
+  },
+  {
+   "path": "/internal/audit",
+   "status": 404,
+   "ct": "application/json",
+   "body": "{\"error\":\"not found\"}\n"
+  }
+ ]
+}

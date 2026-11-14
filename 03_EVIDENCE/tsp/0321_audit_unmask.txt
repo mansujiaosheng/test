@@ -1,0 +1,67 @@
+==============================================================================
+baseline check
+==============================================================================
+  GET /internal/audit -> 404 b'{"error":"not found"}\n'  [BASELINE]
+
+==============================================================================
+A. query-string matrix
+==============================================================================
+  A hits: 0 / 462 combos
+
+==============================================================================
+B. header matrix
+==============================================================================
+  Authorization: Bearer internal         -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  Authorization: Bearer admin            -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  Authorization: Bearer CV6FF52FEE9EDDD86 -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  Authorization: Basic dHNwOnRzcA==      -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-Internal-Token: internal             -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-Internal-Token: admin                -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-Api-Key: internal                    -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-API-Key: admin                       -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-TSP-Token: internal                  -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-Service: internal                    -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-Scope: internal                      -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-VIN: CV6FF52FEE9EDDD86               -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-Vehicle-VIN: CV6FF52FEE9EDDD86       -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-Forwarded-For: 127.0.0.1             -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-Forwarded-For: 10.230.164.3          -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-Real-IP: 127.0.0.1                   -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  Cookie: role=admin                     -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  Accept: text/csv                       -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  Accept: application/x-ndjson           -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  X-HTTP-Method-Override: POST           -> 404 b'{"error":"not found"}\n'  [BASELINE]
+
+==============================================================================
+C. body matrix (POST/PUT)
+==============================================================================
+  POST  b'{}'                                          -> -1 b'[WinError 10054] \xe8\xbf\x9c\xe7\xa8\x8b\xe4\xb8\xbb\xe6\x9c\xba\xe5\xbc\xba\xe8\xbf\xab\xe5\x85\xb3\xe9\x97\xad\xe4\xba\x86\xe4\xb8\x80\xe4\xb8\xaa\xe7\x8e\xb0\xe6\x9c\x89\xe7\x9a\x84\xe8\xbf\x9e\xe6\x8e\xa5\xe3\x80\x82'  [DIFF]
+  POST  b'null'                                        -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'[]'                                          -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"action": "list"}'                          -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"op": "list"}'                              -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"query": "all"}'                            -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"vin": "CV6FF52FEE9EDDD86"}'                -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"vin": "CV6000000DEMO0001"}'                -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"vehicle": "CV6FF52FEE9EDDD86"}'            -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"vehicleId": 1}'                            -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"id": 1}'                                   -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"audit": {"vin": "CV6FF52FEE9EDDD86"}}'     -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"filter": {"vin": "CV6FF52FEE9EDDD86"}}'    -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  POST  b'{"limit": 100, "offset": 0}'                 -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{}'                                          -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'null'                                        -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'[]'                                          -> -1 b'[WinError 10054] \xe8\xbf\x9c\xe7\xa8\x8b\xe4\xb8\xbb\xe6\x9c\xba\xe5\xbc\xba\xe8\xbf\xab\xe5\x85\xb3\xe9\x97\xad\xe4\xba\x86\xe4\xb8\x80\xe4\xb8\xaa\xe7\x8e\xb0\xe6\x9c\x89\xe7\x9a\x84\xe8\xbf\x9e\xe6\x8e\xa5\xe3\x80\x82'  [DIFF]
+  PUT   b'{"action": "list"}'                          -> -1 b'[WinError 10054] \xe8\xbf\x9c\xe7\xa8\x8b\xe4\xb8\xbb\xe6\x9c\xba\xe5\xbc\xba\xe8\xbf\xab\xe5\x85\xb3\xe9\x97\xad\xe4\xba\x86\xe4\xb8\x80\xe4\xb8\xaa\xe7\x8e\xb0\xe6\x9c\x89\xe7\x9a\x84\xe8\xbf\x9e\xe6\x8e\xa5\xe3\x80\x82'  [DIFF]
+  PUT   b'{"op": "list"}'                              -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{"query": "all"}'                            -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{"vin": "CV6FF52FEE9EDDD86"}'                -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{"vin": "CV6000000DEMO0001"}'                -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{"vehicle": "CV6FF52FEE9EDDD86"}'            -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{"vehicleId": 1}'                            -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{"id": 1}'                                   -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{"audit": {"vin": "CV6FF52FEE9EDDD86"}}'     -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{"filter": {"vin": "CV6FF52FEE9EDDD86"}}'    -> 404 b'{"error":"not found"}\n'  [BASELINE]
+  PUT   b'{"limit": 100, "offset": 0}'                 -> 404 b'{"error":"not found"}\n'  [BASELINE]
+
+SUMMARY A=0 B=0 C=3

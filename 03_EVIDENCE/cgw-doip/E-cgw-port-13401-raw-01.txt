@@ -1,0 +1,17 @@
+# CGW DoIP evidence (format v1.0)
+time     : 2026-11-14 09:34:15+0800
+target   : 10.229.221.2:13401/TCP
+command  : plain DoIP VehicleIdentificationRequest to 13401
+tx_hex   : 02fd000100000000
+rx[0]_hex: 
+rx[0]_typ: RAW
+note     : server closes the connection immediately
+
+--- decoded ---
+[
+  {
+    "type": "RAW",
+    "name": "n/a",
+    "payload_hex": ""
+  }
+]

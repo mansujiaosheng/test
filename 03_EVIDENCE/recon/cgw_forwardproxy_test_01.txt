@@ -1,0 +1,16 @@
+--- abs-uri VCU healthz -> 10.229.221.2:8080
+   RX: b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:39:50 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+--- abs-uri VCU healthz -> 10.230.164.4:8080
+   RX: b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:39:50 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'
+--- abs-uri VCU root -> 10.229.221.2:8080
+   RX: b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:39:50 GMT\r\nContent-Length: 19\r\nConnection: close\r\n\r\n404 page not found\n'
+--- abs-uri VCU root -> 10.230.164.4:8080
+   RX: b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:39:51 GMT\r\nContent-Length: 19\r\nConnection: close\r\n\r\n404 page not found\n'
+--- CONNECT VCU:8080 -> 10.229.221.2:8080
+   RX: b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:39:51 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n'
+--- CONNECT VCU:8080 -> 10.230.164.4:8080
+   RX: b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:39:54 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n'
+--- abs-uri BMS healthz -> 10.229.221.2:8080
+   RX: b''
+--- abs-uri BMS healthz -> 10.230.164.4:8080
+   RX: b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:40:02 GMT\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"status":"ok"}\n'

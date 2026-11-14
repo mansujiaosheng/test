@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///D:/TOOL/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sat Nov 14 09:38:33 2026 as: D:\\TOOL\\nmap\\nmap.exe -Pn -n -sT -p 22,80,443,8080,8443,13400,13401 -&#45;reason -&#45;host-timeout 120s -oN syn_5_6_7.nmap -oG syn_5_6_7.gnmap -oX syn_5_6_7.xml 10.224.139.5 10.224.139.6 10.224.139.7 -->
+<nmaprun scanner="nmap" args="D:\\TOOL\\nmap\\nmap.exe -Pn -n -sT -p 22,80,443,8080,8443,13400,13401 -&#45;reason -&#45;host-timeout 120s -oN syn_5_6_7.nmap -oG syn_5_6_7.gnmap -oX syn_5_6_7.xml 10.224.139.5 10.224.139.6 10.224.139.7" start="1794620313" startstr="Sat Nov 14 09:38:33 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="7" services="22,80,443,8080,8443,13400-13401"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1794620313" endtime="1794620317"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.224.139.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13400"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="doip-data" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13401"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+</host>
+<host starttime="1794620313" endtime="1794620319"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.224.139.6" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13400"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="doip-data" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13401"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+</host>
+<host starttime="1794620313" endtime="1794620319"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.224.139.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13400"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="doip-data" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13401"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+</host>
+<runstats><finished time="1794620319" timestr="Sat Nov 14 09:38:39 2026" summary="Nmap done at Sat Nov 14 09:38:39 2026; 3 IP addresses (3 hosts up) scanned in 6.18 seconds" elapsed="6.18" exit="success"/><hosts up="3" down="0" total="3"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,17 @@
+{
+  "label": "p13401_raw_canframe",
+  "purpose": "raw 11-bit CAN frame bytes",
+  "host": "10.230.164.4",
+  "port": 13401,
+  "request": {
+    "hex": "07E0021003000000000000"
+  },
+  "responses": [
+    {
+      "hex": ""
+    }
+  ],
+  "note": "silent",
+  "seq": 3185,
+  "ts": "2026-11-14T09:49:37+0800"
+}

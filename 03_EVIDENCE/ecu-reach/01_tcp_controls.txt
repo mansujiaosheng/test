@@ -1,0 +1,33 @@
+# precise TCP connect matrix (RST vs TIMEOUT)
+# start  : 2026-11-14T09:48:40+08:00
+# host   : local 10.252.3.20 (TAP/OpenVPN), route 10.224.0.0/12 -> 10.252.3.1
+# method : nonblocking connect_ex + select(write) + SO_ERROR
+# reps   : 2   timeout/attempt: 2.0s
+# note   : positive controls: known-alive hosts; 9999/80/443 are closed there and reveal RST-vs-DROP behaviour
+# verdict: OPEN=connected | RST=refused (IP alive, port closed) | TIMEOUT=no answer (drop/blackhole) | UNREACH/other
+
+=== 10.230.164.4 ===
+   8080/tcp  OPEN     reps=TIMEOUT/OPEN             dt=[2.015, 0.029]
+  13400/tcp  OPEN     reps=OPEN/OPEN                dt=[0.027, 0.026]
+  13401/tcp  OPEN     reps=OPEN/OPEN                dt=[0.026, 0.026]
+   9999/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.014, 2.014]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.011, 2.009]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.013, 2.006]
+
+=== 10.230.164.2 ===
+   8080/tcp  OPEN     reps=OPEN/OPEN                dt=[0.026, 0.027]
+  13400/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.005, 2.002]
+  13401/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.015, 2.003]
+   9999/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.005, 2.014]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.005, 2.005]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.003, 2.009]
+
+=== 10.229.221.2 ===
+   8080/tcp  OPEN     reps=OPEN/OPEN                dt=[0.027, 0.026]
+  13400/tcp  OPEN     reps=OPEN/OPEN                dt=[0.027, 0.027]
+  13401/tcp  OPEN     reps=OPEN/OPEN                dt=[0.026, 0.026]
+   9999/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.012, 2.001]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.008, 2.014]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.001, 2.005]
+
+# summary: OPEN=7 RST=0 TIMEOUT=11 MIXED/other=0

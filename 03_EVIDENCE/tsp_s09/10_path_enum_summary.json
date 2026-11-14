@@ -1,0 +1,56 @@
+[
+ {
+  "method": "GET",
+  "path": "/graphql",
+  "code": 405,
+  "len": 31,
+  "body": "{\"error\":\"method not allowed\"}\n",
+  "allow": null,
+  "ctype": "application/json"
+ },
+ {
+  "method": "POST",
+  "path": "/graphql",
+  "code": 200,
+  "len": 81,
+  "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+  "allow": null,
+  "ctype": "application/json"
+ },
+ {
+  "method": "PUT",
+  "path": "/graphql",
+  "code": 405,
+  "len": 31,
+  "body": "{\"error\":\"method not allowed\"}\n",
+  "allow": null,
+  "ctype": "application/json"
+ },
+ {
+  "method": "DELETE",
+  "path": "/graphql",
+  "code": 405,
+  "len": 31,
+  "body": "{\"error\":\"method not allowed\"}\n",
+  "allow": null,
+  "ctype": "application/json"
+ },
+ {
+  "method": "PATCH",
+  "path": "/graphql",
+  "code": 405,
+  "len": 31,
+  "body": "{\"error\":\"method not allowed\"}\n",
+  "allow": null,
+  "ctype": "application/json"
+ },
+ {
+  "method": "OPTIONS",
+  "path": "/graphql",
+  "code": 405,
+  "len": 31,
+  "body": "{\"error\":\"method not allowed\"}\n",
+  "allow": null,
+  "ctype": "application/json"
+ }
+]

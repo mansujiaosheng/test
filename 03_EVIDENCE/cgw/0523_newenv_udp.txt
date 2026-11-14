@@ -1,0 +1,7 @@
+{"tag": "closed_control", "port": 34999, "sent": "", "note": "no-response(timeout)"}
+{"tag": "closed_control2", "port": 34999, "sent": "", "note": "no-response(timeout)"}
+{"tag": "doip_ident", "port": 13400, "sent": "02fd000100000000", "note": "no-response(timeout)"}
+{"tag": "empty", "port": 13401, "sent": "", "note": "no-response(timeout)"}
+{"tag": "cangw", "port": 13401, "sent": "43414e4757", "note": "no-response(timeout)"}
+{"tag": "doip_ident_on_13401", "port": 13401, "sent": "02fd000100000000", "note": "no-response(timeout)"}
+{"tag": "outbound_dns", "note": "UDP works", "rx_len": 61}

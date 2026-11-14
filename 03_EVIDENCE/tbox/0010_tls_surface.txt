@@ -1,0 +1,785 @@
+###### T-BOX 8443 TLS surface matrix  2026-11-14T01:30:14Z ######
+
+##################### T01 full chain (-showcerts, count certs)
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -showcerts
+CONNECTED(0000016C)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 890 bytes and written 404 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+6CAF0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+### BEGIN CERT COUNT
+1
+### END CERT COUNT
+
+##################### T02 force TLS1.2
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_2
+CONNECTED(00000170)
+6CE10000:error:0A00042E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:ssl\record\rec_layer_s3.c:1605:SSL alert number 70
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 7 bytes and written 201 bytes
+Verification: OK
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : 0000
+    Session-ID: 
+    Session-ID-ctx: 
+    Master-Key: 
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1794619814
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+### rc=0
+
+##################### T03 force TLS1.1
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_1
+CONNECTED(00000168)
+784F0000:error:0A00042E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:ssl\record\rec_layer_s3.c:1605:SSL alert number 70
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 7 bytes and written 117 bytes
+Verification: OK
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.1
+    Cipher    : 0000
+    Session-ID: 
+    Session-ID-ctx: 
+    Master-Key: 
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1794619814
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+### rc=0
+
+##################### T04 force TLS1.0
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1
+CONNECTED(00000168)
+24ED0000:error:0A00042E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:ssl\record\rec_layer_s3.c:1605:SSL alert number 70
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 7 bytes and written 117 bytes
+Verification: OK
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1
+    Cipher    : 0000
+    Session-ID: 
+    Session-ID-ctx: 
+    Master-Key: 
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1794619815
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+### rc=0
+
+##################### T05 TLS1.3 group P-256
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -groups P-256
+CONNECTED(00000160)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: ECDH, prime256v1, 256 bits
+---
+SSL handshake has read 924 bytes and written 347 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+A4AD0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T06 TLS1.3 group secp384r1 only
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -groups secp384r1
+CONNECTED(0000016C)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: ECDH, secp384r1, 384 bits
+---
+SSL handshake has read 956 bytes and written 379 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+6CF40000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T07 TLS1.3 group ffdhe2048 only
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -groups ffdhe2048
+CONNECTED(00000164)
+D0AE0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:ssl\record\rec_layer_s3.c:1605:SSL alert number 40
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 7 bytes and written 436 bytes
+Verification: OK
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+### rc=0
+
+##################### T08 ALPN h2,http/1.1
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -alpn h2,http/1.1
+CONNECTED(00000168)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 892 bytes and written 422 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+E8940000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T09 ALPN acme-tls/1
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -alpn acme-tls/1
+CONNECTED(00000168)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 890 bytes and written 421 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+24950000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T10 no servername (empty SNI)
+### cmd: openssl s_client -connect 10.230.164.3:8443 -noservername
+CONNECTED(00000160)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 886 bytes and written 391 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+B8F60000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T11 legacy_server_connect (SSLv2-format hello)
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -legacy_server_connect
+CONNECTED(00000160)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 892 bytes and written 404 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+08CF0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T12 TLS1.3 + early data attempt (-early_data)
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -early_data
+s_client: Option -early_data needs a value
+s_client: Use -help for summary.
+### rc=0
+
+##################### T13 TLS1.3 post-handshake auth flag
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -post_handshake_auth
+s_client: Unknown option: -post_handshake_auth
+s_client: Use -help for summary.
+### rc=0
+
+##################### T14 no client cert, send GET immediately (-ign_eof)
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -ign_eof -no_ign_eof
+CONNECTED(00000168)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 891 bytes and written 404 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+28EF0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T15 TLS1.3 PSK (out-of-band) ciphers
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -psk_identity tbox -psk 00112233445566778899aabbccddeeff
+CONNECTED(00000160)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 891 bytes and written 383 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+90FA0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T16 cipher list smax: TLS_AES_256_GCM_SHA384 only
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -ciphersuites TLS_AES_256_GCM_SHA384
+CONNECTED(0000016C)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 907 bytes and written 344 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+ECB10000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T17 renegotiation attempt under TLS1.2 (must fail on version)
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_2 -legacy_renegotiation
+CONNECTED(00000170)
+44EC0000:error:0A00042E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:ssl\record\rec_layer_s3.c:1605:SSL alert number 70
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 7 bytes and written 201 bytes
+Verification: OK
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : 0000
+    Session-ID: 
+    Session-ID-ctx: 
+    Master-Key: 
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1794619818
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+### rc=0
+
+##################### T18 status_request / OCSP stapling
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -status
+CONNECTED(00000184)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+OCSP response: no response sent
+---
+Certificate chain
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 892 bytes and written 413 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+2CFD0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### rc=0
+
+##################### T19 compress (TLS compression)
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -compress
+s_client: Unknown option: -compress
+s_client: Use -help for summary.
+### rc=0
+
+###### END ######

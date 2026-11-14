@@ -1,0 +1,32 @@
+{
+  "label": "la_slow_c336",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xC336",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00C3363E00",
+    "uds": "3E00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F3E31",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F3E31",
+      "parsed": "NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 147.33,
+  "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)",
+  "seq": 1084,
+  "ts": "2026-11-14T09:26:53.195+08:00"
+}

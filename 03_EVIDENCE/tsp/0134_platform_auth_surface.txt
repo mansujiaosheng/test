@@ -1,0 +1,33 @@
+=== 0134: platform auth surface (read-only) ===
+
+##### /login.html #####
+[http=200 size=4379]
+<title>
+<form id="login-form" class="login-form" hidden novalidate>
+<button class="password-toggle" type="button" id="password-toggle" aria-controls="password" aria-pressed="false">
+<button class="submit-button" id="submit-button" type="submit">
+
+##### /admin.html #####
+[http=200 size=86515]
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="CyberCar 数字孪生攻防平台管理控制台" />
+    <title>管理控制台 // CYBERCAR</title>
+    <link rel="icon" href="/brand-mark.png" type="image/png" />
+##### auth API probe (POST /api/v1/auth/login with empty json, read-only shape probe) #####
+HTTP/1.1 403 Forbidden
+Alt-Svc: h3=":9989"; ma=2592000
+Cache-Control: no-store
+Content-Length: 152
+Content-Security-Policy: default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; style-src 'self'; script-src 'self'; img-src 'self' data: blob:; connect-src 'self' ws: wss: blob:
+Content-Type: application/json; charset=utf-8
+Date: Sat, 14 Nov 2026 01:37:51 GMT
+Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+{"error":{"code":"cross_origin_request_denied","details":{},"message":"A same-origin Origin or Referer header is required","requestId":"4b77a6752f19"}}
+
+##### alt host 175.27.228.250:9989 #####
+[http=000 size=0]

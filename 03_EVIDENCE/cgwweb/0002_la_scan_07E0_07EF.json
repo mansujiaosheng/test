@@ -1,0 +1,143 @@
+{
+  "label": "la_scan_07E0_07EF",
+  "purpose": "DoIP logical-address existence scan (3E00 oracle)",
+  "range": [
+    "0x07E0",
+    "0x07EF"
+  ],
+  "step": 1,
+  "elapsed_s": 3.8,
+  "hits": [
+    {
+      "ta": "0x07E0",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07E1",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07E2",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07E3",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07E4",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07E5",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07E6",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07E7",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07E8",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07E9",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07EA",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07EB",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07EC",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07ED",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07EE",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    },
+    {
+      "ta": "0x07EF",
+      "cls": "present",
+      "resp": [
+        "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+      ],
+      "nack": []
+    }
+  ],
+  "total": 16,
+  "seq": 2,
+  "ts": "2026-11-14T09:23:26.931+08:00"
+}

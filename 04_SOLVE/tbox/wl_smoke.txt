@@ -1,0 +1,4 @@
+/healthz
+/nope
+/graphql
+/healthz/

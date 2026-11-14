@@ -1,0 +1,16 @@
+###### 0112 curated TCP probe on 10.225.139.3 (round-2) ######
+# utc= 2026-11-14T01:59:46Z
+22     closed/filtered(10061) 2.18s
+80     closed/filtered(10061) 2.19s
+443    closed/filtered(10061) 2.19s
+1883   closed/filtered(10061) 2.16s
+3000   closed/filtered(10061) 2.17s
+5000   closed/filtered(10061) 2.18s
+8080   OPEN       0.05s
+8443   OPEN       0.03s
+8883   closed/filtered(10061) 2.17s
+9000   closed/filtered(10061) 2.15s
+9090   closed/filtered(10061) 2.19s
+9443   closed/filtered(10061) 2.17s
+13400  closed/filtered(10061) 2.18s
+13401  closed/filtered(10061) 2.20s

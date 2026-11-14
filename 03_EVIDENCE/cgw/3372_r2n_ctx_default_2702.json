@@ -1,0 +1,32 @@
+{
+  "label": "r2n_ctx_default_2702",
+  "purpose": "0x27 variant 2702 in context default",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4422702",
+    "uds": "2702"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F277E"
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F277E",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    }
+  ],
+  "elapsed_ms": 485.31,
+  "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)",
+  "seq": 3372,
+  "ts": "2026-11-14T09:57:40.376+08:00"
+}

@@ -1,0 +1,84 @@
+==============================================================================
+0402-A  Go http.ServeMux fingerprint: path cleaning / 301 redirects
+==============================================================================
+  POST /graphql                   HTTP/1.1 200 OK bodylen=81 body=b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'  (6.08s)
+  POST /graphql/                  ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST //graphql                  ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.02s)
+  POST /./graphql                 ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST /graphql/../graphql        ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.01s)
+  POST /graphql/../ota            ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.03s)
+  POST /ota/../graphql            HTTP/1.1 307 Temporary Redirect LOC=/graphql bodylen=0 body=b''  (6.07s)
+  POST /%2e/graphql               HTTP/1.1 404 Not Found bodylen=19 body=b'404 page not found\n'  (6.08s)
+  POST /graphql%2f                ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.02s)
+  POST /graphql;                  ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST /graphql.                  ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.02s)
+  POST /GRAPHQL                   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.02s)
+  POST /GraphQL                   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.02s)
+  POST /graphql%00                ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST /graphql?a=1               ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.01s)
+  POST /graphql/?a=1              ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST /./healthz                 ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST //healthz                  ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST /healthz/../graphql        ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST /index.html                ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST /graphql/..                ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST /..%2fgraphql              ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.00s)
+  POST /%2E%2E/graphql            ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.02s)
+  POST /graphql/./                ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.03s)
+  POST /graphql//                 ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.01s)
+  POST /healthz//                 ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.02s)
+  POST /hEaLtHz                   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)  (0.02s)
+
+==============================================================================
+0402-B  absolute-form request URI + CONNECT/OPTIONS *
+==============================================================================
+  POST http://127.0.0.1:80/graphql           HTTP/1.1 200 OK bodylen=81 body=b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  POST http://tbox/graphql                   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  POST http://10.230.164.3:8443/graphql      ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  POST https://10.230.164.2/graphql          ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  GET http://10.230.164.2:8080/healthz       ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  OPTIONS *                                  ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  GET *                                      ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+
+==============================================================================
+0402-C  request-line / header / body limits (net/http defaults fingerprint)
+==============================================================================
+  URI len=1001   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  URI len=8001   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  URI len=8101   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  URI len=9001   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  header pad len=10000    HTTP/1.1 200 OK bodylen=16 body=b'{"status":"ok"}\n'
+  header pad len=100000   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  header pad len=900000   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  header pad len=1100000  ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  body total=131082   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  body total=131083   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+  body total=131084   ERR OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None)
+
+==============================================================================
+0402-D  determinism: 20 identical POST /graphql, sha256 of body
+==============================================================================
+  sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  count=5
+  sha256=a4901502af52dc8e0b5fccd451a7d3edcd73de1881b12b5acbe1ba26cf8d5f36  count=15
+  distinct_hashes=2
+
+==============================================================================
+0402-E  plaintext HTTP on 8443 / TLS on 8080 / TLS on 8443 to .2
+==============================================================================
+  plaintext->8443  HTTP/1.0 400 Bad Request bodylen=48 body=b'Client sent an HTTP request to an HTTPS server.\n'
+  tls1.2-ish hello->8443  
+ bodylen=0 body=b''
+  TLS handshake 10.230.164.2:8080 FAIL SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1020)')
+  TLS handshake 10.230.164.4:8080 FAIL SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1020)')
+  TLS handshake 10.230.164.3:8080 FAIL SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1020)')
+  TLS handshake 10.230.164.2:8443 FAIL ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None)
+
+==============================================================================
+0402-F  HTTP/1.0 semantics + Connection headers + pipelining depth
+==============================================================================
+  HTTP/1.0 no-Host POST    HTTP/1.0 200 OK bodylen=81 body=b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  HTTP/1.0 with-Host POST  HTTP/1.0 200 OK bodylen=81 body=b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  Connection: close        HTTP/1.1 200 OK bodylen=81 body=b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  duplicate Host           HTTP/1.1 400 Bad Request bodylen=15 body=b'400 Bad Request'
+  no Host at all           HTTP/1.1 400 Bad Request: missing required Host header bodylen=45 body=b'400 Bad Request: missing required Host header'
+  3x pipelined healthz     HTTP/1.1 200 OK bodylen=264 body=b'{"status":"ok"}\nHTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:37:39 GMT\r\nContent-Length: 16'  bodies=3

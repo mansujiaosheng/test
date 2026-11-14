@@ -1,0 +1,89 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:11:05 2026 as: D:\\TOOL\\nmap\\nmap.exe -Pn -sT -n --min-rate 600 --max-retries 1 -T4 -p- -oN 03_EVIDENCE/web/nmap_full_tcp_2_3_4.txt 10.230.164.2 10.230.164.3 10.230.164.4
+Warning: 10.230.164.4 giving up on port because retransmission cap hit (1).
+Warning: 10.230.164.2 giving up on port because retransmission cap hit (1).
+Warning: 10.230.164.3 giving up on port because retransmission cap hit (1).
+Nmap scan report for 10.230.164.2
+Host is up (0.027s latency).
+Not shown: 65512 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE
+6640/tcp  filtered ovsdb
+7989/tcp  filtered unknown
+8080/tcp  open     http-proxy
+9316/tcp  filtered unknown
+10185/tcp filtered unknown
+10371/tcp filtered unknown
+20250/tcp filtered unknown
+22836/tcp filtered unknown
+29559/tcp filtered unknown
+29649/tcp filtered unknown
+30396/tcp filtered unknown
+32549/tcp filtered unknown
+34637/tcp filtered unknown
+37344/tcp filtered unknown
+39660/tcp filtered unknown
+40965/tcp filtered unknown
+41101/tcp filtered unknown
+41919/tcp filtered unknown
+42340/tcp filtered unknown
+46759/tcp filtered unknown
+51882/tcp filtered unknown
+59363/tcp filtered unknown
+63744/tcp filtered unknown
+
+Nmap scan report for 10.230.164.3
+Host is up (0.026s latency).
+Not shown: 65512 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE
+2929/tcp  filtered amx-webadmin
+6295/tcp  filtered unknown
+8080/tcp  open     http-proxy
+8443/tcp  open     https-alt
+10324/tcp filtered unknown
+10352/tcp filtered unknown
+16591/tcp filtered unknown
+24660/tcp filtered unknown
+35183/tcp filtered unknown
+36317/tcp filtered unknown
+39064/tcp filtered unknown
+39929/tcp filtered unknown
+41622/tcp filtered unknown
+50549/tcp filtered unknown
+52753/tcp filtered unknown
+54844/tcp filtered unknown
+59443/tcp filtered unknown
+59861/tcp filtered unknown
+60114/tcp filtered unknown
+61122/tcp filtered unknown
+62216/tcp filtered unknown
+62926/tcp filtered unknown
+63786/tcp filtered unknown
+
+Nmap scan report for 10.230.164.4
+Host is up (0.026s latency).
+Not shown: 65512 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE
+5027/tcp  filtered strexec-s
+8080/tcp  open     http-proxy
+11173/tcp filtered t5-straton
+12238/tcp filtered unknown
+12963/tcp filtered unknown
+13400/tcp open     doip-data
+13401/tcp open     unknown
+23220/tcp filtered unknown
+26697/tcp filtered unknown
+27436/tcp filtered unknown
+28040/tcp filtered unknown
+28878/tcp filtered unknown
+37162/tcp filtered unknown
+37313/tcp filtered unknown
+38941/tcp filtered unknown
+40836/tcp filtered unknown
+45919/tcp filtered unknown
+49874/tcp filtered unknown
+50876/tcp filtered unknown
+53447/tcp filtered unknown
+56034/tcp filtered unknown
+58413/tcp filtered unknown
+63954/tcp filtered unknown
+
+# Nmap done at Sat Nov 14 09:12:55 2026 -- 3 IP addresses (3 hosts up) scanned in 109.29 seconds

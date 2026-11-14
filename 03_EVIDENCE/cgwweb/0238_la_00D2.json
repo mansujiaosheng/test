@@ -1,0 +1,14 @@
+{
+  "label": "la_00D2",
+  "purpose": "LA existence probe 0x00D2",
+  "tester_sa": "0x0E00",
+  "target_la": "0x00D2",
+  "elapsed_ms": 158.8,
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "parsed": [],
+  "cls": "silent",
+  "seq": 238,
+  "ts": "2026-11-14T09:25:03.662+08:00"
+}

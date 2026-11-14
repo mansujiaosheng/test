@@ -1,0 +1,360 @@
+{
+ "host": "10.230.164.3",
+ "port": 8080,
+ "probed": 10106,
+ "elapsed": 21.46408462524414,
+ "baseline": {
+  "code": 404,
+  "body": "404 page not found\n"
+ },
+ "hits": [
+  {
+   "path": "/admin/cert/verify",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/certs",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/certs/approve",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/certs/create",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/certs/generate",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/certs/get",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/certs/issue",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/certs/list",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/signing/new",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/vin/submit",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/admin/vins",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/bundle/generate",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/campaign/get",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/campaign/issue",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/0",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/1",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/:id",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/active",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/approve",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/binary",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/blob",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/create",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/current",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/default",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/download",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/file",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/generate",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/certs/get",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/flash/{id}",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/gateway",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/gw",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/health",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/image",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/image/approve",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/certs/upload",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/certs/validate",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/certs/verify",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/certs/{id}",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create/approve",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create/create",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create/generate",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create/get",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create/issue",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create/list",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create/new",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create/publish",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/ota/create/sign",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/verify/approve",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/verify/generate",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/api/verify/issue",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/healthz",
+   "code": 200,
+   "len": 16,
+   "body": "{\"status\":\"ok\"}\n"
+  },
+  {
+   "path": "/internal/audit",
+   "code": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "path": "/rpc/firmware",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/rpc/flash",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/rpc/gateway",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  },
+  {
+   "path": "/rpc/gw",
+   "code": -1,
+   "len": 25,
+   "body": "TimeoutError('timed out')"
+  }
+ ]
+}

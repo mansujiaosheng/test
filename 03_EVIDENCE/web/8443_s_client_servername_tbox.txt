@@ -1,0 +1,52 @@
+CONNECTED(0000015C)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+ 0 s:CN = tbox
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 890 bytes and written 404 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+64350000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116

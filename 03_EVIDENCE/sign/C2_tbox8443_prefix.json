@@ -1,0 +1,938 @@
+[
+ {
+  "prefix": "/",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/api",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/api",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/api/v1",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/api/v1",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/debug",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/debug",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/ota",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/ota",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/sign",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/sign",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/audit",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/audit",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/v1",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/v1",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/admin",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/internal/admin",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/ota",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/ota",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/vehicle",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/vehicle",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/vehicles",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/vehicles",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/campaign",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/campaign",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/campaigns",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/campaigns",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/firmware",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/firmware",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/sign",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/sign",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/signature",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/signature",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/objectives",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/objectives",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/admin",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/admin",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/internal",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/internal",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/diagnostics",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/diagnostics",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/vcu",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/vcu",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/update",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/update",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/auth",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/auth",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/pki",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/pki",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/cert",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/cert",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/keys",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v1/keys",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v2",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/api/v2",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/admin",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/admin",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/debug",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/debug",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/ota",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/ota",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/sign",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/sign",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/firmware",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/firmware",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/campaign",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/campaign",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/campaigns",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/campaigns",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/vehicle",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/vehicle",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/vcu",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/vcu",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/v1",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/v1",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/v2",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/v2",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/graphql/",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/graphql/",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/diagnostics",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/diagnostics",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/diag",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/diag",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/tbox",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/tbox",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/ecu",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/ecu",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/cloud",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/cloud",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/service",
+  "method": "GET",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ },
+ {
+  "prefix": "/service",
+  "method": "POST",
+  "status": 404,
+  "len": 19,
+  "ct": "text/plain; charset=utf-8",
+  "body": "404 page not found\n",
+  "default": true
+ }
+]

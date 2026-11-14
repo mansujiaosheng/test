@@ -1,0 +1,69 @@
+# precise TCP connect matrix (RST vs TIMEOUT)
+# start  : 2026-11-14T09:55:23+08:00
+# host   : local 10.252.3.20 (TAP/OpenVPN), route 10.224.0.0/12 -> 10.252.3.1
+# method : nonblocking connect_ex + select(write) + SO_ERROR
+# reps   : 2   timeout/attempt: 2.0s
+# note   : post-restart NEW addresses; 2 reps x 2.0s
+# verdict: OPEN=connected | RST=refused (IP alive, port closed) | TIMEOUT=no answer (drop/blackhole) | UNREACH/other
+
+=== 10.226.197.5 ===
+   8080/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.015, 2.000]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.005, 2.001]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.007, 2.014]
+   8443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.007, 2.006]
+  13400/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.010, 2.011]
+  13401/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.006, 2.005]
+   3000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.001, 2.009]
+   5000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.014, 2.012]
+
+=== 10.226.197.6 ===
+   8080/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.010, 2.011]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.011, 2.013]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.006, 2.014]
+   8443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.003, 2.010]
+  13400/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.001, 2.007]
+  13401/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.006, 2.000]
+   3000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.008, 2.009]
+   5000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.005, 2.011]
+
+=== 10.226.197.7 ===
+   8080/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.011, 2.003]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.013, 2.006]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.013, 2.005]
+   8443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.014, 2.001]
+  13400/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.014, 2.013]
+  13401/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.012, 2.006]
+   3000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.005, 2.006]
+   5000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.012, 2.008]
+
+=== 10.226.193.2 ===
+   8080/tcp  OPEN     reps=OPEN/OPEN                dt=[0.026, 0.026]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.013, 2.012]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.008, 2.013]
+   8443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.005, 2.006]
+  13400/tcp  OPEN     reps=OPEN/OPEN                dt=[0.027, 0.026]
+  13401/tcp  OPEN     reps=OPEN/OPEN                dt=[0.027, 0.026]
+   3000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.010, 2.000]
+   5000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.014, 2.013]
+
+=== 10.225.139.2 ===
+   8080/tcp  OPEN     reps=OPEN/OPEN                dt=[0.026, 0.026]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.011, 2.011]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.015, 2.001]
+   8443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.007, 2.013]
+  13400/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.002, 2.007]
+  13401/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.006, 2.003]
+   3000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.010, 2.005]
+   5000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.009, 2.014]
+
+=== 10.225.139.3 ===
+   8080/tcp  OPEN     reps=OPEN/OPEN                dt=[0.026, 0.026]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.001, 2.001]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.014, 2.002]
+   8443/tcp  OPEN     reps=OPEN/OPEN                dt=[0.026, 0.026]
+  13400/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.013, 2.009]
+  13401/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.008, 2.001]
+   3000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.005, 2.008]
+   5000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT          dt=[2.001, 2.002]
+
+# summary: OPEN=6 RST=0 TIMEOUT=42 MIXED/other=0

@@ -1,0 +1,19 @@
+{
+  "label": "la_slow_fc23",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xFC23",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00FC233E00",
+    "uds": "3E00"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 122.01,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 1289,
+  "ts": "2026-11-14T09:27:52.492+08:00"
+}

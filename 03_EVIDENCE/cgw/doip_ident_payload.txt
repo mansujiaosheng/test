@@ -1,0 +1,17 @@
+ident response: ptype=0x0004 len=33
+hex = 435636464635324645453945444444383610000600000010000000000000000000
+VIN        = CV6FF52FEE9EDDD86
+logicalAddr= 0x1000
+EID        = 060000001000
+GID        = 000000000000
+furtherAct = 0x00
+extra      = 00
+
+=== ptype 0x0002 (identify with EID) / 0x0003 (with VIN) ===
+  0x0002 empty         -> 0x0000:01
+  0x0002 zero EID      -> 0x0000:01
+  0x0002 ff EID        -> 0x0000:01
+  0x0003 local VIN     -> 0x0000:01
+  0x0003 tsp VIN       -> 0x0000:01
+  0x0003 zeros         -> 0x0000:01
+  0x0001 with junk     -> 0x0004:435636464635324645453945444444383610000600000010000000000000000000

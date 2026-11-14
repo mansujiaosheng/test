@@ -1,0 +1,36 @@
+=== VEHICLE_RANGE_STAGE_DETAIL_FALLBACKS (raw) ===
+{
+  "cloud-bola-exposed": "通过虚构 TSP 的 BOLA/IDOR 缺陷读取不属于访客账号的维护包。",
+  "tbox-maintenance-session": "利用旧版 JWT 算法混淆取得受控的维护诊断票据。",
+  "diagnostic-session-unlocked": "在 DoIP 上经扩展会话和 SecurityAccess 解锁受控诊断权限。",
+  "legacy-route-exploited": "验证功能寻址被错误转发至物理 BCM 的缺陷。",
+  "body-control-confirmed": "CGW 写入带 CRC/计数器的 CAN 车身动作，BCM ACK 由可信采集器确认。",
+  "final-objective-retrieved": "在控制闭环成立后从 TSP 读取该作用域专属动态 Flag。",
+  "q1-ota-package": "利用云端 IDOR 读取测试车 OTA 包和历史 PCAP 附件。",
+  "q2-service-token": "从 OTA 包中提取开发态 JWT，并利用 alg=none 分支伪造服务账号凭据。",
+  "q3-protocol-map": "结合 MQTT 任务报文和历史 PCAP，还原自定义二进制协议字段布局。",
+  "q4-task-forged": "利用 ECDSA-P256 nonce 复用恢复任务签名私钥，并伪造越权诊断任务。",
+  "q5-diag-session": "根据可推导时间种子破解 UDS SecurityAccess，建立安全诊断会话。",
+  "q6-route-open": "发现并利用网关 ACL 通配测试路由，建立到动力域的 ISO-TP 诊断路径。",
+  "q7-body-applied": "读取运输密钥并派生 BCM SecOC Key，构造四门解锁帧序列。",
+  "q8-power-applied": "迁移 SecOC 逆向方法到动力域，构造 VCU 驻车使能帧。",
+  "q9-interlock": "在 BCM 解锁与 VCU 驻车的 10 秒窗口内完成 BMS 涓流放电互锁。",
+  "q10-complete": "读取最终 DID，提交由当前 generation 状态生成的动态令牌。",
+});
+
+const $ = (selector, root = document) => root.querySelector(selector);
+const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+
+function report3DModuleFailure(message) {
+  const stage = $("#twin-stage");
+  stage?.classList.remove("is-3d-ready");
+  stage?.classList.add("is-3d-failed");
+  if (stage) stage.dataset.threeReady = "false";
+  setText("#vehicle-3d-loading-title", "3D 模块加载失败");
+  setText("#vehicle-3d-loading-detail", `${message} / 已启用二维降级`);
+}
+
+window.addEventListener("error", (event)
+
+=== other *STAGE* / *FALLBACK* constants ===
+  VEHICLE_RANGE_STAGE_DETAIL_FALLBACKS @ 2460

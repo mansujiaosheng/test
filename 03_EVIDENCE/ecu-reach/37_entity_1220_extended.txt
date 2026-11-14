@@ -1,0 +1,31 @@
+--- before session change ---
+22F190 from=0x1220 resp=7f2231
+22F187 from=0x1220 resp=7f2231
+22F189 from=0x1220 resp=7f2231
+22F1A0 from=0x1220 resp=7f2231
+--- enter extended session 10 03 ---
+1003 from=0x1220 resp=5003
+--- DIDs in extended session ---
+22F190 from=0x1220 NEG 7f2231
+22F187 from=0x1220 NEG 7f2231
+22F189 from=0x1220 NEG 7f2231
+22F18C from=0x1220 NEG 7f2231
+22F18E from=0x1220 NEG 7f2231
+22F186 from=0x1220 NEG 7f2231
+22F188 from=0x1220 NEG 7f2231
+22F18A from=0x1220 NEG 7f2231
+22F191 from=0x1220 NEG 7f2231
+22F194 from=0x1220 NEG 7f2231
+22F195 from=0x1220 NEG 7f2231
+22F1A0 from=0x1220 NEG 7f2231
+22F1A1 from=0x1220 NEG 7f2231
+22F1F0 from=0x1220 NEG 7f2231
+220100 from=0x1220 NEG 7f2231
+220001 from=0x1220 NEG 7f2231
+--- 3E / 10 01 after session 03 ---
+3E00 from=0x1220 resp=7f3e11
+1001 from=0x1220 resp=7f1012
+1002 from=0x1220 resp=7f1012
+1003 from=0x1220 resp=5003
+--- security access seed request 27 01 (read-only seed) ---
+2701 from=0x1220 resp=7f277e

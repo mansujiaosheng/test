@@ -1,0 +1,35 @@
+--- body={}
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:10:27 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- body={"query":""}
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:10:28 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- body={"query":"{ __typename }"}
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:10:28 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- body=notjson
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:10:28 GMT
+Content-Length: 36
+
+{"error":"invalid GraphQL request"}
+
+--- body={"query":"{ vehicles { vin label } }"}
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:10:28 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+

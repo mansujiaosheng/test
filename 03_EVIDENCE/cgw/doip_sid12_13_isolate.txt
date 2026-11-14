@@ -1,0 +1,12 @@
+fresh connection per probe, 6.0s timeout, draining stale frames first
+  12         -> 7F1211           60.9ms  frames=1
+  1200       -> 7F1211           59.9ms  frames=1
+  1201       -> 7F1211           60.7ms  frames=1
+  120100     -> 7F1211           60.3ms  frames=1
+  12010000   -> 7F1211           60.7ms  frames=1
+  13         -> 7F1311           61.5ms  frames=1
+  1300       -> 7F1311           59.5ms  frames=1
+  1301       -> 7F1311          335.6ms  frames=1
+  130000     -> 7F1311           59.9ms  frames=1
+  130100     -> 7F1311           60.1ms  frames=1
+  13010000   -> 7F1311           59.5ms  frames=1

@@ -1,0 +1,28 @@
+=== tracert 10.224.139.5 ===
+  1    29 ms    30 ms     *     10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+
+Trace complete.
+=== tracert 10.224.139.6 ===
+  1    29 ms    29 ms    35 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+
+Trace complete.
+=== tracert 10.224.139.7 ===
+  1    28 ms    27 ms    26 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+
+Trace complete.
+=== tracert 10.229.221.2 ===
+  1    25 ms    28 ms    26 ms  10.252.3.1 
+  2    29 ms    27 ms    27 ms  10.229.221.2 
+
+Trace complete.
+=== tracert 10.230.164.2 ===
+  1    27 ms    35 ms    35 ms  10.252.3.1 
+  2    31 ms    32 ms    29 ms  10.230.164.2 
+
+Trace complete.

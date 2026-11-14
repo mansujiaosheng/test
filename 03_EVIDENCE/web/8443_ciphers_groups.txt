@@ -1,0 +1,35 @@
+--- ciphersuite TLS_AES_128_GCM_SHA256
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+--- ciphersuite TLS_AES_256_GCM_SHA384
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+--- ciphersuite TLS_CHACHA20_POLY1305_SHA256
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_CHACHA20_POLY1305_SHA256
+--- groups: X25519, P-256, P-384
+--- group X25519
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Server Temp Key: X25519, 253 bits
+--- group P-256
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Server Temp Key: ECDH, prime256v1, 256 bits
+--- group P-384
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Server Temp Key: ECDH, secp384r1, 384 bits
+--- session resumption / ticket
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256

@@ -1,0 +1,10 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:35:56 2026 as: nmap -Pn -sT -n -p 8080,8443,13400,13401,80,443,22 --open --min-rate 3000 -oN 03_EVIDENCE/tsp_s09/03_subnet_229_ports.txt 10.229.221.0/24
+Nmap scan report for 10.229.221.2
+Host is up (0.043s latency).
+Not shown: 4 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+8080/tcp  open  http-proxy
+13400/tcp open  doip-data
+13401/tcp open  unknown
+
+# Nmap done at Sat Nov 14 09:36:43 2026 -- 256 IP addresses (256 hosts up) scanned in 47.31 seconds

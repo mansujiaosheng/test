@@ -1,0 +1,73 @@
+====== host_internal
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:06:11 GMT
+Content-Length: 22
+Connection: close
+
+{"error":"not found"}
+
+====== host_localhost
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:06:12 GMT
+Content-Length: 22
+Connection: close
+
+{"error":"not found"}
+
+====== host_cgw
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:06:12 GMT
+Content-Length: 22
+Connection: close
+
+{"error":"not found"}
+
+====== host_cgw_internal
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:06:12 GMT
+Content-Length: 22
+Connection: close
+
+{"error":"not found"}
+
+====== xfh_localhost
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:06:13 GMT
+Content-Length: 22
+Connection: close
+
+{"error":"not found"}
+
+====== abs_internal
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:06:13 GMT
+Content-Length: 22
+Connection: close
+
+{"error":"not found"}
+
+====== audit_trailing
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 02:06:13 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+====== audit_query
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:06:14 GMT
+Content-Length: 22
+Connection: close
+
+{"error":"not found"}
+

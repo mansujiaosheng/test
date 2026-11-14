@@ -1,0 +1,7 @@
+### serial recheck of the 19 phase1 timeouts (prove they are plain 404) 2026-11-14 ###
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\qwb\\03_EVIDENCE\\tbox_s09\\0003_routehunt_8080.hits.json'
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\qwb\\03_EVIDENCE\\tbox_s09\\0003_routehunt_8080.hits.json'

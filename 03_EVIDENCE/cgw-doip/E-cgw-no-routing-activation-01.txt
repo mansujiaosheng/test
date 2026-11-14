@@ -1,0 +1,23 @@
+# CGW DoIP evidence (format v1.0)
+time     : 2026-11-14 09:33:54+0800
+target   : 10.229.221.2:13400/TCP
+command  : DiagnosticMessage 0x8001 (22 F1 90) sent WITHOUT RoutingActivation
+tx_hex   : 02fd8001000000070e00100022f190
+rx[0]_hex: 02fd80010000000710000e007f2222
+rx[0]_typ: 0x8001
+note     : control: diagnostics are correctly gated behind RoutingActivation (NRC 0x22)
+
+--- decoded ---
+[
+  {
+    "type": "0x8001",
+    "name": "DiagnosticMessage",
+    "payload_hex": "10000e007f2222",
+    "source_address": "0x1000",
+    "target_address": "0x0E00",
+    "uds_hex": "7f2222",
+    "uds_negative": true,
+    "nrc": "0x22",
+    "nrc_meaning": "conditionsNotCorrect"
+  }
+]

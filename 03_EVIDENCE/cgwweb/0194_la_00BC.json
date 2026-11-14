@@ -1,0 +1,14 @@
+{
+  "label": "la_00BC",
+  "purpose": "LA existence probe 0x00BC",
+  "tester_sa": "0x0E00",
+  "target_la": "0x00BC",
+  "elapsed_ms": 160.78,
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "parsed": [],
+  "cls": "silent",
+  "seq": 194,
+  "ts": "2026-11-14T09:24:58.970+08:00"
+}

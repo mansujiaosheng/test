@@ -1,0 +1,48 @@
+==============================================================================
+/internal/audit 桩判定  2026-11-14T09:39:34+0800
+==============================================================================
+
+-- 1. body 敏感性（会解析 body 的 handler 应在这里分化）--
+  valid {}                                       -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  malformed json '{'                             -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  empty body                                     -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  json array []                                  -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  json string                                    -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  131072 bytes (graphql limit+0)                 -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  131073 bytes (graphql limit+1)                 -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  1MB body                                       -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  text/plain body                                -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  xml body                                       -> 404 len=     22 CANON b'{"error":"not found"}\n'
+
+-- 2. 方法 × 有无 body --
+  GET no body                                    -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  POST no body                                   -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  PUT no body                                    -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  DELETE no body                                 -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  PATCH no body                                  -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  OPTIONS no body                                -> 404 len=     22 CANON b'{"error":"not found"}\n'
+  TRACE no body                                  -> 404 len=     22 CANON b'{"error":"not found"}\n'
+
+  => 全部等于 23 字节固定响应? True
+
+-- 3. 原始响应头（对比 Go 默认 404）--
+
+  === GET /internal/audit ===
+  b'HTTP/1.1 404 Not Found\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:39:40 GMT\r\nContent-Length: 22\r\n\r\n{"error":"not found"}\n'
+
+  === GET /nope-xyz (Go 404) ===
+  b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:39:44 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n'
+
+  === HEAD /internal/audit ===
+  b'HTTP/1.1 404 Not Found\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:39:48 GMT\r\nContent-Length: 22\r\n\r\n'
+
+  === GET /internal/audit Accept:text/html ===
+  b'HTTP/1.1 404 Not Found\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:39:52 GMT\r\nContent-Length: 22\r\n\r\n{"error":"not found"}\n'
+
+-- 4. 极值输入（看是否 panic / 换错误）--
+  20KB header X-Audit-Id       -> 404 len=22 b'{"error":"not found"}\n'
+  GET ?id=%00                                  -> 404 len=22 b'{"error":"not found"}\n'
+  GET ?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -> 404 len=22 b'{"error":"not found"}\n'
+  GET ?id=x                                    -> 404 len=22 b'{"error":"not found"}\n'
+
+[done] 2026-11-14T09:40:01+0800

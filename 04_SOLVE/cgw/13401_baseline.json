@@ -1,0 +1,68 @@
+[
+  {
+    "payload_hex": "",
+    "len": 0,
+    "half_close": false,
+    "connect_ms": 1052.5,
+    "close_kind": "FIN",
+    "closed_after_ms": 971.3,
+    "rx_len": 0,
+    "rx_hex": "",
+    "label": "idle"
+  },
+  {
+    "payload_hex": "00",
+    "len": 1,
+    "half_close": false,
+    "connect_ms": 1031.8,
+    "close_kind": "RST",
+    "closed_after_ms": 27.9,
+    "rx_len": 0,
+    "rx_hex": "",
+    "label": "one_zero"
+  },
+  {
+    "payload_hex": "41",
+    "len": 1,
+    "half_close": false,
+    "connect_ms": 28.0,
+    "close_kind": "RST",
+    "closed_after_ms": 278.6,
+    "rx_len": 0,
+    "rx_hex": "",
+    "label": "one_A"
+  },
+  {
+    "payload_hex": "00",
+    "len": 1,
+    "half_close": false,
+    "connect_ms": 49.7,
+    "close_kind": "FIN",
+    "closed_after_ms": 0.0,
+    "rx_len": 0,
+    "rx_hex": "",
+    "label": "idle_then_zero"
+  },
+  {
+    "payload_hex": "41",
+    "len": 1,
+    "half_close": false,
+    "connect_ms": 28.8,
+    "close_kind": "FIN",
+    "closed_after_ms": 0.0,
+    "rx_len": 0,
+    "rx_hex": "",
+    "label": "idle_then_A"
+  },
+  {
+    "payload_hex": "00",
+    "len": 1,
+    "half_close": true,
+    "connect_ms": 28.5,
+    "close_kind": "FIN",
+    "closed_after_ms": 26.5,
+    "rx_len": 0,
+    "rx_hex": "",
+    "label": "halfclose_zero"
+  }
+]

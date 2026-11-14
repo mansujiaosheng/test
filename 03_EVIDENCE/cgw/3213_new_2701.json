@@ -1,0 +1,33 @@
+{
+  "label": "new_2701",
+  "purpose": "seed",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0010002701",
+    "uds": "2701"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2711",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2711",
+      "parsed": "NEGATIVE service=0x27 NRC=0x11 (serviceNotSupported)"
+    }
+  ],
+  "elapsed_ms": 428.87,
+  "parsed": "0x1000: NEGATIVE service=0x27 NRC=0x11 (serviceNotSupported)",
+  "seq": 3213,
+  "ts": "2026-11-14T09:55:20.321+08:00"
+}

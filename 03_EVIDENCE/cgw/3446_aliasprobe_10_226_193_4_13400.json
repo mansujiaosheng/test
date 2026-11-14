@@ -1,0 +1,18 @@
+{
+  "label": "aliasprobe_10_226_193_4_13400",
+  "purpose": "CGW alias / neighbour DoIP probe",
+  "host": "10.226.193.4:13400",
+  "request": {
+    "ptype": "0x0001",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": "TimeoutError: timed out"
+    }
+  ],
+  "parsed": "TimeoutError: timed out",
+  "seq": 3446,
+  "ts": "2026-11-14T10:01:31.823+08:00"
+}

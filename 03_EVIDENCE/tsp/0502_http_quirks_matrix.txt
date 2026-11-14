@@ -1,0 +1,96 @@
+# http_quirks.py  target=10.230.164.2:8080  2026-11-14T09:37:19+0800
+
+==============================================================================
+A. POST path-encoding variants of /graphql (body={})
+==============================================================================
+  [01] /graphql                                       -> HTTP/1.1 200 OK                    CANNED-GQL     HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:37:19 GMT | C
+  [02] /graphql/                                      -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [03] //graphql                                      -> HTTP/1.1 307 Temporary Redirect    OTHER          HTTP/1.1 307 Temporary Redirect | Location: /graphql | Date: Sat, 14 Nov 2026 01:37:24 GMT
+  [04] /./graphql                                     -> HTTP/1.1 307 Temporary Redirect    OTHER          HTTP/1.1 307 Temporary Redirect | Location: /graphql | Date: Sat, 14 Nov 2026 01:37:26 GMT
+  [05] /graphql/.                                     -> HTTP/1.1 307 Temporary Redirect    OTHER          HTTP/1.1 307 Temporary Redirect | Location: /graphql | Date: Sat, 14 Nov 2026 01:37:28 GMT
+  [06] /graphql/..                                    -> HTTP/1.1 307 Temporary Redirect    OTHER          HTTP/1.1 307 Temporary Redirect | Location: / | Date: Sat, 14 Nov 2026 01:37:30 GMT | Cont
+  [07] /x/../graphql                                  -> HTTP/1.1 307 Temporary Redirect    OTHER          HTTP/1.1 307 Temporary Redirect | Location: /graphql | Date: Sat, 14 Nov 2026 01:37:32 GMT
+  [08] /GRAPHQL                                       -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [09] /Graphql                                       -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [10] /gRaPhQl                                       -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [11] /%67raphql                                     -> HTTP/1.1 200 OK                    CANNED-GQL     HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:37:40 GMT | C
+  [12] /graphql%2f                                    -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [13] /graphql%2F                                    -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [14] /%2fgraphql                                    -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [15] /graphql;                                      -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [16] /graphql;x=1                                   -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [17] /graphql%00                                    -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [18] /graphql%20                                    -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [19] /graphql.                                      -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [20] /graphql..;/                                   -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [21] /..;/graphql                                   -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [22] /graphql?a=1                                   -> HTTP/1.1 200 OK                    CANNED-GQL     HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:38:03 GMT | C
+  [23] /graphql#x                                     -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [24] /graphql
+                                      -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [25] /graphql	                                      -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [26] /graphql%c0%af                                 -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [27] /graphql\                                      -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [28] /%2e%2e/graphql                                -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [29] /graphql/;/                                    -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [30] /graphql?query=%7Bvehicles%7Bvin%7D%7D         -> HTTP/1.1 200 OK                    CANNED-GQL     HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:38:18 GMT | C
+  [31] /api/graphql                                   -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [32] /v1/graphql                                    -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [33] /graphql/v1                                    -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [34] /graphql?                                      -> HTTP/1.1 200 OK                    CANNED-GQL     HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:38:26 GMT | C
+  [35] ///graphql/                                    -> HTTP/1.1 307 Temporary Redirect    OTHER          HTTP/1.1 307 Temporary Redirect | Location: /graphql/ | Date: Sat, 14 Nov 2026 01:38:28 GM
+  [36] /graphql;/../graphql                           -> HTTP/1.1 307 Temporary Redirect    OTHER          HTTP/1.1 307 Temporary Redirect | Location: /graphql | Date: Sat, 14 Nov 2026 01:38:30 GMT
+
+==============================================================================
+B. rare/unknown methods on /graphql
+==============================================================================
+  [01] CONNECT host-form                              -> HTTP/1.1 404 Not Found             OTHER          HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options:
+  [02] FOOBAR /graphql                                -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [03] BREW /graphql                                  -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [04] LINK /graphql                                  -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [05] UNLINK /graphql                                -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [06] SEARCH /graphql                                -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [07] REPORT /graphql                                -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [08] MKACTIVITY /graphql                            -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [09] CHECKOUT /graphql                              -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [10] MERGE /graphql                                 -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [11] M-SEARCH /graphql                              -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [12] NOTIFY /graphql                                -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [13] SUBSCRIBE /graphql                             -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [14] PURGE /graphql                                 -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [15] PATCH /graphql                                 -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [16] PROPFIND /graphql                              -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [17] ACL /graphql                                   -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [18] COPY /graphql                                  -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [19] MOVE /graphql                                  -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [20] TRACE /graphql                                 -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+  [21] DELETE /graphql                                -> HTTP/1.1 405 Method Not Allowed    GQL-BADMETHOD  HTTP/1.1 405 Method Not Allowed | Content-Type: application/json | Date: Sat, 14 Nov 2026 
+
+==============================================================================
+C. framing / parser oddities
+==============================================================================
+  [01] dup CL 2 and 5                                 -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [02] dup CL 5 then 2                                -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [03] CL 2 + TE chunked(5)                           -> HTTP/1.1 400 Bad Request           GQL-BADJSON    HTTP/1.1 400 Bad Request | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:39:1
+  [04] TE: chunked ext                                -> HTTP/1.1 200 OK                    CANNED-GQL     HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:39:16 GMT | C
+  [05] TE: xchunked (obfuscated)                      -> HTTP/1.1 501 Not Implemented       OTHER          HTTP/1.1 501 Not Implemented | Content-Type: text/plain; charset=utf-8 | Connection: close
+  [06] CL negative                                    -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [07] CL huge                                        -> EMPTY                                             
+  [08] HTTP/0.9 GET /graphql                          -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [09] HTTP/0.9 GET /healthz                          -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [10] garbage first line                             -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [11] empty request                                  -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [12] POST no Host 1.1                               -> HTTP/1.1 400 Bad Request: missing required Host header OTHER          HTTP/1.1 400 Bad Request: missing required Host header | Content-Type: text/plain; charset
+  [13] POST 2 Hosts                                   -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Content-Type: text/plain; charset=utf-8 | Connection: close |  
+  [14] big header 8k                                  -> HTTP/1.1 200 OK                    CANNED-GQL     HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:39:22 GMT | C
+  [15] big header 1M                                  -> EMPTY                                             
+
+==============================================================================
+D. request-target forms
+==============================================================================
+  [01] POST absolute-form                             -> HTTP/1.1 200 OK                    CANNED-GQL     HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:39:27 GMT | C
+  [02] POST absolute-form other host                  -> HTTP/1.1 200 OK                    CANNED-GQL     HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:39:30 GMT | C
+  [03] OPTIONS *                                      -> HTTP/1.1 200 OK                    OTHER          HTTP/1.1 200 OK | Content-Length: 0 | Date: Sat, 14 Nov 2026 01:39:32 GMT |  | 
+  [04] POST *                                         -> HTTP/1.1 400 Bad Request           OTHER          HTTP/1.1 400 Bad Request | Connection: close | Date: Sat, 14 Nov 2026 01:39:35 GMT | Conte
+
+done

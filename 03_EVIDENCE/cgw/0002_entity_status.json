@@ -1,0 +1,18 @@
+{
+  "label": "entity_status",
+  "purpose": "DoIP entity status request (0x4001)",
+  "request": {
+    "ptype": "0x4001",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "0x0000",
+      "hex": "01",
+      "len": 1
+    }
+  ],
+  "parsed": "01",
+  "seq": 2,
+  "ts": "2026-11-14T09:10:21.985+08:00"
+}

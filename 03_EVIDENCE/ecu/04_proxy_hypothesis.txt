@@ -1,0 +1,15 @@
+### T4.1 forward-proxy hypothesis: -x http://10.229.221.2:8080
+curl: (23) client returned ERROR on write of 16 bytes
+abs_url http=200 t=0.063592
+{"status":"ok"}
+
+BODY_ABOVE
+
+### T4.2 forward-proxy via 10.230.164.4:8080
+curl: (23) client returned ERROR on write of 16 bytes
+abs_url http=200
+
+### T4.3 CONNECT tunnel attempt
+curl: (7) CONNECT tunnel failed, response 404
+
+CONNECT_done

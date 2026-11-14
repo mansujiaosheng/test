@@ -1,0 +1,18 @@
+openssl_conf = openssl_init
+[openssl_init]
+providers = provider_sect
+[provider_sect]
+default = default_sect
+[default_sect]
+activate = 1
+[req]
+distinguished_name = dn
+string_mask = pkix
+prompt = no
+x509_extensions = v3_ca
+[dn]
+CN = placeholder
+[v3_ca]
+basicConstraints = critical,CA:TRUE
+keyUsage = critical,keyCertSign,cRLSign,digitalSignature
+subjectKeyIdentifier = hash

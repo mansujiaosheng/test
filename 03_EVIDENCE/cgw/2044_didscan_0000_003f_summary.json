@@ -1,0 +1,14 @@
+{
+  "label": "didscan_0000_003f_summary",
+  "purpose": "0x22 DID scan on 0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "did 0000-003f ta=0xe442"
+  },
+  "parsed": "64 values, 0 non-baseline, baseline=('0x1220', '7F2231'), slow_batches=0, elapsed=0.1s",
+  "baseline": "('0x1220', '7F2231')",
+  "hits": [],
+  "evidence_file": "2043_didscan_0000_003f.jsonl",
+  "seq": 2044,
+  "ts": "2026-11-14T09:33:32.941+08:00"
+}

@@ -1,0 +1,17 @@
+{
+  "label": "ptype_0000",
+  "purpose": "DoIP payload type probe 0x0000 generic",
+  "request": {
+    "ptype": "0x0000",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "0x0000",
+      "hex": "01"
+    }
+  ],
+  "parsed": "0x0000 01",
+  "seq": 3147,
+  "ts": "2026-11-14T09:48:06.334+08:00"
+}

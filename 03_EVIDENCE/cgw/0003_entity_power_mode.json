@@ -1,0 +1,18 @@
+{
+  "label": "entity_power_mode",
+  "purpose": "diagnostic power mode info request (0x4003)",
+  "request": {
+    "ptype": "0x4003",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "0x0000",
+      "hex": "01",
+      "len": 1
+    }
+  ],
+  "parsed": "01",
+  "seq": 3,
+  "ts": "2026-11-14T09:10:22.526+08:00"
+}

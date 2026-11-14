@@ -1,0 +1,19 @@
+{
+  "label": "dummy",
+  "purpose": "read DID 0xF1BC",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00100022F1BC",
+    "uds": "22F1BC"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 195.59,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 124,
+  "ts": "2026-11-14T09:11:58.965+08:00"
+}

@@ -1,0 +1,13 @@
+{
+  "label": "alias_225_139_4_13401",
+  "purpose": "DoIP ident on CGW alias :13401",
+  "host": "10.225.139.4:13401",
+  "request": {
+    "ptype": "0x0001",
+    "hex": ""
+  },
+  "responses": [],
+  "parsed": "0B",
+  "seq": 3450,
+  "ts": "2026-11-14T10:01:40.729+08:00"
+}

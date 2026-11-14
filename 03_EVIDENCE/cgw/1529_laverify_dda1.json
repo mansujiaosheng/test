@@ -1,0 +1,32 @@
+{
+  "label": "laverify_dda1",
+  "purpose": "re-verify logical address on a clean socket",
+  "tester_sa": "0x0E00",
+  "target_la": "0xDDA1",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00DDA13E00",
+    "uds": "3E00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F3E31",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F3E31",
+      "parsed": "NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 338.07,
+  "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)",
+  "seq": 1529,
+  "ts": "2026-11-14T09:29:13.949+08:00"
+}

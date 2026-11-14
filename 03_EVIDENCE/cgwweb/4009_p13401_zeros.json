@@ -1,0 +1,11 @@
+{
+  "label": "p13401_zeros",
+  "host": "10.229.221.2",
+  "port": 13401,
+  "sent_hex": "0000000000000000",
+  "recv_hex": "",
+  "recv_ascii": "",
+  "note": "8 zero bytes | peer closed | 0B in 53ms",
+  "seq": 4009,
+  "ts": "2026-11-14T09:28:26.568+08:00"
+}

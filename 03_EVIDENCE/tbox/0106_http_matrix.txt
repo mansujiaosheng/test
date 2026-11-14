@@ -1,0 +1,61 @@
+Sat Nov 14 01:42:35 UTC 2026
+## cmd: python 04_SOLVE/tbox/http_matrix.py
+## target 10.230.164.3:8080   raw-socket matrix: method x path, path normalisation,
+##        Host vhost (19 names), HTTP/1.0, absolute-form, duplicate Host
+
+### A. method x path
+### B. path normalisation (GET)
+### C. Host header virtual hosts
+### D. HTTP/1.0 and absolute-form
+
+### non-404 results
+{"label": "A GET /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "A HEAD /healthz", "status": "HTTP/1.1 200 OK", "len": 0, "body": "", "ctype": "application/json"}
+{"label": "A POST /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "A PUT /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "A DELETE /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "A PATCH /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "A OPTIONS /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "A TRACE /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "A CONNECT /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "B GET '/healthz'", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "B GET '//healthz'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 44, "body": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "B GET '///healthz'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 44, "body": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "B GET '/./healthz'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 44, "body": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "B GET '/healthz/.'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 44, "body": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "B GET '/healthz/..'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 37, "body": "<a href=\"/\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "B GET '/healthz/../healthz'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 44, "body": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "B GET '/../healthz'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 44, "body": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "B GET '/%68ealthz'", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "B GET '/he%61lthz'", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "B GET '/healthz\\x00'", "status": "HTTP/1.1 400 Bad Request", "len": 15, "body": "400 Bad Request", "ctype": "text/plain; charset=utf-8"}
+{"label": "B GET '/./healthz'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 44, "body": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "B GET '/healthz?'", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "B GET '/./'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 37, "body": "<a href=\"/\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "B GET '/..'", "status": "HTTP/1.1 307 Temporary Redirect", "len": 37, "body": "<a href=\"/\">Temporary Redirect</a>.\n\n", "ctype": "text/html; charset=utf-8"}
+{"label": "C Host='tbox' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='tbox.local' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='tbox.cybercar.local' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='tbox.cybercar' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='cybercar' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='cybercar.local' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='cv6' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='cv6.local' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='fleet' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='fleet.local' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='ota' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='ota.local' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='diagnostics' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='localhost' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='127.0.0.1' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='10.230.164.3' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='tbox:8080' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "C Host='tbox:8443' /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "D HTTP/1.0 no host /healthz", "status": "HTTP/1.0 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "D absolute-form http://tbox/healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "D absolute-form ip:port /healthz", "status": "HTTP/1.1 200 OK", "len": 16, "body": "{\"status\":\"ok\"}\n", "ctype": "application/json"}
+{"label": "D duplicate Host", "status": "HTTP/1.1 400 Bad Request", "len": 15, "body": "400 Bad Request", "ctype": "text/plain; charset=utf-8"}
+
+total=201 404=154 non404=47
+Sat Nov 14 01:43:25 UTC 2026

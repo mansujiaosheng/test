@@ -1,0 +1,29 @@
+### SSRF / reverse-proxy header hypotheses against 10.229.221.2:8080
+[Host: 10.224.139.6:8080] len=143
+  HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:40:20 GMT | Content-Length: 16 | Connection: close |  | {"status":"ok"}
+
+[X-Forwarded-Host] len=143
+  HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:40:20 GMT | Content-Length: 16 | Connection: close |  | {"status":"ok"}
+
+[X-Original-URL] len=143
+  HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:40:20 GMT | Content-Length: 16 | Connection: close |  | {"status":"ok"}
+
+[X-Rewrite-URL] len=143
+  HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:40:20 GMT | Content-Length: 16 | Connection: close |  | {"status":"ok"}
+
+[X-Forwarded-For+Proto] len=143
+  HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:40:20 GMT | Content-Length: 16 | Connection: close |  | {"status":"ok"}
+
+[path-as-url /http://10.224.139.6:8080/healthz] len=263
+  HTTP/1.1 307 Temporary Redirect | Content-Type: text/html; charset=utf-8 | Location: /http:/10.224.139.6:8080/healthz | Date: Sat, 14 Nov 2026 01:40:20 GMT | Content-Length: 68 | Connection: close |  | <a href="/http:/10.224.139.6:8080/healthz">Temporary Redirect</a>.
+
+
+[proxy-style full URL in path] len=251
+  HTTP/1.1 307 Temporary Redirect | Content-Type: text/html; charset=utf-8 | Location: /10.224.139.6:8080/healthz | Date: Sat, 14 Nov 2026 01:40:20 GMT | Content-Length: 62 | Connection: close |  | <a href="/10.224.139.6:8080/healthz">Temporary Redirect</a>.
+
+
+
+### BASELINE: what does a genuine 404 look like on this server?
+[baseline 404] len=195
+  HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options: nosniff | Date: Sat, 14 Nov 2026 01:40:20 GMT | Content-Length: 19 | Connection: close |  | 404 page not found
+

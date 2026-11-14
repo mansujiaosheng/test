@@ -1,0 +1,7 @@
+[+] reclassified from D:\qwb\04_SOLVE\cgw\..\..\03_EVIDENCE\cgw\doip_sweep_ta_all.jsonl
+[+] n_ta=898  counts={'BASELINE_NRC31': 897, 'INTERESTING': 1}
+[+] non-baseline rows (1):
+    TA=0x1000 INTERESTING    nrc=11      55.5ms  7F3E11
+
+[+] wrote D:\qwb\04_SOLVE\cgw\..\..\03_EVIDENCE\cgw\doip_ta_matrix.txt
+[+] wrote D:\qwb\04_SOLVE\cgw\..\..\03_EVIDENCE\cgw\doip_sweep_ta_10_229_221_2.json

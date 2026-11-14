@@ -1,0 +1,17 @@
+{
+  "label": "ptype_4001",
+  "purpose": "DoIP payload type probe 0x4001 status",
+  "request": {
+    "ptype": "0x4001",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "0x0000",
+      "hex": "01"
+    }
+  ],
+  "parsed": "0x0000 01",
+  "seq": 3145,
+  "ts": "2026-11-14T09:48:06.204+08:00"
+}

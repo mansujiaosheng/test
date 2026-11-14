@@ -1,0 +1,5 @@
+paths=4193
+HIT /healthz                                   200 ct=application/json b'{"status":"ok"}\n'
+HIT /graphql                                   405 ct=application/json b'{"error":"method not allowed"}\n'
+HIT /internal/audit                            404 ct=application/json b'{"error":"not found"}\n'
+--- done 79.4s  paths=4193  hits=3  transport_errors=2

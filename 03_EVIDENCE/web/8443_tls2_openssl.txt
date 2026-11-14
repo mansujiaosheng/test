@@ -1,0 +1,103 @@
+
+##### sess_out_on_failing_handshake
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -servername tbox -sess_out D:\qwb\04_SOLVE\web\tools\..\..\..\03_EVIDENCE\web\tls_probe\w2_sess.pem
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+F40D0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+##### sess_in_reuse
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -servername tbox -sess_in D:\qwb\04_SOLVE\web\tools\..\..\..\03_EVIDENCE\web\tls_probe\w2_sess.pem
+00ED0000:error:80000002:system library:BIO_new_file:No such file or directory:crypto\bio\bss_file.c:67:calling fopen(D:\qwb\04_SOLVE\web\tools\..\..\..\03_EVIDENCE\web\tls_probe\w2_sess.pem, r)
+00ED0000:error:10000080:BIO routines:BIO_new_file:no such file:crypto\bio\bss_file.c:75:
+
+##### alpn_h2
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -servername tbox -alpn h2
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+8C980000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+##### alpn_doip
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -servername tbox -alpn doip
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+0C120100:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+##### ciphersuite_ccm
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -ciphersuites TLS_AES_128_CCM_SHA256
+no peer certificate available
+New, (NONE), Cipher is (NONE)
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+048A0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:ssl\record\rec_layer_s3.c:1605:SSL alert number 40
+
+##### ciphersuite_ccm8
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -ciphersuites TLS_AES_128_CCM_8_SHA256
+no peer certificate available
+New, (NONE), Cipher is (NONE)
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+F4A90000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:ssl\record\rec_layer_s3.c:1605:SSL alert number 40
+
+##### group_x25519mlkem768
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -groups X25519MLKEM768
+FCEE0000:error:0A080106:SSL routines:gid_cb:passed invalid argument:ssl\t1_lib.c:751:group 'X25519MLKEM768' cannot be set
+
+##### early_data
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -servername tbox -early_data
+s_client: Option -early_data needs a value
+s_client: Use -help for summary.
+
+##### no_sni
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -noservername
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+E8C60000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+##### status_request_ocsp
+$ openssl s_client -connect 10.230.164.3:8443 -tls1_3 -servername tbox -status
+OCSP response: no response sent
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+7C8B0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116

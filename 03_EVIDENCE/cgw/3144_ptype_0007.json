@@ -1,0 +1,17 @@
+{
+  "label": "ptype_0007",
+  "purpose": "DoIP payload type probe 0x0007 alive",
+  "request": {
+    "ptype": "0x0007",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "0x0000",
+      "hex": "01"
+    }
+  ],
+  "parsed": "0x0000 01",
+  "seq": 3144,
+  "ts": "2026-11-14T09:48:06.149+08:00"
+}

@@ -1,0 +1,48 @@
+###### 0017 CONTROL: local Go 1.24.2 TLS1.3 server, RequireAndVerifyClientCert ######
+### purpose: decide whether 10.230.164.3:8443 can be Go crypto/tls.
+###          Go vs target: CertificateRequest extension set + failure alert code.
+### date: 2026-11-14T01:39:55Z
+### go: go version go1.24.2 windows/amd64   listener: 127.0.0.1:19999
+### note: port 9443 was already taken by PID 19312 (a pre-existing local mock), so this uses 19999.
+
+=== A. NO client cert ===
+<<< TLS 1.3, Handshake [length 0051], CertificateRequest
+    0d 00 00 4d 00 00 4a 00 05 00 00 00 12 00 00 00
+    0d 00 1a 00 18 08 04 04 03 08 07 08 05 08 06 04
+    01 05 01 06 01 05 03 06 03 02 01 02 03 00 2f 00
+    20 00 1e 00 1c 30 1a 31 18 30 16 06 03 55 04 03
+    0c 0f 54 45 53 54 20 46 6c 65 65 74 20 52 6f 6f
+    74
+<<< TLS 1.2, RecordHeader [length 0005]
+
+--- A summary ---
+>>> TLS 1.3, Handshake [length 00ea], ClientHello
+<<< TLS 1.3, Handshake [length 007a], ServerHello
+<<< TLS 1.3, Handshake [length 0006], EncryptedExtensions
+<<< TLS 1.3, Handshake [length 0051], CertificateRequest
+<<< TLS 1.3, Handshake [length 01a5], Certificate
+<<< TLS 1.3, Handshake [length 004f], CertificateVerify
+<<< TLS 1.3, Handshake [length 0024], Finished
+>>> TLS 1.3, Handshake [length 0008], Certificate
+>>> TLS 1.3, Handshake [length 0024], Finished
+Acceptable client certificate CA names
+CN = TEST Fleet Root
+<<< TLS 1.3, Alert [length 0002], fatal certificate_required
+SSL3 alert read:fatal:unknown
+9C3B0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+=== B. self-signed client cert (v1_ed25519_selfsign) ===
+>>> TLS 1.3, Handshake [length 00ea], ClientHello
+<<< TLS 1.3, Handshake [length 007a], ServerHello
+<<< TLS 1.3, Handshake [length 0006], EncryptedExtensions
+<<< TLS 1.3, Handshake [length 0051], CertificateRequest
+<<< TLS 1.3, Handshake [length 01a5], Certificate
+<<< TLS 1.3, Handshake [length 004e], CertificateVerify
+<<< TLS 1.3, Handshake [length 0024], Finished
+>>> TLS 1.3, Handshake [length 0125], Certificate
+>>> TLS 1.3, Handshake [length 0048], CertificateVerify
+>>> TLS 1.3, Handshake [length 0024], Finished
+Acceptable client certificate CA names
+<<< TLS 1.3, Alert [length 0002], fatal unknown_ca
+SSL3 alert read:fatal:unknown CA
+6C0A0100:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48

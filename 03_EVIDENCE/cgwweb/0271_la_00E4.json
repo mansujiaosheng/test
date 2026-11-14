@@ -1,0 +1,26 @@
+{
+  "label": "la_00E4",
+  "purpose": "LA existence probe 0x00E4",
+  "tester_sa": "0x0E00",
+  "target_la": "0x00E4",
+  "elapsed_ms": 206.38,
+  "responses": [
+    "10000E007F3E31",
+    "10000E007F3E31",
+    "10000E007F3E31",
+    "10000E007F3E31",
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)",
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)",
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)",
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)",
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 271,
+  "ts": "2026-11-14T09:25:07.735+08:00"
+}

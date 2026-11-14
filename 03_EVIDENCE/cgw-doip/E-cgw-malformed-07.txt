@@ -1,0 +1,8 @@
+# CGW DoIP evidence (format v1.0)
+time     : 2026-11-14 09:34:09+0800
+target   : 10.229.221.2:13400/TCP
+command  : version 0x02 / inverse 0x00 (invalid inverse)
+tx_hex   : 0200000100000000
+
+--- decoded ---
+[]

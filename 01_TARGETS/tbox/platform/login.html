@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="CyberCar 车联网数字孪生安全竞赛平台登录" />
+    <title>车联网数字孪生攻防平台</title>
+    <link rel="icon" href="/brand-mark.png" type="image/png" />
+    <link rel="stylesheet" href="/login.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <main class="login-shell">
+      <section class="mission-panel" aria-labelledby="platform-title">
+        <a class="brand" href="/login.html" aria-label="CyberCar 登录首页">
+          <img class="brand-mark" src="/brand-mark.png" alt="" aria-hidden="true" />
+          <span class="brand-copy"><small>数字孪生攻防平台</small></span>
+        </a>
+
+        <div class="mission-copy">
+          <h1 id="platform-title">进入车辆安全<br /><em>数字战场</em></h1>
+        </div>
+
+        <div class="vehicle-map" aria-hidden="true">
+          <div class="map-grid"></div>
+          <div class="vehicle-outline">
+            <span class="axle axle-front"></span>
+            <span class="axle axle-rear"></span>
+            <i class="node node-gateway"></i>
+            <i class="node node-tbox"></i>
+            <i class="node node-bms"></i>
+            <i class="node node-front"></i>
+            <i class="node node-rear"></i>
+            <span class="route route-a"></span>
+            <span class="route route-b"></span>
+            <span class="route route-c"></span>
+          </div>
+          <div class="map-caption"><span>车辆域链路</span><strong>等待身份认证</strong></div>
+        </div>
+
+      </section>
+
+      <section class="auth-panel" aria-labelledby="login-title">
+        <div class="auth-card">
+          <header>
+            <span class="section-code">身份验证 / 安全会话</span>
+            <h2 id="login-title">账号登录</h2>
+            <p>使用赛事管理员分配的账号进入平台。</p>
+          </header>
+
+          <div class="session-check" id="session-check" role="status" aria-live="polite">
+            <span class="loader" aria-hidden="true"></span>
+            <span>正在确认当前登录状态…</span>
+          </div>
+
+          <form id="login-form" class="login-form" hidden novalidate>
+            <div class="form-message" id="form-message" role="alert" aria-live="assertive" hidden></div>
+
+            <label class="field" for="username">
+              <span>账号</span>
+              <input
+                id="username"
+                name="username"
+                type="text"
+                autocomplete="username"
+                autocapitalize="none"
+                spellcheck="false"
+                maxlength="64"
+                required
+                aria-describedby="username-hint"
+              />
+              <small id="username-hint">请输入管理员分配的登录账号</small>
+            </label>
+
+            <label class="field" for="password">
+              <span>密码</span>
+              <span class="password-control">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  maxlength="256"
+                  required
+                  aria-describedby="password-hint"
+                />
+                <button class="password-toggle" type="button" id="password-toggle" aria-controls="password" aria-pressed="false">显示</button>
+              </span>
+              <small id="password-hint">密码仅用于本次安全会话验证</small>
+            </label>
+
+            <button class="submit-button" id="submit-button" type="submit">
+              <span class="button-label">验证并进入平台</span>
+              <span class="button-progress" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <footer class="auth-note">
+            <span aria-hidden="true">!</span>
+            <p><strong>安全提示</strong> 请勿共享账号。平台不会在浏览器中保存密码；管理操作会记录审计信息。</p>
+          </footer>
+        </div>
+
+      </section>
+    </main>
+    <script src="/login.js" defer></script>
+  </body>
+</html>

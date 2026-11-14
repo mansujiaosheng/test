@@ -1,0 +1,32 @@
+{
+  "label": "r2n_ctx_extended+3e_270100000000",
+  "purpose": "0x27 variant 270100000000 in context extended+3e",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E442270100000000",
+    "uds": "270100000000"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F277E"
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F277E",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    }
+  ],
+  "elapsed_ms": 480.18,
+  "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)",
+  "seq": 3389,
+  "ts": "2026-11-14T09:57:48.762+08:00"
+}

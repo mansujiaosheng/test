@@ -1,0 +1,1668 @@
+{
+ "names": 734,
+ "queries": 1468,
+ "diffs": [
+  {
+   "name": "getDiagnosticCampaigns",
+   "query": "{getDiagnosticCampaigns(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error timed out>"
+  },
+  {
+   "name": "getOtaPackages",
+   "query": "{getOtaPackages}",
+   "status": -1,
+   "body": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
+  },
+  {
+   "name": "getUpdateDiagnostic",
+   "query": "{getUpdateDiagnostic(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error timed out>"
+  },
+  {
+   "name": "getVehicleCampaigns",
+   "query": "{getVehicleCampaigns(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleEngineerings",
+   "query": "{getVehicleEngineerings(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleFirmwares",
+   "query": "{getVehicleFirmwares}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleOtaCampaign",
+   "query": "{getVehicleOtaCampaign(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleOtaCampaigns",
+   "query": "{getVehicleOtaCampaigns}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleOtaCampaigns",
+   "query": "{getVehicleOtaCampaigns(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleOtas",
+   "query": "{getVehicleOtas}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleOtas",
+   "query": "{getVehicleOtas(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehiclePackage",
+   "query": "{getVehiclePackage}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehiclePackages",
+   "query": "{getVehiclePackages(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleSession",
+   "query": "{getVehicleSession}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleSessions",
+   "query": "{getVehicleSessions}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleUpdate",
+   "query": "{getVehicleUpdate(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleUpdates",
+   "query": "{getVehicleUpdates(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVehicleVehicles",
+   "query": "{getVehicleVehicles}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVersion",
+   "query": "{getVersion}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "getVersion",
+   "query": "{getVersion(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "group",
+   "query": "{group}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "groups",
+   "query": "{groups(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "guestVehicles",
+   "query": "{guestVehicles}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "guestVehicles",
+   "query": "{guestVehicles(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "hash",
+   "query": "{hash}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "hashs",
+   "query": "{hashs(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "image",
+   "query": "{image}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "image",
+   "query": "{image(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "images",
+   "query": "{images(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "info",
+   "query": "{info}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "infos",
+   "query": "{infos}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "infos",
+   "query": "{infos(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "internal",
+   "query": "{internal}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "internal",
+   "query": "{internal(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "internals",
+   "query": "{internals}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "internals",
+   "query": "{internals(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "jobs",
+   "query": "{jobs}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "jobs",
+   "query": "{jobs(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "keys",
+   "query": "{keys(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "logs",
+   "query": "{logs}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "logs",
+   "query": "{logs(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "manifest",
+   "query": "{manifest(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "manifests",
+   "query": "{manifests}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "manifests",
+   "query": "{manifests(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "meta",
+   "query": "{meta}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "meta",
+   "query": "{meta(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "metas",
+   "query": "{metas}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "metas",
+   "query": "{metas(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "myFleets",
+   "query": "{myFleets}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "myVehicle",
+   "query": "{myVehicle}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "myVehicle",
+   "query": "{myVehicle(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "myVehicles",
+   "query": "{myVehicles}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "myVehicles",
+   "query": "{myVehicles(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "node",
+   "query": "{node(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "nodes",
+   "query": "{nodes}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "nodes",
+   "query": "{nodes(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "ota",
+   "query": "{ota}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "ota",
+   "query": "{ota(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaArtifact",
+   "query": "{otaArtifact}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaArtifact",
+   "query": "{otaArtifact(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaArtifacts",
+   "query": "{otaArtifacts}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaArtifacts",
+   "query": "{otaArtifacts(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaCampaign",
+   "query": "{otaCampaign}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaCampaign",
+   "query": "{otaCampaign(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaDiagnostic",
+   "query": "{otaDiagnostic}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaDiagnostic",
+   "query": "{otaDiagnostic(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaDiagnostics",
+   "query": "{otaDiagnostics}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaEngineering",
+   "query": "{otaEngineering}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaEngineering",
+   "query": "{otaEngineering(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaEngineerings",
+   "query": "{otaEngineerings}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaFirmware",
+   "query": "{otaFirmware}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaFirmware",
+   "query": "{otaFirmware(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaFirmwares",
+   "query": "{otaFirmwares}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaFirmwares",
+   "query": "{otaFirmwares(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaJob",
+   "query": "{otaJob}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaJob",
+   "query": "{otaJob(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaJobs",
+   "query": "{otaJobs}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaJobs",
+   "query": "{otaJobs(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaManifest",
+   "query": "{otaManifest}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaManifest",
+   "query": "{otaManifest(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaManifests",
+   "query": "{otaManifests}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaManifests",
+   "query": "{otaManifests(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaOta",
+   "query": "{otaOta}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaOta",
+   "query": "{otaOta(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaOtas",
+   "query": "{otaOtas}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaOtas",
+   "query": "{otaOtas(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaPackage",
+   "query": "{otaPackage}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaPackage",
+   "query": "{otaPackage(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaPackages",
+   "query": "{otaPackages(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaRelease",
+   "query": "{otaRelease}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaReleases",
+   "query": "{otaReleases}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaReleases",
+   "query": "{otaReleases(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaSession",
+   "query": "{otaSession}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaSession",
+   "query": "{otaSession(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaSessions",
+   "query": "{otaSessions}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaSessions",
+   "query": "{otaSessions(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaSignatures",
+   "query": "{otaSignatures}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaSignatures",
+   "query": "{otaSignatures(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaStatus",
+   "query": "{otaStatus}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaStatus",
+   "query": "{otaStatus(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaTarget",
+   "query": "{otaTarget}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaTarget",
+   "query": "{otaTarget(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaTargets",
+   "query": "{otaTargets}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaTargets",
+   "query": "{otaTargets(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaUpdate",
+   "query": "{otaUpdate}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaUpdate",
+   "query": "{otaUpdate(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaUpdates",
+   "query": "{otaUpdates}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaUpdates",
+   "query": "{otaUpdates(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaVehicle",
+   "query": "{otaVehicle}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaVehicle",
+   "query": "{otaVehicle(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otaVehicles",
+   "query": "{otaVehicles(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otas",
+   "query": "{otas}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "otas",
+   "query": "{otas(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "package",
+   "query": "{package}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "package",
+   "query": "{package(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageArtifact",
+   "query": "{packageArtifact(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageArtifacts",
+   "query": "{packageArtifacts}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageArtifacts",
+   "query": "{packageArtifacts(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageCampaign",
+   "query": "{packageCampaign}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageCampaign",
+   "query": "{packageCampaign(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageCampaigns",
+   "query": "{packageCampaigns(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageDiagnostic",
+   "query": "{packageDiagnostic}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageDiagnostic",
+   "query": "{packageDiagnostic(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageDiagnostics",
+   "query": "{packageDiagnostics(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageEngineering",
+   "query": "{packageEngineering}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageEngineering",
+   "query": "{packageEngineering(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageEngineerings",
+   "query": "{packageEngineerings}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageFirmware",
+   "query": "{packageFirmware}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageFirmwares",
+   "query": "{packageFirmwares}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageOta",
+   "query": "{packageOta}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageOta",
+   "query": "{packageOta(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageOtas",
+   "query": "{packageOtas(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packagePackage",
+   "query": "{packagePackage}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packagePackage",
+   "query": "{packagePackage(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packagePackages",
+   "query": "{packagePackages}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packagePackages",
+   "query": "{packagePackages(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageSession",
+   "query": "{packageSession}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageSession",
+   "query": "{packageSession(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageSessions",
+   "query": "{packageSessions}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageSessions",
+   "query": "{packageSessions(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageUpdate",
+   "query": "{packageUpdate}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageUpdate",
+   "query": "{packageUpdate(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageUpdates",
+   "query": "{packageUpdates}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packageVehicles",
+   "query": "{packageVehicles}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packages",
+   "query": "{packages}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "packages",
+   "query": "{packages(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "permission",
+   "query": "{permission}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "permission",
+   "query": "{permission(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "permissions",
+   "query": "{permissions}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "permissions",
+   "query": "{permissions(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "pki",
+   "query": "{pki}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "pki",
+   "query": "{pki(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "pkis",
+   "query": "{pkis}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "pkis",
+   "query": "{pkis(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "policies",
+   "query": "{policies}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "policies",
+   "query": "{policies(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "policy",
+   "query": "{policy}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "policy",
+   "query": "{policy(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "policys",
+   "query": "{policys(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "release",
+   "query": "{release}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "release",
+   "query": "{release(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "report",
+   "query": "{report}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "report",
+   "query": "{report(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "reports",
+   "query": "{reports}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "role",
+   "query": "{role}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "role",
+   "query": "{role(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "roles",
+   "query": "{roles}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "roles",
+   "query": "{roles(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "rollout",
+   "query": "{rollout(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "rollouts",
+   "query": "{rollouts}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "rollouts",
+   "query": "{rollouts(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "rule",
+   "query": "{rule}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "rule",
+   "query": "{rule(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "rules",
+   "query": "{rules}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "rules",
+   "query": "{rules(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "secret",
+   "query": "{secret}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "secret",
+   "query": "{secret(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "secrets",
+   "query": "{secrets}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "secrets",
+   "query": "{secrets(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "session",
+   "query": "{session}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "session",
+   "query": "{session(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionArtifact",
+   "query": "{sessionArtifact}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionArtifacts",
+   "query": "{sessionArtifacts}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionArtifacts",
+   "query": "{sessionArtifacts(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionCampaign",
+   "query": "{sessionCampaign(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionCampaigns",
+   "query": "{sessionCampaigns}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionCampaigns",
+   "query": "{sessionCampaigns(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionDiagnostic",
+   "query": "{sessionDiagnostic(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionDiagnostics",
+   "query": "{sessionDiagnostics}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionDiagnostics",
+   "query": "{sessionDiagnostics(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionEngineering",
+   "query": "{sessionEngineering}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionEngineering",
+   "query": "{sessionEngineering(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionEngineerings",
+   "query": "{sessionEngineerings}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionEngineerings",
+   "query": "{sessionEngineerings(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionFirmware",
+   "query": "{sessionFirmware}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionFirmware",
+   "query": "{sessionFirmware(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionFirmwares",
+   "query": "{sessionFirmwares}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionFirmwares",
+   "query": "{sessionFirmwares(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionOta",
+   "query": "{sessionOta(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionPackage",
+   "query": "{sessionPackage(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionPackages",
+   "query": "{sessionPackages}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionSession",
+   "query": "{sessionSession}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionSession",
+   "query": "{sessionSession(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionSessions",
+   "query": "{sessionSessions}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionSessions",
+   "query": "{sessionSessions(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionUpdate",
+   "query": "{sessionUpdate}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionUpdate",
+   "query": "{sessionUpdate(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionUpdates",
+   "query": "{sessionUpdates}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionUpdates",
+   "query": "{sessionUpdates(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionVehicle",
+   "query": "{sessionVehicle}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionVehicle",
+   "query": "{sessionVehicle(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionVehicles",
+   "query": "{sessionVehicles}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessionVehicles",
+   "query": "{sessionVehicles(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessions",
+   "query": "{sessions}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sessions",
+   "query": "{sessions(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "sign",
+   "query": "{sign(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "signature",
+   "query": "{signature}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "signature",
+   "query": "{signature(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "signatures",
+   "query": "{signatures}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "signs",
+   "query": "{signs(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "status",
+   "query": "{status}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "status",
+   "query": "{status(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "storage",
+   "query": "{storage}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "storage",
+   "query": "{storage(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "storages",
+   "query": "{storages}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "storages",
+   "query": "{storages(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "target",
+   "query": "{target}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "target",
+   "query": "{target(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "targets",
+   "query": "{targets}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "targets",
+   "query": "{targets(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "task",
+   "query": "{task(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "tasks",
+   "query": "{tasks}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "tasks",
+   "query": "{tasks(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "telemetry",
+   "query": "{telemetry(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "telemetrys",
+   "query": "{telemetrys}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "telemetrys",
+   "query": "{telemetrys(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "tenant",
+   "query": "{tenant(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "tenants",
+   "query": "{tenants}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "tenants",
+   "query": "{tenants(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "token",
+   "query": "{token}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "token",
+   "query": "{token(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "tokens",
+   "query": "{tokens}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "tokens",
+   "query": "{tokens(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "update",
+   "query": "{update}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "update",
+   "query": "{update(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateArtifact",
+   "query": "{updateArtifact}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateArtifact",
+   "query": "{updateArtifact(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateArtifacts",
+   "query": "{updateArtifacts}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateArtifacts",
+   "query": "{updateArtifacts(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateCampaign",
+   "query": "{updateCampaign(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateCampaigns",
+   "query": "{updateCampaigns}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateCampaigns",
+   "query": "{updateCampaigns(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateDiagnostic",
+   "query": "{updateDiagnostic}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateDiagnostic",
+   "query": "{updateDiagnostic(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateDiagnostics",
+   "query": "{updateDiagnostics}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateDiagnostics",
+   "query": "{updateDiagnostics(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateEngineering",
+   "query": "{updateEngineering}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateEngineering",
+   "query": "{updateEngineering(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateEngineerings",
+   "query": "{updateEngineerings}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateEngineerings",
+   "query": "{updateEngineerings(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateFirmwares",
+   "query": "{updateFirmwares}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateFirmwares",
+   "query": "{updateFirmwares(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateOta",
+   "query": "{updateOta}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateOta",
+   "query": "{updateOta(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateOtas",
+   "query": "{updateOtas(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updatePackage",
+   "query": "{updatePackage(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updatePackages",
+   "query": "{updatePackages(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateSession",
+   "query": "{updateSession}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateSession",
+   "query": "{updateSession(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateSessions",
+   "query": "{updateSessions(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateUpdate",
+   "query": "{updateUpdate}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateUpdates",
+   "query": "{updateUpdates(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateVehicle",
+   "query": "{updateVehicle}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateVehicle",
+   "query": "{updateVehicle(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "updateVehicles",
+   "query": "{updateVehicles}",
+   "status": -1,
+   "body": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  },
+  {
+   "name": "url",
+   "query": "{url(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error timed out>"
+  },
+  {
+   "name": "urls",
+   "query": "{urls(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "status": -1,
+   "body": "<urlopen error timed out>"
+  }
+ ]
+}

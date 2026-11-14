@@ -1,0 +1,16 @@
+# CGW DoIP evidence (format v1.0)
+time     : 2026-11-14 09:34:11+0800
+target   : 10.229.221.2:13400/TCP
+command  : declared payload length 0xFFFF but no payload
+tx_hex   : 02fd00010000ffff
+rx[0]_hex: 
+rx[0]_typ: TIMEOUT
+
+--- decoded ---
+[
+  {
+    "type": "TIMEOUT",
+    "name": "n/a",
+    "payload_hex": ""
+  }
+]

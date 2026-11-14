@@ -1,0 +1,17 @@
+{
+  "label": "p13401_socketcand_rawmode",
+  "purpose": "socketcand raw mode",
+  "host": "10.230.164.4",
+  "port": 13401,
+  "request": {
+    "hex": "3C207261776D6F6465203E0A"
+  },
+  "responses": [
+    {
+      "hex": ""
+    }
+  ],
+  "note": "silent",
+  "seq": 3182,
+  "ts": "2026-11-14T09:49:37+0800"
+}

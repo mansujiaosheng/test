@@ -1,0 +1,6 @@
+###### 0021  single read-only TSP /graphql POST (cross-check only) ######
+### POST http://10.230.164.2:8080/graphql body= {"query": "{ __typename }"}
+status: 200
+headers: {'Content-Type': 'application/json', 'Date': 'Sat, 14 Nov 2026 01:44:35 GMT', 'Content-Length': '81', 'Connection': 'close'}
+body: {"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+

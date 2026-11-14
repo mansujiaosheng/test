@@ -1,0 +1,13 @@
+{
+  "label": "r2_p13401_len2le",
+  "purpose": "len2le + DoIP ident",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "080002FD000100000000"
+  },
+  "responses": [],
+  "parsed": "0B ",
+  "seq": 3440,
+  "ts": "2026-11-14T09:59:55.721+08:00"
+}

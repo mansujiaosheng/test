@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:13:08 2026 as: D:\\TOOL\\nmap\\nmap.exe -sT -Pn -p- --min-rate 3000 -T4 --open -oA scan_10.230.164.4 10.230.164.4
+Host: 10.230.164.4 ()	Status: Up
+Host: 10.230.164.4 ()	Ports: 8080/open/tcp//http-proxy///, 13400/open/tcp//doip-data///, 13401/open/tcp/////
+# Nmap done at Sat Nov 14 09:14:07 2026 -- 1 IP address (1 host up) scanned in 59.20 seconds

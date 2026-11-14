@@ -1,0 +1,11 @@
+=== 0138: /api/v1/auth/check + roster template (unauth shape) ===
+
+##### GET /api/v1/auth/check #####
+http=200 ct=application/json; charset=utf-8 len=24
+{"authenticated":false}
+
+
+##### GET /api/v1/admin/roster-import/template #####
+http=401 ct=application/json; charset=utf-8 len=121
+{"error":{"code":"authentication_required","details":{},"message":"Authentication required","requestId":"c43d7042267c"}}
+

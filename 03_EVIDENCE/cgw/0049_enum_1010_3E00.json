@@ -1,0 +1,32 @@
+{
+  "label": "enum_1010_3E00",
+  "purpose": "TesterPresent to LA 0x1010 (existence probe)",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1010",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0010103E00",
+    "uds": "3E00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F3E31",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F3E31",
+      "parsed": "NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 340.18,
+  "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)",
+  "seq": 49,
+  "ts": "2026-11-14T09:10:57.588+08:00"
+}

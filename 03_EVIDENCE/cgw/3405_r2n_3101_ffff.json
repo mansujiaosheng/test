@@ -1,0 +1,32 @@
+{
+  "label": "r2n_3101_ffff",
+  "purpose": "startRoutine 0xFFFF with no parameters",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4423101FFFF",
+    "uds": "3101FFFF"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F3133"
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F3133",
+      "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    }
+  ],
+  "elapsed_ms": 489.49,
+  "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)",
+  "seq": 3405,
+  "ts": "2026-11-14T09:57:56.385+08:00"
+}

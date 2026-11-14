@@ -1,0 +1,69 @@
+==============================================================================
+/internal/audit 刻画  2026-11-14T09:36:22+0800
+A(go404)=b'404 page not found\n'  B(json404)=b'{"error":"not found"}\n'
+==============================================================================
+
+-- 1. 方法矩阵 on /internal/audit --
+  GET     /internal/audit        -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  POST    /internal/audit        -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  PUT     /internal/audit        -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  DELETE  /internal/audit        -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  PATCH   /internal/audit        -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  HEAD    /internal/audit        -> 404  len=    0 ?? b''
+  OPTIONS /internal/audit        -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  TRACE   /internal/audit        -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+
+-- 2. 子树 vs 精确匹配 --
+  GET  /internal/audit                  -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  GET  /internal/audit/                 -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit//                -> 307  len=   52 ?? b'<a href="/internal/audit/">Temporary Redirect</a>.\n\n'
+  GET  /internal/audit/x                -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/x/y              -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/1                -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/log              -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/logs             -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/events           -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/event            -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/records          -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/list             -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/search           -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/query            -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/export           -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/download         -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/tail             -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/recent           -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/latest           -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/all              -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/summary          -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/stats            -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/count            -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/csv              -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/json             -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/index            -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/.                -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/..               -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/%2e              -> 307  len=   51 ?? b'<a href="/internal/audit">Temporary Redirect</a>.\n\n'
+  GET  /internal/audit/audit            -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit/../audit         -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+
+-- 3. 大小写 / 编码变体 --
+  GET  /internal/Audit                      -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /Internal/audit                      -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /INTERNAL/AUDIT                      -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/%61udit                    -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  GET  /internal/audi%74                    -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  GET  /internal/audit%00                   -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit;                     -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit;x=1                  -> 404  len=   19 A-go404 b'404 page not found\n'
+  GET  /internal/audit?a=1                  -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  GET  /internal/audit#x                    -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  GET  /internal//audit                     -> 307  len=   51 ?? b'<a href="/internal/audit">Temporary Redirect</a>.\n\n'
+  GET  //internal/audit                     -> 307  len=   51 ?? b'<a href="/internal/audit">Temporary Redirect</a>.\n\n'
+
+-- 4. /internal/* 同族枚举（找其它 JSON404 路由）--
+  HIT  GET /internal/audit                    -> 404  len=   22 B-JSON404 b'{"error":"not found"}\n'
+  HIT  GET /internal/migrate                  -> EXC  len=  278 ?? b"ConnectTimeout: HTTPConnectionPool(host='10.230.164.2', port=8080): Max retries exceeded with url: /internal/migrate (Ca"
+
+-- 5. 其它前缀子树探测（admin/debug/sys/_internal/…）--
+
+[done] 2026-11-14T09:36:52+0800

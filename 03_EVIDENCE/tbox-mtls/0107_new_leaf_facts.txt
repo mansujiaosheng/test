@@ -1,0 +1,46 @@
+###### 0107 new server leaf facts (10.225.139.3:8443) ######
+leaf sha256: 8847b7963796d75cb848775949d910b8c1226ab02853a910beeca45a4cee1b0e
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+serial=FE7B39240E873E2F286DB4A739E0C40F
+notBefore=Nov 14 00:51:20 2026 GMT
+notAfter=Dec 14 01:51:20 2026 GMT
+sha256 Fingerprint=88:47:B7:96:37:96:D7:5C:B8:48:77:59:49:D9:10:B8:C1:22:6A:B0:28:53:A9:10:BE:EC:A4:5A:4C:EE:1B:0E
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            fe:7b:39:24:0e:87:3e:2f:28:6d:b4:a7:39:e0:c4:0f
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CV6 Fleet Diagnostics Root
+        Validity
+            Not Before: Nov 14 00:51:20 2026 GMT
+            Not After : Dec 14 01:51:20 2026 GMT
+        Subject: CN = tbox
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b6:17:8c:64:a6:25:49:2d:aa:ef:4e:9e:21:e6:
+                    64:82:41:10:93:32:ec:50:a5:d0:09:03:5b:ca:09:
+                    c2:66:c6:c3:79:5e:ec:f3:22:55:c8:16:00:35:38:
+                    fa:61:1f:59:f8:3b:f4:bc:6f:0e:f6:70:f5:dd:5c:
+                    dc:b6:d9:f3:db
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Authority Key Identifier: 
+                65:91:B3:ED:6C:B0:2B:42:1B:64:46:F9:62:EF:85:DE:CA:D5:12:0A
+            X509v3 Subject Alternative Name: 
+                DNS:tbox
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:44:02:20:24:12:b7:ac:d4:74:c6:8f:ec:5d:f3:cb:99:9e:
+        40:0b:6c:fb:60:9a:9e:8e:71:ea:78:c7:9c:79:5f:4b:36:fd:
+        02:20:30:2b:2a:1e:17:b5:02:20:03:77:81:33:6a:37:8e:85:
+        35:40:56:38:6f:da:ae:18:d2:6e:b5:48:32:05:4d:23

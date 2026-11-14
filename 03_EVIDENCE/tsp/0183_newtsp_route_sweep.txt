@@ -1,0 +1,18 @@
+==============================================================================
+NEW-RANGE TSP route sweep  target=http://10.225.139.2:8080  paths=129
+oracle: 404 text/plain 19B = unregistered; anything else = registered
+==============================================================================
+  GET  200 /healthz                                     ct='application/json' body=b'{"status":"ok"}\\n'
+  GET  405 /graphql                                     ct='application/json' body=b'{"error":"method not allowed"}\\n'
+  GET  404 /internal/audit                              ct='application/json' body=b'{"error":"not found"}\\n'
+  POST 200 /healthz                                     ct='application/json' body=b'{"status":"ok"}\\n'
+  POST 200 /graphql                                     ct='application/json' body=b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+  POST 404 /internal/audit                              ct='application/json' body=b'{"error":"not found"}\\n'
+------------------------------------------------------------------------------
+hits=6  transport_errors=0  paths=129 x 2
+  REGISTERED: /healthz                                     GET  200 application/json
+  REGISTERED: /graphql                                     GET  405 application/json
+  REGISTERED: /internal/audit                              GET  404 application/json
+  REGISTERED: /graphql                                     POST 200 application/json
+==============================================================================
+done 2026-11-14T10:03:29

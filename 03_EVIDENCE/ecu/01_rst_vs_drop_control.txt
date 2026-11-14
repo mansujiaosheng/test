@@ -1,0 +1,18 @@
+# CONTROL: 10.229.221.2 is CONFIRMED ALIVE (8080 -> HTTP 200 {"status":"ok"})
+# Question: do CLOSED ports on a live host return RST (refused) or silently DROP?
+  port result             dt
+     1 TIMEOUT         2.007
+    21 TIMEOUT         2.011
+    22 TIMEOUT         2.017
+    23 TIMEOUT         2.015
+    25 TIMEOUT         2.018
+    80 TIMEOUT         2.017
+   443 TIMEOUT         2.006
+  8080 OPEN            0.028
+  8081 TIMEOUT         2.004
+  8443 TIMEOUT         2.013
+  9000 TIMEOUT         2.005
+ 13400 OPEN            0.027
+ 13401 OPEN            0.028
+ 55555 TIMEOUT         2.012
+ 65535 TIMEOUT         2.007

@@ -1,0 +1,11 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:38:12 2026 as: D:\\TOOL\\nmap\\nmap.exe -sT -Pn -p- --min-rate 2000 --max-retries 1 -T4 -oN 03_EVIDENCE/cgw-web/0604_nmap_full_10.230.164.4.txt 10.230.164.4
+Warning: 10.230.164.4 giving up on port because retransmission cap hit (1).
+Nmap scan report for 10.230.164.4
+Host is up (0.038s latency).
+Not shown: 65195 closed tcp ports (conn-refused), 337 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+8080/tcp  open  http-proxy
+13400/tcp open  doip-data
+13401/tcp open  unknown
+
+# Nmap done at Sat Nov 14 09:40:31 2026 -- 1 IP address (1 host up) scanned in 138.90 seconds

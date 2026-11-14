@@ -1,0 +1,126 @@
+{
+  "label": "port13401_accept_behaviour",
+  "ts": "2026-11-14T09:29:36.071729+08:00",
+  "rows": [
+    {
+      "host": "10.229.221.2",
+      "port": 13401,
+      "connect_ms": 34.5,
+      "event": "FIN",
+      "at_ms": 61.5,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 0
+    },
+    {
+      "host": "10.229.221.2",
+      "port": 13401,
+      "connect_ms": 47.2,
+      "event": "FIN",
+      "at_ms": 56.5,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 1
+    },
+    {
+      "host": "10.229.221.2",
+      "port": 13401,
+      "connect_ms": 26.5,
+      "event": "FIN",
+      "at_ms": 53.0,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 2
+    },
+    {
+      "host": "10.230.164.4",
+      "port": 13401,
+      "connect_ms": 31.6,
+      "event": "FIN",
+      "at_ms": 60.7,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 0
+    },
+    {
+      "host": "10.230.164.4",
+      "port": 13401,
+      "connect_ms": 32.4,
+      "event": "FIN",
+      "at_ms": 59.9,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 1
+    },
+    {
+      "host": "10.230.164.4",
+      "port": 13401,
+      "connect_ms": 26.5,
+      "event": "FIN",
+      "at_ms": 53.7,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 2
+    },
+    {
+      "host": "10.229.221.2",
+      "port": 13400,
+      "connect_ms": 26.9,
+      "event": "timeout(still open)",
+      "at_ms": 2031.6,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 0
+    },
+    {
+      "host": "10.229.221.2",
+      "port": 13400,
+      "connect_ms": 27.9,
+      "event": "timeout(still open)",
+      "at_ms": 2033.1,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 1
+    },
+    {
+      "host": "10.229.221.2",
+      "port": 13400,
+      "connect_ms": 27.4,
+      "event": "timeout(still open)",
+      "at_ms": 2038.9,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 2
+    },
+    {
+      "host": "10.230.164.4",
+      "port": 13400,
+      "connect_ms": 46.1,
+      "event": "timeout(still open)",
+      "at_ms": 2050.5,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 0
+    },
+    {
+      "host": "10.230.164.4",
+      "port": 13400,
+      "connect_ms": 45.5,
+      "event": "timeout(still open)",
+      "at_ms": 2056.1,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 1
+    },
+    {
+      "host": "10.230.164.4",
+      "port": 13400,
+      "connect_ms": 27.1,
+      "event": "timeout(still open)",
+      "at_ms": 2028.1,
+      "recv_bytes": 0,
+      "recv_hex": "",
+      "trial": 2
+    }
+  ]
+}

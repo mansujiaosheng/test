@@ -1,0 +1,12 @@
+=== 0180: NEW ENVIRONMENT probe — 10.226.193.2:8080 ===
+(old range 10.230.164.x / 10.229.221.2 went dark ~09:55-10:00; cgw teammate found new host)
+/healthz           http=200 ct=application/json body={"status":"ok"}
+/graphql           http=404 ct=text/plain; charset=utf-8 body=404 page not found
+/internal/audit    http=404 ct=application/json body={"error":"not found"}
+/                  http=404 ct=text/plain; charset=utf-8 body=404 page not found
+
+--- GET vs POST /graphql ---
+GET  /graphql -> 404
+404 page not found
+
+POST /graphql -> 404

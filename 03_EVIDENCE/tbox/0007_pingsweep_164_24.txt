@@ -1,0 +1,3 @@
+###### T02 0007 ping-sweep 10.230.164.0/24 (2026-11-14T01:25:26Z) ######
+## purpose: find hosts besides .2/.3/.4 (OTA server / CA service?)
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-11-14 09:25 +0800

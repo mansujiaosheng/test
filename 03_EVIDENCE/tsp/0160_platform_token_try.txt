@@ -1,0 +1,138 @@
+==============================================================================
+1) baseline (no token)
+==============================================================================
+  GET  /api/v1/auth/check                                           -> 200 {"authenticated":false}
+
+  GET  /api/v1/auth/me                                              -> 401 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","requestId":"acc0f
+  GET  /api/v1/bootstrap?competitionId=competition-ed3e7d452581978c -> 401 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","requestId":"09e25
+
+==============================================================================
+2) token placements against /api/v1/auth/check (cheapest signal: authenticated true/false)
+==============================================================================
+  usr_token        header Authorization Bearer usr_b2ad80d021e26b… -> 200 {"authenticated":false}
+
+  usr_token        header Authorization Token usr_b2ad80d021e26b… -> 200 {"authenticated":false}
+
+  usr_token        header X-API-Token usr_b2ad80d021e26b…         -> 200 {"authenticated":false}
+
+  usr_token        header X-Auth-Token usr_b2ad80d021e26b…        -> 200 {"authenticated":false}
+
+  usr_token        header X-User-Token usr_b2ad80d021e26b…        -> 200 {"authenticated":false}
+
+  usr_token        header Cookie cybercar_session=usr_b2ad80d021e26b… -> 200 {"authenticated":false}
+
+  usr_token        query ?token=usr_b2ad80d021e26b…               -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  usr_token        query ?api_key=usr_b2ad80d021e26b…             -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  usr_token        query ?usr=usr_b2ad80d021e26b…                 -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  usr_stripped     header Authorization Bearer b2ad80d021e26b5fb4… -> 200 {"authenticated":false}
+
+  usr_stripped     header Authorization Token b2ad80d021e26b5fb4… -> 200 {"authenticated":false}
+
+  usr_stripped     header X-API-Token b2ad80d021e26b5fb4…         -> 200 {"authenticated":false}
+
+  usr_stripped     header X-Auth-Token b2ad80d021e26b5fb4…        -> 200 {"authenticated":false}
+
+  usr_stripped     header X-User-Token b2ad80d021e26b5fb4…        -> 200 {"authenticated":false}
+
+  usr_stripped     header Cookie cybercar_session=b2ad80d021e26b5fb4… -> 200 {"authenticated":false}
+
+  usr_stripped     query ?token=b2ad80d021e26b5fb4…               -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  usr_stripped     query ?api_key=b2ad80d021e26b5fb4…             -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  usr_stripped     query ?usr=b2ad80d021e26b5fb4…                 -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  comp_suffix      header Authorization Bearer ed3e7d452581978cca… -> 200 {"authenticated":false}
+
+  comp_suffix      header Authorization Token ed3e7d452581978cca… -> 200 {"authenticated":false}
+
+  comp_suffix      header X-API-Token ed3e7d452581978cca…         -> 200 {"authenticated":false}
+
+  comp_suffix      header X-Auth-Token ed3e7d452581978cca…        -> 200 {"authenticated":false}
+
+  comp_suffix      header X-User-Token ed3e7d452581978cca…        -> 200 {"authenticated":false}
+
+  comp_suffix      header Cookie cybercar_session=ed3e7d452581978cca… -> 200 {"authenticated":false}
+
+  comp_suffix      query ?token=ed3e7d452581978cca…               -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  comp_suffix      query ?api_key=ed3e7d452581978cca…             -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  comp_suffix      query ?usr=ed3e7d452581978cca…                 -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  comp_full        header Authorization Bearer competition-ed3e7d… -> 200 {"authenticated":false}
+
+  comp_full        header Authorization Token competition-ed3e7d… -> 200 {"authenticated":false}
+
+  comp_full        header X-API-Token competition-ed3e7d…         -> 200 {"authenticated":false}
+
+  comp_full        header X-Auth-Token competition-ed3e7d…        -> 200 {"authenticated":false}
+
+  comp_full        header X-User-Token competition-ed3e7d…        -> 200 {"authenticated":false}
+
+  comp_full        header Cookie cybercar_session=competition-ed3e7d… -> 200 {"authenticated":false}
+
+  comp_full        query ?token=competition-ed3e7d…               -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  comp_full        query ?api_key=competition-ed3e7d…             -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  comp_full        query ?usr=competition-ed3e7d…                 -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  vpn_cn           header Authorization Bearer cc-715a9a001b4a5ab… -> 200 {"authenticated":false}
+
+  vpn_cn           header Authorization Token cc-715a9a001b4a5ab… -> 200 {"authenticated":false}
+
+  vpn_cn           header X-API-Token cc-715a9a001b4a5ab…         -> 200 {"authenticated":false}
+
+  vpn_cn           header X-Auth-Token cc-715a9a001b4a5ab…        -> 200 {"authenticated":false}
+
+  vpn_cn           header X-User-Token cc-715a9a001b4a5ab…        -> 200 {"authenticated":false}
+
+  vpn_cn           header Cookie cybercar_session=cc-715a9a001b4a5ab… -> 200 {"authenticated":false}
+
+  vpn_cn           query ?token=cc-715a9a001b4a5ab…               -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  vpn_cn           query ?api_key=cc-715a9a001b4a5ab…             -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  vpn_cn           query ?usr=cc-715a9a001b4a5ab…                 -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  vpn_cn_stripped  header Authorization Bearer 715a9a001b4a5abad5… -> 200 {"authenticated":false}
+
+  vpn_cn_stripped  header Authorization Token 715a9a001b4a5abad5… -> 200 {"authenticated":false}
+
+  vpn_cn_stripped  header X-API-Token 715a9a001b4a5abad5…         -> 200 {"authenticated":false}
+
+  vpn_cn_stripped  header X-Auth-Token 715a9a001b4a5abad5…        -> 200 {"authenticated":false}
+
+  vpn_cn_stripped  header X-User-Token 715a9a001b4a5abad5…        -> 200 {"authenticated":false}
+
+  vpn_cn_stripped  header Cookie cybercar_session=715a9a001b4a5abad5… -> 200 {"authenticated":false}
+
+  vpn_cn_stripped  query ?token=715a9a001b4a5abad5…               -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  vpn_cn_stripped  query ?api_key=715a9a001b4a5abad5…             -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+  vpn_cn_stripped  query ?usr=715a9a001b4a5abad5…                 -> 404 {"error":{"code":"route_not_found","details":{},"message":"API route not found",  <<< CHANGED
+
+==============================================================================
+3) token in login body (some platforms accept token->session exchange)
+==============================================================================
+  usr_token        {'token': 'usr_b2ad80d021e26b5fb4b02b8619302912' -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  usr_token        {'usr': 'usr_b2ad80d021e26b5fb4b02b8619302912'}  -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  usr_token        {'userToken': 'usr_b2ad80d021e26b5fb4b02b8619302 -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  usr_token        {'username': 'usr_b2ad80d021e26b5fb4b02b86193029 -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  usr_stripped     {'token': 'b2ad80d021e26b5fb4b02b8619302912'}    -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  usr_stripped     {'usr': 'b2ad80d021e26b5fb4b02b8619302912'}      -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  usr_stripped     {'userToken': 'b2ad80d021e26b5fb4b02b8619302912' -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  usr_stripped     {'username': 'b2ad80d021e26b5fb4b02b8619302912', -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  comp_suffix      {'token': 'ed3e7d452581978ccae13421'}            -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  comp_suffix      {'usr': 'ed3e7d452581978ccae13421'}              -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  comp_suffix      {'userToken': 'ed3e7d452581978ccae13421'}        -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  comp_suffix      {'username': 'ed3e7d452581978ccae13421', 'passwo -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  comp_full        {'token': 'competition-ed3e7d452581978ccae13421' -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  comp_full        {'usr': 'competition-ed3e7d452581978ccae13421'}  -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  comp_full        {'userToken': 'competition-ed3e7d452581978ccae13 -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  comp_full        {'username': 'competition-ed3e7d452581978ccae134 -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  vpn_cn           {'token': 'cc-715a9a001b4a5abad5ce3ecc'}         -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  vpn_cn           {'usr': 'cc-715a9a001b4a5abad5ce3ecc'}           -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  vpn_cn           {'userToken': 'cc-715a9a001b4a5abad5ce3ecc'}     -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  vpn_cn           {'username': 'cc-715a9a001b4a5abad5ce3ecc', 'pas -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  vpn_cn_stripped  {'token': '715a9a001b4a5abad5ce3ecc'}            -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  vpn_cn_stripped  {'usr': '715a9a001b4a5abad5ce3ecc'}              -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  vpn_cn_stripped  {'userToken': '715a9a001b4a5abad5ce3ecc'}        -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+  vpn_cn_stripped  {'username': '715a9a001b4a5abad5ce3ecc', 'passwo -> 401 {"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or passwor
+
+==============================================================================
+4) .ovpn-style path guesses with the usr token
+==============================================================================
+  GET /vpn/usr_b2ad80d021e26b5fb4b02b8619302912.ovpn           -> 404 ct=None len=0
+  GET /api/v1/vpn/usr_b2ad80d021e26b5fb4b02b8619302912         -> 404 ct=application/json; charset=utf-8 len=109
+  GET /ovpn/usr_b2ad80d021e26b5fb4b02b8619302912               -> 404 ct=None len=0
+  GET /api/v1/users/usr_b2ad80d021e26b5fb4b02b8619302912       -> 404 ct=application/json; charset=utf-8 len=109
+  GET /api/v1/users/usr_b2ad80d021e26b5fb4b02b8619302912/ovpn  -> 404 ct=application/json; charset=utf-8 len=109

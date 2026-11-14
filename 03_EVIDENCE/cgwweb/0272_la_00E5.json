@@ -1,0 +1,18 @@
+{
+  "label": "la_00E5",
+  "purpose": "LA existence probe 0x00E5",
+  "tester_sa": "0x0E00",
+  "target_la": "0x00E5",
+  "elapsed_ms": 181.0,
+  "responses": [
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 272,
+  "ts": "2026-11-14T09:25:07.968+08:00"
+}

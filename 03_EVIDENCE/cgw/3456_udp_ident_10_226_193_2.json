@@ -1,0 +1,13 @@
+{
+  "label": "udp_ident_10_226_193_2",
+  "purpose": "DoIP vehicle identification over UDP",
+  "host": "10.226.193.2:13400/udp",
+  "request": {
+    "ptype": "0x0001",
+    "hex": ""
+  },
+  "responses": [],
+  "parsed": "0 replies",
+  "seq": 3456,
+  "ts": "2026-11-14T10:01:55.710+08:00"
+}

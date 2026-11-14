@@ -1,0 +1,17 @@
+{
+  "label": "base_ident",
+  "purpose": "vehicle identification",
+  "request": {
+    "ptype": "0x0001"
+  },
+  "responses": [
+    {
+      "ptype": "0x0004",
+      "hex": "435636464635324645453945444444383610000600000010000000000000000000",
+      "len": 33
+    }
+  ],
+  "seq": 2001,
+  "ts": "2026-11-14T09:30:39.028+08:00",
+  "elapsed_ms": 27.6
+}

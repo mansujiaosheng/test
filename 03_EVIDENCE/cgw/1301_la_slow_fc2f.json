@@ -1,0 +1,19 @@
+{
+  "label": "la_slow_fc2f",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xFC2F",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00FC2F3E00",
+    "uds": "3E00"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 133.73,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 1301,
+  "ts": "2026-11-14T09:27:54.071+08:00"
+}

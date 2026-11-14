@@ -1,0 +1,17 @@
+{
+  "label": "p13401_server_first",
+  "purpose": "read-only: wait for a server banner",
+  "host": "10.230.164.4",
+  "port": 13401,
+  "request": {
+    "hex": ""
+  },
+  "responses": [
+    {
+      "hex": ""
+    }
+  ],
+  "note": "silent",
+  "seq": 3168,
+  "ts": "2026-11-14T09:49:30+0800"
+}

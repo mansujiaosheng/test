@@ -1,0 +1,321 @@
+{
+  "label": "r2_matrix_summary",
+  "purpose": "round-2 lead matrix: RA/OEM, sessions, 2E NRC, forwarding",
+  "request": {
+    "ptype": "mixed",
+    "hex": ""
+  },
+  "routing_activation": [
+    {
+      "act": "0x00",
+      "oem": "none",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0x00",
+      "oem": "00000000",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0x00",
+      "oem": "43563631",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0x00",
+      "oem": "FFFFFFFF",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0x01",
+      "oem": "none",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0x01",
+      "oem": "00000000",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0x01",
+      "oem": "43563631",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0x01",
+      "oem": "FFFFFFFF",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0xE0",
+      "oem": "none",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "NO RESPONSE within timeout",
+      "f1a3": "NO RESPONSE within timeout"
+    },
+    {
+      "act": "0xE0",
+      "oem": "00000000",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0xE0",
+      "oem": "43563631",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0xE0",
+      "oem": "FFFFFFFF",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0xE1",
+      "oem": "none",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0xE1",
+      "oem": "00000000",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0xE1",
+      "oem": "43563631",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "act": "0xE1",
+      "oem": "FFFFFFFF",
+      "code": "0x10",
+      "text": "routing successfully activated",
+      "f190": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+      "3e00": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+      "f1a3": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    }
+  ],
+  "session_and_2e": [
+    {
+      "ta": "0x1000",
+      "uds": "1002",
+      "parsed": "0x1000: NEGATIVE service=0x10 NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "ta": "0x1000",
+      "uds": "1004",
+      "parsed": "0x1000: NEGATIVE service=0x10 NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "ta": "0x1000",
+      "uds": "1081",
+      "parsed": "0x1000: NEGATIVE service=0x10 NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "ta": "0xE442",
+      "uds": "1002",
+      "parsed": "0x1220: NEGATIVE service=0x10 NRC=0x12 (subFunctionNotSupported)"
+    },
+    {
+      "ta": "0xE442",
+      "uds": "1004",
+      "parsed": "0x1220: NEGATIVE service=0x10 NRC=0x12 (subFunctionNotSupported)"
+    },
+    {
+      "ta": "0xE442",
+      "uds": "1081",
+      "parsed": "0x1220: NEGATIVE service=0x10 NRC=0x12 (subFunctionNotSupported)"
+    },
+    {
+      "ta": "0x1000",
+      "uds": "2EF190",
+      "parsed": "NEGATIVE service=0x2E NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "ta": "0x1000",
+      "uds": "2EF1A0",
+      "parsed": "NEGATIVE service=0x2E NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "ta": "0x1000",
+      "uds": "2EF1A3",
+      "parsed": "NEGATIVE service=0x2E NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "ta": "0x1000",
+      "uds": "2EFFFF",
+      "parsed": "NEGATIVE service=0x2E NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "ta": "0xE442",
+      "uds": "2EF190",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0xE442",
+      "uds": "2EF1A0",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0xE442",
+      "uds": "2EF1A3",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0xE442",
+      "uds": "2EFFFF",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "forwarding": [
+    {
+      "ta": "0x07E0",
+      "uds": "3E00",
+      "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E0",
+      "uds": "22F190",
+      "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E0",
+      "uds": "1002",
+      "parsed": "NEGATIVE service=0x10 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E8",
+      "uds": "3E00",
+      "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E8",
+      "uds": "22F190",
+      "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E8",
+      "uds": "1002",
+      "parsed": "NEGATIVE service=0x10 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E1",
+      "uds": "3E00",
+      "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E1",
+      "uds": "22F190",
+      "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E1",
+      "uds": "1002",
+      "parsed": "NEGATIVE service=0x10 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E9",
+      "uds": "3E00",
+      "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E9",
+      "uds": "22F190",
+      "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0x07E9",
+      "uds": "1002",
+      "parsed": "NEGATIVE service=0x10 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0xE400",
+      "uds": "3E00",
+      "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0xE400",
+      "uds": "22F190",
+      "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0xE400",
+      "uds": "1002",
+      "parsed": "NEGATIVE service=0x10 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0xE000",
+      "uds": "3E00",
+      "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0xE000",
+      "uds": "22F190",
+      "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "ta": "0xE000",
+      "uds": "1002",
+      "parsed": "NEGATIVE service=0x10 NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "parsed": "{\"ra\": 16, \"sess\": 14, \"fwd\": 18}",
+  "seq": 3357,
+  "ts": "2026-11-14T09:56:54.515+08:00"
+}

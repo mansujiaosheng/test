@@ -1,0 +1,93 @@
+{"label": "10_01", "desc": "session control sessionType=0x01", "req": "1001", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 554.0, "stale": []}
+{"label": "10_02", "desc": "session control sessionType=0x02", "req": "1002", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 538.5, "stale": []}
+{"label": "10_03", "desc": "session control sessionType=0x03", "req": "1003", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 1304.2, "stale": []}
+{"label": "10_04", "desc": "session control sessionType=0x04", "req": "1004", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 555.9, "stale": []}
+{"label": "10_05", "desc": "session control sessionType=0x05", "req": "1005", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 639.9, "stale": []}
+{"label": "10_40", "desc": "session control sessionType=0x40", "req": "1040", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 832.6, "stale": []}
+{"label": "10_41", "desc": "session control sessionType=0x41", "req": "1041", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 547.1, "stale": []}
+{"label": "10_42", "desc": "session control sessionType=0x42", "req": "1042", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 544.3, "stale": []}
+{"label": "10_50", "desc": "session control sessionType=0x50", "req": "1050", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 547.5, "stale": []}
+{"label": "10_60", "desc": "session control sessionType=0x60", "req": "1060", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 550.0, "stale": []}
+{"label": "10_70", "desc": "session control sessionType=0x70", "req": "1070", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 536.5, "stale": []}
+{"label": "10_7E", "desc": "session control sessionType=0x7E", "req": "107E", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 551.5, "stale": []}
+{"label": "10_7F", "desc": "session control sessionType=0x7F", "req": "107F", "kind": "nrc", "nrc": 17, "uds": "7F1011", "ms": 543.8, "stale": []}
+{"label": "11_01", "desc": "ECUReset type=0x01", "req": "1101", "kind": "nrc", "nrc": 17, "uds": "7F1111", "ms": 546.4, "stale": []}
+{"label": "11_02", "desc": "ECUReset type=0x02", "req": "1102", "kind": "nrc", "nrc": 17, "uds": "7F1111", "ms": 543.4, "stale": []}
+{"label": "11_03", "desc": "ECUReset type=0x03", "req": "1103", "kind": "nrc", "nrc": 17, "uds": "7F1111", "ms": 546.2, "stale": []}
+{"label": "11_04", "desc": "ECUReset type=0x04", "req": "1104", "kind": "nrc", "nrc": 17, "uds": "7F1111", "ms": 546.0, "stale": []}
+{"label": "11_05", "desc": "ECUReset type=0x05", "req": "1105", "kind": "nrc", "nrc": 17, "uds": "7F1111", "ms": 544.7, "stale": []}
+{"label": "11_81", "desc": "ECUReset type=0x81", "req": "1181", "kind": "nrc", "nrc": 17, "uds": "7F1111", "ms": 545.2, "stale": []}
+{"label": "11_82", "desc": "ECUReset type=0x82", "req": "1182", "kind": "nrc", "nrc": 17, "uds": "7F1111", "ms": 546.9, "stale": []}
+{"label": "11_83", "desc": "ECUReset type=0x83", "req": "1183", "kind": "nrc", "nrc": 17, "uds": "7F1111", "ms": 547.3, "stale": []}
+{"label": "14_FFFFFF", "desc": "ClearDTC group=0xFFFFFF", "req": "14FFFFFF", "kind": "nrc", "nrc": 17, "uds": "7F1411", "ms": 545.6, "stale": []}
+{"label": "14_000000", "desc": "ClearDTC group=0x000000", "req": "14000000", "kind": "nrc", "nrc": 17, "uds": "7F1411", "ms": 544.9, "stale": []}
+{"label": "19_01", "desc": "ReadDTCInformation sub=0x01", "req": "1901", "kind": "nrc", "nrc": 17, "uds": "7F1911", "ms": 544.2, "stale": []}
+{"label": "19_02", "desc": "ReadDTCInformation sub=0x02", "req": "1902", "kind": "nrc", "nrc": 17, "uds": "7F1911", "ms": 547.7, "stale": []}
+{"label": "19_03", "desc": "ReadDTCInformation sub=0x03", "req": "1903", "kind": "nrc", "nrc": 17, "uds": "7F1911", "ms": 545.3, "stale": []}
+{"label": "19_04", "desc": "ReadDTCInformation sub=0x04", "req": "1904", "kind": "nrc", "nrc": 17, "uds": "7F1911", "ms": 550.3, "stale": []}
+{"label": "19_06", "desc": "ReadDTCInformation sub=0x06", "req": "1906", "kind": "none", "nrc": null, "uds": "", "ms": 6189.5, "stale": []}
+{"label": "19_0A", "desc": "ReadDTCInformation sub=0x0A", "req": "190A", "kind": "none", "nrc": null, "uds": "", "ms": 6176.9, "stale": []}
+{"label": "19_14", "desc": "ReadDTCInformation sub=0x14", "req": "1914", "kind": "none", "nrc": null, "uds": "", "ms": 6202.7, "stale": []}
+{"label": "19_15", "desc": "ReadDTCInformation sub=0x15", "req": "1915", "kind": "none", "nrc": null, "uds": "", "ms": 6202.9, "stale": []}
+{"label": "19_42", "desc": "ReadDTCInformation sub=0x42", "req": "1942", "kind": "none", "nrc": null, "uds": "", "ms": 6184.6, "stale": []}
+{"label": "27_01", "desc": "SecurityAccess requestSeed level=0x01", "req": "2701", "kind": "none", "nrc": null, "uds": "", "ms": 6204.3, "stale": []}
+{"label": "27_03", "desc": "SecurityAccess requestSeed level=0x03", "req": "2703", "kind": "none", "nrc": null, "uds": "", "ms": 6198.0, "stale": []}
+{"label": "27_05", "desc": "SecurityAccess requestSeed level=0x05", "req": "2705", "kind": "none", "nrc": null, "uds": "", "ms": 6197.5, "stale": []}
+{"label": "27_07", "desc": "SecurityAccess requestSeed level=0x07", "req": "2707", "kind": "none", "nrc": null, "uds": "", "ms": 6200.5, "stale": []}
+{"label": "27_09", "desc": "SecurityAccess requestSeed level=0x09", "req": "2709", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 2566.0, "stale": ["7F1911", "7F1911", "7F1911", "7F1911", "7F1911", "7F2711", "7F2711", "7F2711", "7F2711"]}
+{"label": "27_0B", "desc": "SecurityAccess requestSeed level=0x0B", "req": "270B", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 546.3, "stale": []}
+{"label": "27_0D", "desc": "SecurityAccess requestSeed level=0x0D", "req": "270D", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 544.2, "stale": []}
+{"label": "27_0F", "desc": "SecurityAccess requestSeed level=0x0F", "req": "270F", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 544.7, "stale": []}
+{"label": "27_11", "desc": "SecurityAccess requestSeed level=0x11", "req": "2711", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 548.6, "stale": []}
+{"label": "27_13", "desc": "SecurityAccess requestSeed level=0x13", "req": "2713", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 546.8, "stale": []}
+{"label": "27_15", "desc": "SecurityAccess requestSeed level=0x15", "req": "2715", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 638.4, "stale": []}
+{"label": "27_17", "desc": "SecurityAccess requestSeed level=0x17", "req": "2717", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 552.7, "stale": []}
+{"label": "27_19", "desc": "SecurityAccess requestSeed level=0x19", "req": "2719", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 533.5, "stale": []}
+{"label": "27_1B", "desc": "SecurityAccess requestSeed level=0x1B", "req": "271B", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 552.1, "stale": []}
+{"label": "27_1D", "desc": "SecurityAccess requestSeed level=0x1D", "req": "271D", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 548.6, "stale": []}
+{"label": "27_1F", "desc": "SecurityAccess requestSeed level=0x1F", "req": "271F", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 549.1, "stale": []}
+{"label": "27_21", "desc": "SecurityAccess requestSeed level=0x21", "req": "2721", "kind": "nrc", "nrc": 17, "uds": "7F2711", "ms": 548.6, "stale": []}
+{"label": "28_0001", "desc": "CommunicationControl disableRxTx type=01", "req": "280001", "kind": "nrc", "nrc": 17, "uds": "7F2811", "ms": 546.9, "stale": []}
+{"label": "28_0301", "desc": "CommunicationControl enableRxTx", "req": "280301", "kind": "nrc", "nrc": 17, "uds": "7F2811", "ms": 545.1, "stale": []}
+{"label": "2E_F190", "desc": "WriteDataByIdentifier F190 (17 bytes)", "req": "2EF1900000000000000000000000000000000000", "kind": "nrc", "nrc": 17, "uds": "7F2E11", "ms": 549.3, "stale": []}
+{"label": "2F_F190_03", "desc": "IOControl F190 controlParameter=03", "req": "2FF19003", "kind": "nrc", "nrc": 17, "uds": "7F2F11", "ms": 550.5, "stale": []}
+{"label": "31_01_0001", "desc": "RoutineControl start routine=0x0001", "req": "31010001", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 536.2, "stale": []}
+{"label": "31_01_0002", "desc": "RoutineControl start routine=0x0002", "req": "31010002", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 546.8, "stale": []}
+{"label": "31_01_0202", "desc": "RoutineControl start routine=0x0202", "req": "31010202", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 547.7, "stale": []}
+{"label": "31_01_0203", "desc": "RoutineControl start routine=0x0203", "req": "31010203", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 546.1, "stale": []}
+{"label": "31_01_0262", "desc": "RoutineControl start routine=0x0262", "req": "31010262", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 552.6, "stale": []}
+{"label": "31_01_FF00", "desc": "RoutineControl start routine=0xFF00", "req": "3101FF00", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 548.1, "stale": []}
+{"label": "31_01_FF01", "desc": "RoutineControl start routine=0xFF01", "req": "3101FF01", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 620.3, "stale": []}
+{"label": "31_01_FF02", "desc": "RoutineControl start routine=0xFF02", "req": "3101FF02", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 547.1, "stale": []}
+{"label": "31_01_EF00", "desc": "RoutineControl start routine=0xEF00", "req": "3101EF00", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 547.2, "stale": []}
+{"label": "31_01_E200", "desc": "RoutineControl start routine=0xE200", "req": "3101E200", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 552.0, "stale": []}
+{"label": "31_01_0100", "desc": "RoutineControl start routine=0x0100", "req": "31010100", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 548.4, "stale": []}
+{"label": "31_01_0401", "desc": "RoutineControl start routine=0x0401", "req": "31010401", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 545.7, "stale": []}
+{"label": "31_01_0601", "desc": "RoutineControl start routine=0x0601", "req": "31010601", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 553.2, "stale": []}
+{"label": "31_01_0801", "desc": "RoutineControl start routine=0x0801", "req": "31010801", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 547.9, "stale": []}
+{"label": "31_03_FF00", "desc": "RoutineControl requestResults 0xFF00", "req": "3103FF00", "kind": "nrc", "nrc": 17, "uds": "7F3111", "ms": 545.6, "stale": []}
+{"label": "34_0044_00000000_00100000", "desc": "RequestDownload ALFID=0x44 addr=0x00000000 len=0x00100000", "req": "3400440000000000100000", "kind": "nrc", "nrc": 17, "uds": "7F3411", "ms": 553.3, "stale": []}
+{"label": "34_0044_08000000_0010000", "desc": "RequestDownload addr=0x08000000 len=0x001000", "req": "34004408000000001000", "kind": "nrc", "nrc": 17, "uds": "7F3411", "ms": 543.3, "stale": []}
+{"label": "34_1044_00000000_00100000", "desc": "RequestDownload compression/encryption bit set", "req": "3410440000000000100000", "kind": "nrc", "nrc": 17, "uds": "7F3411", "ms": 545.0, "stale": []}
+{"label": "34_0044_FFFFFFFF_FFFFFFFF", "desc": "RequestDownload max addr/len", "req": "340044FFFFFFFFFFFFFFFF", "kind": "nrc", "nrc": 17, "uds": "7F3411", "ms": 548.2, "stale": []}
+{"label": "36_01_00", "desc": "TransferData block=1 1 byte", "req": "360100", "kind": "nrc", "nrc": 17, "uds": "7F3611", "ms": 536.9, "stale": []}
+{"label": "37", "desc": "RequestTransferExit", "req": "37", "kind": "nrc", "nrc": 17, "uds": "7F3711", "ms": 549.8, "stale": []}
+{"label": "3E_00", "desc": "TesterPresent zeroSubFunction", "req": "3E00", "kind": "nrc", "nrc": 17, "uds": "7F3E11", "ms": 545.7, "stale": []}
+{"label": "3E_80", "desc": "TesterPresent suppressPosRsp", "req": "3E80", "kind": "nrc", "nrc": 17, "uds": "7F3E11", "ms": 546.7, "stale": []}
+{"label": "85_01", "desc": "ControlDTCSetting on", "req": "8501", "kind": "nrc", "nrc": 17, "uds": "7F8511", "ms": 548.9, "stale": []}
+{"label": "85_02", "desc": "ControlDTCSetting off", "req": "8502", "kind": "nrc", "nrc": 17, "uds": "7F8511", "ms": 548.7, "stale": []}
+{"label": "86_01", "desc": "ResponseOnEvent start", "req": "860100", "kind": "nrc", "nrc": 17, "uds": "7F8611", "ms": 545.7, "stale": []}
+{"label": "87", "desc": "LinkControl", "req": "87", "kind": "nrc", "nrc": 17, "uds": "7F8711", "ms": 637.7, "stale": []}
+{"label": "83_00", "desc": "AccessTimingParameter", "req": "8300", "kind": "nrc", "nrc": 17, "uds": "7F8311", "ms": 546.2, "stale": []}
+{"label": "2A_00", "desc": "ReadDataByPeriodicIdentifier", "req": "2A00", "kind": "nrc", "nrc": 17, "uds": "7F2A11", "ms": 544.4, "stale": []}
+{"label": "2C_01_F190", "desc": "DynamicallyDefineDID", "req": "2C01F190", "kind": "nrc", "nrc": 17, "uds": "7F2C11", "ms": 548.7, "stale": []}
+{"label": "2D_00", "desc": "WriteMemoryByAddress (deliberately incomplete)", "req": "2D00", "kind": "nrc", "nrc": 17, "uds": "7F2D11", "ms": 551.6, "stale": []}
+{"label": "23_00000000", "desc": "ReadMemoryByAddress addr=0x00000000 len=16", "req": "2314000000000010", "kind": "nrc", "nrc": 17, "uds": "7F2311", "ms": 544.8, "stale": []}
+{"label": "23_00000010", "desc": "ReadMemoryByAddress addr=0x00000010 len=16", "req": "2314000000100010", "kind": "nrc", "nrc": 17, "uds": "7F2311", "ms": 545.5, "stale": []}
+{"label": "23_08000000", "desc": "ReadMemoryByAddress addr=0x08000000 len=16", "req": "2314080000000010", "kind": "nrc", "nrc": 17, "uds": "7F2311", "ms": 639.0, "stale": []}
+{"label": "23_08000010", "desc": "ReadMemoryByAddress addr=0x08000010 len=16", "req": "2314080000100010", "kind": "nrc", "nrc": 17, "uds": "7F2311", "ms": 550.1, "stale": []}
+{"label": "23_20000000", "desc": "ReadMemoryByAddress addr=0x20000000 len=16", "req": "2314200000000010", "kind": "nrc", "nrc": 17, "uds": "7F2311", "ms": 547.1, "stale": []}
+{"label": "23_40000000", "desc": "ReadMemoryByAddress addr=0x40000000 len=16", "req": "2314400000000010", "kind": "nrc", "nrc": 17, "uds": "7F2311", "ms": 544.5, "stale": []}
+{"label": "23_80000000", "desc": "ReadMemoryByAddress addr=0x80000000 len=16", "req": "2314800000000010", "kind": "nrc", "nrc": 17, "uds": "7F2311", "ms": 545.3, "stale": []}
+{"label": "23_C0000000", "desc": "ReadMemoryByAddress addr=0xC0000000 len=16", "req": "2314C00000000010", "kind": "nrc", "nrc": 17, "uds": "7F2311", "ms": 547.9, "stale": []}
+{"label": "23_FFFF0000", "desc": "ReadMemoryByAddress addr=0xFFFF0000 len=16", "req": "2314FFFF00000010", "kind": "nrc", "nrc": 17, "uds": "7F2311", "ms": 551.8, "stale": []}

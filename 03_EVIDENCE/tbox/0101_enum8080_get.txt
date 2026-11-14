@@ -1,0 +1,18 @@
+Sat Nov 14 01:37:44 UTC 2026
+## cmd: python 04_SOLVE/tbox/enum8080.py get 04_SOLVE/tbox/wl_big.txt 03_EVIDENCE/tbox/0101_enum8080_get.jsonl
+## target 10.230.164.3:8080  paths=29191  8 conns / 3s timeout / 20ms pace
+{
+  "mode": "GET",
+  "paths": 29191,
+  "done": 29191,
+  "errors": 3,
+  "elapsed_s": 219.9,
+  "rate": 132.7,
+  "status_hist": {
+    "404": 29187,
+    "200": 1,
+    "ERR": 3
+  },
+  "hits": 1
+}
+Sat Nov 14 01:41:25 UTC 2026

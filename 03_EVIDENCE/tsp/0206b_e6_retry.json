@@ -1,0 +1,12 @@
+{
+ "retried_names": 170,
+ "queries_ok": 339,
+ "real_diffs": [],
+ "still_failed": [
+  {
+   "name": "packageCampaign",
+   "query": "{packageCampaign(vin:\"CV6FF52FEE9EDDD86\"){id}}",
+   "err": "<urlopen error [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。>"
+  }
+ ]
+}

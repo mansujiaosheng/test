@@ -1,0 +1,6 @@
+=== 0163: /api/v1/competitions variants (the competitions.html data source) ===
+/api/v1/competitions                           http=401 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","requestId":"a66607e1345e"}}
+/api/v1/competitions?status=published          http=401 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","requestId":"28158b54e4ee"}}
+/api/v1/auth/check                             http=200 {"authenticated":false}
+/api/v1/public/competitions                    http=404 {"error":{"code":"route_not_found","details":{},"message":"API route not found","requestId":"060b66dc7512"}}
+/api/v1/bootstrap                              http=401 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","requestId":"354795fecb82"}}

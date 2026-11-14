@@ -1,0 +1,33 @@
+# ===== 敏感材料：绝不入库 =====
+*.ovpn
+*.key
+*.pem
+*.p12
+*.pfx
+work/cred.txt
+work/pkey.txt
+work/ticket*.txt
+**/ticket_sample*.json
+**/diagnostics/
+**/bundle*/
+# ===== 无关噪音（浏览器取证库，含他人云密钥，触发 GitHub 扫描）=====
+01_TARGETS/tbox/platform/*.db
+04_SOLVE/tbox/gostack/*.exe
+04_SOLVE/tbox/lab/*.exe
+# ===== 大体积证据 =====
+03_EVIDENCE/cgw/*.jsonl
+03_EVIDENCE/cgw/trace.jsonl
+03_EVIDENCE/cgw/wire.log
+03_EVIDENCE/cgwweb/wire.log
+03_EVIDENCE/**/*.log
+03_EVIDENCE/recon/*.json
+03_EVIDENCE/recon/*.xml
+03_EVIDENCE/ecu-reach/*_full_0000_FFFF.json
+03_EVIDENCE/**/__pycache__/
+# ===== 系统 =====
+__pycache__/
+*.pyc
+.venv/
+.dsh-write-probe
+_ecu_full*.log
+03_EVIDENCE/ticket/0203_ticket_sample.json

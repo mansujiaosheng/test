@@ -1,0 +1,31 @@
+== 10.226.193.2:13401 silent: connect med=26.4ms EOF-after-connect med=25.6ms (10/10)
+   silent(no bytes)     rx=  0B eof=True eof_after=27.6 err=None
+   doip-ra              rx=  0B eof=True eof_after=26.2 err=None
+   http-get             rx=  0B eof=True eof_after=25.9 err=None
+   http-connect         rx=  0B eof=False eof_after=None err=ConnectionResetError
+   ws-upgrade           rx=  0B eof=True eof_after=3.1 err=None
+   h2-preface           rx=  0B eof=True eof_after=9.5 err=None
+   socks5               rx=  0B eof=True eof_after=29.8 err=None
+   mqtt-connect         rx=  0B eof=True eof_after=25.7 err=None
+   ssh-banner           rx=  0B eof=False eof_after=None err=ConnectionResetError
+   grpc-empty-frame     rx=  0B eof=True eof_after=7.9 err=None
+   doip-v1              rx=  0B eof=True eof_after=13.3 err=None
+   doip-v3              rx=  0B eof=True eof_after=6.4 err=None
+   can-7e0              rx=  0B eof=True eof_after=25.7 err=None
+   zeroes16             rx=  0B eof=True eof_after=25.4 err=None
+== 10.225.139.4:13401 silent: connect med=26.7ms EOF-after-connect med=25.6ms (10/10)
+   silent(no bytes)     rx=  0B eof=True eof_after=26.5 err=None
+   doip-ra              rx=  0B eof=False eof_after=None err=ConnectionResetError
+   http-get             rx=  0B eof=False eof_after=None err=ConnectionResetError
+   http-connect         rx=  0B eof=True eof_after=25.6 err=None
+   ws-upgrade           rx=  0B eof=True eof_after=7.6 err=None
+   h2-preface           rx=  0B eof=True eof_after=26.5 err=None
+   socks5               rx=  0B eof=True eof_after=26.1 err=None
+   mqtt-connect         rx=  0B eof=True eof_after=12.3 err=None
+   ssh-banner           rx=  0B eof=True eof_after=25.7 err=None
+   grpc-empty-frame     rx=  0B eof=True eof_after=7.4 err=None
+   doip-v1              rx=  0B eof=True eof_after=25.9 err=None
+   doip-v3              rx=  0B eof=True eof_after=26.3 err=None
+   can-7e0              rx=  0B eof=True eof_after=11.9 err=None
+   zeroes16             rx=  0B eof=True eof_after=25.5 err=None
+wrote 03_EVIDENCE/ecu-reach/31_13401_close_timing.json

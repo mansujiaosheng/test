@@ -1,0 +1,33 @@
+{
+  "label": "r2x_1000_2701",
+  "purpose": "",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x1000",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "1000E4422701",
+    "uds": "2701"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "122010007F277E",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x1000",
+      "hex": "7F277E",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    }
+  ],
+  "elapsed_ms": 536.61,
+  "parsed": "0x1220: NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)",
+  "seq": 3418,
+  "ts": "2026-11-14T09:59:40.748+08:00"
+}

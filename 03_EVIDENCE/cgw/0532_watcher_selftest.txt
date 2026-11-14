@@ -1,0 +1,3 @@
+{"selftest_open_port_8080": {"host": "10.226.193.2", "port": 8080, "state": "STILL_OPEN", "waited_ms": 1213.5}}
+{"selftest_target_13401": {"host": "10.226.193.2", "port": 13401, "state": "CLOSED", "ms": 4.6}}
+{"selftest_doip_13400": {"host": "10.226.193.2", "port": 13400, "state": "STILL_OPEN", "waited_ms": 1209.3}}

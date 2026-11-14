@@ -1,0 +1,18 @@
+{
+  "label": "la_00A1",
+  "purpose": "LA existence probe 0x00A1",
+  "tester_sa": "0x0E00",
+  "target_la": "0x00A1",
+  "elapsed_ms": 190.51,
+  "responses": [
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 165,
+  "ts": "2026-11-14T09:24:52.561+08:00"
+}

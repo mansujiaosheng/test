@@ -1,0 +1,19 @@
+###### 0108 8080 surface after round-2 move (10.225.139.3:8080) ######
+/                404 0B 
+/healthz         200 0B 
+/version         404 0B 
+/graphql         404 0B 
+/metrics         404 0B 
+/certs           404 0B 
+/pki/ca.crt      404 0B 
+/ca.crt          404 0B 
+/api/v1          404 0B 
+/ota             404 0B 
+/firmware        404 0B 
+/diagnostics     404 0B 
+
+=== OPTIONS * ===
+HTTP/1.1 200 OK
+Content-Length: 0
+Date: Sat, 14 Nov 2026 01:57:15 GMT
+

@@ -1,0 +1,53 @@
+# 网络中断记录：VPN 隧道掉线（非靶机故障、非 DoIP 探测导致）
+
+**时间** 2026-11-14 09:50–09:52（发现于 09:51）
+**影响** **全队**：TSP / T-BOX / CGW 全部不可达
+**结论** VPN 客户端掉线，不是靶机被我们打崩
+
+## 现象
+
+09:51 做 DoIP 健康检查时，两个网关地址都连不上，随后确认**所有**目标都不可达：
+
+```
+10.230.164.2:8080  FAIL TimeoutError     ← TSP
+10.230.164.3:8080  FAIL TimeoutError     ← T-BOX
+10.230.164.3:8443  FAIL TimeoutError     ← T-BOX mTLS
+10.230.164.4:8080  FAIL TimeoutError     ← CGW
+10.230.164.4:13400 FAIL TimeoutError     ← CGW DoIP
+10.230.164.4:13401 FAIL TimeoutError     ← CGW CAN FD 桥
+10.229.221.2:8080  FAIL TimeoutError
+10.229.221.2:13400 FAIL TimeoutError
+10.229.221.2:13401 FAIL TimeoutError
+ping 10.229.221.2  → 100% loss
+ping 10.252.3.1    → 100% loss（VPN 对端网关也不通）
+```
+
+## 定位：VPN 隧道断了，不是靶机
+
+| 检查 | 结果 | 说明 |
+|---|---|---|
+| TAP 适配器（本地连接） | 仍 `Connected`，IP 仍 `10.252.3.20` | 网卡还在，但后面没隧道 |
+| 路由 `10.224.0.0/12` | **已消失** | 只剩 Tailscale 的 `10.x via 100.100.100.100` |
+| VPN 对端 `175.27.210.153:1197` | **TCP 可达，46ms** | 服务器活着，是我们的会话掉了 |
+| 客户端进程 | `OpenVPNConnect.exe` ×4、`agent_ovpnconnect.exe`、`ovpnhelper_service.exe` 都在 | 进程在，连接断了 |
+
+**判据**：对端 TCP 可达 + 本机路由被撤 + TAP 网卡仍 up ⇒ **控制通道/会话断开**，
+不是靶机侧故障，也不是我的 DoIP 请求造成的（DoIP 打不到 10.230.164.2 的 8080）。
+
+证据：`03_EVIDENCE/cgw/doip_outage_vpn_down.txt`
+
+## 对判读的影响（重要，别当成目标行为）
+
+中断正好发生在**未激活服务扫描**（`doip_service_sweep_no_activation.txt`）跑到 SID 0xA5 时：
+
+- SID `0x00`–`0xA4` × 3 形状（约 495 次）：全部规整返回 `7F <sid> 22`，**无任何偏离** → 有效数据
+- 从 SID `0xA5` 的某个形状起开始出现 `None`，之后 `0xA6`–`0xFF` 全 `None` → **全部是掉线，不是目标行为**
+
+该轮扫描因此**只完成了 0x00–0xA4**（已确认"激活前一律 NRC 0x22，无隐藏分支"这一段）。
+`0xA6`–`0xFF` 待 VPN 恢复后补跑。**不要**把这 271 条 `None` 当成任何发现。
+
+## 恢复动作（需人决定）
+
+VPN 是 `OpenVPN Connect` GUI 客户端，重连要么在 GUI 里点重连，要么重新导入配置文件。
+子智能体不应擅自 kill/重启用户的 VPN 客户端（可能影响其它会话与凭据）。
+**建议由 lead 侧确认并重连**，恢复后本组可立即补完剩余 0xA6–0xFF 的扫描。

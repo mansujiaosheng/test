@@ -1,0 +1,20 @@
+### A. IDLE behaviour: 13400 (known DoIP) vs 13401, send nothing
+{"port": 13400, "connect_ms": 41.44, "after_connect_ms": null, "close_kind": "TIMEOUT", "recv_len": 0, "so_error": 0}
+{"port": 13400, "connect_ms": 3060.35, "after_connect_ms": null, "close_kind": "TIMEOUT", "recv_len": 0, "so_error": 0}
+{"port": 13400, "connect_ms": 35.62, "after_connect_ms": null, "close_kind": "TIMEOUT", "recv_len": 0, "so_error": 0}
+--- port 13400 summary: {"n": 3, "fin": 0, "timeout": 3, "delay_ms_min": null, "delay_ms_max": null, "delay_ms_median": null, "recv_bytes_any": 0}
+{"port": 13401, "connect_ms": 30.52, "after_connect_ms": 29.1, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 30.11, "after_connect_ms": 27.77, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 27.1, "after_connect_ms": 27.82, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 27.87, "after_connect_ms": 27.33, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 27.34, "after_connect_ms": 25.76, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 28.29, "after_connect_ms": 31.67, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 1036.5, "after_connect_ms": 31.92, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 28.68, "after_connect_ms": 36.09, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 1054.98, "after_connect_ms": 14.14, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 28.0, "after_connect_ms": 27.94, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 27.47, "after_connect_ms": 26.21, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+{"port": 13401, "connect_ms": 27.89, "after_connect_ms": 25.97, "close_kind": "FIN", "recv_len": 0, "so_error": 0}
+--- port 13401 summary: {"n": 12, "fin": 12, "timeout": 0, "delay_ms_min": 14.14, "delay_ms_max": 36.09, "delay_ms_median": 27.8, "recv_bytes_any": 0}
+
+[written] D:\qwb\04_SOLVE\ecu_s09\runs\13401_idle_vs_doip.json

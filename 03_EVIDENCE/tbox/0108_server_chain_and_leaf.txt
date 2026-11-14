@@ -1,0 +1,31 @@
+Sat Nov 14 01:45:21 UTC 2026
+## 8443 server chain: how many certs does it transmit? (is the trust anchor obtainable from the wire?)
+## cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -showcerts
+
+--- cert blocks transmitted by server ---
+1
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+Server Temp Key: X25519, 253 bits
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Secure Renegotiation IS NOT supported
+No ALPN negotiated
+Verify return code: 21 (unable to verify the first certificate)
+--- leaf extensions ---
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Authority Key Identifier: 
+                47:6E:90:16:4F:64:70:BB:1C:80:72:36:AB:3C:54:70:03:78:10:99
+            X509v3 Subject Alternative Name: 
+                DNS:tbox
+    Signature Algorithm: ecdsa-with-SHA256
+Sat Nov 14 01:45:21 UTC 2026

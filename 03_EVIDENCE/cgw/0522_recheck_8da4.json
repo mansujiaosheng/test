@@ -1,0 +1,19 @@
+{
+  "label": "recheck_8da4",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E001000228DA4",
+    "uds": "228DA4"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 408.52,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 522,
+  "ts": "2026-11-14T09:21:40.730+08:00"
+}

@@ -1,0 +1,282 @@
+########## 0012_hs_fakeca_chain ##########
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -state -msg -no_ticket -cert /d/qwb/04_SOLVE/tbox/mat/v5_leaf.pem -key /d/qwb/04_SOLVE/tbox/mat/v5_leaf.key -cert_chain /d/qwb/04_SOLVE/tbox/mat/v5_leaf_chain.pem
+### date: 2026-11-14T01:30:42Z
+-------------------------------------------
+CONNECTED(0000015C)
+SSL_connect:before SSL initialization
+>>> TLS 1.0, RecordHeader [length 0005]
+    16 03 01 00 e5
+>>> TLS 1.3, Handshake [length 00e5], ClientHello
+    01 00 00 e1 03 03 40 45 ad 1e 76 1a a7 66 34 51
+    3e a3 16 63 ed bc 58 73 64 92 c9 b5 9b 4a 0f 75
+    d3 09 eb 43 b7 ff 20 27 50 b7 2b 8f 83 9c 0d 3d
+    63 09 4d dd 32 8b cc 8e eb f9 18 67 77 9c 47 65
+    3c bf 4d 53 33 04 29 00 08 13 02 13 03 13 01 00
+    ff 01 00 00 90 00 00 00 09 00 07 00 00 04 74 62
+    6f 78 00 0b 00 04 03 00 01 02 00 0a 00 16 00 14
+    00 1d 00 17 00 1e 00 19 00 18 01 00 01 01 01 02
+    01 03 01 04 00 16 00 00 00 17 00 00 00 0d 00 1e
+    00 1c 04 03 05 03 06 03 08 07 08 08 08 09 08 0a
+    08 0b 08 04 08 05 08 06 04 01 05 01 06 01 00 2b
+    00 03 02 03 04 00 2d 00 02 01 01 00 33 00 26 00
+    24 00 1d 00 20 36 22 de 08 8b 7b 6f 63 bc 55 ad
+    35 e9 cd 36 2b 5a 39 02 12 44 ba e3 d7 f1 4e 70
+    c4 bb e3 7f 1f
+SSL_connect:SSLv3/TLS write client hello
+<<< TLS 1.2, RecordHeader [length 0005]
+    16 03 03 00 7a
+SSL_connect:SSLv3/TLS write client hello
+<<< TLS 1.3, Handshake [length 007a], ServerHello
+    02 00 00 76 03 03 64 9a 40 eb 73 f5 02 a7 50 4f
+    d7 95 93 f6 28 51 d5 63 37 88 07 b6 08 bb bd 6a
+    a3 9e 24 cf 72 d7 20 27 50 b7 2b 8f 83 9c 0d 3d
+    63 09 4d dd 32 8b cc 8e eb f9 18 67 77 9c 47 65
+    3c bf 4d 53 33 04 29 13 01 00 00 2e 00 2b 00 02
+    03 04 00 33 00 24 00 1d 00 20 14 69 02 4d b4 c4
+    50 91 75 cf 28 be 45 86 96 7e 49 f6 46 92 dc 30
+    82 95 e2 7f e1 a9 4b 88 f8 56
+<<< TLS 1.2, RecordHeader [length 0005]
+    14 03 03 00 01
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 1b
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+SSL_connect:SSLv3/TLS read server hello
+<<< TLS 1.3, Handshake [length 000a], EncryptedExtensions
+    08 00 00 06 00 04 00 00 00 00
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 81
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+SSL_connect:TLSv1.3 read encrypted extensions
+<<< TLS 1.3, Handshake [length 0070], CertificateRequest
+    0d 00 00 6c 00 00 69 00 05 00 00 00 12 00 00 00
+    0d 00 10 00 0e 08 04 04 03 08 07 08 05 08 06 05
+    03 06 03 00 32 00 1a 00 18 08 04 04 03 08 07 08
+    05 08 06 04 01 05 01 06 01 05 03 06 03 02 01 02
+    03 00 2f 00 2b 00 29 00 27 30 25 31 23 30 21 06
+    03 55 04 03 13 1a 43 56 36 20 46 6c 65 65 74 20
+    44 69 61 67 6e 6f 73 74 69 63 73 20 52 6f 6f 74
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 01 ac
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+SSL_connect:SSLv3/TLS read server certificate request
+<<< TLS 1.3, Handshake [length 019b], Certificate
+    0b 00 01 97 00 00 01 93 00 01 8e 30 82 01 8a 30
+    82 01 31 a0 03 02 01 02 02 10 50 2c 0e d0 df fb
+    9e c2 af 2b ce 9f 97 73 78 27 30 0a 06 08 2a 86
+    48 ce 3d 04 03 02 30 25 31 23 30 21 06 03 55 04
+    03 13 1a 43 56 36 20 46 6c 65 65 74 20 44 69 61
+    67 6e 6f 73 74 69 63 73 20 52 6f 6f 74 30 1e 17
+    0d 32 36 31 31 31 34 30 30 30 30 33 32 5a 17 0d
+    32 36 31 32 31 34 30 31 30 30 33 32 5a 30 0f 31
+    0d 30 0b 06 03 55 04 03 13 04 74 62 6f 78 30 59
+    30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86 48
+    ce 3d 03 01 07 03 42 00 04 7c 1f ab 04 61 d5 cd
+    0b c9 d1 52 c2 7a 80 c1 02 4f d3 25 9f 9f 3c 5e
+    8a c2 f9 32 bc a9 7c 8b 73 16 af 93 01 49 07 c0
+    f5 54 d9 bf 3c d5 74 6d ed b8 e2 53 e4 3b 45 57
+    00 a3 12 82 13 77 5c 0b 62 a3 59 30 57 30 0e 06
+    03 55 1d 0f 01 01 ff 04 04 03 02 07 80 30 13 06
+    03 55 1d 25 04 0c 30 0a 06 08 2b 06 01 05 05 07
+    03 01 30 1f 06 03 55 1d 23 04 18 30 16 80 14 47
+    6e 90 16 4f 64 70 bb 1c 80 72 36 ab 3c 54 70 03
+    78 10 99 30 0f 06 03 55 1d 11 04 08 30 06 82 04
+    74 62 6f 78 30 0a 06 08 2a 86 48 ce 3d 04 03 02
+    03 47 00 30 44 02 20 34 a8 ca ac 40 64 e8 68 c3
+    5d 5a ec 89 28 2c 44 56 47 66 55 f2 22 ac f8 41
+    79 74 15 60 f0 e5 49 02 20 08 17 fa d6 89 71 1e
+    00 8f 31 a0 34 7b e0 c2 95 46 0b 42 80 6a fb 28
+    9c cc 31 bc 16 65 b9 2f d4 00 00
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 60
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+SSL_connect:SSLv3/TLS read server certificate
+<<< TLS 1.3, Handshake [length 004f], CertificateVerify
+    0f 00 00 4b 04 03 00 47 30 45 02 21 00 a3 b3 df
+    98 bb d2 dd 39 9a ca e3 bf 89 8d de 9e 47 20 99
+    fe ca 85 40 67 9d a0 a9 81 f7 e3 c7 2a 02 20 76
+    1e 73 bb fb 37 02 b4 0e b0 63 d3 c2 74 70 ee 03
+    e9 a9 37 45 ac fa 18 b7 f5 86 04 e8 01 a1 4c
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 35
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+SSL_connect:TLSv1.3 read server certificate verify
+<<< TLS 1.3, Handshake [length 0024], Finished
+    14 00 00 20 c1 15 7d 82 da 95 87 30 23 5e ab 95
+    37 54 06 b0 79 8e be 87 b8 9d 5d 9a 6d 1f 5a 6d
+    9d 80 54 3d
+SSL_connect:SSLv3/TLS read finished
+>>> TLS 1.2, RecordHeader [length 0005]
+    14 03 03 00 01
+>>> TLS 1.3, ChangeCipherSpec [length 0001]
+    01
+SSL_connect:SSLv3/TLS write change cipher spec
+>>> TLS 1.2, RecordHeader [length 0005]
+    17 03 03 05 09
+>>> TLS 1.2, InnerContent [length 0001]
+    16
+>>> TLS 1.3, Handshake [length 04f8], Certificate
+    0b 00 04 f4 00 00 04 f0 00 01 a8 30 82 01 a4 30
+    82 01 4a a0 03 02 01 02 02 14 3c e0 cf 9e 75 b1
+    48 dd 2a 46 f1 57 32 14 bb da 80 ef 40 7f 30 0a
+    06 08 2a 86 48 ce 3d 04 03 02 30 25 31 23 30 21
+    06 03 55 04 03 0c 1a 43 56 36 20 46 6c 65 65 74
+    20 44 69 61 67 6e 6f 73 74 69 63 73 20 52 6f 6f
+    74 30 1e 17 0d 32 36 31 31 31 33 30 31 32 33 35
+    34 5a 17 0d 32 36 31 32 31 33 30 31 32 33 35 34
+    5a 30 16 31 14 30 12 06 03 55 04 03 0c 0b 74 62
+    6f 78 2d 63 6c 69 65 6e 74 30 59 30 13 06 07 2a
+    86 48 ce 3d 02 01 06 08 2a 86 48 ce 3d 03 01 07
+    03 42 00 04 9b 16 94 b8 74 f2 b1 13 f7 08 28 a3
+    4e 42 f5 78 34 6d 30 bc 2d cd 94 26 e1 ad 19 f2
+    ff c9 c7 8f 3c ab 93 88 e5 96 a0 28 eb a4 2b 9f
+    bb e3 ce 40 3c fe 0d a2 83 54 9d 81 55 15 a4 df
+    3a d4 9d 69 a3 67 30 65 30 0c 06 03 55 1d 13 01
+    01 ff 04 02 30 00 30 0e 06 03 55 1d 0f 01 01 ff
+    04 04 03 02 07 80 30 13 06 03 55 1d 25 04 0c 30
+    0a 06 08 2b 06 01 05 05 07 03 02 30 1f 06 03 55
+    1d 23 04 18 30 16 80 14 04 a5 e1 d2 f7 6d 02 88
+    b6 ac c0 ca e8 46 c3 c3 0f c6 2c 7e 30 0f 06 03
+    55 1d 11 04 08 30 06 82 04 74 62 6f 78 30 0a 06
+    08 2a 86 48 ce 3d 04 03 02 03 48 00 30 45 02 20
+    74 e4 fb 86 28 a4 b4 28 c7 79 97 83 93 e5 1d 73
+    b5 52 37 d1 b3 2d 6b 7a e2 ef 02 9b 18 c9 5d 66
+    02 21 00 d6 b1 79 03 58 e7 75 5e 75 95 eb cf 9b
+    7f 01 a8 c8 52 d6 06 b1 36 3a 19 80 96 d7 83 da
+    73 7b 9b 00 00 00 01 a8 30 82 01 a4 30 82 01 4a
+    a0 03 02 01 02 02 14 3c e0 cf 9e 75 b1 48 dd 2a
+    46 f1 57 32 14 bb da 80 ef 40 7f 30 0a 06 08 2a
+    86 48 ce 3d 04 03 02 30 25 31 23 30 21 06 03 55
+    04 03 0c 1a 43 56 36 20 46 6c 65 65 74 20 44 69
+    61 67 6e 6f 73 74 69 63 73 20 52 6f 6f 74 30 1e
+    17 0d 32 36 31 31 31 33 30 31 32 33 35 34 5a 17
+    0d 32 36 31 32 31 33 30 31 32 33 35 34 5a 30 16
+    31 14 30 12 06 03 55 04 03 0c 0b 74 62 6f 78 2d
+    63 6c 69 65 6e 74 30 59 30 13 06 07 2a 86 48 ce
+    3d 02 01 06 08 2a 86 48 ce 3d 03 01 07 03 42 00
+    04 9b 16 94 b8 74 f2 b1 13 f7 08 28 a3 4e 42 f5
+    78 34 6d 30 bc 2d cd 94 26 e1 ad 19 f2 ff c9 c7
+    8f 3c ab 93 88 e5 96 a0 28 eb a4 2b 9f bb e3 ce
+    40 3c fe 0d a2 83 54 9d 81 55 15 a4 df 3a d4 9d
+    69 a3 67 30 65 30 0c 06 03 55 1d 13 01 01 ff 04
+    02 30 00 30 0e 06 03 55 1d 0f 01 01 ff 04 04 03
+    02 07 80 30 13 06 03 55 1d 25 04 0c 30 0a 06 08
+    2b 06 01 05 05 07 03 02 30 1f 06 03 55 1d 23 04
+    18 30 16 80 14 04 a5 e1 d2 f7 6d 02 88 b6 ac c0
+    ca e8 46 c3 c3 0f c6 2c 7e 30 0f 06 03 55 1d 11
+    04 08 30 06 82 04 74 62 6f 78 30 0a 06 08 2a 86
+    48 ce 3d 04 03 02 03 48 00 30 45 02 20 74 e4 fb
+    86 28 a4 b4 28 c7 79 97 83 93 e5 1d 73 b5 52 37
+    d1 b3 2d 6b 7a e2 ef 02 9b 18 c9 5d 66 02 21 00
+    d6 b1 79 03 58 e7 75 5e 75 95 eb cf 9b 7f 01 a8
+    c8 52 d6 06 b1 36 3a 19 80 96 d7 83 da 73 7b 9b
+    00 00 00 01 91 30 82 01 8d 30 82 01 34 a0 03 02
+    01 02 02 14 43 6b 60 fd c2 15 e0 8d 90 19 d9 c4
+    43 a9 72 ed 29 8d 02 fc 30 0a 06 08 2a 86 48 ce
+    3d 04 03 02 30 25 31 23 30 21 06 03 55 04 03 0c
+    1a 43 56 36 20 46 6c 65 65 74 20 44 69 61 67 6e
+    6f 73 74 69 63 73 20 52 6f 6f 74 30 1e 17 0d 32
+    36 31 31 31 33 30 31 32 33 35 34 5a 17 0d 32 37
+    30 31 31 32 30 31 32 33 35 34 5a 30 25 31 23 30
+    21 06 03 55 04 03 0c 1a 43 56 36 20 46 6c 65 65
+    74 20 44 69 61 67 6e 6f 73 74 69 63 73 20 52 6f
+    6f 74 30 59 30 13 06 07 2a 86 48 ce 3d 02 01 06
+    08 2a 86 48 ce 3d 03 01 07 03 42 00 04 fc 58 dd
+    79 b0 b4 b6 9e c6 a5 9c b3 b8 b5 c4 a3 c9 8e 31
+    fe 50 3b c5 d7 8b 8b a8 27 1d 5a a4 15 5c a7 88
+    79 4e fb 70 bd df cc 19 f6 0d 44 2b dc 66 ee 32
+    10 d8 cc 20 df 20 85 ca 2d 30 5a 22 9f a3 42 30
+    40 30 0f 06 03 55 1d 13 01 01 ff 04 05 30 03 01
+    01 ff 30 0e 06 03 55 1d 0f 01 01 ff 04 04 03 02
+    01 86 30 1d 06 03 55 1d 0e 04 16 04 14 04 a5 e1
+    d2 f7 6d 02 88 b6 ac c0 ca e8 46 c3 c3 0f c6 2c
+    7e 30 0a 06 08 2a 86 48 ce 3d 04 03 02 03 47 00
+    30 44 02 20 5b fb c6 60 b9 6c f4 aa a9 ea 41 a9
+    05 cc 50 80 0a ba dc e9 d2 16 82 a0 66 25 e2 57
+    57 d9 a1 37 02 20 0c 42 82 e3 6a 62 3f e1 a5 78
+    31 16 74 5e 83 c3 c3 bf 67 8b 6b 39 07 b4 26 10
+    93 a8 c4 b4 77 e1 00 00
+SSL_connect:SSLv3/TLS write client certificate
+>>> TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 5f
+>>> TLS 1.2, InnerContent [length 0001]
+    16
+>>> TLS 1.3, Handshake [length 004e], CertificateVerify
+    0f 00 00 4a 04 03 00 46 30 44 02 20 7f e2 ae 8a
+    5c 3d d8 10 fe f4 f1 76 49 71 f6 7b 1d 08 62 b9
+    72 4b 91 c1 95 29 a9 1e b0 43 3e 82 02 20 34 2f
+    e2 47 85 50 dd a1 bc ff 6d 5f d5 90 1d 04 e8 17
+    56 57 0f cf 90 4f 1a 9a be 96 20 88 01 12
+SSL_connect:SSLv3/TLS write certificate verify
+>>> TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 35
+>>> TLS 1.2, InnerContent [length 0001]
+    16
+>>> TLS 1.3, Handshake [length 0024], Finished
+    14 00 00 20 59 3f 45 06 c6 b6 2f 63 d2 b4 d0 db
+    30 62 00 52 b0 1d f5 fe e1 91 7d c9 b2 d8 c8 87
+    97 db 75 d8
+SSL_connect:SSLv3/TLS write finished
+---
+Certificate chain
+ 0 s:CN = tbox
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBijCCATGgAwIBAgIQUCwO0N/7nsKvK86fl3N4JzAKBggqhkjOPQQDAjAlMSMw
+IQYDVQQDExpDVjYgRmxlZXQgRGlhZ25vc3RpY3MgUm9vdDAeFw0yNjExMTQwMDAw
+MzJaFw0yNjEyMTQwMTAwMzJaMA8xDTALBgNVBAMTBHRib3gwWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAR8H6sEYdXNC8nRUsJ6gMECT9Mln588XorC+TK8qXyLcxav
+kwFJB8D1VNm/PNV0be244lPkO0VXAKMSghN3XAtio1kwVzAOBgNVHQ8BAf8EBAMC
+B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAUR26QFk9kcLscgHI2
+qzxUcAN4EJkwDwYDVR0RBAgwBoIEdGJveDAKBggqhkjOPQQDAgNHADBEAiA0qMqs
+QGToaMNdWuyJKCxEVkdmVfIirPhBeXQVYPDlSQIgCBf61olxHgCPMaA0e+DClUYL
+QoBq+yiczDG8FmW5L9Q=
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 891 bytes and written 1692 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 13
+<<< TLS 1.3, InnerContent [length 0001]
+    15
+<<< TLS 1.3, Alert [length 0002], fatal unknown_ca
+    02 30
+SSL3 alert read:fatal:unknown CA
+247A0000:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48
+[rc=1]

@@ -1,0 +1,9 @@
+###### T02 0008 TCP sweep 10.230.164.0/24 :8080,8443,80,443,22,1883,8883,3000,5000,9090,13400,13401 (2026-11-14T01:27:17Z) ######
+OPEN 10.230.164.2:8080  HTTP/1.0 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:27:17 GMT | Content-Length: 16 |  | {"status":"o
+OPEN 10.230.164.3:8080  HTTP/1.0 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:27:17 GMT | Content-Length: 16 |  | {"status":"o
+OPEN 10.230.164.3:8443  HTTP/1.0 400 Bad Request |  | Client sent an HTTP request to an HTTPS server.
+
+OPEN 10.230.164.4:8080  HTTP/1.0 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:27:17 GMT | Content-Length: 16 |  | {"status":"o
+OPEN 10.230.164.4:13400  (connect ok, no http reply)
+OPEN 10.230.164.4:13401  
+-- 6 open of 3048 probes, 29.3s

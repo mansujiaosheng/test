@@ -1,0 +1,129 @@
+=== CyberCar platform discovered on 175.27.210.153:9989 (HTTPS) ===
+=== source: Chrome History DB downloads.referrer for the .ovpn profile ===
+=== 0130: read-only GET ===
+
+##### GET https://175.27.210.153:9989/ (headers) #####
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Alt-Svc: h3=":9989"; ma=2592000
+Cache-Control: no-store
+Content-Length: 30490
+Content-Security-Policy: default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; style-src 'self'; script-src 'self'; img-src 'self' data: blob:; connect-src 'self' ws: wss: blob:
+Content-Type: text/html; charset=utf-8
+Etag: "dkxsi0hb9kowniy"
+Last-Modified: Tue, 25 Aug 2026 05:53:20 GMT
+Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+Referrer-Policy: same-origin
+Server: Caddy
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Date: Sat, 14 Nov 2026 01:36:49 GMT
+
+
+[curl time=0.128423s size=30490]
+
+##### body head #####
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="CyberCar 车联网数字孪生安全竞赛平台" />
+    <title>车联网数字孪生攻防平台</title>
+    <link rel="icon" href="/brand-mark.png" type="image/png" />
+    <link rel="stylesheet" href="/app.css?v=20260825-snapshot-buttons-v1" />
+  </head>
+  <body class="auth-pending">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="app-shell">
+      <aside class="rail">
+        <a class="brand" href="#overview" aria-label="CyberCar 首页">
+          <img class="brand-mark" src="/brand-mark.png" alt="" aria-hidden="true" />
+          <span class="brand-copy"><small>车联网数字孪生攻防平台</small></span>
+        </a>
+
+        <nav class="rail-nav" aria-label="主导航">
+          <button class="nav-item is-active" data-view="overview"><span>01</span>赛事总览</button>
+          <button class="nav-item" data-view="twin"><span>02</span>车辆孪生</button>
+          <button class="nav-item" id="challenge-nav" data-view="challenges"><span>03</span>车辆题目</button>
+          <button class="nav-item" data-view="arena"><span>04</span>竞技场</button>
+          <button class="nav-item" data-view="teams"><span>05</span>战队排行</button>
+          <button class="nav-item" data-view="evidence"><span>06</span>证据流</button>
+          <button class="nav-item" id="vehicle-range-nav" data-view="vehicle-range" hidden><span>03</span>整车靶场</button>
+        </nav>
+
+        <div class="rail-bottom">
+          <div class="provider-indicator" id="provider-indicator">
+            <span class="status-lamp"></span>
+            <div><strong id="provider-status">载入中</strong></div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <div class="event-heading">
+            <h1 id="competition-title">载入赛事控制平面…</h1>
+          </div>
+          <div class="topbar-meta">
+            <div><span>比赛阶段</span><strong id="competition-phase">—</strong></div>
+            <div><span>比赛倒计时</span><strong id="system-clock" aria-live="polite">—</strong></div>
+            <div class="account-control">
+              <span>当前账号</span>
+              <strong id="current-user">身份校验中…</strong>
+              <nav aria-label="账号操作"><a id="admin-link" href="/admin.html" hidden>管理端</a><button id="change-password-button" type="button">修改密码</button><button id="logout-button" type="button">退出</button></nav>
+            </div>
+            <div class="live-chip"><i></i><span id="competition-status">SYNC</span></div>
+          </div>
+        </header>
+
+        <main>
+          <section class="participation-lock panel-cut" id="participation-lock" aria-labelledby="par
+
+##### GET /competitions.html #####
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Alt-Svc: h3=":9989"; ma=2592000
+Cache-Control: no-store
+Content-Length: 1962
+Content-Security-Policy: default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; style-src 'self'; script-src 'self'; img-src 'self' data: blob:; connect-src 'self' ws: wss: blob:
+Content-Type: text/html; charset=utf-8
+Etag: "dkx1x0pnyby81ii"
+Last-Modified: Mon, 24 Aug 2026 09:03:26 GMT
+Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+Referrer-Policy: same-origin
+Server: Caddy
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Date: Sat, 14 Nov 2026 01:36:49 GMT
+
+
+[curl time=0.095212s size=1962]
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="CyberCar 赛事选择" />
+    <title>选择赛事 // CYBERCAR</title>
+    <link rel="icon" href="/brand-mark.png" type="image/png" />
+    <link rel="stylesheet" href="/competitions.css?v=20260730-disqualification-v22" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <main class="competition-shell">
+      <header class="competition-topbar">
+        <a class="brand" href="/competitions.html" aria-label="CyberCar 赛事选择首页"><img class="brand-mark" src="/brand-mark.png" alt="" aria-hidden="true" /><span class="brand-copy"><small>赛事入口 / EVENT GATE</small></span></a>
+        <div class="identity"><span>当前账号</span><strong id="current-user">身份校验中…</strong><button id="logout-button" type="button">退出</button></div>
+      </header>
+      <section class="competition-hero">
+        <span class="section-code">ACCESS / 02</span>
+        <h1>选择要进入的<em>赛事</em></h1>
+        <p>选择一场赛事，进入选手竞赛页面。</p>
+      </section>
+      <section class="competition-list-panel" aria-labelledby="competition-list-title">
+        <header><div><span class="panel-code">EVENT ACCESS STATUS</span><h2 id="competition-list-title">赛事访问状态</h2></div><span id="competi

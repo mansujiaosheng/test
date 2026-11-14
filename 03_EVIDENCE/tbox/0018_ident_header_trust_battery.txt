@@ -1,0 +1,38 @@
+### target 10.230.164.3:8080  ident-header trust battery
+--- baseline (no extra headers) ---
+  /                                  404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /healthz                           200 len=16 sha=6489d6d7a33c5d40 b'{"status":"ok"}\n'
+  /diag                              404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /diagnostics                       404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /status                            404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /ota                               404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /tbox                              404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /certs                             404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /ca.crt                            404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /vehicle                           404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /vehicles                          404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /vehicles/CV6FF52FEE9EDDD86        404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /v1/diag                           404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /api/healthz                       404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+
+--- header battery on /healthz and / ---
+  total diffs = 0
+
+--- same headers, on gate-like paths (looking for 404 -> non-404) ---
+  DIFF /status -> None len=None 'TimeoutError: timed out'
+  total diffs = 1
+
+--- combined all-headers request on / and /healthz ---
+  /                                  404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+  /healthz                           200 len=16 sha=6489d6d7a33c5d40 b'{"status":"ok"}\n'
+  /diag                              404 len=19 sha=b16e15764b8bc06c b'404 page not found\n'
+
+RESULT: HEADER-TRUST SIGNAL FOUND
+
+========================================================================
+CORRECTION (added after re-test): the single 'DIFF /status' above was a
+transient timeout, NOT a header effect. Re-test 0019_status_timeout_repro.txt:
+  /status WITH 4 ident headers : 6/6 -> 404 len=19 sha=b16e15764b8bc06c
+  /status WITHOUT headers      : 6/6 -> 404 len=19 sha=b16e15764b8bc06c
+=> every identity header is byte-identical to baseline. HYPOTHESIS REJECTED.
+========================================================================

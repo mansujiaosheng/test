@@ -1,0 +1,32 @@
+{
+  "label": "node1220_3103ff00",
+  "purpose": "routine results FF00 in extended session",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4423103FF00",
+    "uds": "3103FF00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F3133",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F3133",
+      "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    }
+  ],
+  "elapsed_ms": 529.32,
+  "parsed": "0x1220: NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)",
+  "seq": 2938,
+  "ts": "2026-11-14T09:40:31.842+08:00"
+}

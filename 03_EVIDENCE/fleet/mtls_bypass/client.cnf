@@ -1,0 +1,11 @@
+[ req ]
+distinguished_name = dn
+prompt             = no
+
+[ dn ]
+CN = diag-client
+
+[ v3_client ]
+basicConstraints = critical,CA:FALSE
+keyUsage         = critical,digitalSignature
+extendedKeyUsage = clientAuth

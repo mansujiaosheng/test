@@ -1,0 +1,50 @@
+{
+ "get_hits": [
+  {
+   "path": "/internal/audit",
+   "method": "GET",
+   "status": 404,
+   "ct": "application/json",
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "path": "/graphql",
+   "method": "GET",
+   "status": 405,
+   "ct": "application/json",
+   "body": "{\"error\":\"method not allowed\"}\n"
+  }
+ ],
+ "post_hits": [
+  {
+   "path": "/graphql",
+   "body": null,
+   "status": 400,
+   "resp": "{\"error\":\"invalid GraphQL request\"}\n"
+  },
+  {
+   "path": "/graphql",
+   "body": "{}",
+   "status": 200,
+   "resp": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n"
+  },
+  {
+   "path": "/graphql",
+   "body": "{\"vin\":\"CV6FF52FEE9EDDD86\"}",
+   "status": 200,
+   "resp": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n"
+  },
+  {
+   "path": "/graphql",
+   "body": "{\"vehicle\":\"CV6FF52FEE9EDDD86\"}",
+   "status": 200,
+   "resp": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n"
+  },
+  {
+   "path": "/internal/audit",
+   "body": "{\"vehicle\":\"CV6FF52FEE9EDDD86\"}",
+   "status": -1,
+   "resp": "[WinError 10054] \u8fdc\u7a0b\u4e3b\u673a\u5f3a\u8feb\u5173\u95ed\u4e86\u4e00\u4e2a\u73b0\u6709\u7684\u8fde\u63a5\u3002"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+  "cipher": "AES-256-GCM",
+  "format": "CV6-OTA-1",
+  "nonce": "ChvnGibfqyhRD73B",
+  "tboxAddress": "0x08000000",
+  "tboxArchitecture": "ARMv7-M Thumb-2 raw",
+  "tboxSha256": "88b09d09edbf2951f7a111a51608e99a1bb28a27e653c169f4bf6ddd8c537229",
+  "tboxSize": 16384,
+  "vcuReferenceSize": 1024,
+  "vcuRollback": 2,
+  "vcuUpdateAddress": "0x08040000"
+}

@@ -1,0 +1,18 @@
+{
+  "label": "la_006C",
+  "purpose": "LA existence probe 0x006C",
+  "tester_sa": "0x0E00",
+  "target_la": "0x006C",
+  "elapsed_ms": 178.82,
+  "responses": [
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 112,
+  "ts": "2026-11-14T09:24:39.849+08:00"
+}

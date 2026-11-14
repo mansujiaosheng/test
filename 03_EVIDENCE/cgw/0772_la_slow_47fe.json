@@ -1,0 +1,19 @@
+{
+  "label": "la_slow_47fe",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0x47FE",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0047FE3E00",
+    "uds": "3E00"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 132.65,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 772,
+  "ts": "2026-11-14T09:25:06.868+08:00"
+}

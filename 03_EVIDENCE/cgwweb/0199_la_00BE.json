@@ -1,0 +1,14 @@
+{
+  "label": "la_00BE",
+  "purpose": "LA existence probe 0x00BE",
+  "tester_sa": "0x0E00",
+  "target_la": "0x00BE",
+  "elapsed_ms": 158.48,
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "parsed": [],
+  "cls": "silent",
+  "seq": 199,
+  "ts": "2026-11-14T09:24:59.395+08:00"
+}

@@ -1,0 +1,267 @@
+{
+  "label": "la_scan_0000_00FF",
+  "purpose": "DoIP logical-address existence scan (3E00 oracle)",
+  "range": [
+    "0x0000",
+    "0x00FF"
+  ],
+  "step": 1,
+  "elapsed_s": 60.9,
+  "hits": [
+    {
+      "ta": "0x0038",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x0039",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00B6",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00BB",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00BC",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00BD",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00BE",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00BF",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C0",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C1",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C2",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C3",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C4",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C5",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C6",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C7",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C8",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00C9",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00CA",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00CB",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00CC",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00CD",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00CE",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00CF",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D0",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D1",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D2",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D3",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D4",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D5",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D6",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D7",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D8",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00D9",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00DA",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00DB",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00DC",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00E0",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00E1",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00E2",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00E3",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    },
+    {
+      "ta": "0x00EF",
+      "cls": "silent",
+      "resp": [],
+      "nack": []
+    }
+  ],
+  "total": 256,
+  "seq": 300,
+  "ts": "2026-11-14T09:25:14.232+08:00"
+}

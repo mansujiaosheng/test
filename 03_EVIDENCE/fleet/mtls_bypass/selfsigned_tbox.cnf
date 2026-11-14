@@ -1,0 +1,16 @@
+[ req ]
+distinguished_name = dn
+prompt             = no
+req_extensions     = v3_req
+
+[ dn ]
+CN = tbox
+
+[ v3_req ]
+subjectAltName = DNS:tbox
+
+[ v3_client ]
+basicConstraints = critical,CA:FALSE
+keyUsage         = critical,digitalSignature
+extendedKeyUsage = clientAuth
+subjectAltName   = DNS:tbox

@@ -1,0 +1,21 @@
+earlier   : 19623 B sha256=a924e0ea1c78765041d2ee4527a83331fb203f8a9d88c0a64905bf6662f33284
+verified  : 19623 B sha256=48a6d8e7412d833144e5c74cac02165b13ad0f40ad737ca96198ef3c45a8db0a
+
+=== per-entry comparison ===
+  diagnostics/ca.pem                595B same=False c2fe3a5d4dfb87863b9f26cc…
+  diagnostics/client-key.pem        241B same=True 37112adb9b0622dfa1fcc0da…
+  diagnostics/client.pem            611B same=False fdf5e91bacd4785513377f90…
+  manifest.json                     350B same=False 075c524d3d702f332484cde8…
+  tbox-firmware.img               16412B same=False f2ffde0682b3f45cbeaa0a3d…
+  vcu-reference.bin                1024B same=True 2f3692767f605ef72fb47e1a…
+
+=== decrypt from the verified download ===
+  nonce: caabf1ae7ef8855de48a6164
+  plaintext len: 16384  sha256: 88b09d09edbf2951f7a111a51608e99a1bb28a27e653c169f4bf6ddd8c537229
+  == manifest tboxSha256: True
+
+=== ARMv7-M vector table ===
+  initial SP    = 0x20010000
+  reset handler = 0x08000755
+  distinct vector words: ['0x8000755']
+  first 32 bytes: 0000012055070008550700085507000855070008550700085507000855070008

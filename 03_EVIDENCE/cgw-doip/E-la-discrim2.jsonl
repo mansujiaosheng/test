@@ -1,0 +1,12 @@
+{"la": "0x0001", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1536.8}
+{"la": "0x0042", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1532.8}
+{"la": "0x0100", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1542.6}
+{"la": "0x07E0", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1534.1}
+{"la": "0x07E8", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1542.6}
+{"la": "0x0ABC", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1533.4}
+{"la": "0x1000", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e11"}], "ms": 1542.0}
+{"la": "0x1001", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1536.2}
+{"la": "0x10FF", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1532.3}
+{"la": "0x2000", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1533.4}
+{"la": "0x7FFF", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1530.6}
+{"la": "0xFFFF", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 1530.6}

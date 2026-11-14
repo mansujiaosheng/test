@@ -1,0 +1,74 @@
+########## RAW 307 probes ##########
+--- GET http://10.230.164.2:8080//healthz
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:13:45 GMT
+Content-Length: 44
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+--- GET http://10.230.164.2:8080/./healthz
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:13:45 GMT
+Content-Length: 44
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+--- GET http://10.230.164.2:8080/healthz/../healthz
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:13:45 GMT
+Content-Length: 44
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+--- GET http://10.230.164.2:8080//graphql
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /graphql
+Date: Sat, 14 Nov 2026 01:13:46 GMT
+Content-Length: 44
+
+<a href="/graphql">Temporary Redirect</a>.
+
+
+--- GET http://10.230.164.2:8080/a/../healthz
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:13:46 GMT
+Content-Length: 44
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+########## //healthz on .3 ##########
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:13:46 GMT
+Content-Length: 44
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+########## Host header variations (vhost routing test) ##########
+  Host: tbox -> /graphql=404  /=404
+  Host: localhost -> /graphql=404  /=404
+  Host: 127.0.0.1 -> /graphql=404  /=404
+  Host: 10.230.164.3 -> /graphql=404  /=404
+  Host: tsp -> /graphql=404  /=404
+  Host: tsp.local -> /graphql=404  /=404
+  Host: cv6 -> /graphql=404  /=404
+  Host: fleet -> /graphql=404  /=404
+  Host: diagnostics.local -> /graphql=404  /=404
+  Host: tbox.local -> /graphql=404  /=404
+  Host: gateway -> /graphql=404  /=404
+  Host: 10.230.164.2 -> /graphql=404  /=404

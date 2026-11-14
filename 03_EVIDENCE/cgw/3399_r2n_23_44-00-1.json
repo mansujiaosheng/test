@@ -1,0 +1,33 @@
+{
+  "label": "r2n_23_44-00-1",
+  "purpose": "ReadMemoryByAddress 44-00-1",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E44223440000000001",
+    "uds": "23440000000001"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F2311",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F2311",
+      "parsed": "NEGATIVE service=0x23 NRC=0x11 (serviceNotSupported)"
+    }
+  ],
+  "elapsed_ms": 432.16,
+  "parsed": "0x1220: NEGATIVE service=0x23 NRC=0x11 (serviceNotSupported)",
+  "seq": 3399,
+  "ts": "2026-11-14T09:57:53.383+08:00"
+}

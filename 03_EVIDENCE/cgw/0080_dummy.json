@@ -1,0 +1,32 @@
+{
+  "label": "dummy",
+  "purpose": "read DID 0xF190",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00100022F190",
+    "uds": "22F190"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E0062F1904356364646353246454539454444443836",
+      "len": 24
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "62F1904356364646353246454539454444443836",
+      "parsed": "POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356364646353246454539454444443836"
+    }
+  ],
+  "elapsed_ms": 209.46,
+  "parsed": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356364646353246454539454444443836",
+  "seq": 80,
+  "ts": "2026-11-14T09:11:49.555+08:00"
+}

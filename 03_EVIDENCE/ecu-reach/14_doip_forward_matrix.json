@@ -1,0 +1,511 @@
+{
+  "mode": "matrix",
+  "host": "10.226.193.2",
+  "port": 13400,
+  "tester_sa": "0x0E00",
+  "started": "2026-11-14T09:59:08+08:00",
+  "note": "NEW CGW; TA = CAN ids from 22F1A0 + functional 0xE400 + LA guesses; services 3E00/22F190/1002",
+  "routing_activation": {
+    "frames": [
+      "0e0010001000000000"
+    ],
+    "resp_hex": "0e0010001000000000"
+  },
+  "rows": [
+    {
+      "ta": "0x07E0",
+      "uds": "3E00",
+      "elapsed_ms": 277.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E0",
+      "uds": "22F190",
+      "elapsed_ms": 280.9,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E0",
+      "uds": "1002",
+      "elapsed_ms": 280.5,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E8",
+      "uds": "3E00",
+      "elapsed_ms": 285.3,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E8",
+      "uds": "22F190",
+      "elapsed_ms": 282.9,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E8",
+      "uds": "1002",
+      "elapsed_ms": 288.3,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E1",
+      "uds": "3E00",
+      "elapsed_ms": 284.6,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E1",
+      "uds": "22F190",
+      "elapsed_ms": 284.8,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E1",
+      "uds": "1002",
+      "elapsed_ms": 285.2,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E9",
+      "uds": "3E00",
+      "elapsed_ms": 287.1,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E9",
+      "uds": "22F190",
+      "elapsed_ms": 282.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0x07E9",
+      "uds": "1002",
+      "elapsed_ms": 284.2,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    },
+    {
+      "ta": "0xE400",
+      "uds": "3E00",
+      "elapsed_ms": 286.6,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0xE400",
+      "uds": "22F190",
+      "elapsed_ms": 284.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0xE400",
+      "uds": "1002",
+      "elapsed_ms": 281.1,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1000",
+      "uds": "3E00",
+      "elapsed_ms": 287.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e11"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E11",
+      "verdict": "NRC(0x3E)=serviceNotSupported"
+    },
+    {
+      "ta": "0x1000",
+      "uds": "22F190",
+      "elapsed_ms": 283.7,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e0062f1904356363232363937463832413933364131"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "62F1904356363232363937463832413933364131",
+      "verdict": "POSITIVE sid=0x62"
+    },
+    {
+      "ta": "0x1000",
+      "uds": "1002",
+      "elapsed_ms": 285.7,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1011"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1011",
+      "verdict": "NRC(0x10)=serviceNotSupported"
+    },
+    {
+      "ta": "0x1001",
+      "uds": "3E00",
+      "elapsed_ms": 286.8,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1001",
+      "uds": "22F190",
+      "elapsed_ms": 284.6,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1001",
+      "uds": "1002",
+      "elapsed_ms": 286.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1002",
+      "uds": "3E00",
+      "elapsed_ms": 284.1,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1002",
+      "uds": "22F190",
+      "elapsed_ms": 286.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1002",
+      "uds": "1002",
+      "elapsed_ms": 288.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1003",
+      "uds": "3E00",
+      "elapsed_ms": 281.9,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1003",
+      "uds": "22F190",
+      "elapsed_ms": 284.2,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1003",
+      "uds": "1002",
+      "elapsed_ms": 285.7,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    },
+    {
+      "ta": "0x0001",
+      "uds": "3E00",
+      "elapsed_ms": 282.5,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0x0001",
+      "uds": "22F190",
+      "elapsed_ms": 288.3,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0x0001",
+      "uds": "1002",
+      "elapsed_ms": 283.5,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1234",
+      "uds": "3E00",
+      "elapsed_ms": 281.4,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f3e31"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F3E31",
+      "verdict": "NRC(0x3E)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1234",
+      "uds": "22F190",
+      "elapsed_ms": 280.6,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f2231"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F2231",
+      "verdict": "NRC(0x22)=requestOutOfRange"
+    },
+    {
+      "ta": "0x1234",
+      "uds": "1002",
+      "elapsed_ms": 285.7,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000e007f1031"
+        }
+      ],
+      "from": "0x1000",
+      "to": "0x0E00",
+      "resp_hex": "7F1031",
+      "verdict": "NRC(0x10)=requestOutOfRange"
+    }
+  ]
+}

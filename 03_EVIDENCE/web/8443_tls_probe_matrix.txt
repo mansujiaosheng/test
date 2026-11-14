@@ -1,0 +1,120 @@
+############ 1. CERT DETAIL (x509 -text) ############
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            50:2c:0e:d0:df:fb:9e:c2:af:2b:ce:9f:97:73:78:27
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN = CV6 Fleet Diagnostics Root
+        Validity
+            Not Before: Nov 14 00:00:32 2026 GMT
+            Not After : Dec 14 01:00:32 2026 GMT
+        Subject: CN = tbox
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:7c:1f:ab:04:61:d5:cd:0b:c9:d1:52:c2:7a:80:
+                    c1:02:4f:d3:25:9f:9f:3c:5e:8a:c2:f9:32:bc:a9:
+                    7c:8b:73:16:af:93:01:49:07:c0:f5:54:d9:bf:3c:
+                    d5:74:6d:ed:b8:e2:53:e4:3b:45:57:00:a3:12:82:
+                    13:77:5c:0b:62
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Authority Key Identifier: 
+                47:6E:90:16:4F:64:70:BB:1C:80:72:36:AB:3C:54:70:03:78:10:99
+            X509v3 Subject Alternative Name: 
+                DNS:tbox
+    Signature Algorithm: ecdsa-with-SHA256
+    Signature Value:
+        30:44:02:20:34:a8:ca:ac:40:64:e8:68:c3:5d:5a:ec:89:28:
+        2c:44:56:47:66:55:f2:22:ac:f8:41:79:74:15:60:f0:e5:49:
+        02:20:08:17:fa:d6:89:71:1e:00:8f:31:a0:34:7b:e0:c2:95:
+        46:0b:42:80:6a:fb:28:9c:cc:31:bc:16:65:b9:2f:d4
+sha256 Fingerprint=9B:88:66:9E:74:89:8E:7B:70:39:74:DF:20:A7:A1:4C:DE:EF:35:22:98:9D:29:46:BD:A1:2D:CE:8C:BD:DC:3B
+
+############ 2. ALPN h2 ############
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+verify error:num=21:unable to verify the first certificate
+verify return:1
+verify return:1
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+Verify return code: 21 (unable to verify the first certificate)
+70C50000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+############ 3. ALPN http/1.1 ############
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+verify error:num=21:unable to verify the first certificate
+verify return:1
+verify return:1
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+Verify return code: 21 (unable to verify the first certificate)
+80880000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+############ 4. ALPN h2,http/1.1 ############
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+B0870000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+############ 5. NO SNI (-noservername) ############
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+F8890000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+############ 6. SNI = wrong.example ############
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+F8110000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+############ 7. TLS1.2 only ############
+24A90000:error:0A00042E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:ssl\record\rec_layer_s3.c:1605:SSL alert number 70
+New, (NONE), Cipher is (NONE)
+    Protocol  : TLSv1.2
+    Verify return code: 0 (ok)
+
+############ 8. TLS1.3 only ############
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+verify error:num=21:unable to verify the first certificate
+verify return:1
+verify return:1
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Verify return code: 21 (unable to verify the first certificate)
+04CE0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+############ 9. curl -k https (no client cert) ############
+curl_exit=0
+
+############ 10. curl -k https /healthz ############
+curl_exit=0
+
+############ 11. plain HTTP to 8443 ############
+HTTP/1.0 400 Bad Request
+
+Client sent an HTTP request to an HTTPS server.
+curl_exit=0

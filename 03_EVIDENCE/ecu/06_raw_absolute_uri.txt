@@ -1,0 +1,20 @@
+### A. absolute-URI (forward-proxy form) -> is .2:8080 a proxy?
+[A1 abs-uri .139.6]
+  HTTP/1.1 200 OK
+  body='{"status":"ok"}\n'
+  len=143
+### B. control: origin-form /healthz on the same server
+[B1 origin /healthz, Host=.139.6]
+  HTTP/1.1 200 OK
+  body='{"status":"ok"}\n'
+  len=143
+### C. control: origin-form /healthz, plain Host
+[C1 origin /healthz, Host=self]
+  HTTP/1.1 200 OK
+  body='{"status":"ok"}\n'
+  len=143
+### D. unreachable-target control through 'proxy'
+[D1 abs-uri TEST-NET-1]
+  HTTP/1.1 200 OK
+  body='{"status":"ok"}\n'
+  len=143

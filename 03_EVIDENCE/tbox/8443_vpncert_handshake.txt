@@ -1,0 +1,41 @@
+############ VPN-CA client cert -> 10.230.164.3:8443 (TLS1.3) ############
+### date: Sat Nov 14 01:24:35 UTC 2026
+
+CONNECTED(00000164)
+SSL_connect:before SSL initialization
+SSL_connect:SSLv3/TLS write client hello
+SSL_connect:SSLv3/TLS write client hello
+SSL_connect:SSLv3/TLS read server hello
+SSL_connect:TLSv1.3 read encrypted extensions
+SSL_connect:SSLv3/TLS read server certificate request
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+SSL3 alert write:fatal:unknown CA
+SSL_connect:error in error
+74440000:error:0A000086:SSL routines:tls_post_process_server_certificate:certificate verify failed:ssl\statem\statem_clnt.c:1890:
+---
+Certificate chain
+ 0 s:CN = tbox
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:00:32 2026 GMT; NotAfter: Dec 14 01:00:32 2026 GMT
+---
+no peer certificate available
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 732 bytes and written 245 bytes
+Verification error: unable to get local issuer certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 20 (unable to get local issuer certificate)
+---

@@ -1,0 +1,51 @@
+### POST bodies to healthz & other paths
+--- POST /healthz body={"cmd":"diag"}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:27:37 GMT
+Content-Length: 16
+
+{"status":"ok"}
+--- POST /healthz body={"action":"ota"}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:27:37 GMT
+Content-Length: 16
+
+{"status":"ok"}
+--- POST /healthz body=ping
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:27:37 GMT
+Content-Length: 16
+
+{"status":"ok"}
+--- POST /health body={"cmd":"diag"}
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:27:37 GMT
+Content-Length: 19
+
+--- POST /health body={"action":"ota"}
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:27:37 GMT
+Content-Length: 19
+
+--- POST /health body=ping
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:27:37 GMT
+Content-Length: 19
+
+
+### websocket upgrade
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:27:37 GMT
+Content-Length: 19
+

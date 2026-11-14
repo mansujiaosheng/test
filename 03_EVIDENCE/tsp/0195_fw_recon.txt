@@ -1,0 +1,66 @@
+==============================================================================
+firmware : 01_TARGETS/tsp/engineering-bundle/tbox-firmware.dec.bin
+size     : 16384 B   base: 0x08000000   end: 0x08004000
+==============================================================================
+
+[1] vector table
+  SP           = 0x20010000
+  [ 1] Reset       = 0x08000755
+  [ 2] NMI         = 0x08000755
+  [ 3] HardFault   = 0x08000755
+  [ 4] MemManage   = 0x08000755
+  [ 5] BusFault    = 0x08000755
+  [ 6] UsageFault  = 0x08000755
+  [ 7] -           = 0x08000755
+  [ 8] -           = 0x08000755
+  [ 9] -           = 0x08000755
+  [10] -           = 0x08000755
+  [11] SVC         = 0x08000755
+  [12] DebugMon    = 0x08000755
+  [13] -           = 0x08000755
+  [14] PendSV      = 0x08000755
+  [15] SysTick     = 0x08000755
+  ... total non-zero vector words: 64/64
+  distinct handler words: ['0x306ea87', '0x3d1ea83', '0x8000755', '0xa28f10d', '0xab4ea4f', '0x13f1ea83', '0x2194ea81', '0x23004615', '0x2530d1f8', '0x2b04f853', '0x2b40ba24', '0x320443b1', '0x330458cc', '0x3a74ea8a', '0x3d01440b', '0x4023445a', '0x4174ea81', '0x41f4ea4f', '0x440b4431', '0x441a0202', '0x445213b1', '0x4b04f845', '0x4b2a6902', '0x4ff0e92d', '0x6371ea83', '0x68839301', '0x68c39302', '0x69039303', '0x69439304', '0x69839305', '0x69c39306', '0x6a166831', '0x6b946851', '0x8300e9d0', '0x93089f01', '0x9b084644', '0xa025f85a', '0xaa0ab0cb', '0xd1e763d3', '0xe9dd1e04', '0xe9dd9307', '0xe9ddcb06', '0xea01a024', '0xea2c020e', '0xea4f4616', '0xea4f9308', '0xea8323f1', '0xea8a0a01', '0xf8cd4413']
+
+[2] strings (len>=5, printable)
+  0x080003af  'F=F8#'
+  0x0800049d  '!D@XF'
+  0x080004cd  '!D@XF'
+  0x080004fd  '!D@XF'
+  0x0800052d  '!D@XF'
+  0x080005c1  '";x%I'
+  0x08000739  'I#F("'
+  0x08000aa0  'CV6-TBOX-KEK'
+
+[3] disassembly (Thumb, first 4000 insns)
+  decoded 719 instructions (1438 B of 16384 B)
+  call targets (11): ['0x8000040', '0x8000164', '0x800018c', '0x80001c0', '0x80001e2', '0x80001f6', '0x8000204', '0x80002dc', '0x8000664', '0x8000668', '0x80006fc']
+
+[4] PC-relative literal loads: 13
+  0x080000b6  ldr    pool@0x08000160 = 0x080009a0  <-- code pointer
+  0x08000164  ldr    pool@0x08000188 = 0x080008a0  <-- code pointer
+  0x08000208  ldr    pool@0x080002d8 = 0x08000778  <-- code pointer
+  0x0800045e  ldr    pool@0x0800065c = 0x08000798  <-- code pointer
+  0x08000620  ldr    pool@0x08000660 = 0x08000898  <-- code pointer
+  0x0800066c  ldr.w  pool@0x080006ec = 0x08002020  <-- code pointer
+  0x08000670  ldr.w  pool@0x080006f0 = 0x9e3779b9
+  0x08000674  ldr.w  pool@0x080006f4 = 0x7feb352d
+  0x080006ae  ldr    pool@0x080006f8 = 0x846ca68b
+  0x08000712  ldr    pool@0x08000748 = 0x08000aa0  <-- code pointer
+  0x0800071c  ldr    pool@0x0800074c = 0x08002000  <-- code pointer
+  0x08000738  ldr    pool@0x08000750 = 0x08002040  <-- code pointer
+
+[5] RFC 3394 / AES-key-wrap hunt
+  searching for 0xA6A6A6A6 (u32), 0xA6A6A6A6A6A6A6A6 (u64), and 8x0xA6 runs
+  HIT u32 @0x08000898 bytes=a6a6a6a6a6a6a6a6
+  HIT u64 @0x08000898 bytes=a6a6a6a6a6a6a6a6
+  HIT u32 @0x0800089a bytes=a6a6a6a6a6a6637c
+  HIT u32 @0x0800089c bytes=a6a6a6a6637c777b
+  runs of exactly 16/24/32 high-entropy bytes (candidate wrapped keys) are better found with entropy scan -> see below
+
+[6] entropy blocks (16-byte windows, byte-entropy > 7.0 bits)
+  0 high-entropy runs:
+
+[7] flag-shaped strings
+   (none)

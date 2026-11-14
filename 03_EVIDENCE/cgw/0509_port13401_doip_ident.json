@@ -1,0 +1,17 @@
+{
+  "label": "port13401_doip_ident",
+  "purpose": "DoIP vehicle identification request on :13401",
+  "host": "10.230.164.4",
+  "port": 13401,
+  "request": {
+    "hex": "02FD000100000000"
+  },
+  "responses": [
+    {
+      "hex": ""
+    }
+  ],
+  "note": "no reply before timeout",
+  "seq": 509,
+  "ts": "2026-11-14T09:20:31+0800"
+}

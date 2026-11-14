@@ -1,0 +1,88 @@
+==============================================================================
+TSP path wave3  target=http://10.230.164.2:8080
+unique paths=8534  jobs=17068  workers=20 timeout=3.0
+baseline 404 = b'404 page not found\n' len=19
+started 2026-11-14T09:33:55+0800
+==============================================================================
+  HIT GET  /graphql                                              405 len=   31 ct='application/json' loc='' 1.08s '{"error":"method not allowed"}\\n'
+  HIT GET  /healthz                                              200 len=   16 ct='application/json' loc='' 1.11s '{"status":"ok"}\\n'
+  ... 2000/17068 (7s, 275 r/s, hits=2, exc=0)
+  ... 4000/17068 (14s, 278 r/s, hits=2, exc=1)
+  ... 6000/17068 (23s, 263 r/s, hits=2, exc=2)
+  HIT GET  /./healthz                                            200 len=   16 ct='application/json' loc='' 0.06s '{"status":"ok"}\\n'
+  HIT GET  /%2e%2e/healthz                                       307 len=   44 ct='text/html; charset=utf-8' loc='/healthz' 0.07s '<a href="/healthz">Temporary Redirect</a>.\\n\\n'
+  HIT GET  /healthz/../healthz                                   200 len=   16 ct='application/json' loc='' 0.06s '{"status":"ok"}\\n'
+  HIT GET  /healthz?a=1                                          200 len=   16 ct='application/json' loc='' 0.06s '{"status":"ok"}\\n'
+  HIT GET  /healthz#x                                            200 len=   16 ct='application/json' loc='' 0.07s '{"status":"ok"}\\n'
+  HIT GET  /./././healthz                                        200 len=   16 ct='application/json' loc='' 0.06s '{"status":"ok"}\\n'
+  HIT GET  /./graphql                                            405 len=   31 ct='application/json' loc='' 0.06s '{"error":"method not allowed"}\\n'
+  HIT GET  /%2e%2e/graphql                                       307 len=   44 ct='text/html; charset=utf-8' loc='/graphql' 0.07s '<a href="/graphql">Temporary Redirect</a>.\\n\\n'
+  HIT GET  /graphql?a=1                                          405 len=   31 ct='application/json' loc='' 0.06s '{"error":"method not allowed"}\\n'
+  HIT GET  /graphql#x                                            405 len=   31 ct='application/json' loc='' 0.06s '{"error":"method not allowed"}\\n'
+  HIT GET  /graphql/../graphql                                   405 len=   31 ct='application/json' loc='' 0.07s '{"error":"method not allowed"}\\n'
+  HIT GET  /./././graphql                                        405 len=   31 ct='application/json' loc='' 0.06s '{"error":"method not allowed"}\\n'
+  HIT GET  /%2e%2e/api                                           307 len=   40 ct='text/html; charset=utf-8' loc='/api' 0.07s '<a href="/api">Temporary Redirect</a>.\\n\\n'
+  HIT GET  /%2e%2e/ota                                           307 len=   40 ct='text/html; charset=utf-8' loc='/ota' 0.07s '<a href="/ota">Temporary Redirect</a>.\\n\\n'
+  HIT GET  /%2e%2e/sign                                          307 len=   41 ct='text/html; charset=utf-8' loc='/sign' 0.06s '<a href="/sign">Temporary Redirect</a>.\\n\\n'
+  HIT GET  /graphql//.                                           307 len=   45 ct='text/html; charset=utf-8' loc='/graphql/' 0.07s '<a href="/graphql/">Temporary Redirect</a>.\\n\\n'
+  HIT GET  /graphql//index.html                                  307 len=   55 ct='text/html; charset=utf-8' loc='/graphql/index.html' 0.06s '<a href="/graphql/index.html">Temporary Redirect</a>.\\n\\n'
+  HIT GET  /graphql/../healthz                                   200 len=   16 ct='application/json' loc='' 0.06s '{"status":"ok"}\\n'
+  HIT GET  /a/../graphql                                         405 len=   31 ct='application/json' loc='' 0.06s '{"error":"method not allowed"}\\n'
+  ... 8000/17068 (35s, 228 r/s, hits=21, exc=27)
+  HIT GET  /internal/audit                                       404 len=   22 ct='application/json' loc='' 0.07s '{"error":"not found"}\\n'
+  HIT POST /healthz                                              200 len=   16 ct='application/json' loc='' 0.06s '{"status":"ok"}\\n'
+  HIT POST /graphql                                              200 len=   81 ct='application/json' loc='' 0.06s '{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+  ... 10000/17068 (45s, 220 r/s, hits=24, exc=31)
+  ... 12000/17068 (53s, 228 r/s, hits=24, exc=31)
+  ... 14000/17068 (74s, 190 r/s, hits=24, exc=87)
+  ... 16000/17068 (84s, 191 r/s, hits=24, exc=782)
+  HIT POST /%2e%2e/healthz                                       307 len=    0 ct='' loc='/healthz' 0.07s ''
+  HIT POST /./graphql                                            200 len=   81 ct='application/json' loc='' 0.06s '{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+  HIT POST /graphql?a=1                                          200 len=   81 ct='application/json' loc='' 0.06s '{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+  HIT POST /%2e%2e/graphql                                       307 len=    0 ct='' loc='/graphql' 0.07s ''
+  HIT POST /./././healthz                                        200 len=   16 ct='application/json' loc='' 0.08s '{"status":"ok"}\\n'
+  HIT POST /graphql/../graphql                                   200 len=   81 ct='application/json' loc='' 0.08s '{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+  HIT POST /graphql/../healthz                                   200 len=   16 ct='application/json' loc='' 0.07s '{"status":"ok"}\\n'
+------------------------------------------------------------------------------
+total=17068 elapsed=89.6s hits=31 exc=1639
+
+--- exceptions (dedup by type) ---
+  ConnectTimeout: 61 e.g. ['api/v1/sign/result', 'v2/package/verify', 'internal/updates/campaigns/sign', 'sign;x=1']
+  ReadTimeout: 26 e.g. ['v2/can', 'v2/uds', 'fleet/vin', 'fleet/diagnostics']
+  ConnectionError: 1552 e.g. ['campaigns/result', 'signer/provision', 'keys/signFirmware', 'firmware/CV6FF52FEE9EDDD86/ota']
+
+--- all hits (dedup) ---
+  GET  /%2e%2e/api                                       307 len=   40 '<a href="/api">Temporary Redirect</a>.\\n\\n'
+  GET  /%2e%2e/graphql                                   307 len=   44 '<a href="/graphql">Temporary Redirect</a>.\\n\\n'
+  POST /%2e%2e/graphql                                   307 len=    0 ''
+  GET  /%2e%2e/healthz                                   307 len=   44 '<a href="/healthz">Temporary Redirect</a>.\\n\\n'
+  POST /%2e%2e/healthz                                   307 len=    0 ''
+  GET  /%2e%2e/ota                                       307 len=   40 '<a href="/ota">Temporary Redirect</a>.\\n\\n'
+  GET  /%2e%2e/sign                                      307 len=   41 '<a href="/sign">Temporary Redirect</a>.\\n\\n'
+  GET  /./././graphql                                    405 len=   31 '{"error":"method not allowed"}\\n'
+  GET  /./././healthz                                    200 len=   16 '{"status":"ok"}\\n'
+  POST /./././healthz                                    200 len=   16 '{"status":"ok"}\\n'
+  GET  /./graphql                                        405 len=   31 '{"error":"method not allowed"}\\n'
+  POST /./graphql                                        200 len=   81 '{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+  GET  /./healthz                                        200 len=   16 '{"status":"ok"}\\n'
+  GET  /a/../graphql                                     405 len=   31 '{"error":"method not allowed"}\\n'
+  GET  /graphql                                          405 len=   31 '{"error":"method not allowed"}\\n'
+  POST /graphql                                          200 len=   81 '{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+  GET  /graphql#x                                        405 len=   31 '{"error":"method not allowed"}\\n'
+  GET  /graphql/../graphql                               405 len=   31 '{"error":"method not allowed"}\\n'
+  POST /graphql/../graphql                               200 len=   81 '{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+  GET  /graphql/../healthz                               200 len=   16 '{"status":"ok"}\\n'
+  POST /graphql/../healthz                               200 len=   16 '{"status":"ok"}\\n'
+  GET  /graphql//.                                       307 len=   45 '<a href="/graphql/">Temporary Redirect</a>.\\n\\n'
+  GET  /graphql//index.html                              307 len=   55 '<a href="/graphql/index.html">Temporary Redirect</a>.\\n\\n'
+  GET  /graphql?a=1                                      405 len=   31 '{"error":"method not allowed"}\\n'
+  POST /graphql?a=1                                      200 len=   81 '{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+  GET  /healthz                                          200 len=   16 '{"status":"ok"}\\n'
+  POST /healthz                                          200 len=   16 '{"status":"ok"}\\n'
+  GET  /healthz#x                                        200 len=   16 '{"status":"ok"}\\n'
+  GET  /healthz/../healthz                               200 len=   16 '{"status":"ok"}\\n'
+  GET  /healthz?a=1                                      200 len=   16 '{"status":"ok"}\\n'
+  GET  /internal/audit                                   404 len=   22 '{"error":"not found"}\\n'
+
+finished 2026-11-14T09:35:24+0800
+[*] wrote 03_EVIDENCE/tsp/0302_path_wave3.json

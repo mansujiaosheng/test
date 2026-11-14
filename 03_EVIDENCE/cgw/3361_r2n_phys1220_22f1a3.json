@@ -1,0 +1,33 @@
+{
+  "label": "r2n_phys1220_22f1a3",
+  "purpose": "protected DID via phys1220",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1220",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00122022F1A3",
+    "uds": "22F1A3"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 428.29,
+  "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)",
+  "seq": 3361,
+  "ts": "2026-11-14T09:57:35.839+08:00"
+}

@@ -1,0 +1,53 @@
+=== 0192: reproduce bundle download with firmwareCredential (Basic auth) ===
+GraphQL said: tboxEndpoint=http://tbox:8080  firmwareDownload=/api/v1/ota/engineering-bundle  firmwareCredential=5e7f07b4a81153ecd5868cc02557f823
+
+##### http://10.225.139.3:8080/api/v1/ota/engineering-bundle #####
+--- no auth ---
+HTTP/1.1 401 Unauthorized
+Content-Type: application/json
+Www-Authenticate: Basic realm="CV6 OTA"
+Date: Sat, 14 Nov 2026 02:12:18 GMT
+Content-Length: 32
+
+--- Basic auth (credential:credential) ---
+HTTP/1.1 401 Unauthorized
+Content-Type: application/json
+Www-Authenticate: Basic realm="CV6 OTA"
+Date: Sat, 14 Nov 2026 02:12:18 GMT
+Content-Length: 32
+
+  size=32 sha256=5fd23684051932a63fe75fca82c0d09ed46f07362ed05ce01068e09277200564
+--- Basic auth (credential:) ---
+HTTP/1.1 401 Unauthorized
+Content-Type: application/json
+Www-Authenticate: Basic realm="CV6 OTA"
+Date: Sat, 14 Nov 2026 02:12:19 GMT
+Content-Length: 32
+
+  size=32 sha256=5fd23684051932a63fe75fca82c0d09ed46f07362ed05ce01068e09277200564
+
+##### http://10.225.139.2:8080/api/v1/ota/engineering-bundle #####
+--- no auth ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 02:12:19 GMT
+Content-Length: 19
+
+--- Basic auth (credential:credential) ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 02:12:19 GMT
+Content-Length: 19
+
+  size=19 sha256=b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793
+--- Basic auth (credential:) ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 02:12:19 GMT
+Content-Length: 19
+
+  size=19 sha256=b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793
+

@@ -1,0 +1,32 @@
+{
+  "label": "gw_19_02_extended",
+  "purpose": "DTC read in extended session",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0010001902FF",
+    "uds": "1902FF"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F1911",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F1911",
+      "parsed": "NEGATIVE service=0x19 NRC=0x11 (serviceNotSupported)"
+    }
+  ],
+  "elapsed_ms": 382.31,
+  "parsed": "0x1000: NEGATIVE service=0x19 NRC=0x11 (serviceNotSupported)",
+  "seq": 23,
+  "ts": "2026-11-14T09:10:41.717+08:00"
+}

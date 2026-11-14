@@ -1,0 +1,44 @@
+=== 0137: competitions.html / login.html / admin.html asset + API discovery ===
+
+##### competitions.html #####
+size=1962
+href="/brand-mark.png"
+href="/competitions.css?v=20260730-disqualification-v22"
+href="/competitions.html"
+href="/login.html"
+src="/brand-mark.png"
+src="/competitions.js?v=20260730-disqualification-v22"
+--- /api refs in inline script ---
+
+##### login.html #####
+size=4379
+href="/brand-mark.png"
+href="/login.css"
+href="/login.html"
+src="/brand-mark.png"
+src="/login.js"
+--- /api refs in inline script ---
+
+##### admin.html #####
+size=86515
+href="#attack-desktop"
+href="#audit"
+href="#challenge-library"
+href="#competition"
+href="#overview"
+href="#settings"
+href="#teams"
+href="#users"
+href="#vehicle-library"
+href="#vehicle-range-library"
+href="#vehicle-range-topology"
+href="/"
+href="/admin.css?v=20260824-audit-detail-v1"
+href="/admin.html"
+href="/api/v1/admin/roster-import/template"
+href="/brand-mark.png"
+src="/admin.js?v=20260824-audit-detail-v1"
+src="/brand-mark.png"
+--- /api refs in inline script ---
+/api/v1/...
+/api/v1/admin/roster-import/template

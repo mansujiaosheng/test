@@ -1,0 +1,17 @@
+{
+  "label": "p13401_len_le",
+  "purpose": "4-byte LE length prefix + CAN-ish frame",
+  "host": "10.230.164.4",
+  "port": 13401,
+  "request": {
+    "hex": "0B00000007E0021003000000000000"
+  },
+  "responses": [
+    {
+      "hex": ""
+    }
+  ],
+  "note": "connection reset",
+  "seq": 3184,
+  "ts": "2026-11-14T09:49:37+0800"
+}

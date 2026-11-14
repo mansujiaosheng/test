@@ -1,0 +1,60 @@
+		"reroute_gw" : 
+		{
+			"flags" : 256,
+			"ipv4" : false,
+			"ipv6" : false
+		},
+		"route_metric_default" : -1,
+		"session_name" : "175.27.210.153",
+		"tunnel_address_index_ipv4" : 0,
+		"tunnel_address_index_ipv6" : -1,
+		"tunnel_addresses" : 
+		[
+			{
+				"address" : "10.252.3.20",
+				"gateway" : "10.252.3.1",
+				"ipv6" : false,
+				"metric" : -1,
+				"net30" : false,
+				"prefix_length" : 24
+			}
+		]
+	},
+	"tun_type" : 0
+}
+POST np://[\\.\pipe\agent_ovpnconnect]/tun-setup : 200 OK
+TAP ADAPTERS:
+guid='{42C6004D-50E7-43F6-BA07-8F0CA0F5171F}' index=20 name='本地连接'
+Open TAP device "本地连接" PATH="\\.\Global\{42C6004D-50E7-43F6-BA07-8F0CA0F5171F}.tap" SUCCEEDED
+TAP-Windows Driver Version 9.27
+ActionDeleteAllRoutesOnInterface iface_index=20
+netsh interface ip set interface 20 metric=9000
+纭畾銆?
+netsh interface ip set address 20 static 10.252.3.20 255.255.255.0 gateway=10.252.3.1 store=active
+IPHelper: add route 10.224.0.0/12 20 10.252.3.1 metric=-1
+NRPT::ActionCreate pid=[49076] domains=[] dns_servers=[] dnssec=[0] id=[OpenVPNDNSRouting-49076]
+DNS::ActionCreate interface name=[本地连接] search domains=[]
+DNS::ActionApply: successful
+ipconfig /flushdns
+Windows IP 配置
+已成功刷新 DNS 解析缓存。
+TAP: ARP flush succeeded
+TAP handle: 2c120000
+⏎[Nov 14, 2026, 09:01:59] Connected via TUN_WIN
+⏎[Nov 14, 2026, 09:01:59] EVENT: CONNECTED 175.27.210.153:1197 (175.27.210.153) via /TCP on TUN_WIN/10.252.3.20/ gw=[10.252.3.1/] mtu=1500⏎[Nov 14, 2026, 09:56:30] Tunnel Options:V4,dev-type tun,link-mtu 1523,tun-mtu 1500,proto TCPv4_CLIENT,cipher AES-256-GCM,auth [null-digest],keysize 256,key-method 2,tls-client
+⏎[Nov 14, 2026, 09:56:30] Creds: UsernameEmpty/PasswordEmpty
+⏎[Nov 14, 2026, 09:56:30] Sending Peer Info:
+IV_VER=3.11.3
+IV_PLAT=win
+IV_NCP=2
+IV_TCPNL=1
+IV_PROTO=8094
+IV_MTU=1600
+IV_CIPHERS=AES-128-CBC:AES-192-CBC:AES-256-CBC:AES-128-GCM:AES-192-GCM:AES-256-GCM:CHACHA20-POLY1305
+IV_AUTO_SESS=1
+IV_GUI_VER=OCWindows_3.9.0-5008
+IV_SSO=webauth,crtext
+
+⏎[Nov 14, 2026, 09:56:30] SSL Handshake: peer certificate: CN=cybercar-openvpn-server, 256 bit EC, group:prime256v1, cipher: TLS_AES_256_GCM_SHA384         TLSv1.3 Kx=any      Au=any   Enc=AESGCM(256)            Mac=AEAD
+
+⏎

@@ -1,0 +1,31 @@
+==============================================================================
+T-BOX firmware key derivation — offline reimplementation
+==============================================================================
+  label      @0x08000aa0 = b'CV6-TBOX-KEK'
+  soc blob16 @0x08002000 = d31ad1cae3ffe1aedbf00f0d7fec3396
+  wrapped40  @0x08002040 = 38c0627019a7a0e6d76af7acc3a273c5b0584a31c280eb2b8e7f70acfb1ac91948a15cbd48856509
+
+[1] measurement H = SHA256(flash[0:0x2000])
+    = 138142b18d663291fc3febb15e004f57f76f10dee82f158a30b42ad7468ba085
+
+[2] KEK material = label || blob16 || H   (60 bytes, firmware uses 0x3c=60)
+    = 4356362d54424f582d4b454bd31ad1cae3ffe1aedbf00f0d7fec3396138142b18d663291fc3febb15e004f57f76f10dee82f158a30b42ad7468ba085
+    KEK = SHA256(...) = 0fd6e171919fdc1a6afcee7f81a6599c67a136fc0f57e8f210fb2acf9c92b318
+
+[3] RFC 3394 unwrap blob40 with KEK
+    plaintext (32 B) = 693d2ab06a2fe1a6e1ada23ac8bbb08ec3a8ffbbc90015ddeff28e721c9f693d
+    final IV              = a6a6a6a6a6a6a6a6   (RFC3394 wants a6a6a6a6a6a6a6a6)
+    integrity check       = FAIL
+
+[4] self-check: re-wrap the recovered key and compare to the blob
+    rewrap == blob40 : True
+
+[5] recovered 32-byte key
+    hex   : 693d2ab06a2fe1a6e1ada23ac8bbb08ec3a8ffbbc90015ddeff28e721c9f693d
+    ascii : i=*.j/.....:...............r..i=
+    -> 01_TARGETS/tsp/engineering-bundle/tbox-image-key.bin
+
+[6] what is it for? try it against the other blobs in the image
+    blob@0x08002000        = d31ad1cae3ffe1aedbf00f0d7fec3396
+    blob@0x08002020        = e224dd2bb23a15b8
+    vector table head      = 00000120550700085507000855070008

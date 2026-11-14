@@ -1,0 +1,36 @@
+====== range_healthz
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:09:25 GMT
+Content-Length: 16
+Connection: close
+
+{"status":"ok"}
+
+====== range_audit
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:09:25 GMT
+Content-Length: 22
+Connection: close
+
+{"error":"not found"}
+
+====== accept_encoding
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:09:25 GMT
+Content-Length: 16
+Connection: close
+
+{"status":"ok"}
+
+====== if_modified
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:09:26 GMT
+Content-Length: 16
+Connection: close
+
+{"status":"ok"}
+

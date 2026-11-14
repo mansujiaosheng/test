@@ -1,0 +1,12 @@
+=== run 1 v6 ===
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+88E10000:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48
+=== run 2 v6 ===
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+20B10000:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48
+=== run 3 v6 ===
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+D4970000:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48

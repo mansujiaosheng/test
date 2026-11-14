@@ -1,0 +1,30 @@
+Sat Nov 14 01:39:48 UTC 2026
+## cmd: python 04_SOLVE/tbox/mtls_matrix2.py
+## target 10.230.164.3:8443  SNI=tbox  TLS1.3 forced unless noted
+## round-1 vectors v1..v9 = 03_EVIDENCE/tbox/0005_mtls_cert_construction_matrix.txt
+
+### materials
+  v10_depth3_chain -> v10_chain.pem v10.key
+  v11_dup_leaf -> v11_chain.pem v11.key
+  v12_identity_mimic -> v12.pem v12.key
+  v13_vpn_cert_chain -> vpn_client_chain.pem vpn_client_key.pem
+  v14_srvleaf_as_intermediate -> v14_chain.pem v14.key
+  v15_max_string_spoof -> v15.pem v15.key
+  v16_anyeku_chain -> v16_chain.pem v16.key
+
+### A. client-cert constructions (TLS1.3)
+{"tag": "v10_depth3_chain", "sni": "tbox", "cert": "v10_chain.pem", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "alpn": null, "ticket": false, "io_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+{"tag": "v11_dup_leaf", "sni": "tbox", "cert": "v11_chain.pem", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "alpn": null, "ticket": false, "io_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+{"tag": "v12_identity_mimic", "sni": "tbox", "cert": "v12.pem", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "alpn": null, "ticket": false, "io_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+{"tag": "v13_vpn_cert_chain", "sni": "tbox", "cert": "vpn_client_chain.pem", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "alpn": null, "ticket": false, "io_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+{"tag": "v14_srvleaf_as_intermediate", "sni": "tbox", "cert": "v14_chain.pem", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "alpn": null, "ticket": false, "io_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+{"tag": "v15_max_string_spoof", "sni": "tbox", "cert": "v15.pem", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "alpn": null, "ticket": false, "io_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+{"tag": "v16_anyeku_chain", "sni": "tbox", "cert": "v16_chain.pem", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "alpn": null, "ticket": false, "io_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+
+### B. protocol-level
+{"tag": "B1_no_cert_tls13", "sni": "tbox", "cert": null, "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "alpn": null, "ticket": false, "io_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+{"tag": "B2_tls12_offer", "sni": "tbox", "cert": null, "alert": "TLSV1_ALERT_PROTOCOL_VERSION: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1020)"}
+{"tag": "B3_tls12_offer_with_v12_cert", "sni": "tbox", "cert": "v12.pem", "alert": "TLSV1_ALERT_PROTOCOL_VERSION: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1020)"}
+
+wrote D:\qwb\03_EVIDENCE\tbox\0103_mtls_matrix2.json 10 records
+Sat Nov 14 01:39:51 UTC 2026

@@ -1,0 +1,32 @@
+{
+  "label": "dummy",
+  "purpose": "read DID 0xF1DD",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00100022F1DD",
+    "uds": "22F1DD"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 220.35,
+  "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)",
+  "seq": 157,
+  "ts": "2026-11-14T09:12:06.090+08:00"
+}

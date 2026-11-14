@@ -1,0 +1,35 @@
+# probing 3048 (ip,port) pairs over 3 /24s, ports=[8080, 8443, 13400, 13401], workers=24, timeout=0.9s
+OPEN 10.230.164.2:8080  (27 ms)
+OPEN 10.230.164.3:8443  (27 ms)
+OPEN 10.230.164.4:13400  (26 ms)
+OPEN 10.230.164.4:13401  (26 ms)
+OPEN 10.230.164.4:8080  (37 ms)
+OPEN 10.230.164.3:8080  (38 ms)
+# progress 500/3048  19.2s
+# progress 1000/3048  38.2s
+OPEN 10.229.221.2:8080  (26 ms)
+OPEN 10.229.221.2:13400  (29 ms)
+OPEN 10.229.221.2:13401  (27 ms)
+# progress 1500/3048  57.2s
+# progress 2000/3048  75.5s
+# progress 2500/3048  94.6s
+# progress 3000/3048  113.7s
+
+============================================================
+# done in 115.5s
+=== live hosts with challenge ports ===
+  10.229.221.2     open=[8080, 13400, 13401]
+  10.230.164.2     open=[8080]
+  10.230.164.3     open=[8080, 8443]
+  10.230.164.4     open=[8080, 13400, 13401]
+total live hosts: 4
+
+=== quick HTTP fingerprint on every 8080/8443 hit ===
+  http://10.229.221.2:8080/healthz  200 b'{"status":"ok"}\n'
+  http://10.229.221.2:8080/graphql  404 b'404 page not found\n'
+  http://10.230.164.2:8080/healthz  200 b'{"status":"ok"}\n'
+  http://10.230.164.2:8080/graphql  405 b'{"error":"method not allowed"}\n'
+  http://10.230.164.3:8080/healthz  200 b'{"status":"ok"}\n'
+  http://10.230.164.3:8080/graphql  404 b'404 page not found\n'
+  http://10.230.164.4:8080/healthz  200 b'{"status":"ok"}\n'
+  http://10.230.164.4:8080/graphql  404 b'404 page not found\n'

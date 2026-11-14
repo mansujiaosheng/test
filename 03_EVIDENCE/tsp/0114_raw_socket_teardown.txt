@@ -1,0 +1,51 @@
+==============================================================================
+Raw socket teardown  target=10.230.164.2:8080
+==============================================================================
+--- plain POST {} (baseline) ---
+REQ  b'POST /graphql HTTP/1.1\r\nHost: 10.230.164.2:8080\r\nContent-Type: application/json\r\nContent-Length: 2\r\n\r\n{}'
+RESP b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:22:05 GMT\r\nContent-Length: 81\r\n\r\n{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+
+--- chunked body ---
+REQ  b'POST /graphql HTTP/1.1\r\nHost: 10.230.164.2:8080\r\nContent-Type: application/json\r\nTransfer-Encoding: chunked\r\n\r\n2\r\n{}\r\n0\r\n\r\n'
+RESP b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:22:11 GMT\r\nContent-Length: 81\r\n\r\n{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+
+--- Expect: 100-continue ---
+REQ  b'POST /graphql HTTP/1.1\r\nHost: 10.230.164.2:8080\r\nContent-Type: application/json\r\nContent-Length: 2\r\nExpect: 100-continue\r\n\r\n{}'
+RESP b'HTTP/1.1 100 Continue\r\n\r\nHTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:22:18 GMT\r\nContent-Length: 81\r\n\r\n{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+
+--- Content-Length 100 but only 2 bytes sent (truncated) ---
+REQ  b'POST /graphql HTTP/1.1\r\nHost: 10.230.164.2:8080\r\nContent-Type: application/json\r\nContent-Length: 100\r\n\r\n{}'
+RESP b''
+
+--- h2c upgrade via RFC7540 Upgrade ---
+REQ  b'GET /graphql HTTP/1.1\r\nHost: 10.230.164.2:8080\r\nConnection: Upgrade, HTTP2-Settings\r\nUpgrade: h2c\r\nHTTP2-Settings: AAMAAABkAAQAAP__\r\n\r\n'
+RESP b'HTTP/1.1 405 Method Not Allowed\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:22:30 GMT\r\nContent-Length: 31\r\n\r\n{"error":"method not allowed"}\n'
+
+--- bare h2 preface (re-confirm non-h2c) ---
+REQ  b'PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n'
+RESP b'HTTP/1.1 400 Bad Request\r\nConnection: close\r\nDate: Sat, 14 Nov 2026 01:22:36 GMT\r\nContent-Length: 0\r\n\r\n'
+
+--- pipelined: POST /graphql then GET /healthz ---
+REQ  b'POST /graphql HTTP/1.1\r\nHost: 10.230.164.2:8080\r\nContent-Type: application/json\r\nContent-Length: 2\r\n\r\n{}GET /healthz HTTP/1.1\r\nHost: 10.230.164.2:8080\r\n\r\n'
+RESP b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:22:37 GMT\r\nContent-Length: 81\r\n\r\n{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\nHTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:22:37 GMT\r\nContent-Length: 16\r\n\r\n{"status":"ok"}\n'
+
+--- OPTIONS * (server-wide) ---
+REQ  b'OPTIONS * HTTP/1.1\r\nHost: 10.230.164.2:8080\r\n\r\n'
+RESP b'HTTP/1.1 200 OK\r\nContent-Length: 0\r\nDate: Sat, 14 Nov 2026 01:22:43 GMT\r\n\r\n'
+
+--- absolute-form request URI ---
+REQ  b'GET http://internal/graphql HTTP/1.1\r\nHost: 10.230.164.2:8080\r\n\r\n'
+RESP b'HTTP/1.1 405 Method Not Allowed\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:22:50 GMT\r\nContent-Length: 31\r\n\r\n{"error":"method not allowed"}\n'
+
+--- HTTP/1.0 no Host ---
+REQ  b'GET /graphql HTTP/1.0\r\n\r\n'
+RESP b'HTTP/1.0 405 Method Not Allowed\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:22:56 GMT\r\nContent-Length: 31\r\n\r\n{"error":"method not allowed"}\n'
+
+--- CL+TE smuggling probe (both headers) ---
+REQ  b'POST /graphql HTTP/1.1\r\nHost: 10.230.164.2:8080\r\nContent-Type: application/json\r\nContent-Length: 2\r\nTransfer-Encoding: chunked\r\n\r\n2\r\n{}\r\n0\r\n\r\n'
+RESP b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:22:56 GMT\r\nContent-Length: 81\r\n\r\n{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+
+--- keep-alive: two requests same conn ---
+REQ  b'POST /graphql HTTP/1.1\r\nHost: 10.230.164.2:8080\r\nContent-Type: application/json\r\nContent-Length: 2\r\n\r\n{}'
+RESP b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:23:02 GMT\r\nContent-Length: 81\r\n\r\n{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+

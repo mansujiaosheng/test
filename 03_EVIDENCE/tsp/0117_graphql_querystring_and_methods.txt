@@ -1,0 +1,56 @@
+============================================================================
+A. POST /graphql + query string ?k=v  (handler may read r.URL.Query())
+============================================================================
+  ?vin=CV6FF52FEE9EDDD86                -> 200 SAME-as-canned
+  ?vin=*                                -> 200 SAME-as-canned
+  ?vin=all                              -> 200 SAME-as-canned
+  ?debug=1                              -> 200 SAME-as-canned
+  ?debug=true                           -> 200 SAME-as-canned
+  ?admin=1                              -> 200 SAME-as-canned
+  ?internal=1                           -> 200 SAME-as-canned
+  ?token=test                           -> 200 SAME-as-canned
+  ?role=admin                           -> 200 SAME-as-canned
+  ?raw=1                                -> 200 SAME-as-canned
+  ?full=1                               -> 200 SAME-as-canned
+  ?all=1                                -> 200 SAME-as-canned
+  ?mode=prod                            -> 200 SAME-as-canned
+  ?mode=debug                           -> 200 SAME-as-canned
+  ?env=prod                             -> 200 SAME-as-canned
+  ?op=vehicles                          -> 200 SAME-as-canned
+  ?operationName=GetVehicles            -> 200 SAME-as-canned
+  ?tenant=internal                      -> 200 SAME-as-canned
+  ?scope=admin                          -> 200 SAME-as-canned
+  ?include=all                          -> 200 SAME-as-canned
+  ?format=json                          -> 200 SAME-as-canned
+  ?query={vehicles{vin}}                -> 200 SAME-as-canned
+  ?d=true                               -> 200 SAME-as-canned
+  ?trace=1                              -> 200 SAME-as-canned
+  ?verbose=1                            -> 200 SAME-as-canned
+  ?ota=1                                -> 200 SAME-as-canned
+
+============================================================================
+B. non-GET/POST methods on likely OTA / key paths
+============================================================================
+  /ota                 PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /ota/manifest        PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /ota/packages        PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /ota/download        PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /ota/package         PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /firmware            PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /firmware/latest     PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /firmware/download   PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /packages            PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /download            PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /upload              PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /sign                PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /verify              PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /keys                PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /pki                 PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /certs               PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /ca                  PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /admin               PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /internal            PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /debug/vars          PUT=404  DELETE=404  PATCH=404  HEAD=404:b''  OPTIONS=404  TRACE=404  PROPFIND=404  MKCOL=404
+  /graphql             PUT=405:b'{"error":"method not allowed"}\n'  DELETE=405:b'{"error":"method not allowed"}\n'  PATCH=405:b'{"error":"method not allowed"}\n'  HEAD=405:b''  OPTIONS=405:b'{"error":"method not allowed"}\n'  TRACE=405:b'{"error":"method not allowed"}\n'  PROPFIND=405:b'{"error":"method not allowed"}\n'  MKCOL=405:b'{"error":"method not allowed"}\n'
+  /healthz             PUT=200:b'{"status":"ok"}\n'  DELETE=200:b'{"status":"ok"}\n'  PATCH=200:b'{"status":"ok"}\n'  HEAD=200:b''  OPTIONS=200:b'{"status":"ok"}\n'  TRACE=200:b'{"status":"ok"}\n'  PROPFIND=200:b'{"status":"ok"}\n'  MKCOL=200:b'{"status":"ok"}\n'
+  (paths whose 8 methods were all plain 404 are omitted)

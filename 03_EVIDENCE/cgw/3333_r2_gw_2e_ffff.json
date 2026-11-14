@@ -1,0 +1,32 @@
+{
+  "label": "r2_gw_2e_ffff",
+  "purpose": "0x2E length-invalid probe on DID 0xFFFF (no data bytes)",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0010002EFFFF",
+    "uds": "2EFFFF"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2E11"
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2E11",
+      "parsed": "NEGATIVE service=0x2E NRC=0x11 (serviceNotSupported)"
+    }
+  ],
+  "elapsed_ms": 481.39,
+  "parsed": "NEGATIVE service=0x2E NRC=0x11 (serviceNotSupported)",
+  "seq": 3333,
+  "ts": "2026-11-14T09:56:44.706+08:00"
+}

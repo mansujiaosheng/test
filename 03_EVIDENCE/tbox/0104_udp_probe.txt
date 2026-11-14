@@ -1,0 +1,57 @@
+Sat Nov 14 01:40:28 UTC 2026
+## cmd: python 04_SOLVE/tbox/udp_probe.py
+## target 10.230.164.3 UDP: TFTP 69 RRQ x34 filenames, SNMP 161 v2c x5 communities, misc
+## purpose: TFTP/SNMP are the two no-auth channels that could hand out the
+##          engineering package (client cert+key) that the 8443 mTLS wall needs
+
+### TFTP RRQ to 10.230.164.3:69 (34 filenames)
+[none ] tftp RRQ client.pem (timeout 1.5s)
+[none ] tftp RRQ client.crt (timeout 1.5s)
+[none ] tftp RRQ client.key (timeout 1.5s)
+[none ] tftp RRQ tbox.pem (timeout 1.5s)
+[none ] tftp RRQ tbox.crt (timeout 1.5s)
+[none ] tftp RRQ tbox.key (timeout 1.5s)
+[none ] tftp RRQ fleet.pem (timeout 1.5s)
+[none ] tftp RRQ fleet.crt (timeout 1.5s)
+[none ] tftp RRQ ca.pem (timeout 1.5s)
+[none ] tftp RRQ ca.crt (timeout 1.5s)
+[none ] tftp RRQ root.pem (timeout 1.5s)
+[none ] tftp RRQ root.crt (timeout 1.5s)
+[none ] tftp RRQ client.p12 (timeout 1.5s)
+[none ] tftp RRQ tbox.p12 (timeout 1.5s)
+[none ] tftp RRQ fleet.p12 (timeout 1.5s)
+[none ] tftp RRQ client.pfx (timeout 1.5s)
+[none ] tftp RRQ diag.pem (timeout 1.5s)
+[none ] tftp RRQ diag.p12 (timeout 1.5s)
+[none ] tftp RRQ diagnostics.pem (timeout 1.5s)
+[none ] tftp RRQ operator.pem (timeout 1.5s)
+[none ] tftp RRQ technician.pem (timeout 1.5s)
+[none ] tftp RRQ id_ecdsa (timeout 1.5s)
+[none ] tftp RRQ id_rsa (timeout 1.5s)
+[none ] tftp RRQ config (timeout 1.5s)
+[none ] tftp RRQ config.yaml (timeout 1.5s)
+[none ] tftp RRQ config.json (timeout 1.5s)
+[none ] tftp RRQ startup-config (timeout 1.5s)
+[none ] tftp RRQ running-config (timeout 1.5s)
+[none ] tftp RRQ firmware.bin (timeout 1.5s)
+[none ] tftp RRQ package.zip (timeout 1.5s)
+[none ] tftp RRQ pkg.tar.gz (timeout 1.5s)
+[none ] tftp RRQ tbox.cfg (timeout 1.5s)
+[none ] tftp RRQ cv6.pem (timeout 1.5s)
+[none ] tftp RRQ cv6.p12 (timeout 1.5s)
+tftp replies: 0/34
+
+### SNMP v2c to 10.230.164.3:161
+[none ] snmp v2c community=public (timeout 2.0s)
+[none ] snmp v2c community=private (timeout 2.0s)
+[none ] snmp v2c community=cybercar (timeout 2.0s)
+[none ] snmp v2c community=cv6 (timeout 2.0s)
+[none ] snmp v2c community=tbox (timeout 2.0s)
+
+### misc UDP ports
+[none ] ntp v3 client (timeout 1.5s)
+[none ] mdns A tbox (timeout 1.5s)
+[none ] isakmp garbage (timeout 1.5s)
+[none ] udp 9999 newline (timeout 1.5s)
+[none ] udp 9998 newline (timeout 1.5s)
+Sat Nov 14 01:41:37 UTC 2026

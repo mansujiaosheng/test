@@ -1,0 +1,34 @@
+### A. 无客户端证书
+=== mTLS probe 10.230.164.3:8443 [NO client cert] ===
+  connect   : OK
+  handshake : OK
+  version   : TLSv1.3
+  cipher    : TLS_AES_128_GCM_SHA256
+  alpn      : None
+  http      : SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+
+VERDICT: 握手表面完成，但首个应用数据被服务端以
+         TLS1.3 alert 116 (certificate_required) 拒绝
+         => 强制 mTLS：门在 TLS 层，不在 HTTP 层
+
+### B. 自签证书(CN=recon-probe, 非CV6签发)
+=== mTLS probe 10.230.164.3:8443 [WITH client cert] ===
+  connect   : OK
+  handshake : OK
+  version   : TLSv1.3
+  cipher    : TLS_AES_128_GCM_SHA256
+  alpn      : None
+  http      : ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+VERDICT: 应用层被异常关闭，未能取得 HTTP 响应
+
+### C. 同名CA伪造(CN=CV6 Fleet Diagnostics Root, SKI同)签发 diag-client
+=== mTLS probe 10.230.164.3:8443 [WITH client cert] ===
+  connect   : OK
+  handshake : OK
+  version   : TLSv1.3
+  cipher    : TLS_AES_128_GCM_SHA256
+  alpn      : None
+  http      : ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+VERDICT: 应用层被异常关闭，未能取得 HTTP 响应

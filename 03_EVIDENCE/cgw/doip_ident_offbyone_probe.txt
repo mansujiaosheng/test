@@ -1,0 +1,8 @@
+=== is the 33rd byte of the identification response ever non-zero? ===
+  lengths: {33: 60}
+  bytes[31:] values: {'0000': 60}
+
+=== same after malformed traffic (does the trailing byte or VIN change?) ===
+  after-traffic ident: 435636464635324645453945444444383610000600000010000000000000000000
+  after-traffic ident: 435636464635324645453945444444383610000600000010000000000000000000
+  stable: True

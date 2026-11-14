@@ -1,0 +1,5 @@
+basicConstraints=critical,CA:FALSE
+keyUsage=critical,digitalSignature
+extendedKeyUsage=clientAuth
+subjectAltName=DNS:tbox
+authorityKeyIdentifier=keyid:always

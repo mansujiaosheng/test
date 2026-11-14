@@ -1,0 +1,109 @@
+NOTE: previous run had a URL-join bug ('/checkquery ?token=') -> query dimension was NOT tested. Fixed here.
+
+=== baseline ===
+  /api/v1/auth/check                                                     -> 200 {"authenticated":false}
+
+  /api/v1/bootstrap?competitionId=competition-ed3e7d452581978ccae13421   -> 401 {"error":{"code":"authentication_required","details":{},"message":"Authentication required
+  /api/v1/auth/me                                                        -> 401 {"error":{"code":"authentication_required","details":{},"message":"Authentication required
+
+=== query-string token matrix (proper URL building) ===
+  usr_token      ?token        /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?api_key      /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?apiKey       /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?usr          /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?user         /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?user_token   /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?session      /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?sessionId    /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?auth         /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?key          /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?t            /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_token      ?access_token /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?token        /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?api_key      /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?apiKey       /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?usr          /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?user         /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?user_token   /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?session      /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?sessionId    /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?auth         /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?key          /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?t            /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  usr_stripped   ?access_token /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?token        /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?api_key      /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?apiKey       /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?usr          /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?user         /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?user_token   /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?session      /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?sessionId    /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?auth         /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?key          /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?t            /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  comp_suffix    ?access_token /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?token        /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?api_key      /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?apiKey       /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?usr          /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?user         /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?user_token   /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?session      /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?sessionId    /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?auth         /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?key          /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?t            /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  vpn_cn         ?access_token /api/v1/auth/check                 -> 200 {"authenticated":false}
+
+  (non-401 responses: 48)
+
+=== also: token as path segment / header on bootstrap ===
+  (only non-401 shown)

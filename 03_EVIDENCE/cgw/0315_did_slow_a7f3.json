@@ -1,0 +1,19 @@
+{
+  "label": "did_slow_a7f3",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00100022A7F3",
+    "uds": "22A7F3"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 135.36,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 315,
+  "ts": "2026-11-14T09:16:57.787+08:00"
+}

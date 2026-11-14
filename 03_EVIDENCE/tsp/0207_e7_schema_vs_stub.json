@@ -1,0 +1,74 @@
+{
+ "1_foo1": {
+  "request": "{\"foo\":1}",
+  "status": 200,
+  "bytes": "7b2264617461223a7b2276656869636c6573223a5b7b226c6162656c223a2247756573742064656d6f2076656869636c65222c2276696e223a2243563630303030303044454d4f30303031227d5d7d7d0a",
+  "sha256": "a4901502af52dc8e0b5fccd451a7d3edcd73de1881b12b5acbe1ba26cf8d5f36",
+  "text": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+  "content_length": "81",
+  "content_type": "application/json"
+ },
+ "2_vehicles_label_vin": {
+  "request": "{\"query\":\"query { vehicles { label vin } }\"}",
+  "status": 200,
+  "bytes": "7b2264617461223a7b2276656869636c6573223a5b7b226c6162656c223a2247756573742064656d6f2076656869636c65222c2276696e223a2243563630303030303044454d4f30303031227d5d7d7d0a",
+  "sha256": "a4901502af52dc8e0b5fccd451a7d3edcd73de1881b12b5acbe1ba26cf8d5f36",
+  "text": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+  "content_length": "81",
+  "content_type": "application/json"
+ },
+ "3_vehicles_by_vin": {
+  "request": "{\"query\":\"query { vehicles(vin:\\\"CV6FF52FEE9EDDD86\\\") { label vin } }\"}",
+  "status": 200,
+  "bytes": "7b2264617461223a7b2276656869636c6573223a5b7b226c6162656c223a2247756573742064656d6f2076656869636c65222c2276696e223a2243563630303030303044454d4f30303031227d5d7d7d0a",
+  "sha256": "a4901502af52dc8e0b5fccd451a7d3edcd73de1881b12b5acbe1ba26cf8d5f36",
+  "text": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+  "content_length": "81",
+  "content_type": "application/json"
+ },
+ "4_vehicles_bare": {
+  "request": "{\"query\":\"{ vehicles }\"}",
+  "status": 200,
+  "bytes": "7b2264617461223a7b2276656869636c6573223a5b7b226c6162656c223a2247756573742064656d6f2076656869636c65222c2276696e223a2243563630303030303044454d4f30303031227d5d7d7d0a",
+  "sha256": "a4901502af52dc8e0b5fccd451a7d3edcd73de1881b12b5acbe1ba26cf8d5f36",
+  "text": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+  "content_length": "81",
+  "content_type": "application/json"
+ },
+ "5_mutation_typename": {
+  "request": "{\"query\":\"mutation { __typename }\"}",
+  "status": 200,
+  "bytes": "7b2264617461223a7b2276656869636c6573223a5b7b226c6162656c223a2247756573742064656d6f2076656869636c65222c2276696e223a2243563630303030303044454d4f30303031227d5d7d7d0a",
+  "sha256": "a4901502af52dc8e0b5fccd451a7d3edcd73de1881b12b5acbe1ba26cf8d5f36",
+  "text": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+  "content_length": "81",
+  "content_type": "application/json"
+ },
+ "c1_query_int": {
+  "request": "{\"query\":123}",
+  "status": 400,
+  "bytes": "7b226572726f72223a22696e76616c6964204772617068514c2072657175657374227d0a",
+  "sha256": "efc9b76074b7744deb169ad511f351e1b0aa2ffbce6b18f47c372db1adcc1a76",
+  "text": "{\"error\":\"invalid GraphQL request\"}\n",
+  "content_length": "36",
+  "content_type": "application/json"
+ },
+ "c2_empty_obj": {
+  "request": "{}",
+  "status": 200,
+  "bytes": "7b2264617461223a7b2276656869636c6573223a5b7b226c6162656c223a2247756573742064656d6f2076656869636c65222c2276696e223a2243563630303030303044454d4f30303031227d5d7d7d0a",
+  "sha256": "a4901502af52dc8e0b5fccd451a7d3edcd73de1881b12b5acbe1ba26cf8d5f36",
+  "text": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+  "content_length": "81",
+  "content_type": "application/json"
+ },
+ "c3_null": {
+  "request": "null",
+  "status": 200,
+  "bytes": "7b2264617461223a7b2276656869636c6573223a5b7b226c6162656c223a2247756573742064656d6f2076656869636c65222c2276696e223a2243563630303030303044454d4f30303031227d5d7d7d0a",
+  "sha256": "a4901502af52dc8e0b5fccd451a7d3edcd73de1881b12b5acbe1ba26cf8d5f36",
+  "text": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+  "content_length": "81",
+  "content_type": "application/json"
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "label": "gw_22_f188_extended",
+  "purpose": "read DID 0xF188 in extended session",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00100022F188",
+    "uds": "22F188"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 384.86,
+  "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)",
+  "seq": 14,
+  "ts": "2026-11-14T09:10:38.253+08:00"
+}

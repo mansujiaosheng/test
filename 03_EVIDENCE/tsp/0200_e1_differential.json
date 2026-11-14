@@ -1,0 +1,813 @@
+{
+ "baseline_sha": "a4901502af52dc8e",
+ "results": [
+  {
+   "label": "A01_num_1",
+   "status": 400,
+   "len": 36,
+   "sha": "efc9b76074b7744d",
+   "body": "{\"error\":\"invalid GraphQL request\"}\n",
+   "ms": 167,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "1",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A02_str_x",
+   "status": 400,
+   "len": 36,
+   "sha": "efc9b76074b7744d",
+   "body": "{\"error\":\"invalid GraphQL request\"}\n",
+   "ms": 62,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "\"x\"",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A03_array",
+   "status": 400,
+   "len": 36,
+   "sha": "efc9b76074b7744d",
+   "body": "{\"error\":\"invalid GraphQL request\"}\n",
+   "ms": 71,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "[]",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A04_null",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 56,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "null",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A05_true",
+   "status": 400,
+   "len": 36,
+   "sha": "efc9b76074b7744d",
+   "body": "{\"error\":\"invalid GraphQL request\"}\n",
+   "ms": 57,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "true",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A06_empty_obj",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 60,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A07_bad_query_syntax",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 67,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":\"!!! not graphql (\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A08_query_obj",
+   "status": 400,
+   "len": 36,
+   "sha": "efc9b76074b7744d",
+   "body": "{\"error\":\"invalid GraphQL request\"}\n",
+   "ms": 78,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":{\"vin\":\"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A09_query_num",
+   "status": 400,
+   "len": 36,
+   "sha": "efc9b76074b7744d",
+   "body": "{\"error\":\"invalid GraphQL request\"}\n",
+   "ms": 61,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":123}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A10_query_array",
+   "status": 400,
+   "len": 36,
+   "sha": "efc9b76074b7744d",
+   "body": "{\"error\":\"invalid GraphQL request\"}\n",
+   "ms": 79,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":[\"CV6FF52FEE9EDDD86\"]}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "A11_no_body",
+   "status": 400,
+   "len": 36,
+   "sha": "efc9b76074b7744d",
+   "body": "{\"error\":\"invalid GraphQL request\"}\n",
+   "ms": 58,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": null,
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {}
+  },
+  {
+   "label": "B_var_vin",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 89,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"query V($vin:String!){vehicles(vin:$vin){vin label}}\", \"variables\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "B_var_id",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 61,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"query V($vin:String!){vehicles(vin:$vin){vin label}}\", \"variables\": {\"id\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "B_var_vehicleId",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 85,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"query V($vin:String!){vehicles(vin:$vin){vin label}}\", \"variables\": {\"vehicleId\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "B_var_v",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 64,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"query V($vin:String!){vehicles(vin:$vin){vin label}}\", \"variables\": {\"v\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "B_var_full",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 63,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"query V($vin:String!){vehicles(vin:$vin){vin label}}\", \"variables\": {\"vin\": \"CV6FF52FEE9EDDD86\", \"id\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "B_var_strvariables",
+   "status": 400,
+   "len": 36,
+   "sha": "efc9b76074b7744d",
+   "body": "{\"error\":\"invalid GraphQL request\"}\n",
+   "ms": 59,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"query V($vin:String!){vehicles(vin:$vin){vin label}}\", \"variables\": \"{\\\"vin\\\": \\\"CV6FF52FEE9EDDD86\\\"}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "B_extensions",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 55,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"extensions\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "C_qs_vin",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 58,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql?vin=CV6FF52FEE9EDDD86",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "C_qs_vehicleId",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 57,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql?vehicleId=CV6FF52FEE9EDDD86",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "C_qs_id",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 59,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql?id=CV6FF52FEE9EDDD86",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "C_qs_token",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 62,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql?token=CV6FF52FEE9EDDD86",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "C_qs_query",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 72,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql?query=%7Bvehicles%28vin%3A%22CV6FF52FEE9EDDD86%22%29%7Bvin%7D",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "C_qs_v",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 73,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql?v=CV6FF52FEE9EDDD86",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_data",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 59,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"data\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_data",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 57,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"dataVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_input",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 66,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"input\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_input",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 58,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"inputVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_args",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 55,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"args\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_args",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 58,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"argsVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_params",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 62,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"params\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_params",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 60,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"paramsVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_filter",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 92,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"filter\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_filter",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 63,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"filterVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_where",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 59,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"where\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_where",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 79,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"whereVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_vehicle",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 60,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"vehicle\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_vehicle",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 82,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"vehicleVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_auth",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 75,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"auth\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_auth",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 72,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"authVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_context",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 57,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"context\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_context",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 58,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"contextVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nest_meta",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 62,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"meta\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "D_nestflat_meta",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 70,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles{vin}}\", \"metaVin\": \"CV6FF52FEE9EDDD86\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "E01_VIN_upper",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 59,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"VIN\":\"CV6FF52FEE9EDDD86\",\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "E02_Vin_mixed",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 60,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"Vin\":\"CV6FF52FEE9EDDD86\",\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "E03_dupkey",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 68,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"vin\":\"CV6000000DEMO0001\",\"vin\":\"CV6FF52FEE9EDDD86\",\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "E04_vin_num",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 96,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"vin\":1,\"query\":\"{vehicles{vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "E05_vin_list",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 76,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"vin\":[\"CV6FF52FEE9EDDD86\"],\"query\":\"{vehicles(vin:[\\\"CV6FF52FEE9EDDD86\\\"]){vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "F01_arg_vin",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 55,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles(vin:\\\"CV6FF52FEE9EDDD86\\\"){vin label}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "F02_arg_raw",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 66,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles(vin:CV6FF52FEE9EDDD86){vin label}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "F03_filter_obj",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 64,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicles(filter:{vin:\\\"CV6FF52FEE9EDDD86\\\"}){vin label}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "F04_ota_nested",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 63,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehicle(vin:\\\"CV6FF52FEE9EDDD86\\\"){vin label ota{campaigns{id}}}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  },
+  {
+   "label": "F05_byVin",
+   "status": 200,
+   "len": 81,
+   "sha": "a4901502af52dc8e",
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n",
+   "ms": 58,
+   "ct": "application/json",
+   "setcookie": null,
+   "req_body": "{\"query\": \"{vehiclesByVin(vin:\\\"CV6FF52FEE9EDDD86\\\"){vin}}\"}",
+   "req_url": "http://10.230.164.2:8080/graphql",
+   "req_headers": {
+    "Content-Type": "application/json"
+   }
+  }
+ ]
+}

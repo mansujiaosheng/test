@@ -1,0 +1,87 @@
+{
+  "label": "dummy",
+  "purpose": "read DID 0xF1C1",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00100022F1C1",
+    "uds": "22F1C1"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7
+    },
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7
+    },
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7
+    },
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7
+    },
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7
+    },
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 241.14,
+  "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange) | 0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange) | 0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange) | 0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange) | 0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange) | 0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)",
+  "seq": 129,
+  "ts": "2026-11-14T09:11:59.948+08:00"
+}

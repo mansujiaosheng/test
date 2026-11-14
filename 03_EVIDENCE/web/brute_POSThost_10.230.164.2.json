@@ -1,0 +1,45 @@
+{
+ "target": "http://10.230.164.2:8080",
+ "elapsed_s": 1.1,
+ "probed": 407,
+ "errors": 0,
+ "baseline_404": {
+  "status": 404,
+  "len": 19,
+  "body": "404 page not found\n"
+ },
+ "status_histogram": {
+  "404": 405,
+  "200": 2
+ },
+ "interesting": [
+  {
+   "path": "graphql",
+   "status": 200,
+   "len": 81,
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:10:12 GMT",
+    "Content-Length": "81"
+   },
+   "body": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n"
+  },
+  {
+   "path": "healthz",
+   "status": 200,
+   "len": 16,
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:10:12 GMT",
+    "Content-Length": "16"
+   },
+   "body": "{\"status\":\"ok\"}\n"
+  }
+ ],
+ "server_headers_sample": {
+  "Content-Type": "text/plain; charset=utf-8",
+  "X-Content-Type-Options": "nosniff",
+  "Date": "Sat, 14 Nov 2026 01:10:12 GMT",
+  "Content-Length": "19"
+ }
+}

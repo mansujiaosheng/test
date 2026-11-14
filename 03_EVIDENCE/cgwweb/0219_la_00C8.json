@@ -1,0 +1,14 @@
+{
+  "label": "la_00C8",
+  "purpose": "LA existence probe 0x00C8",
+  "tester_sa": "0x0E00",
+  "target_la": "0x00C8",
+  "elapsed_ms": 158.05,
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "parsed": [],
+  "cls": "silent",
+  "seq": 219,
+  "ts": "2026-11-14T09:25:01.535+08:00"
+}

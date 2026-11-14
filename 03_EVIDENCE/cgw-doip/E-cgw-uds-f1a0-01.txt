@@ -1,0 +1,34 @@
+# CGW DoIP evidence (format v1.0)
+time     : 2026-11-14 09:33:55+0800
+target   : 10.229.221.2:13400/TCP
+command  : RoutingActivation(SA 0x0FFE) then UDS 22 F1 A0 -> 0x1000
+tx_hex   : 
+rx[0]_hex: 02fd0006000000090ffe10001000000000
+rx[0]_typ: 0x0006
+rx[1]_hex: 02fd80010000000f10000ffe62f1a007e007e807e107e9
+rx[1]_typ: 0x8001
+note     : H-005: DID 0xF1A0 leaks the diagnostic logical-address table: 07E0 07E8 07E1 07E9 (two OBD-II request/response pairs)
+
+--- decoded ---
+[
+  {
+    "type": "0x0006",
+    "name": "RoutingActivationResponse",
+    "payload_hex": "0ffe10001000000000",
+    "tester_logical_address": "0x0FFE",
+    "entity_logical_address": "0x1000",
+    "response_code": "0x10",
+    "response_meaning": "SUCCESSFUL"
+  },
+  {
+    "type": "0x8001",
+    "name": "DiagnosticMessage",
+    "payload_hex": "10000ffe62f1a007e007e807e107e9",
+    "source_address": "0x1000",
+    "target_address": "0x0FFE",
+    "uds_hex": "62f1a007e007e807e107e9",
+    "uds_positive": "ReadDataByIdentifier",
+    "did": "0xF1A0",
+    "value_hex": "07e007e807e107e9"
+  }
+]

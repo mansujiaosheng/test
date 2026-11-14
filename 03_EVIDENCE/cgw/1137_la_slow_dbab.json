@@ -1,0 +1,19 @@
+{
+  "label": "la_slow_dbab",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xDBAB",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00DBAB3E00",
+    "uds": "3E00"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 130.79,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 1137,
+  "ts": "2026-11-14T09:27:12.110+08:00"
+}

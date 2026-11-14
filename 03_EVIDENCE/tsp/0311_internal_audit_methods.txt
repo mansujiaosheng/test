@@ -1,0 +1,63 @@
+=== GET /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:36:26 GMT
+Content-Length: 22
+
+{"error":"not found"}
+
+=== POST /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:36:26 GMT
+Content-Length: 22
+
+{"error":"not found"}
+
+=== PUT /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:36:26 GMT
+Content-Length: 22
+
+{"error":"not found"}
+
+=== DELETE /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:36:26 GMT
+Content-Length: 22
+
+{"error":"not found"}
+
+=== PATCH /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:36:26 GMT
+Content-Length: 22
+
+{"error":"not found"}
+
+=== OPTIONS /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:36:26 GMT
+Content-Length: 22
+
+{"error":"not found"}
+
+=== HEAD /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:36:27 GMT
+Content-Length: 22
+
+
+=== TRACE /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:36:33 GMT
+Content-Length: 22
+
+{"error":"not found"}
+

@@ -1,0 +1,46 @@
+{
+ "target": "http://10.230.164.2:8080",
+ "elapsed_s": 0.9,
+ "probed": 407,
+ "errors": 0,
+ "baseline_404": {
+  "status": 404,
+  "len": 19,
+  "body": "404 page not found\n"
+ },
+ "status_histogram": {
+  "404": 405,
+  "405": 1,
+  "200": 1
+ },
+ "interesting": [
+  {
+   "path": "healthz",
+   "status": 200,
+   "len": 16,
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:08:54 GMT",
+    "Content-Length": "16"
+   },
+   "body": "{\"status\":\"ok\"}\n"
+  },
+  {
+   "path": "graphql",
+   "status": 405,
+   "len": 31,
+   "headers": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:08:54 GMT",
+    "Content-Length": "31"
+   },
+   "body": "{\"error\":\"method not allowed\"}\n"
+  }
+ ],
+ "server_headers_sample": {
+  "Content-Type": "text/plain; charset=utf-8",
+  "X-Content-Type-Options": "nosniff",
+  "Date": "Sat, 14 Nov 2026 01:08:54 GMT",
+  "Content-Length": "19"
+ }
+}

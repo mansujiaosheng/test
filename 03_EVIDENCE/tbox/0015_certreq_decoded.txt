@@ -1,0 +1,15 @@
+# source: 03_EVIDENCE/tbox/0009_hs_nocert.txt
+# handshake length field: 112 (0x0070), captured 108 bytes
+# raw DER: 0000690005000000120000000d0010000e08040403080708050806050306030032001a0018080404030807080508060401050106010503060302010203002f002b002900273025312330210603550403131a43563620466c65657420446961676e6f737469637320526f6f74
+
+certificate_request_context: len=0 value=(empty)
+extensions: total_len=105
+  - ext 0x0005 status_request  len=0  data=
+  - ext 0x0012 signed_certificate_timestamp  len=0  data=
+  - ext 0x000d signature_algorithms  len=16  data=000e0804040308070805080605030603
+      count=7: rsa_pss_rsae_sha256, ecdsa_secp256r1_sha256, ed25519, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512
+  - ext 0x0032 signature_algorithms_cert  len=26  data=0018080404030807080508060401050106010503060302010203
+      count=12: rsa_pss_rsae_sha256, ecdsa_secp256r1_sha256, ed25519, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, rsa_pkcs1_sha1, ecdsa_sha1
+  - ext 0x002f certificate_authorities  len=43  data=002900273025312330210603550403131a43563620466c65657420446961676e6f737469637320526f6f74
+      distinguished_names total_len=41
+      [1] len=39 DER=3025312330210603550403131a43563620466c65657420446961676e6f737469637320526f6f74

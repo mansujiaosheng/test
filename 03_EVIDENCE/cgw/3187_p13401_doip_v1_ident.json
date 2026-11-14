@@ -1,0 +1,17 @@
+{
+  "label": "p13401_doip_v1_ident",
+  "purpose": "DoIP 0x0001 with version 0x01",
+  "host": "10.230.164.4",
+  "port": 13401,
+  "request": {
+    "hex": "01FE000100000000"
+  },
+  "responses": [
+    {
+      "hex": ""
+    }
+  ],
+  "note": "silent",
+  "seq": 3187,
+  "ts": "2026-11-14T09:49:38+0800"
+}

@@ -1,0 +1,2239 @@
+# HTTP tricks + vhost  2026-11-14T09:38:18  10.230.164.2:8080
+
+=== http10 ===
+--- REQ ---
+GET /healthz HTTP/1.0
+Host: 10.230.164.2:8080
+
+
+--- RESP ---
+HTTP/1.0 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:18 GMT
+Content-Length: 16
+
+{"status":"ok"}
+
+
+=== http10_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.0
+Host: 10.230.164.2:8080
+Content-Length: 2
+
+{}
+--- RESP ---
+HTTP/1.0 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:18 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== abs_uri_healthz ===
+--- REQ ---
+GET http://10.230.164.2:8080/healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:19 GMT
+Content-Length: 16
+Connection: close
+
+{"status":"ok"}
+
+
+=== abs_uri_graphql ===
+--- REQ ---
+POST http://10.230.164.2:8080/graphql HTTP/1.1
+Host: 10.230.164.2:8080
+Content-Length: 2
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:19 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== abs_uri_ota ===
+--- REQ ---
+GET http://10.230.164.2:8080/ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:25 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== connect ===
+--- REQ ---
+CONNECT 10.230.164.2:8080 HTTP/1.1
+Host: 10.230.164.2:8080
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:25 GMT
+Content-Length: 19
+
+404 page not found
+
+
+=== connect_host ===
+--- REQ ---
+CONNECT example.com:443 HTTP/1.1
+Host: 10.230.164.2:8080
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:31 GMT
+Content-Length: 19
+
+404 page not found
+
+
+=== options_star ===
+--- REQ ---
+OPTIONS * HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Length: 0
+Date: Sat, 14 Nov 2026 01:38:37 GMT
+Connection: close
+
+
+
+=== trace_healthz ===
+--- REQ ---
+TRACE /healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:37 GMT
+Content-Length: 16
+Connection: close
+
+{"status":"ok"}
+
+
+=== pri_h2 ===
+--- REQ ---
+PRI * HTTP/2.0
+
+SM
+
+
+--- RESP ---
+HTTP/1.1 400 Bad Request
+Connection: close
+Date: Sat, 14 Nov 2026 01:38:37 GMT
+Content-Length: 0
+
+
+
+=== path://healthz ===
+--- REQ ---
+GET //healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:38:37 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+
+=== path:///healthz ===
+--- REQ ---
+GET ///healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:38:37 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+
+=== path:/.//healthz ===
+--- REQ ---
+GET /.//healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:38:37 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+
+=== path:/./healthz ===
+--- REQ ---
+GET /./healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+
+=== path:/a/../healthz ===
+--- REQ ---
+GET /a/../healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+
+=== path:/healthz/. ===
+--- REQ ---
+GET /healthz/. HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+
+=== path:/healthz/.. ===
+--- REQ ---
+GET /healthz/.. HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 37
+Connection: close
+
+<a href="/">Temporary Redirect</a>.
+
+
+
+=== path:/healthz%2f ===
+--- REQ ---
+GET /healthz%2f HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/%2fhealthz ===
+--- REQ ---
+GET /%2fhealthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/healthz%00 ===
+--- REQ ---
+GET /healthz%00 HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/healthz%20 ===
+--- REQ ---
+GET /healthz%20 HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/healthz;x ===
+--- REQ ---
+GET /healthz;x HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/healthz%3b ===
+--- REQ ---
+GET /healthz%3b HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/healthz? ===
+--- REQ ---
+GET /healthz? HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 16
+Connection: close
+
+{"status":"ok"}
+
+
+=== path:/healthz#x ===
+--- REQ ---
+GET /healthz#x HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/healthz/../graphql ===
+--- REQ ---
+GET /healthz/../graphql HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /graphql
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/graphql">Temporary Redirect</a>.
+
+
+
+=== path:/graphql%2f ===
+--- REQ ---
+GET /graphql%2f HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/graphql/. ===
+--- REQ ---
+GET /graphql/. HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /graphql
+Date: Sat, 14 Nov 2026 01:38:38 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/graphql">Temporary Redirect</a>.
+
+
+
+=== path:/graphql/.. ===
+--- REQ ---
+GET /graphql/.. HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 37
+Connection: close
+
+<a href="/">Temporary Redirect</a>.
+
+
+
+=== path:/GRAPHQL ===
+--- REQ ---
+GET /GRAPHQL HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/Healthz ===
+--- REQ ---
+GET /Healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/HEALTHZ ===
+--- REQ ---
+GET /HEALTHZ HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/%68ealthz ===
+--- REQ ---
+GET /%68ealthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 16
+Connection: close
+
+{"status":"ok"}
+
+
+=== path:/healthz%2F ===
+--- REQ ---
+GET /healthz%2F HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ===
+--- REQ ---
+GET /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ===
+--- REQ ---
+GET /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== path:/ota/../healthz ===
+--- REQ ---
+GET /ota/../healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+
+=== path:/graphql/../healthz ===
+--- REQ ---
+GET /graphql/../healthz HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 307 Temporary Redirect
+Content-Type: text/html; charset=utf-8
+Location: /healthz
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 44
+Connection: close
+
+<a href="/healthz">Temporary Redirect</a>.
+
+
+
+=== vhost_graphql[tsp] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: tsp
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[tsp] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: tsp
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[tsp.cv6] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: tsp.cv6
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[tsp.cv6] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: tsp.cv6
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[cv6.local] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: cv6.local
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[cv6.local] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: cv6.local
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:39 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[api.cv6] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: api.cv6
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[api.cv6] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: api.cv6
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[fleet] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: fleet
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[fleet] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: fleet
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[ota.cv6] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: ota.cv6
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[ota.cv6] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: ota.cv6
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[tsp.local] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: tsp.local
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[tsp.local] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: tsp.local
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[localhost] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: localhost
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[localhost] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: localhost
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[127.0.0.1] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 127.0.0.1
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[127.0.0.1] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 127.0.0.1
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[10.230.164.2] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[10.230.164.2] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[10.230.164.2:8080] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[10.230.164.2:8080] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[tsp:8080] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: tsp:8080
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:40 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[tsp:8080] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: tsp:8080
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[tbox] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: tbox
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[tbox] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: tbox
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[cgw] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: cgw
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[cgw] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: cgw
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[vcu] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: vcu
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[vcu] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: vcu
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[internal] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: internal
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[internal] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: internal
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[admin] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: admin
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[admin] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: admin
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[cv6] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: cv6
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[cv6] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: cv6
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[www.cv6] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: www.cv6
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[www.cv6] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: www.cv6
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[ota] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: ota
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:41 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[ota] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: ota
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[tsp.cv6.local] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: tsp.cv6.local
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[tsp.cv6.local] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: tsp.cv6.local
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[api.tsp.cv6] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: api.tsp.cv6
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[api.tsp.cv6] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: api.tsp.cv6
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[backend] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: backend
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[backend] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: backend
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== vhost_graphql[server] ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: server
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== vhost_ota[server] ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: server
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Forwarded-Host=tsp.cv6]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Host: tsp.cv6
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Forwarded-Host=tsp.cv6]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Host: tsp.cv6
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Forwarded-Host=ota.cv6]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Host: ota.cv6
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Forwarded-Host=ota.cv6]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Host: ota.cv6
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Original-URL=/graphql]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Original-URL: /graphql
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Original-URL=/graphql]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Original-URL: /graphql
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:42 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Original-URL=/ota/firmware]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Original-URL: /ota/firmware
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Original-URL=/ota/firmware]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Original-URL: /ota/firmware
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Rewrite-URL=/graphql]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Rewrite-URL: /graphql
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Rewrite-URL=/graphql]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Rewrite-URL: /graphql
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Rewrite-URL=/ota/firmware]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Rewrite-URL: /ota/firmware
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Rewrite-URL=/ota/firmware]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Rewrite-URL: /ota/firmware
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Forwarded-Prefix=/api]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Prefix: /api
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Forwarded-Prefix=/api]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Prefix: /api
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Forwarded-Prefix=/api/v1]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Prefix: /api/v1
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Forwarded-Prefix=/api/v1]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Prefix: /api/v1
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Forwarded-Uri=/graphql]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Uri: /graphql
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Forwarded-Uri=/graphql]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Uri: /graphql
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-HTTP-Method-Override=POST]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-HTTP-Method-Override: POST
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-HTTP-Method-Override=POST]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-HTTP-Method-Override: POST
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Method-Override=POST]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Method-Override: POST
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:43 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Method-Override=POST]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Method-Override: POST
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Real-IP=127.0.0.1]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Real-IP: 127.0.0.1
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Real-IP=127.0.0.1]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Real-IP: 127.0.0.1
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[Forwarded=host=tsp.cv6;proto=https]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+Forwarded: host=tsp.cv6;proto=https
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[Forwarded=host=tsp.cv6;proto=https]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+Forwarded: host=tsp.cv6;proto=https
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Forwarded-Proto=https]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Proto: https
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Forwarded-Proto=https]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Forwarded-Proto: https
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[X-Arbitrary=1]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+X-Arbitrary: 1
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[X-Arbitrary=1]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+X-Arbitrary: 1
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== pxy[Content-Type=application/json]_graphql ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+Content-Type: application/json
+Content-Length: 2
+Connection: close
+
+{}
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 81
+Connection: close
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== pxy[Content-Type=application/json]_404 ===
+--- REQ ---
+GET /ota/firmware HTTP/1.1
+Host: 10.230.164.2:8080
+Content-Type: application/json
+Connection: close
+
+
+--- RESP ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found
+
+
+=== huge_header ===
+--- REQ ---
+GET /healthz HTTP/1.1
+Host: 10.230.164.2:8080
+X-Pad: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 16
+Connection: close
+
+{"status":"ok"}
+
+
+=== neg_cl ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+Content-Length: -1
+
+{}
+--- RESP ---
+HTTP/1.1 400 Bad Request
+Content-Type: text/plain; charset=utf-8
+Connection: close
+
+400 Bad Request
+
+=== cl_te ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+Content-Length: 2
+Transfer-Encoding: chunked
+
+2
+{}
+0
+
+
+--- RESP ---
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:38:44 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== dup_cl ===
+--- REQ ---
+POST /graphql HTTP/1.1
+Host: 10.230.164.2:8080
+Content-Length: 2
+Content-Length: 5
+
+{}
+--- RESP ---
+HTTP/1.1 400 Bad Request
+Content-Type: text/plain; charset=utf-8
+Connection: close
+
+400 Bad Request
+
+
+=== 响应签名分组（同签名=同行为） ===
+
+[6] code=200 body=b'{"status":"ok"}'
+  ['http10', 'abs_uri_healthz', 'trace_healthz', 'path:/healthz?', 'path:/%68ealthz', 'huge_header']
+
+[43] code=200 body=b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}'
+  ['http10_graphql', 'abs_uri_graphql', 'vhost_graphql[tsp]', 'vhost_graphql[tsp.cv6]', 'vhost_graphql[cv6.local]', 'vhost_graphql[api.cv6]', 'vhost_graphql[fleet]', 'vhost_graphql[ota.cv6]', 'vhost_graphql[tsp.local]', 'vhost_graphql[localhost]', 'vhost_graphql[127.0.0.1]', 'vhost_graphql[10.230.164.2]', 'vhost_graphql[10.230.164.2:8080]', 'vhost_graphql[tsp:8080]', 'vhost_graphql[tbox]', 'vhost_graphql[cgw]', 'vhost_graphql[vcu]', 'vhost_graphql[internal]', 'vhost_graphql[admin]', 'vhost_graphql[cv6]', 'vhost_graphql[www.cv6]', 'vhost_graphql[ota]', 'vhost_graphql[tsp.cv6.local]', 'vhost_graphql[api.tsp.cv6]', 'vhost_graphql[backend]', 'vhost_graphql[server]', 'pxy[X-Forwarded-Host=tsp.cv6]_graphql', 'pxy[X-Forwarded-Host=ota.cv6]_graphql', 'pxy[X-Original-URL=/graphql]_graphql', 'pxy[X-Original-URL=/ota/firmware]_graphql', 'pxy[X-Rewrite-URL=/graphql]_graphql', 'pxy[X-Rewrite-URL=/ota/firmware]_graphql', 'pxy[X-Forwarded-Prefix=/api]_graphql', 'pxy[X-Forwarded-Prefix=/api/v1]_graphql', 'pxy[X-Forwarded-Uri=/graphql]_graphql', 'pxy[X-HTTP-Method-Override=POST]_graphql', 'pxy[X-Method-Override=POST]_graphql', 'pxy[X-Real-IP=127.0.0.1]_graphql', 'pxy[Forwarded=host=tsp.cv6;proto=https]_graphql', 'pxy[X-Forwarded-Proto=https]_graphql', 'pxy[X-Arbitrary=1]_graphql', 'pxy[Content-Type=application/json]_graphql', 'cl_te']
+
+[57] code=404 body=b'404 page not found'
+  ['abs_uri_ota', 'connect', 'connect_host', 'path:/healthz%2f', 'path:/%2fhealthz', 'path:/healthz%00', 'path:/healthz%20', 'path:/healthz;x', 'path:/healthz%3b', 'path:/healthz#x', 'path:/graphql%2f', 'path:/GRAPHQL', 'path:/Healthz', 'path:/HEALTHZ', 'path:/healthz%2F', 'path:/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'path:/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'vhost_ota[tsp]', 'vhost_ota[tsp.cv6]', 'vhost_ota[cv6.local]', 'vhost_ota[api.cv6]', 'vhost_ota[fleet]', 'vhost_ota[ota.cv6]', 'vhost_ota[tsp.local]', 'vhost_ota[localhost]', 'vhost_ota[127.0.0.1]', 'vhost_ota[10.230.164.2]', 'vhost_ota[10.230.164.2:8080]', 'vhost_ota[tsp:8080]', 'vhost_ota[tbox]', 'vhost_ota[cgw]', 'vhost_ota[vcu]', 'vhost_ota[internal]', 'vhost_ota[admin]', 'vhost_ota[cv6]', 'vhost_ota[www.cv6]', 'vhost_ota[ota]', 'vhost_ota[tsp.cv6.local]', 'vhost_ota[api.tsp.cv6]', 'vhost_ota[backend]', 'vhost_ota[server]', 'pxy[X-Forwarded-Host=tsp.cv6]_404', 'pxy[X-Forwarded-Host=ota.cv6]_404', 'pxy[X-Original-URL=/graphql]_404', 'pxy[X-Original-URL=/ota/firmware]_404', 'pxy[X-Rewrite-URL=/graphql]_404', 'pxy[X-Rewrite-URL=/ota/firmware]_404', 'pxy[X-Forwarded-Prefix=/api]_404', 'pxy[X-Forwarded-Prefix=/api/v1]_404', 'pxy[X-Forwarded-Uri=/graphql]_404', 'pxy[X-HTTP-Method-Override=POST]_404', 'pxy[X-Method-Override=POST]_404', 'pxy[X-Real-IP=127.0.0.1]_404', 'pxy[Forwarded=host=tsp.cv6;proto=https]_404', 'pxy[X-Forwarded-Proto=https]_404', 'pxy[X-Arbitrary=1]_404', 'pxy[Content-Type=application/json]_404']
+
+[1] code=200 body=b''
+  ['options_star']
+
+[1] code=400 body=b''
+  ['pri_h2']
+
+[8] code=307 body=b'<a href="/healthz">Temporary Redirect</a>.'
+  ['path://healthz', 'path:///healthz', 'path:/.//healthz', 'path:/./healthz', 'path:/a/../healthz', 'path:/healthz/.', 'path:/ota/../healthz', 'path:/graphql/../healthz']
+
+[2] code=307 body=b'<a href="/">Temporary Redirect</a>.'
+  ['path:/healthz/..', 'path:/graphql/..']
+
+[2] code=307 body=b'<a href="/graphql">Temporary Redirect</a>.'
+  ['path:/healthz/../graphql', 'path:/graphql/.']
+
+[2] code=400 body=b'400 Bad Request'
+  ['neg_cl', 'dup_cl']

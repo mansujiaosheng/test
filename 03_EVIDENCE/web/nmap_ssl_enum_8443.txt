@@ -1,0 +1,11 @@
+本文件为空是预期结果，不是采集失败。
+
+nmap --script ssl-enum-ciphers 需要完成 TLS 握手才能枚举套件；
+10.230.164.3:8443 强制 mTLS，脚本不提供客户端证书，
+服务端在 client-cert 阶段即回 alert certificate_required(116) 中止握手，
+因此 nmap 脚本无任何输出。
+
+TLS 参数已改用 openssl 逐项实测，结论见：
+  03_EVIDENCE/web/8443_tls_probe_matrix.txt   （版本 / ALPN / SNI / 明文 400）
+  03_EVIDENCE/web/8443_ciphers_groups.txt     （TLS1.3 三套件 + 三曲线 + 会话恢复）
+  03_EVIDENCE/web/8443_s_client_servername_tbox.txt （证书链 + 可接受客户端 CA）

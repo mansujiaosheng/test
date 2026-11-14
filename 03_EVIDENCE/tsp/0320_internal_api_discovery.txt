@@ -1,0 +1,15 @@
+probing 706 GET paths, oracle = response != b'404 page not found\n'
+HIT GET /internal/audit 404 ct=application/json body=b'{"error":"not found"}\n'
+HIT GET /graphql 405 ct=application/json body=b'{"error":"method not allowed"}\n'
+--- GET done 6.1s, hits=2
+
+--- POST phase on 2 targets ---
+POST /graphql                                 body=None                                     -> 400 b'{"error":"invalid GraphQL request"}\n'  [DIFF]
+POST /graphql                                 body=b'{}'                                    -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'  [DIFF]
+POST /graphql                                 body=b'{"vin":"CV6FF52FEE9EDDD86"}'           -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'  [DIFF]
+POST /graphql                                 body=b'{"vehicle":"CV6FF52FEE9EDDD86"}'       -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'  [DIFF]
+POST /internal/audit                          body=None                                     -> 404 b'{"error":"not found"}\n'  [SAME]
+POST /internal/audit                          body=b'{}'                                    -> 404 b'{"error":"not found"}\n'  [SAME]
+POST /internal/audit                          body=b'{"vin":"CV6FF52FEE9EDDD86"}'           -> 404 b'{"error":"not found"}\n'  [SAME]
+POST /internal/audit                          body=b'{"vehicle":"CV6FF52FEE9EDDD86"}'       -> -1 b'[WinError 10054] \xe8\xbf\x9c\xe7\xa8\x8b\xe4\xb8\xbb\xe6\x9c\xba\xe5\xbc\xba\xe8\xbf\xab\xe5\x85\xb3\xe9\x97\xad\xe4\xba\x86\xe4\xb8\x80\xe4\xb8\xaa\xe7\x8e\xb0\xe6\x9c\x89\xe7\x9a\x84\xe8\xbf\x9e\xe6\x8e\xa5\xe3\x80\x82'  [DIFF]
+total hits GET=2 POST=5

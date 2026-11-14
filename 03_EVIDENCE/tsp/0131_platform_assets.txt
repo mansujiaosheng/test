@@ -1,0 +1,25 @@
+##### root html: script/link/endpoint hints #####
+href="#"
+href="#overview"
+href="/admin.html"
+href="/app.css?v=20260825-snapshot-buttons-v1"
+href="/brand-mark.png"
+href="/competitions.html"
+src="/app.js?v=20260825-mode-status-v1"
+src="/brand-mark.png"
+
+##### inline endpoint strings #####
+/admin.html
+/app.css
+/app.js
+/competitions.html
+
+##### fetch app.js #####
+--- /app.js ---
+http=200 size=129696 ct=text/javascript; charset=utf-8
+--- /main.js ---
+http=404 size=0 ct=
+--- /index.js ---
+http=404 size=0 ct=
+--- /assets/app.js ---
+http=404 size=0 ct=

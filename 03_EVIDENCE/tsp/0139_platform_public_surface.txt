@@ -1,0 +1,20 @@
+=== 0139: platform public-surface sweep (harmless GET, no auth) ===
+/health                                                                  http=404 len=0 
+/healthz                                                                 http=404 len=0 
+/metrics                                                                 http=404 len=0 
+/version                                                                 http=404 len=0 
+/api/health                                                              http=200 len=64 {"instanceId":"api-b","service":"cybercar-arena","status":"ok"}
+/api/v1/scoreboard                                                       http=404 len=109 {"error":{"code":"route_not_found","details":{},"message":"API route not found","requestId":"d5ef621
+/api/v1/competitions/competition-ed3e7d452581978ccae13421/scoreboard     http=401 len=121 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","request
+/api/v1/competitions/competition-ed3e7d452581978ccae13421/teams          http=401 len=121 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","request
+/robots.txt                                                              http=404 len=0 
+/sitemap.xml                                                             http=404 len=0 
+/.well-known/security.txt                                                http=404 len=0 
+/admin/login                                                             http=404 len=0 
+/api/v1/admin/overview                                                   http=401 len=121 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","request
+
+=== old platform IP 175.27.228.250:9989 (from browser history) ===
+https://175.27.228.250:9989/               http=000 time=8.017009
+unreachable
+http://175.27.228.250:9989/                http=000 time=8.011222
+unreachable

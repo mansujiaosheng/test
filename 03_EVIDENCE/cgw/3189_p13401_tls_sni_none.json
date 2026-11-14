@@ -1,0 +1,17 @@
+{
+  "label": "p13401_tls_sni_none",
+  "purpose": "TLS ClientHello with SNI",
+  "host": "10.230.164.4",
+  "port": 13401,
+  "request": {
+    "hex": "TLS ClientHello"
+  },
+  "responses": [
+    {
+      "hex": ""
+    }
+  ],
+  "note": "SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)",
+  "seq": 3189,
+  "ts": "2026-11-14T09:49:38+0800"
+}

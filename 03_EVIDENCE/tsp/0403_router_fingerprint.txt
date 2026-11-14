@@ -1,0 +1,68 @@
+====================================================================================
+0403  Router fingerprint on 10.230.164.2:8080  (301=net/http ServeMux | 307=RedirectFixedPath)
+      run at 2026-11-14T01:38:30Z
+====================================================================================
+method path                      status Location        note
+------------------------------------------------------------------------------------
+GET    /graphql                  405    -               exact route
+        allow=None body=b'{"error":"method not allowed"}\n'
+POST   /graphql                  200    -               exact route
+        allow=None body=b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEM'
+GET    /ota/../graphql           307    /graphql        clean-path -> MATCHES existing route
+        allow=None body=b'<a href="/graphql">Temporary Redirect</a>.\n\n'
+POST   /ota/../graphql           307    /graphql        clean-path -> MATCHES existing route
+        allow=None body=b''
+HEAD   /ota/../graphql           307    /graphql        clean-path -> MATCHES existing route
+        allow=None body=b''
+GET    /ota/../nope              307    /nope           clean-path -> does NOT match any route
+        allow=None body=b'<a href="/nope">Temporary Redirect</a>.\n\n'
+POST   /ota/../nope              307    /nope           clean-path -> does NOT match any route
+        allow=None body=b''
+GET    /./graphql                307    /graphql        dot segment -> matches
+        allow=None body=b'<a href="/graphql">Temporary Redirect</a>.\n\n'
+GET    /GraphQL                  404    -               case variant -> matches case-insensitively?
+        allow=None body=b'404 page not found\n'
+POST   /GraphQL                  404    -               case variant
+        allow=None body=b'404 page not found\n'
+GET    /GRAPHQL                  404    -               case variant
+        allow=None body=b'404 page not found\n'
+GET    /graphql/                 404    -               trailing slash
+        allow=None body=b'404 page not found\n'
+POST   /graphql/                 404    -               trailing slash
+        allow=None body=b'404 page not found\n'
+GET    //graphql                 307    /graphql        double slash
+        allow=None body=b'<a href="/graphql">Temporary Redirect</a>.\n\n'
+GET    /graphql/../ota           307    /ota            clean -> /ota (no such route)
+        allow=None body=b'<a href="/ota">Temporary Redirect</a>.\n\n'
+GET    /ota/../graphql?a=1       307    /graphql?a=1    clean + query string preservation
+        allow=None body=b'<a href="/graphql?a=1">Temporary Redirect</a>.\n\n'
+GET    /healthz/../graphql       307    /graphql        clean via healthz
+        allow=None body=b'<a href="/graphql">Temporary Redirect</a>.\n\n'
+GET    /OTA/../graphql           307    /graphql        clean + case
+        allow=None body=b'<a href="/graphql">Temporary Redirect</a>.\n\n'
+
+====================================================================================
+0403-B  405 response header set on /graphql (custom JSON vs httprouter default)
+====================================================================================
+  status=405 headers=[('Content-Type', 'application/json'), ('Date', 'Sat, 14 Nov 2026 01:38:32 GMT'), ('Content-Length', '31'), ('{"error"', '"method not allowed"}')]
+  body=b'{"error":"method not allowed"}\n'
+  PUT status=405 allow=None body=b'{"error":"method not allowed"}\n'
+
+====================================================================================
+0403-C  determinism: 25 identical POST /graphql, sha256 of decoded body
+====================================================================================
+  [0] status=200 len=81 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  [1] status=200 len=81 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  [2] status=200 len=81 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  distinct=1 -> {'a4901502af52dc8e': 25}
+  reference sha256(full)=99ed5a9fdae39939
+
+====================================================================================
+0403-D  'still a stub' probes: semantically illegal GraphQL must not error
+====================================================================================
+  {"query":"{ ) }"}                                          -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  {"query":"this is not graphql at all"}                     -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  {"query":"subscription{__typename}"}                       -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  {"query":"{ vehicles { vin label { sub } } }"}             -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  {"query":"{__schema{types{name}}}"}                        -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  {"query":"mutation{__typename}"}                           -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'

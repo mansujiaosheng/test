@@ -1,0 +1,32 @@
+{
+  "label": "routine_3103_0001",
+  "purpose": "RoutineControl requestRoutineResults 0x0001",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E44231030001",
+    "uds": "31030001"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F3133",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F3133",
+      "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    }
+  ],
+  "elapsed_ms": 438.09,
+  "parsed": "0x1220: NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)",
+  "seq": 3201,
+  "ts": "2026-11-14T09:50:47.954+08:00"
+}

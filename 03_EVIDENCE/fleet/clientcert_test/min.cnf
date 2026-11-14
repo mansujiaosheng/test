@@ -1,0 +1,13 @@
+[ req ]
+default_bits       = 256
+distinguished_name = dn
+prompt             = no
+x509_extensions    = v3_client
+
+[ dn ]
+CN = recon-probe
+
+[ v3_client ]
+basicConstraints = CA:FALSE
+keyUsage         = digitalSignature
+extendedKeyUsage = clientAuth

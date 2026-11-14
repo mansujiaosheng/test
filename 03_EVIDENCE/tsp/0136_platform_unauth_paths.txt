@@ -1,0 +1,21 @@
+=== 0136: unauthenticated attachment-path guesses + login CSRF behaviour ===
+/attachments/                                                          http=404 len=0 
+/attachments                                                           http=404 len=0 
+/api/v1/attachments                                                    http=404 len=109 {"error":{"code":"route_not_found","details":{},"message":"API route not found","requestId":"19a25c99f263"}}
+/downloads/                                                            http=404 len=0 
+/files/                                                                http=404 len=0 
+/static/                                                               http=404 len=0 
+/uploads/                                                              http=404 len=0 
+/api/v1/challenges/                                                    http=404 len=109 {"error":{"code":"route_not_found","details":{},"message":"API route not found","requestId":"bcdf15463ed2"}}
+/api/v1/competitions/competition-ed3e7d452581978ccae13421              http=401 len=121 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","requestId":"d18bc
+/api/v1/competitions/competition-ed3e7d452581978ccae13421/challenges   http=401 len=121 {"error":{"code":"authentication_required","details":{},"message":"Authentication required","requestId":"7d689
+
+--- login with same-origin headers, empty creds (shape probe) ---
+{"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or password","requestId":"30c729090ba4"}}
+
+[http=401]
+
+--- login with dummy creds ---
+{"error":{"code":"invalid_credentials","details":{},"message":"Invalid username or password","requestId":"92e8817a83fb"}}
+
+[http=401]

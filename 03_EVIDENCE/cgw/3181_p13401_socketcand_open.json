@@ -1,0 +1,17 @@
+{
+  "label": "p13401_socketcand_open",
+  "purpose": "socketcand open channel",
+  "host": "10.230.164.4",
+  "port": 13401,
+  "request": {
+    "hex": "3C206F70656E2063616E30203E0A"
+  },
+  "responses": [
+    {
+      "hex": ""
+    }
+  ],
+  "note": "silent",
+  "seq": 3181,
+  "ts": "2026-11-14T09:49:36+0800"
+}

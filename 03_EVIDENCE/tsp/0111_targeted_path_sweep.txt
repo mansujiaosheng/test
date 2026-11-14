@@ -1,0 +1,15 @@
+==============================================================================
+Targeted path sweep (GET and POST)  target=http://10.230.164.2:8080  n=241
+==============================================================================
+GET /healthz                          
+  200 len=16 ct='application/json' loc=None body='{"status":"ok"}\\n'
+GET /auth/                             EXC ReadTimeout
+GET /auth/token                        EXC ConnectTimeout
+------------------------------------------------------------------------------
+--- POST sweep (json body {}) ---
+POST /healthz                          
+  200 len=16 ct='application/json' loc=None body='{"status":"ok"}\\n'
+------------------------------------------------------------------------------
+total interesting: 2
+  GET   200 /healthz b'{"status":"ok"}\n'
+  POST  200 /healthz b'{"status":"ok"}\n'

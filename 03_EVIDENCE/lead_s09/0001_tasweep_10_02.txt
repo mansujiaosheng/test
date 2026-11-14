@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "D:\qwb\04_SOLVE\lead_s09\tasweep.py", line 27, in <module>
+    s=conn(); r=ra(s)
+                ~~^^^
+  File "D:\qwb\04_SOLVE\lead_s09\tasweep.py", line 22, in ra
+    return recv(s)
+  File "D:\qwb\04_SOLVE\lead_s09\tasweep.py", line 8, in recv
+    c=s.recv(8-len(hdr))
+TimeoutError: timed out

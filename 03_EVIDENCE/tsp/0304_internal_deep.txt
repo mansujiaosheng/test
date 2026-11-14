@@ -1,0 +1,86 @@
+==============================================================================
+/internal/* 深挖  2026-11-14T09:37:20+0800
+==============================================================================
+
+-- 1. /internal/migrate 复现 x5（GET/POST，计时）--
+  try1 GET  /internal/migrate -> 404    0.08s len=19 b'404 page not found\n'
+  try1 POST /internal/migrate -> 404    0.05s len=19 b'404 page not found\n'
+  try2 GET  /internal/migrate -> 404    0.06s len=19 b'404 page not found\n'
+  try2 POST /internal/migrate -> 404    0.06s len=19 b'404 page not found\n'
+  try3 GET  /internal/migrate -> 404    0.06s len=19 b'404 page not found\n'
+  try3 POST /internal/migrate -> 404    0.06s len=19 b'404 page not found\n'
+  try4 GET  /internal/migrate -> 404    0.06s len=19 b'404 page not found\n'
+  try4 POST /internal/migrate -> 404    0.06s len=19 b'404 page not found\n'
+  try5 GET  /internal/migrate -> 404    0.06s len=19 b'404 page not found\n'
+  try5 POST /internal/migrate -> 404    0.06s len=19 b'404 page not found\n'
+
+-- 2. /internal/audit 参数矩阵（找它到底要什么）--
+  GET /internal/audit?id=1                              -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?id=0                              -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?id=                               -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?limit=10                          -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?limit=1000                        -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?offset=0                          -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?vin=CV6FF52FEE9EDDD86             -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?vin=*                             -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?campaign=c1                       -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?campaignId=c1                     -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?record=1                          -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?seq=1                             -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?action=sign                       -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?event=sign                        -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?user=admin                        -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?type=all                          -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?all=1                             -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?format=json                       -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?raw=1                             -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?tail=10                           -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?since=0                           -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?from=0&to=9999999999              -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?q=sign                            -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?q=*                               -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?limit=-1                          -> 404  len=   22 b'{"error":"not found"}\n'
+  GET /internal/audit?page=1&size=100                   -> 404  len=   22 b'{"error":"not found"}\n'
+
+-- 3. /internal/audit POST body 矩阵 --
+  POST /internal/audit b'{}'                                        -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'{"id":"1"}'                                -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'{"vin":"CV6FF52FEE9EDDD86"}'               -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'{"limit":100}'                             -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'{"action":"read"}'                         -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'{"query":"all"}'                           -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'{"event":"sign"}'                          -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'{"campaign":"c1"}'                         -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'{"since":0}'                               -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'{"filter":{}}'                             -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'[]'                                        -> 404  len=   22 b'{"error":"not found"}\n'
+  POST /internal/audit b'null'                                      -> 404  len=   22 b'{"error":"not found"}\n'
+
+-- 4. /internal/audit 认证头矩阵 --
+  hdr {'X-Forwarded-For': '127.0.0.1'}               -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'X-Real-IP': '127.0.0.1'}                     -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'X-Internal': 'true'}                         -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'X-Internal-Request': '1'}                    -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'Authorization': 'Bearer admin'}              -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'Authorization': 'Basic YWRtaW46YWRtaW4='}    -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'X-Api-Key': 'admin'}                         -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'X-Admin': '1'}                               -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'X-VIN': 'CV6FF52FEE9EDDD86'}                 -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'X-TSP-Role': 'admin'}                        -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'X-Original-URL': '/internal/audit'}          -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'X-Rewrite-URL': '/internal/audit'}           -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'Host': 'localhost'}                          -> 404  len=   22 b'{"error":"not found"}\n'
+  hdr {'Host': 'internal'}                           -> 404  len=   22 b'{"error":"not found"}\n'
+
+-- 5. /internal/<word> 全量枚举（wave2 全部词）--
+  words=1169
+  HIT  /internal/audit                                        -> 404  len=   22  0.08s B-JSON404 b'{"error":"not found"}\n'
+  ... 300/1169 hits=1
+  HIT  /internal/tbox/ecu                                     -> EXC  len=   14  3.01s OTHER b'ConnectTimeout'
+  ... 600/1169 hits=2
+  HIT  /internal/vehicle/ota                                  -> EXC  len=   14  3.01s OTHER b'ConnectTimeout'
+  ... 900/1169 hits=3
+  internal-word sweep done: hits=3/1169
+
+[*] wrote 03_EVIDENCE/tsp/0304_internal_deep.json
+[done] 2026-11-14T09:38:56+0800

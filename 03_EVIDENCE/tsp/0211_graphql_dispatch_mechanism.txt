@@ -1,0 +1,14 @@
+=== 判定派发机制：是 GraphQL 解析，还是 query 文本子串匹配？ ===
+  {"query":"vehicleDiagnostics","variables":{"vin"}}   200 DISPATCHED
+        b'{"data":{"vehicleDiagnostics":{"campaignId":"CAMP-243892C376D4CB2D5F826953","diagnosticEndpoint":"https://tbox:8443","firmwareCredential":"5e7f07b4a81153ecd5868cc02557f823","firmwareDownload":"/api/v1'
+  {"query":"xx vehicleDiagnostics yy","variables":{"vin"}} 200 DISPATCHED
+        b'{"data":{"vehicleDiagnostics":{"campaignId":"CAMP-243892C376D4CB2D5F826953","diagnosticEndpoint":"https://tbox:8443","firmwareCredential":"5e7f07b4a81153ecd5868cc02557f823","firmwareDownload":"/api/v1'
+  {"query":"VEHICLEDIAGNOSTICS","variables":{"vin"}}   200 FALLBACK
+  {"query":"vehicleDiagnostics"}  (no variables)       200 FALLBACK
+  {"query":"vehicleDiagnostics","variables":{}}        200 FALLBACK
+  {"query":"vehicleDiagnostics","variables":{"vin":"wrong"}} 200 FALLBACK
+  {"query":"","variables":{"vin":VIN}}                 200 FALLBACK
+  {"variables":{"vin":VIN}}                            200 FALLBACK
+  {"query":"vehicleDiagnostics","vin":VIN}             200 FALLBACK
+
+=== 结论判定 ===

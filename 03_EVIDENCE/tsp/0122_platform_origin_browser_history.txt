@@ -1,0 +1,691 @@
+# found 3 History DB(s)
+#   C:\Users\19678\AppData\Local\Google\Chrome\User Data\Default\History
+#   C:\Users\19678\AppData\Local\Google\Chrome\User Data\Profile 1\History
+#   C:\Users\19678\AppData\Local\Microsoft\Edge\User Data\Default\History
+
+==============================================================================
+DB: C:\Users\19678\AppData\Local\Google\Chrome\User Data\Default\History
+==============================================================================
+  downloads rows: 0
+
+==============================================================================
+DB: C:\Users\19678\AppData\Local\Google\Chrome\User Data\Profile 1\History
+==============================================================================
+  downloads rows: 500
+    [DL] id=2261 path='D:\\下载文件\\cybercar-competition-ed3e7d452581978ccae13421-usr_b2ad80d021e26b5fb4b02b8619302912.ovpn'
+         tab_url='https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#vehicle-range' tab_referrer='https://175.27.210.153:9989/competitions.html?next=%2F'
+         site_url='' referrer='https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421' mime='application/x-openvpn-profile'
+    [DL] id=2255 path='D:\\下载文件\\reqable-app-android-arm64.apk'
+         tab_url='https://app.reqable.com/download?platform=android&arch=arm64&ext=apk&locale=zh-CN' tab_referrer=''
+         site_url='' referrer='' mime='application/vnd.android.package-archive'
+    [DL] id=2197 path='D:\\下载文件\\lawful_ghost.zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A05%3A39&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2196 path='D:\\下载文件\\contact_twin.zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A05%3A39&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2195 path='D:\\下载文件\\proof_of_rest.zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A05%3A39&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2194 path='D:\\下载文件\\eclipse_loop (1).zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A05%3A39&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2193 path='D:\\下载文件\\eclipse_loop.zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A05%3A39&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2192 path='D:\\下载文件\\proof_of_rest.zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A05%3A39&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2191 path='D:\\下载文件\\eclipse_loop.zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A05%3A39&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2190 path='D:\\下载文件\\Ghost-in-the-Actuator.zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A03%3A33&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2189 path='D:\\下载文件\\paper_moon.zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A03%3A33&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2188 path='D:\\下载文件\\kinematic-v2.zip'
+         tab_url='http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A03%3A33&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail' tab_referrer=''
+         site_url='' referrer='http://172.30.100.251/swAttack/' mime='application/x-zip-compressed'
+    [DL] id=2175 path='D:\\下载文件\\wp模版 (1).zip'
+         tab_url='https://bgnq771z4c.pcgx.play.ctfplus.cn/#/dashboard/article' tab_referrer='https://172.30.100.248/'
+         site_url='' referrer='' mime='application/x-zip-compressed'
+    [DL] id=2174 path='D:\\下载文件\\wp模版.zip'
+         tab_url='https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/2' tab_referrer='https://172.30.100.248/'
+         site_url='' referrer='' mime='application/x-zip-compressed'
+    [DL] id=2173 path='D:\\下载文件\\observatory-replay.json'
+         tab_url='http://4313-7b926313-04b2-443f-9dff-207cd98ee72e.pcgx.challenge.ctfplus.cn/' tab_referrer=''
+         site_url='' referrer='http://4313-7b926313-04b2-443f-9dff-207cd98ee72e.pcgx.challenge.ctfplus.cn/' mime='application/json'
+    [DL] id=2172 path='D:\\下载文件\\drift-samples.zip'
+         tab_url='https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/10' tab_referrer='https://172.30.100.248/'
+         site_url='' referrer='' mime='application/x-zip-compressed'
+    [DL] id=2170 path='D:\\下载文件\\ffc390cf714048ae8c2a9850dedaba43.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/ffc390cf714048ae8c2a9850dedaba43.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2169 path='D:\\下载文件\\450c89db9142d5f4761522b2c0cabe0c.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/450c89db9142d5f4761522b2c0cabe0c.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2168 path='D:\\下载文件\\cd9f42d7252de3dc58b1313b2425bab3.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/cd9f42d7252de3dc58b1313b2425bab3.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2167 path='D:\\下载文件\\f551898d60f6cb250e7991c7370275fd.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/f551898d60f6cb250e7991c7370275fd.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2166 path='D:\\下载文件\\3f98c0bad6092a4c9ab89f8a2b9b2a86.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/3f98c0bad6092a4c9ab89f8a2b9b2a86.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2165 path='D:\\下载文件\\attachment.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/064414e7017cf54b009464569dc418a0.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2164 path='D:\\下载文件\\d5cb5a800d8959b1c8d0748ee16f3c41.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/d5cb5a800d8959b1c8d0748ee16f3c41.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2163 path='D:\\下载文件\\chronos_vault_handout.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/0f592521d400d7142497cf822ca126f4.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2162 path='D:\\下载文件\\CS.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/f7b475a77862b3725d6fce7fbd2ef52e.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2161 path='D:\\下载文件\\42dcb84f95209728964c4695d530f73c.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/42dcb84f95209728964c4695d530f73c.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2160 path='D:\\下载文件\\Jammed.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/57273be9deebb1126d7b670e1c67bc5a.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2159 path='D:\\下载文件\\千千的咲.zip'
+         tab_url='https://pro-resource.dasctf.com/resource/oss/5480c1a54f89fc08a90ed54df8352d09.zip' tab_referrer='https://ycb-bk.dasctf.com/1750/competePage/3241'
+         site_url='' referrer='https://ycb-bk.dasctf.com/1750/competePage/3241' mime='application/x-zip-compressed'
+    [DL] id=2135 path='D:\\下载文件\\onion.zip'
+         tab_url='https://shuxinbei.clsadp.com:8000/#/event/topic/8/ctf' tab_referrer='https://www.bing.com/'
+         site_url='' referrer='https://shuxinbei.clsadp.com:8000/' mime='application/x-zip-compressed'
+    [DL] id=2124 path='D:\\下载文件\\openvpn-connect-3.9.0.5008_signed.msi'
+         tab_url='https://113.44.91.36/vpn' tab_referrer='https://113.44.91.36/vpn'
+         site_url='' referrer='' mime='application/octet-stream'
+    [DL] id=2069 path='D:\\下载文件\\nssctf-agent-arena.zip'
+         tab_url='https://files.nssctf.cn/ad67234dae4d4c85beb85a7aebf2edda.zip?response-content-disposition=attachment;filename=nssctf-agent-arena.zip' tab_referrer='https://www.nssctf.cn/'
+         site_url='' referrer='https://www.nssctf.cn/' mime='application/x-zip-compressed'
+    [DL] id=2064 path='D:\\下载文件\\openvpn-connect-3.9.0.5008_signed.msi'
+         tab_url='https://openvpn.net/downloads/openvpn-connect-v3-windows.msi' tab_referrer='https://openvpn.net/connect-docs/connect-for-windows.html'
+         site_url='' referrer='https://openvpn.net/' mime='application/x-msi'
+    [DL] id=2063 path='D:\\下载文件\\OpenVPN-2.7.7-I001-x86.msi'
+         tab_url='https://openvpn.net/community/' tab_referrer='https://www.bing.com/'
+         site_url='' referrer='https://openvpn.net/' mime='application/x-www-form-urlencoded'
+    [DL] id=2062 path='D:\\下载文件\\OpenVPN-2.7.7-I001-x86.msi'
+         tab_url='https://openvpn.net/community/' tab_referrer='https://www.bing.com/'
+         site_url='' referrer='https://openvpn.net/' mime='application/x-www-form-urlencoded'
+    [DL] id=2061 path='D:\\下载文件\\OpenVPN-2.7.7-I001-x86.msi'
+         tab_url='https://openvpn.net/community/' tab_referrer='https://www.bing.com/'
+         site_url='' referrer='https://openvpn.net/' mime='application/x-www-form-urlencoded'
+    [DL] id=2060 path='D:\\下载文件\\OpenVPN-2.7.7-I001-arm64.msi'
+         tab_url='https://openvpn.net/community/' tab_referrer='https://www.bing.com/'
+         site_url='' referrer='https://openvpn.net/' mime='application/x-www-form-urlencoded'
+    [DL] id=2059 path='D:\\下载文件\\OpenVPN-2.7.7-I001-amd64.msi'
+         tab_url='https://openvpn.net/community/' tab_referrer='https://www.bing.com/'
+         site_url='' referrer='https://openvpn.net/' mime='application/x-www-form-urlencoded'
+    [DL] id=2058 path='D:\\下载文件\\VPN手册.pdf'
+         tab_url='https://wx.mail.qq.com/home/index?sid=zWpsX4zKcFYuSmI3AHVFagAA#/list/1' tab_referrer=''
+         site_url='' referrer='https://wx.mail.qq.com/' mime='application/pdf'
+    [DL] id=2057 path='D:\\下载文件\\HnuSec-2.ovpn'
+         tab_url='https://wx.mail.qq.com/home/index?sid=zWphOYzKcVIuSnBxAHV4UQAA#/read/ZL0006_8ZvND8WM~LIuH2oAr7dxX10' tab_referrer=''
+         site_url='' referrer='https://wx.mail.qq.com/' mime='application/octet-stream'
+    [DL] id=2056 path='D:\\下载文件\\tcache_vault.zip'
+         tab_url='https://psdxs.idss-cn.com:18080/event/0fa44190ae611aae667c0e5a5ee528c0/ctf/bd0a8b23c684746445083dc63e19b608/' tab_referrer='https://wx.mail.qq.com/'
+         site_url='' referrer='' mime='application/x-zip-compressed'
+    [DL] id=2055 path='D:\\下载文件\\附件.rar'
+         tab_url='https://psdxs.idss-cn.com:18080/event/0fa44190ae611aae667c0e5a5ee528c0/ctf/bd0a8b23c684746445083dc63e19b608/' tab_referrer='https://wx.mail.qq.com/'
+         site_url='' referrer='' mime='application/x-compressed'
+    [DL] id=2054 path='D:\\下载文件\\附件.rar'
+         tab_url='https://psdxs.idss-cn.com:18080/event/0fa44190ae611aae667c0e5a5ee528c0/ctf/bd0a8b23c684746445083dc63e19b608/' tab_referrer='https://wx.mail.qq.com/'
+         site_url='' referrer='' mime='application/x-compressed'
+    [DL] id=2053 path='D:\\下载文件\\附件.rar'
+         tab_url='https://psdxs.idss-cn.com:18080/event/0fa44190ae611aae667c0e5a5ee528c0/ctf/bd0a8b23c684746445083dc63e19b608/' tab_referrer='https://wx.mail.qq.com/'
+         site_url='' referrer='' mime='application/x-compressed'
+    [DL] id=2052 path='D:\\下载文件\\guarded_echo.zip'
+         tab_url='https://psdxs.idss-cn.com:18080/event/0fa44190ae611aae667c0e5a5ee528c0/ctf/bd0a8b23c684746445083dc63e19b608/' tab_referrer='https://wx.mail.qq.com/'
+         site_url='' referrer='' mime='application/x-zip-compressed'
+    [DL] id=2051 path='D:\\下载文件\\附件 (2).rar'
+         tab_url='https://psdxs.idss-cn.com:18080/event/0fa44190ae611aae667c0e5a5ee528c0/ctf/bd0a8b23c684746445083dc63e19b608/' tab_referrer='https://wx.mail.qq.com/'
+         site_url='' referrer='' mime='application/x-compressed'
+    [DL] id=2050 path='D:\\下载文件\\附件 (1).rar'
+         tab_url='https://psdxs.idss-cn.com:18080/event/0fa44190ae611aae667c0e5a5ee528c0/ctf/bd0a8b23c684746445083dc63e19b608/' tab_referrer='https://wx.mail.qq.com/'
+         site_url='' referrer='' mime='application/x-compressed'
+    [DL] id=2049 path='D:\\下载文件\\附件.rar'
+         tab_url='https://psdxs.idss-cn.com:18080/event/0fa44190ae611aae667c0e5a5ee528c0/ctf/bd0a8b23c684746445083dc63e19b608/' tab_referrer='https://wx.mail.qq.com/'
+         site_url='' referrer='' mime='application/x-compressed'
+    [DL] id=2025 path='D:\\下载文件\\WIN_SSLVPNClient_setup.exe'
+         tab_url='https://153.0.128.116:64443/' tab_referrer=''
+         site_url='' referrer='https://153.0.128.116:64443/' mime='application/x-msdownload'
+    [DL] id=2004 path='D:\\下载文件\\api_doc.md'
+         tab_url='https://gcsis.dasctf.com/1629/competePlayerConsole/3075/doc' tab_referrer='https://gcsis.dasctf.com/1629/stageDetail'
+         site_url='' referrer='https://gcsis.dasctf.com/1629/competePlayerConsole/3075/doc' mime='text/markdown'
+    [DL] id=2001 path='D:\\下载文件\\usage_data_2026-07-24_2026-07-24.zip'
+         tab_url='https://platform.deepseek.com/usage' tab_referrer=''
+         site_url='' referrer='' mime='application/x-zip-compressed'
+    [DL] id=1829 path='D:\\下载文件\\reqable-app-windows-x86_64.exe'
+         tab_url='https://app.reqable.com/download?platform=windows&arch=x86_64&ext=exe&locale=zh-CN' tab_referrer=''
+         site_url='' referrer='' mime='application/x-msdownload'
+    [DL] id=1752 path='D:\\下载文件\\crypto_orbital-strike.tar.gz'
+         tab_url='https://sekaictf-2026-files.storage.googleapis.com/uploads/a8574e4dd27024522c5ae0aef764a7d6cde0765273f1c97d0da39d5089d3477e/crypto_orbital-strike.tar.gz' tab_referrer=''
+         site_url='' referrer='' mime='application/gzip'
+    [DL] id=1751 path='D:\\下载文件\\misc_deadgame2.tar.gz'
+         tab_url='https://sekaictf-2026-files.storage.googleapis.com/uploads/51e672e2df96a07325c84ef609e197f4f104c5cc607c7e396f5b26b3f5c9e637/misc_deadgame2.tar.gz' tab_referrer=''
+         site_url='' referrer='' mime='application/gzip'
+    [DL] id=1750 path='D:\\下载文件\\pwn_ppp.tar.gz'
+         tab_url='https://sekaictf-2026-files.storage.googleapis.com/uploads/6b1b34827cff01538866cece9100bbbcad4c887127c0460a945ff43a69b9c384/pwn_ppp.tar.gz' tab_referrer=''
+         site_url='' referrer='' mime='application/gzip'
+    [DL] id=1749 path='D:\\下载文件\\rev_untitled-encore.tar.gz'
+         tab_url='https://sekaictf-2026-files.storage.googleapis.com/uploads/4b564f52c758adcb57916a926ff3125f960a61bb9eb8119a9e279e6bcd55bd40/rev_untitled-encore.tar.gz' tab_referrer=''
+         site_url='' referrer='' mime='application/gzip'
+    [DL] id=1625 path='D:\\下载文件\\babel_furnace.zip'
+         tab_url='https://adworld.xctf.org.cn/saas/contest/web/contest/flag/5f1c2dd1c76632095d8cdd1b93924435/ContestPage' tab_referrer='https://adworld.xctf.org.cn/competitions-hall/competitions/security-detail/019e813df3c4763faf517333634a5a35'
+         site_url='' referrer='https://adworld.xctf.org.cn/saas/contest/web/contest/flag/5f1c2dd1c76632095d8cdd1b93924435/ContestPage' mime='application/x-zip-compressed'
+    [DL] id=1602 path='D:\\下载文件\\北京理工大学BITs2Net战队+京麒CTF+2026+Writeup.pdf'
+         tab_url='https://pan.baidu.com/s/1R0T646NqkwxxAvTNkiZjkA?pwd=qk1q' tab_referrer='https://pan.baidu.com/share/init?surl=R0T646NqkwxxAvTNkiZjkA&pwd=qk1q'
+         site_url='' referrer='https://pan.baidu.com/' mime='application/pdf'
+    [DLC] id=2257 idx=0 url='data:image/octet-stream;base64,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'
+    [DLC] id=2255 idx=0 url='https://app.reqable.com/download?platform=android&arch=arm64&ext=apk&locale=zh-CN'
+    [DLC] id=2175 idx=0 url='blob:https://bgnq771z4c.pcgx.play.ctfplus.cn/e602c073-0f9e-4764-a207-68b8a7ca0d1f'
+    [DLC] id=2174 idx=0 url='blob:https://bgnq771z4c.pcgx.play.ctfplus.cn/f696390b-794f-415b-b30e-fd51a0cf1804'
+    [DLC] id=2173 idx=0 url='http://4313-7b926313-04b2-443f-9dff-207cd98ee72e.pcgx.challenge.ctfplus.cn/api/replay'
+    [DLC] id=2172 idx=0 url='blob:https://bgnq771z4c.pcgx.play.ctfplus.cn/9292edf2-3fec-497e-b3a8-7a573ef4af02'
+    [DLC] id=2170 idx=0 url='https://pro-resource.dasctf.com/resource/oss/ffc390cf714048ae8c2a9850dedaba43.zip'
+    [DLC] id=2169 idx=0 url='https://pro-resource.dasctf.com/resource/oss/450c89db9142d5f4761522b2c0cabe0c.zip'
+    [DLC] id=2168 idx=0 url='https://pro-resource.dasctf.com/resource/oss/cd9f42d7252de3dc58b1313b2425bab3.zip'
+    [DLC] id=2167 idx=0 url='https://pro-resource.dasctf.com/resource/oss/f551898d60f6cb250e7991c7370275fd.zip'
+    [DLC] id=2166 idx=0 url='https://pro-resource.dasctf.com/resource/oss/3f98c0bad6092a4c9ab89f8a2b9b2a86.zip'
+    [DLC] id=2165 idx=0 url='https://pro-resource.dasctf.com/resource/oss/064414e7017cf54b009464569dc418a0.zip'
+    [DLC] id=2164 idx=0 url='https://pro-resource.dasctf.com/resource/oss/d5cb5a800d8959b1c8d0748ee16f3c41.zip'
+    [DLC] id=2163 idx=0 url='https://pro-resource.dasctf.com/resource/oss/0f592521d400d7142497cf822ca126f4.zip'
+    [DLC] id=2162 idx=0 url='https://pro-resource.dasctf.com/resource/oss/f7b475a77862b3725d6fce7fbd2ef52e.zip'
+    [DLC] id=2161 idx=0 url='https://pro-resource.dasctf.com/resource/oss/42dcb84f95209728964c4695d530f73c.zip'
+    [DLC] id=2160 idx=0 url='https://pro-resource.dasctf.com/resource/oss/57273be9deebb1126d7b670e1c67bc5a.zip'
+    [DLC] id=2159 idx=0 url='https://pro-resource.dasctf.com/resource/oss/5480c1a54f89fc08a90ed54df8352d09.zip'
+    [DLC] id=2135 idx=0 url='https://shuxinbei.clsadp.com:8000/media/env/ctf/onion.zip'
+    [DLC] id=2124 idx=0 url='https://zy-public.obs.cn-east-3.myhuaweicloud.com/openvpn-connect-3.9.0.5008_signed.msi'
+    [DLC] id=2120 idx=0 url='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4sAAAXuCAYAAADC+r2wAAAQAElEQVR4AeydB8BP1RvHn0tGUqGEUgklpZIGmtpKSmlIw8jeM3tnlBUyEjJCg2gP/0rLyEihpDIaRrJHtv/5HO95u+91f+v12k953nvvWffc71nPOueXbp/+pwgoAoqAIqAIKAKKgCKgCCgCioAioAgEEEgn+t9xhoB+jiKgCCgCioAioAgoAoqAIqAIKAIHj4AKiwePoZagCBxaBLR0RUARUAQUAUVAEVAEFAFF4AggoMLiEQBdX6kIKAInNgL69YqAIqAIKAKKgCKgCBwLCKiweCy0ktZREVAEFAFF4GhGQOumCCgCioAioAgclwiosHhcNqt+lCKgCCgCioAioAikHgHNqQgoAoqAIgACKiyCgpIioAgoAoqAIqAIKAKKwPGLgH6ZIqAIpAoBFRZTBZtmUgQUAUVAEVAEFAFFQBFQBBSBI4WAvvfwIKDC4uHBWd+iCCgCioAioAgoAoqAIqAIKAKKwDGFwGEUFo8pXLSyioAioAgoAoqAIqAIKAKKgCKgCJzQCKiweEI3/0F+vGZXBBQBRUARUAQUAUVAEVAEFIHjFgEVFo/bptUPUwQSR0BzKAKKgCKgCCgCioAioAgoAg4BFRYdEnpVBBQBReD4Q0C/SBFQBBQBRUARUAQUgVQjoMJiqqHTjIqAIqAIKAKKwOFGQN+nCCgCioAioAgcPgRUWDx8WOubFAFFQBFQBBQBRUARSImAPikCioAicBQjoMLiUdw4WjVFQBFQBBQBRUARUAQUgWMLAa2tInA8IaDC4vHUmvotioAioAgoAoqAIqAIKAKKgCKQlgic0GWpsHhCN79+vCKgCCgCioAioAgoAoqAIqAIKALhCByfwmL4t2qoIqAIKAKKgCKgCCgCioAioAgoAopAnAiosBgnUJrsyCKgb1cEFAFFQBFQBBQBRUARUAQUgcOLgAqLhxdvfZsioAjsR0D/KgKKgCKgCCgCioAioAgc5QiosHiUN5BWTxFQBBSBYwMBraUioAgoAoqAIqAIHG8IqLB4vLWofo8ioAgoAoqAIpAWCGgZioAioAgoAic8AiosnvBdQAFQBBQBRUARUAQUgRMBAf1GRUARUAQSRUCFxUQR0/SKgCKgCCgCioAioAgoAorAkUdAa6AIHHIEVFg85BDrCxQBRUARUAQUAUVAEVAEFAFFQBGIhcDRF6/C4tHXJlojRUARUAQUAUVAEVAEFAFFQBFQBI44AiosHmQTaHZFQBFQBBQBRUARUAQUAUVAEVAEjkcEVFg8HltVv+lgENC8ioAioAgoAoqAIqAIKAKKgCJgEFBh0YCg/xQBReB4RkC/TRFQBBQBRUARUAQUAUUgNQiosJga1DSPIqAIKAKKwJFDQN+sCCgCioAioAgoAocFARUWDwvM+hJFQBFQBBQBRUARiISAhisCioAioAgcnQiosHh0tovWShFQBBQBRUARUAQUgWMVAa23IqAIHCcIqLB4nDSkfoYioAgoAoqAIqAIKAKKgCJwaBDQUk9UBFRYPFFbXr9bEVAEFAFFQBFQBBQBRUARUAROTATi/GoVFuMESpMpAoqAIqAIKAKKgCKgCCgCioAicCIhoMLisdPaWlNFQBFQBBQBRUARUAQUAUVAEVAEDhsCKiweNqj1RYpAEAF9VgQUAUVAEVAEFAFFQBFQBI5eBFRYPHrbRmumCCgCxxoCWl9FQBFQBBQBRUARUASOIwRUWDyOGlM/RRFQBBQBRSBtEdDSFAFFQBFQBBSBExkBFRZP5NbXb1cEFAFFQBFQBE4sBPRrFQFFQBFQBBJAQIXFBMDSpIqAIqAIKAKKgCKgCCgCRxMCWhdFQBE4lAiosHgo0dWyFQFFQBFQBBQBRUARUAQUAUUgfgQ05VGFgAqLR1VzaGUUAUVAEVAEFAFFQBFQBBQBRUARODoQSAth8ej4Eq2FIqAIKAKKgCKgCCgCioAioAgoAopAmiFw3AiL33//vTz++OPyzDPPyOeffy579uxJNUg//fSTVK5cWV5++WVZt25dqsuJN+M333wjbdq0kdmzZ8uuXbtCs23fvl169uwpNWrUkOHDh4emiRW4e/dugWKlEzk0KZYsWSIVKlSQ559/XhYvXiz79u07NC9KKhUswbRDhw7St29fOdTv47Xjx4+Xhx56SH7++WceU007d+6M2Bf8hfKN9Hn6xNatW/1Rh/1+w4YNsmXLlrjeS1sc6frGVdGDSMT3de3aVRo0aCD0i1WrVh1EaYlnBeO1a9fKypUrhbZJvIT9OZhb+/TpI8uWLUsxhmhryl69enVcfXV/aan767AcNGjQYZk7qOXGjRvl3Xfflc6dOwv3hCVKYPTCCy/IjBkzDjlGkerWsmVLKVq0qDRr1kz+/PPPSMk0XBFQBBQBRUARCEUgTYRFhKsJEyZIaon8obVLIPCjjz6ScePGWYHqr7/+kvTp0yeQO2XSTz/9VEaNGiUwSDDjKWPT9ony+/XrJ926dZPrr7/eMhVhb0DIe//9960A++WXX4YliRoGs/PYY49J6dKlJRrT2qRJEznvvPOi0v/+97+o7wqL5P0Iuq+//rq0atVK5s+fL57nhSVNs7Bt27ZJvXr1LLMHvj/++GOalR1W0Lfffit16tSRiRMnSvXq1VPNYILVPffcIwULFpQ33ngjouKDvoMgghKhWrVqUq5cOVm/fr2t2qZNm4R+gsBgA0L+/Pvvv9KpUyd57733UggB/qQoXf7++28rcCAY8I2Mc4RTvpV35s2b14637NmzS7FixeTXX3/1FxF6jxBz7bXX2j7w6KOPRvzG0MzHSCBtMXjwYBkwYIA8++yzctJJJx3WmiNglS9fXs4++2xp2LBhqt5N/0Fp1rRpUylQoID4x/7AgQNt2fnz55cffvghVeXHmwlhl3rUrVtXXnzxRdtv4s07b948q2Rj/gkS8wJjJaysWbNmyf333y8dO3aU6dOnhyWJGTZ58mRp3LixXHfddcK6EjNDGidAkH/77bcFgf/rr7+WU089NY3foMUpAoqAIqAIHO8IpImw+M4778jDDz+caiL/wQANcz1p0iRbxM0332yZZvuQij8wsaNHj7Y5Ybbatm0bymjALJOIa5ABCT7DqC0zWnnSB2nq1KlWuCD8ySeflMsuu8wKvAhs8eICQz9lyhTp0qVLRO31m2++KW+99ZZlWG6//faIDD3f/8cff0g0QsigvvESQk3z5s3tu8lz+eWX23oidESi1157TSIxcZQRD51++ulWWCTtP//8YwVtmF+e05qWL18uTzzxhGzYsMEWjbXYz1jbwDj+0JYwwzCWv//+uyBIPfjggwdYBOibVatWlSFDhthSeTeMKQIbQnGhQoWEsYAgGfbNmzdvFsrtaBhhGGIYf3+6BQsWCGUh4OTKlcsKBQgdxYsXt+Mc4RRBCEYU5czevXslT548cskll8i0adNiCn9r1qxJVlogYB6McscCcBT+WbRokaxYscLWjPnxzDPPtPeJ/ok0xwTnGdJFKjtDhgyRoqKG05dQ8JDojjvukBtuuIHbw04oFBkPvJj5i2u8xFyGoBlGeHTQZ8MUHEWNNa5w4cJWkRJNoRKpHswJWCWJp868B4VLaoh52T8+KdNPrC+sM8E+UblyZaEfkpZ5m3k4mMY9f/jhhyRTUgQUAUVAEVAEUiCQJsKiKzFjxoxSsWJFa1XBshKNSEd6lzfea6VKlaxW2fO85Gu2bNlk5syZtogvvvjCak897794z9t/X6pUqZhucghVaJQpDCZj2LBhVsgIMhpYbUjDNRgXfKYMFnvS+wkhFwEPRhvtPILpKaecIryfd7do0eIAIcGfH4Fh5MiRgmBw5513Svv27SO6Wz799NPW8pouXTpZuHChYLkKY5Bc+fny5UvRjuXKlbN4u/h4rwiKWBLBxOWZZzT9WDlhoCMR8RdeeKGtq8sXvMIcO0Yn0hUmD4GHvNSB/hMprQtPlGnCVblKlSryyy+/8BqhX9OmTz31lGANtoFx/kFoat26tRWsseSQDaXBxRdfLFj1eMYyjID36quv8miVBCNGjBD6DgEwuFgzuAd7lATc+wkLA5Zz+h11rV+/vrWkO4aU9ofBPffcc+WKK64QBFPGc+XKlcUJPbjbIgwheJKPewRWvpvv8L8veA9zC26EI2SmhoHG4olwTRnRCNzADwUM9Nxzz0VLbuMQwkkLcW8DE/yDOzy4MD+BVYLZk5PHM8fQt0mXnMncMD8wj5hbYSxxTYSoO+WiaPE8zyrNTj755ESKCE2L0MIYi6QocuEoIlwfcViec845VqEWWnAcgfQ1+jTlMBeSBQt+7ty5uU1BZ5xxhtxyyy02jPeHzeE2MuQPcztzrpsTUOadf/75yUoXFC8hFDEeCzHtGfIqG0TdWGdoLz/hcWMTmD9Yf/1xwXviTTL9pwgoAoqAIqAIpEAgTYVFFtxevXrJ0KFDYxLpSJ+iNkf4AaYS5ppqsDgjOCLU8oxANmbMGCEMwgWPcEcw1zDTfkIT7+KDVxixl156Sb766iuBaWEfH2VgAWCPHQw5GmHSkNafn/1+CD2nnXaaIKT89ttvNrp06dJW8w/zbwN8fzzPs1Yq3Bp5H0xM2bJlUwij7IuEMSTbTTfdlKINEWQTZRQRamCSe/fuTZHWUgWjFolg5GzCpD9YvsA96fGAC8xxkOEJPmMVwYWXzLil0obBNMHnRJgmvhFBGmaSdyCIsF8R5pz33XfffTLSCPTBNiRtJPI8T2699VbrOub6Gf0Qiyx738AEyyNCKf2GZxhrmGyea9asKViEshklCn0BKyDWvuD7ECo/++yzZEGCvY9OsMyaNavt61hzEO4RzBnXuFReeumltqgsWbJYayJpbUACf7AUueT05UQYZ5f2mmuuEQRGV06k6wcffGD3kCI4QeCEi2ik9ITD7JMW4p6wMKK9PW+/MsrzUl5xcSQP1mY8BjwvZbznpXxmfxzpg4TQEmnM+MNJ589L27u+7w+P9575kLFBeuYDFFLcx0v0efbrYd1GaeTygUetWrWshTqSsohw+vzSpUuFOQklBPlvvPFG4Zu5T5QQ/OfMmSP0aZSLrpwyZcoICo+gwoKxjTXw7rvvtq7zjOdgGtw8/d9GnXjGgscY5flwE+OYNQp65ZVXpF27doKnBs9B6tGjx2F3jz7ceBzZ9+nbFQFFQBE49hFIU2ERt0EsOTBjsYh0pE8thCVKlLCWHKwZsQiBJdZ7YAS6d+8uMDJYIWByyAeDTl4E23LlytnDSwjHHY9wRzBTMNN+wlrj4v1XrCFYgpxgipWI98Asghv7+dgHRh5cErEEcu+IwxJwlYUZxPqE4A1DhbaevTHRrDoIYOyRxNqGoImG3ZULk+PaBAHEhSd65fucUINVzOUvUqSItY7BrAUJAatChQouqdx2220SLyOD8Mt3wPyllnLmzJn87nhvEHiwPCDwkwfhgL1dCP0IKAiMtBE4c9AJ+JIuXsJSYWtvWQAAEABJREFUSPsj6MFww/ijPHBtxCE4MIaPPPJIMuONNRoGnz239GXexZU+FuxHxGHtwELpBEvGAPubYMphroPE2HDfSxsH490z/Zl+zDuChBAB0x4MPxTPCHrOugKevAPhNwwL4o5GwgIcHC9hz6RLq/pzMAtCBvMi4wt3zUSVAnhIdOrUyR46Rn/CLTM19eOQKsYaeZkjsYa7fhbpyt5r0kciygND+v2OHTsiWvTYI8m8yhYBxopTVLgrdfErl7D+YYVnDPJulIeMU/r8wdDUqVMlXvxxFWaNYswzd+C9QvvlyJFDUIIS5wjvAZRO1FVJEVAE4kBAkygCJyACaSoswpTiyodWOBaRjvSpxTxTpkyCAIc1KhZhAYn1HsrjpD0YLoQvBC60yGiXyQtDwT1hjrDEEZcowYjBTCBIkJf9lhdddJFghQI3XDBhaIkDI9zgXFrCEEZwOaI+uJIioAStCqQLI8/zBAYIJgJXRc/zkpPBzLFXjQCEAq6JEMwQGvuSJUtad2SEGhjNq6++2haDkMGhJlizSGsDzR9cEhEOObHUPAoWUg6JYc8hz7EIRhQrLMyfnxBAcQPFyuYPD7uHIYynn1AX6o4QzHfxXsKwMCG40W94xrWN7yQNzzDeWCgSPY3Q8zwBT7CAWaQMygNXBGS/kHvVVVdZV2RnPaBfYX1FaMWdL9IhHbQJ/Yl+98knn8hZZ51lrS9Y1YLk9idSB4TfYLx7xtoNk0y6INGnsY4Tfu+999r9sbEUPmHxCCPUlXIiEW3/3Xff2WjaB4YZoZv2toFp9AehA0WRwz7eK3VKoyrYYvgu5laI0y+ZI4igPoQFifTE+4n+zVyI6yThzEulSpXiNm5iLmEfLW1NJpQHCFjcM18Tz3sgxhLhjD8EQ8IgBC9coFF88Ewawlwfi3bFLZP0kQhPAMpEucbcGyldIuHMY+CE8oV8CG28g/k2iHu8zy1bthSHoST4n+d51vMECzzjkTkWYdH1iQSL0+SKgCKgCByXCOhHxUYgTYXFRBgmGCvSx65ieAoEDwSaSJplfzgWkPBS/gvFna2EsVaikYaBhbGBsDCSCmseTDdhjhwzRXwiBOMPI+XyYPHAIsZijiYaiyQMB+55pME1EOaKewgrJvthOHiEZ0e4RHH6JxYdrHsuPHj1PE9gIHB5dXEw/riLwpgghFx55ZUuKu6r53mC0O2YEd5BXXBng+HjfTB4fGc5Y6VFsOQACJg1J8ggwPK9YBT3iyMkhBGG2WR/Htr+aJhEKOKAYATgypUr21MSsbrwTXwbbmdOUHSZsA5//PHH9iAZwnBLw2LLqb2R6kI7YCUmfRiBD0IY+RE82adKOs/zBEsslhxnNQBjBGlccWHCcUclbRjBRFIvhCkEMAQxv4BGuzVq1OiArJ7nCWMEIdKfnp9JQUA4IIMJoH8Qb26tIAxOCBCJEvUMYk6ZfgJ/8OK7UELgDko8QnEsV1TSxUu4hDNvOOzjvSJQxPuOeNJh5UIRBdGefDv5sOQSFiTSE+8nxiv9yIXxbfRz9xzrijWX+QlXd9Iy3rGMJ1IG+SCUMc4yjJKM+TFI9HPP26/0QmFCPHMk+cOIdqf9icPVFWHY33dxuSeOeR6lnT8ueE8/dv3c87zkE5CZ3zkBlzYIYp7IM2sXezypT6KE9wiKJuZW6kE7Mn8lup0g0fdqekVAEVAEFIHjC4F0afk5LEbxMkykI31i7/8vNZY2GFSY2FgEA/5fzvA7mE4ETIQ2R36rDSdDunB3PZhFl0NAEO74DiyNWLs4PRMhun///vL4448LFkOEARi9Cy64ILzivlCsRzAXuMjOnTvXxiCQ4doaJLCzCcwfmBEYG/bWmUfragtjxr0jvt+1F+6WTjMOU+m3sHKCIHVAQIFJYc+P53nC92K1RICkTKwJCOfsz6R9KBsXMwTWg8GVsiG+CSzR7GOFw2pGGxOXGkI447toe1yAKYN7FAZ8m+ftZ1YJ9xNCCoI/OBGOgEnbwsRh9SLMEXXFuooQhOsqwqCLQ+iGKcViiesxfRVCuUEa8lIPwoKEOxpEOH2M9NEInKiDE948z7PWaIRCGFAUAuTHLQ+hvlGjRvanIVB6uDwoMiIJB8uWLRP6KmWkRilBvngIocUJGgiJ9EV+noa8CAHHgisqyhvnyRDrynzC2KFfQrQF3wrRNoRB/nkNBRjxjlBK4XJJP3VhiVwZd8xbKEbIR/nsd6Wf8JwI0afxqgAD8tHf8PxgXPuJuYi0pOFwKOIQVnkOIwRQhGSUYlgWM2fObPfegheEBZ989HX/OCAuSP5+Tv0QyhgnbDNw5VAWCqWgoBntGWUD+SIRc6XnefbQMc/zBA8G12YIv573XxzfgVCMoEi7oKT1vP3x/nwtjRXT8/aH8y30t0jv13BFQBFQBBSBEweBNBUWsRjg+sTiHYtIR/rUQs3PAnAoAUxCLIKJ9r8HJpwDE2BsXDhMAdZKhDZHWL1cPMJCx44d7UEZLp79Hi6ehZrF1U9osF188IpwxDs9zwtGJT/D4CJkwKCw4MPwEck7EDC5dwQGMMC8E8bMuaXiToZra5CcMMnpsfx0gftWrAC80/NS1os6wFjwPqysTjuOOxdufYQ7giFnHx1ChwuDcWcvnHtOvibd0BYI'
+    [DLC] id=2069 idx=0 url='https://files.nssctf.cn/ad67234dae4d4c85beb85a7aebf2edda.zip?response-content-disposition=attachment;filename=nssctf-agent-arena.zip'
+    [DLC] id=2064 idx=0 url='https://openvpn.net/downloads/openvpn-connect-v3-windows.msi'
+    [DLC] id=2064 idx=1 url='https://packages.openvpn.net/connect/v3/openvpn-connect-3.9.0.5008_signed.msi'
+    [DLC] id=2063 idx=0 url='https://swupdate.openvpn.org/community/releases/OpenVPN-2.7.7-I001-x86.msi'
+    [DLC] id=2063 idx=1 url='https://swupdate.openvpn.net/community/releases/OpenVPN-2.7.7-I001-x86.msi'
+    [DLC] id=2062 idx=0 url='https://swupdate.openvpn.org/community/releases/OpenVPN-2.7.7-I001-x86.msi'
+    [DLC] id=2062 idx=1 url='https://swupdate.openvpn.net/community/releases/OpenVPN-2.7.7-I001-x86.msi'
+    [DLC] id=2061 idx=0 url='https://swupdate.openvpn.org/community/releases/OpenVPN-2.7.7-I001-x86.msi'
+    [DLC] id=2061 idx=1 url='https://swupdate.openvpn.net/community/releases/OpenVPN-2.7.7-I001-x86.msi'
+    [DLC] id=2060 idx=0 url='https://swupdate.openvpn.org/community/releases/OpenVPN-2.7.7-I001-arm64.msi'
+    [DLC] id=2060 idx=1 url='https://swupdate.openvpn.net/community/releases/OpenVPN-2.7.7-I001-arm64.msi'
+    [DLC] id=2059 idx=0 url='https://swupdate.openvpn.org/community/releases/OpenVPN-2.7.7-I001-amd64.msi'
+    [DLC] id=2059 idx=1 url='https://swupdate.openvpn.net/community/releases/OpenVPN-2.7.7-I001-amd64.msi'
+    [DLC] id=2058 idx=0 url='https://wx.mail.qq.com/attach/download?mailid=ZL0006_8ZvND8WM~LIuH2oAr7dxX10&fileid=ZF0006_8ZvND8WM~LIuH2oAzdyjO10&name=VPN%E6%89%8B%E5%86%8C.pdf&sid=zWpsX4zKcFYuSmI3AHVFagAA'
+    [DLC] id=2058 idx=1 url='https://wx.mail.qq.com/download/download?target=396B540B-3DB8-4244-996A-8AA2D6FB25B2&fname=VPN%E6%89%8B%E5%86%8C.pdf'
+    [DLC] id=2057 idx=0 url='https://wx.mail.qq.com/attach/download?mailid=ZL0006_8ZvND8WM~LIuH2oAr7dxX10&fileid=ZF0006_8ZvND8WM~LIuH2oAdd~rh10&name=HnuSec-2.ovpn&sid=zWphOYzKcVIuSnBxAHV4UQAA'
+    [DLC] id=2057 idx=1 url='https://wx.mail.qq.com/download/download?target=1922C2EF-6090-433C-B0FB-07570DD88D37&fname=HnuSec-2.ovpn'
+    [DLC] id=2025 idx=0 url='https://153.0.128.116:64443/version/WIN_SSLVPNClient_setup.exe'
+    [DLC] id=2004 idx=0 url='blob:https://gcsis.dasctf.com/d8f697f9-5a6b-42dd-94c0-f7f0d58f68b4'
+    [DLC] id=2001 idx=0 url='blob:https://platform.deepseek.com/5afa302b-e10c-40f0-96a0-25409ac32e9a'
+    [DLC] id=1829 idx=0 url='https://app.reqable.com/download?platform=windows&arch=x86_64&ext=exe&locale=zh-CN'
+    [DLC] id=1829 idx=1 url='https://pkgs.reqable.com/download/reqable-app-windows-x86_64.exe?platform=windows&arch=x86_64&version=3.2.4&ext=exe'
+    [DLC] id=1752 idx=0 url='https://sekaictf-2026-files.storage.googleapis.com/uploads/a8574e4dd27024522c5ae0aef764a7d6cde0765273f1c97d0da39d5089d3477e/crypto_orbital-strike.tar.gz'
+    [DLC] id=1751 idx=0 url='https://sekaictf-2026-files.storage.googleapis.com/uploads/51e672e2df96a07325c84ef609e197f4f104c5cc607c7e396f5b26b3f5c9e637/misc_deadgame2.tar.gz'
+    [DLC] id=1750 idx=0 url='https://sekaictf-2026-files.storage.googleapis.com/uploads/6b1b34827cff01538866cece9100bbbcad4c887127c0460a945ff43a69b9c384/pwn_ppp.tar.gz'
+    [DLC] id=1749 idx=0 url='https://sekaictf-2026-files.storage.googleapis.com/uploads/4b564f52c758adcb57916a926ff3125f960a61bb9eb8119a9e279e6bcd55bd40/rev_untitled-encore.tar.gz'
+    [DLC] id=1625 idx=0 url='https://adworld.xctf.org.cn/ct/upload/other/3e54f3c7fdc5acb50b1c475aa4a90e8d.zip'
+    [DLC] id=1602 idx=1 url='https://bjdd-ct11.baidupcs.com/file/b1e07e2c8o2f8f3d080a8fb5564fc738?bkt=en-713b21d6dbc31398af6788bdbb84aeac3d4b44e82faf675200f3e903f61bd9a426d311f4fe07fab219896d39d2a3f53eea9c6a94081b951c850b7aacc658207d&fid=1969541006-250528-819427588424626&time=1780890047&sign=FDTAXUbGERQlBHSKfWqiu-DCb740ccc5511e5e8fedcff06b081203-9xBTRNzX%2FEZOznOaijkB2oO6KZM%3D&to=433&size=671265&sta_dx=671265&sta_cs=0&sta_ft=pdf&sta_ct=0&sta_mt=0&fm2=MH%2CBaoding%2CAnywhere%2C%2C%E6%B5%B7%E5%8D%97%2Cct&ctime=1780824616&mtime=1780824616&dt3=0&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=671265&vuk=1607735695&iv=2&vl=0&htype=&randtype=&tkbind_id=0&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-0e8b4b01925926087ed8c4008650732f5ec326727250ca5b0a0172412299dd0fc64dafca24cb3ead56a342591f860b781875fb0aa24f7265305a5e1275657320&expires=8h&rt=sh&r=470028957&vbdid=3256074990&fin=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6BITs2Net%E6%88%98%E9%98%9F+%E4%BA%AC%E9%BA%92CTF+2026+Writeup.pdf&fn=%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6BITs2Net%E6%88%98%E9%98%9F+%E4%BA%AC%E9%BA%92CTF+2026+Writeup.pdf&rtype=1&clienttype=0&dp-logid=216988556224795361&dp-callid=0.1&hps=1&tsl=0&csl=0&fsl=-1&csign=rFBQGR0Ix9MlpUv17e2LLnrrysc%3D&so=0&ut=1&uter=4&serv=0&uc=3263798179&ti=a50ef6a4e24b566d2f50b417f662e24b02745a682f6698c7&hflag=30&from_type=1&adg=c_17b669bf6c40e9544688443e61a05cd3&reqlabel=250528_f_74b165385595576cff3afd13cc8c15bd_-1_f29b2b834a92157a2310d12bb9df132f&fpath=%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90%2FBITs2Sys%2F%E6%AF%94%E8%B5%9B%2F%E3%80%902026%E3%80%91%E4%BA%AC%E9%BA%92CTF%E5%88%9D%E8%B5%9B&by=themis&resvsflag=1-0-0-1-1-1&ccn=CN'
+    [DLC] id=1530 idx=0 url='https://platform.cyclens.tech/api/upload/4c6ebec4-79e6-4845-8a33-614d1c495325'
+    [DLC] id=1529 idx=0 url='https://platform.cyclens.tech/api/upload/3ec6c894-0fa0-4402-b627-a8c4e04ae2f0'
+    [DLC] id=1528 idx=0 url='https://platform.cyclens.tech/api/upload/26d27c98-600f-4e19-9132-191994d279a8'
+    [DLC] id=1527 idx=0 url='https://platform.cyclens.tech/api/upload/6fe60318-217f-4422-a29a-c5d5fa82b8c2'
+    [DLC] id=1526 idx=0 url='https://platform.cyclens.tech/api/upload/8ea537e8-b1ca-4f77-a8a5-8cfdbbff40a4'
+    [DLC] id=1525 idx=0 url='https://platform.cyclens.tech/api/upload/6caeb332-95a3-491d-ba40-cef388b27eb4'
+    [DLC] id=1524 idx=0 url='https://platform.cyclens.tech/api/upload/b6da1e77-ca6c-44cb-a585-42666f982fc0'
+    [DLC] id=1523 idx=0 url='https://platform.cyclens.tech/api/upload/abbd8fbb-3837-46da-9259-d1e968128657'
+    [DLC] id=1522 idx=0 url='https://platform.cyclens.tech/api/upload/abbd8fbb-3837-46da-9259-d1e968128657'
+    [DLC] id=1521 idx=0 url='https://platform.cyclens.tech/api/upload/4b22a8c5-75bf-4180-96bd-1cb100859782'
+    [DLC] id=1520 idx=0 url='https://platform.cyclens.tech/api/upload/0ea9cab7-7cf7-4412-abcd-614ad329c6eb'
+    [DLC] id=1519 idx=0 url='https://platform.cyclens.tech/api/upload/70893dcf-7a32-4103-a1af-d059ca0dccfa'
+    [DLC] id=1517 idx=0 url='https://platform.cyclens.tech/api/upload/c7c22568-ba18-438c-a267-fa7f08605a76'
+    [DLC] id=1516 idx=0 url='https://platform.cyclens.tech/api/upload/cc536012-7830-478f-b0a3-91b70129c455'
+    [DLC] id=1315 idx=0 url='https://adworld.xctf.org.cn/cpms/upload/attachment/344adad24f0d40059a93782af96ff992.zip'
+    [DLC] id=1314 idx=0 url='https://adworld.xctf.org.cn/cpms/upload/attachment/a44100394d0246a1a9878dd86eada5e8.zip'
+    [DLC] id=1312 idx=0 url='https://adworld.xctf.org.cn/cpms/upload/attachment/560b8726b2e04ed8b90de3a4537021c3.zip'
+    [DLC] id=1311 idx=0 url='https://adworld.xctf.org.cn/cpms/upload/attachment/1a6621b808034984b50fa454b7207703.zip'
+    [DLC] id=1198 idx=0 url='blob:https://polarisctf.play.ctfplus.cn/b677bd46-1fda-4e9e-b40d-7bc98c060549'
+    [DLC] id=1195 idx=0 url='file:///D:/%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/ctf/polarisctf/Funpyvm/main.pyc'
+    [DLC] id=1192 idx=0 url='blob:https://polarisctf.play.ctfplus.cn/72797d95-2c94-459c-b372-a6a45a51f28c'
+    [DLC] id=1183 idx=0 url='blob:https://polarisctf.play.ctfplus.cn/02f30694-d5bc-4526-8775-dd55ff5632bd'
+    [DLC] id=1182 idx=0 url='blob:https://polarisctf.play.ctfplus.cn/899141d4-30d0-4903-8026-ebb9abdc387d'
+    [DLC] id=1181 idx=0 url='blob:https://polarisctf.play.ctfplus.cn/a2d9e990-2237-4ec4-bdc2-3d7988aeda5b'
+    [DLC] id=1180 idx=0 url='blob:https://polarisctf.play.ctfplus.cn/ddcac119-c0d1-4502-b65c-6b9b51befcc1'
+    [DLC] id=1176 idx=0 url='blob:https://polarisctf.play.ctfplus.cn/4b6e3fa0-abae-4197-a880-a61490673709'
+    [DLC] id=1175 idx=0 url='blob:https://polarisctf.play.ctfplus.cn/922bea9a-4ee2-49f1-b42d-bc678424eba4'
+    [DLC] id=1174 idx=0 url='blob:https://polarisctf.play.ctfplus.cn/f90d8e61-63a7-4f0c-9e63-9ef271b42cf2'
+    [DLC] id=1126 idx=0 url='https://webstatic.ctfile.com/assets/download/url94.ctfile.com/947873/HMCL-3.9.1.zip'
+    [DLC] id=1098 idx=0 url='blob:https://unictf.play.ctfplus.cn/ac2da641-4eca-42e1-bc8d-a36118bb5444'
+    [DLC] id=1097 idx=0 url='blob:https://unictf.play.ctfplus.cn/504f08bd-a97e-47e2-8d23-2c1789982de7'
+    [DLC] id=1096 idx=0 url='https://ctf.junior.nu1l.com/api/competitions/111041109647452199/challenges/112363684512163888/attachments:download?token=31abee0f8cb14db9a041a545c60ced6f'
+    [DLC] id=1095 idx=0 url='https://ctf.junior.nu1l.com/api/competitions/111041109647452199/challenges/112363682683447344/attachments:download?token=31abee0f8cb14db9a041a545c60ced6f'
+    [DLC] id=1094 idx=0 url='https://ctf.junior.nu1l.com/api/competitions/111041109647452199/challenges/112125282353178672/attachments:download?token=31abee0f8cb14db9a041a545c60ced6f'
+    [DLC] id=1093 idx=0 url='https://ctf.junior.nu1l.com/api/competitions/111041109647452199/challenges/112125283192039472/attachments:download?token=31abee0f8cb14db9a041a545c60ced6f'
+    [DLC] id=1092 idx=0 url='https://ctf.junior.nu1l.com/api/competitions/111041109647452199/challenges/112125279786264624/attachments:download?token=31abee0f8cb14db9a041a545c60ced6f'
+    [DLC] id=1072 idx=0 url='https://github.com/CTF-Archives/2025-CCB-CISCN-Quals/releases/download/attachments/attachments.zip'
+    [DLC] id=1021 idx=0 url='blob:https://ctf.xidian.edu.cn/a378992d-9d89-44a1-974a-6065876c20ff'
+    [DLC] id=1020 idx=0 url='blob:https://ctf.xidian.edu.cn/c18789af-dedb-43a3-b15c-4288cd475b0a'
+    [DLC] id=1019 idx=0 url='blob:https://ctf.xidian.edu.cn/6d21713b-ac33-45a4-bd0e-e2839ea4809d'
+    [DLC] id=1018 idx=0 url='blob:https://ctf.xidian.edu.cn/d92d7694-fb22-45b5-9157-4a9d6256be0b'
+    [DLC] id=1017 idx=0 url='blob:https://ctf.xidian.edu.cn/92cfbad5-27d8-43e1-a6ac-ffdf9a4ecbd2'
+    [DLC] id=1010 idx=0 url='blob:https://geek-syclover.play.ctfplus.cn/85af1e62-e6a9-4d75-a397-f19775ae1577'
+    [DLC] id=933 idx=0 url='https://challenge.xctf.org.cn/cpms/upload/attachment/cc625d73f48e48eeab3850afb99b43ec.zip'
+    [DLC] id=932 idx=0 url='https://challenge.xctf.org.cn/cpms/upload/attachment/f5773e12efa14a15897bd81d44e931d1.zip'
+    [DLC] id=930 idx=0 url='https://challenge.xctf.org.cn/cpms/upload/attachment/78ea2a6491034586962f74ba35726a27.zip'
+    [DLC] id=928 idx=0 url='https://github.com/jakespringer/angr_ctf/archive/refs/heads/master.zip'
+    [DLC] id=928 idx=1 url='https://codeload.github.com/jakespringer/angr_ctf/zip/refs/heads/master'
+    [DLC] id=918 idx=0 url='http://angr.oregonctf.org/download/'
+    [DLC] id=917 idx=0 url='https://files.nssctf.cn/8357a6bf66964ec4bbf12a00b4aa87e5?response-content-disposition=attachment;filename=rand0m.zip'
+    [DLC] id=860 idx=0 url='https://pro-resource.dasctf.com/resource/oss/0dddf8b01bccb5c373d317249d01b458.zip'
+    [DLC] id=858 idx=0 url='https://pro-resource.dasctf.com/resource/oss/0dddf8b01bccb5c373d317249d01b458.zip'
+    [DLC] id=857 idx=0 url='https://pro-resource.dasctf.com/resource/oss/2b13fe2e3faaae4e618e00ac0d29dcec.zip'
+    [DLC] id=856 idx=0 url='https://pro-resource.dasctf.com/resource/oss/bd0942539200540f0b6c8e48df9e3065.zip'
+    [DLC] id=855 idx=0 url='https://ycb2025.dasctf.com/2025%E7%BE%8A%E5%9F%8E%E6%9D%AF%E5%88%9D%E8%B5%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.pdf'
+    [DLC] id=854 idx=0 url='https://pro-resource.dasctf.com/resource/oss/9a25567db24384ae94d40bf325c53792.zip'
+    [DLC] id=853 idx=0 url='https://pro-resource.dasctf.com/resource/oss/b8a48270cb43b3470f9e245e1de6c804.zip'
+    [DLC] id=852 idx=0 url='https://downloads.godotengine.org/?version=4.5&flavor=stable&slug=win64.exe.zip&platform=windows.64'
+    [DLC] id=842 idx=0 url='https://github.com/CTF-Archives/2025-WQB-Quals/archive/refs/heads/main.zip'
+    [DLC] id=842 idx=1 url='https://codeload.github.com/CTF-Archives/2025-WQB-Quals/zip/refs/heads/main'
+    [DLC] id=829 idx=0 url='blob:https://ctf.xidian.edu.cn/523fcf02-0cee-4bb6-b57c-07c3e0d3db79'
+    [DLC] id=828 idx=0 url='https://adworld.xctf.org.cn/media/file/task/3ec682370847479397c6956e9de11b9c.exe'
+    [DLC] id=827 idx=0 url='https://adworld.xctf.org.cn/media/file/task/54836ebebad142679354e9ade9189d00.zip'
+    [DLC] id=826 idx=0 url='https://adworld.xctf.org.cn/media/file/task/1b32d70ef9c3498893acbe3bcb9c3cd9.exe'
+    [DLC] id=825 idx=0 url='https://adworld.xctf.org.cn/media/file/task/6bc28458-9b6a-494e-b4b9-3cafa55884c9.zip'
+    [DLC] id=824 idx=0 url='blob:https://www.ctfplus.cn/a59414f5-3f19-4b25-9726-78e7c1e26b32'
+    [DLC] id=819 idx=0 url='https://ctf.show/files/23105c9296cb60e2093cb1f4e38a6269/re3.zip?token=eyJ1c2VyX2lkIjo2NzkyNCwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MTIxOX0.aLrAfg.3iKgNjl0D4-AHMOuk1dY-ctcHdM'
+    [DLC] id=817 idx=0 url='https://ctf.show/files/ad6bc20f10870f4d37c69038aad097bb/flowers.zip?token=eyJ1c2VyX2lkIjo2NzkyNCwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MTIxOH0.aLqumA.Z7VhmUDvP2Tn1IlASbBpXYw2OdM'
+    [DLC] id=816 idx=0 url='blob:https://ctf.xidian.edu.cn/e1b9e55e-3709-4068-8624-2e1262a35101'
+    [DLC] id=814 idx=0 url='https://files.nssctf.cn/2898e23ccb58486a9953319d1bed74d5?response-content-disposition=attachment;filename=CreackMe%26%26FxxMe.zip'
+    [DLC] id=813 idx=0 url='https://files.nssctf.cn/8fe1142d91d74e18a9ce5260781b12ae?response-content-disposition=attachment;filename=ezre.apk'
+    [DLC] id=810 idx=0 url='blob:https://ctf.xidian.edu.cn/53e5d639-0c1a-48e5-bdfa-e48b23b238c9'
+    [DLC] id=809 idx=0 url='blob:https://ctf.xidian.edu.cn/3bbef941-c48e-44f5-b9ae-40622de77fbc'
+    [DLC] id=808 idx=0 url='blob:https://ctf.xidian.edu.cn/9c8327aa-8ffd-4b25-8b70-477ed5c33122'
+    [DLC] id=802 idx=0 url='blob:https://ctf.xidian.edu.cn/c3132043-9779-4ec0-b1ef-3f6c9da1569d'
+    [DLC] id=790 idx=0 url='blob:https://ctf.xidian.edu.cn/f14cd88a-ef47-4c01-9103-88435d905198'
+    [DLC] id=789 idx=0 url='blob:https://ctf.xidian.edu.cn/aa7e038e-c751-47d7-a229-40131157d17c'
+    [DLC] id=788 idx=0 url='blob:https://ctf.xidian.edu.cn/2c2c5dd1-a753-41b1-8aaf-1255bd5dce7a'
+    [DLC] id=785 idx=0 url='blob:https://lilctf.xinshi.fun/efe5c5d2-724b-44c3-b9c1-f1248dea3f05'
+    [DLC] id=783 idx=0 url='blob:https://lilctf.xinshi.fun/0aa0b099-2f42-4c30-a96a-25f434011f71'
+    [DLC] id=780 idx=0 url='blob:https://lilctf.xinshi.fun/ca745e4f-d273-4628-bf3c-2e484b293922'
+    [DLC] id=779 idx=0 url='http://ctf.miaoaixuan.cn/assets/020e27c5e2d523ebc86c0120edabaa4c45270f35ca40f5e83befea4b8638ba8d/Writeup-1-3-20250812-06.45.34Z.pdf'
+    [DLC] id=778 idx=0 url='http://ctf.miaoaixuan.cn/assets/9e88dce5c765e251d09865b21877a43184cb199dedf684a206f0f2238d45dac9/Writeup-1-27-20250812-12.02.43Z.pdf'
+    [DLC] id=770 idx=0 url='blob:https://ctf.xidian.edu.cn/cf97ce5e-600d-46fc-affc-40282455a859'
+    [DLC] id=766 idx=0 url='blob:https://ctf.xidian.edu.cn/a834397c-f799-45bd-a8d0-5245cd984258'
+    [DLC] id=759 idx=0 url='https://files.nssctf.cn/902d4129e346482b97d79ea14dc305a8?response-content-disposition=attachment;filename=ezbyte_patch.zip'
+    [DLC] id=743 idx=0 url='https://files.nssctf.cn/aabe5d3357a24a7a82124f4795bb66e9?response-content-disposition=attachment;filename=snake'
+    [DLC] id=742 idx=0 url='https://files.nssctf.cn/a0467d67643445ab93410cc7fc3960d2?response-content-disposition=attachment;filename=basketball.zip'
+    [DLC] id=741 idx=0 url='file:///D:/%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/ctf/newstar2025/chall.luac'
+    [DLC] id=738 idx=0 url='blob:https://ctf.xidian.edu.cn/eb3c7dd1-471c-4547-ae7c-565e0b767aad'
+    [DLC] id=737 idx=0 url='https://webstatic.ctfile.com/assets/download/url87.ctfile.com/299268/%E5%8D%8A%E5%A6%96.7z'
+    [DLC] id=735 idx=0 url='blob:https://ctf.xidian.edu.cn/e8c5c7b5-2bb0-496e-ab59-d60f33044a57'
+    [DLC] id=734 idx=0 url='https://files.nssctf.cn/288b05ccfead41e3ad219ae8925f55f1?response-content-disposition=attachment;filename=CSGO%E7%9A%84%E9%99%84%E4%BB%B6.zip'
+    [DLC] id=733 idx=0 url='https://files.nssctf.cn/0272149aa1b045dda66ce65a0936ba88?response-content-disposition=attachment;filename=Random_f7f2f65c48a584e18ae15b23f2fbe935.zip'
+    [DLC] id=732 idx=0 url='https://adworld.xctf.org.cn/media/file/task/d23a7e5e3d284873ba43e1235ae07514.7z'
+    [DLC] id=731 idx=0 url='https://adworld.xctf.org.cn/media/file/task/18a51cbc365c488f89c9feee59868ea5.exe'
+    [DLC] id=730 idx=0 url='https://adworld.xctf.org.cn/media/file/task/8b6405c25fe447fa804c6833a0d72808.c'
+    [DLC] id=728 idx=0 url='https://adworld.xctf.org.cn/media/file/task/a0f2af9857614c459dd3b9d9232210df.exe'
+    [DLC] id=727 idx=0 url='https://adworld.xctf.org.cn/media/file/task/428f6e6f75754fca8964d35b16a4b709'
+    [DLC] id=725 idx=0 url='https://files.nssctf.cn/377fc04fa1ce4587881615b9ee4355c3?response-content-disposition=attachment;filename=%E8%B4%9D%E6%96%AF.exe'
+    [DLC] id=724 idx=0 url='https://files.nssctf.cn/bdccb998d2644bea9a5ac1b9605f4628?response-content-disposition=attachment;filename=base64.exe'
+    [DLC] id=723 idx=0 url='blob:https://ctf.xidian.edu.cn/0ff23514-90ed-40e3-9fad-7bb4876b8f2e'
+    [DLC] id=722 idx=0 url='https://files.nssctf.cn/5a80555e216c47aab3b3e5f453f41a2e?response-content-disposition=attachment;filename=easycpp.zip'
+    [DLC] id=721 idx=0 url='https://files.nssctf.cn/9394259e8c6c4758bb464b78bc220c00?response-content-disposition=attachment;filename=easy.exe'
+    [DLC] id=720 idx=0 url='https://files.nssctf.cn/99e8999c534a4644849000058f8af4a9?response-content-disposition=attachment;filename=string'
+    [DLC] id=718 idx=0 url='https://files.nssctf.cn/207227f1bb4649958f53f99ea338a484?response-content-disposition=attachment;filename=simple_RE.zip'
+    [DLC] id=716 idx=0 url='https://files.nssctf.cn/3039c7ae9a1e4848841d73207c95bba7?response-content-disposition=attachment;filename=RC4.exe'
+    [DLC] id=714 idx=0 url='blob:https://ctf.xidian.edu.cn/df006c58-db3b-4791-8c9e-580ea1be33d9'
+    [DLC] id=713 idx=0 url='blob:https://ctf.xidian.edu.cn/d0206d49-d653-45e2-90da-efa9cbecd078'
+    [DLC] id=709 idx=0 url='blob:https://ctf.xidian.edu.cn/7769a339-d128-4ffe-9bd3-6c5869b384e4'
+    [DLC] id=708 idx=0 url='blob:https://ctf.xidian.edu.cn/5e460a8a-78e3-4d9d-b139-62c929e8330c'
+    [DLC] id=705 idx=0 url='blob:https://ctf.xidian.edu.cn/f2815011-e616-400e-b130-19e219de3dcc'
+    [DLC] id=704 idx=0 url='blob:https://ctf.xidian.edu.cn/f58c3194-c10b-4a34-b337-9555507dfe57'
+    [DLC] id=699 idx=0 url='blob:https://ctf.xidian.edu.cn/2d79a6fc-534c-4260-b292-3e7b7abaf49a'
+    [DLC] id=698 idx=0 url='blob:https://ctf.xidian.edu.cn/59290f21-d709-4cfd-b15f-09fe244c82ac'
+    [DLC] id=697 idx=0 url='blob:https://ctf.xidian.edu.cn/6c7967df-7f36-4de8-b7a8-f3ed377bf18d'
+    [DLC] id=696 idx=0 url='blob:https://ctf.xidian.edu.cn/2606ea9c-8fdf-4dbc-af68-8490f84b74aa'
+    [DLC] id=695 idx=0 url='blob:https://ctf.xidian.edu.cn/8cddcb0b-9d20-43ff-af9a-b40978b90364'
+    [DLC] id=694 idx=0 url='blob:https://url87.ctfile.com/1132600f-aca0-4b7e-8ea3-4fccdf272580'
+    [DLC] id=693 idx=0 url='blob:https://ctf.xidian.edu.cn/0915ab82-0d80-45c8-82c6-df723fb35792'
+    [DLC] id=692 idx=0 url='blob:https://url87.ctfile.com/6e568bc3-4ba8-45ef-8a10-46b17e623dd0'
+    [DLC] id=688 idx=0 url='blob:https://ctf.xidian.edu.cn/6c35fd44-ca2f-4548-b923-2821354837d8'
+    [DLC] id=687 idx=0 url='blob:https://ctf.xidian.edu.cn/65be718b-0e4f-4784-b922-ceccbb5cc3ca'
+    [DLC] id=685 idx=0 url='blob:https://ctf.xidian.edu.cn/460c6c38-f0c8-48e5-9885-de05574562a4'
+    [DLC] id=684 idx=0 url='blob:https://ctf.xidian.edu.cn/c89213d6-56a9-4571-9349-1ae37cd2abd2'
+    [DLC] id=682 idx=0 url='https://ctf.bugku.com/attachment/download/file/232.html'
+    [DLC] id=682 idx=1 url='https://ctf.bugku.com/attachment/download/file/232.html'
+    [DLC] id=681 idx=0 url='https://ctf.bugku.com/attachment/download/file/231.html'
+    [DLC] id=681 idx=1 url='https://ctf.bugku.com/attachment/download/file/231.html'
+    [DLC] id=657 idx=0 url='https://2025hnctf.huhstsec.top/assets/6283b69c8ef110d64090826df7bf54f04ad22773c17cdbafc05fe5fd29bb9d6a/justgame.out'
+    [DLC] id=653 idx=0 url='https://2025hnctf.huhstsec.top/assets/9e831c6a858180a0c03b830f01cd102c909bfeb9a1573c3b0c200476b9b93e0d/%E7%8C%9C%E7%8C%9C%E6%88%91%E5%9C%A8%E5%93%AA%E5%84%BF.zip'
+    [DLC] id=652 idx=0 url='https://2025hnctf.huhstsec.top/assets/e1103d44e96403385d75ea6c39cfb9914b20f6f8b3226523c31e5857ec909848/Chasing%20Freedom%201.jpg'
+    [DLC] id=651 idx=0 url='https://2025hnctf.huhstsec.top/assets/abe65ea86da89251b92dea20284e011841af8b431049f9e81702e6b8720248dd/math'
+    [DLC] id=641 idx=0 url='https://files.nssctf.cn/4eb5877b225c4203935924790ac8b26d?response-content-disposition=attachment;filename=flaggg.zip'
+    [DLC] id=640 idx=0 url='https://files.nssctf.cn/2815937e28694d1e93a00d4d715480bd?response-content-disposition=attachment;filename=task.py'
+    [DLC] id=639 idx=0 url='https://files.nssctf.cn/d363cf2d7b1746f79aab4c74b9579d82?response-content-disposition=attachment;filename=task.py'
+    [DLC] id=637 idx=0 url='https://files.nssctf.cn/11dd9ca3c70a42749e339960da369763?response-content-disposition=attachment;filename=challenge.pickle'
+    [DLC] id=636 idx=0 url='https://files.nssctf.cn/18b7e7f02da34bbe9977c6ab50054b5c?response-content-disposition=attachment;filename=Robbie%20Wanna%20Revenge.7z'
+    [DLC] id=635 idx=0 url='https://files.nssctf.cn/c4d8b7c1891e4afc9a587b1a8354833c?response-content-disposition=attachment;filename=%E8%8A%B1.zip'
+    [DLC] id=634 idx=0 url='https://files.nssctf.cn/8ca649e8181745e6a5f6f4fa18122f27?response-content-disposition=attachment;filename=rc4.zip'
+    [DLC] id=633 idx=0 url='https://files.nssctf.cn/bda6fe76371849f3be6af009c50b6715?response-content-disposition=attachment;filename=FeatureExtraction.zip'
+    [DLC] id=602 idx=1 url='https://xafj-cu11.baidupcs.com/file/ab4a2dbcas04a58f1a726dd7d33bfb1a?bkt=en-6f7dc9883530f8c9041335cd70c768ff3fb43fc620b6f0c503159eb3970f3875802f69e83b998754f934c8adec7825b26856dcf3b30ade4c86c356d8c338d2ef&fid=1103776337320-250528-265797412337043&time=1747052559&sign=FDTAXUbGERQlBHSKfWqiu-DCb740ccc5511e5e8fedcff06b081203-JEKROZi%2BtZUP7cri1pZbMBEACVY%3D&to=419&size=757705&sta_dx=757705&sta_cs=0&sta_ft=png&sta_ct=0&sta_mt=0&fm2=MH%2CBaoding%2CAnywhere%2C%2C%E6%B5%B7%E5%8D%97%2Ccnc&ctime=1747044328&mtime=1747044328&dt3=0&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=757705&vuk=1607735695&iv=2&vl=0&htype=&randtype=&tkbind_id=0&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-e886096ea41d6e947d267c46658387de7231bc50a0afcc0f5bcd62ea6cbdb913798c965f20347da6bc13a82d141eafab247074feb2c8f4e5305a5e1275657320&expires=8h&rt=sh&r=868009891&vbdid=3378374152&fin=%E6%BC%AB%E5%AE%BF%E9%AA%84%E7%9B%9B.png&fn=%E6%BC%AB%E5%AE%BF%E9%AA%84%E7%9B%9B.png&rtype=1&clienttype=0&dp-logid=8822559388574229209&dp-callid=0.1&hps=1&tsl=0&csl=0&fsl=-1&csign=rFBQGR0Ix9MlpUv17e2LLnrrysc%3D&so=0&ut=1&uter=4&serv=0&uc=4235021837&ti=068bcab50ae430c7c6fbed5788948a6facde1601caac706a&hflag=30&from_type=1&adg=c_1b56ad52fa95b588de742fdb9b040302&reqlabel=250528_f_0d379c25691f1db02fd2dff786ffd19a_-1_e575750a3c4aa01749b9e79faa454520&fpath=XYCTF%E8%AF%81%E4%B9%A6%2F%E9%9A%8F%E5%BF%83%E6%89%80%E6%AC%B2%E5%88%86%E9%98%9F&by=themis&resvsflag=1-0-0-1-1-1'
+    [DLC] id=576 idx=0 url='https://googledownloads.cn/android/repository/platform-tools-latest-windows.zip'
+    [DLC] id=575 idx=0 url='https://dl.google.com/android/repository/platform-tools-latest-windows.zip'
+    [DLC] id=549 idx=0 url='blob:https://www.qsnctf.com/30e8dfa0-403f-4859-8476-b3128baf313a'
+    [DLC] id=547 idx=0 url='blob:https://tgctf.woooo.tech/f9aba96a-5161-4966-9ea0-1ea56c0c0873'
+    [DLC] id=546 idx=0 url='blob:https://tgctf.woooo.tech/c484c392-c537-4276-8037-55e09b1015d1'
+    [DLC] id=545 idx=0 url='blob:https://tgctf.woooo.tech/575ee693-c884-4db2-9d6e-91a8396423e6'
+    [DLC] id=544 idx=0 url='blob:https://tgctf.woooo.tech/fab7109d-941a-46b3-a9ec-86ac0b1144a5'
+    [DLC] id=543 idx=0 url='blob:https://tgctf.woooo.tech/49bb5a70-5a0e-48be-aabe-8c50d0d37227'
+    [DLC] id=542 idx=0 url='blob:https://tgctf.woooo.tech/3b3d839a-79c6-439e-81b4-29b116086a6b'
+    [DLC] id=541 idx=0 url='blob:https://tgctf.woooo.tech/b3424c85-1ed2-40a8-8941-0871f93e0661'
+    [DLC] id=540 idx=0 url='blob:https://tgctf.woooo.tech/245d75a1-1c10-4a21-befe-fd0b4cbb83e8'
+    [DLC] id=539 idx=0 url='blob:https://www.qsnctf.com/192217cf-637d-4b81-992c-1191bbd76424'
+    [DLC] id=538 idx=0 url='blob:https://www.qsnctf.com/0926d897-7376-4990-bc12-1844310566df'
+    [DLC] id=537 idx=0 url='blob:https://www.qsnctf.com/08a5d6cd-2038-41f0-9ebd-a69af394c8f3'
+    [DLC] id=536 idx=0 url='blob:https://www.qsnctf.com/937339b2-5ae7-49d4-91e6-099873acbf68'
+    [DLC] id=535 idx=0 url='blob:https://www.qsnctf.com/0fc6e0dd-d1ef-4b7e-bd6e-b73e5d5c9cba'
+    [DLC] id=534 idx=0 url='blob:https://www.qsnctf.com/aa6e1bb7-06a7-4624-8b27-78f371648d85'
+    [DLC] id=533 idx=0 url='blob:https://www.qsnctf.com/540988b1-1d77-46e5-87d3-59950fd855ae'
+    [DLC] id=532 idx=0 url='blob:https://www.qsnctf.com/33f6c383-584d-4a2c-8156-2b8fd9fb9b12'
+    [DLC] id=531 idx=0 url='blob:https://www.qsnctf.com/84dc65e9-5d50-4552-a41d-dd2f85188a90'
+    [DLC] id=530 idx=0 url='blob:https://www.qsnctf.com/b09b8b70-45c7-4559-bc88-37eadf22e014'
+    [DLC] id=529 idx=0 url='blob:https://www.qsnctf.com/5c3413b7-d3f0-4336-8373-0e20a089194c'
+    [DLC] id=528 idx=0 url='blob:https://www.qsnctf.com/333d9a95-bd50-4502-9cbf-8af0ca269ba3'
+    [DLC] id=525 idx=0 url='blob:https://tgctf.woooo.tech/56eb4e0d-b703-4a87-8a87-9232a15ab6c6'
+    [DLC] id=514 idx=0 url='blob:https://www.qsnctf.com/181c45c5-280f-46f2-8a2b-8885fba796b1'
+    [DLC] id=513 idx=0 url='blob:https://www.qsnctf.com/b5daedce-c1de-4e72-8f46-9445593a3b13'
+    [DLC] id=511 idx=0 url='blob:https://www.qsnctf.com/a8b1b81e-0455-42b1-890e-769c4c5318aa'
+    [DLC] id=510 idx=0 url='blob:https://www.qsnctf.com/b4e816c2-a1a6-42cd-bd8a-08b2a7a7def5'
+    [DLC] id=509 idx=0 url='blob:https://www.qsnctf.com/8abdef70-8302-430e-b697-fa4c422a4d0d'
+    [DLC] id=508 idx=0 url='blob:https://www.qsnctf.com/26de0f3c-8286-411f-a5d7-9600a3da93da'
+    [DLC] id=507 idx=0 url='blob:https://www.qsnctf.com/aba916cd-6cc3-473f-8fa4-644640fcd54a'
+    [DLC] id=506 idx=0 url='blob:https://www.qsnctf.com/12a3be95-fd38-490e-8b76-450eccc376ee'
+    [DLC] id=505 idx=0 url='blob:https://www.qsnctf.com/62b874d7-55fd-466a-98d4-487c8d18308d'
+    [DLC] id=504 idx=0 url='blob:https://www.qsnctf.com/220fcd8b-55f7-4bde-ba8e-60e330fad31b'
+    [DLC] id=503 idx=0 url='blob:https://www.qsnctf.com/e51e2915-4fd9-4c9b-9510-e4f2f32da1e2'
+    [DLC] id=501 idx=0 url='blob:https://www.qsnctf.com/69ffc7b6-6bb7-4c19-8c56-a72efee1b229'
+    [DLC] id=495 idx=1 url='https://allall02.baidupcs.com/file/6beb81625u1d8f2a9f50bef40f28f34d?bkt=en-6766f9da69592c12e50100d4c45ef0a70dfd54db7082c6e7672615cb65791d8b0deb3ff7864b3f930fd8303c27972a80e3634df01d1ebfb97fa0fde94d76fce9&fid=1746480386-250528-597749651714494&time=1743941685&sign=FDTAXUbGERQlBHSKfWqiu-DCb740ccc5511e5e8fedcff06b081203-VhCE1K2JbfY9Z6y4f0ZpxoVdGUg%3D&to=80&size=5275&sta_dx=5275&sta_cs=0&sta_ft=zip&sta_ct=2&sta_mt=2&fm2=MH%2CBaoding%2CAnywhere%2C%2C%E6%B5%B7%E5%8D%97%2Ccnc&ctime=1743520312&mtime=1743520312&dt3=0&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=5275&vuk=1607735695&iv=2&vl=0&htype=&randtype=&tkbind_id=0&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-618ed299e3a76406a7abf7089472248df5eac2d5a55409a3eef2fdbf54693b3d7b76bf98f8259b9e70404e598f3dcd8e150f79767c8645b7305a5e1275657320&expires=8h&rt=sh&r=608632090&vbdid=3378374152&fin=Dragon.zip&fn=Dragon.zip&rtype=1&clienttype=0&dp-logid=9140412189267781326&dp-callid=0.1&hps=1&tsl=0&csl=0&fsl=-1&csign=rFBQGR0Ix9MlpUv17e2LLnrrysc%3D&so=0&ut=1&uter=4&serv=0&uc=4235021837&ti=970a8ec65273ef1292ad66ccf0f4ba1297111d32348d0912&hflag=30&from_type=1&adg=c_1b56ad52fa95b588de742fdb9b040302&reqlabel=250528_f_0d379c25691f1db02fd2dff786ffd19a_-1_e575750a3c4aa01749b9e79faa454520&fpath=YXZC%2F2025%2F2025xyctf%2FREVERSE&by=themis&resvsflag=1-0-0-1-1-1'
+    [DLC] id=494 idx=0 url='https://files.nssctf.cn/81774757580d40538156e5cd2f12783e?response-content-disposition=attachment;filename=baby.bc'
+    [DLC] id=492 idx=0 url='https://files.nssctf.cn/6cb548a876274c1dae9be04f4cd1101a?response-content-disposition=attachment;filename=11android2.zip'
+    [DLC] id=484 idx=1 url='https://xafj-cu11.baidupcs.com/file/711136369g943ac5068d6a607ff8e2d6?bkt=en-40ebf341379bd9a0c11a040efd70809ba84ac46cef6492f66e5d187b7cdcd32acf893904a248f5b22f75d4e8ee9fb2e4913834b9a21e3321d9df2ab21bc09758&fid=1746480386-250528-596174275623684&time=1743758223&sign=FDTAXUbGERQlBHSKfWqiu-DCb740ccc5511e5e8fedcff06b081203-ex4SwOijClBNegPrY4J4wiz3rJg%3D&to=419&size=811669&sta_dx=811669&sta_cs=0&sta_ft=rar&sta_ct=1&sta_mt=1&fm2=MH%2CXian%2CAnywhere%2C%2C%E6%B5%B7%E5%8D%97%2Ccnc&ctime=1743520308&mtime=1743520308&dt3=0&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=811669&vuk=1607735695&iv=2&vl=0&htype=&randtype=&tkbind_id=0&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-39df0f02f802b2b970bafc3931a2013f7ddccba1b3cbc98f71911a462a177f3845b930945b9f684a7d48fb417647ad74470031aef9cb8cc8305a5e1275657320&expires=8h&rt=sh&r=623071123&vbdid=3378374152&fin=player.rar&fn=player.rar&rtype=1&clienttype=0&dp-logid=9091164598839774514&dp-callid=0.1&hps=1&tsl=0&csl=0&fsl=-1&csign=rFBQGR0Ix9MlpUv17e2LLnrrysc%3D&so=0&ut=1&uter=4&serv=0&uc=4235021837&ti=068bcab50ae430c7a95b2087c8f9e0961f0e25f0fb7b182b&hflag=30&from_type=1&adg=c_1b56ad52fa95b588de742fdb9b040302&reqlabel=250528_f_0d379c25691f1db02fd2dff786ffd19a_-1_e575750a3c4aa01749b9e79faa454520&fpath=YXZC%2F2025%2F2025xyctf%2FPWN&by=themis&resvsflag=1-0-0-1-1-1'
+    [DLC] id=483 idx=1 url='https://allall02.baidupcs.com/file/45ab2701csbd9bc930184daf99b1f858?bkt=en-0f64e6ca9b24f0bc2ddc7fbae6021c3b11a40441060fa6ca856ead8c21359f8cfa091d30d8316d004ba1c7af0fe857ebcfb0104cefc4c67c5e3493390f502dd5&fid=1746480386-250528-165117593877460&time=1743756572&sign=FDTAXUbGERQlBHSKfWqiu-DCb740ccc5511e5e8fedcff06b081203-QAlgqO8PSj7DiafgEPfD6YHjSeQ%3D&to=80&size=276&sta_dx=276&sta_cs=0&sta_ft=zip&sta_ct=1&sta_mt=1&fm2=MH%2CBaoding%2CAnywhere%2C%2C%E6%B5%B7%E5%8D%97%2Ccnc&ctime=1743520314&mtime=1743520314&dt3=0&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=276&vuk=1607735695&iv=2&vl=0&htype=&randtype=&tkbind_id=0&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-9b359d777c07970d9d504617b50cad2766a06393055ac9a2772f9f75f10796be4e211584d602f827ac540f0b5d0da6f287131c94f83db11b305a5e1275657320&expires=8h&rt=sh&r=916122902&vbdid=3378374152&fin=%E7%AD%BE%E4%B8%AA%E5%88%B0%E5%90%A7.zip&fn=%E7%AD%BE%E4%B8%AA%E5%88%B0%E5%90%A7.zip&rtype=1&clienttype=0&dp-logid=9090721269842319578&dp-callid=0.1&hps=1&tsl=0&csl=0&fsl=-1&csign=rFBQGR0Ix9MlpUv17e2LLnrrysc%3D&so=0&ut=1&uter=4&serv=0&uc=4235021837&ti=970a8ec65273ef129e02230a51a87ba889391750793e95bf&hflag=30&from_type=1&adg=c_1b56ad52fa95b588de742fdb9b040302&reqlabel=250528_f_0d379c25691f1db02fd2dff786ffd19a_-1_e575750a3c4aa01749b9e79faa454520&fpath=YXZC%2F2025%2F2025xyctf%2FMISC&by=themis&resvsflag=1-0-0-1-1-1'
+    [DLC] id=482 idx=1 url='https://xafj-cu11.baidupcs.com/file/243750d19rc0abe85ee05a02ae8f8759?bkt=en-2fb6763f1c8fb10194ea77f90eb6a5b81a422efa2e87cad752407fb7474eb12e263ac52b9fad5699&fid=1746480386-250528-968277566248450&time=1743756008&sign=FDTAXUbGERQlBHSKfWqiu-DCb740ccc5511e5e8fedcff06b081203-Pmu3%2Fu7ObR9vv6FS9I4HZ5jQy3k%3D&to=419&size=6751345&sta_dx=6751345&sta_cs=121&sta_ft=zip&sta_ct=1&sta_mt=1&fm2=MH%2CBaoding%2CAnywhere%2C%2C%E6%B5%B7%E5%8D%97%2Ccnc&ctime=1743520312&mtime=1743520312&dt3=121&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=6751345&vuk=1607735695&iv=2&vl=0&htype=&randtype=&tkbind_id=0&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-a6c5153aef304c175b90fa9fde4a2d3a4744c3023eec619f822b593e7e62b8b708339ac7eb390b26&expires=8h&rt=sh&r=400126411&vbdid=3378374152&fin=ezVM.zip&fn=ezVM.zip&rtype=1&clienttype=0&dp-logid=9090569898921093570&dp-callid=0.1&hps=1&tsl=0&csl=0&fsl=-1&csign=rFBQGR0Ix9MlpUv17e2LLnrrysc%3D&so=0&ut=1&uter=4&serv=0&uc=4235021837&ti=497b2742088ef3a3107307f3426817159a82242fdc284b68&hflag=30&from_type=1&adg=c_1b56ad52fa95b588de742fdb9b040302&reqlabel=250528_f_0d379c25691f1db02fd2dff786ffd19a_-1_e575750a3c4aa01749b9e79faa454520&fpath=YXZC%2F2025%2F2025xyctf%2FREVERSE&by=themis&resvsflag=1-0-0-1-1-1'
+    [DLC] id=479 idx=1 url='https://allall02.baidupcs.com/file/e09db30eao0d58660eea24509d424af2?bkt=en-6f7dc9883530f8c9f9da3c593f0654259f5930372211ecd976afd0b870b66b4fed8bf70946ea9248439e13452f8f89b98fe446f200b226cf9e60914738da2fb6&fid=1746480386-250528-92137951553699&time=1743741375&sign=FDTAXUbGERQlBHSKfWqiu-DCb740ccc5511e5e8fedcff06b081203-j6JGM9G7r3mclmlAWy0GFWJx92M%3D&to=80&size=9778&sta_dx=9778&sta_cs=0&sta_ft=zip&sta_ct=1&sta_mt=1&fm2=MH%2CBaoding%2CAnywhere%2C%2C%E6%B5%B7%E5%8D%97%2Ccnc&ctime=1743520309&mtime=1743520309&dt3=0&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=9778&vuk=1607735695&iv=2&vl=0&htype=&randtype=&tkbind_id=0&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-6f942bca72b3fcab7dc81ab054d5a763ffa96d2dfcd77fc73d35fd64ef5b68c294c4ee52ba6c33b0bbf56dca17e382bfbd5d216a9e480b07305a5e1275657320&expires=8h&rt=sh&r=746727153&vbdid=3378374152&fin=VBS.zip&fn=VBS.zip&rtype=1&clienttype=0&dp-logid=9086641977402999923&dp-callid=0.1&hps=1&tsl=0&csl=0&fsl=-1&csign=rFBQGR0Ix9MlpUv17e2LLnrrysc%3D&so=0&ut=1&uter=4&serv=0&uc=4235021837&ti=068bcab50ae430c791d65a807a4c78b1ea4c480499651127&hflag=30&from_type=1&adg=c_1b56ad52fa95b588de742fdb9b040302&reqlabel=250528_f_0d379c25691f1db02fd2dff786ffd19a_-1_e575750a3c4aa01749b9e79faa454520&fpath=YXZC%2F2025%2F2025xyctf%2FREVERSE&by=themis&resvsflag=1-0-0-1-1-1'
+    [DLC] id=474 idx=0 url='https://files.nssctf.cn/0709bd729ed94b20a9b710aa79d028da?response-content-disposition=attachment;filename=vm.zip'
+    [DLC] id=465 idx=0 url='https://files.nssctf.cn/a811f20dfa234e6fa00f37d67f3f1778?response-content-disposition=attachment;filename=Project1.exe'
+    [DLC] id=463 idx=0 url='https://files.nssctf.cn/a811f20dfa234e6fa00f37d67f3f1778?response-content-disposition=attachment;filename=Project1.exe'
+    [DLC] id=462 idx=0 url='https://files.nssctf.cn/b53288c84ba24714a59e9b38a5da8858?response-content-disposition=attachment;filename=Ciallo%EF%BD%9E%28%E2%88%A0%E3%83%BB%CF%89%20%29%E2%8C%92%E2%98%86.exe'
+    [DLC] id=461 idx=0 url='https://files.nssctf.cn/3afd5c1a9dcf489c8dc91c9e119b6e63?response-content-disposition=attachment;filename=Project1.exe'
+    [DLC] id=460 idx=0 url='https://files.nssctf.cn/4e06ded2e7854a9d971e839f6a8428e3?response-content-disposition=attachment;filename=re'
+    [DLC] id=457 idx=0 url='https://files.nssctf.cn/9f306adaf961463d83a4e2d3f35f4285?response-content-disposition=attachment;filename=GameMaster.zip'
+    [DLC] id=456 idx=0 url='https://files.nssctf.cn/d49e448a6e074ceeb9429a3d18f734d8?response-content-disposition=attachment;filename=antidebug.exe'
+    [DLC] id=454 idx=0 url='https://files.nssctf.cn/e9e4f0a43c6b42ecaa79e9a76072d96a?response-content-disposition=attachment;filename=double_code.zip'
+    [DLC] id=453 idx=0 url='https://files.nssctf.cn/d2969509e3a44017a74946a035b11f8b?response-content-disposition=attachment;filename=t.exe'
+    [DLC] id=450 idx=0 url='https://files.nssctf.cn/2fde4797d1104f38b3e89741620cdb73?response-content-disposition=attachment;filename=easyAPK.zip'
+    [DLC] id=449 idx=0 url='https://files.nssctf.cn/f6b5c5559bf5437085c29e2ebc1e54e5?response-content-disposition=attachment;filename=D_flat.zip'
+    [DLC] id=444 idx=0 url='https://files.nssctf.cn/5a63e023729842ea84b41eaecea4ee25?response-content-disposition=attachment;filename=jocker.exe'
+    [DLC] id=443 idx=0 url='https://files.nssctf.cn/1ce6de9dc550478980aaf8a63b394f9d?response-content-disposition=attachment;filename=nssctf_round2_findxenny.exe'
+    [DLC] id=414 idx=0 url='https://files.nssctf.cn/63581d575d804b27bd16d018d960a0ce?response-content-disposition=attachment;filename=app2.apk'
+    [DLC] id=412 idx=0 url='https://files.nssctf.cn/0055300486dc41dda10e7fdb49224364?response-content-disposition=attachment;filename=program.zip'
+    [DLC] id=411 idx=0 url='https://files.nssctf.cn/a6fe9d9bc94f4c9fa86526bf61048191?response-content-disposition=attachment;filename=Room0.zip'
+    [DLC] id=410 idx=0 url='https://files.nssctf.cn/c9b53b06c2fc47e9936caa15e12394ea?response-content-disposition=attachment;filename=TimeSpaceRescue.zip'
+    [DLC] id=408 idx=0 url='https://files.nssctf.cn/1f238d4c23bf465392a78e444eb7c308?response-content-disposition=attachment;filename=LockedSecret.zip'
+    [DLC] id=407 idx=0 url='https://files.nssctf.cn/7fe2ddc502be4d598a87ba2d4a25f4a1?response-content-disposition=attachment;filename=FishingKit.zip'
+    [DLC] id=404 idx=0 url='https://files.nssctf.cn/02a31da49ef6422097a2dac9f431fe01?response-content-disposition=attachment;filename=doublegame.zip'
+    [DLC] id=403 idx=0 url='https://files.nssctf.cn/02a31da49ef6422097a2dac9f431fe01?response-content-disposition=attachment;filename=doublegame.zip'
+    [DLC] id=402 idx=0 url='https://files.nssctf.cn/a65f4f05704c45dcbf1e312d7963731d?response-content-disposition=attachment;filename=getflag.zip'
+    [DLC] id=401 idx=0 url='https://files.nssctf.cn/40080e8bebe2428095ca732b97e5dc33?response-content-disposition=attachment;filename=Reverse.class'
+    [DLC] id=398 idx=0 url='https://files.nssctf.cn/c52500fc91d34f0bbb84953f03c20ae5?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.json'
+    [DLC] id=397 idx=0 url='http://ctf.miaoaixuan.cn/assets/bdb64ee7e6120c07c7ccbd5ec2eb53b612f15e865c80fa19c518ffd720045ad3/Go.py'
+    [DLC] id=387 idx=0 url='https://files.nssctf.cn/b85e0593891445baab7677dd5a2d5f9c?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6'
+    [DLC] id=386 idx=0 url='https://files.nssctf.cn/b85e0593891445baab7677dd5a2d5f9c?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6'
+    [DLC] id=385 idx=0 url='https://files.nssctf.cn/b95b8d3329124c13979928ea21b8b7c1?response-content-disposition=attachment;filename=help.zip'
+    [DLC] id=382 idx=0 url='https://files.nssctf.cn/1c4c6609c1854a34b3dddcd14285ad99?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.py'
+    [DLC] id=381 idx=0 url='https://files.nssctf.cn/1a56c6e7c4d74091bf01bb169770254a?response-content-disposition=attachment;filename=sign.exe'
+    [DLC] id=380 idx=0 url='https://files.nssctf.cn/a6c67e0ab1e54f30bfb415d36dca083e?response-content-disposition=attachment;filename=wordy.zip'
+    [DLC] id=379 idx=0 url='https://files.nssctf.cn/cecb43ac5ff949339fdd206de896e924?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.py'
+    [DLC] id=378 idx=0 url='https://files.nssctf.cn/d34863add66049faa1166aaf7a21ad48?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.py'
+    [DLC] id=376 idx=0 url='https://files.nssctf.cn/cbe1cecbfa4948e8a33ea38617341232?response-content-disposition=attachment;filename=re2.exe'
+    [DLC] id=374 idx=0 url='https://files.nssctf.cn/2580f22194b4487b92600df8cb17199c?response-content-disposition=attachment;filename=re1.exe'
+    [DLC] id=369 idx=0 url='http://ctf.miaoaixuan.cn/assets/ad348e5243335769d9c77f487938fc6eab5d2905a052e40e70abb204df7c5142/nice%20drink'
+    [DLC] id=368 idx=0 url='http://ctf.miaoaixuan.cn/assets/9338134652e31b61ef72a9a922e73ba62293763a0f6b3307ab848ba60fd054c9/hieroglyphs.zip'
+    [DLC] id=365 idx=0 url='http://ctf.miaoaixuan.cn/assets/6d47fda14ea26addc91c0c414dfc86d2be3ac5088f0a176054b81950cef52fad/EzRSA.zip'
+    [DLC] id=359 idx=0 url='http://ctf.miaoaixuan.cn/assets/dd216e4042265276ad7db5834ea1d0b90d4232c5194a74c1d86ac77ffb14e3dd/ezso.apk'
+    [DLC] id=358 idx=0 url='http://ctf.miaoaixuan.cn/assets/bb7de0cf2df3f105c628261465181c15e2a46e75e7b5927175991dadb8b662d9/ezandroid.apk'
+    [DLC] id=357 idx=0 url='http://ctf.miaoaixuan.cn/assets/7bfefdc1aef5061b621a18be440560d741a9fba25f4662ad587f7765d0c7c324/easyRe'
+    [DLC] id=307 idx=0 url='https://dashi.163.com/dlpro.html?from=mail410&platform=win&dltype=dl'
+    [DLC] id=307 idx=1 url='https://u.163.com/pcds410?from=mail410&platform=win&dltype=dl&device=desktop&device_id=4c927950-a166-4614-8f0f-d8741f7b10a5&os=Windows&os_version=10&product=mailwin&resolution=1707x1067&uuid=17ae5eee-5610-4d47-9eda-7da2414eaec8'
+    [DLC] id=307 idx=2 url='https://res.126.net/dl/client/pcmail/dashi/qiyeyou/mail.exe?product=mailwin&platform=win&device=desktop&device_id=4c927950-a166-4614-8f0f-d8741f7b10a5&resolution=1707x1067&from=mail410&uuid=17ae5eee-5610-4d47-9eda-7da2414eaec8&os_version=10&os=Windows&dltype=dl'
+    [DLC] id=286 idx=0 url='blob:https://ctf.xidian.edu.cn/da70b747-b53c-48ee-9dc9-9cb3aed183a7'
+    [DLC] id=248 idx=0 url='https://hk1.panel.net.cn:4412/vhost/index.php?c=webftp&a=getfile&dir=0&file=/logs/access.log'
+    [DLC] id=155 idx=0 url='https://gitee.com/haishengcai/sztu_-ctf/wikis/pages/export?type=pdf&doc_id=3595250#:~:text=%E5%9C%A8CTF%E4%B8%AD%E4%B8%BB'
+    [DLC] id=65 idx=0 url='https://download.quark.cn/download/quarkpc?platform=android&ch=pcquark@clouddrive_share2'
+    [DLC] id=62 idx=0 url='https://download.quark.cn/download/quarkpc?platform=android&ch=pcquark@clouddrive_share2'
+    [DLC] id=45 idx=0 url='https://files.nssctf.cn/8e0f968322294810870b09e03f920c25?response-content-disposition=attachment;filename=eclcg.tar.gz'
+    [DLC] id=44 idx=0 url='https://files.nssctf.cn/dbdda8d2054a4cd69b2aad884f6f308c?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.txt'
+    [DLC] id=42 idx=0 url='https://files.nssctf.cn/c75b9814379442948d487ec0889798f7?response-content-disposition=attachment;filename=1.txt'
+    [DLC] id=41 idx=0 url='https://files.nssctf.cn/a6398a0da3d54354bd4f816cb03b557c?response-content-disposition=attachment;filename=1.txt'
+    [DLC] id=39 idx=0 url='https://www.jetbrains.com/zh-cn/pycharm/download/download-thanks.html?platform=windows'
+    [DLC] id=38 idx=0 url='https://files.nssctf.cn/dcc5c9f7ca3d4e2c82162e8faba270b9?response-content-disposition=attachment;filename=ez_rsa.txt'
+    [DLC] id=37 idx=0 url='https://files.nssctf.cn/1ba1bfcf901549f9ae8173334c15d5cb?response-content-disposition=attachment;filename=bajie.jpg'
+    [DLC] id=36 idx=0 url='https://files.nssctf.cn/43af0c9ad2b14b13ab1e15cb8eaed07d?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.txt'
+    [DLC] id=35 idx=0 url='https://files.nssctf.cn/4554766ac6de470f9dc06258f55ff172?response-content-disposition=attachment;filename=4ae4d9f8d197486b970e0103d29d53fb.zip'
+    [DLC] id=34 idx=0 url='https://files.nssctf.cn/64a55879d7b8418ea76c590050494cb7?response-content-disposition=attachment;filename=task_%E9%99%84%E4%BB%B6_x2FTaFJ.zip'
+    [DLC] id=32 idx=0 url='https://files.nssctf.cn/36aaf6e8ffb24e999a338aa6ee271c96?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.txt'
+    [DLC] id=31 idx=0 url='https://files.nssctf.cn/58750243d3654dd2b73e68e6e71bd69c?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.txt'
+    [DLC] id=30 idx=0 url='https://files.nssctf.cn/32c87220946e465d9cea2abecd7a4ecf?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.txt'
+    [DLC] id=29 idx=0 url='https://files.nssctf.cn/58750243d3654dd2b73e68e6e71bd69c?response-content-disposition=attachment;filename=%E9%99%84%E4%BB%B6.txt'
+    [URL] 'https://platform.deepseek.com/usage'  title='DeepSeek 开放平台' visits=73
+    [URL] 'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#vehicle-range'  title='车联网数字孪生攻防平台' visits=14
+    [URL] 'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#overview'  title='车联网数字孪生攻防平台' visits=8
+    [URL] 'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#evidence'  title='车联网数字孪生攻防平台' visits=5
+    [URL] 'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#teams'  title='车联网数字孪生攻防平台' visits=6
+    [URL] 'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421'  title='车联网数字孪生攻防平台' visits=1
+    [URL] 'https://175.27.210.153:9989/competitions.html?next=%2F'  title='车联网数字孪生攻防平台' visits=1
+    [URL] 'https://deepseek-monitor-archive.pages.dev/platform/#/platform/20261113_160710_2b8e2d99_41a86943'  title='DeepSeek Chat · Monitor Archive' visits=3
+    [URL] 'https://deepseek-monitor-archive.pages.dev/docs/#/docs/1792156545940277800'  title='DeepSeek Platform · Monitor Archive' visits=1
+    [URL] 'https://ctfy.tsinghua.edu.cn/inbox'  title='(8) CTFy' visits=1
+    [URL] 'https://ctfy.tsinghua.edu.cn/competitions'  title='(8) CTFy' visits=14
+    [URL] 'https://ctfy.tsinghua.edu.cn/changelog'  title='(8) CTFy' visits=2
+    [URL] 'https://ctfy.tsinghua.edu.cn/competitions/2324e5687c4a4dfea4d223b0c593c635/team'  title='(8) CTFy' visits=7
+    [URL] 'https://deepseek-monitor-archive.pages.dev/platform/#/platform/20261113_142133_5fcfce9e_4cec98a8'  title='DeepSeek API Docs · Monitor Archive' visits=1
+    [URL] 'https://deepseek-monitor-archive.pages.dev/chat/#/chat/20261104_031925_98b78cd9_b1d50617'  title='DeepSeek Platform · Monitor Archive' visits=1
+    [URL] 'https://wx.mail.qq.com/xmspamcheck/xmsafejump?func=2&check_src=0&url=https%3A%2F%2Fctfy.tsinghua.edu.cn%2Fcompetitions%2F2324e5687c4a4dfea4d223b0c593c635%2Fteam&uin=13102662992710250&mailid=ZC0013_wqjNomiMktguH2oAtfED310&click_src=0&sid=zWpHQ4zKY3cuSl9vAHVyTQAA'  title='(8) CTFy' visits=1
+    [URL] 'https://multica.ai/auth/callback?state=platform:desktop&iss=https://accounts.google.com&code=4/0AUn6Hd-zv705JS2JG29Gl1Yr-Rh7xWr7LWhkhktQEvhF4EAwewTQ3C0RrncXpbHJCqYIeA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent'  title='Multica — Project Management for Human + Agent Teams' visits=1
+    [URL] 'https://accounts.google.com/ServiceLogin?access_type=offline&app_domain=https%3A%2F%2Fmultica.ai&authuser=0&client_id=749099552710-jgkkffvfca1j68jc23b9tq962494m8c2.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fv3%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAORnjYZewhp5gwe_cEWI6rMX2lTgNBKn2U9w2FcdgwA0IhND_j6QYu3fMONyqPonl0xxqK8xZe8ne_2byE_4Ana3AOX0zluPTHivnS3SkgbYGNmwK9ssGBOivA9Msigel50QNDWFcjhfq8juCGhq87GU5x0ddnvr6jt0pAimz31OPcIUBVORgkHWSYIDT0jNCPkHk1DvoBZBTXcx3hDqyZHTPcys_Nfm2ErqNRgYIaqyw2PoqIehidw5WBXHeuWiAK4GzelKm6vROwfPU2QQJrwTUklED-vHP2s7lqUzy91Ah4TbHFt-c2_oXsNP3cZSTicOU-v2s7418u8GFYPafwnHJYNkGCn30XYQoSMwIS0w9IlxrcgKJzpLWJhyKdt1McNgWKiD9FKAV_mBqmN_rDuRf5bmmqHqiZS4qVeYVgtCR0fy3K9YEXeN1uUg4IFlqKHYYptR6ZwaiGPWjR_gRImBl2-pQ%26flowName%3DGeneralOAuthFlow%26as%3DS-50211382%253A1794552987049483%26client_id%3D749099552710-jgkkffvfca1j68jc23b9tq962494m8c2.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fv3%252Fconsent%23&dsh=S-50211382%3A1794552987049483&flowName=GeneralOAuthFlow&o2v=2&opparams=%253F&passive=true&prompt=select_account&redirect_uri=https%3A%2F%2Fmultica.ai%2Fauth%2Fcallback&response_type=code&sacu=1&scope=openid%20email%20profile&service=lso&state=platform%3Adesktop'  title='Sign in - Google Accounts' visits=1
+    [URL] 'https://accounts.google.com/v3/signin/accountchooser?access_type=offline&client_id=749099552710-jgkkffvfca1j68jc23b9tq962494m8c2.apps.googleusercontent.com&prompt=select_account&redirect_uri=https%3A%2F%2Fmultica.ai%2Fauth%2Fcallback&response_type=code&scope=openid+email+profile&state=platform%3Adesktop&dsh=S-50211382%3A1794552987049483&o2v=2&service=lso&flowName=GeneralOAuthFlow&opparams=%253F&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fv3%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAORnjYZewhp5gwe_cEWI6rMX2lTgNBKn2U9w2FcdgwA0IhND_j6QYu3fMONyqPonl0xxqK8xZe8ne_2byE_4Ana3AOX0zluPTHivnS3SkgbYGNmwK9ssGBOivA9Msigel50QNDWFcjhfq8juCGhq87GU5x0ddnvr6jt0pAimz31OPcIUBVORgkHWSYIDT0jNCPkHk1DvoBZBTXcx3hDqyZHTPcys_Nfm2ErqNRgYIaqyw2PoqIehidw5WBXHeuWiAK4GzelKm6vROwfPU2QQJrwTUklED-vHP2s7lqUzy91Ah4TbHFt-c2_oXsNP3cZSTicOU-v2s7418u8GFYPafwnHJYNkGCn30XYQoSMwIS0w9IlxrcgKJzpLWJhyKdt1McNgWKiD9FKAV_mBqmN_rDuRf5bmmqHqiZS4qVeYVgtCR0fy3K9YEXeN1uUg4IFlqKHYYptR6ZwaiGPWjR_gRImBl2-pQ%26flowName%3DGeneralOAuthFlow%26as%3DS-50211382%253A1794552987049483%26client_id%3D749099552710-jgkkffvfca1j68jc23b9tq962494m8c2.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fv3%252Fconsent%23&app_domain=https%3A%2F%2Fmultica.ai'  title='Sign in - Google Accounts' visits=2
+    [URL] 'https://accounts.google.com/o/oauth2/v2/auth?client_id=749099552710-jgkkffvfca1j68jc23b9tq962494m8c2.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fmultica.ai%2Fauth%2Fcallback&response_type=code&scope=openid+email+profile&access_type=offline&prompt=select_account&state=platform%3Adesktop'  title='Sign in - Google Accounts' visits=1
+    [URL] 'https://multica.ai/login?platform=desktop'  title='Multica — Project Management for Human + Agent Teams' visits=1
+    [URL] 'https://www.bright.cn/cp/zones/isp_proxy1/stats?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=3
+    [URL] 'https://www.bright.cn/cp/zones/isp_proxy1/play?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=2
+    [URL] 'https://www.bright.cn/cp/zones/isp_proxy1/edit?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=5
+    [URL] 'https://www.bright.cn/cp/zones/isp_proxy1/access_params?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/zones?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=3
+    [URL] 'https://www.bright.cn/cp/billing/overview?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=4
+    [URL] 'https://www.bright.cn/cp/billing/transactions?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=6
+    [URL] 'https://www.bright.cn/cp/billing/costs?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=3
+    [URL] 'https://www.bright.cn/cp/billing/activity_log?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=5
+    [URL] 'https://www.bright.cn/cp/billing/settings?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=9
+    [URL] 'https://www.bright.cn/cp/billing/transactions?id=hl_756e0bff&bevent=6af69ccbb317b68d90b1f059'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/billing/transactions'  title='Bright Data - Web Data Platform' visits=5
+    [URL] 'https://www.bright.cn/cp/billing/invoices'  title='Bright Data - Web Data Platform' visits=4
+    [URL] 'https://www.bright.cn/cp/billing/costs'  title='Bright Data - Web Data Platform' visits=4
+    [URL] 'https://www.bright.cn/cp/billing/overview'  title='Bright Data - Web Data Platform' visits=3
+    [URL] 'https://www.bright.cn/cp/zones'  title='Bright Data - Web Data Platform' visits=4
+    [URL] 'https://www.bright.cn/cp/zones/isp_proxy1/stats'  title='Bright Data - Web Data Platform' visits=4
+    [URL] 'https://www.bright.cn/cp/zones/isp_proxy1/edit'  title='Bright Data - Web Data Platform' visits=9
+    [URL] 'https://www.bright.cn/cp/zones/isp_proxy1/play'  title='Bright Data - Web Data Platform' visits=4
+    [URL] 'https://www.bright.cn/cp/zones/isp_proxy1/access_params'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/zones/new'  title='Bright Data - Web Data Platform' visits=12
+    [URL] 'https://www.bright.cn/cp/zones/new?email_verify_success=true'  title='Bright Data - Web Data Platform' visits=21
+    [URL] 'https://www.bright.cn/cp/web_access/new?email_verify_success=true'  title='Bright Data - Web Data Platform' visits=8
+    [URL] 'https://www.bright.cn/cp/scrapers?email_verify_success=true'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/start?email_verify_success=true'  title='Bright Data - Control Panel' visits=3
+    [URL] 'https://www.bright.cn/cp/billing/overview?email_verify_success=true'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://priceai.cc/products/gemini-pro-year?back=platform%3DGemini'  title='Gemini Pro 成品号价格对比：Google AI Pro 账号、年卡和渠道报价 | PriceAI' visits=2
+    [URL] 'https://priceai.cc/channels?platform=Gemini'  title='卡网订阅比价 | PriceAI' visits=8
+    [URL] 'https://priceai.cc/channels?platform=ChatGPT'  title='卡网订阅比价 | PriceAI' visits=22
+    [URL] 'https://platform.deepseek.com/transactions'  title='DeepSeek 开放平台' visits=30
+    [URL] 'https://platform.deepseek.com/top_up'  title='DeepSeek 开放平台' visits=40
+    [URL] 'https://static.deepseek.com/faq/index.html?lang=zh&source=web_platform&app_version=1.0.1&app_locale=zh-CN&screen_resolution=2561x1601#/category/4'  title='DeepSeek FAQ' visits=1
+    [URL] 'https://www.bright.cn/cp/zones/new?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=28
+    [URL] 'https://www.bright.cn/cp/zones/new?id=hl_756e0bff&page=0&page_size=10'  title='Bright Data - Web Data Platform' visits=9
+    [URL] 'https://www.bright.cn/cp/web_access/new?id=hl_756e0bff&page=0&page_size=10'  title='Bright Data - Web Data Platform' visits=3
+    [URL] 'https://www.bright.cn/cp/scrapers?id=hl_756e0bff&page=0&page_size=10'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/start?id=hl_756e0bff&page=0&page_size=10'  title='Bright Data - Control Panel' visits=1
+    [URL] 'https://www.bright.cn/cp/scrapers?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=2
+    [URL] 'https://www.bright.cn/cp/web_access/new?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=3
+    [URL] 'https://www.bright.cn/cp/setting/event_log?id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/start?id=hl_756e0bff'  title='Bright Data - Control Panel' visits=1
+    [URL] 'https://www.bright.cn/cp/start?category=all&id=hl_756e0bff&page=0&page_size=10'  title='Bright Data - Control Panel' visits=1
+    [URL] 'https://www.bright.cn/cp/scrapers/browse?category=all&id=hl_756e0bff'  title='Bright Data - Web Data Platform' visits=2
+    [URL] 'https://www.bright.cn/cp/scrapers/browse'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/scrapers'  title='Bright Data - Web Data Platform' visits=2
+    [URL] 'https://www.bright.cn/cp/web_access/new'  title='Bright Data - Web Data Platform' visits=2
+    [URL] 'https://www.bright.cn/cp/billing/settings'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/billing/activity_log'  title='Bright Data - Web Data Platform' visits=2
+    [URL] 'https://www.bright.cn/cp/start'  title='Bright Data - Control Panel' visits=2
+    [URL] 'https://www.bright.cn/cp/billing/costs?email_verify_success=true'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/billing/transactions?email_verify_success=true'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/billing/settings?email_verify_success=true'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://www.bright.cn/cp/scrapers/browse?email_verify_success=true'  title='Bright Data - Web Data Platform' visits=2
+    [URL] 'https://www.bright.cn/cp/signup'  title='Bright Data - Web Data Platform' visits=1
+    [URL] 'https://priceai.cc/products/chatgpt-plus?back=platform%3DChatGPT'  title='ChatGPT Plus 试用订阅价格对比：日抛、成品号和网页号 | PriceAI' visits=4
+    [URL] 'https://priceai.cc/channels?q=c&platform=ChatGPT'  title='卡网订阅比价 | PriceAI' visits=8
+    [URL] 'https://priceai.cc/channels?q=cy&platform=ChatGPT'  title='卡网订阅比价 | PriceAI' visits=2
+    [URL] 'https://priceai.cc/channels?q=ct&platform=ChatGPT'  title='卡网订阅比价 | PriceAI' visits=2
+    [URL] 'https://priceai.cc/channels?q=r&platform=ChatGPT'  title='卡网订阅比价 | PriceAI' visits=4
+    [URL] 'https://priceai.cc/channels?q=re&platform=ChatGPT'  title='卡网订阅比价 | PriceAI' visits=4
+    [URL] 'https://priceai.cc/channels?q=red&platform=ChatGPT'  title='卡网订阅比价 | PriceAI' visits=2
+    [URL] 'https://priceai.cc/channels?platform=Claude'  title='卡网订阅比价 | PriceAI' visits=4
+    [URL] 'https://chatgpt.com/c/local-chatgpt%3A14145584-e735-4c98-857d-3b79af8bfc6b'  title='$ $a=\'C:\\Users\\19678\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe\'; $s=\'192.168.3.208:61001\' $ $sh=@\' $ B=/data/user/0/dev.albatross.container $ for i in 1 2 3 4; do $ sleep 60 $ F=$(dumpsys window 2>/dev/null | grep -m1 "mCurrentFocus" | grep -c "com.larus.nova") $ D=$(ls -dt $B/instances/0/data/files/doubao_pcap// 2>/dev/null | head -1) $ R=$(find $D -name meta.json -exec grep -l \'ri/report\' {} ; 2>/dev/null | wc -l) $ H=$(grep -o \'"p2_hit":[0-9]\' "$D/plaintext.native.ndjson" 2>/dev/null | tail -1) $ echo "t=$((i60))s foreground=$F ri/report=$R $H" $ [ "$R" -gt 0 ] && break $ done $ echo "=== urls with mssdk/ri ===" $ D=$(ls -dt $B/instances/0/data/files/doubao_pcap// 2>/dev/null | head -1) $ find "$D" -name meta.json -exec sh -c \'sed -n "s/."url":"([^"])".*/\\1/p" "$1" | cut -c1-60\' _ {} ; 2>/dev/null | grep -iE "ri/|mssdk|report|snssdk" | sort | uniq -c | head $ \'@ $ $tmp=Join-Path $env:TEMP \'zi.sh\'; [IO.File]::WriteAllText($tmp, ($sh -replace "rn","`n"), [Text.UTF8Encoding]::new($false)) $ & $a -s $s push $tmp /data/local/tmp/zi.sh 2>&1 | Out-Null $ & $a -s $s shell "su -c \'sh /data/local/tmp/zi.sh; rm -f /data/local/tmp/zi.sh\'" 2>&1 这个代码的sleep是不是没有意义？' visits=1
+    [URL] 'http://124.133.253.44:33553/#/competition/detail-51f41f26-3603-4c26-9601-f745e4a64472.event'  title='赛事详情 | 第十届强网杯车联网安全专项赛-遴选赛' visits=5
+    [URL] 'http://124.133.253.44:33553/#/competition'  title='赛事详情 | 网络安全竞赛平台' visits=8
+    [URL] 'https://account-devops.aliyun.com/settings/profile?spm=a2cl9.codeup_devops2020_goldlog_projectFiles.0.0.d253129clnJRTt'  title='个人设置' visits=1
+    [URL] 'https://account-devops.aliyun.com/settings/httpsPw?spm=a2cl9.codeup_devops2020_goldlog_projectFiles.0.0.d253129clnJRTt'  title='个人设置' visits=1
+    [URL] 'https://wx.mail.qq.com/xmspamcheck/xmsafejump?func=2&check_src=0&url=https%3A%2F%2Fdevops.aliyun.com%2Fprojex%2Freq%2F89c2945a552c8be926fe58d80e&uin=13102662992710250&mailid=ZC0002_OVPNuXOMg8kuH2oATmBcV10&click_src=0&sid=zWpvaozKQzAuSl9IAHU2XwAA'  title='netcloak适配' visits=1
+    [URL] 'http://127.0.0.1:3080/?token=o7zVq4wc3sLq2oGBTJ4qGR_iOJ6iBp8yEUFElQcbzdU'  title='CTF RAG 知识库注入取 flag — DeepSeek Harness' visits=1
+    [URL] 'https://ycb-test.dasctf.com/1781/competePlayerConsole/3289/envConfig'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=3
+    [URL] 'https://ycb-test.dasctf.com/1781/competePlayerConsole/3289/llmLog'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=3
+    [URL] 'https://ycb-test.dasctf.com/1781/competePlayerConsole/3289/dashboard'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=3
+    [URL] 'https://ycb-test.dasctf.com/1781/competePlayerConsole/3289'  title='教学竞赛靶场' visits=2
+    [URL] 'https://static.deepseek.com/faq/index.html?lang=zh&source=web_platform&app_version=1.0.0&app_locale=zh-CN&screen_resolution=2561x1601#/category/4'  title='DeepSeek FAQ' visits=1
+    [URL] 'https://platform.deepseek.com/profile'  title='DeepSeek 开放平台' visits=1
+    [URL] 'https://platform.deepseek.com/api_keys'  title='DeepSeek 开放平台' visits=27
+    [URL] 'https://ycb-test.dasctf.com/1781/competePlayerConsole/3289/doc'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=3
+    [URL] 'https://ycb-test.dasctf.com/1781/stageDetail'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=1
+    [URL] 'https://ycb-test.dasctf.com/compete/1781/detail'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=2
+    [URL] 'https://ycb-test.dasctf.com/1781/login'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=1
+    [URL] 'http://ycb-test.dasctf.com/'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=1
+    [URL] 'https://ycb-test.dasctf.com/'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=1
+    [URL] 'http://ycb-test.dasctf.com/compete/1781/detail'  title='2026 年“羊城杯”网络安全大赛agent测试' visits=1
+    [URL] 'https://github.com/claration/impactor'  title='claration/impactor: Cross-platform & feature rich iOS/iPadOS/tvOS sideloading application. Formerly known as PlumeImpactor.' visits=1
+    [URL] 'https://wx.mail.qq.com/xmspamcheck/xmsafejump?func=2&check_src=0&url=https%3A%2F%2Fdevops.aliyun.com%2Fprojex%2Freq%2F89c2945a552c8be926fe58d80e&uin=13102662992710250&mailid=ZC0002_OVPNuXOMg8kuH2oATmBcV10&click_src=0&sid=zWpFZ4zKUWkuSmNCAHV1WAAA'  title='netcloak适配' visits=1
+    [URL] 'https://vpn.pureblueai.com/register/bnP22J_rXpYZ7YFOHgVV63oe'  title='Registration - Headscale' visits=1
+    [URL] 'https://ssl.ptlogin2.qq.com/qqmail?ptlang=2052&Fun=clientread&uin=1967835754&k=328555746F6E33938809FA837484E115D203F8305AB5747DD709968DC4590A22&mailid=ZC0002_OVPNuXOMg8kuH2oATmBcV10&httptype=0&ADUIN=1967835754&ADSESSION=1793587814&ADTAG=CLIENT.QQ.6067_.0&ADPUBNO=27440'  title='QQ邮箱' visits=1
+    [URL] 'https://ssl.ptlogin2.mail.qq.com/check_sig?pttype=2&uin=1967835754&service=pt2__1__qqmail__httptype__0&nodirect=0&ptsigx=7a16bc9eec0c4f4ae436d767ecf447193355b7d0a2a64a443aab36ee9f1a059e27e4f8d19041eae4c3d7e6b5cc6904e7a26de6ebdaebf23a2ceac7d9d97d568f3d3d34748c9c16df&s_url=https%3A%2F%2Fmail.qq.com%2Fcgi-bin%2Flogin%3Flc%3Dzh_CN%26vm%3Dpt%26Fun%3Dclientread%26mailid%3DZC0002_OVPNuXOMg8kuH2oATmBcV10%26httptype%3D0%26ADUIN%3D1967835754%26ADSESSION%3D1793587814%26ADTAG%3DCLIENT.QQ.6067_.0%26ADPUBNO%3D27440&f_url=https%3A%2F%2Fmail.qq.com%2Fcgi-bin%2Flogin%3Flc%3Dzh_CN%26vm%3Dptf%26Fun%3Dclientread%26mailid%3DZC0002_OVPNuXOMg8kuH2oATmBcV10%26httptype%3D0%26ADUIN%3D1967835754%26ADSESSION%3D1793587814%26ADTAG%3DCLIENT.QQ.6067_.0%26ADPUBNO%3D27440&ptlang=2052&ptredirect=0&aid=23000101&daid=4&j_later=0&low_login_hour=0&regmaster=0&pt_login_type=-1&pt_aid=0&pt_aaid=0&pt_light=0&pt_3rd_aid=0'  title='QQ邮箱' visits=1
+    [URL] 'https://mail.qq.com/cgi-bin/login?lc=zh_CN&vm=pt&Fun=clientread&mailid=ZC0002_OVPNuXOMg8kuH2oATmBcV10&httptype=0&ADUIN=1967835754&ADSESSION=1793587814&ADTAG=CLIENT.QQ.6067_.0&ADPUBNO=27440&qqmailkey=a755d6555e54bc227f389a7ce198c7dfe2027d1f8970dd371c713718a1eb4922'  title='QQ邮箱' visits=1
+    [URL] 'https://wx.mail.qq.com/login/login?auth_type=3&qq_target=clientread&mailid=ZC0002_OVPNuXOMg8kuH2oATmBcV10&return_target=9'  title='QQ邮箱' visits=1
+    [URL] 'https://wx.mail.qq.com/home/index?sid=zWphcYzKX3cuSlpUAHU2TAAA#/read/ZC0002_OVPNuXOMg8kuH2oATmBcV10'  title='QQ邮箱' visits=1
+    [URL] 'https://changjiang.yuketang.cn/v2/web/trans/25125435/2192749?university_id=3421&platform_id=3&classroom_id=25125435&status=1&isFrom=2'  title='雨课堂' visits=1
+    [URL] 'https://changjiang.yuketang.cn/v2/web/studentLog/25125435?university_id=3421&platform_id=3&classroom_id=25125435&content_url='  title='雨课堂' visits=4
+    [URL] 'https://changjiang.yuketang.cn/v2/web/studentLog/25125430?university_id=3421&platform_id=3&classroom_id=25125430&content_url='  title='雨课堂' visits=2
+    [URL] 'https://www.bugcrowd.com/'  title='#1 Crowdsourced Cybersecurity Platform | Bugcrowd' visits=1
+    [URL] 'https://thuctf.tsinghua.edu.cn/harmonyctf/posts/80295e32'  title='第二届 OpenHarmony CTF决赛代码仓范围及报告提交要求公告 - OpenHarmony CTF::CTF' visits=12
+    [URL] 'https://thuctf.tsinghua.edu.cn/harmonyctf/'  title='OpenHarmony CTF::CTF' visits=16
+    [URL] 'https://thuctf.tsinghua.edu.cn/harmonyctf/posts'  title='第二届OpenHarmony CTF决赛晋级名单及规则公布 - OpenHarmony CTF::CTF' visits=2
+    [URL] 'https://thuctf.tsinghua.edu.cn/harmonyctf/posts/efd4f70d'  title='第二届OpenHarmony CTF决赛晋级名单及规则公布 - OpenHarmony CTF::CTF' visits=5
+    [URL] 'http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=4&endTime=2026-10-31%2018%3A10%3A17&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail'  title='172.30.100.251' visits=1
+    [URL] 'http://172.30.100.251/swAttack/#/ctfContest'  title='Cyber Security Center' visits=10
+    [URL] 'http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A05%3A39&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail'  title='Cyber Security Center' visits=3
+    [URL] 'https://chatgpt.com/c/6ae5a815-ee44-83ec-b3af-2529e3c2b39d'  title='这是一道pwn题，得到flagCanonicoPWN题目分值：667.00 奖励系数：1.026900 我的得分：0.00 svg题目内容：做CTF有附件，那和考试脑子里有答案有什么区别?容器地址： nc 39.105.87.169 30769' visits=1
+    [URL] 'https://chatgpt.com/c/local-chatgpt%3A27302967-77ba-4bfd-ae75-fc8e252974b7'  title='这是一道pwn题，得到flagCanonicoPWN题目分值：667.00 奖励系数：1.026900 我的得分：0.00 svg题目内容：做CTF有附件，那和考试脑子里有答案有什么区别?容器地址： nc 39.105.87.169 30769' visits=1
+    [URL] 'https://chatgpt.com/connector_platform_oauth_redirect?code=435e81fcc60cb23318d6&iss=https%3A%2F%2Fgithub.com%2Flogin%2Foauth&state=oauth_s_6ae5a7d1f7248191a79a3caa247a1ea5'  title='ChatGPT' visits=1
+    [URL] 'https://chatgpt.com/connector_platform_oauth_redirect?code=6ebf168af6d198fdf587&iss=https%3A%2F%2Fgithub.com%2Flogin%2Foauth&state=oauth_s_6ae5a7c8f0048191904e471fa1084666'  title='ChatGPT' visits=1
+    [URL] 'https://github.com/login/oauth/authorize?response_type=code&client_id=Iv23liVemv8A9if9v0F2&redirect_uri=https%3A%2F%2Fchatgpt.com%2Fconnector_platform_oauth_redirect&state=oauth_s_6ae5a7d1f7248191a79a3caa247a1ea5&ui_locales=zh-CN'  title='Authorize ChatGPT Codex Connector' visits=1
+    [URL] 'https://github.com/login/oauth/authorize?response_type=code&client_id=Iv23liVemv8A9if9v0F2&redirect_uri=https%3A%2F%2Fchatgpt.com%2Fconnector_platform_oauth_redirect&state=oauth_s_6ae5a7c8f0048191904e471fa1084666&ui_locales=zh-CN'  title='Authorize ChatGPT Codex Connector' visits=1
+    [URL] 'https://chatgpt.com/c/local-chatgpt%3Aa40e0372-d460-423e-88b8-177932f30ee6'  title='这是一道pwn题，得到flag CanonicoPWN 题目分值：667.00 奖励系数：1.026900 我的得分：0.00 svg 题目内容： 做CTF有附件，那和考试脑子里有答案有什么区别? 容器地址： nc 39.105.87.169 30769' visits=1
+    [URL] 'http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A03%3A33&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail'  title='Cyber Security Center' visits=4
+    [URL] 'https://nestctf.cyberpeace.cn:54443/page/ct/contest/flag/570b5e4e531ec7f2ee253117fb617926/ContestPage'  title='Contest' visits=3
+    [URL] 'https://nestctf.cyberpeace.cn:54443/page/ct/contest/flag/570b5e4e531ec7f2ee253117fb617926/NoticePage'  title='Contest' visits=2
+    [URL] 'https://nestctf.cyberpeace.cn:54443/page/ct/contest/flag/570b5e4e531ec7f2ee253117fb617926/TrendPage'  title='Contest' visits=1
+    [URL] 'https://nestctf.cyberpeace.cn:54443/page/ct/contest/flag/570b5e4e531ec7f2ee253117fb617926/RankList'  title='Contest' visits=2
+    [URL] 'https://nestctf.cyberpeace.cn:54443/page/ct/contest/flag/570b5e4e531ec7f2ee253117fb617926/GuidePage'  title='Contest' visits=3
+    [URL] 'https://nestctf.cyberpeace.cn:54443/page/mg/ct/flag/contest?curType='  title='拟态防御国际精英挑战赛' visits=1
+    [URL] 'https://nestctf.cyberpeace.cn:54443/page/mg/ct/flag/contest'  title='拟态防御国际精英挑战赛' visits=1
+    [URL] 'https://nestctf.cyberpeace.cn:54443/page/mg/'  title='拟态防御国际精英挑战赛' visits=1
+    [URL] 'https://nestctf.cyberpeace.cn:54443/page/mg/login'  title='拟态防御国际精英挑战赛' visits=1
+    [URL] 'https://nestctf.cyberpeace.cn:54443/'  title='' visits=1
+    [URL] 'http://172.30.100.251/swAttack/#/ctfContestDetail?projectId=J0c09bc2416d487885456c7ee3971725&id=078f5c6a-ba9e-4639-a281-de21b5be6bd9&status=2&endTime=2026-10-31%2019%3A00%3A00&hlConfig=0&name=%E7%AC%AC%E5%8D%81%E5%B1%8A%E2%80%9C%E5%BC%BA%E7%BD%91%E6%9D%AF%E2%80%9D%E5%85%A8%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8C%91%E6%88%98%E8%B5%9B%EF%BC%8C%E8%A1%8C%E4%B8%9A%E9%A2%86%E5%9F%9F%E4%B8%93%E9%A1%B9%E8%B5%9B-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E8%B5%9B%E9%81%93%EF%BC%88%E7%BA%BF%E4%B8%8A%E8%B5%9B%EF%BC%89&mode=ctf_detail'  title='Cyber Security Center' visits=3
+    [URL] 'https://match.ichunqiu.com/2026qwbs10'  title='登录' visits=1
+    [URL] 'https://platform.stepfun.com/docs/zh/guides/pricing/details'  title='API 定价 - StepFun 开放平台文档中心' visits=1
+    [URL] 'https://platform.stepfun.com/docs/zh/guides/models/step-5-preview'  title='Step 5 Preview - StepFun 开放平台文档中心' visits=1
+    [URL] 'https://platform.stepfun.com/'  title='阶跃星辰开放平台' visits=2
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/dashboard/article'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=17
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/dashboard'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=17
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/3'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=79
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/11'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=35
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/5'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=38
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=22
+    [URL] 'http://8080-e363655c-7d56-4218-8839-974ef762418d.pcgx.challenge.ctfplus.cn/'  title='知识中台' visits=1
+    [URL] 'http://4313-53743611-ecad-4388-bb2f-f5037706f9cd.pcgx.challenge.ctfplus.cn/'  title='第十三回合 · THE THIRTEENTH TURN' visits=1
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/AI'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=8
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/8'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=36
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/6'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=30
+    [URL] 'http://8080-52d08c2c-7f1e-4332-8216-c17fdfd5995a.pcgx.challenge.ctfplus.cn/'  title='Silent Telegram · GX-WIRE-v3 desk' visits=1
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/10'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=21
+    [URL] 'http://8080-04bc6ca3-4384-4232-a94b-88c819e40ea6.pcgx.challenge.ctfplus.cn/'  title='Echo Connector · MCP Bridge' visits=1
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/2'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=41
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/7'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=28
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/4'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=36
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/all-problem/9'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=31
+    [URL] 'http://8080-38755b7b-11e5-4af1-9593-bb4c7f2b67bf.pcgx.challenge.ctfplus.cn/'  title='Relief Roster · 值班协同台' visits=1
+    [URL] 'http://8080-4778699b-cdb1-4191-ac8c-c05fde0fce2b.pcgx.challenge.ctfplus.cn/'  title='Covenant Desk · Code review intake' visits=3
+    [URL] 'http://8080-d0105525-cc57-4378-9a2c-5030e53251a7.pcgx.challenge.ctfplus.cn/'  title='Silent Telegram · GX-WIRE-v3 desk' visits=1
+    [URL] 'http://8080-7f6d750e-9f8d-43aa-a58b-5ea460962567.pcgx.challenge.ctfplus.cn/'  title='Covenant Desk · Code review intake' visits=1
+    [URL] 'http://8080-b40ba0ec-8119-45ea-b8f3-f84aeaa86021.pcgx.challenge.ctfplus.cn/'  title='RelayHub Console' visits=3
+    [URL] 'http://8080-d761e156-c911-45fc-931e-f045694de65f.pcgx.challenge.ctfplus.cn/#'  title='题目实例未找到' visits=16
+    [URL] 'http://8080-caa5833a-3c5e-4d55-a970-8b09cf30fff7.pcgx.challenge.ctfplus.cn/'  title='知识中台' visits=1
+    [URL] 'http://8080-bc22ff4f-8cc2-4f3c-adad-63be7ef3d23e.pcgx.challenge.ctfplus.cn/'  title='知识中台' visits=1
+    [URL] 'http://8080-81d9bd00-90c7-4acb-86a1-3870b3feaa94.pcgx.challenge.ctfplus.cn/'  title='Silent Telegram · GX-WIRE-v3 desk' visits=1
+    [URL] 'http://8080-d761e156-c911-45fc-931e-f045694de65f.pcgx.challenge.ctfplus.cn/'  title='RelayHub Console' visits=1
+    [URL] 'http://8080-1d0d3e47-8c91-477b-ae28-472986511f0e.pcgx.challenge.ctfplus.cn/'  title='Relief Roster · 值班协同台' visits=1
+    [URL] 'http://8080-b402a068-534f-4743-94e3-5f11176385b2.pcgx.challenge.ctfplus.cn/'  title='知识中台' visits=1
+    [URL] 'http://8080-98fde9ba-f023-454f-b1a5-bebfef3ce4da.pcgx.challenge.ctfplus.cn/'  title='Dependency Tide · Agent skill registry' visits=2
+    [URL] 'http://8080-eae573e4-8e70-40dd-bf1b-056943f41c19.pcgx.challenge.ctfplus.cn/'  title='Relief Roster · 值班协同台' visits=1
+    [URL] 'http://8080-5682b144-73b4-4c52-83d1-d05812595801.pcgx.challenge.ctfplus.cn/'  title='MirrorMD' visits=1
+    [URL] 'http://8080-1c287fea-afa7-4947-9020-67347aedc4b8.pcgx.challenge.ctfplus.cn/'  title='MirrorMD' visits=2
+    [URL] 'http://8080-b25c5425-dc92-4115-8f3c-c74d22faa1ce.pcgx.challenge.ctfplus.cn/'  title='知识中台' visits=1
+    [URL] 'http://8080-c32f7799-40aa-4653-97a6-9430bcca3d6a.pcgx.challenge.ctfplus.cn/'  title='题目实例暂时不可用' visits=5
+    [URL] 'file:///D:/CTF/ai/work/agent.txt'  title='' visits=1
+    [URL] 'http://8080-96142a55-072e-4b3c-b42a-b2988cf859ca.pcgx.challenge.ctfplus.cn/'  title='知识中台' visits=1
+    [URL] 'http://4313-7b926313-04b2-443f-9dff-207cd98ee72e.pcgx.challenge.ctfplus.cn/'  title='第十三回合 · THE THIRTEENTH TURN' visits=1
+    [URL] 'http://8080-6aa34665-bbab-4788-b95c-4efcd90e8e55.pcgx.challenge.ctfplus.cn/'  title='知识中台' visits=1
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/AI/3'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=14
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/AI/2'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=10
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/AI/4'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=10
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/AI/5'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=8
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/#/problem/AI/11'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=3
+    [URL] 'http://8080-bc401cff-067c-4fda-b065-5266e46d7344.pcgx.challenge.ctfplus.cn/'  title='知识中台' visits=2
+    [URL] 'http://8080-bc401cff-067c-4fda-b065-5266e46d7344.pcgx.challenge.ctfplus.cn/notes/new'  title='新增值班纪要 - 知识中台' visits=2
+    [URL] 'http://8080-68b0eadb-eb04-40d7-a07a-6fea4cb7160e.pcgx.challenge.ctfplus.cn/'  title='Echo Connector · MCP Bridge' visits=1
+    [URL] 'http://8080-b40cbe21-9ab6-477a-8805-8718b9a23e01.pcgx.challenge.ctfplus.cn/'  title='知识中台' visits=7
+    [URL] 'http://8080-b40cbe21-9ab6-477a-8805-8718b9a23e01.pcgx.challenge.ctfplus.cn/notes/new'  title='新增值班纪要 - 知识中台' visits=6
+    [URL] 'http://8080-253ff2f4-6369-47fe-b080-c778dbf30439.pcgx.challenge.ctfplus.cn/'  title='Dependency Tide · Agent skill registry' visits=1
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/'  title='2026年广西人工智能安全大赛（决赛） CTFPlus' visits=1
+    [URL] 'https://bgnq771z4c.pcgx.play.ctfplus.cn/?token=4874f7b3-b298-4437-80f6-6f848acce7b8'  title='竞赛节点' visits=1
+    [URL] 'http://127.0.0.1:3080/?token=wlHKYUNSOsy_FZUdloSjvDocrQNWYmxX7AVz5IMr0Gk'  title='AI安全CTF备赛知识点整理 (2) — DeepSeek Harness' visits=1
+    [URL] 'https://changjiang.yuketang.cn/v2/web/exam/25125435/2175125?university_id=3421&platform_id=3&classroom_id=25125435&refresh=1'  title='雨课堂' visits=2
+    ... (truncated at 200)
+
+==============================================================================
+DB: C:\Users\19678\AppData\Local\Microsoft\Edge\User Data\Default\History
+==============================================================================
+  downloads rows: 2
+    [URL] 'https://113.44.91.36/vpn'  title='VPN 接入 - 智验平台' visits=2

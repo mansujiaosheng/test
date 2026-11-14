@@ -1,0 +1,7 @@
+###### T02 0016 H11: TSP .2:8080 routing-only probe (host-scoped + method-scoped) (2026-11-14T01:44:24Z) ######
+## NOT graphql fuzzing (tsp-gql's turf). 58 paths x 6 Hosts x {GET,POST} = 696 reqs, ~20 req/s
+
+  HIT Host:tsp            POST /ota/manifest                      ERR TimeoutError
+
+684 requests in 105.8s; non-404 hits (excl /graphql control): 1
+    ('tsp', 'POST', '/ota/manifest', 'ERR TimeoutError')

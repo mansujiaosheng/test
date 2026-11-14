@@ -1,0 +1,369 @@
+###### every key/cert pair in D:\qwb presented to 10.225.139.3:8443 ######
+# utc=2026-11-14T01:58:34.012455+00:00  certs_found=125 keys_found=70 pairs_tested=61 certs_without_key=16
+
+01_TARGETS/tbox/vpn_client.pem
+    subj=CN=cc-715a9a001b4a5abad5ce3ecc
+    iss =CN=CyberCar Vehicle Range VPN CA
+    key =01_TARGETS/tbox/vpn_client.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+03_EVIDENCE/fleet/clientcert_test/client.crt
+    subj=CN=recon-probe
+    iss =CN=recon-probe
+    key =03_EVIDENCE/fleet/clientcert_test/client.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+03_EVIDENCE/fleet/mtls_bypass/client.crt
+    subj=CN=diag-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =03_EVIDENCE/fleet/mtls_bypass/client.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+03_EVIDENCE/fleet/mtls_bypass/fake_root.crt
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =03_EVIDENCE/fleet/mtls_bypass/fake_root.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+03_EVIDENCE/fleet/mtls_bypass/selfsigned_tbox.crt
+    subj=CN=tbox
+    iss =CN=tbox
+    key =03_EVIDENCE/fleet/mtls_bypass/selfsigned_tbox.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+03_EVIDENCE/web/tls_probe/client_self_cert.pem
+    subj=CN=client
+    iss =CN=client
+    key =03_EVIDENCE/web/tls_probe/client_self_key.pem
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+03_EVIDENCE/web/tls_probe/fakeca_cert.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =03_EVIDENCE/web/tls_probe/fakeca_key.pem
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+03_EVIDENCE/web/tls_probe/fakeclient_cert.pem
+    subj=CN=fleet-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =03_EVIDENCE/web/tls_probe/fakeclient_key.pem
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/gostack/ca.crt
+    subj=CN=TEST Fleet Root
+    iss =CN=TEST Fleet Root
+    key =04_SOLVE/tbox/gostack/ca.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/gostack/srv.crt
+    subj=CN=localhost
+    iss =CN=TEST Fleet Root
+    key =04_SOLVE/tbox/gostack/srv.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/lab/c_expired.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox/lab/c_expired.key
+    -> handshake=FAIL reason=SSLV3_ALERT_CERTIFICATE_EXPIRED [SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)
+
+04_SOLVE/tbox/lab/c_self.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox/lab/c_self.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/lab/root.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat/v4_fakeca_sameDN.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/lab/srv.pem
+    subj=CN=localhost
+    iss =CN=localhost
+    key =04_SOLVE/tbox/lab/srv.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat/v2_rsa2048_selfsign.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox/mat/v2_rsa2048_selfsign.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat/v3_selfsign_caTrue.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox/mat/v3_selfsign_caTrue.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat/v4_leaf.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat/v4_leaf.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat/v5_fakeca_skiforge.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat/v5_fakeca_skiforge.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat/v5_leaf.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat/v5_leaf.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat/v6_root_as_client.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat/v6_root_as_client.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat/v7_v1_noext.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox/mat/v7_v1_noext.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat/v9_leaf_noeku.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat/v9_leaf_noeku.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2/v10_chain.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Intermediate
+    key =04_SOLVE/tbox/mat2/v10.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2/v12.pem
+    subj=CN=tbox,OU=Fleet Diagnostics,O=CyberCar
+    iss =CN=tbox,OU=Fleet Diagnostics,O=CyberCar
+    key =04_SOLVE/tbox/mat2/v12.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2/v14_chain.pem
+    subj=CN=tbox-client
+    iss =CN=tbox
+    key =04_SOLVE/tbox/mat2/v14.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2/v15.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat2/v15.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2/v16_chain.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat2/v16.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2w/w1_leaf.pem
+    subj=CN=diag-eng-01
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat2w/w1_leaf.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2w/w1_leaf_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat2w/w_ca.key
+    -> handshake=LOAD_FAIL reason=None [X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)
+
+04_SOLVE/tbox/mat2w/w2_leaf_aki.pem
+    subj=CN=diag-eng-01
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat2w/w2_leaf_aki.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2w/w3_leaf_skica.pem
+    subj=CN=diag-eng-01
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat2w/w3_leaf_skica.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2w/w3_leaf_skica_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat2w/w_ca_ski.key
+    -> handshake=LOAD_FAIL reason=None [X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)
+
+04_SOLVE/tbox/mat2w/w4_leaf_cn_tbox.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat2w/w4_leaf_cn_tbox.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2w/w5_empty_subject.pem
+    subj=
+    iss =
+    key =04_SOLVE/tbox/mat2w/w5_empty_subject.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2w/w6_long_cn.pem
+    subj=CN=tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+    iss =CN=tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+    key =04_SOLVE/tbox/mat2w/w6_long_cn.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2w/w7_future.pem
+    subj=CN=diag-eng-01
+    iss =CN=diag-eng-01
+    key =04_SOLVE/tbox/mat2w/w7_future.key
+    -> handshake=FAIL reason=SSLV3_ALERT_CERTIFICATE_EXPIRED [SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2w/w8_expired.pem
+    subj=CN=diag-eng-01
+    iss =CN=diag-eng-01
+    key =04_SOLVE/tbox/mat2w/w8_expired.key
+    -> handshake=FAIL reason=SSLV3_ALERT_CERTIFICATE_EXPIRED [SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)
+
+04_SOLVE/tbox/mat2w/w9_root_named_ski.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox/mat2w/w9_root_named_ski.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/ca_namecon.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/ca_namecon.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/ca_policies.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/ca_policies.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/ca_rsa.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/ca_rsa.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/ca_samedn.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/ca_samedn.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/ca_sameski.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/ca_sameski.key
+    -> handshake=FAIL reason=None [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+04_SOLVE/tbox-mtls/pki/chain_namecon_ca_first.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/leaf_namecon.key
+    -> handshake=LOAD_FAIL reason=None [X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)
+
+04_SOLVE/tbox-mtls/pki/chain_policies_ca_first.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/leaf_policies.key
+    -> handshake=LOAD_FAIL reason=None [X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)
+
+04_SOLVE/tbox-mtls/pki/chain_rsa_ca_first.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/leaf_rsa.key
+    -> handshake=LOAD_FAIL reason=None [SSL: NO_CERTIFICATE_ASSIGNED] no certificate assigned (_ssl.c:3945)
+
+04_SOLVE/tbox-mtls/pki/chain_samedn_ca_first.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/leaf_samedn.key
+    -> handshake=LOAD_FAIL reason=None [X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)
+
+04_SOLVE/tbox-mtls/pki/chain_sameski_ca_first.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/leaf_sameski.key
+    -> handshake=LOAD_FAIL reason=None [X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)
+
+04_SOLVE/tbox-mtls/pki/s01_cn_tbox.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s01_cn_tbox.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s02_rsa2048.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s02_rsa2048.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s03_p384.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s03_p384.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s04_expired.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s04_expired.key
+    -> handshake=FAIL reason=SSLV3_ALERT_CERTIFICATE_EXPIRED [SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s05_notyet.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s05_notyet.key
+    -> handshake=FAIL reason=SSLV3_ALERT_CERTIFICATE_EXPIRED [SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s06_no_eku.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s06_no_eku.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s07_eku_server.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s07_eku_server.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s08_no_san.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s08_no_san.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s09_empty_subject.pem
+    subj=
+    iss =
+    key =04_SOLVE/tbox-mtls/pki/s09_empty_subject.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s10_ca_true.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s10_ca_true.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s11_cn_root.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    key =04_SOLVE/tbox-mtls/pki/s11_cn_root.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s12_aki_forged.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s12_aki_forged.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+
+04_SOLVE/tbox-mtls/pki/s13_ed25519.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    key =04_SOLVE/tbox-mtls/pki/s13_ed25519.key
+    -> handshake=FAIL reason=TLSV1_ALERT_UNKNOWN_CA [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+

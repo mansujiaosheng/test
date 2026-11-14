@@ -1,0 +1,7 @@
+cookie DBs found: 3
+  C:\Users\19678\AppData\Local\Google\Chrome\User Data\Default\Network\Cookies
+    total=0  platform=0
+  C:\Users\19678\AppData\Local\Google\Chrome\User Data\Profile 1\Network\Cookies
+    LOCKED (PermissionError) - cannot read while browser runs
+  C:\Users\19678\AppData\Local\Microsoft\Edge\User Data\Default\Network\Cookies
+    total=62  platform=0

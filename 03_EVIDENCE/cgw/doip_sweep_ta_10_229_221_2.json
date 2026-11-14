@@ -1,0 +1,29 @@
+{
+  "label": "sweep_ta",
+  "host": "10.229.221.2",
+  "probe": "3E00",
+  "tester_sa": "0E00",
+  "n_ta": 898,
+  "counts": {
+    "BASELINE_NRC31": 897,
+    "INTERESTING": 1
+  },
+  "elapsed_s": 97.8,
+  "hits": [
+    {
+      "ta": 4096,
+      "class": "INTERESTING",
+      "nrc": "11",
+      "latency_ms": 55.47,
+      "attempts": 1,
+      "resp": {
+        "from": "0x1000",
+        "to": "0x0E00",
+        "hex": "7F3E11",
+        "text": "NEGATIVE sid=0x3E(TesterPresent) NRC=0x11 (serviceNotSupported)"
+      },
+      "nacks": []
+    }
+  ],
+  "note": "baseline NRC 0x31 = gateway does not know the target; only rows whose answer deviates are listed as hits"
+}

@@ -1,0 +1,18 @@
+###### T02 0010 .3 filtered-port recheck + 8080 host-scoped/query sweep (2026-11-14T01:29:23Z) ######
+=== A. filtered-port recheck (4s connect timeout) ===
+  done (no line above = all truly dropped/silent)
+
+=== B. host-scoped route sweep on :8080 ===
+  Host: tbox             /healthz                                      -> HTTP/1.1 200 OK
+  Host: tbox.local       /healthz                                      -> HTTP/1.1 200 OK
+  Host: 10.230.164.3     /healthz                                      -> HTTP/1.1 200 OK
+  Host: localhost        /healthz                                      -> HTTP/1.1 200 OK
+  352 probes in 1.8s, 4 non-404 (incl /healthz)
+
+=== C. query variants on :8080 ===
+  /healthz?debug=1                     -> HTTP/1.1 200 OK
+  /healthz?verbose=1                   -> HTTP/1.1 200 OK
+  /healthz?ota=1                       -> HTTP/1.1 200 OK
+  /healthz?cert=1                      -> HTTP/1.1 200 OK
+  /ota?check=1                         -> HTTP/1.1 404 Not Found
+  /diagnostics?session=1               -> HTTP/1.1 404 Not Found

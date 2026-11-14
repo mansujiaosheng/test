@@ -1,0 +1,11 @@
+[ req ]
+distinguished_name = dn
+prompt             = no
+
+[ dn ]
+CN = CV6 Fleet Diagnostics Root
+
+[ v3_ca ]
+basicConstraints       = critical,CA:TRUE
+keyUsage               = critical,keyCertSign,cRLSign
+subjectKeyIdentifier   = 47:6E:90:16:4F:64:70:BB:1C:80:72:36:AB:3C:54:70:03:78:10:99

@@ -1,0 +1,11 @@
+{
+  "label": "p13401_len4",
+  "host": "10.229.221.2",
+  "port": 13401,
+  "sent_hex": "000000020001",
+  "recv_hex": "",
+  "recv_ascii": "",
+  "note": "4-byte BE length + ident ptype | peer closed | 0B in 55ms",
+  "seq": 4007,
+  "ts": "2026-11-14T09:28:26.461+08:00"
+}

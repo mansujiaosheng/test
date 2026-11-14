@@ -1,0 +1,19 @@
+{
+  "label": "did_slow_6c62",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E442226C62",
+    "uds": "226C62"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 135.27,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 2464,
+  "ts": "2026-11-14T09:36:11.735+08:00"
+}

@@ -1,0 +1,42 @@
+=== D. form / text bodies ===
+POST ct=application/x-www-form-urlencoded body=b'action=list' -> 404  application/json             b'{"error":"not found"}\n' 
+POST ct=application/x-www-form-urlencoded body=b'vin=CV6FF52FEE9EDDD86' -> 404  application/json             b'{"error":"not found"}\n' 
+POST ct=text/plain body=b'list'                      -> 404  application/json             b'{"error":"not found"}\n' 
+POST ct=application/json body=b'{"cmd":"list"}'      -> 404  application/json             b'{"error":"not found"}\n' 
+PUT ct=application/x-www-form-urlencoded body=b'action=list' -> 404  application/json             b'{"error":"not found"}\n' 
+PUT ct=application/x-www-form-urlencoded body=b'vin=CV6FF52FEE9EDDD86' -> 404  application/json             b'{"error":"not found"}\n' 
+PUT ct=text/plain body=b'list'                       -> 404  application/json             b'{"error":"not found"}\n' 
+PUT ct=application/json body=b'{"cmd":"list"}'       -> 404  application/json             b'{"error":"not found"}\n' 
+
+=== E. url-ish query params (SSRF/diagnostic style) ===
+?url=http://127.0.0.1/                               -> 404  application/json             b'{"error":"not found"}\n' 
+?path=http://127.0.0.1/                              -> 404  application/json             b'{"error":"not found"}\n' 
+?file=http://127.0.0.1/                              -> 404  application/json             b'{"error":"not found"}\n' 
+?src=http://127.0.0.1/                               -> 404  application/json             b'{"error":"not found"}\n' 
+?source=http://127.0.0.1/                            -> 404  application/json             b'{"error":"not found"}\n' 
+?target=http://127.0.0.1/                            -> 404  application/json             b'{"error":"not found"}\n' 
+?host=http://127.0.0.1/                              -> 404  application/json             b'{"error":"not found"}\n' 
+?endpoint=http://127.0.0.1/                          -> 404  application/json             b'{"error":"not found"}\n' 
+?callback=http://127.0.0.1/                          -> 404  application/json             b'{"error":"not found"}\n' 
+?uri=http://127.0.0.1/                               -> 404  application/json             b'{"error":"not found"}\n' 
+?redirect=http://127.0.0.1/                          -> 404  application/json             b'{"error":"not found"}\n' 
+?q=http://127.0.0.1/                                 -> 404  application/json             b'{"error":"not found"}\n' 
+?name=http://127.0.0.1/                              -> 404  application/json             b'{"error":"not found"}\n' 
+?key=http://127.0.0.1/                               -> 404  application/json             b'{"error":"not found"}\n' 
+?token=http://127.0.0.1/                             -> 404  application/json             b'{"error":"not found"}\n' 
+?session=http://127.0.0.1/                           -> 404  application/json             b'{"error":"not found"}\n' 
+?sid=http://127.0.0.1/                               -> 404  application/json             b'{"error":"not found"}\n' 
+?user=http://127.0.0.1/                              -> 404  application/json             b'{"error":"not found"}\n' 
+?uid=http://127.0.0.1/                               -> 404  application/json             b'{"error":"not found"}\n' 
+?role=http://127.0.0.1/                              -> 404  application/json             b'{"error":"not found"}\n' 
+?scope=http://127.0.0.1/                             -> 404  application/json             b'{"error":"not found"}\n' 
+
+=== F. id sweep 1..25 ===
+  id sweep diffs: 0
+
+=== G. double-check baseline is stable (5x) ===
+    404 b'{"error":"not found"}\n'
+    404 b'{"error":"not found"}\n'
+    404 b'{"error":"not found"}\n'
+    404 b'{"error":"not found"}\n'
+    404 b'{"error":"not found"}\n'

@@ -1,0 +1,33 @@
+Sat Nov 14 01:41:57 UTC 2026
+## cmd: python 04_SOLVE/tbox/enum8080.py <post|put> 04_SOLVE/tbox/wl_big.txt ...
+## target 10.230.164.3:8080 paths=29191 empty body, Content-Length: 0
+## POST:
+{
+  "mode": "POST",
+  "paths": 29191,
+  "done": 29191,
+  "errors": 2,
+  "elapsed_s": 192.5,
+  "rate": 151.6,
+  "status_hist": {
+    "404": 29188,
+    "200": 1,
+    "ERR": 2
+  },
+  "hits": 1
+}
+## PUT:
+{
+  "mode": "PUT",
+  "paths": 29191,
+  "done": 29191,
+  "errors": 0,
+  "elapsed_s": 182.3,
+  "rate": 160.1,
+  "status_hist": {
+    "404": 29190,
+    "200": 1
+  },
+  "hits": 1
+}
+Sat Nov 14 01:48:13 UTC 2026

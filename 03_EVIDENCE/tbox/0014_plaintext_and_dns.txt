@@ -1,0 +1,26 @@
+###### 0014 plaintext probe + internal DNS attempts ######
+### date: 2026-11-14T01:33:24Z
+
+--- A. plaintext HTTP to 8443 ---
+b'HTTP/1.0 400 Bad Request\r\n\r\nClient sent an HTTP request to an HTTPS server.\n'
+
+--- B. resolvers ---
+*** router.ctc can't find tbox: Non-existent domain
+Server:  router.ctc
+Address:  fe80::5
+
+---
+tbox       Address:  fe80::5  
+tsp        Address:  fe80::5  
+cgw        Address:  fe80::5  
+fleet      Address:  fe80::5  
+ota        Address:  fe80::5  
+signing    Address:  fe80::5  
+pki        Address:  fe80::5  
+ca          Name:    ca.  
+
+--- C. resolver config ---
+Default Server:  router.ctc
+Address:  fe80::5
+
+> 

@@ -1,0 +1,371 @@
+# GraphQL deep probe  2026-11-14T09:37:32  target 10.230.164.2:8080
+
+=== introspect_json ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"query IntrospectionQuery { __schema { types { name kind } } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== introspect_min ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"{__schema{types{name}}}"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== typename ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== graphql_ct ===
+POST /graphql  ct=application/graphql  extra=None
+--- req body ---
+{__schema{types{name}}}
+--- resp ---
+HTTP/1.1 400 Bad Request
+{"error":"invalid GraphQL request"}
+
+
+=== graphql_ct_query ===
+POST /graphql  ct=application/graphql  extra=None
+--- req body ---
+query{__typename}
+--- resp ---
+HTTP/1.1 400 Bad Request
+{"error":"invalid GraphQL request"}
+
+
+=== get_query ===
+GET /graphql?query=%7B__schema%7Btypes%7Bname%7D%7D%7D  ct=None  extra=None
+--- req body ---
+
+--- resp ---
+HTTP/1.1 405 Method Not Allowed
+{"error":"method not allowed"}
+
+
+=== get_query2 ===
+GET /graphql?query={__typename}  ct=None  extra=None
+--- req body ---
+
+--- resp ---
+HTTP/1.1 405 Method Not Allowed
+{"error":"method not allowed"}
+
+
+=== path_/graphql/ ===
+POST /graphql/  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/GraphQL ===
+POST /GraphQL  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/GRAPHQL ===
+POST /GRAPHQL  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/graphql/v1 ===
+POST /graphql/v1  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/graphql/v2 ===
+POST /graphql/v2  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/api/graphql ===
+POST /api/graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/v1/graphql ===
+POST /v1/graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/gql ===
+POST /gql  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/graphiql ===
+POST /graphiql  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/graphql/schema ===
+POST /graphql/schema  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== path_/graphql/introspection ===
+POST /graphql/introspection  ct=application/json  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 404 Not Found
+404 page not found
+
+
+=== opname ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query": "query Q($v:String){vehicles(vin:$v){vin}}", "operationName": "Q", "variables": {"v": "CV6FF52FEE9EDDD86"}}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== q:{"query":"{ vehicles(vin:\"CV6FF52FEE9ED ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"{ vehicles(vin:\"CV6FF52FEE9EDDD86\"){ vin label } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== q:{"query":"{ vehicles { vin label firmwar ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"{ vehicles { vin label firmware { version url } } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== q:{"query":"{ firmware { name version url  ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"{ firmware { name version url hash } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== q:{"query":"{ otaPackages { name url } }"} ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"{ otaPackages { name url } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== q:{"query":"mutation { signFirmware(vin:\" ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"mutation { signFirmware(vin:\"CV6FF52FEE9EDDD86\"){ signature } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== q:{"query":"{ __type(name:\"Vehicle\"){ na ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":"{ __type(name:\"Vehicle\"){ name fields{ name } } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== hdr_Authorization ===
+POST /graphql  ct=application/json  extra={'Authorization': 'Bearer test'}
+--- req body ---
+{"query":"{ vehicles { vin label } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== hdr_X-API-Key ===
+POST /graphql  ct=application/json  extra={'X-API-Key': 'test'}
+--- req body ---
+{"query":"{ vehicles { vin label } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== hdr_X-Vehicle-VIN ===
+POST /graphql  ct=application/json  extra={'X-Vehicle-VIN': 'CV6FF52FEE9EDDD86'}
+--- req body ---
+{"query":"{ vehicles { vin label } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== hdr_X-Admin ===
+POST /graphql  ct=application/json  extra={'X-Admin': '1'}
+--- req body ---
+{"query":"{ vehicles { vin label } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== hdr_X-Internal ===
+POST /graphql  ct=application/json  extra={'X-Internal': 'true'}
+--- req body ---
+{"query":"{ vehicles { vin label } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== hdr_X-Forwarded-For ===
+POST /graphql  ct=application/json  extra={'X-Forwarded-For': '127.0.0.1'}
+--- req body ---
+{"query":"{ vehicles { vin label } }"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== empty_body ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+
+--- resp ---
+HTTP/1.1 400 Bad Request
+{"error":"invalid GraphQL request"}
+
+
+=== empty_obj ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== array ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+[]
+--- resp ---
+HTTP/1.1 400 Bad Request
+{"error":"invalid GraphQL request"}
+
+
+=== form ===
+POST /graphql  ct=application/x-www-form-urlencoded  extra=None
+--- req body ---
+query=%7B__typename%7D
+--- resp ---
+HTTP/1.1 400 Bad Request
+{"error":"invalid GraphQL request"}
+
+
+=== text ===
+POST /graphql  ct=text/plain  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== noctype ===
+POST /graphql  ct=None  extra=None
+--- req body ---
+{"query":"{__typename}"}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== null_query ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+{"query":null}
+--- resp ---
+HTTP/1.1 200 OK
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+=== batch ===
+POST /graphql  ct=application/json  extra=None
+--- req body ---
+[{"query":"{__typename}"},{"query":"{vehicles{vin}}"}]
+--- resp ---
+HTTP/1.1 400 Bad Request
+{"error":"invalid GraphQL request"}
+
+
+
+=== 响应体去重 ===
+
+[20] ['introspect_json', 'introspect_min', 'typename', 'opname', 'q:{"query":"{ vehicles(vin:\\"CV6FF52FEE9ED', 'q:{"query":"{ vehicles { vin label firmwar', 'q:{"query":"{ firmware { name version url ', 'q:{"query":"{ otaPackages { name url } }"}', 'q:{"query":"mutation { signFirmware(vin:\\"', 'q:{"query":"{ __type(name:\\"Vehicle\\"){ na', 'hdr_Authorization', 'hdr_X-API-Key', 'hdr_X-Vehicle-VIN', 'hdr_X-Admin', 'hdr_X-Internal', 'hdr_X-Forwarded-For', 'empty_obj', 'text', 'noctype', 'null_query']
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+
+[6] ['graphql_ct', 'graphql_ct_query', 'empty_body', 'array', 'form', 'batch']
+{"error":"invalid GraphQL request"}
+
+
+[2] ['get_query', 'get_query2']
+{"error":"method not allowed"}
+
+
+[11] ['path_/graphql/', 'path_/GraphQL', 'path_/GRAPHQL', 'path_/graphql/v1', 'path_/graphql/v2', 'path_/api/graphql', 'path_/v1/graphql', 'path_/gql', 'path_/graphiql', 'path_/graphql/schema', 'path_/graphql/introspection']
+404 page not found
+

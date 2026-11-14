@@ -1,0 +1,7 @@
+2026/11/14 09:38:33 listening 127.0.0.1:9443, go=1.24
+2026/11/14 09:38:49 http: TLS handshake error from 127.0.0.1:59089: tls: client didn't provide a certificate
+2026/11/14 09:38:49 http: TLS handshake error from 127.0.0.1:59551: tls: failed to verify certificate: x509: certificate signed by unknown authority
+2026/11/14 09:40:30 http: TLS handshake error from 127.0.0.1:58112: tls: client didn't provide a certificate
+2026/11/14 09:40:30 http: TLS handshake error from 127.0.0.1:58135: tls: failed to verify certificate: x509: certificate signed by unknown authority
+2026/11/14 09:40:30 http: TLS handshake error from 127.0.0.1:58233: tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-11-14T09:40:30+08:00 is after 2020-02-01T00:00:00Z
+exit status 0xffffffff

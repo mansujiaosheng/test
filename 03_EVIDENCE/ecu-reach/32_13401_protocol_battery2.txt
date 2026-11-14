@@ -1,0 +1,4 @@
+# case            connect_ms  rx_len  eof_ms_after_connect  err
+http-get            26.2       0                  25.9  None
+http-connect        44.8       0                   6.7  None
+ws-upgrade          51.5       0                   2.3  None

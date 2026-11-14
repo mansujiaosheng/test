@@ -1,0 +1,32 @@
+{
+  "label": "node1220_3e00",
+  "purpose": "tester present",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4423E00",
+    "uds": "3E00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F3E11",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F3E11",
+      "parsed": "NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)"
+    }
+  ],
+  "elapsed_ms": 786.94,
+  "parsed": "0x1220: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+  "seq": 2935,
+  "ts": "2026-11-14T09:40:30.244+08:00"
+}

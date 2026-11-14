@@ -1,0 +1,22 @@
+# CGW DoIP evidence (format v1.0)
+time     : 2026-11-14 09:33:36+0800
+target   : 10.229.221.2:13400/TCP
+command  : VehicleIdentificationRequest 0x0001 with 8-byte ASCII junk payload (spec requires payload length == 0)
+tx_hex   : 02fd0001000000084741524241474521
+rx[0]_hex: 02fd000400000021435636464635324645453945444444383610000600000010000000000000000000
+rx[0]_typ: 0x0004
+note     : H-003: payload length not validated, VIN still returned
+
+--- decoded ---
+[
+  {
+    "type": "0x0004",
+    "name": "VehicleIdResponse",
+    "payload_hex": "435636464635324645453945444444383610000600000010000000000000000000",
+    "vin": "CV6FF52FEE9EDDD86",
+    "logical_address": "0x1000",
+    "eid": "060000001000",
+    "gid": "000000000000",
+    "further_action": 0
+  }
+]

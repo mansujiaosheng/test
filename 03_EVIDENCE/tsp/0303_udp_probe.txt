@@ -1,0 +1,2 @@
+=== UDP probe (send probe, wait 1.2s for any reply) ===
+done (no REPLY lines = no UDP service answered)

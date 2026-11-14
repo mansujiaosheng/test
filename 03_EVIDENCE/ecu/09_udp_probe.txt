@@ -1,0 +1,18 @@
+# ICMP-port-unreachable on UDP == host EXISTS but port closed. Silence == no host / filtered.
+target                         port  result                    dt
+CGW-live-control 10.229.221.2   8080  SILENT                  3.01
+CGW-live-control 10.229.221.2  13400  SILENT                  3.01
+CGW-live-control 10.229.221.2   5353  SILENT                  3.01
+TSP-live-control 10.230.164.2   8080  SILENT                   3.0
+TSP-live-control 10.230.164.2  13400  SILENT                  3.01
+TSP-live-control 10.230.164.2   5353  SILENT                   3.0
+----------------------------------------------------------------------
+BCM 10.224.139.5               8080  SILENT                  3.01
+BCM 10.224.139.5              13400  SILENT                  3.01
+BCM 10.224.139.5               5353  SILENT                  3.01
+BMS 10.224.139.6               8080  SILENT                  3.01
+BMS 10.224.139.6              13400  SILENT                  3.01
+BMS 10.224.139.6               5353  SILENT                  3.01
+VCU 10.224.139.7               8080  SILENT                  3.01
+VCU 10.224.139.7              13400  SILENT                   3.0
+VCU 10.224.139.7               5353  SILENT                  3.01

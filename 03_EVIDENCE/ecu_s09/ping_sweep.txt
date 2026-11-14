@@ -1,0 +1,48 @@
+=== ping .5 ===
+
+Pinging 10.224.139.5 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.224.139.5:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+=== ping .6 ===
+
+Pinging 10.224.139.6 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.224.139.6:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+=== ping .7 ===
+
+Pinging 10.224.139.7 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.224.139.7:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+=== ping gw 10.252.3.1 ===
+
+Pinging 10.252.3.1 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.252.3.1:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping known-good 10.230.164.2 ===
+
+Pinging 10.230.164.2 with 32 bytes of data:
+Reply from 10.230.164.2: bytes=32 time=26ms TTL=63
+Reply from 10.230.164.2: bytes=32 time=27ms TTL=63
+
+Ping statistics for 10.230.164.2:
+    Packets: Sent = 2, Received = 2, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 26ms, Maximum = 27ms, Average = 26ms

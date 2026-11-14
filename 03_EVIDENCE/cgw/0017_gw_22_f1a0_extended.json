@@ -1,0 +1,32 @@
+{
+  "label": "gw_22_f1a0_extended",
+  "purpose": "read DID 0xF1A0 in extended session",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00100022F1A0",
+    "uds": "22F1A0"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E0062F1A007E007E807E107E9",
+      "len": 15
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "62F1A007E007E807E107E9",
+      "parsed": "POSITIVE for 0x22 (ReadDataByIdentifier) data=F1A007E007E807E107E9"
+    }
+  ],
+  "elapsed_ms": 383.32,
+  "parsed": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1A007E007E807E107E9",
+  "seq": 17,
+  "ts": "2026-11-14T09:10:39.404+08:00"
+}

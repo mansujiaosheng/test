@@ -1,0 +1,15 @@
+Sat Nov 14 01:44:45 UTC 2026
+## 8443 ALPN negotiation (does it offer h2?) — what protocol runs after mTLS?
+## cmd: inline python (recorded below), target 10.230.164.3:8443, no client cert
+
+offer=['h2', 'http/1.1']   -> selected_alpn=None  tls=TLSv1.3  cipher=TLS_AES_128_GCM_SHA256  shared_n=None
+   post-handshake read raised SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+offer=['h2']               -> selected_alpn=None  tls=TLSv1.3  cipher=TLS_AES_128_GCM_SHA256  shared_n=None
+   post-handshake read raised SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+offer=['http/1.1']         -> selected_alpn=None  tls=TLSv1.3  cipher=TLS_AES_128_GCM_SHA256  shared_n=None
+   post-handshake read raised SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+offer=['doip']             -> selected_alpn=None  tls=TLSv1.3  cipher=TLS_AES_128_GCM_SHA256  shared_n=None
+   post-handshake read raised SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+offer=['acme-tls/1']       -> selected_alpn=None  tls=TLSv1.3  cipher=TLS_AES_128_GCM_SHA256  shared_n=None
+   post-handshake read raised SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+Sat Nov 14 01:44:46 UTC 2026

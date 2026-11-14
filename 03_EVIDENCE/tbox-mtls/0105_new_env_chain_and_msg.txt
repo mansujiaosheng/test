@@ -1,0 +1,236 @@
+###### 0105 new env: server chain + full -msg handshake trace (10.225.139.3:8443) ######
+# utc=2026-11-14T01:55:45Z
+
+=== [1] -showcerts ===
+CONNECTED(00000158)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+ 0 s:CN = tbox
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:51:20 2026 GMT; NotAfter: Dec 14 01:51:20 2026 GMT
+-----BEGIN CERTIFICATE-----
+MIIBizCCATKgAwIBAgIRAP57OSQOhz4vKG20pzngxA8wCgYIKoZIzj0EAwIwJTEj
+MCEGA1UEAxMaQ1Y2IEZsZWV0IERpYWdub3N0aWNzIFJvb3QwHhcNMjYxMTE0MDA1
+MTIwWhcNMjYxMjE0MDE1MTIwWjAPMQ0wCwYDVQQDEwR0Ym94MFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEtheMZKYlSS2q706eIeZkgkEQkzLsUKXQCQNbygnCZsbD
+eV7s8yJVyBYANTj6YR9Z+Dv0vG8O9nD13Vzcttnz26NZMFcwDgYDVR0PAQH/BAQD
+AgeAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB8GA1UdIwQYMBaAFGWRs+1ssCtCG2RG
++WLvhd7K1RIKMA8GA1UdEQQIMAaCBHRib3gwCgYIKoZIzj0EAwIDRwAwRAIgJBK3
+rNR0xo/sXfPLmZ5AC2z7YJqejnHqeMeceV9LNv0CIDArKh4XtQIgA3eBM2o3joU1
+QFY4b9quGNJutUgyBU0j
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 891 bytes and written 400 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+1CB10000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+=== [2] -msg (handshake message order) ===
+CONNECTED(0000016C)
+>>> TLS 1.0, RecordHeader [length 0005]
+    16 03 01 01 2d
+>>> TLS 1.3, Handshake [length 012d], ClientHello
+    01 00 01 29 03 03 15 b1 74 56 a4 95 ce 8d df b6
+    aa ca f4 45 0e 0a 94 9e 8a a1 b9 1f 5e 40 06 6e
+    0f 1e 45 73 d5 61 20 87 28 c5 c8 e8 b3 57 dd 15
+    17 3a 01 f7 be a0 af 54 94 01 5d 37 a9 1f 70 72
+    cc 5e 70 01 12 47 42 00 3e 13 02 13 03 13 01 c0
+    2c c0 30 00 9f cc a9 cc a8 cc aa c0 2b c0 2f 00
+    9e c0 24 c0 28 00 6b c0 23 c0 27 00 67 c0 0a c0
+    14 00 39 c0 09 c0 13 00 33 00 9d 00 9c 00 3d 00
+    3c 00 35 00 2f 00 ff 01 00 00 a2 00 00 00 09 00
+    07 00 00 04 74 62 6f 78 00 0b 00 04 03 00 01 02
+    00 0a 00 16 00 14 00 1d 00 17 00 1e 00 19 00 18
+    01 00 01 01 01 02 01 03 01 04 00 16 00 00 00 17
+    00 00 00 0d 00 2a 00 28 04 03 05 03 06 03 08 07
+    08 08 08 09 08 0a 08 0b 08 04 08 05 08 06 04 01
+    05 01 06 01 03 03 03 01 03 02 04 02 05 02 06 02
+    00 2b 00 09 08 03 04 03 03 03 02 03 01 00 2d 00
+    02 01 01 00 33 00 26 00 24 00 1d 00 20 33 2f 76
+    fd 48 83 ac fb f3 e0 06 76 c5 66 4e 17 be 4e 79
+    d1 0e c5 69 4d 97 90 b8 95 0b ff 6b 10
+<<< TLS 1.2, RecordHeader [length 0005]
+    16 03 03 00 7a
+<<< TLS 1.3, Handshake [length 007a], ServerHello
+    02 00 00 76 03 03 f6 4a 5a 43 b0 d8 aa 32 a4 eb
+    2e d2 f1 0b b9 8b 3c 60 cb 92 86 2f 0c 75 2e db
+    de d0 6d 54 85 92 20 87 28 c5 c8 e8 b3 57 dd 15
+    17 3a 01 f7 be a0 af 54 94 01 5d 37 a9 1f 70 72
+    cc 5e 70 01 12 47 42 13 01 00 00 2e 00 2b 00 02
+    03 04 00 33 00 24 00 1d 00 20 29 5d 38 9e 63 da
+    b3 64 78 8e bd d8 a9 68 ef 5e 5b ef 53 f2 ff 86
+    96 d8 65 53 39 54 84 27 e6 3b
+<<< TLS 1.2, RecordHeader [length 0005]
+    14 03 03 00 01
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 1b
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+<<< TLS 1.3, Handshake [length 000a], EncryptedExtensions
+    08 00 00 06 00 04 00 00 00 00
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 81
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+<<< TLS 1.3, Handshake [length 0070], CertificateRequest
+    0d 00 00 6c 00 00 69 00 05 00 00 00 12 00 00 00
+    0d 00 10 00 0e 08 04 04 03 08 07 08 05 08 06 05
+    03 06 03 00 32 00 1a 00 18 08 04 04 03 08 07 08
+    05 08 06 04 01 05 01 06 01 05 03 06 03 02 01 02
+    03 00 2f 00 2b 00 29 00 27 30 25 31 23 30 21 06
+    03 55 04 03 13 1a 43 56 36 20 46 6c 65 65 74 20
+    44 69 61 67 6e 6f 73 74 69 63 73 20 52 6f 6f 74
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 01 ad
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+<<< TLS 1.3, Handshake [length 019c], Certificate
+    0b 00 01 98 00 00 01 94 00 01 8f 30 82 01 8b 30
+    82 01 32 a0 03 02 01 02 02 11 00 fe 7b 39 24 0e
+    87 3e 2f 28 6d b4 a7 39 e0 c4 0f 30 0a 06 08 2a
+    86 48 ce 3d 04 03 02 30 25 31 23 30 21 06 03 55
+    04 03 13 1a 43 56 36 20 46 6c 65 65 74 20 44 69
+    61 67 6e 6f 73 74 69 63 73 20 52 6f 6f 74 30 1e
+    17 0d 32 36 31 31 31 34 30 30 35 31 32 30 5a 17
+    0d 32 36 31 32 31 34 30 31 35 31 32 30 5a 30 0f
+    31 0d 30 0b 06 03 55 04 03 13 04 74 62 6f 78 30
+    59 30 13 06 07 2a 86 48 ce 3d 02 01 06 08 2a 86
+    48 ce 3d 03 01 07 03 42 00 04 b6 17 8c 64 a6 25
+    49 2d aa ef 4e 9e 21 e6 64 82 41 10 93 32 ec 50
+    a5 d0 09 03 5b ca 09 c2 66 c6 c3 79 5e ec f3 22
+    55 c8 16 00 35 38 fa 61 1f 59 f8 3b f4 bc 6f 0e
+    f6 70 f5 dd 5c dc b6 d9 f3 db a3 59 30 57 30 0e
+    06 03 55 1d 0f 01 01 ff 04 04 03 02 07 80 30 13
+    06 03 55 1d 25 04 0c 30 0a 06 08 2b 06 01 05 05
+    07 03 01 30 1f 06 03 55 1d 23 04 18 30 16 80 14
+    65 91 b3 ed 6c b0 2b 42 1b 64 46 f9 62 ef 85 de
+    ca d5 12 0a 30 0f 06 03 55 1d 11 04 08 30 06 82
+    04 74 62 6f 78 30 0a 06 08 2a 86 48 ce 3d 04 03
+    02 03 47 00 30 44 02 20 24 12 b7 ac d4 74 c6 8f
+    ec 5d f3 cb 99 9e 40 0b 6c fb 60 9a 9e 8e 71 ea
+    78 c7 9c 79 5f 4b 36 fd 02 20 30 2b 2a 1e 17 b5
+    02 20 03 77 81 33 6a 37 8e 85 35 40 56 38 6f da
+    ae 18 d2 6e b5 48 32 05 4d 23 00 00
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 60
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+<<< TLS 1.3, Handshake [length 004f], CertificateVerify
+    0f 00 00 4b 04 03 00 47 30 45 02 20 61 0e 80 d7
+    42 b5 d8 77 a3 eb dc f5 08 7b aa 7b 0a 19 c9 09
+    54 de 30 d7 ac e0 b9 2d b6 1b ed 80 02 21 00 98
+    d9 e0 43 c7 50 c0 be d9 6b ab 85 64 8d 83 8d 0b
+    78 7c e6 dd 0c e0 d4 6c a0 ef b6 cc b3 ef 8f
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 35
+<<< TLS 1.3, InnerContent [length 0001]
+    16
+<<< TLS 1.3, Handshake [length 0024], Finished
+    14 00 00 20 c7 9d b0 78 c4 6c 91 bf 11 c3 ea 4f
+    60 9a 57 ab 39 10 14 f6 d4 dd 17 9b dc b1 19 78
+    86 91 a4 76
+>>> TLS 1.2, RecordHeader [length 0005]
+    14 03 03 00 01
+>>> TLS 1.3, ChangeCipherSpec [length 0001]
+    01
+>>> TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 19
+>>> TLS 1.2, InnerContent [length 0001]
+    16
+>>> TLS 1.3, Handshake [length 0008], Certificate
+    0b 00 00 04 00 00 00 00
+>>> TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 35
+>>> TLS 1.2, InnerContent [length 0001]
+    16
+>>> TLS 1.3, Handshake [length 0024], Finished
+    14 00 00 20 bc 1f 68 d5 37 0a 65 ec 79 6a 4e 99
+    f8 5f f4 bd 8f 6a 59 60 93 7c 80 7a 05 d5 c8 e2
+    6b 49 bb 73
+---
+Certificate chain
+ 0 s:CN = tbox
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:51:20 2026 GMT; NotAfter: Dec 14 01:51:20 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBizCCATKgAwIBAgIRAP57OSQOhz4vKG20pzngxA8wCgYIKoZIzj0EAwIwJTEj
+MCEGA1UEAxMaQ1Y2IEZsZWV0IERpYWdub3N0aWNzIFJvb3QwHhcNMjYxMTE0MDA1
+MTIwWhcNMjYxMjE0MDE1MTIwWjAPMQ0wCwYDVQQDEwR0Ym94MFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEtheMZKYlSS2q706eIeZkgkEQkzLsUKXQCQNbygnCZsbD
+eV7s8yJVyBYANTj6YR9Z+Dv0vG8O9nD13Vzcttnz26NZMFcwDgYDVR0PAQH/BAQD
+AgeAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB8GA1UdIwQYMBaAFGWRs+1ssCtCG2RG
++WLvhd7K1RIKMA8GA1UdEQQIMAaCBHRib3gwCgYIKoZIzj0EAwIDRwAwRAIgJBK3
+rNR0xo/sXfPLmZ5AC2z7YJqejnHqeMeceV9LNv0CIDArKh4XtQIgA3eBM2o3joU1
+QFY4b9quGNJutUgyBU0j
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 892 bytes and written 400 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
+<<< TLS 1.2, RecordHeader [length 0005]
+    17 03 03 00 13
+<<< TLS 1.3, InnerContent [length 0001]
+    15
+<<< TLS 1.3, Alert [length 0002], fatal certificate_required
+    02 74
+E8BC0000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116

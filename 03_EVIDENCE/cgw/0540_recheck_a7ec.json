@@ -1,0 +1,19 @@
+{
+  "label": "recheck_a7ec",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00100022A7EC",
+    "uds": "22A7EC"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 408.28,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 540,
+  "ts": "2026-11-14T09:21:48.964+08:00"
+}

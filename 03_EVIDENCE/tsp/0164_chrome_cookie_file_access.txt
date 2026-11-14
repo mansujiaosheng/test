@@ -1,0 +1,4 @@
+Cookies            851968 B  LOCKED: PermissionError: [Errno 13] Permission denied: 'C:\\Users\\19678\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1\\Network\\Cookies'
+Cookies-wal        MISSING
+Cookies-journal    0 B  LOCKED: PermissionError: [Errno 13] Permission denied: 'C:\\Users\\19678\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1\\Network\\Cookies-journal'
+Cookies-shm        MISSING

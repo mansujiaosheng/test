@@ -1,0 +1,367 @@
+{
+  "tool": "isotp.py",
+  "iso": "ISO 15765-2:2016 (DoCAN) for CAN FD",
+  "ts": "2026-11-14T10:22:49+0800",
+  "host": "win32",
+  "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+  "passed": 71,
+  "total": 71,
+  "ok": true,
+  "checks": [
+    {
+      "name": "SF classic 3B (dl=8)",
+      "ok": true,
+      "detail": "got=0322f190cccccccc want=0322f190cccccccc"
+    },
+    {
+      "name": "SF classic 7B (dl=8)",
+      "ok": true,
+      "detail": "got=0700010203040506 want=0700010203040506"
+    },
+    {
+      "name": "SF escape 8B (dl=16)",
+      "ok": true,
+      "detail": "got=00080001020304050607cccccccccccc want=00080001020304050607cccccccccccc"
+    },
+    {
+      "name": "SF escape 62B (dl=64) length",
+      "ok": true,
+      "detail": "len=64"
+    },
+    {
+      "name": "SF escape 62B header",
+      "ok": true,
+      "detail": "got=003e want=003e"
+    },
+    {
+      "name": "FF 512B header (12-bit len)",
+      "ok": true,
+      "detail": "got=1200 want=1200"
+    },
+    {
+      "name": "FF 512B carried",
+      "ok": true,
+      "detail": "got=14 want=14"
+    },
+    {
+      "name": "FF 512B frame length",
+      "ok": true,
+      "detail": "len=16"
+    },
+    {
+      "name": "FF 16384B header (escape uint32)",
+      "ok": true,
+      "detail": "got=100000004000 want=100000004000"
+    },
+    {
+      "name": "FF 16384B carried",
+      "ok": true,
+      "detail": "got=10 want=10"
+    },
+    {
+      "name": "FF 16384B frame length",
+      "ok": true,
+      "detail": "len=16"
+    },
+    {
+      "name": "FF 4095B stays 12-bit",
+      "ok": true,
+      "detail": "got=1fff want=1fff"
+    },
+    {
+      "name": "FF 4096B escapes",
+      "ok": true,
+      "detail": "got=100000001000 want=100000001000"
+    },
+    {
+      "name": "CF sn=1",
+      "ok": true,
+      "detail": "got=21aa want=21aa"
+    },
+    {
+      "name": "CF sn=15",
+      "ok": true,
+      "detail": "got=47 want=47"
+    },
+    {
+      "name": "CF sn=0",
+      "ok": true,
+      "detail": "got=32 want=32"
+    },
+    {
+      "name": "FC CTS bs=0 stmin=0",
+      "ok": true,
+      "detail": "got=300000cccccccccc want=300000cccccccccc"
+    },
+    {
+      "name": "FC WAIT bs=0 stmin=0",
+      "ok": true,
+      "detail": "got=310000 want=310000"
+    },
+    {
+      "name": "FC OVFLW",
+      "ok": true,
+      "detail": "got=32 want=32"
+    },
+    {
+      "name": "FC CTS bs=8 stmin=0xF3",
+      "ok": true,
+      "detail": "got=3008f3 want=3008f3"
+    },
+    {
+      "name": "parse FC fields",
+      "ok": true,
+      "detail": "{'fs': 0, 'bs': 8, 'stmin_raw': 243, 'stmin_s': 0.0003, 'reserved_stmin': False}"
+    },
+    {
+      "name": "parse FC stmin 0xF3 = 300us",
+      "ok": true,
+      "detail": "0.0003"
+    },
+    {
+      "name": "STmin 0x00",
+      "ok": true,
+      "detail": "0.0 s (want 0.0)"
+    },
+    {
+      "name": "STmin 0x01",
+      "ok": true,
+      "detail": "0.001 s (want 0.001)"
+    },
+    {
+      "name": "STmin 0x0a",
+      "ok": true,
+      "detail": "0.01 s (want 0.01)"
+    },
+    {
+      "name": "STmin 0x7f",
+      "ok": true,
+      "detail": "0.127 s (want 0.127)"
+    },
+    {
+      "name": "STmin 0xf1",
+      "ok": true,
+      "detail": "0.0001 s (want 0.0001)"
+    },
+    {
+      "name": "STmin 0xf2",
+      "ok": true,
+      "detail": "0.0002 s (want 0.0002)"
+    },
+    {
+      "name": "STmin 0xf9",
+      "ok": true,
+      "detail": "0.0009 s (want 0.0009)"
+    },
+    {
+      "name": "STmin 0x80",
+      "ok": true,
+      "detail": "0.127 s (want 0.127)"
+    },
+    {
+      "name": "STmin 0xf0",
+      "ok": true,
+      "detail": "0.127 s (want 0.127)"
+    },
+    {
+      "name": "STmin 0xfa",
+      "ok": true,
+      "detail": "0.127 s (want 0.127)"
+    },
+    {
+      "name": "STmin 0xff",
+      "ok": true,
+      "detail": "0.127 s (want 0.127)"
+    },
+    {
+      "name": "STmin 0x80..0xF0 flagged reserved",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dl=16 TX 16384 B received intact by peer",
+      "ok": true,
+      "detail": "peer got 16384 B sha=41073092a93348a4"
+    },
+    {
+      "name": "dl=16 TX 16384 B sha256 match",
+      "ok": true,
+      "detail": "41073092a93348a4"
+    },
+    {
+      "name": "dl=16 TX used FF + CFs",
+      "ok": true,
+      "detail": "ff=1 cf=1092 frames=1093"
+    },
+    {
+      "name": "dl=16 TX escape FF for 16384 (>4095)",
+      "ok": true,
+      "detail": "FF escape path"
+    },
+    {
+      "name": "dl=16 TX saw 8-frame FC blocks (137 FCs)",
+      "ok": true,
+      "detail": "fc_rx=137 cf=1092"
+    },
+    {
+      "name": "dl=16 TX compact response received",
+      "ok": true,
+      "detail": "82 B"
+    },
+    {
+      "name": "dl=16 RX 16384 B reassembled length",
+      "ok": true,
+      "detail": "16384 B"
+    },
+    {
+      "name": "dl=16 RX 16384 B sha256 match",
+      "ok": true,
+      "detail": "41073092a93348a4"
+    },
+    {
+      "name": "dl=16 RX byte-exact",
+      "ok": true,
+      "detail": "compare"
+    },
+    {
+      "name": "dl=64 TX 16384 B received intact by peer",
+      "ok": true,
+      "detail": "peer got 16384 B sha=41073092a93348a4"
+    },
+    {
+      "name": "dl=64 TX 16384 B sha256 match",
+      "ok": true,
+      "detail": "41073092a93348a4"
+    },
+    {
+      "name": "dl=64 TX used FF + CFs",
+      "ok": true,
+      "detail": "ff=1 cf=260 frames=261"
+    },
+    {
+      "name": "dl=64 TX escape FF for 16384 (>4095)",
+      "ok": true,
+      "detail": "FF escape path"
+    },
+    {
+      "name": "dl=64 TX saw 8-frame FC blocks (33 FCs)",
+      "ok": true,
+      "detail": "fc_rx=33 cf=260"
+    },
+    {
+      "name": "dl=64 TX compact response received",
+      "ok": true,
+      "detail": "82 B"
+    },
+    {
+      "name": "dl=64 RX 16384 B reassembled length",
+      "ok": true,
+      "detail": "16384 B"
+    },
+    {
+      "name": "dl=64 RX 16384 B sha256 match",
+      "ok": true,
+      "detail": "41073092a93348a4"
+    },
+    {
+      "name": "dl=64 RX byte-exact",
+      "ok": true,
+      "detail": "compare"
+    },
+    {
+      "name": "BS=8 FC count matches block boundaries",
+      "ok": true,
+      "detail": "fc=5 cf=34 want=5"
+    },
+    {
+      "name": "BS=0 only the FF FC",
+      "ok": true,
+      "detail": "fc_rx=1"
+    },
+    {
+      "name": "FS=WAIT tolerated then CTS",
+      "ok": true,
+      "detail": "wait_fc=1"
+    },
+    {
+      "name": "FS=OVFLW aborts the send",
+      "ok": true,
+      "detail": "IsoTpOverflow"
+    },
+    {
+      "name": "STmin 20 ms honoured on every CF gap",
+      "ok": true,
+      "detail": "min=20.05 ms max=20.09 median=20.06 ms (12 gaps)"
+    },
+    {
+      "name": "STmin 0xF3 (300 us) not misread as ms",
+      "ok": true,
+      "detail": "total=0.001s min_gap=314 us (3 gaps)"
+    },
+    {
+      "name": "SN mismatch raises",
+      "ok": true,
+      "detail": "SN mismatch: expected 1, got 3"
+    },
+    {
+      "name": "CF while idle raises",
+      "ok": true,
+      "detail": "CF while idle (no FF seen)"
+    },
+    {
+      "name": "escape FF parsed total=16384",
+      "ok": true,
+      "detail": "16384"
+    },
+    {
+      "name": "unpadded final CF accepted",
+      "ok": true,
+      "detail": "30 B"
+    },
+    {
+      "name": "SF_DL > available raises",
+      "ok": true,
+      "detail": "SF_DL 7 > available 2"
+    },
+    {
+      "name": "62 B SF echoed intact",
+      "ok": true,
+      "detail": "62 B"
+    },
+    {
+      "name": "3 B SF on CAN FD stays classic form",
+      "ok": true,
+      "detail": "3 B"
+    },
+    {
+      "name": "63 B refused as SF",
+      "ok": true,
+      "detail": "SF payload 63 B > 62; use FF"
+    },
+    {
+      "name": "0x63 response reassembled",
+      "ok": true,
+      "detail": "6324080000000200"
+    },
+    {
+      "name": "0x63 payload byte-exact",
+      "ok": true,
+      "detail": "520 B total, 512 B data"
+    },
+    {
+      "name": "512 B answer needed FF + 35 CFs",
+      "ok": true,
+      "detail": "handled=1"
+    },
+    {
+      "name": "stats count frames",
+      "ok": true,
+      "detail": "{'nbytes': 2, 'dl': 16, 'frames': 1, 'sf': 1, 'ff': 0, 'cf': 0, 'fc_rx': 0, 'wait_fc': 0, 'bytes_cf': 0, 'elapsed_s': 5.3e-05, 'cf_gap_min_ms': None, 'cf_gap_max_ms': None, 'cf_gap_median_ms': None, 'fc': []}"
+    },
+    {
+      "name": "trace has tx and rx entries",
+      "ok": true,
+      "detail": "2 entries"
+    }
+  ]
+}

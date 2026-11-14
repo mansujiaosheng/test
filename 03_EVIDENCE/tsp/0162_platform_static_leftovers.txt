@@ -1,0 +1,35 @@
+=== 0162: platform static leftovers probe (read-only GET) ===
+/app.js.map                  http=404 ct= len=0 
+/admin.js.map                http=404 ct= len=0 
+/login.js.map                http=404 ct= len=0 
+/competitions.js.map         http=404 ct= len=0 
+/package.json                http=404 ct= len=0 
+/README.md                   http=404 ct= len=0 
+/Dockerfile                  http=404 ct= len=0 
+/Caddyfile                   http=404 ct= len=0 
+/config.json                 http=404 ct= len=0 
+/seed.sql                    http=404 ct= len=0 
+/schema.sql                  http=404 ct= len=0 
+/challenges.json             http=404 ct= len=0 
+/competition.json            http=404 ct= len=0 
+/data/                       http=404 ct= len=0 
+/backup/                     http=404 ct= len=0 
+/backups/                    http=404 ct= len=0 
+/logs/                       http=404 ct= len=0 
+/tmp/                        http=404 ct= len=0 
+/src/                        http=404 ct= len=0 
+/api/                        http=404 ct=application/json; charset=utf-8 len=109 {"error":{"code":"route_not_found","details":{},"message":"A
+/api/v1/                     http=404 ct=application/json; charset=utf-8 len=109 {"error":{"code":"route_not_found","details":{},"message":"A
+/ws/                         http=404 ct=application/json; charset=utf-8 len=109 {"error":{"code":"route_not_found","details":{},"message":"A
+/brand-mark.png              http=200 ct=image/png len=4488 .PNG......IHDR.............y.......pHYs...........~....:ID
+/favicon.ico                 http=404 ct= len=0 
+/admin.css                   http=200 ct=text/css; charset=utf-8 len=117320 :root {  --ink: #050909;  --surface-0: #080d0e;  --surfac
+/app.css                     http=200 ct=text/css; charset=utf-8 len=76798 :root {  --ink: #050909;  --surface-0: #080d0e;  --surfac
+/login.css                   http=200 ct=text/css; charset=utf-8 len=13316 :root {  --ink: #050909;  --surface-0: #080d0e;  --surfac
+/competitions.css            http=200 ct=text/css; charset=utf-8 len=6989 :root { --ink:#050909; --surface-0:#080d0e; --surface-1:#0c1
+/.git/HEAD                   http=404 ct= len=0 
+/.git/config                 http=404 ct= len=0 
+/.env                        http=404 ct= len=0 
+/robots.txt                  http=404 ct= len=0 
+/metrics                     http=404 ct= len=0 
+/debug/pprof/                http=404 ct= len=0 

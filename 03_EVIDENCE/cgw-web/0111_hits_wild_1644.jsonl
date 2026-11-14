@@ -1,0 +1,3 @@
+{"path": "/obd/activate/zzq7x", "error": "ReadTimeout: HTTPConnectionPool(host='10.230.164.4', port=8080): Read timed out. (read timeout=8.0)"}
+{"path": "/raw/connect/zzq7x", "error": "ReadTimeout: HTTPConnectionPool(host='10.230.164.4', port=8080): Read timed out. (read timeout=8.0)"}
+{"path": "/raw/control/zzq7x", "error": "ReadTimeout: HTTPConnectionPool(host='10.230.164.4', port=8080): Read timed out. (read timeout=8.0)"}

@@ -1,0 +1,71 @@
+=== GET /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:36:10 GMT
+Content-Length: 22
+
+{"error":"not found"}
+
+=== GET /internal ===
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:36:10 GMT
+Content-Length: 19
+
+404 page not found
+
+=== GET /internal/ ===
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:36:12 GMT
+Content-Length: 19
+
+404 page not found
+
+=== GET /internal/x ===
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:36:13 GMT
+Content-Length: 19
+
+404 page not found
+
+=== GET /internal/audit/ ===
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:36:14 GMT
+Content-Length: 19
+
+404 page not found
+
+=== GET /api/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:36:15 GMT
+Content-Length: 19
+
+404 page not found
+
+=== GET /audit ===
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:36:16 GMT
+Content-Length: 19
+
+404 page not found
+
+=== GET /internal/interfaces ===
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 01:36:16 GMT
+Content-Length: 19
+
+404 page not found
+

@@ -1,0 +1,433 @@
+[
+ {
+  "tag": "vin_only",
+  "body": "{\"vin\": \"CV6FF52FEE9EDDD86\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "vin_plus_query",
+  "body": "{\"query\": \"{__typename}\", \"vin\": \"CV6FF52FEE9EDDD86\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "query_single_vehicle_arg",
+  "body": "{\"query\": \"{vehicle(vin:\\\"CV6FF52FEE9EDDD86\\\"){vin label firmware}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "query_variables",
+  "body": "{\"query\": \"query($vin:String!){vehicle(vin:$vin){vin label firmware}}\", \"variables\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "operationName",
+  "body": "{\"query\": \"query GetVehicle($vin:String!){vehicle(vin:$vin){vin}}\", \"operationName\": \"GetVehicle\", \"variables\": {\"vin\": \"CV6FF52FEE9EDDD86\"}}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "vehicleId",
+  "body": "{\"query\": \"{__typename}\", \"vehicleId\": \"CV6FF52FEE9EDDD86\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "vehicle_id",
+  "body": "{\"query\": \"{__typename}\", \"vehicle_id\": \"CV6FF52FEE9EDDD86\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "deviceId",
+  "body": "{\"query\": \"{__typename}\", \"deviceId\": \"tbox-001\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "tboxId",
+  "body": "{\"query\": \"{__typename}\", \"tboxId\": \"tbox-001\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "imei",
+  "body": "{\"query\": \"{__typename}\", \"imei\": \"860000000000001\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "iccid",
+  "body": "{\"query\": \"{__typename}\", \"iccid\": \"89860000000000000000\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "tenant",
+  "body": "{\"query\": \"{__typename}\", \"tenant\": \"cv6\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "tenantId",
+  "body": "{\"query\": \"{__typename}\", \"tenantId\": \"cv6\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "apiKey_body",
+  "body": "{\"query\": \"{__typename}\", \"apiKey\": \"cv6-demo\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "token_body",
+  "body": "{\"query\": \"{__typename}\", \"token\": \"cv6-demo\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "key",
+  "body": "{\"query\": \"{__typename}\", \"key\": \"cv6\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "role_admin",
+  "body": "{\"query\": \"{__typename}\", \"role\": \"admin\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "fleet",
+  "body": "{\"query\": \"{__typename}\", \"fleet\": \"cv6-fleet\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "scope",
+  "body": "{\"query\": \"{__typename}\", \"scope\": \"fleet:read vehicle:read\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "include_firmware",
+  "body": "{\"query\": \"{vehicles{vin label firmware version}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "all_fields",
+  "body": "{\"query\": \"{vehicles{vin label firmware version ota status}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "firmware_query",
+  "body": "{\"query\": \"{firmware{version url}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "ota_query",
+  "body": "{\"query\": \"{ota{latest{version url}}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "updates_query",
+  "body": "{\"query\": \"{updates{id version}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "certs_query",
+  "body": "{\"query\": \"{certificates{pem}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "ca_query",
+  "body": "{\"query\": \"{ca{pem}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "__typename_root",
+  "body": "{\"query\": \"{__typename}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "__schema_full",
+  "body": "{\"query\": \"query{__schema{queryType{name} mutationType{name} types{name kind}}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "mutation",
+  "body": "{\"query\": \"mutation{mintFirmware(vin:\\\"CV6FF52FEE9EDDD86\\\"){url}}\"}",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "nested_dup_key",
+  "body": "\"{\\\"query\\\":\\\"{__typename}\\\",\\\"query\\\":\\\"mutation{mintFirmware{url}}\\\"}\"",
+  "status": "HTTP/1.1 400 Bad Request",
+  "len": 36,
+  "same": false,
+  "preview": "{\"error\":\"invalid GraphQL request\"}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "json_with_dup",
+  "body": "\"{\\\"vin\\\":\\\"CV6FF52FEE9EDDD86\\\",\\\"vin\\\":\\\"CV6000000DEMO0001\\\"}\"",
+  "status": "HTTP/1.1 400 Bad Request",
+  "len": 36,
+  "same": false,
+  "preview": "{\"error\":\"invalid GraphQL request\"}",
+  "err": null,
+  "note": ""
+ },
+ {
+  "tag": "size_1000",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": "actual=1000"
+ },
+ {
+  "tag": "size_4096",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": "actual=4096"
+ },
+ {
+  "tag": "size_8192",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": "actual=8192"
+ },
+ {
+  "tag": "size_16384",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": "actual=16384"
+ },
+ {
+  "tag": "size_32768",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": "actual=32768"
+ },
+ {
+  "tag": "size_65536",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": "actual=65536"
+ },
+ {
+  "tag": "size_131072",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "HTTP/1.1 200 OK",
+  "len": 81,
+  "same": true,
+  "preview": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+  "err": null,
+  "note": "actual=131072"
+ },
+ {
+  "tag": "size_262144",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "HTTP/1.1 400 Bad Request",
+  "len": 36,
+  "same": false,
+  "preview": "{\"error\":\"invalid GraphQL request\"}",
+  "err": null,
+  "note": "actual=262144"
+ },
+ {
+  "tag": "size_524288",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "HTTP/1.1 400 Bad Request",
+  "len": 36,
+  "same": false,
+  "preview": "{\"error\":\"invalid GraphQL request\"}",
+  "err": null,
+  "note": "actual=524288"
+ },
+ {
+  "tag": "size_1048576",
+  "body": "{\"query\":\"{__typename}\",\"p\":\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "status": "",
+  "len": 0,
+  "same": false,
+  "preview": "",
+  "err": "ConnectionResetError: [WinError 10054] \u8fdc\u7a0b\u4e3b\u673a\u5f3a\u8feb\u5173\u95ed\u4e86\u4e00\u4e2a\u73b0\u6709\u7684\u8fde\u63a5\u3002",
+  "note": "actual=1048576"
+ },
+ {
+  "tag": "cl_lie_19",
+  "status": "HTTP/1.1 400 Bad Request",
+  "len": 172,
+  "err": null,
+  "preview": "json\r\nDate: Sat, 14 Nov 2026 01:40:12 GMT\r\nContent-Length: 36\r\nConnection: close\r\n\r\n{\"error\":\"invalid GraphQL request\"}\n"
+ },
+ {
+  "tag": "cl_lie_29",
+  "status": "HTTP/1.1 200 OK",
+  "len": 208,
+  "err": null,
+  "preview": "ntent-Length: 81\r\nConnection: close\r\n\r\n{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}\n"
+ },
+ {
+  "tag": "cl_lie_0",
+  "status": "HTTP/1.1 400 Bad Request",
+  "len": 172,
+  "err": null,
+  "preview": "json\r\nDate: Sat, 14 Nov 2026 01:40:12 GMT\r\nContent-Length: 36\r\nConnection: close\r\n\r\n{\"error\":\"invalid GraphQL request\"}\n"
+ }
+]

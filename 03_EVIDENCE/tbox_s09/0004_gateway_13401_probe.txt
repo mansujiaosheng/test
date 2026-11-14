@@ -1,0 +1,9 @@
+###### 13401 probe: is the second gateway port TLS / does it leak a cert chain? ######
+
+=== 10.230.164.4:13401 ===
+  plain-DoIP VIR ->  (0B)
+  TLS: {"tls_error": "SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)"}
+
+=== 10.229.221.2:13401 ===
+  plain-DoIP VIR -> ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+  TLS: {"tls_error": "SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)"}

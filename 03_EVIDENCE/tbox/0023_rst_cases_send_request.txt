@@ -1,0 +1,49 @@
+###### 0023 do the RST cases actually ACCEPT the cert? (send a request after handshake)  2026-11-14T01:45:57Z ######
+## purpose: matrix v3 (0022) showed A1/A4/A6/B3 ending in TCP RST with no alert. If the server had
+##   accepted the cert it would hold the connection open waiting for a request; a RST therefore
+##   suggests rejection. This rules that out positively: send GET / immediately after the
+##   handshake, so an accepting server MUST answer with an HTTP status line.
+
+=== w1_leaf (leaf only, GET /) ===
+### cmd: python 04_SOLVE/tbox/mtls_probe.py --cert 04_SOLVE/tbox/mat2w/w1_leaf.pem --key 04_SOLVE/tbox/mat2w/w1_leaf.key --no-verify --path /
+## mtls_probe  host=10.230.164.3:8443 sni=tbox cert=04_SOLVE/tbox/mat2w/w1_leaf.pem tls=1.3 alpn=(none) verify=off
+TLS: version=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 alpn=None peer_subject=None
+PATH /                                      READ-ALERT [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+PATH /                                      STATUS (no response) bytes=0
+
+=== w3_leaf_skica (leaf only, GET /) ===
+### cmd: python 04_SOLVE/tbox/mtls_probe.py --cert 04_SOLVE/tbox/mat2w/w3_leaf_skica.pem --key 04_SOLVE/tbox/mat2w/w3_leaf_skica.key --no-verify --path /
+## mtls_probe  host=10.230.164.3:8443 sni=tbox cert=04_SOLVE/tbox/mat2w/w3_leaf_skica.pem tls=1.3 alpn=(none) verify=off
+TLS: version=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 alpn=None peer_subject=None
+PATH /                                      READ-ALERT [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+PATH /                                      STATUS (no response) bytes=0
+
+=== w4_leaf_cn_tbox (leaf only, GET /) ===
+### cmd: python 04_SOLVE/tbox/mtls_probe.py --cert 04_SOLVE/tbox/mat2w/w4_leaf_cn_tbox.pem --key 04_SOLVE/tbox/mat2w/w4_leaf_cn_tbox.key --no-verify --path /
+## mtls_probe  host=10.230.164.3:8443 sni=tbox cert=04_SOLVE/tbox/mat2w/w4_leaf_cn_tbox.pem tls=1.3 alpn=(none) verify=off
+TLS: version=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 alpn=None peer_subject=None
+Traceback (most recent call last):
+  File "D:\qwb\04_SOLVE\tbox\mtls_probe.py", line 204, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\qwb\04_SOLVE\tbox\mtls_probe.py", line 176, in main
+    d = tls.recv(65536)
+  File "C:\Program Files\Python313\Lib\ssl.py", line 1285, in recv
+    return self.read(buflen)
+           ~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\ssl.py", line 1140, in read
+    return self._sslobj.read(len)
+           ~~~~~~~~~~~~~~~~~^^^^^
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+=== vpn_client (leaf only, GET /) ===
+## mtls_probe  host=10.230.164.3:8443 sni=tbox cert=01_TARGETS/tbox/vpn_client.pem tls=1.3 alpn=(none) verify=off
+TLS: version=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 alpn=None peer_subject=None
+PATH /                                      READ-ALERT [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+PATH /                                      STATUS (no response) bytes=0
+
+=== w1_leaf_chain (chain present, GET /) as the contrast ===
+## mtls_probe  host=10.230.164.3:8443 sni=tbox cert=04_SOLVE/tbox/mat2w/w1_leaf_chain.pem tls=1.3 alpn=(none) verify=off
+TLS: version=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 alpn=None peer_subject=None
+PATH /                                      READ-ALERT [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)
+PATH /                                      STATUS (no response) bytes=0

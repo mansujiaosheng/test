@@ -1,0 +1,13 @@
+{
+  "label": "ra_verify_8da7",
+  "purpose": "DoIP routing activation (0x0005) -> parse 0x0006",
+  "request": {
+    "ptype": "0x0005",
+    "hex": "0E000000000000"
+  },
+  "responses": [],
+  "elapsed_ms": 3002.9,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 557,
+  "ts": "2026-11-14T09:22:15.808+08:00"
+}

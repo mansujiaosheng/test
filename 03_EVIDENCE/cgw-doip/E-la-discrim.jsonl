@@ -1,0 +1,12 @@
+{"la": "0x0001", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 533.6}
+{"la": "0x0042", "uds_req": "3e00", "resp": [{"kind": "diag", "src": 4096, "dst": 3584, "uds": "7f3e31"}], "ms": 820.5}
+{"la": "0x0100", "uds_req": "3e00", "resp": [], "ms": 511.5}
+{"la": "0x07E0", "uds_req": "3e00", "resp": [], "ms": 502.2}
+{"la": "0x07E8", "uds_req": "3e00", "resp": [], "ms": 507.6}
+{"la": "0x0ABC", "uds_req": "3e00", "resp": [], "ms": 512.6}
+{"la": "0x1000", "uds_req": "3e00", "resp": [], "ms": 500.9}
+{"la": "0x1001", "uds_req": "3e00", "resp": [], "ms": 511.4}
+{"la": "0x10FF", "uds_req": "3e00", "resp": [], "ms": 513.1}
+{"la": "0x2000", "uds_req": "3e00", "resp": [], "ms": 513.2}
+{"la": "0x7FFF", "uds_req": "3e00", "resp": [], "ms": 501.1}
+{"la": "0xFFFF", "uds_req": "3e00", "resp": [], "ms": 500.6}

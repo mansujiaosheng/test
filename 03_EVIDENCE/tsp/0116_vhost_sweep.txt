@@ -1,0 +1,5 @@
+==============================================================================
+Host sweep (baseline diff)  target=http://10.230.164.2:8080
+==============================================================================
+baseline /healthz: 200 b'{"status":"ok"}\n' len=16
+(only anomalies printed; absence of lines = all baseline)

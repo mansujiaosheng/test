@@ -1,0 +1,21 @@
+==============================================================================
+0401  does .3:8443 require client cert?  ALPN / TLS version / handshake behavior
+  date: 2026-11-14T01:32:29Z
+==============================================================================
+--- openssl s_client no client cert, ALPN h2,http/1.1 ---
+CONNECTED(00000158)
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+No ALPN negotiated
+Verify return code: 21 (unable to verify the first certificate)
+94940000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+
+--- curl -k https://10.230.164.3:8443/ ---
+
+--- curl -k /healthz ---
+
+--- curl --http2 -k / ---
+curl: option --http2: the installed libcurl version does not support this
+curl: try 'curl --help' for more information

@@ -1,0 +1,552 @@
+{
+ "target": "10.225.139.3:8443",
+ "utc": "2026-11-14T01:58:34.012455+00:00",
+ "certs_found": 125,
+ "keys_found": 70,
+ "pairs_tested": 61,
+ "certs_without_key": 16,
+ "rows": [
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "01_TARGETS/tbox/vpn_client.pem",
+   "key": "01_TARGETS/tbox/vpn_client.key",
+   "subject": "CN=cc-715a9a001b4a5abad5ce3ecc",
+   "issuer": "CN=CyberCar Vehicle Range VPN CA"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "03_EVIDENCE/fleet/clientcert_test/client.crt",
+   "key": "03_EVIDENCE/fleet/clientcert_test/client.key",
+   "subject": "CN=recon-probe",
+   "issuer": "CN=recon-probe"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "03_EVIDENCE/fleet/mtls_bypass/client.crt",
+   "key": "03_EVIDENCE/fleet/mtls_bypass/client.key",
+   "subject": "CN=diag-client",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "03_EVIDENCE/fleet/mtls_bypass/fake_root.crt",
+   "key": "03_EVIDENCE/fleet/mtls_bypass/fake_root.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "03_EVIDENCE/fleet/mtls_bypass/selfsigned_tbox.crt",
+   "key": "03_EVIDENCE/fleet/mtls_bypass/selfsigned_tbox.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "03_EVIDENCE/web/tls_probe/client_self_cert.pem",
+   "key": "03_EVIDENCE/web/tls_probe/client_self_key.pem",
+   "subject": "CN=client",
+   "issuer": "CN=client"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "03_EVIDENCE/web/tls_probe/fakeca_cert.pem",
+   "key": "03_EVIDENCE/web/tls_probe/fakeca_key.pem",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "03_EVIDENCE/web/tls_probe/fakeclient_cert.pem",
+   "key": "03_EVIDENCE/web/tls_probe/fakeclient_key.pem",
+   "subject": "CN=fleet-client",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/gostack/ca.crt",
+   "key": "04_SOLVE/tbox/gostack/ca.key",
+   "subject": "CN=TEST Fleet Root",
+   "issuer": "CN=TEST Fleet Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/gostack/srv.crt",
+   "key": "04_SOLVE/tbox/gostack/srv.key",
+   "subject": "CN=localhost",
+   "issuer": "CN=TEST Fleet Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)",
+   "reason": "SSLV3_ALERT_CERTIFICATE_EXPIRED",
+   "cert": "04_SOLVE/tbox/lab/c_expired.pem",
+   "key": "04_SOLVE/tbox/lab/c_expired.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/lab/c_self.pem",
+   "key": "04_SOLVE/tbox/lab/c_self.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/lab/root.pem",
+   "key": "04_SOLVE/tbox/mat/v4_fakeca_sameDN.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/lab/srv.pem",
+   "key": "04_SOLVE/tbox/lab/srv.key",
+   "subject": "CN=localhost",
+   "issuer": "CN=localhost"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat/v2_rsa2048_selfsign.pem",
+   "key": "04_SOLVE/tbox/mat/v2_rsa2048_selfsign.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat/v3_selfsign_caTrue.pem",
+   "key": "04_SOLVE/tbox/mat/v3_selfsign_caTrue.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat/v4_leaf.pem",
+   "key": "04_SOLVE/tbox/mat/v4_leaf.key",
+   "subject": "CN=tbox-client",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat/v5_fakeca_skiforge.pem",
+   "key": "04_SOLVE/tbox/mat/v5_fakeca_skiforge.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat/v5_leaf.pem",
+   "key": "04_SOLVE/tbox/mat/v5_leaf.key",
+   "subject": "CN=tbox-client",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat/v6_root_as_client.pem",
+   "key": "04_SOLVE/tbox/mat/v6_root_as_client.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat/v7_v1_noext.pem",
+   "key": "04_SOLVE/tbox/mat/v7_v1_noext.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat/v9_leaf_noeku.pem",
+   "key": "04_SOLVE/tbox/mat/v9_leaf_noeku.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2/v10_chain.pem",
+   "key": "04_SOLVE/tbox/mat2/v10.key",
+   "subject": "CN=tbox-client",
+   "issuer": "CN=CV6 Fleet Diagnostics Intermediate"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2/v12.pem",
+   "key": "04_SOLVE/tbox/mat2/v12.key",
+   "subject": "CN=tbox,OU=Fleet Diagnostics,O=CyberCar",
+   "issuer": "CN=tbox,OU=Fleet Diagnostics,O=CyberCar"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2/v14_chain.pem",
+   "key": "04_SOLVE/tbox/mat2/v14.key",
+   "subject": "CN=tbox-client",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2/v15.pem",
+   "key": "04_SOLVE/tbox/mat2/v15.key",
+   "subject": "CN=tbox-client",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2/v16_chain.pem",
+   "key": "04_SOLVE/tbox/mat2/v16.key",
+   "subject": "CN=tbox-client",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2w/w1_leaf.pem",
+   "key": "04_SOLVE/tbox/mat2w/w1_leaf.key",
+   "subject": "CN=diag-eng-01",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "LOAD_FAIL",
+   "message": "[X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)",
+   "cert": "04_SOLVE/tbox/mat2w/w1_leaf_chain.pem",
+   "key": "04_SOLVE/tbox/mat2w/w_ca.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2w/w2_leaf_aki.pem",
+   "key": "04_SOLVE/tbox/mat2w/w2_leaf_aki.key",
+   "subject": "CN=diag-eng-01",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2w/w3_leaf_skica.pem",
+   "key": "04_SOLVE/tbox/mat2w/w3_leaf_skica.key",
+   "subject": "CN=diag-eng-01",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "LOAD_FAIL",
+   "message": "[X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)",
+   "cert": "04_SOLVE/tbox/mat2w/w3_leaf_skica_chain.pem",
+   "key": "04_SOLVE/tbox/mat2w/w_ca_ski.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2w/w4_leaf_cn_tbox.pem",
+   "key": "04_SOLVE/tbox/mat2w/w4_leaf_cn_tbox.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2w/w5_empty_subject.pem",
+   "key": "04_SOLVE/tbox/mat2w/w5_empty_subject.key",
+   "subject": "",
+   "issuer": ""
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2w/w6_long_cn.pem",
+   "key": "04_SOLVE/tbox/mat2w/w6_long_cn.key",
+   "subject": "CN=tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",
+   "issuer": "CN=tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)",
+   "reason": "SSLV3_ALERT_CERTIFICATE_EXPIRED",
+   "cert": "04_SOLVE/tbox/mat2w/w7_future.pem",
+   "key": "04_SOLVE/tbox/mat2w/w7_future.key",
+   "subject": "CN=diag-eng-01",
+   "issuer": "CN=diag-eng-01"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)",
+   "reason": "SSLV3_ALERT_CERTIFICATE_EXPIRED",
+   "cert": "04_SOLVE/tbox/mat2w/w8_expired.pem",
+   "key": "04_SOLVE/tbox/mat2w/w8_expired.key",
+   "subject": "CN=diag-eng-01",
+   "issuer": "CN=diag-eng-01"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox/mat2w/w9_root_named_ski.pem",
+   "key": "04_SOLVE/tbox/mat2w/w9_root_named_ski.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/ca_namecon.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/ca_namecon.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/ca_policies.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/ca_policies.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/ca_rsa.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/ca_rsa.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/ca_samedn.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/ca_samedn.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+   "reason": null,
+   "cert": "04_SOLVE/tbox-mtls/pki/ca_sameski.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/ca_sameski.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "LOAD_FAIL",
+   "message": "[X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)",
+   "cert": "04_SOLVE/tbox-mtls/pki/chain_namecon_ca_first.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/leaf_namecon.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "LOAD_FAIL",
+   "message": "[X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)",
+   "cert": "04_SOLVE/tbox-mtls/pki/chain_policies_ca_first.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/leaf_policies.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "LOAD_FAIL",
+   "message": "[SSL: NO_CERTIFICATE_ASSIGNED] no certificate assigned (_ssl.c:3945)",
+   "cert": "04_SOLVE/tbox-mtls/pki/chain_rsa_ca_first.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/leaf_rsa.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "LOAD_FAIL",
+   "message": "[X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)",
+   "cert": "04_SOLVE/tbox-mtls/pki/chain_samedn_ca_first.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/leaf_samedn.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "LOAD_FAIL",
+   "message": "[X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)",
+   "cert": "04_SOLVE/tbox-mtls/pki/chain_sameski_ca_first.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/leaf_sameski.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s01_cn_tbox.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s01_cn_tbox.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s02_rsa2048.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s02_rsa2048.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s03_p384.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s03_p384.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)",
+   "reason": "SSLV3_ALERT_CERTIFICATE_EXPIRED",
+   "cert": "04_SOLVE/tbox-mtls/pki/s04_expired.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s04_expired.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)",
+   "reason": "SSLV3_ALERT_CERTIFICATE_EXPIRED",
+   "cert": "04_SOLVE/tbox-mtls/pki/s05_notyet.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s05_notyet.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s06_no_eku.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s06_no_eku.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s07_eku_server.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s07_eku_server.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s08_no_san.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s08_no_san.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s09_empty_subject.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s09_empty_subject.key",
+   "subject": "",
+   "issuer": ""
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s10_ca_true.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s10_ca_true.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s11_cn_root.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s11_cn_root.key",
+   "subject": "CN=CV6 Fleet Diagnostics Root",
+   "issuer": "CN=CV6 Fleet Diagnostics Root"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s12_aki_forged.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s12_aki_forged.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  },
+  {
+   "handshake": "FAIL",
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "cert": "04_SOLVE/tbox-mtls/pki/s13_ed25519.pem",
+   "key": "04_SOLVE/tbox-mtls/pki/s13_ed25519.key",
+   "subject": "CN=tbox",
+   "issuer": "CN=tbox"
+  }
+ ]
+}

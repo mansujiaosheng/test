@@ -1,0 +1,11 @@
+{
+  "label": "p13401_doip_v3",
+  "host": "10.229.221.2",
+  "port": 13401,
+  "sent_hex": "03FC000100000000",
+  "recv_hex": "",
+  "recv_ascii": "",
+  "note": "DoIP ident, protocol version 0x03 | peer closed | 0B in 59ms",
+  "seq": 4004,
+  "ts": "2026-11-14T09:28:26.298+08:00"
+}

@@ -1,0 +1,6 @@
+[req]
+distinguished_name = dn
+string_mask = pkix
+prompt = no
+[dn]
+CN = CV6 Fleet Diagnostics Root

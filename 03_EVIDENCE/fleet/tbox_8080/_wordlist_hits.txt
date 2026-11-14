@@ -1,0 +1,2 @@
+HIT 000 /device
+HIT 200 /healthz

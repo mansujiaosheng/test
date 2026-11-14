@@ -1,0 +1,28 @@
+=== 0151: /internal/audit — UNTESTED dimension: User-Agent / misc headers ===
+(prior work covered params, auth headers, Host, bodies, methods; UA not covered)
+UA='Go-http-client/1.1'     http=404 body={"error":"not found"}
+UA='Go-http-client/2.0'     http=404 body={"error":"not found"}
+UA='curl/8.4.0'             http=404 body={"error":"not found"}
+UA='tsp-audit/1.0'          http=404 body={"error":"not found"}
+UA='tsp-internal'           http=404 body={"error":"not found"}
+UA='internal'               http=404 body={"error":"not found"}
+UA='audit'                  http=404 body={"error":"not found"}
+UA='kube-probe/1.27'        http=404 body={"error":"not found"}
+UA='Prometheus/2.45'        http=404 body={"error":"not found"}
+UA='python-requests/2.32'   http=404 body={"error":"not found"}
+UA='Apache-HttpClient/4.5'  http=404 body={"error":"not found"}
+UA='grpc-go/1.60'           http=404 body={"error":"not found"}
+UA=''                       http=404 body={"error":"not found"}
+UA='Mozilla/5.0'            http=404 body={"error":"not found"}
+
+--- other untested headers ---
+Accept-Encoding: gzip                    http=404 body={"error":"not found"}
+Connection: close                        http=404 body={"error":"not found"}
+TE: trailers                             http=404 body={"error":"not found"}
+Upgrade: h2c                             http=404 body={"error":"not found"}
+X-Requested-With: XMLHttpRequest         http=404 body={"error":"not found"}
+X-Forwarded-Prefix: /api                 http=404 body={"error":"not found"}
+X-Envoy-External-Address: 127.0.0.1      http=404 body={"error":"not found"}
+X-Real-Forwarded-For: 127.0.0.1          http=404 body={"error":"not found"}
+CF-IPCountry: CN                         http=404 body={"error":"not found"}
+Forwarded: for=127.0.0.1                 http=404 body={"error":"not found"}

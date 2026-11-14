@@ -1,0 +1,74 @@
+###### T-BOX 8443 TLS surface round 2 (resumption / reconnect / PHA / CA-list)  2026-11-14T01:36:06Z ######
+## host 10.230.164.3:8443  sni=tbox  script 04_SOLVE/tbox/tls_surface2.sh
+## cmd: bash 04_SOLVE/tbox/tls_surface2.sh
+
+
+##################### S01 ticket issuance on a FAILED client-auth handshake (grep NewSessionTicket)
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -sess_out C:/Users/19678/AppData/Local/Temp/tmp.evZeNlVuuQ/sess.pem -msg -ign_eof </dev/null
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Verify return code: 21 (unable to verify the first certificate)
+64060100:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### does a session file exist? 
+NO - server never delivered a ticket (handshake aborted at client-auth)
+
+##################### S02 session resumption attempt (-sess_in) with the (absent) session
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -sess_in C:/Users/19678/AppData/Local/Temp/tmp.evZeNlVuuQ/sess.pem
+SKIPPED: no session to resume (S01 produced none).
+Note: TLS1.3 resumption is PSK-based; without a completed handshake there is no ticket,
+      so the 'resume-and-skip-client-cert' branch is structurally unreachable.
+
+##################### S03 -reconnect x3 on one TCP connection (does handshake #2/#3 still demand a cert?)
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -reconnect -no_ticket
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+drop connection and then reconnect
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+drop connection and then reconnect
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+drop connection and then reconnect
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+drop connection and then reconnect
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+drop connection and then reconnect
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+48040100:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl\record\rec_layer_s3.c:1605:SSL alert number 116
+### count of certificate-required alerts:
+1
+
+##################### S04 CA list stability: 3 independent handshakes, extract the certificate_authorities DN
+### handshake 1: openssl s_client ... -servername tbox -tls1_3 -msg -no_ticket
+<<< TLS 1.3, Handshake [length 0070], CertificateRequest 0d 00 00 6c 00 00 69 00 05 00 00 00 12 00 00 00 0d 00 10 00 0e 08 04 04 03 08 07 08 05 08 06 05 03 06 03 00 32 00 1a 00 18 08 04 04 03 08 07 08 05 08 06 04 01 05 01 06 01 05 03 06 03 02 01 02 03 00 2f 00 2b 00 29 00 27 30 25 31 23 30 21 06 03 55 04 03 13 1a 43 56 36 20 46 6c 65 65 74 20
+### handshake 2: openssl s_client ... -servername tbox -tls1_3 -msg -no_ticket
+<<< TLS 1.3, Handshake [length 0070], CertificateRequest 0d 00 00 6c 00 00 69 00 05 00 00 00 12 00 00 00 0d 00 10 00 0e 08 04 04 03 08 07 08 05 08 06 05 03 06 03 00 32 00 1a 00 18 08 04 04 03 08 07 08 05 08 06 04 01 05 01 06 01 05 03 06 03 02 01 02 03 00 2f 00 2b 00 29 00 27 30 25 31 23 30 21 06 03 55 04 03 13 1a 43 56 36 20 46 6c 65 65 74 20
+### handshake 3: openssl s_client ... -servername tbox -tls1_3 -msg -no_ticket
+<<< TLS 1.3, Handshake [length 0070], CertificateRequest 0d 00 00 6c 00 00 69 00 05 00 00 00 12 00 00 00 0d 00 10 00 0e 08 04 04 03 08 07 08 05 08 06 05 03 06 03 00 32 00 1a 00 18 08 04 04 03 08 07 08 05 08 06 04 01 05 01 06 01 05 03 06 03 02 01 02 03 00 2f 00 2b 00 29 00 27 30 25 31 23 30 21 06 03 55 04 03 13 1a 43 56 36 20 46 6c 65 65 74 20
+
+##################### S05 CertificateRequest extension list (decoded from one handshake)
+### cmd: openssl s_client ... -msg -no_ticket   (bytes of the CertificateRequest body)
+<<< TLS 1.3, Handshake [length 0070], CertificateRequest
+    0d 00 00 6c 00 00 69 00 05 00 00 00 12 00 00 00
+    0d 00 10 00 0e 08 04 04 03 08 07 08 05 08 06 05
+    03 06 03 00 32 00 1a 00 18 08 04 04 03 08 07 08
+    05 08 06 04 01 05 01 06 01 05 03 06 03 02 01 02
+    03 00 2f 00 2b 00 29 00 27 30 25 31 23 30 21 06
+    03 55 04 03 13 1a 43 56 36 20 46 6c 65 65 74 20
+
+##################### S06 post-handshake-auth advertisement (python ssl post_handshake_auth=True, no client cert)
+### cmd: python -c 'ctx.post_handshake_auth=True; handshake' (see inline)
+handshake OK TLSv1.3 ('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) alpn= None
+handshake err: SSLError [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+
+##################### S07 nmap cipher/cert enumeration (independent tool, TLS1.2 probe included)
+### cmd: nmap -Pn -p 8443 --script ssl-enum-ciphers,ssl-cert 10.230.164.3
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-11-14 09:36 +0800
+
+##################### S08 session-ticket count on a handshake that carries a (rejected) client cert
+### cmd: openssl s_client -cert 01_TARGETS/tbox/vpn_client.pem -key 01_TARGETS/tbox/vpn_client.key -msg
+<<< TLS 1.3, Handshake [length 0070], CertificateRequest
+<<< TLS 1.3, Handshake [length 019b], Certificate
+<<< TLS 1.3, Handshake [length 0050], CertificateVerify
+<<< TLS 1.3, Handshake [length 0024], Finished
+>>> TLS 1.3, Handshake [length 01a5], Certificate
+>>> TLS 1.3, Handshake [length 004e], CertificateVerify
+>>> TLS 1.3, Handshake [length 0024], Finished
+
+== tls_surface2.sh done ==

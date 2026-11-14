@@ -1,0 +1,17 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:33:30 2026 as: nmap -Pn -sT -n -p 8080,8443,13400,13401,80,443,22,5000,8000,9000,9090,3000,1883,8883,5683,123,161 --open --min-rate 3000 -oN 03_EVIDENCE/tsp_s09/02_subnet_164_ports.txt 10.230.164.0/24
+Nmap scan report for 10.230.164.3
+Host is up (0.026s latency).
+Not shown: 12 closed tcp ports (conn-refused), 4 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+8443/tcp open  https-alt
+
+Nmap scan report for 10.230.164.4
+Host is up (0.026s latency).
+Not shown: 14 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+8080/tcp  open  http-proxy
+13400/tcp open  doip-data
+13401/tcp open  unknown
+
+# Nmap done at Sat Nov 14 09:35:33 2026 -- 256 IP addresses (256 hosts up) scanned in 123.37 seconds

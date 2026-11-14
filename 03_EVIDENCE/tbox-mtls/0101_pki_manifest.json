@@ -1,0 +1,228 @@
+[
+ {
+  "name": "s01_cn_tbox",
+  "label": "self-signed EC P-256, CN=tbox, EKU=clientAuth, SAN=DNS:tbox",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s01_cn_tbox.pem"
+  ],
+  "key": "s01_cn_tbox.key"
+ },
+ {
+  "name": "s02_rsa2048",
+  "label": "self-signed RSA-2048, CN=tbox, EKU=clientAuth",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s02_rsa2048.pem"
+  ],
+  "key": "s02_rsa2048.key"
+ },
+ {
+  "name": "s03_p384",
+  "label": "self-signed EC P-384 (secp384r1), CN=tbox",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s03_p384.pem"
+  ],
+  "key": "s03_p384.key"
+ },
+ {
+  "name": "s04_expired",
+  "label": "self-signed, notAfter=2020-12-31 (expired)",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s04_expired.pem"
+  ],
+  "key": "s04_expired.key"
+ },
+ {
+  "name": "s05_notyet",
+  "label": "self-signed, notBefore=2027-06-01 (not yet valid)",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s05_notyet.pem"
+  ],
+  "key": "s05_notyet.key"
+ },
+ {
+  "name": "s06_no_eku",
+  "label": "self-signed, NO ExtendedKeyUsage extension",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s06_no_eku.pem"
+  ],
+  "key": "s06_no_eku.key"
+ },
+ {
+  "name": "s07_eku_server",
+  "label": "self-signed, EKU=serverAuth only",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s07_eku_server.pem"
+  ],
+  "key": "s07_eku_server.key"
+ },
+ {
+  "name": "s08_no_san",
+  "label": "self-signed, no SubjectAlternativeName",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s08_no_san.pem"
+  ],
+  "key": "s08_no_san.key"
+ },
+ {
+  "name": "s09_empty_subject",
+  "label": "self-signed, EMPTY subject DN",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s09_empty_subject.pem"
+  ],
+  "key": "s09_empty_subject.key"
+ },
+ {
+  "name": "s10_ca_true",
+  "label": "self-signed with CA:TRUE + keyCertSign",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s10_ca_true.pem"
+  ],
+  "key": "s10_ca_true.key"
+ },
+ {
+  "name": "s11_cn_root",
+  "label": "self-signed leaf named CN=CV6 Fleet Diagnostics Root (CA:FALSE)",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s11_cn_root.pem"
+  ],
+  "key": "s11_cn_root.key"
+ },
+ {
+  "name": "s12_aki_forged",
+  "label": "self-signed leaf with AKI copied from the real root (47:6E:90:...)",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s12_aki_forged.pem"
+  ],
+  "key": "s12_aki_forged.key"
+ },
+ {
+  "name": "s13_ed25519",
+  "label": "self-signed Ed25519, CN=tbox",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\s13_ed25519.pem"
+  ],
+  "key": "s13_ed25519.key"
+ },
+ {
+  "name": "ca_samedn",
+  "label": "fake CA, CN=CV6 Fleet Diagnostics Root (PrintableString), own key",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\ca_samedn.pem"
+  ],
+  "key": "ca_samedn.key"
+ },
+ {
+  "name": "leaf_samedn",
+  "label": "leaf signed by fake same-DN CA",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\leaf_samedn.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_samedn_leaf_first.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_samedn_ca_first.pem"
+  ],
+  "key": "leaf_samedn.key"
+ },
+ {
+  "name": "ca_sameski",
+  "label": "fake CA, same DN + forged SKI == real root AKI",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\ca_sameski.pem"
+  ],
+  "key": "ca_sameski.key"
+ },
+ {
+  "name": "leaf_sameski",
+  "label": "leaf signed by fake same-DN/same-SKI CA",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\leaf_sameski.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_sameski_leaf_first.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_sameski_ca_first.pem"
+  ],
+  "key": "leaf_sameski.key"
+ },
+ {
+  "name": "ca_namecon",
+  "label": "fake CA, same DN + nameConstraints permitted DNS:.tbox",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\ca_namecon.pem"
+  ],
+  "key": "ca_namecon.key"
+ },
+ {
+  "name": "leaf_namecon",
+  "label": "leaf signed by fake same-DN CA with nameConstraints",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\leaf_namecon.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_namecon_leaf_first.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_namecon_ca_first.pem"
+  ],
+  "key": "leaf_namecon.key"
+ },
+ {
+  "name": "ca_policies",
+  "label": "fake CA, same DN + certificatePolicies + AIA-less",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\ca_policies.pem"
+  ],
+  "key": "ca_policies.key"
+ },
+ {
+  "name": "leaf_policies",
+  "label": "leaf signed by fake same-DN CA with certificatePolicies",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\leaf_policies.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_policies_leaf_first.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_policies_ca_first.pem"
+  ],
+  "key": "leaf_policies.key"
+ },
+ {
+  "name": "ca_rsa",
+  "label": "fake CA, same DN, RSA-2048",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\ca_rsa.pem"
+  ],
+  "key": "ca_rsa.key"
+ },
+ {
+  "name": "leaf_rsa",
+  "label": "leaf signed by fake same-DN RSA CA",
+  "files": [
+   "04_SOLVE\\tbox-mtls\\pki\\leaf_rsa.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_rsa_leaf_first.pem",
+   "04_SOLVE\\tbox-mtls\\pki\\chain_rsa_ca_first.pem"
+  ],
+  "key": "leaf_rsa.key"
+ },
+ {
+  "name": "ovpn_ca",
+  "label": "extracted from .ovpn <ca>",
+  "files": [
+   "04_SOLVE/tbox-mtls/pki/ovpn_ca.pem"
+  ],
+  "key": null
+ },
+ {
+  "name": "ovpn_cert",
+  "label": "extracted from .ovpn <cert>",
+  "files": [
+   "04_SOLVE/tbox-mtls/pki/ovpn_cert.pem"
+  ],
+  "key": null
+ },
+ {
+  "name": "ovpn_key",
+  "label": "extracted from .ovpn <key>",
+  "files": [
+   "04_SOLVE/tbox-mtls/pki/ovpn_key.pem"
+  ],
+  "key": null
+ },
+ {
+  "name": "ovpn_tls-crypt",
+  "label": "extracted from .ovpn <tls-crypt>",
+  "files": [
+   "04_SOLVE/tbox-mtls/pki/ovpn_tls_crypt.pem"
+  ],
+  "key": null
+ }
+]

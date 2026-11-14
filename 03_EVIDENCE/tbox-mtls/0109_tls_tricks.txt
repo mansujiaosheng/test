@@ -1,0 +1,177 @@
+###### 0109 TLS-level trick matrix against 10.225.139.3:8443 ######
+# utc=2026-11-14T01:57:27Z  openssl=OpenSSL 3.0.15 3 Sep 2024 (Library: OpenSSL 3.0.15 3 Sep 2024)  bash=5.3.20(1)-release
+# every case: s_client </dev/null, 25s cap, server alert printed verbatim
+
+=== K01 CA-first chain order (fake CA first, leaf second) ===
+error setting private key
+24100100:error:05800074:x509 certificate routines:X509_check_private_key:key values mismatch:crypto\x509\x509_cmp.c:408:
+
+=== K02 leaf-first chain order (control) ===
+CONNECTED(00000164)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+ 0 s:CN = tbox
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:51:20 2026 GMT; NotAfter: Dec 14 01:51:20 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBizCCATKgAwIBAgIRAP57OSQOhz4vKG20pzngxA8wCgYIKoZIzj0EAwIwJTEj
+MCEGA1UEAxMaQ1Y2IEZsZWV0IERpYWdub3N0aWNzIFJvb3QwHhcNMjYxMTE0MDA1
+MTIwWhcNMjYxMjE0MDE1MTIwWjAPMQ0wCwYDVQQDEwR0Ym94MFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEtheMZKYlSS2q706eIeZkgkEQkzLsUKXQCQNbygnCZsbD
+eV7s8yJVyBYANTj6YR9Z+Dv0vG8O9nD13Vzcttnz26NZMFcwDgYDVR0PAQH/BAQD
+AgeAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB8GA1UdIwQYMBaAFGWRs+1ssCtCG2RG
++WLvhd7K1RIKMA8GA1UdEQQIMAaCBHRib3gwCgYIKoZIzj0EAwIDRwAwRAIgJBK3
+rNR0xo/sXfPLmZ5AC2z7YJqejnHqeMeceV9LNv0CIDArKh4XtQIgA3eBM2o3joU1
+QFY4b9quGNJutUgyBU0j
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+---
+Acceptable client certificate CA names
+CN = CV6 Fleet Diagnostics Root
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Shared Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 891 bytes and written 923 bytes
+
+=== K03 session ticket attempt: -sess_out with no client cert ===
+CONNECTED(00000174)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+ 0 s:CN = tbox
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:51:20 2026 GMT; NotAfter: Dec 14 01:51:20 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBizCCATKgAwIBAgIRAP57OSQOhz4vKG20pzngxA8wCgYIKoZIzj0EAwIwJTEj
+MCEGA1UEAxMaQ1Y2IEZsZWV0IERpYWdub3N0aWNzIFJvb3QwHhcNMjYxMTE0MDA1
+MTIwWhcNMjYxMjE0MDE1MTIwWjAPMQ0wCwYDVQQDEwR0Ym94MFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEtheMZKYlSS2q706eIeZkgkEQkzLsUKXQCQNbygnCZsbD
+eV7s8yJVyBYANTj6YR9Z+Dv0vG8O9nD13Vzcttnz26NZMFcwDgYDVR0PAQH/BAQD
+AgeAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB8GA1UdIwQYMBaAFGWRs+1ssCtCG2RG
++WLvhd7K1RIKMA8GA1UdEQQIMAaCBHRib3gwCgYIKoZIzj0EAwIDRwAwRAIgJBK3
+rNR0xo/sXfPLmZ5AC2z7YJqejnHqeMeceV9LNv0CIDArKh4XtQIgA3eBM2o3joU1
+QFY4b9quGNJutUgyBU0j
+-----END CERTIFICATE-----
+subject=CN = tbox
+issuer=CN = CV6 Fleet Diagnostics Root
+--- sess_out file produced? ---
+ls: cannot access 'C:/Users/19678/AppData/Local/Temp/tmp.48LANqUnqa/s1.pem': No such file or directory
+NO SESSION FILE (handshake never completed)
+
+=== K04 session resumption attempt: -sess_in (no session available) ===
+Can't open session file C:/Users/19678/AppData/Local/Temp/tmp.48LANqUnqa/s1.pem
+9CF40000:error:80000002:system library:BIO_new_file:No such file or directory:crypto\bio\bss_file.c:67:calling fopen(C:/Users/19678/AppData/Local/Temp/tmp.48LANqUnqa/s1.pem, r)
+9CF40000:error:10000080:BIO routines:BIO_new_file:no such file:crypto\bio\bss_file.c:75:
+
+=== K05 -reconnect (session id reuse path) ===
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+verify error:num=20:unable to get local issuer certificate
+verify error:num=21:unable to verify the first certificate
+Verification error: unable to verify the first certificate
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+
+=== K06 -enable_pha (post-handshake auth) with no client cert ===
+CONNECTED(00000170)
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+---
+Certificate chain
+ 0 s:CN = tbox
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:51:20 2026 GMT; NotAfter: Dec 14 01:51:20 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBizCCATKgAwIBAgIRAP57OSQOhz4vKG20pzngxA8wCgYIKoZIzj0EAwIwJTEj
+MCEGA1UEAxMaQ1Y2IEZsZWV0IERpYWdub3N0aWNzIFJvb3QwHhcNMjYxMTE0MDA1
+MTIwWhcNMjYxMjE0MDE1MTIwWjAPMQ0wCwYDVQQDEwR0Ym94MFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEtheMZKYlSS2q706eIeZkgkEQkzLsUKXQCQNbygnCZsbD
+eV7s8yJVyBYANTj6YR9Z+Dv0vG8O9nD13Vzcttnz26NZMFcwDgYDVR0PAQH/BAQD
+AgeAMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB8GA1UdIwQYMBaAFGWRs+1ssCtCG2RG
++WLvhd7K1RIKMA8GA1UdEQQIMAaCBHRib3gwCgYIKoZIzj0EAwIDRwAwRAIgJBK3
+
+=== K07 0-RTT early data attempt (requires a ticket from a completed handshake) ===
+Can't open session file C:/Users/19678/AppData/Local/Temp/tmp.48LANqUnqa/s1.pem
+58B50000:error:80000002:system library:BIO_new_file:No such file or directory:crypto\bio\bss_file.c:67:calling fopen(C:/Users/19678/AppData/Local/Temp/tmp.48LANqUnqa/s1.pem, r)
+58B50000:error:10000080:BIO routines:BIO_new_file:no such file:crypto\bio\bss_file.c:75:
+
+=== K08 TLS1.2 with a client cert (downgrade path) ===
+CONNECTED(00000180)
+3CB00000:error:0A00042E:SSL routines:ssl3_read_bytes:tlsv1 alert protocol version:ssl\record\rec_layer_s3.c:1605:SSL alert number 70
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 7 bytes and written 201 bytes
+Verification: OK
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : 0000
+    Session-ID: 
+    Session-ID-ctx: 
+
+=== K09 request extra tickets (-num_tickets 4) with no client cert ===
+s_client: Unknown option: -num_tickets
+s_client: Use -help for summary.
+
+=== K10 full live leaf + chain (chain length check) ===
+Certificate chain
+ 0 s:CN = tbox
+   i:CN = CV6 Fleet Diagnostics Root
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Nov 14 00:51:20 2026 GMT; NotAfter: Dec 14 01:51:20 2026 GMT
+-----BEGIN CERTIFICATE-----

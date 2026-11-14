@@ -1,0 +1,29 @@
+{
+  "label": "r2_fwd_e400_1002",
+  "purpose": "programming session to 0xE400 (CAN-ID forwarding test)",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE400",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4001002"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F1031"
+    }
+  ],
+  "uds": [
+    {
+      "from": "0x1000",
+      "hex": "7F1031",
+      "parsed": "NEGATIVE service=0x10 NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": "NEGATIVE service=0x10 NRC=0x31 (requestOutOfRange)",
+  "seq": 3353,
+  "ts": "2026-11-14T09:56:53.216+08:00"
+}

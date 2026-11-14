@@ -1,0 +1,4 @@
+###### nmap ssl-enum-ciphers / ssl-cert on 10.230.164.3:8443  2026-11-14T01:36:52Z ######
+## cmd: nmap -Pn -p 8443 -T4 --script ssl-enum-ciphers,ssl-cert 10.230.164.3
+
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-11-14 09:36 +0800

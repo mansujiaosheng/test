@@ -1,0 +1,14 @@
+{
+  "label": "didscan_0000_00ff_summary",
+  "purpose": "0x22 DID scan on 0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "did 0000-00ff"
+  },
+  "parsed": "504 values, 0 non-baseline, baseline=7F2231, slow_batches=0, elapsed=0.6s",
+  "baseline": "7F2231",
+  "hits": [],
+  "evidence_file": "0194_didscan_0000_00ff.jsonl",
+  "seq": 195,
+  "ts": "2026-11-14T09:14:03.814+08:00"
+}

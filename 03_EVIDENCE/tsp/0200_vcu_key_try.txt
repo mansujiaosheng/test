@@ -1,0 +1,37 @@
+key: 693d2ab06a2fe1a6e1ada23ac8bbb08ec3a8ffbbc90015ddeff28e721c9f693d
+vcu len: 1024
+  CTR iv=zero whole                  printable= 40%
+      ascii: ....#.qF#W.Q..`.w...d..:.>...,hx.:.,.&$.e....8O..;.S...CW%..Jbv..?....;.7..~...t;#EI...j
+  CTR iv=zero from8                  printable= 38%
+      ascii: '.&^h.t,.f..x...||Em zMQ.7..`z>B.Iy..&./..&.PGr)_..DU.[C..D......I.p.E.+.f.........F...H
+  CTR iv=first16 whole               printable= 37%
+      ascii: ..|_..W...H...c...]#..!...$..C..q....g&...1.b.....i.....r.....m ...............C....y{.q
+  CTR iv=first16 from8               printable= 40%
+      ascii: .....&R...z~.U...x.Q...c........).0j.g..<...0~.6>.........8..M.a.y/...pPBP.R"...1.x.0..S
+  CTR iv=magic8+zero whole           printable= 41%
+      ascii: ..A...8...a.....h..u_Ib.....w....[.....].0V.,.yh...s.w...Iu.69......u%.*.M..........W.I.
+  CTR iv=magic8+zero from8           printable= 39%
+      ascii: ....@1=i.:S.{D.*ca{..,.....-.....(+...Gt*...~.D..Ttd.[A.....{.....7.B...O..N_l.5.*...|./
+  ECB from8                          printable= 36%
+      ascii: ../..V..............d....Ya.B6...........w./..':W..Kd..gp+K..k..s.T......H..(...2.L..R..
+  CBC iv=zero                        printable= 38%
+      ascii: ../..V..............l'..y`..5i..?..?.">.?<8..m.;...;.b<Oc..m.x....n...^..Q...}.5..?..}..
+  CBC iv=first16                     printable= 38%
+      ascii: X..Y..2........d....l'..y`..5i..?..?.">.?<8..m.;...;.b<Oc..m.x....n...^..Q...}.5..?..}..
+  XOR key-cycled whole               printable= 36%
+      ascii: *k..)z....C..5..s.,..__.T..B/....v.o.C@.d.%JX.)../..........j...$$..Q.. ...b..0..".@~J.R
+
+=== marker scan ===
+  CTR zero whole: [b'{']
+  CTR zero from8: [b'{']
+  CTR first16 whole: [b'{']
+  CTR first16 from8: [b'{']
+  CTR magic8+zero whole: [b'{']
+  CTR magic8+zero from8: [b'{']
+  ECB: [b'{']
+  CBC zero: [b'{']
+  CBC first16: [b'{']
+  XOR: [b'{']
+
+(note: the plaintext string 'CALIBRATION: production steering and torque limits'
+ sits at file offset 0x300..0x331 in the ORIGINAL file, i.e. it is stored in the clear)

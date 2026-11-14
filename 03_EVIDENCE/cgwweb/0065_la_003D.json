@@ -1,0 +1,18 @@
+{
+  "label": "la_003D",
+  "purpose": "LA existence probe 0x003D",
+  "tester_sa": "0x0E00",
+  "target_la": "0x003D",
+  "elapsed_ms": 178.82,
+  "responses": [
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 65,
+  "ts": "2026-11-14T09:24:28.551+08:00"
+}

@@ -1,0 +1,32 @@
+{
+  "label": "enum_0002_3E00",
+  "purpose": "TesterPresent to LA 0x0002 (existence probe)",
+  "tester_sa": "0x0E00",
+  "target_la": "0x0002",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0000023E00",
+    "uds": "3E00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F3E31",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F3E31",
+      "parsed": "NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 336.32,
+  "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x31 (requestOutOfRange)",
+  "seq": 28,
+  "ts": "2026-11-14T09:10:50.485+08:00"
+}

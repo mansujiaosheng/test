@@ -1,0 +1,13 @@
+###### FULL re-test: VPN client cert leaf-only, GET / ######
+Sat Nov 14 01:19:16 UTC 2026
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+D8CD0000:error:0A00010F:SSL routines:SSL_write:bad length:ssl\ssl_lib.c:2154:
+[rc=0]
+Sat Nov 14 01:19:18 UTC 2026

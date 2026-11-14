@@ -1,0 +1,4 @@
+done connect_only 1.0
+done send16 1.001
+WARNING: PcapWriter: unknown LL type for NoneType. Using type 1 (Ethernet)
+captured 0

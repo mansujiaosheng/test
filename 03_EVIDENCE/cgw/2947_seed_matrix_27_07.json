@@ -1,0 +1,32 @@
+{
+  "label": "seed_matrix_27_07",
+  "purpose": "SecurityAccess requestSeed sub 0x07",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E4422707",
+    "uds": "2707"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F277E",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F277E",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    }
+  ],
+  "elapsed_ms": 434.15,
+  "parsed": "0x1220: NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)",
+  "seq": 2947,
+  "ts": "2026-11-14T09:40:51.402+08:00"
+}

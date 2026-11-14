@@ -1,0 +1,49 @@
+###### T-BOX 8443 record-level probe v2 (DECRYPTED)  2026-11-14T01:33:24Z ######
+## target 10.230.164.3:8443; OpenSSL 3.0.15 3 Sep 2024
+## note: v1 (0011) logged record TYPES only; TLS1.3 hides handshake+alert
+##       inside 0x17 records, so v1's 'application_data' counter is not
+##       evidence of a bypass. This file is the authoritative decode.
+
+########## R01 SNI=tbox, no client cert, GET / immediately
+  [t= 0.000] -> client flight 238 bytes
+  client_side_handshake_complete=True  (TLS1.3: client finishes on sending its last flight; server verdict arrives later)
+  [t= 0.029] -> client flight 197 bytes
+  -> HTTP request written into the TLS session
+  <- DECRYPTED ALERT from server: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+     => alert 116 (certificate_required)
+  decrypted_application_bytes=0
+  HTTP_RESPONSE_SERVED=NO
+
+########## R02 SNI=empty, no client cert
+  [t= 0.000] -> client flight 238 bytes
+  client_side_handshake_complete=True  (TLS1.3: client finishes on sending its last flight; server verdict arrives later)
+  [t= 0.027] -> client flight 197 bytes
+  -> HTTP request written into the TLS session
+  <- DECRYPTED ALERT from server: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+     => alert 116 (certificate_required)
+  decrypted_application_bytes=0
+  HTTP_RESPONSE_SERVED=NO
+
+########## R03 SNI=localhost, no client cert
+  [t= 0.000] -> client flight 238 bytes
+  client_side_handshake_complete=True  (TLS1.3: client finishes on sending its last flight; server verdict arrives later)
+  [t= 0.027] -> client flight 197 bytes
+  -> HTTP request written into the TLS session
+  <- DECRYPTED ALERT from server: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+     => alert 116 (certificate_required)
+  decrypted_application_bytes=0
+  HTTP_RESPONSE_SERVED=NO
+
+########## R04 SNI=tbox, no client cert, POST /api/v1/ota/sign
+  [t= 0.000] -> client flight 238 bytes
+  client_side_handshake_complete=True  (TLS1.3: client finishes on sending its last flight; server verdict arrives later)
+  [t= 0.027] -> client flight 215 bytes
+  -> HTTP request written into the TLS session
+  <- DECRYPTED ALERT from server: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)
+     => alert 116 (certificate_required)
+  decrypted_application_bytes=0
+  HTTP_RESPONSE_SERVED=NO
+
+###### VERDICT ######
+decrypted application bytes across all runs: 0
+RESULT: NO BYPASS -- zero decrypted application bytes; every connection ends in alert certificate_required (116)

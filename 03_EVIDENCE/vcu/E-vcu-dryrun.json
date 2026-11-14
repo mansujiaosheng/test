@@ -1,0 +1,41 @@
+{
+ "label": "dryrun",
+ "ts": "2026-11-14T09:34:53+0800",
+ "rows": [
+  {
+   "step": "diag_session_extended",
+   "tx": "1003",
+   "rx": "",
+   "note": "DRY-RUN enter extended session (precondition for 27)",
+   "t_ms": 0.0
+  },
+  {
+   "step": "security_level1_seed",
+   "tx": "2701",
+   "rx": "",
+   "note": "DRY-RUN request Level-1 seed",
+   "t_ms": 0.0
+  },
+  {
+   "step": "security_level2_seed",
+   "tx": "2701_ALT",
+   "rx": "",
+   "note": "DRY-RUN if Level-2 uses its own odd sub (27 03 / 27 05 ...)",
+   "t_ms": 0.0
+  },
+  {
+   "step": "security_level2_key",
+   "tx": "2702a1b2c3d4",
+   "rx": "",
+   "note": "DRY-RUN send Level-2 key computed from the seed",
+   "t_ms": 0.0
+  },
+  {
+   "step": "diag_session_programming",
+   "tx": "1002",
+   "rx": "",
+   "note": "DRY-RUN switch to programming session -- success = 50 02",
+   "t_ms": 0.0
+  }
+ ]
+}

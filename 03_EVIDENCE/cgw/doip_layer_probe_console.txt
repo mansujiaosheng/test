@@ -1,0 +1,94 @@
+[*] DoIP layer probes against 10.229.221.2:13400
+
+[A] payload type sweep (empty payload)
+  ptype=0x0000                       empty                                    -> 0x0000:01
+  ptype=0x0001                       empty                                    -> 0x0004:435636464635324645453945444444383610000600000010000000000000000000
+  ptype=0x0002                       empty                                    -> 0x0000:01
+  ptype=0x0003                       empty                                    -> 0x0000:01
+  ptype=0x0004                       empty                                    -> 0x0000:01
+  ptype=0x0005                       empty                                    -> 0x0000:04
+  ptype=0x0006                       empty                                    -> 0x0000:01
+  ptype=0x0007                       empty                                    -> 0x0000:01
+  ptype=0x0008                       empty                                    -> 0x0000:01
+  ptype=0x0009                       empty                                    -> 0x0000:01
+  ptype=0x000A                       empty                                    -> 0x0000:01
+  ptype=0x000B                       empty                                    -> 0x0000:01
+  ptype=0x000C                       empty                                    -> 0x0000:01
+  ptype=0x000D                       empty                                    -> 0x0000:01
+  ptype=0x000E                       empty                                    -> 0x0000:01
+  ptype=0x000F                       empty                                    -> 0x0000:01
+  ptype=0x4001                       empty                                    -> 0x0000:01
+  ptype=0x4002                       empty                                    -> 0x0000:01
+  ptype=0x4003                       empty                                    -> 0x0000:01
+  ptype=0x4004                       empty                                    -> 0x0000:01
+  ptype=0x4005                       empty                                    -> 0x0000:01
+  ptype=0x4006                       empty                                    -> 0x0000:01
+  ptype=0x4007                       empty                                    -> 0x0000:01
+  ptype=0x4008                       empty                                    -> 0x0000:01
+  ptype=0x8001                       empty                                    -> 0x0000:04
+  ptype=0x8002                       empty                                    -> 0x0000:01
+  ptype=0x8003                       empty                                    -> 0x0000:01
+  ptype=0x8004                       empty                                    -> 0x0000:01
+  ptype=0x8005                       empty                                    -> 0x0000:01
+  ptype=0x8006                       empty                                    -> 0x0000:01
+  ptype=0x8007                       empty                                    -> 0x0000:01
+  ptype=0x8008                       empty                                    -> 0x0000:01
+  ptype=0x1234                       empty                                    -> 0x0000:01
+  ptype=0x7FFF                       empty                                    -> 0x0000:01
+  ptype=0xFFFF                       empty                                    -> 0x0000:01
+
+[B] protocol version / inverse byte
+  ver=0x02 inv=0xFD (valid)          02FD000100000000                         -> 0x0004:435636464635324645453945444444383610000600000010000000000000000000
+      note: generic NACK code is the first payload byte
+  ver=0x01 inv=0xFE                  01FE000100000000                         -> <no response>
+  ver=0x03 inv=0xFC                  03FC000100000000                         -> <no response>
+  ver=0x04 inv=0xFB                  04FB000100000000                         -> <no response>
+  ver=0x02 inv=0x00 (broken inverse) 0200000100000000                         -> <no response>
+  ver=0xFF inv=0x00 (test-equipment) FF00000100000000                         -> <no response>
+
+[C] routing activation variants
+  sa=0x0E00 act=0x00                 0E000000000000                           -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  sa=0x0E00 act=0x01                 0E000100000000                           -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  sa=0x0E00 act=0x02                 0E000200000000                           -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  sa=0x0E00 act=0x03                 0E000300000000                           -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  sa=0x0E00 act=0x04                 0E000400000000                           -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  sa=0x0E00 act=0xE0                 0E00E000000000                           -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  sa=0x0E00 act=0xFF                 0E00FF00000000                           -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  act=0xE0 oem=00000000              0E00E00000000000000000                   -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  act=0xE0 oem=01020304              0E00E00000000001020304                   -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  act=0xE0 oem=DEADBEEF              0E00E000000000DEADBEEF                   -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  repeat activation same socket      0E000000000000                           -> 0x0006:0E0010001000000000
+      note: {"tester_sa": "0x0E00", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+  activate SA=0x1000 (spoof gateway) 100000000000000                          -> 0x0006:100010001000000000
+      note: {"tester_sa": "0x1000", "entity_la": "0x1000", "code": "0x10", "text": "routing successfully activated", "trailing": "00000000"}
+
+[D] DoIP length-field mismatches
+  ptype=0x0001 declared=8 actual=0         -> no response                              3010ms
+  ptype=0x0001 declared=0 actual=8         -> raw=02FD0004000000214356364646353246454539454444443836100006000000100000000000000000 26ms
+  ptype=0x8001 declared=4 actual=6         -> raw=02FD000000000001                     26ms
+  ptype=0x8001 declared=0xFFFF actual=6    -> no response                              3006ms
+  ptype=0x0005 declared=1 actual=7         -> no response                              3006ms
+
+[E] UDS framing edges on TA=0x1000
+  diag payload empty (no SA/TA)                                               -> 0x0000:04
+  diag payload 2 bytes (SA only)     0E00                                     -> 0x0000:04
+  22 no DID                          0E00100022                               -> 0x8001:10000E007F2211
+  22 one-byte DID                    0E00100022F1                             -> 0x8001:10000E007F2211
+  22 three DIDs                      0E00100022F190F1A0F190                   -> 0x8001:10000E007F2211
+  22 F190 + trailing junk            0E00100022F190AABB                       -> 0x8001:10000E007F2211
+  TA=self with SA=0x0000             0000100022F190                           -> 0x8001:1000000062F1904356364646353246454539454444443836
+  SA spoofed as 0x1000               1000100022F190                           -> 0x8001:1000100062F1904356364646353246454539454444443836
+  SA = 0x07E0 (CAN id as SA)         07E0100022F190                           -> 0x8001:100007E062F1904356364646353246454539454444443836
+  broadcast TA=0xFFFF                0E00FFFF22F190                           -> 0x8001:10000E007F2231
+
+[+] 68 probe records -> D:\qwb\03_EVIDENCE\cgw\doip_layer_probe.jsonl

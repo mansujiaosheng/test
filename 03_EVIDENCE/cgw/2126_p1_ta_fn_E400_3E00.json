@@ -1,0 +1,23 @@
+{
+  "seq": 2126,
+  "ts": "2026-11-14T09:34:36.732+08:00",
+  "label": "p1_ta_fn_E400_3E00",
+  "purpose": "shape probe: TA/SA discriminator",
+  "host": "10.229.221.2",
+  "port": 13400,
+  "request": {
+    "ta": "0xE400",
+    "sa": "0x0E00",
+    "uds": "3E00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F3E31"
+    }
+  ],
+  "verdict": "NRC 0x31 (srv 0x3E)",
+  "elapsed_ms": 229.7,
+  "ta": "0xE400",
+  "question": "response shape for unknown TA / functional addressing"
+}

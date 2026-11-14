@@ -1,0 +1,192 @@
+###### 0110 Go 1.24.2 crypto/tls source pins for the mTLS wall ######
+# GOROOT=/c/Program Files/Go/src/crypto/tls  goversion=go version go1.24.2 windows/amd64
+
+### A. client cert requested iff ClientAuth>=RequestClientCert and not a PSK/resumed handshake
+   816	}
+   817	
+   818	func (hs *serverHandshakeStateTLS13) requestClientCert() bool {
+   819		return hs.c.config.ClientAuth >= RequestClientCert && !hs.usingPSK
+   820	}
+   821	
+
+### B. session tickets are NOT sent in the first flight when a client cert is requested
+   927		c.ekm = hs.suite.exportKeyingMaterial(hs.masterSecret, hs.transcript)
+   928	
+   929		// If we did not request client certificates, at this point we can
+   930		// precompute the client finished and roll the transcript forward to send
+   931		// session tickets in our first flight.
+   932		if !hs.requestClientCert() {
+   933			if err := hs.sendSessionTickets(); err != nil {
+   934				return err
+   935			}
+   936		}
+   937	
+   938		return nil
+   939	}
+
+### C. tickets are sent only after the client cert was read AND verified
+  1113		}
+  1114	
+  1115		// If we waited until the client certificates to send session tickets, we
+  1116		// are ready to do it now.
+  1117		if err := hs.sendSessionTickets(); err != nil {
+  1118			return err
+  1119		}
+  1120	
+  1121		return nil
+  1122	}
+
+### D. readClientCertificate -> processCertsFromClient (verification gate)
+  1035	func (hs *serverHandshakeStateTLS13) readClientCertificate() error {
+  1036		c := hs.c
+  1037	
+  1038		if !hs.requestClientCert() {
+  1039			// Make sure the connection is still being verified whether or not
+  1040			// the server requested a client certificate.
+  1041			if c.config.VerifyConnection != nil {
+  1042				if err := c.config.VerifyConnection(c.connectionStateLocked()); err != nil {
+  1043					c.sendAlert(alertBadCertificate)
+  1044					return err
+  1045				}
+  1046			}
+  1047			return nil
+  1048		}
+  1049	
+  1050		// If we requested a client certificate, then the client must send a
+  1051		// certificate message. If it's empty, no CertificateVerify is sent.
+  1052	
+  1053		msg, err := c.readHandshake(hs.transcript)
+  1054		if err != nil {
+  1055			return err
+  1056		}
+  1057	
+  1058		certMsg, ok := msg.(*certificateMsgTLS13)
+  1059		if !ok {
+  1060			c.sendAlert(alertUnexpectedMessage)
+  1061			return unexpectedMessageError(certMsg, msg)
+  1062		}
+  1063	
+  1064		if err := c.processCertsFromClient(certMsg.certificate); err != nil {
+  1065			return err
+  1066		}
+  1067	
+
+### E. empty cert -> alert116 ; verify failure -> 48/43/42 ; Roots=ClientCAs ; KeyUsages=clientAuth
+   896	// processCertsFromClient takes a chain of client certificates either from a
+   897	// Certificates message and verifies them.
+   898	func (c *Conn) processCertsFromClient(certificate Certificate) error {
+   899		certificates := certificate.Certificate
+   900		certs := make([]*x509.Certificate, len(certificates))
+   901		var err error
+   902		for i, asn1Data := range certificates {
+   903			if certs[i], err = x509.ParseCertificate(asn1Data); err != nil {
+   904				c.sendAlert(alertBadCertificate)
+   905				return errors.New("tls: failed to parse client certificate: " + err.Error())
+   906			}
+   907			if certs[i].PublicKeyAlgorithm == x509.RSA {
+   908				n := certs[i].PublicKey.(*rsa.PublicKey).N.BitLen()
+   909				if max, ok := checkKeySize(n); !ok {
+   910					c.sendAlert(alertBadCertificate)
+   911					return fmt.Errorf("tls: client sent certificate containing RSA key larger than %d bits", max)
+   912				}
+   913			}
+   914		}
+   915	
+   916		if len(certs) == 0 && requiresClientCert(c.config.ClientAuth) {
+   917			if c.vers == VersionTLS13 {
+   918				c.sendAlert(alertCertificateRequired)
+   919			} else {
+   920				c.sendAlert(alertBadCertificate)
+   921			}
+   922			return errors.New("tls: client didn't provide a certificate")
+   923		}
+   924	
+   925		if c.config.ClientAuth >= VerifyClientCertIfGiven && len(certs) > 0 {
+   926			opts := x509.VerifyOptions{
+   927				Roots:         c.config.ClientCAs,
+   928				CurrentTime:   c.config.time(),
+   929				Intermediates: x509.NewCertPool(),
+   930				KeyUsages:     []x509.ExtKeyUsage{x509.ExtKeyUsageClientAuth},
+   931			}
+   932	
+   933			for _, cert := range certs[1:] {
+   934				opts.Intermediates.AddCert(cert)
+   935			}
+   936	
+   937			chains, err := certs[0].Verify(opts)
+   938			if err != nil {
+   939				var errCertificateInvalid x509.CertificateInvalidError
+   940				if errors.As(err, &x509.UnknownAuthorityError{}) {
+   941					c.sendAlert(alertUnknownCA)
+   942				} else if errors.As(err, &errCertificateInvalid) && errCertificateInvalid.Reason == x509.Expired {
+   943					c.sendAlert(alertCertificateExpired)
+   944				} else {
+   945					c.sendAlert(alertBadCertificate)
+   946				}
+   947				return &CertificateVerificationError{UnverifiedCertificates: certs, Err: err}
+   948			}
+
+### F. resumption path: peer certs come from the ticket; expired ticket-cert is rejected
+   395	
+   396			// PSK connections don't re-establish client certificates, but carry
+   397			// them over in the session ticket. Ensure the presence of client certs
+   398			// in the ticket is consistent with the configured requirements.
+   399			sessionHasClientCerts := len(sessionState.peerCertificates) != 0
+   400			needClientCerts := requiresClientCert(c.config.ClientAuth)
+   401			if needClientCerts && !sessionHasClientCerts {
+   402				continue
+   403			}
+   404			if sessionHasClientCerts && c.config.ClientAuth == NoClientCert {
+   405				continue
+   406			}
+   407			if sessionHasClientCerts && c.config.time().After(sessionState.peerCertificates[0].NotAfter) {
+   408				continue
+   409			}
+   410			if sessionHasClientCerts && c.config.ClientAuth >= VerifyClientCertIfGiven &&
+   411				len(sessionState.verifiedChains) == 0 {
+   412				continue
+   450				earlyTrafficSecret := hs.earlySecret.ClientEarlyTrafficSecret(transcript)
+   451				c.quicSetReadSecret(QUICEncryptionLevelEarly, hs.suite.id, earlyTrafficSecret)
+   452			}
+   453	
+   454			c.didResume = true
+   455			c.peerCertificates = sessionState.peerCertificates
+   456			c.ocspResponse = sessionState.ocspResponse
+   457			c.scts = sessionState.scts
+   458			c.verifiedChains = sessionState.verifiedChains
+
+### G. 0-RTT/early data exists only for QUIC in Go
+891:	session.EarlyData = c.quic != nil && msg.maxEarlyData == 0xffffffff // RFC 9001, Section 4.6.1
+
+### H. alert numbers (alert.go)
+    30		alertBadRecordMAC                 alert = 20
+    31		alertDecryptionFailed             alert = 21
+    32		alertRecordOverflow               alert = 22
+    33		alertDecompressionFailure         alert = 30
+    34		alertHandshakeFailure             alert = 40
+    35		alertBadCertificate               alert = 42
+    36		alertUnsupportedCertificate       alert = 43
+    37		alertCertificateRevoked           alert = 44
+    38		alertCertificateExpired           alert = 45
+    39		alertCertificateUnknown           alert = 46
+    40		alertIllegalParameter             alert = 47
+    41		alertUnknownCA                    alert = 48
+    42		alertAccessDenied                 alert = 49
+    43		alertDecodeError                  alert = 50
+    44		alertDecryptError                 alert = 51
+    45		alertExportRestriction            alert = 60
+    46		alertProtocolVersion              alert = 70
+    47		alertInsufficientSecurity         alert = 71
+    48		alertInternalError                alert = 80
+    49		alertInappropriateFallback        alert = 86
+    50		alertUserCanceled                 alert = 90
+    51		alertNoRenegotiation              alert = 100
+    52		alertMissingExtension             alert = 109
+    53		alertUnsupportedExtension         alert = 110
+    54		alertCertificateUnobtainable      alert = 111
+    55		alertUnrecognizedName             alert = 112
+    56		alertBadCertificateStatusResponse alert = 113
+    57		alertBadCertificateHashValue      alert = 114
+    58		alertUnknownPSKIdentity           alert = 115
+    59		alertCertificateRequired          alert = 116
+    60		alertNoApplicationProtocol        alert = 120

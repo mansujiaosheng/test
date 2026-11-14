@@ -1,0 +1,27 @@
+###### 0021 round-3 client-cert matrix v2 (alert captured on post-handshake read)  2026-11-14T01:44:33Z ######
+## target 10.230.164.3:8443  SNI=tbox  TLS1.3 forced (C* = TLS1.2 branch)
+## cmd: python 04_SOLVE/tbox/mtls_matrix3.py --json 03_EVIDENCE/tbox/0021_mtls_matrix3_naive_bypass_v2.json
+## NOTE v1 of this run (0020) missed the alert: in TLS1.3 the client-wrap returns before the server
+##      judges the client cert; the fatal alert only arrives on the first read. v2 always reads.
+## materials: 04_SOLVE/tbox/mat2w -- issuer DN DER == real root DN DER (PrintableString 0x13)
+## real root DN DER = 3025312330210603550403131a43563620466c65657420446961676e6f737469637320526f6f74
+## real root SKI     = 476e90164f6470bb1c807236ab3c547003781099
+
+## mtls_matrix3  10.230.164.3:8443  SNI=tbox  TLS1.3 forced
+## material dir: 04_SOLVE/tbox/mat2w (PrintableString DN = byte-identical to real root)
+{"cert": null, "key": null, "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "alpn": null, "io_error": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)", "io_alert": 116, "io_alert_name": "certificate_required", "tag": "A0_no_cert", "note": "baseline: no client cert -> expect 116"}
+Traceback (most recent call last):
+  File "D:\qwb\04_SOLVE\tbox\mtls_matrix3.py", line 190, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\qwb\04_SOLVE\tbox\mtls_matrix3.py", line 171, in main
+    rec = attempt(cert, key)
+  File "D:\qwb\04_SOLVE\tbox\mtls_matrix3.py", line 90, in attempt
+    d = tls.recv(65536)
+  File "C:\Program Files\Python313\Lib\ssl.py", line 1285, in recv
+    return self.read(buflen)
+           ~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\ssl.py", line 1140, in read
+    return self._sslobj.read(len)
+           ~~~~~~~~~~~~~~~~~^^^^^
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。

@@ -1,0 +1,32 @@
+{
+  "label": "sub27_bf",
+  "purpose": "requestSeed sub 0xBF",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E44227BF",
+    "uds": "27BF"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F277E",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F277E",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    }
+  ],
+  "elapsed_ms": 136.16,
+  "parsed": "0x1220: NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)",
+  "seq": 3109,
+  "ts": "2026-11-14T09:47:53.400+08:00"
+}

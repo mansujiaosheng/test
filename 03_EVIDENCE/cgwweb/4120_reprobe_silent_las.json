@@ -1,0 +1,505 @@
+{
+  "label": "reprobe_silent_las",
+  "ts": "2026-11-14T09:35:54.870365+08:00",
+  "wait_s": 2.0,
+  "rows": [
+    {
+      "trial": 0,
+      "ta": "0x0038",
+      "ms": 2030.6,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x0039",
+      "ms": 2041.5,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00B6",
+      "ms": 2013.6,
+      "frames": [],
+      "silent": true
+    },
+    {
+      "trial": 0,
+      "ta": "0x00BB",
+      "ms": 3613.6,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00BC",
+      "ms": 2058.9,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        },
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00C0",
+      "ms": 2032.7,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00C8",
+      "ms": 2414.1,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00D0",
+      "ms": 2045.6,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00D8",
+      "ms": 2032.2,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00DC",
+      "ms": 2031.9,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00E0",
+      "ms": 2039.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00E3",
+      "ms": 2033.9,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x00EF",
+      "ms": 2026.9,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x07E0",
+      "ms": 2028.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x07E1",
+      "ms": 2332.6,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x07E2",
+      "ms": 3548.1,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 0,
+      "ta": "0x07E8",
+      "ms": 2012.7,
+      "frames": [],
+      "silent": true
+    },
+    {
+      "trial": 0,
+      "ta": "0x07E9",
+      "ms": 2006.3,
+      "frames": [],
+      "silent": true
+    },
+    {
+      "trial": 0,
+      "ta": "0x07EA",
+      "ms": 2003.7,
+      "frames": [],
+      "silent": true
+    },
+    {
+      "trial": 0,
+      "ta": "0x07EB",
+      "ms": 2004.7,
+      "frames": [],
+      "silent": true
+    },
+    {
+      "trial": 0,
+      "ta": "0x1000",
+      "ms": 2012.0,
+      "frames": [],
+      "silent": true
+    },
+    {
+      "trial": 0,
+      "ta": "0x0002",
+      "ms": 2010.4,
+      "frames": [],
+      "silent": true
+    },
+    {
+      "trial": 1,
+      "ta": "0x0038",
+      "ms": 2037.8,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x0039",
+      "ms": 2036.5,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00B6",
+      "ms": 2039.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00BB",
+      "ms": 2032.4,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00BC",
+      "ms": 2029.4,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00C0",
+      "ms": 2040.1,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00C8",
+      "ms": 2038.8,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00D0",
+      "ms": 2035.7,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00D8",
+      "ms": 2032.8,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00DC",
+      "ms": 2040.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00E0",
+      "ms": 2033.2,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00E3",
+      "ms": 2039.6,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x00EF",
+      "ms": 2030.5,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x07E0",
+      "ms": 2034.9,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x07E1",
+      "ms": 2041.7,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x07E2",
+      "ms": 2031.9,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x07E8",
+      "ms": 2035.8,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x07E9",
+      "ms": 2041.0,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x07EA",
+      "ms": 2031.2,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x07EB",
+      "ms": 2030.4,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x1000",
+      "ms": 2036.1,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E11"
+        }
+      ],
+      "silent": false
+    },
+    {
+      "trial": 1,
+      "ta": "0x0002",
+      "ms": 2035.2,
+      "frames": [
+        {
+          "ptype": "0x8001",
+          "hex": "10000E007F3E31"
+        }
+      ],
+      "silent": false
+    }
+  ],
+  "note": "re-verify LAs that produced no frame in la_scan_0000_00FF"
+}

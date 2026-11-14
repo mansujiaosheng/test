@@ -1,0 +1,30 @@
+=== 0181: NEW RANGE signature scan — who is the new TSP? ===
+(signature: TSP = 8080 with GET /graphql -> 405 json{"error":"method not allowed"} + 404 json{"error":"not found"} on /internal/audit)
+
+##### 10.225.139.2:8080 #####
+  GET /healthz         http=200 ct=application/json body={"status":"ok"}
+  GET /graphql         http=405 ct=application/json body={"error":"method not allowed"}
+  GET /internal/audit  http=404 ct=application/json body={"error":"not found"}
+  POST /graphql    {"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+ http=200
+
+##### 10.225.139.3:8080 #####
+  GET /healthz         http=200 ct=application/json body={"status":"ok"}
+  GET /graphql         http=404 ct=text/plain; charset=utf-8 body=404 page not found
+  GET /internal/audit  http=404 ct=application/json body={"error":"not found"}
+  POST /graphql    404 page not found
+ http=404
+
+##### 10.225.139.4:8080 #####
+  GET /healthz         http=200 ct=application/json body={"status":"ok"}
+  GET /graphql         http=404 ct=text/plain; charset=utf-8 body=404 page not found
+  GET /internal/audit  http=404 ct=application/json body={"error":"not found"}
+  POST /graphql    404 page not found
+ http=404
+
+##### 10.226.193.2:8080 #####
+  GET /healthz         http=200 ct=application/json body={"status":"ok"}
+  GET /graphql         http=404 ct=text/plain; charset=utf-8 body=404 page not found
+  GET /internal/audit  http=404 ct=application/json body={"error":"not found"}
+  POST /graphql    404 page not found
+ http=404

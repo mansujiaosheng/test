@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:38:33 2026 as: D:\\TOOL\\nmap\\nmap.exe -Pn -n -sT -p 22,80,443,8080,8443,13400,13401 --reason --host-timeout 120s -oN syn_5_6_7.nmap -oG syn_5_6_7.gnmap -oX syn_5_6_7.xml 10.224.139.5 10.224.139.6 10.224.139.7
+Host: 10.224.139.5 ()	Status: Up
+Host: 10.224.139.5 ()	Ports: 22/filtered/tcp//ssh///, 80/filtered/tcp//http///, 443/filtered/tcp//https///, 8080/filtered/tcp//http-proxy///, 8443/filtered/tcp//https-alt///, 13400/filtered/tcp//doip-data///, 13401/filtered/tcp/////
+Host: 10.224.139.6 ()	Status: Up
+Host: 10.224.139.6 ()	Ports: 22/filtered/tcp//ssh///, 80/filtered/tcp//http///, 443/filtered/tcp//https///, 8080/filtered/tcp//http-proxy///, 8443/filtered/tcp//https-alt///, 13400/filtered/tcp//doip-data///, 13401/filtered/tcp/////
+Host: 10.224.139.7 ()	Status: Up
+Host: 10.224.139.7 ()	Ports: 22/filtered/tcp//ssh///, 80/filtered/tcp//http///, 443/filtered/tcp//https///, 8080/filtered/tcp//http-proxy///, 8443/filtered/tcp//https-alt///, 13400/filtered/tcp//doip-data///, 13401/filtered/tcp/////
+# Nmap done at Sat Nov 14 09:38:39 2026 -- 3 IP addresses (3 hosts up) scanned in 6.18 seconds

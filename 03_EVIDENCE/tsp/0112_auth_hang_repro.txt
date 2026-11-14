@@ -1,0 +1,27 @@
+=== anomalous: /auth/ ReadTimeout, /auth/token ConnectTimeout during sweep 0111 ===
+=== reproduce x5 each, timing ===
+GET /auth/  try1  curl_rc=0  404 3.046395 3.075659 3.076656  body=404 page not found
+GET /auth/  try2  curl_rc=0  404 1.036602 1.064287 1.064969  body=404 page not found
+GET /auth/  try3  curl_rc=0  404 0.028040 0.055691 0.056393  body=404 page not found
+GET /auth/  try4  curl_rc=0  404 0.026847 0.053576 0.054333  body=404 page not found
+GET /auth/  try5  curl_rc=0  404 0.028185 0.056746 0.057606  body=404 page not found
+GET /auth/token  try1  curl_rc=0  404 0.029346 0.056490 0.057253  body=404 page not found
+GET /auth/token  try2  curl_rc=0  404 0.033991 0.064265 0.065260  body=404 page not found
+GET /auth/token  try3  curl_rc=0  404 0.029783 0.058613 0.059416  body=404 page not found
+GET /auth/token  try4  curl_rc=0  404 0.030133 0.058323 0.059984  body=404 page not found
+GET /auth/token  try5  curl_rc=0  404 0.029698 0.060603 0.065211  body=404 page not found
+GET /auth  try1  curl_rc=0  404 0.027947 0.054700 0.055578  body=404 page not found
+GET /auth  try2  curl_rc=0  404 0.031676 0.057295 0.058249  body=404 page not found
+GET /auth  try3  curl_rc=0  404 0.028024 0.057522 0.058333  body=404 page not found
+GET /auth  try4  curl_rc=0  404 0.034752 0.067973 0.068920  body=404 page not found
+GET /auth  try5  curl_rc=0  404 0.027718 0.054165 0.055246  body=404 page not found
+GET /tokens  try1  curl_rc=0  404 0.030784 0.058805 0.059975  body=404 page not found
+GET /tokens  try2  curl_rc=0  404 0.027905 0.056784 0.057697  body=404 page not found
+GET /tokens  try3  curl_rc=0  404 0.029265 0.058633 0.059882  body=404 page not found
+GET /tokens  try4  curl_rc=0  404 0.030027 0.063885 0.065649  body=404 page not found
+GET /tokens  try5  curl_rc=0  404 0.030772 0.057738 0.059250  body=404 page not found
+GET /token  try1  curl_rc=0  404 0.029834 0.060728 0.061644  body=404 page not found
+GET /token  try2  curl_rc=0  404 0.031916 0.063429 0.064263  body=404 page not found
+GET /token  try3  curl_rc=0  404 0.027790 0.056658 0.057415  body=404 page not found
+GET /token  try4  curl_rc=0  404 0.031447 0.063696 0.064832  body=404 page not found
+GET /token  try5  curl_rc=0  404 0.028029 0.054514 0.055326  body=404 page not found

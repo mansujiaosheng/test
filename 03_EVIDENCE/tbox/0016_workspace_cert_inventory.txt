@@ -1,0 +1,338 @@
+###### workspace-wide cert inventory: is a 'CV6 Fleet Diagnostics Root' cert anywhere? ######
+
+cybercar-competition-ed3e7d452581978ccae13421-usr_b2ad80d021e26b5fb4b02b8619302912.ovpn
+    subj=CN=CyberCar Vehicle Range VPN CA
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=5ccf39017801d2ac1fdbe101fdef504f  notAfter=2036-08-12 10:02:57+00:00
+cybercar-competition-ed3e7d452581978ccae13421-usr_b2ad80d021e26b5fb4b02b8619302912.ovpn
+    subj=CN=cc-715a9a001b4a5abad5ce3ecc
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=50cb3963034b06305c8b6386f8feb3a6  notAfter=2026-11-17 01:01:24+00:00
+01_TARGETS\tbox\vpn_ca.pem
+    subj=CN=CyberCar Vehicle Range VPN CA
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=5ccf39017801d2ac1fdbe101fdef504f  notAfter=2036-08-12 10:02:57+00:00
+01_TARGETS\tbox\vpn_ca_cert.pem
+    subj=CN=CyberCar Vehicle Range VPN CA
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=5ccf39017801d2ac1fdbe101fdef504f  notAfter=2036-08-12 10:02:57+00:00
+01_TARGETS\tbox\vpn_client.pem
+    subj=CN=cc-715a9a001b4a5abad5ce3ecc
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=50cb3963034b06305c8b6386f8feb3a6  notAfter=2026-11-17 01:01:24+00:00
+01_TARGETS\tbox\vpn_client_cert.pem
+    subj=CN=cc-715a9a001b4a5abad5ce3ecc
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=50cb3963034b06305c8b6386f8feb3a6  notAfter=2026-11-17 01:01:24+00:00
+01_TARGETS\tbox\vpn_client_chain.pem
+    subj=CN=cc-715a9a001b4a5abad5ce3ecc
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=50cb3963034b06305c8b6386f8feb3a6  notAfter=2026-11-17 01:01:24+00:00
+01_TARGETS\tbox\vpn_client_chain.pem
+    subj=CN=CyberCar Vehicle Range VPN CA
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=5ccf39017801d2ac1fdbe101fdef504f  notAfter=2036-08-12 10:02:57+00:00
+03_EVIDENCE\fleet\tbox_8443_chain.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\fleet\tbox_8443_extra_tests_full.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\fleet\tbox_8443_extra_tests_full.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\fleet\tbox_8443_sclient_nocert.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\fleet\tbox_8443_sclient_selfsigned_client.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\fleet\clientcert_test\client.crt
+    subj=CN=recon-probe
+    iss =CN=recon-probe
+    serial=3245bab8a5c85e389f6ea9b6807e93f323f89ad7  notAfter=2026-11-16 01:24:10+00:00
+03_EVIDENCE\fleet\mtls_bypass\client.crt
+    subj=CN=diag-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=10f480f959f9b5a2adf4093628de4d7130102add  notAfter=2026-11-17 01:30:38+00:00
+03_EVIDENCE\fleet\mtls_bypass\fake_root.crt
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=34ce870bd13583b139081c564daa0dfd7d8a8931  notAfter=2026-11-17 01:30:38+00:00
+03_EVIDENCE\fleet\mtls_bypass\selfsigned_tbox.crt
+    subj=CN=tbox
+    iss =CN=tbox
+    serial=755ed729133980cc73ea136c261280e1b43eff54  notAfter=2026-11-16 01:36:59+00:00
+03_EVIDENCE\fleet\mtls_bypass\vpn_cert\vpn.crt
+    subj=CN=cc-715a9a001b4a5abad5ce3ecc
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=50cb3963034b06305c8b6386f8feb3a6  notAfter=2026-11-17 01:01:24+00:00
+03_EVIDENCE\fleet\mtls_bypass\vpn_cert\vpn_ca.crt
+    subj=CN=CyberCar Vehicle Range VPN CA
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=5ccf39017801d2ac1fdbe101fdef504f  notAfter=2036-08-12 10:02:57+00:00
+03_EVIDENCE\tbox\0001_vpn_clientcert_mtls_test.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0001_vpn_clientcert_mtls_test.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0009_hs_nocert.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_hs_selfsigned.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0010_tls_surface.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0011_hs_rootdn_selfca.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0012_hs_fakeca_chain.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox\0014_srv_leaf_tbox.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\tbox_s09\0002_ovpn_cert_mtls_reconfirm.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\web\8443_s_client_servername_tbox.txt
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+03_EVIDENCE\web\tls_probe\client_self_cert.pem
+    subj=CN=client
+    iss =CN=client
+    serial=363f9b02c5f6f142c51d5691351f9cb79a0566d3  notAfter=2026-12-14 01:09:31+00:00
+03_EVIDENCE\web\tls_probe\client_self_tbox_cert.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    serial=7ccfda703e3df13282a478f944fe360f57242c92  notAfter=2026-12-14 01:09:31+00:00
+03_EVIDENCE\web\tls_probe\fakeca_cert.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=337793bd0b4cf6a92c2632cb46daf56401751c70  notAfter=2026-12-14 01:09:31+00:00
+03_EVIDENCE\web\tls_probe\fakeclient_cert.pem
+    subj=CN=fleet-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=6d176ed957e14ad4b1c068c3ac64bb1a7d8a4476  notAfter=2026-12-14 01:09:31+00:00
+04_SOLVE\tbox\vpn_client.crt
+    subj=CN=cc-715a9a001b4a5abad5ce3ecc
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=50cb3963034b06305c8b6386f8feb3a6  notAfter=2026-11-17 01:01:24+00:00
+04_SOLVE\tbox\gostack\ca.crt
+    subj=CN=TEST Fleet Root
+    iss =CN=TEST Fleet Root
+    serial=61ba395e30af9328c0103df4696ab108fe1cc9fd  notAfter=2026-12-14 01:37:58+00:00
+04_SOLVE\tbox\gostack\srv.crt
+    subj=CN=localhost
+    iss =CN=TEST Fleet Root
+    serial=6dd85f9a1b5cfcbbee11e3fd00955e7d890acca7  notAfter=2026-12-14 01:37:58+00:00
+04_SOLVE\tbox\lab\c_expired.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    serial=1f854b2bf11feb5b60e235065c3183b0867b88b9  notAfter=2020-02-01 00:00:00+00:00
+04_SOLVE\tbox\lab\c_self.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    serial=2531cbac169c06c411b1d83bed81e09a83510eb7  notAfter=2026-12-13 01:23:53+00:00
+04_SOLVE\tbox\lab\root.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=1bbfd25680b7d917d9e2702330e3afa1b559a415  notAfter=2027-01-12 01:23:54+00:00
+04_SOLVE\tbox\lab\srv.pem
+    subj=CN=localhost
+    iss =CN=localhost
+    serial=1edd8bbb20a4b4c03c758086ad40630fe144dd1f  notAfter=2026-12-14 01:37:44+00:00
+04_SOLVE\tbox\mat\srv_leaf.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+04_SOLVE\tbox\mat\v1_ed25519_selfsign.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    serial=2531cbac169c06c411b1d83bed81e09a83510eb7  notAfter=2026-12-13 01:23:53+00:00
+04_SOLVE\tbox\mat\v2_rsa2048_selfsign.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    serial=2aac77733c058a8782d196688bdcc59dfb7b7d47  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v3_selfsign_caTrue.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    serial=6993a5f6e9fce535820d8aa59492bc3077924897  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v4_fakeca_sameDN.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=1bbfd25680b7d917d9e2702330e3afa1b559a415  notAfter=2027-01-12 01:23:54+00:00
+04_SOLVE\tbox\mat\v4_leaf.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=138ba696cbbee3ae567ec8a4ab0ee85463398489  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v4_leaf_chain.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=138ba696cbbee3ae567ec8a4ab0ee85463398489  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v4_leaf_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=1bbfd25680b7d917d9e2702330e3afa1b559a415  notAfter=2027-01-12 01:23:54+00:00
+04_SOLVE\tbox\mat\v5_fakeca_skiforge.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=436b60fdc215e08d9019d9c443a972ed298d02fc  notAfter=2027-01-12 01:23:54+00:00
+04_SOLVE\tbox\mat\v5_leaf.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=3ce0cf9e75b148dd2a46f1573214bbda80ef407f  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v5_leaf_chain.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=3ce0cf9e75b148dd2a46f1573214bbda80ef407f  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v5_leaf_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=436b60fdc215e08d9019d9c443a972ed298d02fc  notAfter=2027-01-12 01:23:54+00:00
+04_SOLVE\tbox\mat\v6_root_as_client.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=6d9a4eb088d08c02cf9a46eac10277040b8d61ea  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v7_v1_noext.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    serial=467b9a51587493def4f2057a415f95d019011ea3  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v8_expired.pem
+    subj=CN=tbox
+    iss =CN=tbox
+    serial=1f854b2bf11feb5b60e235065c3183b0867b88b9  notAfter=2020-02-01 00:00:00+00:00
+04_SOLVE\tbox\mat\v9_leaf_noeku.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=51fe2ef77dc9bf4e929fba25284fb030b9e28dde  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v9_leaf_noeku_chain.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=51fe2ef77dc9bf4e929fba25284fb030b9e28dde  notAfter=2026-12-13 01:23:54+00:00
+04_SOLVE\tbox\mat\v9_leaf_noeku_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=1bbfd25680b7d917d9e2702330e3afa1b559a415  notAfter=2027-01-12 01:23:54+00:00
+04_SOLVE\tbox\mat2\v10_chain.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Intermediate
+    serial=2bc473dc09da3aadc8fc15ea013f4dab3ae36b2b  notAfter=2026-12-14 01:39:49+00:00
+04_SOLVE\tbox\mat2\v10_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Intermediate
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=35499fc9c667ff82db5bfa040ad0c019ecd4f9af  notAfter=2027-01-13 01:39:49+00:00
+04_SOLVE\tbox\mat2\v10_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=7e3edfd7508b8e06b9986c8caef0b1e0ca139194  notAfter=2027-01-13 01:39:49+00:00
+04_SOLVE\tbox\mat2\v11_chain.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Intermediate
+    serial=2bc473dc09da3aadc8fc15ea013f4dab3ae36b2b  notAfter=2026-12-14 01:39:49+00:00
+04_SOLVE\tbox\mat2\v11_chain.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Intermediate
+    serial=2bc473dc09da3aadc8fc15ea013f4dab3ae36b2b  notAfter=2026-12-14 01:39:49+00:00
+04_SOLVE\tbox\mat2\v11_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Intermediate
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=35499fc9c667ff82db5bfa040ad0c019ecd4f9af  notAfter=2027-01-13 01:39:49+00:00
+04_SOLVE\tbox\mat2\v11_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=7e3edfd7508b8e06b9986c8caef0b1e0ca139194  notAfter=2027-01-13 01:39:49+00:00
+04_SOLVE\tbox\mat2\v12.pem
+    subj=CN=tbox,OU=Fleet Diagnostics,O=CyberCar
+    iss =CN=tbox,OU=Fleet Diagnostics,O=CyberCar
+    serial=2ec341254f1102ffc91220852533609cf2df1d36  notAfter=2026-12-14 01:39:49+00:00
+04_SOLVE\tbox\mat2\v14_chain.pem
+    subj=CN=tbox-client
+    iss =CN=tbox
+    serial=364603d5db51f1ea65ce509e4cabbb59e5cdcb6a  notAfter=2026-12-14 01:39:49+00:00
+04_SOLVE\tbox\mat2\v14_chain.pem
+    subj=CN=tbox
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=502c0ed0dffb9ec2af2bce9f97737827  notAfter=2026-12-14 01:00:32+00:00
+04_SOLVE\tbox\mat2\v15.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=768234bae9bffb5393462f35be85371a2eae19ba  notAfter=2026-12-14 01:39:49+00:00
+04_SOLVE\tbox\mat2\v16_chain.pem
+    subj=CN=tbox-client
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=2be728d3827180ca0aaf40a1202c6a11d5d4328c  notAfter=2026-12-14 01:39:49+00:00
+04_SOLVE\tbox\mat2\v16_chain.pem
+    subj=CN=CV6 Fleet Diagnostics Root
+    iss =CN=CV6 Fleet Diagnostics Root
+    serial=1841cf7fcd5eb3e002ae65ba59280d4b17a1d135  notAfter=2027-01-13 01:39:49+00:00
+04_SOLVE\tbox_s09\mat\ovpn_cert.pem
+    subj=CN=cc-715a9a001b4a5abad5ce3ecc
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=50cb3963034b06305c8b6386f8feb3a6  notAfter=2026-11-17 01:01:24+00:00
+04_SOLVE\tsp\vpn_client.crt
+    subj=CN=cc-715a9a001b4a5abad5ce3ecc
+    iss =CN=CyberCar Vehicle Range VPN CA
+    serial=50cb3963034b06305c8b6386f8feb3a6  notAfter=2026-11-17 01:01:24+00:00
+
+## total PEM certs found in workspace: 83
+## certs whose SUBJECT is 'CV6 Fleet Diagnostics Root': 12
+## RESULT: ROOT CERT PRESENT -> inspectable

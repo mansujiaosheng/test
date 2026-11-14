@@ -1,0 +1,14 @@
+baseline (no vars): (200, b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n')
+working  (vars.vin): 200 <- vehicleDiagnostics
+
+=== A. introspection WITH variables.vin ===
+  { __schema { queryType { name } types { name }   -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  query { __schema { types { name kind } } }       -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  { __typename }                                   -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+
+=== B. root-field dictionary, each with variables.vin ===
+
+  non-fallback responses: 0 (out of 186)
+
+=== C. mutations ===
+  (mutations non-fallback: see above; silence = all fell back)

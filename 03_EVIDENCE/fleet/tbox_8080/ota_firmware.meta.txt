@@ -1,0 +1,10 @@
+URL: http://10.230.164.3:8080/ota/firmware
+METHOD: GET
+STATUS: 404
+H: Content-Type: text/plain; charset=utf-8
+H: X-Content-Type-Options: nosniff
+H: Date: Sat, 14 Nov 2026 01:22:03 GMT
+H: Content-Length: 19
+H: Connection: close
+BODY_LEN: 19
+BODY_SHA256: b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793

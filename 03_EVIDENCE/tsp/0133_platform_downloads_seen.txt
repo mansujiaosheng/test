@@ -1,0 +1,28 @@
+=== all downloads whose referrer/tab_url contains 9989 (the CyberCar platform) ===
+  id=2261
+    path='D:\\下载文件\\cybercar-competition-ed3e7d452581978ccae13421-usr_b2ad80d021e26b5fb4b02b8619302912.ovpn'
+    tab_url='https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#vehicle-range'
+    referrer='https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421'
+    mime='application/x-openvpn-profile' bytes=2386/2386 state=1
+  id=1983
+    path='D:\\下载文件\\MiFlash2020-3-14-0.rar'
+    tab_url='https://cdn.alsgp0.fds.api.mi-img.com/micomm/MiFlash2020-3-14-0.rar'
+    referrer=''
+    mime='application/x-compressed' bytes=69989804/69989804 state=1
+
+=== url chains for those download ids ===
+   (2261, 0, 'blob:https://175.27.210.153:9989/b5a5e156-39bd-4627-bc40-94f22d10009d')
+
+=== visited platform URLs (9989) ===
+  'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#vehicle-range'  title='车联网数字孪生攻防平台' visits=14
+  'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#overview'  title='车联网数字孪生攻防平台' visits=8
+  'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#evidence'  title='车联网数字孪生攻防平台' visits=5
+  'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421#teams'  title='车联网数字孪生攻防平台' visits=6
+  'https://175.27.210.153:9989/?competitionId=competition-ed3e7d452581978ccae13421'  title='车联网数字孪生攻防平台' visits=1
+  'https://175.27.210.153:9989/competitions.html?next=%2F'  title='车联网数字孪生攻防平台' visits=1
+  'https://175.27.210.153:9989/login.html?next=%2F'  title='车联网数字孪生攻防平台' visits=1
+  'https://175.27.210.153:9989/'  title='车联网数字孪生攻防平台' visits=1
+  'https://login.live.com/oauth20_authorize.srf?client_id=705cfa09-85c1-4917-9301-b0c359be3cad&scope=https%3a%2f%2foneservice.microsoft.com%2fOneService.Read+openid+profile+offline_access&redirect_uri=https%3a%2f%2fwww.bing.com%2fchrome%2fnewtab&response_type=code&state=eyJpZCI6Ijg1ODJjMjQ3LTdhYmMtNGU2Ni05YWM5LTc4OTZjYTVmZDMyMyIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoic2lsZW50In19&response_mode=fragment&nonce=a591b292-e7c8-482e-81dc-d7ea833482d2&prompt=none&login_hint=1967835754%40qq.com&code_challenge=z5URBKblnnzM4UDtIJy_GcRdXXlM8b2yfwKo09eqANs&code_challenge_method=S256&x-client-SKU=msal.js.browser&x-client-Ver=2.28.2&uaid=8abb640b29d148c9989779c0a91e24e5&msproxy=1&issuer=mso&tenant=common&ui_locales=zh-CN&client_info=1&epctrc=MDwupYIb0maCELietT2TeMwWe5ey7ve74%2fgrDiExA3w%3d0%3a1%3aCANARY%3aPg%2fvtDHDLP2J4JTtIbAMLU07K%2bfC8kc0YLug31ReJgQ%3d&epct=PBgABDgEAAAA9VeaV3ywaSLp1O3c4_Et5RXZvU3RzQXJ0aWZhY3RzCAAAAAAA_Bmc0Dlt9mPSVZzMNwvGPtKd0PfgaVAYfYFjKQkbnj66Vap66mZX0WD59gCJ42yqNjfvcu_8f3jurPHnRv0NBMy_5laROMjuUmO9nRynKta2MYRxyAKBpmJriE_RoMM_qFAdaEd42f3yu5Vo5LbpCNDvKiZsbT-L4VCIAyih9MX2DrHb6M9mVN3_erJ8dBzWC48Za1aGxUYNtGK4etfSmSlxhT79bGdWxa8Kci8GySmk5YPiV9qvd1FVCqlwnZV1JezL9mFQDtMD3vovaWdWqr7N0Vjq2IzS0l4dwDmn8V55KeGZ-TPm7HCMA2Z_mgybrKoPlXSq7OGKeYDGovS0M-UGFNxJAhk7m5X5iqEK8wVWSvHQLkTxydno6wfVteUocMX6jaVfwxDBb5NTZ-9m659p9z26qLL0BtgNXnvo2WeWKJ6Oxd7lt2_QH2w0bpMc3iNlzuPTd-ZOsjcDtTzjO-jgYr5t_Q3Jvb_oPPGC2kWrYnbOIZOWB-9i_LBri6wvEjd9pVZfmmCuOdVpCU6p2WEua6ci9ch_QGFrrr1Ry3QEN8Nem00WYzPTHGtdus5MZbY2pc5Opm1CTYZ6480qBk8hpssGyHX12yQY1_rKXNwoLUw62NaIwh9gike_lORnwfDv2DU0JYjs3EAl9OGSB96bk6gUbryR5GJbPhwIIFH6_jAZeJw6WQ9Vb34yUmrKwyOAnUaqaxpjajsZLJWBa8EnRZSdyuUvWjlxg8I7m1AA1qJHHC5ALLWystNJrgkeIAA&jshs=2&jsh=3%241967835754%2540qq.com%24a%24156783%24%242%240%240%2414535302201522748488%240&jshp=3%241967835754%2540qq.com%24a%24156783%24%242%240%240%2414535302201522748488%240'  title='' visits=1
+  'https://175.27.228.250:9989/login.html?next=%2F'  title='车联网数字孪生攻防平台' visits=1
+  'https://175.27.228.250:9989/'  title='车联网数字孪生攻防平台' visits=1
+  (11 urls)

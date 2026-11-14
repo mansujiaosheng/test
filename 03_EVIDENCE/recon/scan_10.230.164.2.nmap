@@ -1,0 +1,9 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:13:08 2026 as: D:\\TOOL\\nmap\\nmap.exe -sT -Pn -p- --min-rate 3000 -T4 --open -oA scan_10.230.164.2 10.230.164.2
+Nmap scan report for 10.230.164.2
+Host is up (0.035s latency).
+Not shown: 65442 closed tcp ports (conn-refused), 92 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+8080/tcp open  http-proxy
+
+# Nmap done at Sat Nov 14 09:14:06 2026 -- 1 IP address (1 host up) scanned in 58.43 seconds

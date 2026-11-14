@@ -1,0 +1,39 @@
+# precise TCP connect matrix (RST vs TIMEOUT)
+# start  : 2026-11-14T09:49:33+08:00
+# host   : local 10.252.3.20 (TAP/OpenVPN), route 10.224.0.0/12 -> 10.252.3.1
+# method : nonblocking connect_ex + select(write) + SO_ERROR
+# reps   : 3   timeout/attempt: 2.0s
+# note   : target ECUs; 2.0s timeout x3 reps; fleet controls (01_tcp_controls.txt) show closed ports DROP not RST, so TIMEOUT alone is not proof of absence
+# verdict: OPEN=connected | RST=refused (IP alive, port closed) | TIMEOUT=no answer (drop/blackhole) | UNREACH/other
+
+=== 10.224.139.5 ===
+   8080/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.005, 2.012, 2.007]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.001, 2.006, 2.011]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.007, 2.003, 2.001]
+   8443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.012, 2.005, 2.006]
+  13400/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.001, 2.005, 2.002]
+  13401/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.001, 2.003, 2.010]
+   3000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.010, 2.007, 2.015]
+   5000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.012, 2.001, 2.010]
+
+=== 10.224.139.6 ===
+   8080/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.002, 2.001, 2.014]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.014, 2.015, 2.001]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.003, 2.013, 2.011]
+   8443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.013, 2.012, 2.001]
+  13400/tcp  MIXED    reps=TIMEOUT/TIMEOUT/ERR10055 dt=[2.001, 2.013, 0.000]
+  13401/tcp  MIXED    reps=ERR10055/ERR10055/ERR10055 dt=[0.000, 0.000, 0.000]
+   3000/tcp  MIXED    reps=ERR10055/ERR10055/ERR10055 dt=[0.000, 0.000, 0.000]
+   5000/tcp  MIXED    reps=ERR10055/ERR10055/ERR10055 dt=[0.000, 0.000, 0.000]
+
+=== 10.224.139.7 ===
+   8080/tcp  MIXED    reps=ERR10055/ERR10055/ERR10055 dt=[0.000, 0.000, 0.000]
+     80/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.011, 2.007, 2.001]
+    443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.006, 2.004, 2.007]
+   8443/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.001, 2.014, 2.005]
+  13400/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.007, 2.001, 2.009]
+  13401/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.005, 2.001, 2.012]
+   3000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.012, 2.015, 2.000]
+   5000/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.010, 2.004, 2.004]
+
+# summary: OPEN=0 RST=0 TIMEOUT=19 MIXED/other=5

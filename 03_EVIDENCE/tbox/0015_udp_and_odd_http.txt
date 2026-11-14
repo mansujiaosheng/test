@@ -1,0 +1,48 @@
+###### T-BOX 10.230.164.3 UDP + odd-HTTP-forms probe  2026-11-14T01:38:35Z ######
+
+## U01 UDP send-and-listen (2s per port), payload = 12 bytes 0x00..0x0b
+  UDP 161: no reply (timeout 2s)
+  UDP 123: no reply (timeout 2s)
+  UDP 137: no reply (timeout 2s)
+  UDP 500: no reply (timeout 2s)
+  UDP 623: no reply (timeout 2s)
+  UDP 1900: no reply (timeout 2s)
+  UDP 4500: no reply (timeout 2s)
+  UDP 4789: no reply (timeout 2s)
+  UDP 5353: no reply (timeout 2s)
+  UDP 5683: no reply (timeout 2s)
+  UDP 8443: no reply (timeout 2s)
+  UDP 443: no reply (timeout 2s)
+  UDP 8080: no reply (timeout 2s)
+  UDP 3478: no reply (timeout 2s)
+
+## U02 odd HTTP request forms on 8080
+--- OPTIONS * (asterisk-form)
+   sent: b'OPTIONS * HTTP/1.1'
+   resp: HTTP/1.1 200 OK | Content-Length: 0 | Date: Sat, 14 Nov 2026 01:39:03 GMT | Connection: close |  | 
+
+--- absolute-form GET to /healthz
+   sent: b'GET http://10.230.164.3:8080/healthz HTTP/1.1'
+   resp: HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:39:03 GMT | Content-Length: 16 | Connection: close |  | {"status":"ok"}
+
+
+--- absolute-form GET to :8443 / (proxy-style)
+   sent: b'GET http://10.230.164.3:8443/ HTTP/1.1'
+   resp: HTTP/1.1 404 Not Found | Content-Type: text/plain; charset=utf-8 | X-Content-Type-Options: nosniff | Date: Sat, 14 Nov 2026 01:39:03 GMT | Content-Length: 19 | Connection: close |  | 404 page not found
+
+
+--- HTTP/1.0 no Host
+   sent: b'GET /healthz HTTP/1.0'
+   resp: HTTP/1.0 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:39:03 GMT | Content-Length: 16 |  | {"status":"ok"}
+
+
+--- Host: tbox:8443
+   sent: b'GET /healthz HTTP/1.1'
+   resp: HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:39:03 GMT | Content-Length: 16 | Connection: close |  | {"status":"ok"}
+
+
+--- X-Forwarded-* spoof
+   sent: b'GET /healthz HTTP/1.1'
+   resp: HTTP/1.1 200 OK | Content-Type: application/json | Date: Sat, 14 Nov 2026 01:39:03 GMT | Content-Length: 16 | Connection: close |  | {"status":"ok"}
+
+

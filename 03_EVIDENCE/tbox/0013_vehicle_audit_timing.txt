@@ -1,0 +1,27 @@
+###### T02 0013 timing anomaly /vehicle/audit (2026-11-14T01:35:15Z) ######
+## 0012 showed /vehicle/audit Host:tbox.local -> 3.06s (all others ~0.05s). Test reproducibility + Host dependence.
+
+Host:tbox.local     /vehicle/audit        0.057s HTTP/1.1 404 Not Found
+Host:tbox.local     /vehicle/audit        0.058s HTTP/1.1 404 Not Found
+Host:tbox.local     /vehicle/audit2       0.061s HTTP/1.1 404 Not Found
+Host:tbox.local     /vehicle/audit2       0.075s HTTP/1.1 404 Not Found
+Host:tbox.local     /vehicle/audit/       0.055s HTTP/1.1 404 Not Found
+Host:tbox.local     /vehicle/audit/       0.065s HTTP/1.1 404 Not Found
+Host:tbox.local     /audit                0.075s HTTP/1.1 404 Not Found
+Host:tbox.local     /audit                0.098s HTTP/1.1 404 Not Found
+Host:10.230.164.3   /vehicle/audit        0.077s HTTP/1.1 404 Not Found
+Host:10.230.164.3   /vehicle/audit        0.058s HTTP/1.1 404 Not Found
+Host:10.230.164.3   /vehicle/audit2       0.055s HTTP/1.1 404 Not Found
+Host:10.230.164.3   /vehicle/audit2       0.074s HTTP/1.1 404 Not Found
+Host:10.230.164.3   /vehicle/audit/       0.056s HTTP/1.1 404 Not Found
+Host:10.230.164.3   /vehicle/audit/       0.057s HTTP/1.1 404 Not Found
+Host:10.230.164.3   /audit                0.055s HTTP/1.1 404 Not Found
+Host:10.230.164.3   /audit                0.070s HTTP/1.1 404 Not Found
+Host:tbox           /vehicle/audit        0.054s HTTP/1.1 404 Not Found
+Host:tbox           /vehicle/audit        0.057s HTTP/1.1 404 Not Found
+Host:tbox           /vehicle/audit2       0.055s HTTP/1.1 404 Not Found
+Host:tbox           /vehicle/audit2       0.053s HTTP/1.1 404 Not Found
+Host:tbox           /vehicle/audit/       0.072s HTTP/1.1 404 Not Found
+Host:tbox           /vehicle/audit/       0.075s HTTP/1.1 404 Not Found
+Host:tbox           /audit                0.053s HTTP/1.1 404 Not Found
+Host:tbox           /audit                0.078s HTTP/1.1 404 Not Found

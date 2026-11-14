@@ -1,0 +1,19 @@
+{
+  "label": "la_slow_4bdc",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0x4BDC",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E004BDC3E00",
+    "uds": "3E00"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 132.97,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 866,
+  "ts": "2026-11-14T09:25:24.884+08:00"
+}

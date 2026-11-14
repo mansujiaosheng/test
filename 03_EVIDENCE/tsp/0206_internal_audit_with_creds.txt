@@ -1,0 +1,17 @@
+=== 0206: /internal/audit gate vs the newly-known credentials ===
+
+##### 10.225.139.2:8080/internal/audit #####
+  none           http=404 ct=application/json body={"error":"not found"}
+  basic-diag     http=404 ct=application/json body={"error":"not found"}
+  bearer-cred    http=404 ct=application/json body={"error":"not found"}
+  bearer-pkey    http=404 ct=application/json body={"error":"not found"}
+  hdr-cred       http=404 ct=application/json body={"error":"not found"}
+  cookie         http=404 ct=application/json body={"error":"not found"}
+
+##### 10.225.139.3:8080/internal/audit #####
+  none           http=404 ct=application/json body={"error":"not found"}
+  basic-diag     http=404 ct=application/json body={"error":"not found"}
+  bearer-cred    http=404 ct=application/json body={"error":"not found"}
+  bearer-pkey    http=404 ct=application/json body={"error":"not found"}
+  hdr-cred       http=404 ct=application/json body={"error":"not found"}
+  cookie         http=404 ct=application/json body={"error":"not found"}

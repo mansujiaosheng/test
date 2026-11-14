@@ -1,0 +1,2 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:13:08 2026 as: D:\\TOOL\\nmap\\nmap.exe -sT -Pn -p- --min-rate 3000 -T4 --open -oA scan_10.224.139.6 10.224.139.6
+# Nmap done at Sat Nov 14 09:50:51 2026 -- 1 IP address (1 host up) scanned in 2263.41 seconds

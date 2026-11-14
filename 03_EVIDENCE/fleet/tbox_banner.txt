@@ -1,0 +1,8 @@
+[*] scan 10.230.164.3 ports=2 timeout=1.0 workers=4
+  [OPEN] 10.230.164.3:8080
+  [OPEN] 10.230.164.3:8443
+
+[*] 10.230.164.3: open=[8080, 8443] filtered=0 closed=0 elapsed=0.1s
+[*] banner grabbing ...
+  10.230.164.3:8080 -> 'HTTP/1.1 400 Bad Request\r\nContent-Type: text/plain; charset=utf-8\r\nConnection: close\r\n\r\n400 Bad Request'
+  10.230.164.3:8443 -> ''

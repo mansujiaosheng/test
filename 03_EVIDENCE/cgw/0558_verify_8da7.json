@@ -1,0 +1,19 @@
+{
+  "label": "verify_8da7",
+  "purpose": "re-verify DID on a clean socket after pipelined scan",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E001000228DA7",
+    "uds": "228DA7"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 503.1,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 558,
+  "ts": "2026-11-14T09:22:16.316+08:00"
+}

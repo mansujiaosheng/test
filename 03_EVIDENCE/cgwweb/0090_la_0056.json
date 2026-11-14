@@ -1,0 +1,18 @@
+{
+  "label": "la_0056",
+  "purpose": "LA existence probe 0x0056",
+  "tester_sa": "0x0E00",
+  "target_la": "0x0056",
+  "elapsed_ms": 192.81,
+  "responses": [
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 90,
+  "ts": "2026-11-14T09:24:34.553+08:00"
+}

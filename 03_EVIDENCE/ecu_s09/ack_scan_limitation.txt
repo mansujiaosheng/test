@@ -1,0 +1,7 @@
+=== getent/arp for 10.224.139.x (is there L2 presence?) ===
+(no arp entry for 10.224.139.x / gateway MAC used)
+
+=== nmap -sS alternative: raw socket privileged? ===
+nmap -sS produced ZERO output => no Npcap raw access (non-admin). -sA likewise unavailable.
+
+=== ACK-scan substitute: TCP connect timeout vs refuse measurement ===

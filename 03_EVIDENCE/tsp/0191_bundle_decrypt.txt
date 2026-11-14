@@ -1,0 +1,26 @@
+=== input ===
+  key(hex)      : 3ac02bb40567fa14062cc768e22fefac3dd972aee87a3bf2d01419f026d573d0 (32 bytes)
+  tbox-firmware.img len: 16412 bytes
+  sha256(file)  : f2ffde0682b3f45cbeaa0a3d04c617677210629f43beecbe8aaca1222d04f625
+  manifest expects sha256(plaintext): 88b09d09edbf2951f7a111a51608e99a1bb28a27e653c169f4bf6ddd8c537229
+
+=== layout: nonce(12)||ct(16384)||tag(16) = 16412  (actual 16412 ) ===
+  nonce: d795748f450954229ce413ad
+  ct len: 16384  tag len: 16
+  [nonce||ct||tag] decrypt OK  len=16384  sha256=88b09d09edbf2951f7a111a51608e99a1bb28a27e653c169f4bf6ddd8c537229
+  matches manifest tboxSha256: True
+  -> written 01_TARGETS/tsp/engineering-bundle/tbox-firmware.dec.bin
+  first 64 bytes: 00000120550700085507000855070008550700085507000855070008550700085507000855070008550700085507000855070008550700085507000855070008
+  first 64 ascii: ... U...U...U...U...U...U...U...U...U...U...U...U...U...U...U...
+
+=== vcu-reference.bin (1024 B) ===
+  len: 1024  sha256: 2f3692767f605ef72fb47e1a779f2dfaeca802b4df1e35d38f8bb66d53ce6ea7
+  first 96 ascii: CV6VCU1.n.....4j.9.Bw_JP.B.03:.;.K9..l...8.p.l.(..Yh...../:.v?..M..:;....osX./.$..E..J..*A......
+  first 96 hex  : 43563656435531006e08e196088e346ab039d342775f4a50bb421930333af73bdd4b39df916ca10185388770906c992813875968c213a4c7e82f3a7f763fe7c74d19d03a3bac0786e06f73580c2f8024018a45fbb74a928f2a41baf4feebd8ad
+
+=== diagnostics certs ===
+  diagnostics/ca.pem                 595 B  sha256=c2fe3a5d4dfb87863b9f26cc88800d9a…
+  diagnostics/client.pem             611 B  sha256=fdf5e91bacd4785513377f909ac18afc…
+  diagnostics/client-key.pem         241 B  sha256=37112adb9b0622dfa1fcc0da62817d19…
+
+RESULT: DECRYPTED OK

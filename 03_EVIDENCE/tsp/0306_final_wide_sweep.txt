@@ -1,0 +1,21 @@
+==============================================================================
+TSP final wide sweep  2026-11-14T09:40:31+0800
+words=1169 prefixes=19 paths=22573 workers=20
+baseline=b'404 page not found\n'
+==============================================================================
+  HIT /internal/audit                                     404  len=   22 b'{"error":"not found"}\n'
+  HIT /healthz                                            200  len=   16 b'{"status":"ok"}\n'
+  ... 4000/22573 (21s, 188 r/s, hits=2, exc=5)
+  ... 8000/22573 (62s, 128 r/s, hits=2, exc=19)
+  ... 12000/22573 (113s, 106 r/s, hits=2, exc=280)
+  ... 16000/22573 (163s, 98 r/s, hits=2, exc=579)
+  ... 20000/22573 (204s, 98 r/s, hits=2, exc=585)
+------------------------------------------------------------------------------
+total=22573 elapsed=230.5s hits=2 exc=587
+exceptions: [('api/rpc/version', 'ConnectionError'), ('api/svc/report', 'ReadTimeout'), ('api/jsonrpc/uds', 'ConnectTimeout'), ('api/v2/fleet/cert', 'ConnectTimeout'), ('api/v2/fleet/bootstrap', 'ConnectTimeout'), ('api/v2/cv6/status', 'ConnectTimeout'), ('api/v2/cv6/login', 'ConnectTimeout'), ('v2/admin/vehicles', 'ConnectTimeout'), ('v2/admin/bootstrap', 'ConnectTimeout'), ('internal/api/v1/provisioning', 'ConnectTimeout'), ('internal/api/v1/session', 'ConnectTimeout'), ('internal/api/v1/logs', 'ConnectTimeout'), ('internal/api/v1/log', 'ConnectTimeout'), ('internal/api/v1/sessions', 'ConnectTimeout'), ('internal/api/v1/trace', 'ConnectTimeout'), ('internal/api/v1/pprof', 'ConnectTimeout'), ('internal/api/v1/info', 'ConnectTimeout'), ('internal/api/v1/update', 'ConnectTimeout'), ('internal/api/v2/download', 'ConnectionError'), ('api/internal/fleet/campaigns', 'ConnectionError')]
+
+--- hit summary (dedup by status+len+head) ---
+  (404, 22, b'{"error":"not found"}\n', '') x1 e.g. ['internal/audit']
+  (200, 16, b'{"status":"ok"}\n', '') x1 e.g. ['healthz']
+[*] wrote 03_EVIDENCE/tsp/0306_final_wide_sweep.json
+[done] 2026-11-14T09:44:21+0800

@@ -1,0 +1,18 @@
+{
+  "label": "aliasprobe_10_226_193_2_13401",
+  "purpose": "CGW alias / neighbour DoIP probe",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "0x0001",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": "0B"
+    }
+  ],
+  "parsed": "0B",
+  "seq": 3449,
+  "ts": "2026-11-14T10:01:36.196+08:00"
+}

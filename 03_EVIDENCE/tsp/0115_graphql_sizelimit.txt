@@ -1,0 +1,37 @@
+==========================================================================
+/graphql body size limit search (valid JSON, single 'pad' string key)
+==========================================================================
+hypothesis: http.MaxBytesReader(w, r.Body, 1<<20) => 1048576 works, 1048577 fails
+
+  len=     1024  -> 200  b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  len=    65536  -> 200  b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  len=  1048570  -> 400  b'{"error":"invalid GraphQL request"}\n'
+  len=  1048575  -> 400  b'{"error":"invalid GraphQL request"}\n'
+  len=  1048576  -> 400  b'{"error":"invalid GraphQL request"}\n'
+  len=  1048577  -> 400  b'{"error":"invalid GraphQL request"}\n'
+  len=  1048580  -> 400  b'{"error":"invalid GraphQL request"}\n'
+  len=  1048600  -> 400  b'{"error":"invalid GraphQL request"}\n'
+  len=  2000000  -> 400  b'{"error":"invalid GraphQL request"}\n'
+
+--- confirm boundary by bisection between 100000 and 2000000 ---
+  largest accepted body = 131071 bytes (HTTP 200)
+  smallest rejected     = 131072 bytes
+  1<<20 = 1048576
+  1<<20 - 1 = 1048575
+  lo == 1<<20 ? False   lo == (1<<20)-1 ? False
+
+==========================================================================
+residual parser tricks
+==========================================================================
+  empty body             -> 400 b'{"error":"invalid GraphQL request"}\n'
+  whitespace only        -> 400 b'{"error":"invalid GraphQL request"}\n'
+  json with comments     -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  single quote           -> 400 b'{"error":"invalid GraphQL request"}\n'
+  query true             -> 400 b'{"error":"invalid GraphQL request"}\n'
+  query float            -> 400 b'{"error":"invalid GraphQL request"}\n'
+  query empty arr str    -> 400 b'{"error":"invalid GraphQL request"}\n'
+  deep 9000              -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  utf8 overlong          -> 200 b'{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\n'
+  nul in string          -> 400 b'{"error":"invalid GraphQL request"}\n'
+  exponent int           -> 400 b'{"error":"invalid GraphQL request"}\n'
+  big int str field      -> 400 b'{"error":"invalid GraphQL request"}\n'

@@ -1,0 +1,49 @@
+--- header: Authorization: Bearer test
+Date: Sat, 14 Nov 2026 01:10:41 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- header: Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ2aW4iOiJDVjZGRjUyRkVFOUVERERENjYifQ.
+Date: Sat, 14 Nov 2026 01:10:41 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- header: X-API-Key: test
+Date: Sat, 14 Nov 2026 01:10:41 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- header: X-Vehicle-VIN: CV6FF52FEE9EDDD86
+Date: Sat, 14 Nov 2026 01:10:42 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- header: X-TBOX-ID: tbox
+Date: Sat, 14 Nov 2026 01:10:42 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+=== other content types ===
+--- CT: application/graphql
+Date: Sat, 14 Nov 2026 01:10:42 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- CT: text/plain
+Date: Sat, 14 Nov 2026 01:10:42 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- CT: application/x-www-form-urlencoded
+Date: Sat, 14 Nov 2026 01:10:42 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+

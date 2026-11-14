@@ -1,0 +1,2739 @@
+{
+ "path": "/internal/audit",
+ "results": [
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:30 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 2104.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?vin=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:30 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?vin=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:30 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?vin=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:30 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 71.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?vin=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:32 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 1074.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?vin=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:32 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 974.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?vin=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:33 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?id=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 1062.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?id=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?id=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 69.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?id=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?id=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?id=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ecu=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ecu=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ecu=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ecu=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ecu=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:34 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ecu=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:35 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 1063.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?target=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:35 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 58.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?target=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:35 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?target=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:35 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?target=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:35 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 522.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?target=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:36 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?target=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:36 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 520.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?name=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:39 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 2069.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?name=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:39 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?name=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:39 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 69.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?name=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:39 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 59.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?name=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 5060.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?name=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 59.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?node=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?node=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?node=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?node=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?node=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?node=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 59.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?addr=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?addr=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 58.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?addr=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 60.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?addr=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:44 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 64.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?addr=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?addr=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 80.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?address=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?address=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?address=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?address=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?address=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 59.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?address=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?la=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 73.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?la=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?la=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 73.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?la=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 63.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?la=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?la=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?canid=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?canid=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?canid=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:45 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?canid=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 68.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?canid=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?canid=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?frame=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?frame=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 75.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?frame=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?frame=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?frame=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?frame=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?file=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 65.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?file=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?file=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?file=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?file=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 58.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?file=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?path=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?path=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:46 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?path=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?path=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 76.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?path=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?path=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?log=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?log=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 64.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?log=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 74.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?log=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?log=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?log=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?q=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?q=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?q=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?q=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 64.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?q=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 58.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?q=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:47 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 58.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?query=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 68.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?query=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?query=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?query=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 79.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?query=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 59.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?query=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 61.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?key=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 75.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?key=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 60.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?key=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?key=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 58.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?key=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?key=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 79.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?from=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?from=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?from=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 62.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?from=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?from=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:48 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?from=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 59.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?since=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?since=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?since=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?since=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?since=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?since=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 58.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ts=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ts=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 75.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ts=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 77.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ts=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ts=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?ts=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?date=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?date=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?date=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:49 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 68.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?date=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?date=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?date=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 73.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?level=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 57.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?level=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?level=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?level=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?level=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?level=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 58.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?limit=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?limit=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 78.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?limit=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 76.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?limit=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?limit=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?limit=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?offset=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?offset=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:50 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?offset=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?offset=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?offset=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?offset=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 66.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?page=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?page=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 65.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?page=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?page=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?page=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?page=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?session=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?session=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?session=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?session=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 73.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?session=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?session=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 66.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?task=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?task=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:51 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?task=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?task=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?task=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?task=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?job=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?job=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?job=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?job=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?job=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?job=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?trace=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?trace=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?trace=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 73.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?trace=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.1
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?trace=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 67.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?trace=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?event=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?event=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:52 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?event=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?event=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?event=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?event=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 52.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?user=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?user=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?user=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?user=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?user=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?user=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?token=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?token=1",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.3
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?token=0",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 79.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?token=0x1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?token=1000",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?token=bcm",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 72.7
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:53 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.6
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 68.4
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.8
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 56.0
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.7
+  },
+  {
+   "method": "POST",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.5
+  },
+  {
+   "method": "POST",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.9
+  },
+  {
+   "method": "POST",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.1
+  },
+  {
+   "method": "POST",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.5
+  },
+  {
+   "method": "POST",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 53.2
+  },
+  {
+   "method": "POST",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 55.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.2
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit/log",
+   "status": 404,
+   "len": 19,
+   "body": "404 page not found\n",
+   "hdrs": {
+    "Content-Type": "text/plain; charset=utf-8",
+    "X-Content-Type-Options": "nosniff",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "19"
+   },
+   "ms": 75.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit/1",
+   "status": 404,
+   "len": 19,
+   "body": "404 page not found\n",
+   "hdrs": {
+    "Content-Type": "text/plain; charset=utf-8",
+    "X-Content-Type-Options": "nosniff",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "19"
+   },
+   "ms": 54.5
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit?vin=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "len": 22,
+   "body": "{\"error\":\"not found\"}\n",
+   "hdrs": {
+    "Content-Type": "application/json",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "22"
+   },
+   "ms": 54.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audits",
+   "status": 404,
+   "len": 19,
+   "body": "404 page not found\n",
+   "hdrs": {
+    "Content-Type": "text/plain; charset=utf-8",
+    "X-Content-Type-Options": "nosniff",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "19"
+   },
+   "ms": 53.9
+  },
+  {
+   "method": "GET",
+   "url": "http://10.229.221.2:8080/internal/audit.json",
+   "status": 404,
+   "len": 19,
+   "body": "404 page not found\n",
+   "hdrs": {
+    "Content-Type": "text/plain; charset=utf-8",
+    "X-Content-Type-Options": "nosniff",
+    "Date": "Sat, 14 Nov 2026 01:32:54 GMT",
+    "Content-Length": "19"
+   },
+   "ms": 53.0
+  }
+ ]
+}

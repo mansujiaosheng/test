@@ -1,0 +1,25 @@
+{
+  "label": "ra_laverify_c76e",
+  "purpose": "DoIP routing activation (0x0005) -> parse 0x0006",
+  "request": {
+    "ptype": "0x0005",
+    "hex": "0E000000000000"
+  },
+  "responses": [
+    {
+      "ptype": "0x0006",
+      "hex": "0E0010001000000000",
+      "len": 9
+    }
+  ],
+  "elapsed_ms": 26.58,
+  "parsed": {
+    "tester_sa": "0x0E00",
+    "entity_la": "0x1000",
+    "code": "0x10",
+    "text": "routing successfully activated",
+    "trailing": "00000000"
+  },
+  "seq": 1500,
+  "ts": "2026-11-14T09:29:08.033+08:00"
+}

@@ -1,0 +1,3 @@
+{"h": "10.226.193.2", "p": 8080, "ok": true, "connect_ms": 46.9, "outcome": "STILL_OPEN_2s"}
+{"h": "10.226.193.2", "p": 13400, "ok": true, "connect_ms": 26.5, "outcome": "STILL_OPEN_2s"}
+{"h": "10.226.193.2", "p": 13401, "ok": true, "connect_ms": 27.6, "outcome": "FIN", "after_ms": 26.1}

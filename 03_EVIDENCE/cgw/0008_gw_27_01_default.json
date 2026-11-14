@@ -1,0 +1,32 @@
+{
+  "label": "gw_27_01_default",
+  "purpose": "SecurityAccess level1 requestSeed in default session",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0010002701",
+    "uds": "2701"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2711",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2711",
+      "parsed": "NEGATIVE service=0x27 NRC=0x11 (serviceNotSupported)"
+    }
+  ],
+  "elapsed_ms": 384.15,
+  "parsed": "0x1000: NEGATIVE service=0x27 NRC=0x11 (serviceNotSupported)",
+  "seq": 8,
+  "ts": "2026-11-14T09:10:35.936+08:00"
+}

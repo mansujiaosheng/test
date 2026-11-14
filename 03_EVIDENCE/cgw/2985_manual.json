@@ -1,0 +1,32 @@
+{
+  "label": "manual",
+  "purpose": "manual read-only request",
+  "tester_sa": "0x0E80",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E80E4422701",
+    "uds": "2701"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E807F277E",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E80",
+      "hex": "7F277E",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    }
+  ],
+  "elapsed_ms": 424.05,
+  "parsed": "0x1220: NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)",
+  "seq": 2985,
+  "ts": "2026-11-14T09:44:48.882+08:00"
+}

@@ -1,0 +1,18 @@
+{
+  "label": "base_ra_sa0e00",
+  "purpose": "routing activation SA 0x0E00 act 0x00",
+  "request": {
+    "ptype": "0x0005",
+    "hex": "0E000000000000"
+  },
+  "responses": [
+    {
+      "ptype": "0x0006",
+      "hex": "0e0010001000000000",
+      "len": 9
+    }
+  ],
+  "seq": 2002,
+  "ts": "2026-11-14T09:30:41.194+08:00",
+  "elapsed_ms": 1698.9
+}

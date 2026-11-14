@@ -1,0 +1,56 @@
+=== retry Host: tbox (got 000 = curl failure last run) x5 ===
+*   Trying 10.230.164.2:8080...
+* Established connection to 10.230.164.2 (10.230.164.2 port 8080) from 10.252.3.20 port 65162 
+* using HTTP/1.x
+* Request completely sent off
+< HTTP/1.1 405 Method Not Allowed
+< Content-Type: application/json
+< Date: Sat, 14 Nov 2026 01:19:40 GMT
+< Content-Length: 31
+< 
+* Connection #0 to host 10.230.164.2:8080 left intact
+--- rc=0 ---
+*   Trying 10.230.164.2:8080...
+* Established connection to 10.230.164.2 (10.230.164.2 port 8080) from 10.252.3.20 port 65164 
+* using HTTP/1.x
+* Request completely sent off
+< HTTP/1.1 405 Method Not Allowed
+< Content-Type: application/json
+< Date: Sat, 14 Nov 2026 01:19:41 GMT
+< Content-Length: 31
+< 
+* Connection #0 to host 10.230.164.2:8080 left intact
+--- rc=0 ---
+*   Trying 10.230.164.2:8080...
+* Established connection to 10.230.164.2 (10.230.164.2 port 8080) from 10.252.3.20 port 65374 
+* using HTTP/1.x
+* Request completely sent off
+< HTTP/1.1 405 Method Not Allowed
+< Content-Type: application/json
+< Date: Sat, 14 Nov 2026 01:19:41 GMT
+< Content-Length: 31
+< 
+* Connection #0 to host 10.230.164.2:8080 left intact
+--- rc=0 ---
+*   Trying 10.230.164.2:8080...
+* Established connection to 10.230.164.2 (10.230.164.2 port 8080) from 10.252.3.20 port 65430 
+* using HTTP/1.x
+* Request completely sent off
+< HTTP/1.1 405 Method Not Allowed
+< Content-Type: application/json
+< Date: Sat, 14 Nov 2026 01:19:41 GMT
+< Content-Length: 31
+< 
+* Connection #0 to host 10.230.164.2:8080 left intact
+--- rc=0 ---
+*   Trying 10.230.164.2:8080...
+* Established connection to 10.230.164.2 (10.230.164.2 port 8080) from 10.252.3.20 port 65467 
+* using HTTP/1.x
+* Request completely sent off
+< HTTP/1.1 405 Method Not Allowed
+< Content-Type: application/json
+< Date: Sat, 14 Nov 2026 01:19:41 GMT
+< Content-Length: 31
+< 
+* Connection #0 to host 10.230.164.2:8080 left intact
+--- rc=0 ---

@@ -1,0 +1,33 @@
+{
+  "label": "r2_post_e0_ffffffff_f190",
+  "purpose": "service set after activation",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00100022F190",
+    "uds": "22F190"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E0062F1904356363232363937463832413933364131",
+      "len": 24
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "62F1904356363232363937463832413933364131",
+      "parsed": "POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131"
+    }
+  ],
+  "elapsed_ms": 384.29,
+  "parsed": "0x1000: POSITIVE for 0x22 (ReadDataByIdentifier) data=F1904356363232363937463832413933364131",
+  "seq": 3304,
+  "ts": "2026-11-14T09:56:34.463+08:00"
+}

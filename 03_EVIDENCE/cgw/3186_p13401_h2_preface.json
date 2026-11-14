@@ -1,0 +1,17 @@
+{
+  "label": "p13401_h2_preface",
+  "purpose": "HTTP/2 connection preface",
+  "host": "10.230.164.4",
+  "port": 13401,
+  "request": {
+    "hex": "505249202A20485454502F322E300D0A0D0A534D0D0A0D0A"
+  },
+  "responses": [
+    {
+      "hex": ""
+    }
+  ],
+  "note": "connection reset",
+  "seq": 3186,
+  "ts": "2026-11-14T09:49:37+0800"
+}

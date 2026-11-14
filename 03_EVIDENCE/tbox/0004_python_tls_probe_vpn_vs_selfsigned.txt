@@ -1,0 +1,36 @@
+{
+ "cert": "01_TARGETS/tbox/vpn_client_cert.pem",
+ "alpn": null,
+ "sni": "tbox",
+ "handshake": "OK",
+ "version": "TLSv1.3",
+ "cipher": "TLS_AES_128_GCM_SHA256",
+ "alpn_sel": null,
+ "peercert_subject": null,
+ "error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"
+}
+======================================================================
+{
+ "cert": "03_EVIDENCE/web/tls_probe/client_self_cert.pem",
+ "alpn": null,
+ "sni": "tbox",
+ "handshake": "OK",
+ "version": "TLSv1.3",
+ "cipher": "TLS_AES_128_GCM_SHA256",
+ "alpn_sel": null,
+ "peercert_subject": null,
+ "error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"
+}
+======================================================================
+{
+ "cert": null,
+ "alpn": null,
+ "sni": "tbox",
+ "handshake": "OK",
+ "version": "TLSv1.3",
+ "cipher": "TLS_AES_128_GCM_SHA256",
+ "alpn_sel": null,
+ "peercert_subject": null,
+ "error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"
+}
+======================================================================

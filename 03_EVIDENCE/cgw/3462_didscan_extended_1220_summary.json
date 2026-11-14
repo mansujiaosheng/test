@@ -1,0 +1,22 @@
+{
+  "label": "didscan_extended_1220_summary",
+  "purpose": "0x22 DID scan on 0x1220 in extended session",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "22 <did> after 10 03"
+  },
+  "parsed": "65536 DIDs, baseline=7F2231, hits=1, slow=3, 86.0s",
+  "distribution": {
+    "7F2231": 65535,
+    "7F2233": 1
+  },
+  "hits": [
+    {
+      "v": "0xF1A4",
+      "resp": "7F2233"
+    }
+  ],
+  "evidence_file": "3461_didscan_extended_1220_0000_ffff.jsonl",
+  "seq": 3462,
+  "ts": "2026-11-14T10:03:47.723+08:00"
+}

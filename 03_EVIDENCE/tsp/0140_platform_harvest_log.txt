@@ -1,0 +1,15 @@
+==============================================================================
+[2026-11-14T09:40:35] harvest start  competition=competition-ed3e7d452581978ccae13421
+auth mode: cookie
+[auth/check] 200 {"authenticated": false}
+!! not authenticated - aborting
+==============================================================================
+[2026-11-14T09:49:33] harvest start  competition=competition-ed3e7d452581978ccae13421
+auth mode: cookie
+[auth/check] 200 {"authenticated": false}
+!! not authenticated - aborting
+==============================================================================
+[2026-11-14T09:50:23] harvest start  competition=competition-ed3e7d452581978ccae13421
+auth mode: cookie
+[auth/check] 200 {"authenticated": false}
+!! not authenticated - aborting

@@ -1,0 +1,32 @@
+{
+  "label": "la_slow_1000",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0010003E00",
+    "uds": "3E00"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F3E11",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F3E11",
+      "parsed": "NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)"
+    }
+  ],
+  "elapsed_ms": 161.07,
+  "parsed": "0x1000: NEGATIVE service=0x3E NRC=0x11 (serviceNotSupported)",
+  "seq": 614,
+  "ts": "2026-11-14T09:23:56.742+08:00"
+}

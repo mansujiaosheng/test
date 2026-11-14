@@ -1,0 +1,19 @@
+# UDP probes on CGW / ECUs (DoIP discovery + 13401)
+  10.226.193.2:13400/udp timeout
+  10.226.193.2:13401/udp timeout
+  10.226.193.2:8080/udp timeout
+  10.225.139.4:13400/udp timeout
+  10.225.139.4:13401/udp timeout
+  10.226.197.5:13400/udp timeout
+  10.226.197.5:13401/udp timeout
+  10.226.197.5:8080/udp timeout
+  10.226.197.6:13400/udp timeout
+  10.226.197.6:13401/udp timeout
+  10.226.197.6:8080/udp timeout
+  10.226.197.7:13400/udp timeout
+  10.226.197.7:13401/udp timeout
+  10.226.197.7:8080/udp timeout
+
+# TLS handshake to CGW:13401 (is it a TLS service?)
+  10.226.193.2: TLS FAIL SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)
+  10.225.139.4: TLS FAIL SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)

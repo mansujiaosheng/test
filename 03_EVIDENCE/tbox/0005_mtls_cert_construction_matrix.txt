@@ -1,0 +1,34 @@
+###### T02 0005 mTLS client-cert construction matrix  (2026-11-14T01:24:11Z) ######
+## target 10.230.164.3:8443, sni=tbox, TLS1.3 forced client-side
+## cmd: python 04_SOLVE/tbox/mtls_matrix.py certs
+
+{"cert": null, "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": "/d/qwb/01_TARGETS/tbox/vpn_client_cert.pem", "sni": "tbox", "local_error": "FileNotFoundError: [Errno 2] No such file or directory"}
+==============================================================================
+{"cert": "v1_ed25519_selfsign.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v2_rsa2048_selfsign.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v3_selfsign_caTrue.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v4_leaf.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v4_leaf_chain.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v5_leaf.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v5_leaf_chain.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v6_root_as_client.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。"}
+==============================================================================
+{"cert": "v7_v1_noext.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v8_expired.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v9_leaf_noeku.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "v9_leaf_noeku_chain.pem", "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)"}
+==============================================================================
+{"cert": "srv_leaf.pem", "sni": "tbox", "local_error": "SSLError: [X509: KEY_VALUES_MISMATCH] key values mismatch (_ssl.c:3937)"}
+==============================================================================

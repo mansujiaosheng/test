@@ -1,0 +1,124 @@
+=== UDS 22F190 (TA=1000) ===
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "62F1904356363232363937463832413933364131",
+      "text": "POSITIVE 0x22 ReadDataByIdentifier DID=0xF190 data=4356363232363937463832413933364131"
+    }
+  ],
+  "frames": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E0062F1904356363232363937463832413933364131",
+      "len": 24,
+      "sa": "0x1000",
+      "ta": "0x0E00",
+      "uds": "62F1904356363232363937463832413933364131",
+      "uds_text": "POSITIVE 0x22 ReadDataByIdentifier DID=0xF190 data=4356363232363937463832413933364131"
+    }
+  ],
+  "latency_ms": 61.13,
+  "label": "uds",
+  "host": "10.226.193.2",
+  "routing_activation": {
+    "tester_sa": "0x0E00",
+    "entity_la": "0x1000",
+    "code": "0x10",
+    "text": "routing successfully activated",
+    "trailing": "00000000"
+  },
+  "ts": "2026-11-14T09:58:29+0800"
+}
+=== UDS 22F1A0 (TA=1000) ===
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "62F1A007E007E807E107E9",
+      "text": "POSITIVE 0x22 ReadDataByIdentifier DID=0xF1A0 data=07E007E807E107E9"
+    }
+  ],
+  "frames": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E0062F1A007E007E807E107E9",
+      "len": 15,
+      "sa": "0x1000",
+      "ta": "0x0E00",
+      "uds": "62F1A007E007E807E107E9",
+      "uds_text": "POSITIVE 0x22 ReadDataByIdentifier DID=0xF1A0 data=07E007E807E107E9"
+    }
+  ],
+  "latency_ms": 61.91,
+  "label": "uds",
+  "host": "10.226.193.2",
+  "routing_activation": {
+    "tester_sa": "0x0E00",
+    "entity_la": "0x1000",
+    "code": "0x10",
+    "text": "routing successfully activated",
+    "trailing": "00000000"
+  },
+  "ts": "2026-11-14T09:58:30+0800"
+}
+=== UDS 22F187 (TA=1000) ===
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "text": "NEGATIVE sid=0x22(ReadDataByIdentifier) NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "frames": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7,
+      "sa": "0x1000",
+      "ta": "0x0E00",
+      "uds": "7F2231",
+      "uds_text": "NEGATIVE sid=0x22(ReadDataByIdentifier) NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "latency_ms": 60.89,
+  "label": "uds",
+  "host": "10.226.193.2",
+  "routing_activation": {
+    "tester_sa": "0x0E00",
+    "entity_la": "0x1000",
+    "code": "0x10",
+    "text": "routing successfully activated",
+    "trailing": "00000000"
+  },
+  "ts": "2026-11-14T09:58:31+0800"
+}
+=== UDS 22F189 (TA=1000) ===
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "text": "NEGATIVE sid=0x22(ReadDataByIdentifier) NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "frames": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F2231",
+      "len": 7,
+      "sa": "0x1000",
+      "ta": "0x0E00",
+      "uds": "7F2231",
+      "uds_text": "NEGATIVE sid=0x22(ReadDataByIdentifier) NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "latency_ms": 46.56,
+  "label": "uds",
+  "host": "10.226.193.2",
+  "routing_activation": {
+    "tester_sa": "0x0E00",
+    "entity_la": "0x1000",
+    "code": "0x10",
+    "text": "routing successfully activated",
+    "trailing": "00000000"
+  },
+  "ts": "2026-11-14T09:58:31+0800"
+}

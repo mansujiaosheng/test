@@ -1,0 +1,7 @@
+{"path": "/__admin/target", "error": "ReadTimeout: HTTPConnectionPool(host='10.230.164.4', port=8080): Read timed out. (read timeout=8.0)"}
+{"path": "/__admin/tx", "error": "ReadTimeout: HTTPConnectionPool(host='10.230.164.4', port=8080): Read timed out. (read timeout=8.0)"}
+{"path": "/__admin/trace", "error": "ReadTimeout: HTTPConnectionPool(host='10.230.164.4', port=8080): Read timed out. (read timeout=8.0)"}
+{"path": "/__admin/uds", "error": "ReadTimeout: HTTPConnectionPool(host='10.230.164.4', port=8080): Read timed out. (read timeout=8.0)"}
+{"path": "/__admin/up", "error": "ReadTimeout: HTTPConnectionPool(host='10.230.164.4', port=8080): Read timed out. (read timeout=8.0)"}
+{"path": "/__admin/vehicle", "error": "ReadTimeout: HTTPConnectionPool(host='10.230.164.4', port=8080): Read timed out. (read timeout=8.0)"}
+{"path": "/healthz", "status": 200, "len": 16, "ct": "application/json", "loc": "", "allow": "", "ms": 29, "reason": "status 200 (not 404)", "body": "{\"status\":\"ok\"}\n", "headers": {"Content-Type": "application/json", "Date": "Sat, 14 Nov 2026 01:36:35 GMT", "Content-Length": "16"}}

@@ -1,0 +1,18 @@
+{
+  "label": "la_0030",
+  "purpose": "LA existence probe 0x0030",
+  "tester_sa": "0x0E00",
+  "target_la": "0x0030",
+  "elapsed_ms": 256.95,
+  "responses": [
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 50,
+  "ts": "2026-11-14T09:24:25.298+08:00"
+}

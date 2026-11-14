@@ -1,0 +1,14 @@
+{
+  "label": "la_0039",
+  "purpose": "LA existence probe 0x0039",
+  "tester_sa": "0x0E00",
+  "target_la": "0x0039",
+  "elapsed_ms": 159.2,
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "parsed": [],
+  "cls": "silent",
+  "seq": 61,
+  "ts": "2026-11-14T09:24:27.570+08:00"
+}

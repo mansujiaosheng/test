@@ -1,0 +1,21 @@
+# 10.224.139.5/6/7 reachability verification 2026-11-14T01:27:54Z
+# method1: ping (ICMP)
+10.224.139.5 icmp: 100% loss
+10.224.139.6 icmp: 100% loss
+10.224.139.7 icmp: 100% loss
+
+# method2: 27 common ports @3s timeout
+10.224.139.5: probe 27 ports @3s -> opens=NONE
+   sample errors: {'TimeoutError'}
+10.224.139.6: probe 27 ports @3s -> opens=NONE
+   sample errors: {'TimeoutError'}
+10.224.139.7: probe 27 ports @3s -> opens=NONE
+   sample errors: {'TimeoutError'}
+
+# method3: full 1-10000 scan summary
+[*] 10.224.139.5: open=[] filtered=10000 closed=0 elapsed=71.1s
+[*] wrote 03_EVIDENCE/fleet/scan_10.224.139.5.json
+[*] 10.224.139.6: open=[] filtered=10000 closed=0 elapsed=71.2s
+[*] wrote 03_EVIDENCE/fleet/scan_10.224.139.6.json
+[*] 10.224.139.7: open=[] filtered=10000 closed=0 elapsed=71.2s
+[*] wrote 03_EVIDENCE/fleet/scan_10.224.139.7.json

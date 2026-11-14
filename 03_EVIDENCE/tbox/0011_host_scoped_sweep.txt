@@ -1,0 +1,29 @@
+###### T02 0011 .3:8080 host-scoped route sweep (Go 1.22 Host/path patterns) (2026-11-14T01:32:19Z) ######
+## rationale: prior 1576-path brute always used a default Host; Go 1.22 ServeMux matches 'host/path' patterns only for that Host
+## cmd: python 04_SOLVE/tbox/host_scoped_sweep.py
+
+wordlist merged: 1169 unique paths
+  HIT Host:tbox.local      /fleet/api/debug                                 ERR TimeoutError
+  HIT Host:tbox.local      /cv6/vin                                         ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/version                                 ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/update                                  ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/reports                                 ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/artifacts                               ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/download                                ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/upload                                  ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/audit                                   ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/event                                   ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/events                                  ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/state                                   ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/devices                                 ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/device                                  ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/ecu                                     ERR TimeoutError
+  HIT Host:tbox.local      /vehicle/ecus                                    ERR TimeoutError
+[pass1] 3507 probes, 30.9s, hits=16
+
+[pass2] header variants (X-Forwarded-For / X-Real-IP / host+port) on OTA/diag paths
+  HIT2 Host:tbox                 /jsonrpc/can                                 ERR TimeoutError
+  HIT2 Host:tbox:8080            /api/v1/vehicles/CV6FF52FEE9EDDD86/diagnostics ERR TimeoutError
+[pass2] 1036 probes, 77.3s, hits=2
+
+TOTAL hits (excluding /healthz): 18

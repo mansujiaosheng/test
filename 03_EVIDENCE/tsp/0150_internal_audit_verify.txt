@@ -1,0 +1,17 @@
+=== 0150: verify /internal/audit claim from 01_TARGETS/tsp/NOTES.md ===
+/internal/audit          http=404 ct=application/json body={"error":"not found"}
+/internal/audit/         http=404 ct=text/plain; charset=utf-8 body=404 page not found
+/internal                http=404 ct=text/plain; charset=utf-8 body=404 page not found
+/internal/               http=404 ct=text/plain; charset=utf-8 body=404 page not found
+/internal/x              http=404 ct=text/plain; charset=utf-8 body=404 page not found
+/graphql                 http=405 ct=application/json body={"error":"method not allowed"}
+/healthz                 http=200 ct=application/json body={"status":"ok"}
+/nope                    http=404 ct=text/plain; charset=utf-8 body=404 page not found
+
+=== POST /internal/audit ===
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 01:44:58 GMT
+Content-Length: 22
+
+{"error":"not found"}

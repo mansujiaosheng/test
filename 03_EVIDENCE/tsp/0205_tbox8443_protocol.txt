@@ -1,0 +1,15 @@
+=== 0205: T-BOX 8443 protocol probing (ALPN / raw / methods) ===
+--- ALPN offer h2 ---
+Verification: OK
+No ALPN negotiated
+    Protocol  : TLSv1.3
+
+--- ALPN offer http/1.1 ---
+No ALPN negotiated
+    Protocol  : TLSv1.3
+
+--- raw non-HTTP payload (32 A bytes) ---
+  doip vehicle-id    -> b'<timeout, no data>'
+  32x'A'             -> b'<timeout, no data>'
+  16x0               -> b'<timeout, no data>'
+  Host tbox.local    -> b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 02:16:08 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n'

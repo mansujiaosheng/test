@@ -1,0 +1,53 @@
+{
+  "label": "ta_discriminator_3e00",
+  "purpose": "probe TA liveness: NRC 0x11 = target app answers, NRC 0x31 = no route",
+  "request": {
+    "uds": "3E00",
+    "tas": [
+      "0x1000",
+      "0x0000",
+      "0x0001",
+      "0x07E0",
+      "0x07E1",
+      "0x07E8",
+      "0x07E9",
+      "0x07E2",
+      "0x07E3",
+      "0x07EA",
+      "0x0E00",
+      "0x0E80",
+      "0x1001",
+      "0xE000",
+      "0xE400",
+      "0xFFFF",
+      "0x0007",
+      "0x0800"
+    ]
+  },
+  "ts": "2026-11-14T09:33:14.713+08:00",
+  "seq": 2041,
+  "responses": [],
+  "uds_answer": null,
+  "parsed": "NO-RESP",
+  "elapsed_ms": 0,
+  "matrix": {
+    "0x1000": "NEG srv=3E NRC=11",
+    "0x0000": "NEG srv=3E NRC=31",
+    "0x0001": "NEG srv=3E NRC=31",
+    "0x07E0": "NEG srv=3E NRC=31",
+    "0x07E1": "NEG srv=3E NRC=31",
+    "0x07E8": "NEG srv=3E NRC=31",
+    "0x07E9": "NEG srv=3E NRC=31",
+    "0x07E2": "NEG srv=3E NRC=31",
+    "0x07E3": "NEG srv=3E NRC=31",
+    "0x07EA": "NEG srv=3E NRC=31",
+    "0x0E00": "NEG srv=3E NRC=31",
+    "0x0E80": "NEG srv=3E NRC=31",
+    "0x1001": "NEG srv=3E NRC=31",
+    "0xE000": "NEG srv=3E NRC=31",
+    "0xE400": "NEG srv=3E NRC=31",
+    "0xFFFF": "NEG srv=3E NRC=31",
+    "0x0007": "NEG srv=3E NRC=31",
+    "0x0800": "NEG srv=3E NRC=31"
+  }
+}

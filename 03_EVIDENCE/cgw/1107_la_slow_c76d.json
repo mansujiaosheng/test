@@ -1,0 +1,19 @@
+{
+  "label": "la_slow_c76d",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xC76D",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00C76D3E00",
+    "uds": "3E00"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 134.58,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 1107,
+  "ts": "2026-11-14T09:26:58.869+08:00"
+}

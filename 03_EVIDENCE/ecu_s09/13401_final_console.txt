@@ -1,0 +1,22 @@
+### A. concurrency: 6 simultaneous idle connections to 13401
+{"port": 13401, "sent": 0, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 27.61, "t_send_done_ms": 27.62, "t_fin_ms": 56.23, "fin_minus_send_ms": 28.61}
+{"port": 13401, "sent": 0, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 27.76, "t_send_done_ms": 27.76, "t_fin_ms": 56.63, "fin_minus_send_ms": 28.88}
+{"port": 13401, "sent": 0, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 27.5, "t_send_done_ms": 27.5, "t_fin_ms": 56.38, "fin_minus_send_ms": 28.88}
+{"port": 13401, "sent": 0, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 28.57, "t_send_done_ms": 28.57, "t_fin_ms": 56.28, "fin_minus_send_ms": 27.71}
+{"port": 13401, "sent": 0, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 28.1, "t_send_done_ms": 28.11, "t_fin_ms": 55.76, "fin_minus_send_ms": 27.65}
+{"port": 13401, "sent": 0, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 50.76, "t_send_done_ms": 50.76, "t_fin_ms": 56.13, "fin_minus_send_ms": 5.37}
+
+### B. 13401: payload sent, measure FIN relative to send completion
+{"port": 13401, "sent": 16, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 29.42, "t_send_done_ms": 29.49, "t_fin_ms": 55.51, "fin_minus_send_ms": 26.02}
+{"port": 13401, "sent": 16, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 37.37, "t_send_done_ms": 37.42, "t_fin_ms": 66.01, "fin_minus_send_ms": 28.6}
+{"port": 13401, "sent": 16, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 43.91, "t_send_done_ms": 43.97, "t_fin_ms": 60.96, "fin_minus_send_ms": 16.99}
+{"port": 13401, "sent": 16, "recv": 0, "recv_hex": "", "close": "FIN", "t_connect_ms": 34.85, "t_send_done_ms": 34.9, "t_fin_ms": 66.36, "fin_minus_send_ms": 31.46}
+
+### C. 13401: slow drip 32 bytes (1 byte / 5ms)
+{"port": 13401, "send_err": "ConnectionAbortedError(10053, '\u4f60\u7684\u4e3b\u673a\u4e2d\u7684\u8f6f\u4ef6\u4e2d\u6b62\u4e86\u4e00\u4e2a\u5df2\u5efa\u7acb\u7684\u8fde\u63a5\u3002', None, 10053, None)", "sent": 11, "t_connect_ms": 32.68}
+
+### D. 13400 control: same drip + DoIP ident, expect a real response
+13400 doip_ident: {"port": 13400, "sent": 8, "recv": 41, "recv_hex": "02fd000400000021435636464635324645453945444444383610000600000010000000000000000000", "close": "TIMEOUT", "t_connect_ms": 48.43, "t_send_done_ms": 48.57, "t_fin_ms": 76.75, "fin_minus_send_ms": 28.18}
+13400 idle      : {"port": 13400, "sent": 0, "recv": 0, "recv_hex": "", "close": "TIMEOUT", "t_connect_ms": 31.17, "t_send_done_ms": 31.18, "t_fin_ms": null, "fin_minus_send_ms": null}
+
+[written] D:\qwb\04_SOLVE\ecu_s09\runs\13401_final_discriminators.json

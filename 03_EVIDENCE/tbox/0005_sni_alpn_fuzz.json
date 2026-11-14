@@ -1,0 +1,2212 @@
+[
+ {
+  "sni": "tbox",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "TBOX",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "TBOX",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "TBOX",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "TBOX",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "TBOX",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "TBOX",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.local",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.local",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.local",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.local",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.local",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.local",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cv6",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cv6",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cv6",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cv6",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cv6",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cv6",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diag",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diag",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diag",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diag",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diag",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diag",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ota",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ota",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ota",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ota",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ota",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ota",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "firmware",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "firmware",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "firmware",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "firmware",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "firmware",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "firmware",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "root",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "root",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "root",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "root",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "root",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "root",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ca",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ca",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ca",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ca",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ca",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "ca",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "pki",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "pki",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "pki",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "pki",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "pki",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "pki",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "est",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "est",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "est",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "est",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "est",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "est",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "enroll",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "enroll",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "enroll",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "enroll",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "enroll",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "enroll",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "localhost",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "localhost",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "localhost",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "localhost",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "localhost",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "localhost",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "api",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "api",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "api",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "api",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "api",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "api",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "admin",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "admin",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "admin",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "admin",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "admin",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "admin",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "v1",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "v1",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "v1",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "v1",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "v1",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "v1",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "vehicle",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "vehicle",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "vehicle",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "vehicle",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "vehicle",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "vehicle",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telematics",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telematics",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telematics",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telematics",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telematics",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telematics",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telemetry",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telemetry",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telemetry",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telemetry",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telemetry",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "telemetry",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "backend",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "backend",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "backend",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "backend",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "backend",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "backend",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "update",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "update",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "update",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "update",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "update",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "update",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "swupdate",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "swupdate",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "swupdate",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "swupdate",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "swupdate",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "swupdate",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "secure",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "secure",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "secure",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "secure",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "secure",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "secure",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "mtls",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "mtls",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "mtls",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "mtls",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "mtls",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "mtls",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "default",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "default",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "default",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "default",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "default",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "default",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "www",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "www",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "www",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "www",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "www",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "www",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar.local",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar.local",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar.local",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar.local",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar.local",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "tbox.cybercar.local",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics.local",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics.local",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics.local",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics.local",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics.local",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "diagnostics.local",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet.local",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet.local",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet.local",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "fleet.local",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "hs_err",
+   "TimeoutError:timed out",
+   null
+  ]
+ },
+ {
+  "sni": "fleet.local",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "ConnectionResetError:[WinError 10054] \u8fdc\u7a0b\u4e3b\u673a\u5f3a\u8feb\u5173\u95ed\u4e86\u4e00\u4e2a\u73b0\u6709\u7684\u8fde\u63a5\u3002",
+   null
+  ]
+ },
+ {
+  "sni": "fleet.local",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "ConnectionResetError:[WinError 10054] \u8fdc\u7a0b\u4e3b\u673a\u5f3a\u8feb\u5173\u95ed\u4e86\u4e00\u4e2a\u73b0\u6709\u7684\u8fde\u63a5\u3002",
+   null
+  ]
+ },
+ {
+  "sni": "cv6.local",
+  "alpn": null,
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6.local",
+  "alpn": [
+   "h2"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6.local",
+  "alpn": [
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6.local",
+  "alpn": [
+   "h2",
+   "http/1.1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6.local",
+  "alpn": [
+   "grpc"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ },
+ {
+  "sni": "cv6.local",
+  "alpn": [
+   "acme-tls/1"
+  ],
+  "r": [
+   "post_hs_err",
+   "SSLError:[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   null
+  ]
+ }
+]

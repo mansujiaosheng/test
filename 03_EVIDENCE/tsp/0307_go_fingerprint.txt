@@ -1,0 +1,114 @@
+==============================================================================
+TSP Go 服务特征面  target=http://10.230.164.2:8080  2026-11-14T09:40:37+0800
+==============================================================================
+
+==============================================================================
+A. 路由归一化 / 编码变体（Go 是否 path.Clean + 301 重定向）
+==============================================================================
+  GET /healthz                     -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /healthz/                    -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz//                   -> 307  len=   45 loc='/healthz/' DIFF '<a href="/healthz/">Temporary Redirect</a>.\\n\\n'
+  GET //healthz                    -> 307  len=   44 loc='/healthz' DIFF '<a href="/healthz">Temporary Redirect</a>.\\n\\n'
+  GET /./healthz                   -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /healthz/.                   -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz/..                  -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz/../healthz          -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /HEALTHZ                     -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /HealthZ                     -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healThz                     -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz%20                  -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz%00                  -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz;                    -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz;x                   -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz?                    -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /healthz?a=b                 -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /%68ealthz                   -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /he%61lthz                   -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /health%7a                   -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /%2fhealthz                  -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz%2f                  -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz%2F..                -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /a/../healthz                -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /graphql                     -> 405  len=   31 loc='' DIFF '{"error":"method not allowed"}\\n'
+  GET /graphql/                    -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /graphql//                   -> 307  len=   45 loc='/graphql/' DIFF '<a href="/graphql/">Temporary Redirect</a>.\\n\\n'
+  GET //graphql                    -> 307  len=   44 loc='/graphql' DIFF '<a href="/graphql">Temporary Redirect</a>.\\n\\n'
+  GET /./graphql                   -> 405  len=   31 loc='' DIFF '{"error":"method not allowed"}\\n'
+  GET /GRAPHQL                     -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /Graphql                     -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /%67raphql                   -> 405  len=   31 loc='' DIFF '{"error":"method not allowed"}\\n'
+  GET /graphql%00                  -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /graphql/..                  -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /graphql/../healthz          -> 200  len=   16 loc='' DIFF '{"status":"ok"}\\n'
+  GET /graphql/x                   -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /graphql/x/y                 -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /x/graphql                   -> 404  len=   19 loc='' base '404 page not found\\n'
+  GET /healthz/graphql             -> 404  len=   19 loc='' base '404 page not found\\n'
+
+==============================================================================
+B. Go 运行时 / 调试端点族
+==============================================================================
+  /debug/pprof/                    -> 404 baseline
+  /debug/pprof                     -> 404 baseline
+  /debug/pprof/cmdline             -> 404 baseline
+  /debug/pprof/profile             -> 404 baseline
+  /debug/pprof/symbol              -> 404 baseline
+  /debug/pprof/trace               -> 404 baseline
+  /debug/pprof/heap                -> 404 baseline
+  /debug/pprof/goroutine           -> 404 baseline
+  /debug/pprof/allocs              -> 404 baseline
+  /debug/pprof/threadcreate        -> 404 baseline
+  /debug/pprof/block               -> 404 baseline
+  /debug/pprof/mutex               -> 404 baseline
+  /debug/vars                      -> 404 baseline
+  /debug/requests                  -> 404 baseline
+  /debug/events                    -> 404 baseline
+  /metrics                         -> 404 baseline
+  /metrics/                        -> 404 baseline
+  /version                         -> 404 baseline
+  /buildinfo                       -> 404 baseline
+  /debug/buildinfo                 -> 404 baseline
+  /expvar                          -> 404 baseline
+  /vars                            -> 404 baseline
+  /api/debug/pprof/                -> 404 baseline
+  /debug/pprof/index               -> 404 baseline
+  /healthz/debug/pprof/            -> 404 baseline
+  /graphql/debug/pprof/            -> 404 baseline
+
+==============================================================================
+C. 畸形 HTTP（泄栈 / 泄路由 / 边界行为）
+==============================================================================
+  baseline GET /healthz
+     -> b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:40:42 GMT\r\nContent-Length: 16\r\n\r\n{"status":"ok"}\n'
+  negative Content-Length
+     -> b'HTTP/1.1 400 Bad Request\r\nContent-Type: text/plain; charset=utf-8\r\nConnection: close\r\n\r\n400 Bad Request'
+  POST negative CL
+     -> b'HTTP/1.1 400 Bad Request\r\nContent-Type: text/plain; charset=utf-8\r\nConnection: close\r\n\r\n400 Bad Request'
+  bad HTTP version 9.9
+     -> b'HTTP/1.1 505 HTTP Version Not Supported: unsupported protocol version\r\nContent-Type: text/plain; charset=utf-8\r\nConnection: close\r\n\r\n505 HTTP Version Not Supported: unsupported protocol version'
+  200KB header value
+     -> b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:40:47 GMT\r\nContent-Length: 16\r\n\r\n{"status":"ok"}\n'
+  20KB path
+     -> b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:40:51 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n'
+  4000-deep path
+     -> b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:40:55 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n'
+  NUL in path
+     -> b'HTTP/1.1 400 Bad Request\r\nContent-Type: text/plain; charset=utf-8\r\nConnection: close\r\n\r\n400 Bad Request'
+  bare LF (no CR)
+     -> b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:41:00 GMT\r\nContent-Length: 16\r\n\r\n{"status":"ok"}\n'
+  CONNECT
+     -> b'HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:41:04 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n'
+  unknown method FOO
+     -> b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:41:09 GMT\r\nContent-Length: 16\r\n\r\n{"status":"ok"}\n'
+  duplicate Host
+     -> b'HTTP/1.1 400 Bad Request\r\nContent-Type: text/plain; charset=utf-8\r\nConnection: close\r\n\r\n400 Bad Request'
+  HTTP/1.1 without Host
+     -> b'HTTP/1.1 400 Bad Request: missing required Host header\r\nContent-Type: text/plain; charset=utf-8\r\nConnection: close\r\n\r\n400 Bad Request: missing required Host header'
+  obs-fold header continuation
+     -> b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:41:14 GMT\r\nContent-Length: 16\r\n\r\n{"status":"ok"}\n'
+  POST CL mismatch (extra)
+     -> b''
+  OPTIONS * (Go 特例)
+     -> b'HTTP/1.1 200 OK\r\nContent-Length: 0\r\nDate: Sat, 14 Nov 2026 01:41:22 GMT\r\n\r\n'
+
+[done] 2026-11-14T09:41:27+0800

@@ -1,0 +1,19 @@
+{
+  "label": "la_slow_dda3",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xDDA3",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00DDA33E00",
+    "uds": "3E00"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 133.68,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 1193,
+  "ts": "2026-11-14T09:27:22.052+08:00"
+}

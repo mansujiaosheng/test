@@ -1,0 +1,334 @@
+{
+  "started": "2026-11-14T10:07:13+08:00",
+  "note": "13401 accept-then-close characterisation; client sends nothing in 'silent' case",
+  "results": [
+    {
+      "host": "10.226.193.2",
+      "port": 13401,
+      "silent_timing": {
+        "connect_ms_median": 26.4,
+        "eof_after_connect_ms_median": 25.6,
+        "eof_samples": 10,
+        "n": 10
+      }
+    },
+    {
+      "connect_ms": 27.9,
+      "eof_after_connect_ms": 27.6,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "silent(no bytes)",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.8,
+      "eof_after_connect_ms": 26.2,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "doip-ra",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.1,
+      "eof_after_connect_ms": 25.9,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "http-get",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 47.5,
+      "eof_after_connect_ms": null,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": "ConnectionResetError",
+      "eof": false,
+      "case": "http-connect",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 49.5,
+      "eof_after_connect_ms": 3.1,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "ws-upgrade",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 43.2,
+      "eof_after_connect_ms": 9.5,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "h2-preface",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 27.9,
+      "eof_after_connect_ms": 29.8,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "socks5",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 25.6,
+      "eof_after_connect_ms": 25.7,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "mqtt-connect",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 27.9,
+      "eof_after_connect_ms": null,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": "ConnectionResetError",
+      "eof": false,
+      "case": "ssh-banner",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 44.1,
+      "eof_after_connect_ms": 7.9,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "grpc-empty-frame",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 38.5,
+      "eof_after_connect_ms": 13.3,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "doip-v1",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 47.4,
+      "eof_after_connect_ms": 6.4,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "doip-v3",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.6,
+      "eof_after_connect_ms": 25.7,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "can-7e0",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.0,
+      "eof_after_connect_ms": 25.4,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "zeroes16",
+      "host": "10.226.193.2",
+      "port": 13401
+    },
+    {
+      "host": "10.225.139.4",
+      "port": 13401,
+      "silent_timing": {
+        "connect_ms_median": 26.7,
+        "eof_after_connect_ms_median": 25.6,
+        "eof_samples": 10,
+        "n": 10
+      }
+    },
+    {
+      "connect_ms": 27.2,
+      "eof_after_connect_ms": 26.5,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "silent(no bytes)",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.3,
+      "eof_after_connect_ms": null,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": "ConnectionResetError",
+      "eof": false,
+      "case": "doip-ra",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 27.7,
+      "eof_after_connect_ms": null,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": "ConnectionResetError",
+      "eof": false,
+      "case": "http-get",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.0,
+      "eof_after_connect_ms": 25.6,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "http-connect",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 44.6,
+      "eof_after_connect_ms": 7.6,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "ws-upgrade",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.4,
+      "eof_after_connect_ms": 26.5,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "h2-preface",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 25.8,
+      "eof_after_connect_ms": 26.1,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "socks5",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 39.9,
+      "eof_after_connect_ms": 12.3,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "mqtt-connect",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.2,
+      "eof_after_connect_ms": 25.7,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "ssh-banner",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 44.6,
+      "eof_after_connect_ms": 7.4,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "grpc-empty-frame",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.9,
+      "eof_after_connect_ms": 25.9,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "doip-v1",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 25.6,
+      "eof_after_connect_ms": 26.3,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "doip-v3",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 40.6,
+      "eof_after_connect_ms": 11.9,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "can-7e0",
+      "host": "10.225.139.4",
+      "port": 13401
+    },
+    {
+      "connect_ms": 26.3,
+      "eof_after_connect_ms": 25.5,
+      "rx_len": 0,
+      "rx_hex": "",
+      "error": null,
+      "eof": true,
+      "case": "zeroes16",
+      "host": "10.225.139.4",
+      "port": 13401
+    }
+  ]
+}

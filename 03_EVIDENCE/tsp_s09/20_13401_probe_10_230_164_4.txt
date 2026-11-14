@@ -1,0 +1,20 @@
+# 13401 probe  2026-11-14T09:42:44  10.230.164.4:13401
+no_send            sent=   0 t_after_send=-ms peer_closed=- resp_len=- resp= note=只看服务端是否先发言
+1byte              sent=   1 t_after_send=-ms peer_closed=- resp_len=- resp= note=
+4x00               sent=   4 t_after_send=26.6ms peer_closed=True resp_len=0 resp= note=4字节0
+8x00               sent=   8 t_after_send=-ms peer_closed=- resp_len=- resp= note=
+16x00              sent=  16 t_after_send=-ms peer_closed=- resp_len=- resp= note=
+64x00              sent=  64 t_after_send=-ms peer_closed=- resp_len=- resp= note=
+256x00             sent= 256 t_after_send=3.5ms peer_closed=True resp_len=0 resp= note=
+0xff*8             sent=   8 t_after_send=28.6ms peer_closed=True resp_len=0 resp= note=
+len_le_1           sent=   4 t_after_send=27.3ms peer_closed=True resp_len=0 resp= note=小端长度=1
+len_le_4           sent=   8 t_after_send=26.5ms peer_closed=True resp_len=0 resp= note=小端长度=4 + PING
+len_be_4           sent=   8 t_after_send=6.3ms peer_closed=True resp_len=0 resp= note=大端长度=4 + PING
+ascii_ping         sent=   6 t_after_send=37.5ms peer_closed=True resp_len=0 resp= note=
+http_get           sent=  57 t_after_send=-ms peer_closed=- resp_len=- resp= note=HTTP 探测
+tls_clienthello    sent= 137 t_after_send=-ms peer_closed=- resp_len=- resp= note=TLS 1.2 ClientHello
+doip_ident         sent=  13 t_after_send=-ms peer_closed=- resp_len=- resp= note=DoIP 0x0001 vehicle identification
+doip_routing       sent=  13 t_after_send=26.1ms peer_closed=True resp_len=0 resp= note=DoIP 0x0005 routing activation (SA 0x0E00)
+uds_10_02          sent=   2 t_after_send=26.9ms peer_closed=True resp_len=0 resp= note=裸 UDS programming session
+uds_raw_22f190     sent=   3 t_after_send=4.4ms peer_closed=True resp_len=0 resp= note=裸 UDS VIN
+text_prog          sent=  21 t_after_send=28.5ms peer_closed=True resp_len=0 resp= note=

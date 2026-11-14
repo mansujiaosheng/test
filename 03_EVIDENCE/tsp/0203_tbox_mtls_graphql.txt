@@ -1,0 +1,23 @@
+=== /graphql over mTLS ===
+  GET  /graphql                               -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  POST /graphql                               -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  POST /graphql                               -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+
+=== more guesses ===
+  GET  /healthz                               -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  GET  /api/v1/graphql                        -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  GET  /v1/graphql                            -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  GET  /diagnostics/graphql                   -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  GET  /v1                                    -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  GET  /v1/                                   -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  GET  /diagnostics                           -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  GET  /index.html                            -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  GET  /openapi.json                          -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  GET  /api/v1/ota/engineering-bundle         -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+
+=== method matrix on / ===
+  GET  /                                      -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  POST /                                      -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  PUT  /                                      -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  OPTIONS /                                      -> 404 ct='text/plain; charset=utf-8' len=19 b'404 page not found\n'
+  HEAD /                                      -> 404 ct='text/plain; charset=utf-8' len=0 b''

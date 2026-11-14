@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:32:26 2026 as: nmap -Pn -sT -n -p- --min-rate 2000 -oN 03_EVIDENCE/tsp_s09/01_nmap_full_tcp_164_2.txt 10.230.164.2
+Nmap scan report for 10.230.164.2
+Host is up (0.026s latency).
+Not shown: 65534 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+8080/tcp open  http-proxy
+
+# Nmap done at Sat Nov 14 09:33:15 2026 -- 1 IP address (1 host up) scanned in 49.00 seconds

@@ -1,0 +1,23 @@
+{
+  "seq": 2129,
+  "ts": "2026-11-14T09:34:37.337+08:00",
+  "label": "p1_ta_gw_1000_22F190_sa07E0",
+  "purpose": "shape probe: TA/SA discriminator",
+  "host": "10.229.221.2",
+  "port": 13400,
+  "request": {
+    "ta": "0x1000",
+    "sa": "0x07E0",
+    "uds": "22F190"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "100007E062F1904356364646353246454539454444443836"
+    }
+  ],
+  "verdict": "POS 62F1904356364646353246454539454444443836",
+  "elapsed_ms": 230.0,
+  "ta": "0x1000",
+  "question": "response shape for unknown TA / functional addressing"
+}

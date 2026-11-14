@@ -1,0 +1,9 @@
+# CGW DoIP evidence (format v1.0)
+time     : 2026-11-14 09:34:14+0800
+target   : 10.229.221.2:13400/UDP
+command  : VehicleIdentificationRequest over UDP/13400
+tx_hex   : 02fd000100000000
+note     : no response: UDP vehicle discovery / announcement plane is closed
+
+--- decoded ---
+[]

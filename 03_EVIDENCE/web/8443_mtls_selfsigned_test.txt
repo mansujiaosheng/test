@@ -1,0 +1,41 @@
+############ client cert = client_self_cert (key client_self_key.pem) ############
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+7CE40000:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48
+--- rc=0 ---
+
+############ client cert = client_self_tbox_cert (key client_self_key.pem) ############
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+C8DC0000:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48
+--- rc=0 ---
+
+############ client cert = fakeclient_cert (key fakeclient_key.pem) ############
+depth=0 CN = tbox
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 CN = tbox
+verify error:num=21:unable to verify the first certificate
+verify return:1
+depth=0 CN = tbox
+verify return:1
+ECD20000:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48
+--- rc=0 ---
+
+############ curl with self-signed CN=client ############
+curl_exit=0
+
+############ curl with fake-CA client cert ############
+curl_exit=0

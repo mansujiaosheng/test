@@ -1,0 +1,25 @@
+==============================================================================
+8080 协议复用探测  2026-11-14T09:45:29+0800
+==============================================================================
+
+-- 1. TLS ClientHello（cmux 会在这里回 ServerHello）--
+  TLS handshake failed: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1020)
+
+-- 2. 手工构造的 TLS 记录 --
+  hand-rolled ClientHello                ->    0B b''
+
+-- 3. HTTP/2 / h2c / gRPC 侧信道 --
+  h2 prior-knowledge preface             ->  103B b'HTTP/1.1 400 Bad Request\r\nConnection: close\r\nDate: Sat, 14 Nov 2026 01:45:35 GMT\r\nContent-Length: 0\r\n\r\n'
+  h2 preface + SETTINGS frame            ->  103B b'HTTP/1.1 400 Bad Request\r\nConnection: close\r\nDate: Sat, 14 Nov 2026 01:45:35 GMT\r\nContent-Length: 0\r\n\r\n'
+  raw HTTP/2 frame only                  ->    0B b''
+
+-- 4. 升级类协议 --
+  WS upgrade /graphql                    ->  155B b'HTTP/1.1 405 Method Not Allowed\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:45:40 GMT\r\nContent-Length: 31'
+  SSE /healthz                           ->  124B b'HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:45:45 GMT\r\nContent-Length: 16\r\n\r\n{"status":"o'
+  h2c upgrade /internal/audit            ->  137B b'HTTP/1.1 404 Not Found\r\nContent-Type: application/json\r\nDate: Sat, 14 Nov 2026 01:45:50 GMT\r\nContent-Length: 22\r\n\r\n{"err'
+
+-- 5. 其它协议首字节探测 --
+  SSH banner probe                       ->  103B b'HTTP/1.1 400 Bad Request\r\nContent-Type: text/plain; charset=utf-8\r\nConnection: close\r\n\r\n400 Bad Request'
+  gRPC length-prefixed empty             ->    0B b''
+
+[done] 2026-11-14T09:46:00+0800

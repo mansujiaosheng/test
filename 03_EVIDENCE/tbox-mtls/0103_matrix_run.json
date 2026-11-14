@@ -1,0 +1,608 @@
+{
+ "target": "10.225.139.3:8443",
+ "utc": "2026-11-14T01:57:07.483305+00:00",
+ "rows": [
+  {
+   "case": "A00_no_cert",
+   "desc": "no client certificate at all",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV13_ALERT_CERTIFICATE_REQUIRED",
+   "alert_number": null,
+   "message": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   "elapsed_s": 0.087
+  },
+  {
+   "case": "A01_selfsigned_cn_tbox",
+   "desc": "self-signed P-256 CN=tbox EKU=clientAuth SAN=tbox",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.08
+  },
+  {
+   "case": "A02_rsa2048",
+   "desc": "self-signed RSA-2048 CN=tbox",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.083
+  },
+  {
+   "case": "A03_p384",
+   "desc": "self-signed secp384r1 CN=tbox",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.098
+  },
+  {
+   "case": "A04_expired",
+   "desc": "self-signed expired (2020)",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "SSLV3_ALERT_CERTIFICATE_EXPIRED",
+   "alert_number": null,
+   "message": "[SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)",
+   "elapsed_s": 0.081
+  },
+  {
+   "case": "A05_not_yet_valid",
+   "desc": "self-signed notBefore 2027-06",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "SSLV3_ALERT_CERTIFICATE_EXPIRED",
+   "alert_number": null,
+   "message": "[SSL: SSLV3_ALERT_CERTIFICATE_EXPIRED] sslv3 alert certificate expired (_ssl.c:2580)",
+   "elapsed_s": 0.079
+  },
+  {
+   "case": "A06_no_eku",
+   "desc": "self-signed, no EKU extension",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.092
+  },
+  {
+   "case": "A07_eku_serverauth_only",
+   "desc": "self-signed, EKU=serverAuth only",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.091
+  },
+  {
+   "case": "A08_no_san",
+   "desc": "self-signed, no SAN",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.091
+  },
+  {
+   "case": "A09_empty_subject",
+   "desc": "self-signed, empty subject",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.078
+  },
+  {
+   "case": "A10_ca_true_selfsigned",
+   "desc": "self-signed CA:TRUE + keyCertSign + EKU clientAuth",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.082
+  },
+  {
+   "case": "A11_cn_is_cv6_root",
+   "desc": "self-signed leaf CN=CV6 Fleet Diagnostics Root",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.08
+  },
+  {
+   "case": "A12_aki_forged",
+   "desc": "self-signed leaf with AKI = real root SKI",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.079
+  },
+  {
+   "case": "A13_ed25519",
+   "desc": "self-signed Ed25519",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.105
+  },
+  {
+   "case": "B01_fakeca_samedn_leaf",
+   "desc": "fake CA same DN (PrintableString) + leaf, leaf first",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.078
+  },
+  {
+   "case": "B03_fakeca_sameski_leaf",
+   "desc": "fake CA same DN + forged SKI == real AKI",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.078
+  },
+  {
+   "case": "B04_fakeca_nameconstraints",
+   "desc": "fake CA same DN + nameConstraints",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.079
+  },
+  {
+   "case": "B05_fakeca_policies",
+   "desc": "fake CA same DN + certificatePolicies",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.318
+  },
+  {
+   "case": "B06_fakeca_rsa",
+   "desc": "fake CA same DN, RSA-2048",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.082
+  },
+  {
+   "case": "B07_only_ca_no_leaf",
+   "desc": "present only the CA cert as the client cert (no leaf)",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.079
+  },
+  {
+   "case": "B08_leaf_only_no_ca",
+   "desc": "leaf signed by unshipped fake CA, no CA in chain",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 2.786,
+   "attempts": 4
+  },
+  {
+   "case": "B09_vpn_client",
+   "desc": "VPN client cert+key shipped in .ovpn (issuer VPN CA)",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 43.776,
+   "attempts": 4
+  },
+  {
+   "case": "B10_vpn_chain",
+   "desc": "VPN client cert + VPN CA chain",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.079
+  },
+  {
+   "case": "T01_tls12",
+   "desc": "TLS1.2 with no client cert",
+   "handshake": "FAIL",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_PROTOCOL_VERSION",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1020)",
+   "elapsed_s": 1.073
+  },
+  {
+   "case": "T02_tls13_no_cert_default_sni",
+   "desc": "TLS1.3 no cert, SNI=tbox (control)",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV13_ALERT_CERTIFICATE_REQUIRED",
+   "alert_number": null,
+   "message": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   "elapsed_s": 0.079
+  },
+  {
+   "case": "T03_sni_empty",
+   "desc": "TLS1.3 no cert, SNI omitted",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV13_ALERT_CERTIFICATE_REQUIRED",
+   "alert_number": null,
+   "message": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   "elapsed_s": 2.822,
+   "attempts": 4
+  },
+  {
+   "case": "T04_sni_upper",
+   "desc": "SNI=TBOX",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV13_ALERT_CERTIFICATE_REQUIRED",
+   "alert_number": null,
+   "message": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   "elapsed_s": 0.08
+  },
+  {
+   "case": "T05_sni_other",
+   "desc": "SNI=tbox.cybercar.local",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV13_ALERT_CERTIFICATE_REQUIRED",
+   "alert_number": null,
+   "message": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   "elapsed_s": 0.092
+  },
+  {
+   "case": "T06_alpn_h2",
+   "desc": "ALPN=h2, no cert",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV13_ALERT_CERTIFICATE_REQUIRED",
+   "alert_number": null,
+   "message": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   "elapsed_s": 0.079
+  },
+  {
+   "case": "T07_alpn_http11",
+   "desc": "ALPN=http/1.1, no cert",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV13_ALERT_CERTIFICATE_REQUIRED",
+   "alert_number": null,
+   "message": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   "elapsed_s": 0.079
+  },
+  {
+   "case": "T08_alpn_acme",
+   "desc": "ALPN=acme-tls/1, no cert",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV13_ALERT_CERTIFICATE_REQUIRED",
+   "alert_number": null,
+   "message": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)",
+   "elapsed_s": 0.09
+  },
+  {
+   "case": "T09_tls13_with_valid_shape_cert_and_alpn",
+   "desc": "ALPN=h2 + self-signed cert",
+   "handshake": "FAIL",
+   "tls_version": "TLSv1.3",
+   "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+   ],
+   "alpn_negotiated": null,
+   "peer_subject": "CN=tbox",
+   "peer_issuer": "CN=CV6 Fleet Diagnostics Root",
+   "exception": "SSLError",
+   "reason": "TLSV1_ALERT_UNKNOWN_CA",
+   "alert_number": null,
+   "message": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:2580)",
+   "elapsed_s": 0.081
+  }
+ ]
+}

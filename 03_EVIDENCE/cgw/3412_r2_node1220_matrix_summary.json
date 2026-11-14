@@ -1,0 +1,205 @@
+{
+  "label": "r2_node1220_matrix_summary",
+  "purpose": "0x1220 attack matrix (physical/functional, 0x27 variants, 0x23, 0x31 01, 2E)",
+  "request": {
+    "ptype": "mixed",
+    "hex": ""
+  },
+  "rows": [
+    {
+      "test": "phys-vs-func/phys1220/22F1A3",
+      "parsed": "0x1000: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "test": "phys-vs-func/phys1220/1003",
+      "parsed": "0x1000: NEGATIVE service=0x10 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "test": "phys-vs-func/phys1220/2701",
+      "parsed": "0x1000: NEGATIVE service=0x27 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "test": "phys-vs-func/phys1220/3103FF00",
+      "parsed": "0x1000: NEGATIVE service=0x31 NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "test": "phys-vs-func/funcE442/22F1A3",
+      "parsed": "0x1220: NEGATIVE service=0x22 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "test": "phys-vs-func/funcE442/1003",
+      "parsed": "0x1220: POSITIVE for 0x10 (DiagnosticSessionControl) data=03"
+    },
+    {
+      "test": "phys-vs-func/funcE442/2701",
+      "parsed": "0x1220: NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "phys-vs-func/funcE442/3103FF00",
+      "parsed": "0x1220: NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "test": "27/default/2701",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/default/270100000000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/default/2702",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/default/27020000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/default/2704",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/default/27040000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/default/2706",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/default/27060000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended/2701",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended/270100000000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended/2702",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended/27020000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended/2704",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended/27040000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended/2706",
+      "parsed": "NO RESPONSE"
+    },
+    {
+      "test": "27/extended/27060000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession) | NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended+3e/2701",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended+3e/270100000000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended+3e/2702",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended+3e/27020000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended+3e/2704",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended+3e/27040000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended+3e/2706",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "27/extended+3e/27060000",
+      "parsed": "NEGATIVE service=0x27 NRC=0x7E (subFunctionNotSupportedInActiveSession)"
+    },
+    {
+      "test": "23/14-00-1",
+      "parsed": "0x1220: NEGATIVE service=0x23 NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "test": "23/14-00-16",
+      "parsed": "0x1220: NEGATIVE service=0x23 NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "test": "23/24-00-1",
+      "parsed": "0x1220: NEGATIVE service=0x23 NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "test": "23/44-00-1",
+      "parsed": "0x1220: NEGATIVE service=0x23 NRC=0x11 (serviceNotSupported)"
+    },
+    {
+      "test": "3101/ff00",
+      "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "test": "3101/ff01",
+      "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "test": "3101/0200",
+      "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "test": "3101/0203",
+      "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "test": "3101/0100",
+      "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "test": "3101/ffff",
+      "parsed": "NEGATIVE service=0x31 NRC=0x33 (securityAccessDenied)"
+    },
+    {
+      "test": "2e/f190",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "test": "2e/f1a0",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "test": "2e/f1a3",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "test": "2e/f1a4",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "test": "2e/0000",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    },
+    {
+      "test": "2e/ffff",
+      "parsed": "NEGATIVE service=0x2E NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "parsed": "48 probes",
+  "seq": 3412,
+  "ts": "2026-11-14T09:57:59.297+08:00"
+}

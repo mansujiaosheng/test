@@ -1,0 +1,18 @@
+# CGW DoIP evidence (format v1.0)
+time     : 2026-11-14 09:34:05+0800
+target   : 10.229.221.2:13400/TCP
+command  : unknown payload type 0x9999, 2-byte payload
+tx_hex   : 02fd9999000000020102
+rx[0]_hex: 02fd00000000000101
+rx[0]_typ: 0x0000
+
+--- decoded ---
+[
+  {
+    "type": "0x0000",
+    "name": "GenericHeaderNACK",
+    "payload_hex": "01",
+    "nack_code": "0x01",
+    "nack_meaning": "unknown payload type"
+  }
+]

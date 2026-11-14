@@ -1,0 +1,219 @@
+{
+  "tool": "secoc.py",
+  "ts": "2026-11-14T10:28:35+0800",
+  "passed": 42,
+  "total": 42,
+  "ok": true,
+  "checks": [
+    {
+      "name": "RFC4493 vector 0 (0 B)",
+      "ok": true,
+      "detail": "bb1d6929e95937287fa37d129b756746"
+    },
+    {
+      "name": "RFC4493 vector 1 (16 B)",
+      "ok": true,
+      "detail": "070a16b46b4d4144f79bdd9dd04a287c"
+    },
+    {
+      "name": "RFC4493 vector 2 (40 B)",
+      "ok": true,
+      "detail": "dfa66747de9ae63030ca32611497c827"
+    },
+    {
+      "name": "RFC4493 vector 3 (64 B)",
+      "ok": true,
+      "detail": "51f0bebf7e3b9d92fc49741779363cfe"
+    },
+    {
+      "name": "truncate 24 bit",
+      "ok": true,
+      "detail": "1b7124 (3 B)"
+    },
+    {
+      "name": "truncate 28 bit",
+      "ok": true,
+      "detail": "1b7124c0 (4 B)"
+    },
+    {
+      "name": "truncate 32 bit",
+      "ok": true,
+      "detail": "1b7124c9 (4 B)"
+    },
+    {
+      "name": "truncate 64 bit",
+      "ok": true,
+      "detail": "1b7124c9fb7ecd0f (8 B)"
+    },
+    {
+      "name": "msb vs lsb differ",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "name": "frame is 16 bytes",
+      "ok": true,
+      "detail": "16 B"
+    },
+    {
+      "name": "payload carried verbatim",
+      "ok": true,
+      "detail": "0322f190cccccccccccccccccced8079"
+    },
+    {
+      "name": "padding is 0xCC",
+      "ok": true,
+      "detail": "cccccccccccc"
+    },
+    {
+      "name": "MAC is the last 3 bytes",
+      "ok": true,
+      "detail": "ed8079"
+    },
+    {
+      "name": "verify() accepts the frame",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "verify() rejects wrong freshness",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "verify() rejects wrong payload",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "verify() rejects wrong key",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "MAC equals CMAC(DataID||payload||freshness) truncated",
+      "ok": true,
+      "detail": "ed8079"
+    },
+    {
+      "name": "CAN FD frame carries BRS + 16 B",
+      "ok": true,
+      "detail": "Frame(id=0x7E1, dl=16, FD/BRS, 03 22 F1 90 CC CC CC CC CC CC CC CC CC ED 80 79)"
+    },
+    {
+      "name": "canonical: 16 B",
+      "ok": true,
+      "detail": "0102cccccccccccccccccccccc4fb255"
+    },
+    {
+      "name": "mac first: 16 B",
+      "ok": true,
+      "detail": "4fb2550102cccccccccccccccccccccc"
+    },
+    {
+      "name": "truncFV prefix: 16 B",
+      "ok": true,
+      "detail": "00010102cccccccccccccccccc4fb255"
+    },
+    {
+      "name": "mac 32 lsb: 16 B",
+      "ok": true,
+      "detail": "0102ccccccccccccccccccccbe01601d"
+    },
+    {
+      "name": "freshness first: 16 B",
+      "ok": true,
+      "detail": "0102cccccccccccccccccccccc5fba41"
+    },
+    {
+      "name": "all variants differ pairwise",
+      "ok": true,
+      "detail": "5 distinct"
+    },
+    {
+      "name": "exactly one profile survives",
+      "ok": true,
+      "detail": "1 hit(s)"
+    },
+    {
+      "name": "recovered DataID",
+      "ok": true,
+      "detail": "0x0A1B"
+    },
+    {
+      "name": "recovered MAC bits",
+      "ok": true,
+      "detail": "24"
+    },
+    {
+      "name": "recovered mac_order",
+      "ok": true,
+      "detail": "dataid|payload|freshness"
+    },
+    {
+      "name": "recovered frame_order",
+      "ok": true,
+      "detail": "payload|mac"
+    },
+    {
+      "name": "recovered profile reproduces all frames",
+      "ok": true,
+      "detail": "3/3"
+    },
+    {
+      "name": "unused filler byte stays ambiguous (MAC does not cover it)",
+      "ok": true,
+      "detail": "4 hits for 4 candidate fillers"
+    },
+    {
+      "name": "ambiguous hits differ only in pad_byte",
+      "ok": true,
+      "detail": "one (DataID, MAC, layout) tuple"
+    },
+    {
+      "name": "wrong key yields no hit",
+      "ok": true,
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "wide grid finds exactly one",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "wide grid recovered trunc_freshness_bytes",
+      "ok": true,
+      "detail": "2"
+    },
+    {
+      "name": "wide grid recovered little-endian DataID",
+      "ok": true,
+      "detail": "little"
+    },
+    {
+      "name": "wide grid recovered pad_to=20",
+      "ok": true,
+      "detail": "20"
+    },
+    {
+      "name": "wide grid recovered 32-bit MAC",
+      "ok": true,
+      "detail": "32"
+    },
+    {
+      "name": "peek does not advance",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wrap at 64 bits",
+      "ok": true,
+      "detail": "0x0000000000000000"
+    },
+    {
+      "name": "resync",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

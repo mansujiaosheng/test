@@ -1,0 +1,30 @@
+=== /status WITH 4 ident headers, 6 attempts ===
+ 1: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.07s
+ 2: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.06s
+ 3: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.06s
+ 4: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.05s
+ 5: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.05s
+ 6: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.08s
+
+=== /status WITHOUT headers, 6 attempts ===
+ 1: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.06s
+ 2: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.07s
+ 3: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.05s
+ 4: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.07s
+ 5: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.06s
+ 6: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.07s
+
+=== other paths WITH headers, 2 attempts each ===
+ /diag #1: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.07s
+ /diag #2: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=1.06s
+ /ota #1: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.06s
+ /ota #2: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.06s
+ /certs #1: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.06s
+ /certs #2: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.06s
+ /vehicles #1: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.07s
+ /vehicles #2: 404 len=19 sha=b16e15764b8bc06c b'404 page not found\n' t=0.07s
+
+=== /healthz WITH headers, 3 attempts (latency baseline) ===
+ 1: 200 len=16 sha=6489d6d7a33c5d40 b'{"status":"ok"}\n' t=0.33s
+ 2: 200 len=16 sha=6489d6d7a33c5d40 b'{"status":"ok"}\n' t=0.08s
+ 3: 200 len=16 sha=6489d6d7a33c5d40 b'{"status":"ok"}\n' t=0.05s

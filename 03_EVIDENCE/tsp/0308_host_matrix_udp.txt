@@ -1,0 +1,34 @@
+==============================================================================
+Host 矩阵 + UDP 面  2026-11-14T09:42:29+0800
+==============================================================================
+
+-- A. Host 头矩阵（每格打印 status/len/body 摘要）--
+  Host=<default>                /healthz=EXC:ConnectionError  /internal/audit=EXC:ConnectionError  /graphql=200/81  /nope-xyz=404/19
+  Host=tsp                      /healthz=EXC:ConnectionError  /internal/audit=404/22  /graphql=EXC:ConnectionError  /nope-xyz=EXC:ConnectionError
+  Host=tsp.local                /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=localhost                /healthz=200/16  /internal/audit=EXC:ConnectionError  /graphql=200/81  /nope-xyz=404/19
+  Host=127.0.0.1                /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=internal                 /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=admin                    /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=api                      /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=ota                      /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=sign                     /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=audit                    /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=cybercar                 /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=tsp.internal             /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=tsp.cybercar             /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=10.230.164.2             /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=10.230.164.2:8080        /healthz=200/16  /internal/audit=EXC:ConnectTimeout  /graphql=200/81  /nope-xyz=404/19
+  Host=example.com              /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+  Host=aaaaaaaaaaaaaaaaaaaaaaaa /healthz=200/16  /internal/audit=404/22  /graphql=200/81  /nope-xyz=404/19
+
+-- B. UDP 探测（发送探针，等待 1.2s 回包/ICMP）--
+  UDP     53 -> timeout (no reply)
+  UDP    123 -> timeout (no reply)
+  UDP    500 -> timeout (no reply)
+  UDP   4500 -> timeout (no reply)
+  UDP   8080 -> timeout (no reply)
+  UDP   8443 -> timeout (no reply)
+  UDP  13400 -> timeout (no reply)
+
+[done] 2026-11-14T09:42:59+0800

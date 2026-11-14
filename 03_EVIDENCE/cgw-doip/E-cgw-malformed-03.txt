@@ -1,0 +1,18 @@
+# CGW DoIP evidence (format v1.0)
+time     : 2026-11-14 09:34:07+0800
+target   : 10.229.221.2:13400/TCP
+command  : DiagnosticMessage 0x8001 with 0-byte payload
+tx_hex   : 02fd800100000000
+rx[0]_hex: 02fd00000000000104
+rx[0]_typ: 0x0000
+
+--- decoded ---
+[
+  {
+    "type": "0x0000",
+    "name": "GenericHeaderNACK",
+    "payload_hex": "04",
+    "nack_code": "0x04",
+    "nack_meaning": "invalid payload length"
+  }
+]

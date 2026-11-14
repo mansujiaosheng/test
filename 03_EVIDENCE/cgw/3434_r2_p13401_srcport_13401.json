@@ -1,0 +1,13 @@
+{
+  "label": "r2_p13401_srcport_13401",
+  "purpose": "DoIP ident from local port 13401",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "02FD000100000000"
+  },
+  "responses": [],
+  "parsed": "0B ",
+  "seq": 3434,
+  "ts": "2026-11-14T09:59:55.245+08:00"
+}

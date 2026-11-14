@@ -1,0 +1,27 @@
+=== 0201: T-BOX 8443 mTLS with the bundle's client cert ===
+--- cert subjects ---
+  ca.pem: subject=CN = CV6 Fleet Diagnostics Root issuer=CN = CV6 Fleet Diagnostics Root 
+  client.pem: subject=CN = CV6 Engineering Diagnostic Client issuer=CN = CV6 Fleet Diagnostics Root 
+  client-key: -----BEGIN PRIVATE KEY-----
+
+--- handshake (client cert + CA) ---
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_128_GCM_SHA256
+Requested Signature Algorithms: RSA-PSS+SHA256:ECDSA+SHA256:Ed25519:RSA-PSS+SHA384:RSA-PSS+SHA512:ECDSA+SHA384:ECDSA+SHA512
+Peer certificate: CN = tbox
+Hash used: SHA256
+Signature type: ECDSA
+Verification: OK
+Server Temp Key: X25519, 253 bits
+DONE
+
+--- send an HTTP request over mTLS ---
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 02:15:01 GMT
+Content-Length: 19
+Connection: close
+
+404 page not found

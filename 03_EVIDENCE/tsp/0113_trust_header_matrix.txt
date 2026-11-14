@@ -1,0 +1,46 @@
+==============================================================================
+Trust / proxy header matrix on POST /graphql  target=http://10.230.164.2:8080
+==============================================================================
+--- baseline ---
+baseline
+  200 len=81 ct='application/json' loc=None body='{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}\\n'
+--- header variants (only non-baseline or status change reported verbosely) ---
+X-Forwarded-For: '127.0.0.1'                              SAME 200
+X-Forwarded-For: '127.0.0.1, 10.0.0.1'                    SAME 200
+X-Real-IP: '127.0.0.1'                              SAME 200
+X-Forwarded-Host: 'internal'                               SAME 200
+X-Forwarded-Proto: 'https'                                  SAME 200
+X-Original-URL: '/admin'                                 SAME 200
+X-Rewrite-URL: '/admin'                                 SAME 200
+X-Original-URI: '/admin'                                 SAME 200
+X-Client-IP: '127.0.0.1'                              SAME 200
+X-Remote-IP: '127.0.0.1'                              SAME 200
+X-Remote-Addr: '127.0.0.1'                              SAME 200
+X-Client-Cert: '-----BEGIN CERTIFICATE-----'            SAME 200
+X-SSL-CLIENT-CERT: '-----BEGIN CERTIFICATE-----'            SAME 200
+X-Forwarded-Client-Cert: 'By=spiffe://x'                          SAME 200
+X-Authenticated-User: 'admin'                                  SAME 200
+X-Auth-User: 'admin'                                  SAME 200
+X-User: 'admin'                                  SAME 200
+X-Role: 'admin'                                  SAME 200
+X-Tenant: 'internal'                               SAME 200
+X-VIN: 'CV6FF52FEE9EDDD86'                      SAME 200
+X-Vehicle-VIN: 'CV6FF52FEE9EDDD86'                      SAME 200
+X-TSP-Role: 'admin'                                  SAME 200
+X-TSP-Token: 'admin'                                  SAME 200
+X-Api-Key: 'admin'                                  SAME 200
+X-API-Token: 'admin'                                  SAME 200
+Api-Key: 'admin'                                  SAME 200
+Authorization: 'Bearer admin'                           SAME 200
+Authorization: 'Basic YWRtaW46YWRtaW4='                 SAME 200
+Authorization: 'Basic dHNwOnRzcA=='                     SAME 200
+Cookie: 'role=admin; authenticated=1; session=admin' SAME 200
+Cookie: 'token=admin'                            SAME 200
+Referer: 'http://127.0.0.1/admin'                 SAME 200
+Origin: 'http://127.0.0.1'                       SAME 200
+Forwarded: 'for=127.0.0.1;proto=https;host=internal' SAME 200
+True-Client-IP: '127.0.0.1'                              SAME 200
+CF-Connecting-IP: '127.0.0.1'                              SAME 200
+X-ProxyUser: 'admin'                                  SAME 200
+Proxy-Authorization: 'Basic YWRtaW46YWRtaW4='                 SAME 200
+--- header variants on GET /healthz (diff check) ---

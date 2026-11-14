@@ -1,0 +1,38 @@
+=== tracert .7 (max 8 hops, 800ms) ===
+
+Tracing route to 10.224.139.7 over a maximum of 8 hops
+
+  1    27 ms    26 ms    27 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+
+Trace complete.
+
+=== tracert .5 ===
+
+Tracing route to 10.224.139.5 over a maximum of 8 hops
+
+  1    29 ms    26 ms    26 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+
+Trace complete.
+
+=== tracert control 10.230.164.2 ===
+
+Tracing route to 10.230.164.2 over a maximum of 8 hops
+
+  1    30 ms    29 ms    26 ms  10.252.3.1 
+  2    31 ms     *       31 ms  10.230.164.2 
+
+Trace complete.

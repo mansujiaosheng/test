@@ -1,0 +1,18 @@
+=== TSP 10.230.164.2:8080 — Host header + trust-header matrix (GET, path=/graphql and /healthz) ===
+NOTE: re-test because earlier batch (03_EVIDENCE/web/redirect_and_vhost_probe.txt) reported 404 for ALL hosts incl. the real IP, which contradicts GET /graphql => 405. Suspected probe targeted wrong host.
+
+Host: <default 10.230.164.2:8080>  /graphql=405  /healthz=200
+Host: 10.230.164.2  /graphql=405  /healthz=200
+Host: 10.230.164.2:8080  /graphql=405  /healthz=200
+Host: localhost  /graphql=405  /healthz=200
+Host: localhost:8080  /graphql=405  /healthz=200
+Host: 127.0.0.1:8080  /graphql=405  /healthz=200
+Host: tsp  /graphql=405  /healthz=200
+Host: tsp.local  /graphql=405  /healthz=200
+Host: tsp.internal  /graphql=405  /healthz=200
+Host: internal.local  /graphql=405  /healthz=200
+Host: tbox  /graphql=000  /healthz=200
+Host: cgw  /graphql=405  /healthz=200
+Host: admin  /graphql=405  /healthz=200
+Host: graphql.local  /graphql=405  /healthz=200
+Host: 129.230.164.2  /graphql=405  /healthz=200

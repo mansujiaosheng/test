@@ -1,0 +1,18 @@
+{
+  "label": "la_0045",
+  "purpose": "LA existence probe 0x0045",
+  "tester_sa": "0x0E00",
+  "target_la": "0x0045",
+  "elapsed_ms": 189.82,
+  "responses": [
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 73,
+  "ts": "2026-11-14T09:24:30.483+08:00"
+}

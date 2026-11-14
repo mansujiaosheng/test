@@ -1,0 +1,19 @@
+{
+  "label": "la_slow_ddaf",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xDDAF",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00DDAF3E00",
+    "uds": "3E00"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 120.23,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 1205,
+  "ts": "2026-11-14T09:27:24.016+08:00"
+}

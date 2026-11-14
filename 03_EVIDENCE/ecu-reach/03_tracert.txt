@@ -1,0 +1,90 @@
+=== tracert -d -h 8 -w 1000 10.224.139.5 ===
+
+Tracing route to 10.224.139.5 over a maximum of 8 hops
+
+  1    26 ms    26 ms    25 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+
+Trace complete.
+
+=== tracert -d -h 8 -w 1000 10.224.139.6 ===
+
+Tracing route to 10.224.139.6 over a maximum of 8 hops
+
+  1    25 ms    25 ms    25 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+
+Trace complete.
+
+=== tracert -d -h 8 -w 1000 10.224.139.7 ===
+
+Tracing route to 10.224.139.7 over a maximum of 8 hops
+
+  1     *       26 ms    25 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+
+Trace complete.
+
+=== tracert -d -h 8 -w 1000 10.230.164.4 ===
+
+Tracing route to 10.230.164.4 over a maximum of 8 hops
+
+  1    25 ms    25 ms    26 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+
+Trace complete.
+
+=== tracert -d -h 8 -w 1000 10.229.221.2 ===
+
+Tracing route to 10.229.221.2 over a maximum of 8 hops
+
+  1    29 ms    27 ms    31 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+
+Trace complete.
+
+=== tracert -d -h 8 -w 1000 10.224.1.1 ===
+
+Tracing route to 10.224.1.1 over a maximum of 8 hops
+
+  1     *       25 ms    25 ms  10.252.3.1 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+
+Trace complete.
+

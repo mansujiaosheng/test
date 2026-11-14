@@ -1,0 +1,24 @@
+# phase1 HEAD preset over 9351 paths on 10.230.164.3:8080
+HIT 200 /healthz  Allow=None ct=application/json len=16
+HIT None /programmingsession/0  Allow=None ct=None len=None
+HIT None /programming-session  Allow=None ct=None len=None
+HIT None /programming-session/  Allow=None ct=None len=None
+HIT None /programming-session/start  Allow=None ct=None len=None
+HIT None /programming-session/status  Allow=None ct=None len=None
+HIT None /programming-session/0  Allow=None ct=None len=None
+HIT None /programming_session  Allow=None ct=None len=None
+HIT None /programming_session/  Allow=None ct=None len=None
+HIT None /programming_session/request  Allow=None ct=None len=None
+HIT None /programming_session/start  Allow=None ct=None len=None
+HIT None /programming_session/status  Allow=None ct=None len=None
+HIT None /programming_session/0  Allow=None ct=None len=None
+HIT None /enter  Allow=None ct=None len=None
+HIT None /api/v1/upload/request  Allow=None ct=None len=None
+HIT None /tbox/ecus/  Allow=None ct=None len=None
+HIT None /tbox/ecus/request  Allow=None ct=None len=None
+HIT None /cv6/client.key/start  Allow=None ct=None len=None
+HIT None /cv6/client.key/0  Allow=None ct=None len=None
+HIT None /api/v1/tbox/length/  Allow=None ct=None len=None
+=== phase1: 9351 HEAD in 63s, 20 non-404 ===
+# phase2 full method matrix on hits
+=== done: 20 paths exposed ===

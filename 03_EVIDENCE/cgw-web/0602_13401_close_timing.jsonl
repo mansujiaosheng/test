@@ -1,0 +1,10 @@
+{"host": "10.229.221.2", "send_after_s": null, "payload_hex": "", "connect_ms": 26.72, "eof_ms": 28.21, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}
+{"host": "10.229.221.2", "send_after_s": null, "payload_hex": "", "connect_ms": 26.66, "eof_ms": 26.13, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}
+{"host": "10.229.221.2", "send_after_s": null, "payload_hex": "", "connect_ms": 26.2, "eof_ms": 27.28, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}
+{"host": "10.230.164.4", "send_after_s": null, "payload_hex": "", "connect_ms": 29.37, "eof_ms": 29.26, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}
+{"host": "10.230.164.4", "send_after_s": null, "payload_hex": "", "connect_ms": 29.81, "eof_ms": 26.99, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}
+{"host": "10.230.164.4", "send_after_s": null, "payload_hex": "", "connect_ms": 27.68, "eof_ms": 27.73, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}
+{"host": "10.229.221.2", "send_after_s": 0.3, "payload_hex": "00", "connect_ms": 29.99, "eof_ms": 265.82, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}
+{"host": "10.229.221.2", "send_after_s": 0.3, "payload_hex": "474554202f20485454502f312e310d0a0d0a", "connect_ms": 41.87, "eof_ms": 28.98, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}
+{"host": "10.229.221.2", "send_after_s": 0.3, "payload_hex": "02fd000100000000", "connect_ms": 28.46, "eof_ms": 27.72, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}
+{"host": "10.229.221.2", "send_after_s": 1.5, "payload_hex": "01020304", "connect_ms": 28.99, "eof_ms": 28.48, "eof_reason": "FIN", "close_before_send": true, "rx_len": 0, "rx_hex": ""}

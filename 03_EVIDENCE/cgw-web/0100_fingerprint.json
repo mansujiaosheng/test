@@ -1,0 +1,1415 @@
+{
+  "results": {
+    "10.229.221.2": {
+      "GET /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET /": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "OPTIONS *": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "0"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 0,
+        "body_sha1_12": "da39a3ee5e6b",
+        "body_repr": "",
+        "error": null,
+        "raw_len": 94
+      },
+      "GET absform /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET absform /nope": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /healthz HTTP/1.0": {
+        "status": "HTTP/1.0 200 OK",
+        "headers": [
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 124
+      },
+      "GET //healthz": {
+        "status": "HTTP/1.1 307 Temporary Redirect",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "44"
+          ],
+          [
+            "Content-Type",
+            "text/html; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "Location",
+            "/healthz"
+          ]
+        ],
+        "body_len": 44,
+        "body_sha1_12": "2357bb65caad",
+        "body_repr": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n",
+        "error": null,
+        "raw_len": 215
+      },
+      "GET /./healthz": {
+        "status": "HTTP/1.1 307 Temporary Redirect",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "44"
+          ],
+          [
+            "Content-Type",
+            "text/html; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "Location",
+            "/healthz"
+          ]
+        ],
+        "body_len": 44,
+        "body_sha1_12": "2357bb65caad",
+        "body_repr": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n",
+        "error": null,
+        "raw_len": 215
+      },
+      "GET /a/../healthz": {
+        "status": "HTTP/1.1 307 Temporary Redirect",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "44"
+          ],
+          [
+            "Content-Type",
+            "text/html; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "Location",
+            "/healthz"
+          ]
+        ],
+        "body_len": 44,
+        "body_sha1_12": "2357bb65caad",
+        "body_repr": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n",
+        "error": null,
+        "raw_len": 215
+      },
+      "GET /healthz/": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /healthz/x": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /healthz?x=1": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET /HealthZ": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /%68ealthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET /healthz%2f": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /healthz%00": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /nope%00": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "FOO /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "TRACE /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "POST /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "DELETE /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "OPTIONS /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET /healthz noHost": {
+        "status": "HTTP/1.1 400 Bad Request: missing required Host header",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ]
+        ],
+        "body_len": 45,
+        "body_sha1_12": "692ee193f51c",
+        "body_repr": "400 Bad Request: missing required Host header",
+        "error": null,
+        "raw_len": 163
+      },
+      "GET /nope noHost": {
+        "status": "HTTP/1.1 400 Bad Request: missing required Host header",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ]
+        ],
+        "body_len": 45,
+        "body_sha1_12": "692ee193f51c",
+        "body_repr": "400 Bad Request: missing required Host header",
+        "error": null,
+        "raw_len": 163
+      },
+      "GET /healthz HTTP/2.0": {
+        "status": "HTTP/1.1 505 HTTP Version Not Supported: unsupported protocol version",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ]
+        ],
+        "body_len": 60,
+        "body_sha1_12": "5bfba3a68cf1",
+        "body_repr": "505 HTTP Version Not Supported: unsupported protocol version",
+        "error": null,
+        "raw_len": 193
+      },
+      "garbage line": {
+        "status": "HTTP/1.1 400 Bad Request",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ]
+        ],
+        "body_len": 15,
+        "body_sha1_12": "fd78bb053b4b",
+        "body_repr": "400 Bad Request",
+        "error": null,
+        "raw_len": 103
+      },
+      "pipeline x2": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 211,
+        "body_sha1_12": "16cd528870ab",
+        "body_repr": "{\"status\":\"ok\"}\nHTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:28:17 GMT\r\nContent-Length: 19\r\nConnection: close\r\n\r\n404 page not found\n",
+        "error": null,
+        "raw_len": 319
+      }
+    },
+    "10.230.164.4": {
+      "GET /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET /": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "OPTIONS *": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "0"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 0,
+        "body_sha1_12": "da39a3ee5e6b",
+        "body_repr": "",
+        "error": null,
+        "raw_len": 94
+      },
+      "GET absform /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET absform /nope": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /healthz HTTP/1.0": {
+        "status": "HTTP/1.0 200 OK",
+        "headers": [
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 124
+      },
+      "GET //healthz": {
+        "status": "HTTP/1.1 307 Temporary Redirect",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "44"
+          ],
+          [
+            "Content-Type",
+            "text/html; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "Location",
+            "/healthz"
+          ]
+        ],
+        "body_len": 44,
+        "body_sha1_12": "2357bb65caad",
+        "body_repr": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n",
+        "error": null,
+        "raw_len": 215
+      },
+      "GET /./healthz": {
+        "status": "HTTP/1.1 307 Temporary Redirect",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "44"
+          ],
+          [
+            "Content-Type",
+            "text/html; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "Location",
+            "/healthz"
+          ]
+        ],
+        "body_len": 44,
+        "body_sha1_12": "2357bb65caad",
+        "body_repr": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n",
+        "error": null,
+        "raw_len": 215
+      },
+      "GET /a/../healthz": {
+        "status": "HTTP/1.1 307 Temporary Redirect",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "44"
+          ],
+          [
+            "Content-Type",
+            "text/html; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "Location",
+            "/healthz"
+          ]
+        ],
+        "body_len": 44,
+        "body_sha1_12": "2357bb65caad",
+        "body_repr": "<a href=\"/healthz\">Temporary Redirect</a>.\n\n",
+        "error": null,
+        "raw_len": 215
+      },
+      "GET /healthz/": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /healthz/x": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /healthz?x=1": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET /HealthZ": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /%68ealthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET /healthz%2f": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /healthz%00": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "GET /nope%00": {
+        "status": "HTTP/1.1 404 Not Found",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "19"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ],
+          [
+            "Date",
+            "<date>"
+          ],
+          [
+            "X-Content-Type-Options",
+            "nosniff"
+          ]
+        ],
+        "body_len": 19,
+        "body_sha1_12": "da3968197e7b",
+        "body_repr": "404 page not found\n",
+        "error": null,
+        "raw_len": 195
+      },
+      "FOO /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "TRACE /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "POST /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "DELETE /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "OPTIONS /healthz": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 16,
+        "body_sha1_12": "b5cd90bb66e6",
+        "body_repr": "{\"status\":\"ok\"}\n",
+        "error": null,
+        "raw_len": 143
+      },
+      "GET /healthz noHost": {
+        "status": "HTTP/1.1 400 Bad Request: missing required Host header",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ]
+        ],
+        "body_len": 45,
+        "body_sha1_12": "692ee193f51c",
+        "body_repr": "400 Bad Request: missing required Host header",
+        "error": null,
+        "raw_len": 163
+      },
+      "GET /nope noHost": {
+        "status": "HTTP/1.1 400 Bad Request: missing required Host header",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ]
+        ],
+        "body_len": 45,
+        "body_sha1_12": "692ee193f51c",
+        "body_repr": "400 Bad Request: missing required Host header",
+        "error": null,
+        "raw_len": 163
+      },
+      "GET /healthz HTTP/2.0": {
+        "status": "HTTP/1.1 505 HTTP Version Not Supported: unsupported protocol version",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ]
+        ],
+        "body_len": 60,
+        "body_sha1_12": "5bfba3a68cf1",
+        "body_repr": "505 HTTP Version Not Supported: unsupported protocol version",
+        "error": null,
+        "raw_len": 193
+      },
+      "garbage line": {
+        "status": "HTTP/1.1 400 Bad Request",
+        "headers": [
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Type",
+            "text/plain; charset=utf-8"
+          ]
+        ],
+        "body_len": 15,
+        "body_sha1_12": "fd78bb053b4b",
+        "body_repr": "400 Bad Request",
+        "error": null,
+        "raw_len": 103
+      },
+      "pipeline x2": {
+        "status": "HTTP/1.1 200 OK",
+        "headers": [
+          [
+            "Content-Length",
+            "16"
+          ],
+          [
+            "Content-Type",
+            "application/json"
+          ],
+          [
+            "Date",
+            "<date>"
+          ]
+        ],
+        "body_len": 211,
+        "body_sha1_12": "e79562bf5319",
+        "body_repr": "{\"status\":\"ok\"}\nHTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Sat, 14 Nov 2026 01:28:19 GMT\r\nContent-Length: 19\r\nConnection: close\r\n\r\n404 page not found\n",
+        "error": null,
+        "raw_len": 319
+      }
+    }
+  },
+  "diffs": [
+    "pipeline x2"
+  ]
+}

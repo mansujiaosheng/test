@@ -1,0 +1,18 @@
+{
+  "label": "aliasprobe_10_225_139_2_13400",
+  "purpose": "CGW alias / neighbour DoIP probe",
+  "host": "10.225.139.2:13400",
+  "request": {
+    "ptype": "0x0001",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "raw",
+      "hex": "ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"
+    }
+  ],
+  "parsed": "ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。",
+  "seq": 3447,
+  "ts": "2026-11-14T10:01:33.984+08:00"
+}

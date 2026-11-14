@@ -1,0 +1,21 @@
+###### T02 0012 serial retry of sweep timeouts (2026-11-14T01:35:01Z) ######
+## the 18 'hits' in 0011 were client TimeoutError under 16-way concurrency; retried serially, 15s timeout
+
+[01/p1] Host:tbox.local   /fleet/api/debug                                    0.05s -> HTTP/1.1 404 Not Found
+[02/p1] Host:tbox.local   /cv6/vin                                            0.06s -> HTTP/1.1 404 Not Found
+[03/p1] Host:tbox.local   /vehicle/version                                    0.06s -> HTTP/1.1 404 Not Found
+[04/p1] Host:tbox.local   /vehicle/update                                     0.05s -> HTTP/1.1 404 Not Found
+[05/p1] Host:tbox.local   /vehicle/reports                                    0.05s -> HTTP/1.1 404 Not Found
+[06/p1] Host:tbox.local   /vehicle/artifacts                                  0.05s -> HTTP/1.1 404 Not Found
+[07/p1] Host:tbox.local   /vehicle/download                                   0.05s -> HTTP/1.1 404 Not Found
+[08/p1] Host:tbox.local   /vehicle/upload                                     0.05s -> HTTP/1.1 404 Not Found
+[09/p1] Host:tbox.local   /vehicle/audit                                      3.06s -> HTTP/1.1 404 Not Found
+[10/p1] Host:tbox.local   /vehicle/event                                      0.06s -> HTTP/1.1 404 Not Found
+[11/p1] Host:tbox.local   /vehicle/events                                     0.06s -> HTTP/1.1 404 Not Found
+[12/p1] Host:tbox.local   /vehicle/state                                      0.06s -> HTTP/1.1 404 Not Found
+[13/p1] Host:tbox.local   /vehicle/devices                                    0.06s -> HTTP/1.1 404 Not Found
+[14/p1] Host:tbox.local   /vehicle/device                                     0.05s -> HTTP/1.1 404 Not Found
+[15/p1] Host:tbox.local   /vehicle/ecu                                        0.06s -> HTTP/1.1 404 Not Found
+[16/p1] Host:tbox.local   /vehicle/ecus                                       0.05s -> HTTP/1.1 404 Not Found
+[17/p2] Host:tbox         /jsonrpc/can                                        0.06s -> HTTP/1.1 404 Not Found
+[18/p2] Host:tbox:8080    /api/v1/vehicles/CV6FF52FEE9EDDD86/diagnostics      0.06s -> HTTP/1.1 404 Not Found

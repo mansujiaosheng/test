@@ -1,0 +1,49 @@
+=== ping 10.225.139.250 (on-link but unused -> does router emit ICMP host-unreachable?) ===
+Pinging 10.225.139.250 with 32 bytes of data:
+Request timed out.
+Reply from 10.225.139.1: Destination host unreachable.
+
+Ping statistics for 10.225.139.250:
+    Packets: Sent = 2, Received = 1, Lost = 1 (50% loss),
+=== ping 10.226.193.250 (on-link but unused -> does router emit ICMP host-unreachable?) ===
+Pinging 10.226.193.250 with 32 bytes of data:
+Request timed out.
+Reply from 10.226.193.1: Destination host unreachable.
+
+Ping statistics for 10.226.193.250:
+    Packets: Sent = 2, Received = 1, Lost = 1 (50% loss),
+=== ping 10.225.139.255 (on-link but unused -> does router emit ICMP host-unreachable?) ===
+Pinging 10.225.139.255 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.225.139.255:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping 10.226.193.255 (on-link but unused -> does router emit ICMP host-unreachable?) ===
+Pinging 10.226.193.255 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.226.193.255:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping 10.226.197.250 ===
+Pinging 10.226.197.250 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.226.197.250:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping 10.226.197.255 ===
+Pinging 10.226.197.255 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.226.197.255:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping 10.224.1.1 ===
+Pinging 10.224.1.1 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.224.1.1:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),

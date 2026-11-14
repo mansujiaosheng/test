@@ -1,0 +1,18 @@
+=== TEST: diagnostic message with NO routing activation at all ===
+  no-RA  22F190 -> 7F2222  (61ms)
+  no-RA  22F1A0 -> 7F2222  (58ms)
+  no-RA  1001 -> 7F1022  (54ms)
+  no-RA  3E00 -> 7F3E22  (54ms)
+
+=== TEST: same but SA never activated, several foreign SAs ===
+  SA=0x0E00 -> 7F2222 (echoed to=0x0E00)
+  SA=0x0E80 -> 7F2222 (echoed to=0x0E80)
+  SA=0x0001 -> 7F2222 (echoed to=0x0001)
+  SA=0x1234 -> 7F2222 (echoed to=0x1234)
+  SA=0xFFFF -> 7F2222 (echoed to=0xFFFF)
+
+=== TEST: activate one SA then use a different SA (spec: must reject) ===
+  activated: 0x0E00 routing successfully activated
+  diag SA=0x0E00 -> 62F1904356364646353246454539454444443836
+  diag SA=0x0E80 -> 62F1904356364646353246454539454444443836
+  diag SA=0x0777 -> 62F1904356364646353246454539454444443836

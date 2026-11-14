@@ -1,0 +1,16 @@
+{
+  "range": "0x0001-0x0FFF",
+  "req_uds": "3e00",
+  "tested": 4095,
+  "elapsed_s": 107.4,
+  "reply_multiset": {
+    "0x1000|7f3e31|diag": 4095
+  },
+  "hits": [],
+  "no_reply": [],
+  "anomalous_chunks": [],
+  "baseline": [
+    "1000|7f3e11",
+    "1000|7f3e31"
+  ]
+}

@@ -1,0 +1,29 @@
+###### T-BOX 8080 extension-oriented OTA probe  2026-11-14T01:34:22Z ######
+## target 10.230.164.3:8080  paths=7346  method=GET  timeout=5s
+## every response is logged; status!=404 lines are marked HIT
+
+HIT  200  /healthz  len=16  ctype=application/json  loc=None  head='{"status":"ok"}\\n'
+
+## total=7346 hits=1 errors=47 elapsed=205.3s
+## errors:
+    /ota/vcu TimeoutError: timed out
+    /ota/vcu.bin TimeoutError: timed out
+    /ota/vcu_ref TimeoutError: timed out
+    /ota/vcu-ref.bin TimeoutError: timed out
+    /images/symbol TimeoutError: timed out
+    /images/version TimeoutError: timed out
+    /static/catalog.json TimeoutError: timed out
+    /static/latest TimeoutError: timed out
+    /files/firmware.zip OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /files/ota.tar.gz OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /blobs/ca.crt OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /blobs/profile OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /data/root.crt OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /data/sample.zip OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /data/index.der OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /storage/root.pem OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /storage/health OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /storage/index.bin OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /media/root.pem OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+    /media/tls.crt OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+## 404 Content-Length distribution: {'19': 7298}

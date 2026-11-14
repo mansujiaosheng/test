@@ -1,0 +1,18 @@
+{
+  "label": "la_0093",
+  "purpose": "LA existence probe 0x0093",
+  "tester_sa": "0x0E00",
+  "target_la": "0x0093",
+  "elapsed_ms": 189.89,
+  "responses": [
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 151,
+  "ts": "2026-11-14T09:24:49.215+08:00"
+}

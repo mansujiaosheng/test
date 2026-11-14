@@ -1,0 +1,36 @@
+=== ping 10.226.197.5 ===
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.226.197.5:
+    Packets: Sent = 3, Received = 0, Lost = 3 (100% loss),
+=== ping 10.226.197.6 ===
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.226.197.6:
+    Packets: Sent = 3, Received = 0, Lost = 3 (100% loss),
+=== ping 10.226.197.7 ===
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.226.197.7:
+    Packets: Sent = 3, Received = 0, Lost = 3 (100% loss),
+=== ping 10.226.193.2 ===
+
+Ping statistics for 10.226.193.2:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 26ms, Maximum = 28ms, Average = 27ms
+=== ping 10.225.139.2 ===
+
+Ping statistics for 10.225.139.2:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 25ms, Maximum = 25ms, Average = 25ms
+=== ping 10.225.139.3 ===
+
+Ping statistics for 10.225.139.3:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 25ms, Maximum = 26ms, Average = 25ms

@@ -1,0 +1,42 @@
+=== ping -i 2 -r 9 10.226.197.5 (does hop2 exist / who is it?) ===
+Pinging 10.226.197.5 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.226.197.5:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping -i 2 -r 9 10.226.197.250 (does hop2 exist / who is it?) ===
+Pinging 10.226.197.250 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.226.197.250:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping -i 2 -r 9 10.226.197.1 (does hop2 exist / who is it?) ===
+Pinging 10.226.197.1 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.226.197.1:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping -i 2 -r 9 10.224.1.1 (does hop2 exist / who is it?) ===
+Pinging 10.224.1.1 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.224.1.1:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping -i 2 10.225.139.250 (control: hop2 is target subnet) ===
+Pinging 10.225.139.250 with 32 bytes of data:
+Request timed out.
+Reply from 10.225.139.1: Destination host unreachable.
+
+Ping statistics for 10.225.139.250:
+    Packets: Sent = 2, Received = 1, Lost = 1 (50% loss),
+=== ping -i 2 10.226.193.250 (control: hop2 is target subnet) ===
+Pinging 10.226.193.250 with 32 bytes of data:
+Request timed out.
+Reply from 10.226.193.1: Destination host unreachable.
+
+Ping statistics for 10.226.193.250:
+    Packets: Sent = 2, Received = 1, Lost = 1 (50% loss),

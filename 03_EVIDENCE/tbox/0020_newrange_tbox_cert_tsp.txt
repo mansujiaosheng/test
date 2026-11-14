@@ -1,0 +1,21 @@
+### NEW T-BOX 10.225.139.3:8443 cert Sat Nov 14 02:00:49 UTC 2026
+
+### NEW TSP 10.225.139.2:8080 graphql
+--- GET /
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 14 Nov 2026 02:01:04 GMT
+Content-Length: 19
+
+--- POST /graphql {}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 14 Nov 2026 02:01:04 GMT
+Content-Length: 81
+
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+
+--- POST /graphql vehicles query
+{"data":{"vehicles":[{"label":"Guest demo vehicle","vin":"CV6000000DEMO0001"}]}}
+

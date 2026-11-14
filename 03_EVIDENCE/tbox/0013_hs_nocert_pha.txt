@@ -1,0 +1,7 @@
+########## 0013_hs_nocert_pha ##########
+### cmd: openssl s_client -connect 10.230.164.3:8443 -servername tbox -tls1_3 -state -msg -no_ticket -post_handshake_auth
+### date: 2026-11-14T01:30:42Z
+-------------------------------------------
+s_client: Unknown option: -post_handshake_auth
+s_client: Use -help for summary.
+[rc=1]

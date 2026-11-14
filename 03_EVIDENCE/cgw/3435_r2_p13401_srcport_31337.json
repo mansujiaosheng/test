@@ -1,0 +1,13 @@
+{
+  "label": "r2_p13401_srcport_31337",
+  "purpose": "DoIP ident from local port 31337",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "02FD000100000000"
+  },
+  "responses": [],
+  "parsed": "0B ",
+  "seq": 3435,
+  "ts": "2026-11-14T09:59:55.297+08:00"
+}

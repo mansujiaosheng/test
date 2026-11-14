@@ -1,0 +1,14 @@
+{
+  "label": "la_00C7",
+  "purpose": "LA existence probe 0x00C7",
+  "tester_sa": "0x0E00",
+  "target_la": "0x00C7",
+  "elapsed_ms": 159.66,
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "parsed": [],
+  "cls": "silent",
+  "seq": 217,
+  "ts": "2026-11-14T09:25:01.322+08:00"
+}

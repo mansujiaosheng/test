@@ -1,0 +1,8 @@
+# Falsification: a real forward proxy must FAIL on unreachable targets.
+# If these also return 200 {"status":"ok"}, the 200 came from the ORIGIN's own /healthz.
+
+http://10.224.139.6:9999/healthz           curl: (23) client returned ERROR on write of 16 byteshttp=200 ip=10.229.221.2 t=0.056650 body={"error":"not found"}
+http://192.0.2.1:8080/healthz              curl: (23) client returned ERROR on write of 16 byteshttp=200 ip=10.229.221.2 t=0.058111 body={"error":"not found"}
+http://10.224.139.6:8080/healthz           curl: (23) client returned ERROR on write of 16 byteshttp=200 ip=10.229.221.2 t=0.067683 body={"error":"not found"}
+http://10.224.139.5:8080/healthz           curl: (23) client returned ERROR on write of 16 byteshttp=200 ip=10.229.221.2 t=1.132269 body={"error":"not found"}
+http://10.224.139.7:8080/healthz           curl: (23) client returned ERROR on write of 16 byteshttp=200 ip=10.229.221.2 t=2.155556 body={"error":"not found"}

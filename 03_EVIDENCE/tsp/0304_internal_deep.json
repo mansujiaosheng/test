@@ -1,0 +1,399 @@
+{
+ "ts": "2026-11-14T09:37:20+0800",
+ "results": [
+  {
+   "probe": "migrate-repro",
+   "method": "GET",
+   "status": 404,
+   "sec": 0.08,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "migrate-repro",
+   "method": "POST",
+   "status": 404,
+   "sec": 0.055,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "migrate-repro",
+   "method": "GET",
+   "status": 404,
+   "sec": 0.056,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "migrate-repro",
+   "method": "POST",
+   "status": 404,
+   "sec": 0.058,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "migrate-repro",
+   "method": "GET",
+   "status": 404,
+   "sec": 0.057,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "migrate-repro",
+   "method": "POST",
+   "status": 404,
+   "sec": 0.058,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "migrate-repro",
+   "method": "GET",
+   "status": 404,
+   "sec": 0.055,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "migrate-repro",
+   "method": "POST",
+   "status": 404,
+   "sec": 0.056,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "migrate-repro",
+   "method": "GET",
+   "status": 404,
+   "sec": 0.055,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "migrate-repro",
+   "method": "POST",
+   "status": 404,
+   "sec": 0.057,
+   "body": "404 page not found\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?id=1",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?id=0",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?id=",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?limit=10",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?limit=1000",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?offset=0",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?vin=CV6FF52FEE9EDDD86",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?vin=*",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?campaign=c1",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?campaignId=c1",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?record=1",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?seq=1",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?action=sign",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?event=sign",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?user=admin",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?type=all",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?all=1",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?format=json",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?raw=1",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?tail=10",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?since=0",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?from=0&to=9999999999",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?q=sign",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?q=*",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?limit=-1",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-q",
+   "q": "?page=1&size=100",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-post",
+   "body": "{\"error\":\"not found\"}\n",
+   "status": 404
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-Forwarded-For': '127.0.0.1'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-Real-IP': '127.0.0.1'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-Internal': 'true'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-Internal-Request': '1'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'Authorization': 'Bearer admin'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'Authorization': 'Basic YWRtaW46YWRtaW4='}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-Api-Key': 'admin'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-Admin': '1'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-VIN': 'CV6FF52FEE9EDDD86'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-TSP-Role': 'admin'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-Original-URL': '/internal/audit'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'X-Rewrite-URL': '/internal/audit'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'Host': 'localhost'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "audit-hdr",
+   "hdr": "{'Host': 'internal'}",
+   "status": 404,
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "internal-word",
+   "word": "audit",
+   "status": 404,
+   "sec": 0.076,
+   "class": "B-JSON404",
+   "body": "{\"error\":\"not found\"}\n"
+  },
+  {
+   "probe": "internal-word",
+   "word": "tbox/ecu",
+   "status": "EXC",
+   "sec": 3.011,
+   "class": "OTHER",
+   "body": "ConnectTimeout"
+  },
+  {
+   "probe": "internal-word",
+   "word": "vehicle/ota",
+   "status": "EXC",
+   "sec": 3.014,
+   "class": "OTHER",
+   "body": "ConnectTimeout"
+  }
+ ]
+}

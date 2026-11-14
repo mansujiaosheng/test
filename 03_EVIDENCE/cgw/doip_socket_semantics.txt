@@ -1,0 +1,9 @@
+=== multi-socket routing activation (spec: 2nd socket should get 0x03) ===
+  socket A activate SA=0x0E00 -> 0x10 (routing successfully activated)
+  socket B activate SA=0x0E00 -> 0x10 (routing successfully activated)
+  socket B diag -> 62F1904356364646353246454539454444443836
+  socket B activate SA=0x0E80 -> 0x10 (routing successfully activated)
+
+=== oversized 0x8001 payload (60 KB of UDS) ===
+  sent 61440 bytes -> 0x8001:10000E007F2211
+  socket still usable after oversized frame: 62F1904356364646353246454539454444443836

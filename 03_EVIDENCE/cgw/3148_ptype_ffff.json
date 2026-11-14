@@ -1,0 +1,17 @@
+{
+  "label": "ptype_ffff",
+  "purpose": "DoIP payload type probe 0xFFFF unknown",
+  "request": {
+    "ptype": "0xFFFF",
+    "hex": ""
+  },
+  "responses": [
+    {
+      "ptype": "0x0000",
+      "hex": "01"
+    }
+  ],
+  "parsed": "0x0000 01",
+  "seq": 3148,
+  "ts": "2026-11-14T09:48:06.392+08:00"
+}

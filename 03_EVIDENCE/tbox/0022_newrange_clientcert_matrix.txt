@@ -1,0 +1,13 @@
+### NEW T-BOX 10.225.139.3:8443 client-cert matrix Sat Nov 14 02:01:34 UTC 2026
+--- vpn
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Verify return code: 21 (unable to verify the first certificate)
+E4120100:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48
+--- selfsigned
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Verify return code: 21 (unable to verify the first certificate)
+C4CB0000:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48
+--- fakeca
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Verify return code: 21 (unable to verify the first certificate)
+C80E0100:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:ssl\record\rec_layer_s3.c:1605:SSL alert number 48

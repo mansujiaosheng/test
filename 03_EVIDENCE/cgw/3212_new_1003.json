@@ -1,0 +1,33 @@
+{
+  "label": "new_1003",
+  "purpose": "extended session",
+  "host": "10.226.193.2:13400",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0010001003",
+    "uds": "1003"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F1011",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F1011",
+      "parsed": "NEGATIVE service=0x10 NRC=0x11 (serviceNotSupported)"
+    }
+  ],
+  "elapsed_ms": 428.31,
+  "parsed": "0x1000: NEGATIVE service=0x10 NRC=0x11 (serviceNotSupported)",
+  "seq": 3212,
+  "ts": "2026-11-14T09:55:19.891+08:00"
+}

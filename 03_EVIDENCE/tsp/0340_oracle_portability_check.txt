@@ -1,0 +1,24 @@
+--- 10.230.164.4:8080 /
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+404 page not found
+--- 10.230.164.4:8080 /internal/audit
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+{"error":"not found"}
+--- 10.230.164.4:8080 /zzz-not-a-route-xyz
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+404 page not found
+--- 10.230.164.3:8080 /
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+404 page not found
+--- 10.230.164.3:8080 /internal/audit
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+{"error":"not found"}
+--- 10.230.164.3:8080 /zzz-not-a-route-xyz
+HTTP/1.1 404 Not Found
+Content-Type: text/plain; charset=utf-8
+404 page not found

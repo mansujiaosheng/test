@@ -1,0 +1,19 @@
+{
+  "label": "la_slow_fc37",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xFC37",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00FC373E00",
+    "uds": "3E00"
+  },
+  "responses": [],
+  "acks": [],
+  "nacks": [],
+  "uds": [],
+  "elapsed_ms": 134.26,
+  "parsed": "NO RESPONSE within timeout",
+  "seq": 1309,
+  "ts": "2026-11-14T09:27:55.130+08:00"
+}

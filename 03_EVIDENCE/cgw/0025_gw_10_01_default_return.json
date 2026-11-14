@@ -1,0 +1,32 @@
+{
+  "label": "gw_10_01_default_return",
+  "purpose": "return to default session (10 01)",
+  "tester_sa": "0x0E00",
+  "target_la": "0x1000",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E0010001001",
+    "uds": "1001"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "10000E007F1011",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1000",
+      "to": "0x0E00",
+      "hex": "7F1011",
+      "parsed": "NEGATIVE service=0x10 NRC=0x11 (serviceNotSupported)"
+    }
+  ],
+  "elapsed_ms": 384.44,
+  "parsed": "0x1000: NEGATIVE service=0x10 NRC=0x11 (serviceNotSupported)",
+  "seq": 25,
+  "ts": "2026-11-14T09:10:42.490+08:00"
+}

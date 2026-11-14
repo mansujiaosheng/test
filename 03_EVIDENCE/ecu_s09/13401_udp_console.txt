@@ -1,0 +1,6 @@
+### PHASE udp: UDP 13401 (DoIP also has UDP discovery)
+{"probe": "doip_ident_udp", "payload_hex": "02fd000100000000", "reply": "TIMEOUT", "t_ms": 4005.08}
+{"probe": "empty_udp", "payload_hex": "", "reply": "TIMEOUT", "t_ms": 4006.11}
+{"probe": "zeros_udp", "payload_hex": "0000000000000000", "reply": "TIMEOUT", "t_ms": 4007.04}
+
+[written] D:\qwb\04_SOLVE\ecu_s09\runs\13401_udp.jsonl (3 records)

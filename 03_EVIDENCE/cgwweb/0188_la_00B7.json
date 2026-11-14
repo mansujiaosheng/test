@@ -1,0 +1,20 @@
+{
+  "label": "la_00B7",
+  "purpose": "LA existence probe 0x00B7",
+  "tester_sa": "0x0E00",
+  "target_la": "0x00B7",
+  "elapsed_ms": 204.16,
+  "responses": [
+    "10000E007F3E31",
+    "10000E007F3E31"
+  ],
+  "acks": [],
+  "nacks": [],
+  "parsed": [
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)",
+    "0x1000 NEG TesterPresent NRC=0x31(requestOutOfRange)"
+  ],
+  "cls": "absent",
+  "seq": 188,
+  "ts": "2026-11-14T09:24:57.748+08:00"
+}

@@ -1,0 +1,25 @@
+{
+  "label": "ra_manual_sa1220",
+  "purpose": "DoIP routing activation (0x0005) -> parse 0x0006",
+  "request": {
+    "ptype": "0x0005",
+    "hex": "12200000000000"
+  },
+  "responses": [
+    {
+      "ptype": "0x0006",
+      "hex": "122010001000000000",
+      "len": 9
+    }
+  ],
+  "elapsed_ms": 25.03,
+  "parsed": {
+    "tester_sa": "0x1220",
+    "entity_la": "0x1000",
+    "code": "0x10",
+    "text": "routing successfully activated",
+    "trailing": "00000000"
+  },
+  "seq": 2992,
+  "ts": "2026-11-14T09:44:52.809+08:00"
+}

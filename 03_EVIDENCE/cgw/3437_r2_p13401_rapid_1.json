@@ -1,0 +1,13 @@
+{
+  "label": "r2_p13401_rapid_1",
+  "purpose": "rapid 3x connect+ident",
+  "host": "10.226.193.2:13401",
+  "request": {
+    "ptype": "raw",
+    "hex": "02FD000100000000"
+  },
+  "responses": [],
+  "parsed": "0B ",
+  "seq": 3437,
+  "ts": "2026-11-14T09:59:55.457+08:00"
+}

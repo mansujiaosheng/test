@@ -1,0 +1,11 @@
+{
+  "label": "p13401_passive",
+  "host": "10.229.221.2",
+  "port": 13401,
+  "sent_hex": "",
+  "recv_hex": "",
+  "recv_ascii": "",
+  "note": "connected, sent nothing, listening 3s | peer closed | 0B in 58ms",
+  "seq": 4001,
+  "ts": "2026-11-14T09:28:26.130+08:00"
+}

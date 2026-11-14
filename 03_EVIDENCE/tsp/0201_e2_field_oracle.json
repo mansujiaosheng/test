@@ -1,0 +1,36 @@
+[
+ [
+  "query",
+  "present",
+  "string",
+  {
+   "S": 200,
+   "O": 400,
+   "A": 400,
+   "N": 400
+  },
+  {
+   "S": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+   "O": "{\"error\":\"invalid GraphQL request\"}\n",
+   "A": "{\"error\":\"invalid GraphQL request\"}\n",
+   "N": "{\"error\":\"invalid GraphQL request\"}\n"
+  }
+ ],
+ [
+  "variables",
+  "present",
+  "object",
+  {
+   "S": 400,
+   "O": 200,
+   "A": 400,
+   "N": 400
+  },
+  {
+   "S": "{\"error\":\"invalid GraphQL request\"}\n",
+   "O": "{\"data\":{\"vehicles\":[{\"label\":\"Guest demo vehicle\",\"vin\":\"CV6000000DEMO0001\"}]}}",
+   "A": "{\"error\":\"invalid GraphQL request\"}\n",
+   "N": "{\"error\":\"invalid GraphQL request\"}\n"
+  }
+ ]
+]

@@ -1,0 +1,98 @@
+###### T02 0006 SNI sweep, no client cert (2026-11-14T01:24:33Z) ######
+## target 10.230.164.3:8443; look for any SNI where handshake completes (mTLS off) or peer cert changes
+## cmd: python 04_SOLVE/tbox/mtls_matrix.py sni
+
+{"cert": null, "sni": "tbox", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "TBOX", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "tbox.local", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "tbox.cybercar", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "tbox.cybercar.local", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "tbox.internal", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "tbox.ota", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "diagnostics", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "diag", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "diagnostic", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "ota", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "ota.local", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "ota-server", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "fleet", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "fleet.local", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "fleet.local.", "error": "SSLError: [SSL: TLSV1_ALERT_DECODE_ERROR] tlsv1 alert decode error (_ssl.c:1020)"}
+==============================================================================
+{"cert": null, "sni": "cv6", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "cv6.fleet", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "tsp", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "tsp.local", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "cgw", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "gateway", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "ecu", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "vehicle", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "telematics", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "tcu", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "api", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "public", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "enroll", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "ca", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "cert", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "certs", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "mtls", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "secure", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "admin", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "default", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "any", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "localhost", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "127.0.0.1", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "10.230.164.3", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "CV6FF52FEE9EDDD86", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "cybercar", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "cybercar.local", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "range", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "root", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": "pki", "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================
+{"cert": null, "sni": null, "handshake": "OK", "tls": "TLSv1.3", "cipher": "TLS_AES_128_GCM_SHA256", "peer_sha256": "9b88669e74898e7b703974df20a7a14cdeef3522989d2946bda12dce8cbddc3b", "recv_error": "SSLError: [SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2580)"}
+==============================================================================

@@ -1,0 +1,38 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:38:33 2026 as: D:\\TOOL\\nmap\\nmap.exe -Pn -n -sT -p 22,80,443,8080,8443,13400,13401 --reason --host-timeout 120s -oN syn_5_6_7.nmap -oG syn_5_6_7.gnmap -oX syn_5_6_7.xml 10.224.139.5 10.224.139.6 10.224.139.7
+Nmap scan report for 10.224.139.5
+Host is up, received user-set.
+
+PORT      STATE    SERVICE    REASON
+22/tcp    filtered ssh        no-response
+80/tcp    filtered http       no-response
+443/tcp   filtered https      no-response
+8080/tcp  filtered http-proxy no-response
+8443/tcp  filtered https-alt  no-response
+13400/tcp filtered doip-data  no-response
+13401/tcp filtered unknown    no-response
+
+Nmap scan report for 10.224.139.6
+Host is up, received user-set.
+
+PORT      STATE    SERVICE    REASON
+22/tcp    filtered ssh        no-response
+80/tcp    filtered http       no-response
+443/tcp   filtered https      no-response
+8080/tcp  filtered http-proxy no-response
+8443/tcp  filtered https-alt  no-response
+13400/tcp filtered doip-data  no-response
+13401/tcp filtered unknown    no-response
+
+Nmap scan report for 10.224.139.7
+Host is up, received user-set.
+
+PORT      STATE    SERVICE    REASON
+22/tcp    filtered ssh        no-response
+80/tcp    filtered http       no-response
+443/tcp   filtered https      no-response
+8080/tcp  filtered http-proxy no-response
+8443/tcp  filtered https-alt  no-response
+13400/tcp filtered doip-data  no-response
+13401/tcp filtered unknown    no-response
+
+# Nmap done at Sat Nov 14 09:38:39 2026 -- 3 IP addresses (3 hosts up) scanned in 6.18 seconds

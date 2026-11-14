@@ -1,0 +1,17 @@
+{
+  "label": "ptype_0002",
+  "purpose": "DoIP payload type probe 0x0002 EID",
+  "request": {
+    "ptype": "0x0002",
+    "hex": "060000001000"
+  },
+  "responses": [
+    {
+      "ptype": "0x0000",
+      "hex": "01"
+    }
+  ],
+  "parsed": "0x0000 01",
+  "seq": 3142,
+  "ts": "2026-11-14T09:48:06.019+08:00"
+}

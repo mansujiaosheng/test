@@ -1,0 +1,32 @@
+{
+  "label": "did_slow_2183",
+  "purpose": "",
+  "tester_sa": "0x0E00",
+  "target_la": "0xE442",
+  "request": {
+    "ptype": "0x8001",
+    "hex": "0E00E442222183",
+    "uds": "222183"
+  },
+  "responses": [
+    {
+      "ptype": "0x8001",
+      "hex": "12200E007F2231",
+      "len": 7
+    }
+  ],
+  "acks": [],
+  "nacks": [],
+  "uds": [
+    {
+      "from": "0x1220",
+      "to": "0x0E00",
+      "hex": "7F2231",
+      "parsed": "NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)"
+    }
+  ],
+  "elapsed_ms": 149.98,
+  "parsed": "0x1220: NEGATIVE service=0x22 NRC=0x31 (requestOutOfRange)",
+  "seq": 2145,
+  "ts": "2026-11-14T09:34:52.605+08:00"
+}

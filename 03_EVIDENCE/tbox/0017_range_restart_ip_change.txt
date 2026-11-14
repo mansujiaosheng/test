@@ -1,0 +1,12 @@
+### niu recheck after range restart Sat Nov 14 01:57:05 UTC 2026
+--- old .3:8443 cert ---
+--- old .3:8080 healthz ---
+
+--- new CGW 10.226.193.2 ---
+{"status":"ok"}
+--- new subnet sweep 8080/8443/13400/13401 ---
+OPEN 10.226.193.2:8080
+OPEN 10.226.193.2:13400
+OPEN 10.226.193.2:13401
+--- hosts with any RST(closed) = 1; open pairs=3
+ALIVE 10.226.193.2

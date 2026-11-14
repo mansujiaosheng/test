@@ -1,0 +1,5 @@
+[*] routing activation: routing successfully activated
+  SID 0x22 -> NRC_31       7F2231   (req=220000)
+
+[+] implemented / noteworthy services: 1 (stale frames discarded: 0)
+[+] 1534 request records -> D:\qwb\03_EVIDENCE\cgw\doip_service_sweep.jsonl

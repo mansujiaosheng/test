@@ -1,0 +1,27 @@
+# Nmap 7.98 scan initiated Sat Nov 14 09:39:21 2026 as: D:\\TOOL\\nmap\\nmap.exe -Pn -n -sT --open -T4 --min-rate 600 --max-retries 1 -p 80,443,3000,5000,8080,8443,9000 -oN 03_EVIDENCE/tsp/0406_3subnet_webscan.txt 10.230.164.0/24 10.229.221.0/24 10.224.139.0/24
+Nmap scan report for 10.230.164.2
+Host is up (0.046s latency).
+Not shown: 6 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+8080/tcp open  http-proxy
+
+Nmap scan report for 10.230.164.3
+Host is up (0.032s latency).
+Not shown: 5 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+
+Nmap scan report for 10.230.164.4
+Host is up (0.031s latency).
+Not shown: 6 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+8080/tcp open  http-proxy
+
+Nmap scan report for 10.229.221.2
+Host is up (0.14s latency).
+Not shown: 6 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+8080/tcp open  http-proxy
+
+# Nmap done at Sat Nov 14 09:45:24 2026 -- 768 IP addresses (768 hosts up) scanned in 363.45 seconds

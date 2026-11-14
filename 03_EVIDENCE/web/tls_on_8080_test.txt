@@ -1,0 +1,24 @@
+############ TLS handshake attempt on 10.230.164.2:8080 ############
+CONNECTED(00000154)
+246C0000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:ssl\record\ssl3_record.c:355:
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+############ TLS handshake attempt on 10.230.164.3:8080 ############
+CONNECTED(00000164)
+B0870000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:ssl\record\ssl3_record.c:355:
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+############ TLS handshake attempt on 10.230.164.4:8080 ############
+CONNECTED(0000017C)
+E4550000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:ssl\record\ssl3_record.c:355:
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---

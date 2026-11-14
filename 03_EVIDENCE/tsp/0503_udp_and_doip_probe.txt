@@ -1,0 +1,53 @@
+# udp_probe.py  2026-11-14T09:41:42+0800
+
+==============================================================================
+A. UDP port sweep (payload = b'\x00' * 8, generic)
+==============================================================================
+  10.230.164.2  :53     SILENT                  2500.0 ms  
+  10.230.164.2  :67     SILENT                  2503.9 ms  
+  10.230.164.2  :123    SILENT                  2505.2 ms  
+  10.230.164.2  :137    SILENT                  2507.6 ms  
+  10.230.164.2  :161    SILENT                  2506.5 ms  
+  10.230.164.2  :500    SILENT                  2515.0 ms  
+  10.230.164.2  :1900   SILENT                  2508.9 ms  
+  10.230.164.2  :3702   SILENT                  2506.6 ms  
+  10.230.164.2  :5353   SILENT                  2503.1 ms  
+  10.230.164.2  :5355   SILENT                  2505.2 ms  
+  10.230.164.2  :4789   SILENT                  2504.1 ms  
+  10.230.164.2  :13400  SILENT                  2506.5 ms  
+  10.230.164.2  :30490  SILENT                  2515.9 ms  
+  10.230.164.3  :53     SILENT                  2511.9 ms  
+  10.230.164.3  :67     SILENT                  2501.4 ms  
+  10.230.164.3  :123    SILENT                  2503.9 ms  
+  10.230.164.3  :137    SILENT                  2505.7 ms  
+  10.230.164.3  :161    SILENT                  2514.7 ms  
+  10.230.164.3  :500    SILENT                  2508.2 ms  
+  10.230.164.3  :1900   SILENT                  2511.5 ms  
+  10.230.164.3  :3702   SILENT                  2510.4 ms  
+  10.230.164.3  :5353   SILENT                  2508.6 ms  
+  10.230.164.3  :5355   SILENT                  2503.2 ms  
+  10.230.164.3  :4789   SILENT                  2506.5 ms  
+  10.230.164.3  :13400  SILENT                  2508.2 ms  
+  10.230.164.3  :30490  SILENT                  2513.2 ms  
+
+==============================================================================
+B. DoIP discovery on UDP 13400 (ISO 13400-2 payload types)
+==============================================================================
+  10.230.164.2   13400/udp 0x0002 generic vehicle id request (no VIN) -> SILENT                  3008.8 ms  
+  10.230.164.2   13400/udp 0x0001 VIN request + VIN               -> SILENT                  3010.8 ms  
+  10.230.164.2   13400/udp 0x0003 entity status request           -> SILENT                  3008.3 ms  
+  10.230.164.2   13400/udp 0x0004 power mode information request  -> SILENT                  3001.4 ms  
+  10.230.164.2   13400/udp raw garbage 16B                        -> SILENT                  3001.2 ms  
+  10.230.164.3   13400/udp 0x0002 generic vehicle id request (no VIN) -> SILENT                  3012.0 ms  
+  10.230.164.3   13400/udp 0x0001 VIN request + VIN               -> SILENT                  3006.0 ms  
+  10.230.164.3   13400/udp 0x0003 entity status request           -> SILENT                  3013.9 ms  
+  10.230.164.3   13400/udp 0x0004 power mode information request  -> SILENT                  3002.0 ms  
+  10.230.164.3   13400/udp raw garbage 16B                        -> SILENT                  3015.2 ms  
+
+==============================================================================
+C. control: UDP 13400 to CGW 10.229.221.2 (known DoIP host, should answer)
+==============================================================================
+  10.229.221.2   13400/udp 0x0002 generic vehicle id request (no VIN) -> SILENT                  3013.3 ms  
+  10.229.221.2   13400/udp 0x0001 VIN request + VIN               -> SILENT                  3000.6 ms  
+  10.229.221.2   13400/udp 0x0003 entity status request           -> SILENT                  3014.7 ms  
+done

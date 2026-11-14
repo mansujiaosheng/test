@@ -1,0 +1,23 @@
+============================================================================
+T-BOX 10.225.139.3:8080 — sweep WITH Basic diag:<cred>
+oracle: 404 text/plain 19B = unregistered
+============================================================================
+  GET  200 /healthz                                     ct='application/json' len=16
+        b'{"status":"ok"}\n'
+  POST 200 /healthz                                     ct='application/json' len=16
+        b'{"status":"ok"}\n'
+  GET  200 /api/v1/ota/engineering-bundle               ct='application/zip' len=19632
+  POST 405 /api/v1/ota/engineering-bundle               ct='application/json' len=31
+        b'{"error":"method not allowed"}\n'
+  GET  404 /internal/audit                              ct='application/json' len=22
+        b'{"error":"not found"}\n'
+  POST 404 /internal/audit                              ct='application/json' len=22
+        b'{"error":"not found"}\n'
+----------------------------------------------------------------------------
+hits=6
+   GET 200 /healthz application/json 16
+   POST 200 /healthz application/json 16
+   GET 200 /api/v1/ota/engineering-bundle application/zip 19632
+   POST 405 /api/v1/ota/engineering-bundle application/json 31
+   GET 404 /internal/audit application/json 22
+   POST 404 /internal/audit application/json 22

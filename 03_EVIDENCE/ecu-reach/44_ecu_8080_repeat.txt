@@ -1,0 +1,18 @@
+# precise TCP connect matrix (RST vs TIMEOUT)
+# start  : 2026-11-14T10:12:02+08:00
+# host   : local 10.252.3.20 (TAP/OpenVPN), route 10.224.0.0/12 -> 10.252.3.1
+# method : nonblocking connect_ex + select(write) + SO_ERROR
+# reps   : 3   timeout/attempt: 2.0s
+# note   : stability re-test ~20 min after first measurement
+# verdict: OPEN=connected | RST=refused (IP alive, port closed) | TIMEOUT=no answer (drop/blackhole) | UNREACH/other
+
+=== 10.226.197.5 ===
+   8080/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.013, 2.010, 2.005]
+
+=== 10.226.197.6 ===
+   8080/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.003, 2.009, 2.004]
+
+=== 10.226.197.7 ===
+   8080/tcp  TIMEOUT  reps=TIMEOUT/TIMEOUT/TIMEOUT  dt=[2.010, 2.015, 2.001]
+
+# summary: OPEN=0 RST=0 TIMEOUT=3 MIXED/other=0
